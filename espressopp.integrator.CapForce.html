@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>CapForce - Integrator Extension &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="integrator" href="integrator.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.integrator.DPDThermostat.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.integrator.BerendsenThermostat.html" /> 
+    <link rel="next" title="espressopp.integrator.DPDThermostat" href="espressopp.integrator.DPDThermostat.html" />
+    <link rel="prev" title="BerendsenThermostat - Berendsen thermostat Object" href="espressopp.integrator.BerendsenThermostat.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,44 @@
              <a style="float:right;"  href="espressopp.integrator.DPDThermostat.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.integrator.CapForce"></span><div class="section" id="capforce-integrator-extension">
+<h1><strong>CapForce</strong> - Integrator Extension<a class="headerlink" href="#capforce-integrator-extension" title="Permalink to this headline">¶</a></h1>
+<p>This class can be used to forcecap all particles or a group of particles.
+Force capping means that the force vector of a particle is rescaled
+so that the length of the force vector is &lt;= capforce</p>
+<div class="section" id="example-usage">
+<h2>Example Usage:<a class="headerlink" href="#example-usage" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">capforce</span>     <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">CapForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="mf">1000.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">capForce</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>CapForce can also be used to forcecap only a group of particles:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">particle_group</span> <span class="o">=</span> <span class="p">[</span><span class="mi">45</span><span class="p">,</span> <span class="mi">67</span><span class="p">,</span> <span class="mi">89</span><span class="p">,</span> <span class="mi">103</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">capforce</span>       <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">CapForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="mf">1000.0</span><span class="p">,</span> <span class="n">particle_group</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">capForce</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt id="espressopp.integrator.CapForce.espressopp.integrator.CapForce">
+<code class="descclassname">espressopp.integrator.</code><code class="descname">CapForce</code><span class="sig-paren">(</span><em>system</em>, <em>capForce</em>, <em>particleGroup</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.CapForce.espressopp.integrator.CapForce" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>capForce</strong> &#8211; </li>
+<li><strong>particleGroup</strong> &#8211; (default: None)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
 
             
              <a href="espressopp.integrator.BerendsenThermostat.html">previous</a>

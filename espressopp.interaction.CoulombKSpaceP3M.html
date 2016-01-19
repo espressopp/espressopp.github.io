@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>CoulombKSpaceP3M - Coulomb potential and interaction Objects (K space part) &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="interaction" href="interaction.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.interaction.CoulombRSpace.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.interaction.CoulombKSpaceEwald.html" /> 
+    <link rel="next" title="CoulombRSpace - Coulomb potential and interaction Objects (R space part)" href="espressopp.interaction.CoulombRSpace.html" />
+    <link rel="prev" title="CoulombKSpaceEwald - Coulomb potential and interaction Objects (K space part)" href="espressopp.interaction.CoulombKSpaceEwald.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,114 @@
              <a style="float:right;"  href="espressopp.interaction.CoulombRSpace.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.interaction.CoulombKSpaceP3M"></span><div class="section" id="coulombkspacep3m-coulomb-potential-and-interaction-objects-k-space-part">
+<h1><strong>CoulombKSpaceP3M</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)<a class="headerlink" href="#coulombkspacep3m-coulomb-potential-and-interaction-objects-k-space-part" title="Permalink to this headline">¶</a></h1>
+<p>This is the <cite>K</cite> space part of potential of Coulomb long range interaction according to the P3M
+summation technique. Good explanation of P3M summation could be found here <a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html#allen89" id="id1">[Allen89]</a>,
+<a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html#deserno98" id="id2">[Deserno98]</a>.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ewaldK_pot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">CoulombKSpaceP3M</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">coulomb_prefactor</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">kspacecutoff</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ewaldK_int</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">CellListCoulombKSpaceP3M</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">,</span> <span class="n">ewaldK_pot</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">ewaldK_int</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>!IMPORTANT</strong> Coulomb interaction needs <cite>R</cite> space part as well <a class="reference external" href="espressopp.interaction.CoulombRSpace.html">CoulombRSpace</a>.</p>
+<p>Definition:</p>
+<blockquote>
+<div><p>It provides potential object <em>CoulombKSpaceP3M</em> and interaction object <em>CellListCoulombKSpaceP3M</em> based on
+all particles list.</p>
+<p>The <em>potential</em> is based on the system information (<a class="reference external" href="espressopp.System.html">System</a>) and parameters:
+Coulomb prefactor (coulomb_prefactor), P3M parameter (alpha),
+and the cutoff in K space (kspacecutoff).</p>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ewaldK_pot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">CoulombKSpaceP3M</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">coulomb_prefactor</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">kspacecutoff</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Potential Properties:</p>
+<ul>
+<li><p class="first"><em>ewaldK_pot.prefactor</em></p>
+<p>The property &#8216;prefactor&#8217; defines the Coulomb prefactor.</p>
+</li>
+<li><p class="first"><em>ewaldK_pot.alpha</em></p>
+<p>The property &#8216;alpha&#8217; defines the P3M parameter <img class="math" src="images/math/407490dc6fda43a6296df1f1719d70e293700b43.png" alt="\\alpha"/>.</p>
+</li>
+<li><p class="first"><em>ewaldK_pot.kmax</em></p>
+<p>The property &#8216;kmax&#8217; defines the cutoff in <cite>K</cite> space.</p>
+</li>
+</ul>
+<p>The <em>interaction</em> is based on the all particles list. It needs the information from <a class="reference external" href="espressopp.storage.Storage.html">Storage</a>
+and <cite>K</cite> space part of potential.</p>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ewaldK_int</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">CellListCoulombKSpaceP3M</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">,</span> <span class="n">ewaldK_pot</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Interaction Methods:</p>
+<ul>
+<li><p class="first"><em>getPotential()</em></p>
+<p>Access to the local potential.</p>
+</li>
+</ul>
+</div></blockquote>
+<p>Adding the interaction to the system:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">ewaldK_int</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt id="espressopp.interaction.CoulombKSpaceP3M.espressopp.interaction.CoulombKSpaceP3M">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">CoulombKSpaceP3M</code><span class="sig-paren">(</span><em>system</em>, <em>C_pref</em>, <em>alpha</em>, <em>M</em>, <em>P</em>, <em>rcut</em>, <em>interpolation</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombKSpaceP3M.espressopp.interaction.CoulombKSpaceP3M" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>C_pref</strong> &#8211; </li>
+<li><strong>alpha</strong> &#8211; </li>
+<li><strong>M</strong> &#8211; </li>
+<li><strong>P</strong> &#8211; </li>
+<li><strong>rcut</strong> &#8211; </li>
+<li><strong>interpolation</strong> (<em>int</em>) &#8211; (default: 200192)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.CoulombKSpaceP3M.espressopp.interaction.CellListCoulombKSpaceP3M">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">CellListCoulombKSpaceP3M</code><span class="sig-paren">(</span><em>storage</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombKSpaceP3M.espressopp.interaction.CellListCoulombKSpaceP3M" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>storage</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.CoulombKSpaceP3M.espressopp.interaction.CellListCoulombKSpaceP3M.getPotential">
+<code class="descclassname">espressopp.interaction.CellListCoulombKSpaceP3M.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombKSpaceP3M.espressopp.interaction.CellListCoulombKSpaceP3M.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.interaction.CoulombKSpaceEwald.html">previous</a>

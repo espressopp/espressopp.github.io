@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.analysis.Energy &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="analysis" href="analysis.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.analysis.IntraChainDistSq.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.analysis.ConfigurationsExt.html" /> 
+    <link rel="next" title="espressopp.analysis.IntraChainDistSq" href="espressopp.analysis.IntraChainDistSq.html" />
+    <link rel="prev" title="ConfigurationsExt - ConfigurationsExt Object" href="espressopp.analysis.ConfigurationsExt.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,100 @@
              <a style="float:right;"  href="espressopp.analysis.IntraChainDistSq.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.analysis.Energy"></span><div class="section" id="espressopp-analysis-energy">
+<h1><strong>espressopp.analysis.Energy</strong><a class="headerlink" href="#espressopp-analysis-energy" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="espressopp.analysis.Energy.espressopp.analysis.EnergyPot">
+<code class="descclassname">espressopp.analysis.</code><code class="descname">EnergyPot</code><span class="sig-paren">(</span><em>system</em>, <em>per_atom</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.Energy.espressopp.analysis.EnergyPot" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>per_atom</strong> &#8211; (default: False)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.analysis.Energy.espressopp.analysis.EnergyPot.compute">
+<code class="descclassname">espressopp.analysis.EnergyPot.</code><code class="descname">compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.Energy.espressopp.analysis.EnergyPot.compute" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.analysis.Energy.espressopp.analysis.EnergyKin">
+<code class="descclassname">espressopp.analysis.</code><code class="descname">EnergyKin</code><span class="sig-paren">(</span><em>system</em>, <em>per_atom</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.Energy.espressopp.analysis.EnergyKin" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>per_atom</strong> &#8211; (default: False)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.analysis.Energy.espressopp.analysis.EnergyKin.compute">
+<code class="descclassname">espressopp.analysis.EnergyKin.</code><code class="descname">compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.Energy.espressopp.analysis.EnergyKin.compute" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.analysis.Energy.espressopp.analysis.EnergyTot">
+<code class="descclassname">espressopp.analysis.</code><code class="descname">EnergyTot</code><span class="sig-paren">(</span><em>system</em>, <em>per_atom</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.Energy.espressopp.analysis.EnergyTot" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>per_atom</strong> &#8211; (default: False)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.analysis.Energy.espressopp.analysis.EnergyTot.compute">
+<code class="descclassname">espressopp.analysis.EnergyTot.</code><code class="descname">compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.Energy.espressopp.analysis.EnergyTot.compute" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.analysis.ConfigurationsExt.html">previous</a>

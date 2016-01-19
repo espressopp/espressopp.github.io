@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>FixedPairListAdress - Object &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="espressopp" href="espressopp.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.FixedQuadrupleAngleList.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.FixedPairList.html" /> 
+    <link rel="next" title="espressopp.FixedQuadrupleAngleList" href="espressopp.FixedQuadrupleAngleList.html" />
+    <link rel="prev" title="espressopp.FixedPairList" href="espressopp.FixedPairList.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,86 @@
              <a style="float:right;"  href="espressopp.FixedQuadrupleAngleList.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.FixedPairListAdress"></span><div class="section" id="fixedpairlistadress-object">
+<h1><strong>FixedPairListAdress</strong> - Object<a class="headerlink" href="#fixedpairlistadress-object" title="Permalink to this headline">¶</a></h1>
+<p>The FixedPairListAdress is the Fixed Pair List to be used for AdResS or H-AdResS
+simulations. When creating the FixedPairListAdress one has to provide the storage
+and the tuples. Afterwards the bonds can be added. In the example &#8220;bonds&#8221; is a
+python list of the form ( (pid1, pid2), (pid3, pid4), ...) where each inner pair
+defines a bond between the particles with the given particle ids.</p>
+<p>Example - creating the FixedPairListAdress and adding bonds:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ftpl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedTupleList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fpl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedPairListAdress</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fpl</span><span class="o">.</span><span class="n">addBonds</span><span class="p">(</span><span class="n">bonds</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt id="espressopp.FixedPairListAdress.espressopp.FixedPairListAdress">
+<code class="descclassname">espressopp.</code><code class="descname">FixedPairListAdress</code><span class="sig-paren">(</span><em>storage</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.FixedPairListAdress.espressopp.FixedPairListAdress" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>storage</strong> &#8211; </li>
+<li><strong>fixedtupleList</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.add">
+<code class="descclassname">espressopp.FixedPairListAdress.</code><code class="descname">add</code><span class="sig-paren">(</span><em>pid1</em>, <em>pid2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.add" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>pid1</strong> &#8211; </li>
+<li><strong>pid2</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.addBonds">
+<code class="descclassname">espressopp.FixedPairListAdress.</code><code class="descname">addBonds</code><span class="sig-paren">(</span><em>bondlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.addBonds" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bondlist</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.getBonds">
+<code class="descclassname">espressopp.FixedPairListAdress.</code><code class="descname">getBonds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.getBonds" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.FixedPairList.html">previous</a>

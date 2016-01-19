@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.interaction.StillingerWeberTripleTerm &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="interaction" href="interaction.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.interaction.Tabulated.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.interaction.StillingerWeberPairTermCapped.html" /> 
+    <link rel="next" title="espressopp.interaction.Tabulated" href="espressopp.interaction.Tabulated.html" />
+    <link rel="prev" title="espressopp.interaction.StillingerWeberPairTermCapped" href="espressopp.interaction.StillingerWeberPairTermCapped.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,168 @@
              <a style="float:right;"  href="espressopp.interaction.Tabulated.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.interaction.StillingerWeberTripleTerm"></span><div class="section" id="espressopp-interaction-stillingerwebertripleterm">
+<h1><strong>espressopp.interaction.StillingerWeberTripleTerm</strong><a class="headerlink" href="#espressopp-interaction-stillingerwebertripleterm" title="Permalink to this headline">¶</a></h1>
+<p>This class provides methods to compute forces and energies of
+the Stillinger Weber Triple Term potential.</p>
+<p>if <img class="math" src="images/math/016bf413185e04cbf856ad30110e47b0501ddbdc.png" alt="d_{12} &gt;= r_{c_1}"/> or <img class="math" src="images/math/4605c788b36c39404ffed5ef799b22d934791ba4.png" alt="d_{32} &gt;= r_{c_2}"/></p>
+<div class="math">
+<p><img src="images/math/50250fb777f7279f9cfabedf3d05259bdae24df6.png" alt="U = 0.0"/></p>
+</div><p>else</p>
+<div class="math">
+<p><img src="images/math/33b7abc0e5382bdfd8f7a220f92885917aaeb1bc.png" alt="U = \varepsilon \lambda  e^{\frac{\sigma \gamma_1}{|r_{12}| - \sigma r_{c_1}}}
+ + \frac{\sigma \gamma_2}{|r_{32}| - \sigma r_{c_2}}
+   \left(\frac{r_{12}  r_{32}}{|r_{12}|\cdot |r_{32}|} 
+   - cos(\theta_0) \right)^2"/></p>
+</div><dl class="function">
+<dt id="espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.StillingerWeberTripleTerm">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">StillingerWeberTripleTerm</code><span class="sig-paren">(</span><em>gamma</em>, <em>theta0</em>, <em>lmbd</em>, <em>epsilon</em>, <em>sigma</em>, <em>cutoff</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.StillingerWeberTripleTerm" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>gamma</strong> (<em>real</em>) &#8211; (default: 0.0)</li>
+<li><strong>theta0</strong> (<em>real</em>) &#8211; (default: 0.0)</li>
+<li><strong>lmbd</strong> (<em>real</em>) &#8211; (default: 0.0)</li>
+<li><strong>epsilon</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
+<li><strong>sigma</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
+<li><strong>cutoff</strong> &#8211; (default: infinity)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.VerletListStillingerWeberTripleTerm">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListStillingerWeberTripleTerm</code><span class="sig-paren">(</span><em>system</em>, <em>vl3</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.VerletListStillingerWeberTripleTerm" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>vl3</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.VerletListStillingerWeberTripleTerm.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListStillingerWeberTripleTerm.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>type3</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.VerletListStillingerWeberTripleTerm.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>type3</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.VerletListStillingerWeberTripleTerm.getVerletListTriple">
+<code class="descclassname">espressopp.interaction.VerletListStillingerWeberTripleTerm.</code><code class="descname">getVerletListTriple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.VerletListStillingerWeberTripleTerm.getVerletListTriple" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.VerletListStillingerWeberTripleTerm.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListStillingerWeberTripleTerm.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>type3</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.VerletListStillingerWeberTripleTerm.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>type3</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.FixedTripleListStillingerWeberTripleTerm">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedTripleListStillingerWeberTripleTerm</code><span class="sig-paren">(</span><em>system</em>, <em>ftl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.FixedTripleListStillingerWeberTripleTerm" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>ftl</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.FixedTripleListStillingerWeberTripleTerm.getFixedTripleList">
+<code class="descclassname">espressopp.interaction.FixedTripleListStillingerWeberTripleTerm.</code><code class="descname">getFixedTripleList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.FixedTripleListStillingerWeberTripleTerm.getFixedTripleList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.FixedTripleListStillingerWeberTripleTerm.setPotential">
+<code class="descclassname">espressopp.interaction.FixedTripleListStillingerWeberTripleTerm.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>type3</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberTripleTerm.espressopp.interaction.FixedTripleListStillingerWeberTripleTerm.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>type3</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.StillingerWeberTripleTerm.StillingerWeberTripleTerm">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.StillingerWeberTripleTerm.</code><code class="descname">StillingerWeberTripleTerm</code><a class="headerlink" href="#espressopp.interaction.StillingerWeberTripleTerm.StillingerWeberTripleTerm" title="Permalink to this definition">¶</a></dt>
+<dd><p>The StillingerWeberTripleTerm potential.</p>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.interaction.StillingerWeberPairTermCapped.html">previous</a>

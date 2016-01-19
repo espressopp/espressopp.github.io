@@ -10,8 +10,8 @@
     
     <title>AddNewPotential &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,10 +22,10 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="ESPResSo++ Tutorial" href="tutorial.html" />
     <link rel="next" title="Adaptive Resolution Scheme (AdResS)" href="tutorial.AdResS.html" />
@@ -90,9 +90,9 @@
 <h3>Step 1<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h3>
 <p>The potential we are implementing today is a two-body bonded potential with the form</p>
 <div class="math">
-<p><img src="_images/math/e40cc77dc0de25ab5b74e04901d765d7d1856e8f.png" alt="V(r_{ij})=\frac{1}{4}k_{ij}(r^2_{ij}-r^2_{0,ij})^2"/></p>
+<p><img src="images/math/e40cc77dc0de25ab5b74e04901d765d7d1856e8f.png" alt="V(r_{ij})=\frac{1}{4}k_{ij}(r^2_{ij}-r^2_{0,ij})^2"/></p>
 </div><p>noindent
-where <img class="math" src="_images/math/35bab58b40a77a2e24ecb9f58898f1813de64459.png" alt="r_{ij}"/> is the distance between particles <em>i</em> and <em>j</em>. The potential has two input parameters <img class="math" src="_images/math/79589b66d931d336a183fd656ada8db266707c67.png" alt="r_{0}"/> and <img class="math" src="_images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/>.</p>
+where <img class="math" src="images/math/35bab58b40a77a2e24ecb9f58898f1813de64459.png" alt="r_{ij}"/> is the distance between particles <em>i</em> and <em>j</em>. The potential has two input parameters <img class="math" src="images/math/79589b66d931d336a183fd656ada8db266707c67.png" alt="r_{0}"/> and <img class="math" src="images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/>.</p>
 <p>Derive the force.</p>
 </div>
 <div class="section" id="step-2">
@@ -129,7 +129,7 @@ where <img class="math" src="_images/math/35bab58b40a77a2e24ecb9f58898f1813de644
 <p>First modify <code class="docutils literal"><span class="pre">FourthPower.hpp</span></code>.</p>
 <p>Note the <code class="docutils literal"><span class="pre">#include</span></code> statement for <code class="docutils literal"><span class="pre">FixedPairListInteractionTemplate.hpp</span></code> and <code class="docutils literal"><span class="pre">Potential.hpp</span></code>, the files you examined in <a class="reference internal" href="#step-2">Step 2</a> and Step <a class="reference internal" href="#a-interfacing-potential-class-and-interaction-template">3(a) Interfacing potential class and interaction template</a>.</p>
 <p>The Harmonic potential had parameters called <code class="docutils literal"><span class="pre">K</span></code> and <code class="docutils literal"><span class="pre">r0</span></code>. You can reuse these for the FourthPower potential, along with the setters and getters <code class="docutils literal"><span class="pre">setK</span></code>, <code class="docutils literal"><span class="pre">getK</span></code>, <code class="docutils literal"><span class="pre">setR0</span></code> and <code class="docutils literal"><span class="pre">getR0</span></code>. For better efficiency, you could also create a new variable which contains the square of <code class="docutils literal"><span class="pre">r0</span></code>.</p>
-<p>Now we need functions <code class="docutils literal"><span class="pre">_computeForceRaw()</span></code> and <code class="docutils literal"><span class="pre">_computeEnergySqrRaw()</span></code>, as explained in Step <a class="reference internal" href="#a-interfacing-potential-class-and-interaction-template">3(a) Interfacing potential class and interaction template</a>. Modify these functions to use the functional form of the fourth power potential as derived in <a class="reference internal" href="#step-1">Step 1</a>. Note that <code class="docutils literal"><span class="pre">Real3D</span> <span class="pre">dist</span></code>, which contains the vector between the two particles, has been defined as <img class="math" src="_images/math/11b7edaa12fa7e166c57a1ca315608f2eef39409.png" alt="r_{p1} - r_{p2}"/> (see <code class="docutils literal"><span class="pre">addForces()</span></code> in <code class="docutils literal"><span class="pre">FixedPairListInteractionTemplate.hpp</span></code>).</p>
+<p>Now we need functions <code class="docutils literal"><span class="pre">_computeForceRaw()</span></code> and <code class="docutils literal"><span class="pre">_computeEnergySqrRaw()</span></code>, as explained in Step <a class="reference internal" href="#a-interfacing-potential-class-and-interaction-template">3(a) Interfacing potential class and interaction template</a>. Modify these functions to use the functional form of the fourth power potential as derived in <a class="reference internal" href="#step-1">Step 1</a>. Note that <code class="docutils literal"><span class="pre">Real3D</span> <span class="pre">dist</span></code>, which contains the vector between the two particles, has been defined as <img class="math" src="images/math/11b7edaa12fa7e166c57a1ca315608f2eef39409.png" alt="r_{p1} - r_{p2}"/> (see <code class="docutils literal"><span class="pre">addForces()</span></code> in <code class="docutils literal"><span class="pre">FixedPairListInteractionTemplate.hpp</span></code>).</p>
 <p>Next open <code class="docutils literal"><span class="pre">Harmonic.py</span></code> and <code class="docutils literal"><span class="pre">FourthPower.py</span></code>.</p>
 <p>Here is an example of an end-user&#8217;s python script to add an interaction using the harmonic potential:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">harmonicbondslist</span> <span class="o">=</span> <span class="n">espresso</span><span class="o">.</span><span class="n">FixedPairList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>

@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>GravityTruncated &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="interaction" href="interaction.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.interaction.Harmonic.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.interaction.FENECapped.html" /> 
+    <link rel="next" title="espressopp.interaction.Harmonic" href="espressopp.interaction.Harmonic.html" />
+    <link rel="prev" title="espressopp.interaction.FENECapped" href="espressopp.interaction.FENECapped.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,95 @@
              <a style="float:right;"  href="espressopp.interaction.Harmonic.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.interaction.GravityTruncated"></span><div class="section" id="gravitytruncated">
+<h1><strong>GravityTruncated</strong><a class="headerlink" href="#gravitytruncated" title="Permalink to this headline">¶</a></h1>
+<p>This is an implementation of a truncated (cutoff) Gravity Potential</p>
+<div class="math">
+<p><img src="images/math/7fca0c8d09fe5ea853400f3fa8f9178ee8bc968c.png" alt="U = P \cdot \frac{m_1 \cdot m_2}{ \lvert p_1 - p_2\rvert}"/></p>
+</div><p>where <img class="math" src="images/math/21728519fb5117232be3dab5913f25e4508c8c29.png" alt="m_i"/> is the mass of the <cite>i</cite> th particle, <img class="math" src="images/math/be005a6163eb06f81800d3f41ee8408927fec9d7.png" alt="p_i"/> its position and <cite>P</cite> a prefactor.</p>
+<dl class="function">
+<dt id="espressopp.interaction.GravityTruncated.espressopp.interaction.GravityTruncated">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">GravityTruncated</code><span class="sig-paren">(</span><em>prefactor</em>, <em>cutoff</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.GravityTruncated.espressopp.interaction.GravityTruncated" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>prefactor</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
+<li><strong>cutoff</strong> &#8211; (default: infinity)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.GravityTruncated.espressopp.interaction.VerletListGravityTruncated">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListGravityTruncated</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.GravityTruncated.espressopp.interaction.VerletListGravityTruncated" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.GravityTruncated.espressopp.interaction.VerletListGravityTruncated.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListGravityTruncated.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.GravityTruncated.espressopp.interaction.VerletListGravityTruncated.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.GravityTruncated.espressopp.interaction.VerletListGravityTruncated.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListGravityTruncated.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.GravityTruncated.espressopp.interaction.VerletListGravityTruncated.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.GravityTruncated.espressopp.interaction.VerletListGravityTruncated.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListGravityTruncated.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.GravityTruncated.espressopp.interaction.VerletListGravityTruncated.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.interaction.FENECapped.html">previous</a>

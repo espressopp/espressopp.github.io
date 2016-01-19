@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.ParticleGroup &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="espressopp" href="espressopp.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.Real3D.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.ParticleAccess.html" /> 
+    <link rel="next" title="espressopp.Real3D" href="espressopp.Real3D.html" />
+    <link rel="prev" title="ParticleAccess - abstract base class for analysis/measurement/io" href="espressopp.ParticleAccess.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,79 @@
              <a style="float:right;"  href="espressopp.Real3D.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.ParticleGroup"></span><div class="section" id="espressopp-particlegroup">
+<h1><strong>espressopp.ParticleGroup</strong><a class="headerlink" href="#espressopp-particlegroup" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="espressopp.ParticleGroup.espressopp.ParticleGroup">
+<code class="descclassname">espressopp.</code><code class="descname">ParticleGroup</code><span class="sig-paren">(</span><em>storage</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.ParticleGroup.espressopp.ParticleGroup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>storage</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.ParticleGroup.espressopp.ParticleGroup.add">
+<code class="descclassname">espressopp.ParticleGroup.</code><code class="descname">add</code><span class="sig-paren">(</span><em>pid</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.ParticleGroup.espressopp.ParticleGroup.add" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pid</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.ParticleGroup.espressopp.ParticleGroup.has">
+<code class="descclassname">espressopp.ParticleGroup.</code><code class="descname">has</code><span class="sig-paren">(</span><em>pid</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.ParticleGroup.espressopp.ParticleGroup.has" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pid</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.ParticleGroup.espressopp.ParticleGroup.show">
+<code class="descclassname">espressopp.ParticleGroup.</code><code class="descname">show</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.ParticleGroup.espressopp.ParticleGroup.show" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.ParticleGroup.espressopp.ParticleGroup.size">
+<code class="descclassname">espressopp.ParticleGroup.</code><code class="descname">size</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.ParticleGroup.espressopp.ParticleGroup.size" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.ParticleAccess.html">previous</a>

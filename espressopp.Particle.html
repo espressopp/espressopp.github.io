@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.Particle &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="espressopp" href="espressopp.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.ParticleAccess.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.ParallelTempering.html" /> 
+    <link rel="next" title="ParticleAccess - abstract base class for analysis/measurement/io" href="espressopp.ParticleAccess.html" />
+    <link rel="prev" title="espressopp.ParallelTempering" href="espressopp.ParallelTempering.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,38 @@
              <a style="float:right;"  href="espressopp.ParticleAccess.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.Particle"></span><div class="section" id="espressopp-particle">
+<h1><strong>espressopp.Particle</strong><a class="headerlink" href="#espressopp-particle" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="espressopp.Particle.espressopp.Particle">
+<code class="descclassname">espressopp.</code><code class="descname">Particle</code><span class="sig-paren">(</span><em>pid</em>, <em>storage</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.Particle.espressopp.Particle" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>pid</strong> &#8211; </li>
+<li><strong>storage</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.Particle.ParticleLocal">
+<em class="property">class </em><code class="descclassname">espressopp.Particle.</code><code class="descname">ParticleLocal</code><span class="sig-paren">(</span><em>pid</em>, <em>storage</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.Particle.ParticleLocal" title="Permalink to this definition">¶</a></dt>
+<dd><p>The local particle.</p>
+<p>Throws an exception:
+* when the particle does not exists locally</p>
+<p>TODO: Should throw an exception:
+* when a ghost particle is to be written 
+* when data is to be read from a ghost that is not available</p>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.ParallelTempering.html">previous</a>

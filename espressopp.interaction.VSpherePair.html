@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.interaction.VSpherePair &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="interaction" href="interaction.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.interaction.VSphereSelf.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.interaction.TersoffTripleTerm.html" /> 
+    <link rel="next" title="espressopp.interaction.VSphereSelf" href="espressopp.interaction.VSphereSelf.html" />
+    <link rel="prev" title="espressopp.interaction.TersoffTripleTerm" href="espressopp.interaction.TersoffTripleTerm.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,107 @@
              <a style="float:right;"  href="espressopp.interaction.VSphereSelf.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.interaction.VSpherePair"></span><div class="section" id="espressopp-interaction-vspherepair">
+<h1><strong>espressopp.interaction.VSpherePair</strong><a class="headerlink" href="#espressopp-interaction-vspherepair" title="Permalink to this headline">¶</a></h1>
+<p>This class provides methods to compute forces and energies of
+the VSpherePair potential.</p>
+<div class="math">
+<p><img src="images/math/b606edea521a130e1064a48a5147e4930dc8b55c.png" alt=""/></p>
+</div><div class="math">
+<p><img src="images/math/ed5122175b767d068ebae4ac10d2f62763dbcfc0.png" alt="V(r_ij, \sigma_ij) = \frac{\varepsilon}{\beta} \left( \frac{2 \pi}{3} \right)
+                     \sigma_ij^{- \frac{3}{2}} e^{- \frac{3}{2} \frac{r_ij}{\sigma_ij}} ,
+                     r_ij = \left| \vec{r_i} - \vec{r_j} \right| ,
+                     \sigma_ij = \sigma_i^2 + \sigma_j^2"/></p>
+</div><dl class="function">
+<dt id="espressopp.interaction.VSpherePair.espressopp.interaction.VSpherePair">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VSpherePair</code><span class="sig-paren">(</span><em>epsilon</em>, <em>cutoff</em>, <em>shift</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.VSpherePair.espressopp.interaction.VSpherePair" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>epsilon</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
+<li><strong>cutoff</strong> &#8211; (default: infinity)</li>
+<li><strong>shift</strong> &#8211; (default: &#8220;auto&#8221;)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.VSpherePair.espressopp.interaction.VerletListVSpherePair">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListVSpherePair</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.VSpherePair.espressopp.interaction.VerletListVSpherePair" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.VSpherePair.espressopp.interaction.VerletListVSpherePair.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListVSpherePair.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.VSpherePair.espressopp.interaction.VerletListVSpherePair.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.VSpherePair.espressopp.interaction.VerletListVSpherePair.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListVSpherePair.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.VSpherePair.espressopp.interaction.VerletListVSpherePair.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.VSpherePair.espressopp.interaction.VerletListVSpherePair.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListVSpherePair.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.VSpherePair.espressopp.interaction.VerletListVSpherePair.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.VSpherePair.VSpherePair">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.VSpherePair.</code><code class="descname">VSpherePair</code><a class="headerlink" href="#espressopp.interaction.VSpherePair.VSpherePair" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Lennard-Jones potential.</p>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.interaction.TersoffTripleTerm.html">previous</a>

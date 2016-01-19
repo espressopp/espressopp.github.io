@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.analysis.PotentialEnergy &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="analysis" href="analysis.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.analysis.Pressure.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.analysis.ParticleRadiusDistribution.html" /> 
+    <link rel="next" title="espressopp.analysis.Pressure" href="espressopp.analysis.Pressure.html" />
+    <link rel="prev" title="espressopp.analysis.ParticleRadiusDistribution" href="espressopp.analysis.ParticleRadiusDistribution.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,31 @@
              <a style="float:right;"  href="espressopp.analysis.Pressure.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.analysis.PotentialEnergy"></span><div class="section" id="espressopp-analysis-potentialenergy">
+<h1><strong>espressopp.analysis.PotentialEnergy</strong><a class="headerlink" href="#espressopp-analysis-potentialenergy" title="Permalink to this headline">¶</a></h1>
+<p>The object that computes potential energy of different interactions.</p>
+<dl class="function">
+<dt id="espressopp.analysis.PotentialEnergy.espressopp.analysis.PotentialEnergy">
+<code class="descclassname">espressopp.analysis.</code><code class="descname">PotentialEnergy</code><span class="sig-paren">(</span><em>system</em>, <em>potential</em>, <em>compute_method=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.PotentialEnergy.espressopp.analysis.PotentialEnergy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; The system object</li>
+<li><strong>interaction</strong> (<a class="reference internal" href="espressopp.interaction.Interaction.html#module-espressopp.interaction.Interaction" title="espressopp.interaction.Interaction"><em>espressopp.interaction.Interaction</em></a>) &#8211; The interaction object.</li>
+<li><strong>compute_method</strong> (<em>str</em>) &#8211; If set to <cite>ALL</cite> (default) then compute total potential energies,
+if set to <cite>CG</cite> then compute only coarse-grained part (if feasible),
+if set to <cite>AT</cite> then compute only atomitic part of potential energy.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.analysis.ParticleRadiusDistribution.html">previous</a>

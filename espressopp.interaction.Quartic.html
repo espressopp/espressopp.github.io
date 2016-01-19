@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.interaction.Quartic &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="interaction" href="interaction.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.interaction.ReactionFieldGeneralized.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.interaction.PotentialVSpherePair.html" /> 
+    <link rel="next" title="espressopp.interaction.ReactionFieldGeneralized" href="espressopp.interaction.ReactionFieldGeneralized.html" />
+    <link rel="prev" title="espressopp.interaction.PotentialVSpherePair" href="espressopp.interaction.PotentialVSpherePair.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,101 @@
              <a style="float:right;"  href="espressopp.interaction.ReactionFieldGeneralized.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.interaction.Quartic"></span><div class="section" id="espressopp-interaction-quartic">
+<h1><strong>espressopp.interaction.Quartic</strong><a class="headerlink" href="#espressopp-interaction-quartic" title="Permalink to this headline">¶</a></h1>
+<p>This class provides methods to compute forces and energies of
+the Quartic potential.</p>
+<div class="math">
+<p><img src="images/math/390325a4dc254544d66b3241b7fdbb4b47201b59.png" alt="U=\frac{K}{4} \left(d^2 - r_0^2 \right)^2"/></p>
+</div><dl class="function">
+<dt id="espressopp.interaction.Quartic.espressopp.interaction.Quartic">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">Quartic</code><span class="sig-paren">(</span><em>K</em>, <em>r0</em>, <em>cutoff</em>, <em>shift</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Quartic.espressopp.interaction.Quartic" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>K</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
+<li><strong>r0</strong> (<em>real</em>) &#8211; (default: 0.0)</li>
+<li><strong>cutoff</strong> &#8211; (default: infinity)</li>
+<li><strong>shift</strong> (<em>real</em>) &#8211; (default: 0.0)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Quartic.espressopp.interaction.FixedPairListQuartic">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedPairListQuartic</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Quartic.espressopp.interaction.FixedPairListQuartic" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>vl</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Quartic.espressopp.interaction.FixedPairListQuartic.getFixedPairList">
+<code class="descclassname">espressopp.interaction.FixedPairListQuartic.</code><code class="descname">getFixedPairList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Quartic.espressopp.interaction.FixedPairListQuartic.getFixedPairList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Quartic.espressopp.interaction.FixedPairListQuartic.setFixedPairList">
+<code class="descclassname">espressopp.interaction.FixedPairListQuartic.</code><code class="descname">setFixedPairList</code><span class="sig-paren">(</span><em>fixedpairlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Quartic.espressopp.interaction.FixedPairListQuartic.setFixedPairList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedpairlist</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Quartic.espressopp.interaction.FixedPairListQuartic.setPotential">
+<code class="descclassname">espressopp.interaction.FixedPairListQuartic.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Quartic.espressopp.interaction.FixedPairListQuartic.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.Quartic.Quartic">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.Quartic.</code><code class="descname">Quartic</code><a class="headerlink" href="#espressopp.interaction.Quartic.Quartic" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Quartic potential.</p>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.interaction.PotentialVSpherePair.html">previous</a>

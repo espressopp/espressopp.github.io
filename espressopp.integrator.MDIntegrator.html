@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.integrator.MDIntegrator &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="integrator" href="integrator.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.integrator.Settle.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.integrator.LangevinThermostat1D.html" /> 
+    <link rel="next" title="espressopp.integrator.Settle" href="espressopp.integrator.Settle.html" />
+    <link rel="prev" title="espressopp.integrator.LangevinThermostat1D" href="espressopp.integrator.LangevinThermostat1D.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,68 @@
              <a style="float:right;"  href="espressopp.integrator.Settle.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.integrator.MDIntegrator"></span><div class="section" id="espressopp-integrator-mdintegrator">
+<h1><strong>espressopp.integrator.MDIntegrator</strong><a class="headerlink" href="#espressopp-integrator-mdintegrator" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="espressopp.integrator.MDIntegrator.espressopp.integrator.MDIntegrator.addExtension">
+<code class="descclassname">espressopp.integrator.MDIntegrator.</code><code class="descname">addExtension</code><span class="sig-paren">(</span><em>extension</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.MDIntegrator.espressopp.integrator.MDIntegrator.addExtension" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>extension</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.integrator.MDIntegrator.espressopp.integrator.MDIntegrator.getExtension">
+<code class="descclassname">espressopp.integrator.MDIntegrator.</code><code class="descname">getExtension</code><span class="sig-paren">(</span><em>k</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.MDIntegrator.espressopp.integrator.MDIntegrator.getExtension" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>k</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.integrator.MDIntegrator.espressopp.integrator.MDIntegrator.getNumberOfExtensions">
+<code class="descclassname">espressopp.integrator.MDIntegrator.</code><code class="descname">getNumberOfExtensions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.MDIntegrator.espressopp.integrator.MDIntegrator.getNumberOfExtensions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.integrator.MDIntegrator.espressopp.integrator.MDIntegrator.run">
+<code class="descclassname">espressopp.integrator.MDIntegrator.</code><code class="descname">run</code><span class="sig-paren">(</span><em>niter</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.MDIntegrator.espressopp.integrator.MDIntegrator.run" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>niter</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.integrator.LangevinThermostat1D.html">previous</a>

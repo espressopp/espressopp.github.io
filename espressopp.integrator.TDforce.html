@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.integrator.TDforce &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="integrator" href="integrator.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.integrator.VelocityVerlet.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.integrator.StochasticVelocityRescaling.html" /> 
+    <link rel="next" title="espressopp.integrator.VelocityVerlet" href="espressopp.integrator.VelocityVerlet.html" />
+    <link rel="prev" title="espressopp.integrator.StochasticVelocityRescaling" href="espressopp.integrator.StochasticVelocityRescaling.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,34 @@
              <a style="float:right;"  href="espressopp.integrator.VelocityVerlet.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.integrator.TDforce"></span><div class="section" id="espressopp-integrator-tdforce">
+<h1><strong>espressopp.integrator.TDforce</strong><a class="headerlink" href="#espressopp-integrator-tdforce" title="Permalink to this headline">¶</a></h1>
+<p>Example - how to turn on thermodynamic force</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">fthd</span><span class="o">=</span><span class="s">&quot;tabletf.xvg&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">thdforce</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">TDforce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">verletlist</span><span class="p">)</span> <span class="c">#info about centre and shape of adress region come from the verletlist. info about size of adress region not needed, tabulated file tabletf.xvg should be appropriate for the region size</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">thdforce</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">itype</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="s">&quot;tabletf.xvg&quot;</span><span class="p">,</span><span class="nb">type</span><span class="o">=</span><span class="n">typeCG</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">thdforce</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt id="espressopp.integrator.TDforce.espressopp.integrator.TDforce">
+<code class="descclassname">espressopp.integrator.</code><code class="descname">TDforce</code><span class="sig-paren">(</span><em>system</em>, <em>verletlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.TDforce.espressopp.integrator.TDforce" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>verletlist</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.integrator.StochasticVelocityRescaling.html">previous</a>

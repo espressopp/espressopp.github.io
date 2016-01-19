@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>DomainDecompositionAdress - Object &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="storage" href="storage.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.storage.DomainDecompositionNonBlocking.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.storage.DomainDecomposition.html" /> 
+    <link rel="next" title="espressopp.storage.DomainDecompositionNonBlocking" href="espressopp.storage.DomainDecompositionNonBlocking.html" />
+    <link rel="prev" title="espressopp.storage.DomainDecomposition" href="espressopp.storage.DomainDecomposition.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,37 @@
              <a style="float:right;"  href="espressopp.storage.DomainDecompositionNonBlocking.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.storage.DomainDecompositionAdress"></span><div class="section" id="domaindecompositionadress-object">
+<h1><strong>DomainDecompositionAdress</strong> - Object<a class="headerlink" href="#domaindecompositionadress-object" title="Permalink to this headline">¶</a></h1>
+<p>The DomainDecompositionAdress is the Domain Decomposition for AdResS and H-
+AdResS simulations. It makes sure that tuples (i.e. a coarse-grained particle
+and its corresponding atomistic particles) are always stored together on one CPU.
+When setting DomainDecompositionAdress you have to provide the system as well as
+the nodegrid and the cellgrid.</p>
+<p>Example - setting DomainDecompositionAdress:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">DomainDecompositionAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">nodeGrid</span><span class="p">,</span> <span class="n">cellGrid</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt id="espressopp.storage.DomainDecompositionAdress.espressopp.storage.DomainDecompositionAdress">
+<code class="descclassname">espressopp.storage.</code><code class="descname">DomainDecompositionAdress</code><span class="sig-paren">(</span><em>system</em>, <em>nodeGrid</em>, <em>cellGrid</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.DomainDecompositionAdress.espressopp.storage.DomainDecompositionAdress" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>nodeGrid</strong> &#8211; </li>
+<li><strong>cellGrid</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.storage.DomainDecomposition.html">previous</a>

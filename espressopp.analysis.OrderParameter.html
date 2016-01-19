@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.analysis.OrderParameter &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="analysis" href="analysis.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.analysis.ParticleRadiusDistribution.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.analysis.Observable.html" /> 
+    <link rel="next" title="espressopp.analysis.ParticleRadiusDistribution" href="espressopp.analysis.ParticleRadiusDistribution.html" />
+    <link rel="prev" title="espressopp.analysis.Observable" href="espressopp.analysis.Observable.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,68 @@
              <a style="float:right;"  href="espressopp.analysis.ParticleRadiusDistribution.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.analysis.OrderParameter"></span><div class="section" id="espressopp-analysis-orderparameter">
+<h1><strong>espressopp.analysis.OrderParameter</strong><a class="headerlink" href="#espressopp-analysis-orderparameter" title="Permalink to this headline">¶</a></h1>
+<p>from espressopp.esutil import cxxinit
+from espressopp import pmi</p>
+<p>from espressopp.analysis.AnalysisBase import *
+from _espressopp import analysis_OrderParameter</p>
+<dl class="docutils">
+<dt>class OrderParameterLocal(AnalysisBaseLocal, analysis_OrderParameter):</dt>
+<dd><p class="first">&#8216;The (local) compute of temperature.&#8217;
+def __init__(self, system, cutoff, angular_momentum=6,</p>
+<blockquote class="last">
+<div><blockquote>
+<div>do_cluster_analysis=False, include_surface_particles=False,
+ql_low=-1.0, ql_high=1.0):</div></blockquote>
+<dl class="docutils">
+<dt>if not pmi._PMIComm or pmi._MPIcomm.rank in pmi._PMIComm.getMPIcpugroup():</dt>
+<dd><dl class="first last docutils">
+<dt>cxxinit(self, analysis_OrderParameter, system, cutoff, angular_momentum,</dt>
+<dd>do_cluster_analysis, include_surface_particles,
+ql_low, ql_high)</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+</dd>
+<dt>if pmi.isController :</dt>
+<dd><dl class="first last docutils">
+<dt>class OrderParameter(AnalysisBase):</dt>
+<dd><p class="first">__metaclass__ = pmi.Proxy
+pmiproxydefs = dict(</p>
+<blockquote>
+<div>cls =  &#8216;espressopp.analysis.OrderParameterLocal&#8217;,
+pmiproperty = [ &#8216;cutoff&#8217;, &#8216;l&#8217; ]</div></blockquote>
+<p class="last">)</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="function">
+<dt id="espressopp.analysis.OrderParameter.espressopp.analysis.OrderParameter">
+<code class="descclassname">espressopp.analysis.</code><code class="descname">OrderParameter</code><span class="sig-paren">(</span><em>system</em>, <em>cutoff</em>, <em>angular_momentum</em>, <em>do_cluster_analysis</em>, <em>include_surface_particles</em>, <em>ql_low</em>, <em>ql_high</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.OrderParameter.espressopp.analysis.OrderParameter" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>cutoff</strong> &#8211; </li>
+<li><strong>angular_momentum</strong> (<em>int</em>) &#8211; (default: 6)</li>
+<li><strong>do_cluster_analysis</strong> &#8211; (default: False)</li>
+<li><strong>include_surface_particles</strong> &#8211; (default: False)</li>
+<li><strong>ql_low</strong> &#8211; (default: -1.0)</li>
+<li><strong>ql_high</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.analysis.Observable.html">previous</a>

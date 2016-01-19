@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>System - Object &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="ESPResSo++ User Interface - Class Description" href="classdescription.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.bc.BC.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.pmi.html" /> 
+    <link rel="next" title="BC - Boundary Condition Object" href="espressopp.bc.BC.html" />
+    <link rel="prev" title="PMI - Parallel Method Invocation" href="espressopp.pmi.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,127 @@
              <a style="float:right;"  href="espressopp.bc.BC.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.System"></span><div class="section" id="system-object">
+<h1><strong>System</strong> - Object<a class="headerlink" href="#system-object" title="Permalink to this headline">¶</a></h1>
+<p>The main purpose of this class is to store pointers to some
+important other classes and thus make them available to C++.
+In a way the System class can be viewed as a container for
+system wide global variables.
+If you need to run more than one system at the same time you
+can combine several systems with the help of the Multisystem
+class.</p>
+<div class="section" id="in-detail-the-system-class-holds-pointers-to">
+<h2>In detail the System class holds pointers to:<a class="headerlink" href="#in-detail-the-system-class-holds-pointers-to" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>the <cite>storage</cite> (e.g. DomainDecomposition)</li>
+<li>the boundary conditions <cite>bc</cite> for the system (e.g. OrthorhombicBC)</li>
+<li>a random number generator <cite>rng</cite> which is for example used by a thermostat</li>
+<li>the <cite>skin</cite> which is needed for the Verlet lists and the cell grid</li>
+<li>a list of short range interactions that apply to the system these
+interactions are added with the <cite>addInteraction()</cite> method of the System</li>
+</ul>
+<p>Example (not complete):</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">System</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span><span class="o">.</span><span class="n">bc</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">OrthorhombicBC</span><span class="p">(</span><span class="n">rng</span><span class="p">,</span> <span class="n">boxsize</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span><span class="o">.</span><span class="n">rng</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span><span class="o">.</span><span class="n">skin</span> <span class="o">=</span> <span class="mf">0.4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">interLJ</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt id="espressopp.System.espressopp.System">
+<code class="descclassname">espressopp.</code><code class="descname">System</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="espressopp.System.espressopp.System.addInteraction">
+<code class="descclassname">espressopp.System.</code><code class="descname">addInteraction</code><span class="sig-paren">(</span><em>interaction</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.addInteraction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>interaction</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.System.espressopp.System.getInteraction">
+<code class="descclassname">espressopp.System.</code><code class="descname">getInteraction</code><span class="sig-paren">(</span><em>number</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.getInteraction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>number</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.System.espressopp.System.getNumberOfInteractions">
+<code class="descclassname">espressopp.System.</code><code class="descname">getNumberOfInteractions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.getNumberOfInteractions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.System.espressopp.System.removeInteraction">
+<code class="descclassname">espressopp.System.</code><code class="descname">removeInteraction</code><span class="sig-paren">(</span><em>number</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.removeInteraction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>number</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.System.espressopp.System.scaleVolume">
+<code class="descclassname">espressopp.System.</code><code class="descname">scaleVolume</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.scaleVolume" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>*args</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.System.espressopp.System.setTrace">
+<code class="descclassname">espressopp.System.</code><code class="descname">setTrace</code><span class="sig-paren">(</span><em>switch</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.setTrace" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>switch</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
 
             
              <a href="espressopp.pmi.html">previous</a>

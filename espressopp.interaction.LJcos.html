@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.interaction.LJcos &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="interaction" href="interaction.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.interaction.LennardJones.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.interaction.Interaction.html" /> 
+    <link rel="next" title="espressopp.interaction.LennardJones" href="espressopp.interaction.LennardJones.html" />
+    <link rel="prev" title="espressopp.interaction.Interaction" href="espressopp.interaction.Interaction.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,293 @@
              <a style="float:right;"  href="espressopp.interaction.LennardJones.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.interaction.LJcos"></span><div class="section" id="espressopp-interaction-ljcos">
+<h1><strong>espressopp.interaction.LJcos</strong><a class="headerlink" href="#espressopp-interaction-ljcos" title="Permalink to this headline">¶</a></h1>
+<p>if <img class="math" src="images/math/c54bff462376903a360409c0857865551598db64.png" alt="r^2 \leq border_{pot}"/>, then:</p>
+<div class="math">
+<p><img src="images/math/6316d0158fd3e603c2055eeb28298f5c6461c1d9.png" alt="U = 4(\frac{1}{r^{12}} - \frac{1}{r^6}) + 1 - \phi"/></p>
+</div><p>else:</p>
+<div class="math">
+<p><img src="images/math/4260176e4d63a13d147fe9006c5590343159351a.png" alt="U = \frac{1}{2}\phi (cos(\alpha r^2+\beta) - 1)"/></p>
+</div><dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.LJcos">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">LJcos</code><span class="sig-paren">(</span><em>phi</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.LJcos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>phi</strong> (<em>real</em>) &#8211; (default: 1.0)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.VerletListLJcos">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListLJcos</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.VerletListLJcos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.VerletListLJcos.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListLJcos.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.VerletListLJcos.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.VerletListLJcos.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListLJcos.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.VerletListLJcos.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.VerletListLJcos.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListLJcos.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.VerletListLJcos.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.VerletListAdressLJcos">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressLJcos</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.VerletListAdressLJcos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> &#8211; </li>
+<li><strong>fixedtupleList</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.VerletListAdressLJcos.setPotentialAT">
+<code class="descclassname">espressopp.interaction.VerletListAdressLJcos.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.VerletListAdressLJcos.setPotentialAT" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.VerletListAdressLJcos.setPotentialCG">
+<code class="descclassname">espressopp.interaction.VerletListAdressLJcos.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.VerletListAdressLJcos.setPotentialCG" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.VerletListHadressLJcos">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressLJcos</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.VerletListHadressLJcos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> &#8211; </li>
+<li><strong>fixedtupleList</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.VerletListHadressLJcos.setPotentialAT">
+<code class="descclassname">espressopp.interaction.VerletListHadressLJcos.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.VerletListHadressLJcos.setPotentialAT" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.VerletListHadressLJcos.setPotentialCG">
+<code class="descclassname">espressopp.interaction.VerletListHadressLJcos.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.VerletListHadressLJcos.setPotentialCG" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.CellListLJcos">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">CellListLJcos</code><span class="sig-paren">(</span><em>stor</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.CellListLJcos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stor</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.CellListLJcos.setPotential">
+<code class="descclassname">espressopp.interaction.CellListLJcos.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.CellListLJcos.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.FixedPairListLJcos">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedPairListLJcos</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.FixedPairListLJcos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>vl</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.FixedPairListLJcos.getFixedPairList">
+<code class="descclassname">espressopp.interaction.FixedPairListLJcos.</code><code class="descname">getFixedPairList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.FixedPairListLJcos.getFixedPairList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.FixedPairListLJcos.setFixedPairList">
+<code class="descclassname">espressopp.interaction.FixedPairListLJcos.</code><code class="descname">setFixedPairList</code><span class="sig-paren">(</span><em>fixedpairlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.FixedPairListLJcos.setFixedPairList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedpairlist</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LJcos.espressopp.interaction.FixedPairListLJcos.setPotential">
+<code class="descclassname">espressopp.interaction.FixedPairListLJcos.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LJcos.espressopp.interaction.FixedPairListLJcos.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.LJcos.LJcos">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.LJcos.</code><code class="descname">LJcos</code><a class="headerlink" href="#espressopp.interaction.LJcos.LJcos" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Lennard-Jones potential.</p>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.interaction.Interaction.html">previous</a>

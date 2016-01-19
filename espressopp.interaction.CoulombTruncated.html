@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.interaction.CoulombTruncated &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="interaction" href="interaction.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.interaction.DihedralHarmonicCos.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.interaction.CoulombRSpace.html" /> 
+    <link rel="next" title="espressopp.interaction.DihedralHarmonicCos" href="espressopp.interaction.DihedralHarmonicCos.html" />
+    <link rel="prev" title="CoulombRSpace - Coulomb potential and interaction Objects (R space part)" href="espressopp.interaction.CoulombRSpace.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,122 @@
              <a style="float:right;"  href="espressopp.interaction.DihedralHarmonicCos.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.interaction.CoulombTruncated"></span><div class="section" id="espressopp-interaction-coulombtruncated">
+<h1><strong>espressopp.interaction.CoulombTruncated</strong><a class="headerlink" href="#espressopp-interaction-coulombtruncated" title="Permalink to this headline">¶</a></h1>
+<div class="math">
+<p><img src="images/math/a33c0874956f6e550162ce2801e339fe54f028fa.png" alt="U = k"/></p>
+</div><p>rac{q_iq_j}{d_{ij}}</p>
+<p>where <cite>k</cite> is the user-supplied prefactor, <cite>q_i</cite> is the charge of particle <cite>i</cite>, and <cite>d_{ij}</cite> is interparticle distance</p>
+<p>In this interaction potential, a different charge can be associated with each particle. For a truncated Coulomb interaction potential where only one <cite>q_iq_j</cite> value is specified for all interactions, see CoulombTruncatedUniqueCharge.</p>
+<dl class="function">
+<dt id="espressopp.interaction.CoulombTruncated.espressopppp.interaction.VerletListCoulombTruncated">
+<code class="descclassname">espressopppp.interaction.</code><code class="descname">VerletListCoulombTruncated</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.espressopppp.interaction.VerletListCoulombTruncated" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.CoulombTruncated.espressopppp.interaction.VerletListCoulombTruncated.getPotential">
+<code class="descclassname">espressopppp.interaction.VerletListCoulombTruncated.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.espressopppp.interaction.VerletListCoulombTruncated.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.CoulombTruncated.espressopppp.interaction.VerletListCoulombTruncated.setPotential">
+<code class="descclassname">espressopppp.interaction.VerletListCoulombTruncated.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.espressopppp.interaction.VerletListCoulombTruncated.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.CoulombTruncated.espressopppp.interaction.FixedPairListTypesCoulombTruncated">
+<code class="descclassname">espressopppp.interaction.</code><code class="descname">FixedPairListTypesCoulombTruncated</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.espressopppp.interaction.FixedPairListTypesCoulombTruncated" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>vl</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.CoulombTruncated.espressopppp.interaction.FixedPairListTypesCoulombTruncated.setPotential">
+<code class="descclassname">espressopppp.interaction.FixedPairListTypesCoulombTruncated.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.espressopppp.interaction.FixedPairListTypesCoulombTruncated.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>potential</strong> &#8211; </li>
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.CoulombTruncated.CoulombTruncated">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.CoulombTruncated.</code><code class="descname">CoulombTruncated</code><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.CoulombTruncated" title="Permalink to this definition">¶</a></dt>
+<dd><p>The CoulombTruncated potential.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.CoulombTruncated.CoulombTruncatedLocal">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.CoulombTruncated.</code><code class="descname">CoulombTruncatedLocal</code><span class="sig-paren">(</span><em>prefactor=1.0</em>, <em>cutoff=inf</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.CoulombTruncatedLocal" title="Permalink to this definition">¶</a></dt>
+<dd><p>The (local) CoulombTruncated potential.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.CoulombTruncated.FixedPairListTypesCoulombTruncatedLocal">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.CoulombTruncated.</code><code class="descname">FixedPairListTypesCoulombTruncatedLocal</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.FixedPairListTypesCoulombTruncatedLocal" title="Permalink to this definition">¶</a></dt>
+<dd><p>The (local) CoulombTruncated interaction using FixedPair lists with types.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.CoulombTruncated.VerletListCoulombTruncatedLocal">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.CoulombTruncated.</code><code class="descname">VerletListCoulombTruncatedLocal</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.VerletListCoulombTruncatedLocal" title="Permalink to this definition">¶</a></dt>
+<dd><p>The (local) CoulombTruncated interaction using Verlet lists.</p>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.interaction.CoulombRSpace.html">previous</a>

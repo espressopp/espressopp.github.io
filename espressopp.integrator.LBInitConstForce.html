@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>LBInitConstForce - handles constant (gravity-like) external force &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="integrator" href="integrator.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.integrator.LBInitPeriodicForce.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.integrator.LBInit.html" /> 
+    <link rel="next" title="LBInitPeriodicForce - handles external periodic forces" href="espressopp.integrator.LBInitPeriodicForce.html" />
+    <link rel="prev" title="LBInit - abstract class for LatticeBoltzmann initialization and external force management" href="espressopp.integrator.LBInit.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,42 @@
              <a style="float:right;"  href="espressopp.integrator.LBInitPeriodicForce.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.integrator.LBInitConstForce"></span><div class="section" id="lbinitconstforce-handles-constant-gravity-like-external-force">
+<h1><strong>LBInitConstForce</strong> - handles constant (gravity-like) external force<a class="headerlink" href="#lbinitconstforce-handles-constant-gravity-like-external-force" title="Permalink to this headline">¶</a></h1>
+<p>This class sets or adds a constant (gravity-like) external force to the LB-fluid. At first, one has to create an instance. Only after it one may set or add this force to the system.</p>
+<blockquote>
+<div><p>Example to set the extenal force to <img class="math" src="images/math/039fc3595b25c84eb2fe2fcea55cc921c3fd8e49.png" alt="(0., 0., 0.0005)"/>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce1</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce1</span><span class="o">.</span><span class="n">setForce</span><span class="p">(</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.0005</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># a vector sets the external body force directly in lb-units</span>
+</pre></div>
+</div>
+<p>Example to add an extenal force of <img class="math" src="images/math/969ebd40641e1db3caee1c51aff971e56bb4e48c.png" alt="(0.0001, 0., 0.)"/> to the existing forces:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce2</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce2</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">0.0001</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># a vector sets the external body force directly in lb-units</span>
+</pre></div>
+</div>
+</div></blockquote>
+<dl class="function">
+<dt id="espressopp.integrator.LBInitConstForce.espressopp.integrator.LBInitConstForce">
+<code class="descclassname">espressopp.integrator.</code><code class="descname">LBInitConstForce</code><span class="sig-paren">(</span><em>system</em>, <em>latticeboltzmann</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LBInitConstForce.espressopp.integrator.LBInitConstForce" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>latticeboltzmann</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.integrator.LBInit.html">previous</a>

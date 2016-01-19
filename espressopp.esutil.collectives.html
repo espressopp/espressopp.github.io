@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.esutil.collectives &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="esutil" href="esutil.html" />
     <link rel="next" title="external" href="external.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.esutil.UniformOnSphere.html" /> 
+    <link rel="prev" title="espressopp.esutil.UniformOnSphere" href="espressopp.esutil.UniformOnSphere.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,35 @@
              <a style="float:right;"  href="external.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.esutil.collectives"></span><div class="section" id="espressopp-esutil-collectives">
+<h1><strong>espressopp.esutil.collectives</strong><a class="headerlink" href="#espressopp-esutil-collectives" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="espressopp.esutil.collectives.espressopp.esutil.locateItem">
+<code class="descclassname">espressopp.esutil.</code><code class="descname">locateItem</code><span class="sig-paren">(</span><em>here</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.esutil.collectives.espressopp.esutil.locateItem" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>here</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.esutil.collectives.locateItem">
+<code class="descclassname">espressopp.esutil.collectives.</code><code class="descname">locateItem</code><span class="sig-paren">(</span><em>here</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.esutil.collectives.locateItem" title="Permalink to this definition">¶</a></dt>
+<dd><p>locate the node with here=True (e.g. indicating that data of a
+distributed storage is on the local node). This is a collective
+SPMD function.</p>
+<p>here is a boolean value, which should be True on at most one
+node. Returns on the controller the number of the node with
+here=True, or an KeyError exception if no node had the item,
+i.e. had here=True.</p>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.esutil.UniformOnSphere.html">previous</a>

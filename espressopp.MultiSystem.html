@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.MultiSystem &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="espressopp" href="espressopp.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.ParallelTempering.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.Int3D.html" /> 
+    <link rel="next" title="espressopp.ParallelTempering" href="espressopp.ParallelTempering.html" />
+    <link rel="prev" title="espressopp.Int3D" href="espressopp.Int3D.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,134 @@
              <a style="float:right;"  href="espressopp.ParallelTempering.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.MultiSystem"></span><div class="section" id="espressopp-multisystem">
+<h1><strong>espressopp.MultiSystem</strong><a class="headerlink" href="#espressopp-multisystem" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="espressopp.MultiSystem.espressopp.MultiSystem">
+<code class="descclassname">espressopp.</code><code class="descname">MultiSystem</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.MultiSystem.espressopp.MultiSystem" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="espressopp.MultiSystem.espressopp.MultiSystem.beginSystemDefinition">
+<code class="descclassname">espressopp.MultiSystem.</code><code class="descname">beginSystemDefinition</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.MultiSystem.espressopp.MultiSystem.beginSystemDefinition" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.MultiSystem.espressopp.MultiSystem.runAnalysisNPart">
+<code class="descclassname">espressopp.MultiSystem.</code><code class="descname">runAnalysisNPart</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.MultiSystem.espressopp.MultiSystem.runAnalysisNPart" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.MultiSystem.espressopp.MultiSystem.runAnalysisPotential">
+<code class="descclassname">espressopp.MultiSystem.</code><code class="descname">runAnalysisPotential</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.MultiSystem.espressopp.MultiSystem.runAnalysisPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.MultiSystem.espressopp.MultiSystem.runAnalysisTemperature">
+<code class="descclassname">espressopp.MultiSystem.</code><code class="descname">runAnalysisTemperature</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.MultiSystem.espressopp.MultiSystem.runAnalysisTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.MultiSystem.espressopp.MultiSystem.runIntegrator">
+<code class="descclassname">espressopp.MultiSystem.</code><code class="descname">runIntegrator</code><span class="sig-paren">(</span><em>niter</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.MultiSystem.espressopp.MultiSystem.runIntegrator" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>niter</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.MultiSystem.espressopp.MultiSystem.setAnalysisNPart">
+<code class="descclassname">espressopp.MultiSystem.</code><code class="descname">setAnalysisNPart</code><span class="sig-paren">(</span><em>npart</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.MultiSystem.espressopp.MultiSystem.setAnalysisNPart" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>npart</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.MultiSystem.espressopp.MultiSystem.setAnalysisPotential">
+<code class="descclassname">espressopp.MultiSystem.</code><code class="descname">setAnalysisPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.MultiSystem.espressopp.MultiSystem.setAnalysisPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.MultiSystem.espressopp.MultiSystem.setAnalysisTemperature">
+<code class="descclassname">espressopp.MultiSystem.</code><code class="descname">setAnalysisTemperature</code><span class="sig-paren">(</span><em>temperature</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.MultiSystem.espressopp.MultiSystem.setAnalysisTemperature" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>temperature</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.MultiSystem.espressopp.MultiSystem.setIntegrator">
+<code class="descclassname">espressopp.MultiSystem.</code><code class="descname">setIntegrator</code><span class="sig-paren">(</span><em>integrator</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.MultiSystem.espressopp.MultiSystem.setIntegrator" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>integrator</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.Int3D.html">previous</a>

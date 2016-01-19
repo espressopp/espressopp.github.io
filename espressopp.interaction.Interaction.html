@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.interaction.Interaction &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="interaction" href="interaction.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.interaction.LJcos.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.interaction.HarmonicUnique.html" /> 
+    <link rel="next" title="espressopp.interaction.LJcos" href="espressopp.interaction.LJcos.html" />
+    <link rel="prev" title="espressopp.interaction.HarmonicUnique" href="espressopp.interaction.HarmonicUnique.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,76 @@
              <a style="float:right;"  href="espressopp.interaction.LJcos.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.interaction.Interaction"></span><div class="section" id="espressopp-interaction-interaction">
+<h1><strong>espressopp.interaction.Interaction</strong><a class="headerlink" href="#espressopp-interaction-interaction" title="Permalink to this headline">¶</a></h1>
+<p>This is an abstract class, only needed to be inherited from.</p>
+<dl class="function">
+<dt id="espressopp.interaction.Interaction.espressopp.interaction.Interaction.bondType">
+<code class="descclassname">espressopp.interaction.Interaction.</code><code class="descname">bondType</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Interaction.espressopp.interaction.Interaction.bondType" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Interaction.espressopp.interaction.Interaction.computeEnergy">
+<code class="descclassname">espressopp.interaction.Interaction.</code><code class="descname">computeEnergy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Interaction.espressopp.interaction.Interaction.computeEnergy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Interaction.espressopp.interaction.Interaction.computeEnergyAA">
+<code class="descclassname">espressopp.interaction.Interaction.</code><code class="descname">computeEnergyAA</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Interaction.espressopp.interaction.Interaction.computeEnergyAA" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Interaction.espressopp.interaction.Interaction.computeEnergyCG">
+<code class="descclassname">espressopp.interaction.Interaction.</code><code class="descname">computeEnergyCG</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Interaction.espressopp.interaction.Interaction.computeEnergyCG" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Interaction.espressopp.interaction.Interaction.computeVirial">
+<code class="descclassname">espressopp.interaction.Interaction.</code><code class="descname">computeVirial</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Interaction.espressopp.interaction.Interaction.computeVirial" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.interaction.HarmonicUnique.html">previous</a>

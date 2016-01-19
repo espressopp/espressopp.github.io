@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>LBOutputVzOfX - controls output of the velocity component profile &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="analysis" href="analysis.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.analysis.MaxPID.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.analysis.LBOutputVzInTime.html" /> 
+    <link rel="next" title="espressopp.analysis.MaxPID" href="espressopp.analysis.MaxPID.html" />
+    <link rel="prev" title="LBOutputVzInTime - controls output of the velocity component on a site in time" href="espressopp.analysis.LBOutputVzInTime.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,65 @@
              <a style="float:right;"  href="espressopp.analysis.MaxPID.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.analysis.LBOutputVzOfX"></span><div class="section" id="lboutputvzofx-controls-output-of-the-velocity-component-profile">
+<h1><strong>LBOutputVzOfX</strong> - controls output of the velocity component profile<a class="headerlink" href="#lboutputvzofx-controls-output-of-the-velocity-component-profile" title="Permalink to this headline">¶</a></h1>
+<p>Child class derived from the abstract class <a class="reference internal" href="espressopp.analysis.LBOutput.html#module-espressopp.analysis.LBOutput" title="espressopp.analysis.LBOutput"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutput</span></code></a>. 
+It computes and outputs simulation progress (finished step) and controls flux 
+conservation when using MD to LB coupling.</p>
+<dl class="function">
+<dt id="espressopp.analysis.LBOutputVzOfX.espressopp.analysis.LBOutputVzOfX">
+<code class="descclassname">espressopp.analysis.</code><code class="descname">LBOutputVzOfX</code><span class="sig-paren">(</span><em>system</em>, <em>latticeboltzmann</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.LBOutputVzOfX.espressopp.analysis.LBOutputVzOfX" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; system object defined earlier in the python-script</li>
+<li><strong>latticeboltzmann</strong> &#8211; lattice boltzmann object defined earlier in the python-script</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">this class should be called from external analysis class <a class="reference internal" href="espressopp.integrator.ExtAnalyze.html#module-espressopp.integrator.ExtAnalyze" title="espressopp.integrator.ExtAnalyze"><code class="xref py py-class docutils literal"><span class="pre">espressopp.integrator.ExtAnalyze</span></code></a>
+with specified periodicity of invokation and after this added to the integrator. See an example for details.</p>
+</div>
+<p>Example to call the profiler:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># initialise profiler (for example with the name outputVzOfX) with system and</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># lattice boltzmann objects as parameters:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">outputVzOfX</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">LBOutputVzOfX</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># initialise external analysis object (for example extAnalysisNum3) with</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># previously created profiler and periodicity of invocation in steps:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">extAnalysisNum3</span><span class="o">=</span><span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">outputVzOfX</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># add the external analysis object as an extension to the integrator</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">extAnalysisNum3</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt>
+<code class="descclassname">espressopp.analysis.</code><code class="descname">LBOutputVzOfX</code><span class="sig-paren">(</span><em>system</em>, <em>latticeboltzmann</em><span class="sig-paren">)</span></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>latticeboltzmann</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.analysis.LBOutputVzInTime.html">previous</a>

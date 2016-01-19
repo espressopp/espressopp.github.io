@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>DumpXYZ - IO Object &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="io" href="io.html" />
     <link rel="next" title="espressopp" href="espressopp.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.io.DumpGRO.html" /> 
+    <link rel="prev" title="DumpGRO - IO Object" href="espressopp.io.DumpGRO.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,90 @@
              <a style="float:right;"  href="espressopp.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.io.DumpXYZ"></span><div class="section" id="dumpxyz-io-object">
+<h1><strong>DumpXYZ</strong> - IO Object<a class="headerlink" href="#dumpxyz-io-object" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li><p class="first"><cite>dump()</cite>
+write configuration to trajectory XYZ file. By default filename is &#8220;out.xyz&#8221;, 
+coordinates are folded.</p>
+<p>Properties</p>
+</li>
+<li><p class="first"><cite>filename</cite>
+Name of trajectory file. By default trajectory file name is &#8220;out.xyz&#8221;</p>
+</li>
+<li><p class="first"><cite>unfolded</cite>
+False if coordinates are folded, True if unfolded. By default - False</p>
+</li>
+<li><p class="first"><cite>append</cite>
+True if new trajectory data is appended to existing trajectory file. By default - True</p>
+</li>
+<li><p class="first"><cite>length_factor</cite>
+If length dimension in current system is nm, and unit is 0.23 nm, for example, then
+length_factor should be 0.23</p>
+</li>
+<li><p class="first"><cite>length_unit</cite>
+It is length unit. Can be LJ, nm or A. By default - LJ</p>
+</li>
+</ul>
+<p>usage:</p>
+<p>writing down trajectory</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_xyz</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpXYZ</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s">&#39;trajectory.xyz&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">200</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">xyz</span><span class="o">.</span><span class="n">dump</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>writing down trajectory using ExtAnalyze extension</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_xyz</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpXYZ</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s">&#39;trajectory.xyz&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ext_analyze</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">dump_conf_xyz</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">ext_analyze</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Both exapmles will give the same result: 200 configurations in trajectory .xyz file.</p>
+<p>setting up length scale</p>
+<p>For example, the Lennard-Jones model for liquid argon with <img class="math" src="images/math/833bfea5566b2e667fa6879d88b83138e7796798.png" alt="\sigma=0.34 [nm]"/></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_xyz</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpXYZ</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s">&#39;trj.xyz&#39;</span><span class="p">,</span> <span class="n">unfolded</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">length_factor</span><span class="o">=</span><span class="mf">0.34</span><span class="p">,</span> <span class="n">length_unit</span><span class="o">=</span><span class="s">&#39;nm&#39;</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>will produce trj.xyz with in nanometers</p>
+<dl class="function">
+<dt id="espressopp.io.DumpXYZ.espressopp.io.DumpXYZ">
+<code class="descclassname">espressopp.io.</code><code class="descname">DumpXYZ</code><span class="sig-paren">(</span><em>system</em>, <em>integrator</em>, <em>filename</em>, <em>unfolded</em>, <em>length_factor</em>, <em>length_unit</em>, <em>append</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.io.DumpXYZ.espressopp.io.DumpXYZ" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>integrator</strong> &#8211; </li>
+<li><strong>filename</strong> &#8211; (default: &#8216;out.xyz&#8217;)</li>
+<li><strong>unfolded</strong> &#8211; (default: False)</li>
+<li><strong>length_factor</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
+<li><strong>length_unit</strong> &#8211; (default: &#8216;LJ&#8217;)</li>
+<li><strong>append</strong> &#8211; (default: True)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.io.DumpXYZ.espressopp.io.DumpXYZ.dump">
+<code class="descclassname">espressopp.io.DumpXYZ.</code><code class="descname">dump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.io.DumpXYZ.espressopp.io.DumpXYZ.dump" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.io.DumpGRO.html">previous</a>

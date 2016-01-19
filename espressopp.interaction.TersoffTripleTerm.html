@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.interaction.TersoffTripleTerm &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="interaction" href="interaction.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.interaction.VSpherePair.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.interaction.TersoffPairTerm.html" /> 
+    <link rel="next" title="espressopp.interaction.VSpherePair" href="espressopp.interaction.VSpherePair.html" />
+    <link rel="prev" title="espressopp.interaction.TersoffPairTerm" href="espressopp.interaction.TersoffPairTerm.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,135 @@
              <a style="float:right;"  href="espressopp.interaction.VSpherePair.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.interaction.TersoffTripleTerm"></span><div class="section" id="espressopp-interaction-tersofftripleterm">
+<h1><strong>espressopp.interaction.TersoffTripleTerm</strong><a class="headerlink" href="#espressopp-interaction-tersofftripleterm" title="Permalink to this headline">¶</a></h1>
+<p>This class provides methods to compute forces and energies of
+the Tersoff Triple Term potential.</p>
+<div class="math">
+<p><img src="images/math/ede3ec70f4cec99aee0407df9c10b5d8c6433b2b.png" alt="U = f_{C_j} f_A \left(1 + \left(\beta f_{C_k} \gamma \left(1 + \frac{c_2}{d_2} - \frac{c_2}{d_2 +   \left(\frac{r_{12} r_{32}}{|r_{12}| |{r_{32}}|} - cos(\theta_0)\right)^2}\right)
+\left(e^{\lambda_3 (|r_{12}| - |r_{32}|)}\right)^m\right)^n\right)^{-\frac{1}{2n}}"/></p>
+</div><dl class="function">
+<dt id="espressopp.interaction.TersoffTripleTerm.espressopp.interaction.VerletListTersoffTripleTerm">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListTersoffTripleTerm</code><span class="sig-paren">(</span><em>system</em>, <em>vl3</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TersoffTripleTerm.espressopp.interaction.VerletListTersoffTripleTerm" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>vl3</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TersoffTripleTerm.espressopp.interaction.VerletListTersoffTripleTerm.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListTersoffTripleTerm.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>type3</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TersoffTripleTerm.espressopp.interaction.VerletListTersoffTripleTerm.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>type3</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TersoffTripleTerm.espressopp.interaction.VerletListTersoffTripleTerm.getVerletListTriple">
+<code class="descclassname">espressopp.interaction.VerletListTersoffTripleTerm.</code><code class="descname">getVerletListTriple</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TersoffTripleTerm.espressopp.interaction.VerletListTersoffTripleTerm.getVerletListTriple" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TersoffTripleTerm.espressopp.interaction.VerletListTersoffTripleTerm.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListTersoffTripleTerm.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>type3</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TersoffTripleTerm.espressopp.interaction.VerletListTersoffTripleTerm.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>type3</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TersoffTripleTerm.espressopp.interaction.FixedTripleListTersoffTripleTerm">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedTripleListTersoffTripleTerm</code><span class="sig-paren">(</span><em>system</em>, <em>ftl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TersoffTripleTerm.espressopp.interaction.FixedTripleListTersoffTripleTerm" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>ftl</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TersoffTripleTerm.espressopp.interaction.FixedTripleListTersoffTripleTerm.getFixedTripleList">
+<code class="descclassname">espressopp.interaction.FixedTripleListTersoffTripleTerm.</code><code class="descname">getFixedTripleList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TersoffTripleTerm.espressopp.interaction.FixedTripleListTersoffTripleTerm.getFixedTripleList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TersoffTripleTerm.espressopp.interaction.FixedTripleListTersoffTripleTerm.setPotential">
+<code class="descclassname">espressopp.interaction.FixedTripleListTersoffTripleTerm.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>type3</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TersoffTripleTerm.espressopp.interaction.FixedTripleListTersoffTripleTerm.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> &#8211; </li>
+<li><strong>type2</strong> &#8211; </li>
+<li><strong>type3</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.interaction.TersoffPairTerm.html">previous</a>

@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>OrthorhombicBC - Object &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="bc" href="bc.html" />
     <link rel="next" title="check" href="check.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.bc.BC.html" /> 
+    <link rel="prev" title="BC - Boundary Condition Object" href="espressopp.bc.BC.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,50 @@
              <a style="float:right;"  href="check.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.bc.OrthorhombicBC"></span><div class="section" id="orthorhombicbc-object">
+<h1><strong>OrthorhombicBC</strong> - Object<a class="headerlink" href="#orthorhombicbc-object" title="Permalink to this headline">¶</a></h1>
+<p>Like all boundary condition objects, this class implements
+all the methods of the base class <strong>BC</strong> , which are described in detail
+in the documentation of the abstract class <strong>BC</strong>.</p>
+<p>The OrthorhombicBC class is responsible for the orthorhombic boundary condition.
+Currently only periodic boundary conditions are supported.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">boxsize</span> <span class="o">=</span> <span class="p">(</span><span class="n">Lx</span><span class="p">,</span> <span class="n">Ly</span><span class="p">,</span> <span class="n">Lz</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">bc</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">OrthorhombicBC</span><span class="p">(</span><span class="n">rng</span><span class="p">,</span> <span class="n">boxsize</span><span class="p">)</span> 
+</pre></div>
+</div>
+<dl class="function">
+<dt id="espressopp.bc.OrthorhombicBC.espressopp.bc.OrthorhombicBC">
+<code class="descclassname">espressopp.bc.</code><code class="descname">OrthorhombicBC</code><span class="sig-paren">(</span><em>rng</em>, <em>boxL</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.OrthorhombicBC.espressopp.bc.OrthorhombicBC" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>rng</strong> &#8211; </li>
+<li><strong>boxL</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.bc.OrthorhombicBC.espressopp.bc.OrthorhombicBC.setBoxL">
+<code class="descclassname">espressopp.bc.OrthorhombicBC.</code><code class="descname">setBoxL</code><span class="sig-paren">(</span><em>boxL</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.OrthorhombicBC.espressopp.bc.OrthorhombicBC.setBoxL" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>boxL</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.bc.BC.html">previous</a>

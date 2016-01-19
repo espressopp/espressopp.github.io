@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>AnalysisBase - abstract base class for analysis/measurement &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="analysis" href="analysis.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.analysis.Autocorrelation.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.analysis.AllParticlePos.html" /> 
+    <link rel="next" title="espressopp.analysis.Autocorrelation" href="espressopp.analysis.Autocorrelation.html" />
+    <link rel="prev" title="espressopp.analysis.AllParticlePos" href="espressopp.analysis.AllParticlePos.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,84 @@
              <a style="float:right;"  href="espressopp.analysis.Autocorrelation.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.analysis.AnalysisBase"></span><div class="section" id="analysisbase-abstract-base-class-for-analysis-measurement">
+<h1><strong>AnalysisBase</strong> - abstract base class for analysis/measurement<a class="headerlink" href="#analysisbase-abstract-base-class-for-analysis-measurement" title="Permalink to this headline">¶</a></h1>
+<p>This abstract base class provides the interface and some basic
+functionality for classes that do analysis or observable measurements</p>
+<p>It provides the following methods:</p>
+<dl class="function">
+<dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.compute">
+<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.compute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the instant value of the observable.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">a python list or a scalar</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getAverageValue">
+<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">getAverageValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getAverageValue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the average value for the observable and the standard deviation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">a python list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getNumberOfMeasurements">
+<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">getNumberOfMeasurements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getNumberOfMeasurements" title="Permalink to this definition">¶</a></dt>
+<dd><p>counts the number of measurements that have been performed (standalone or in integrator)
+does _not_ include measurements that have been done using &#8220;compute()&#8221;</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.performMeasurement">
+<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">performMeasurement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.performMeasurement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the observable and updates average and standard deviation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.reset">
+<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets average and standard deviation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.analysis.AllParticlePos.html">previous</a>

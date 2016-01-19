@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.interaction.DihedralHarmonicCos &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="interaction" href="interaction.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.interaction.DihedralHarmonicNCos.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.interaction.CoulombTruncated.html" /> 
+    <link rel="next" title="espressopp.interaction.DihedralHarmonicNCos" href="espressopp.interaction.DihedralHarmonicNCos.html" />
+    <link rel="prev" title="espressopp.interaction.CoulombTruncated" href="espressopp.interaction.CoulombTruncated.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,79 @@
              <a style="float:right;"  href="espressopp.interaction.DihedralHarmonicNCos.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.interaction.DihedralHarmonicCos"></span><div class="section" id="espressopp-interaction-dihedralharmoniccos">
+<h1><strong>espressopp.interaction.DihedralHarmonicCos</strong><a class="headerlink" href="#espressopp-interaction-dihedralharmoniccos" title="Permalink to this headline">¶</a></h1>
+<div class="math">
+<p><img src="images/math/2636b2ec19a7fb9e618a00c74f62497add4d550c.png" alt="U = K (cos(\phi) - cos(\phi_0))^2"/></p>
+</div><dl class="function">
+<dt id="espressopp.interaction.DihedralHarmonicCos.espressopp.interaction.DihedralHarmonicCos">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">DihedralHarmonicCos</code><span class="sig-paren">(</span><em>K</em>, <em>phi0</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralHarmonicCos.espressopp.interaction.DihedralHarmonicCos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>K</strong> (<em>real</em>) &#8211; (default: 0.0)</li>
+<li><strong>phi0</strong> (<em>real</em>) &#8211; (default: 0.0)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.DihedralHarmonicCos.espressopp.interaction.FixedQuadrupleListDihedralHarmonicCos">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedQuadrupleListDihedralHarmonicCos</code><span class="sig-paren">(</span><em>system</em>, <em>fql</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralHarmonicCos.espressopp.interaction.FixedQuadrupleListDihedralHarmonicCos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>fql</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.DihedralHarmonicCos.espressopp.interaction.FixedQuadrupleListDihedralHarmonicCos.getFixedQuadrupleList">
+<code class="descclassname">espressopp.interaction.FixedQuadrupleListDihedralHarmonicCos.</code><code class="descname">getFixedQuadrupleList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralHarmonicCos.espressopp.interaction.FixedQuadrupleListDihedralHarmonicCos.getFixedQuadrupleList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.DihedralHarmonicCos.espressopp.interaction.FixedQuadrupleListDihedralHarmonicCos.setPotential">
+<code class="descclassname">espressopp.interaction.FixedQuadrupleListDihedralHarmonicCos.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralHarmonicCos.espressopp.interaction.FixedQuadrupleListDihedralHarmonicCos.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.DihedralHarmonicCos.DihedralHarmonicCos">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.DihedralHarmonicCos.</code><code class="descname">DihedralHarmonicCos</code><a class="headerlink" href="#espressopp.interaction.DihedralHarmonicCos.DihedralHarmonicCos" title="Permalink to this definition">¶</a></dt>
+<dd><p>The DihedralHarmonicCos potential.</p>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.interaction.CoulombTruncated.html">previous</a>

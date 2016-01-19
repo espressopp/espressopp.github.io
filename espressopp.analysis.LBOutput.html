@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>LBOutput - abstract base class for analysis / output in LB simulations &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="analysis" href="analysis.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.analysis.LBOutputScreen.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.analysis.IntraChainDistSq.html" /> 
+    <link rel="next" title="LBOutputScreen - controls screen output in LB-simulations" href="espressopp.analysis.LBOutputScreen.html" />
+    <link rel="prev" title="espressopp.analysis.IntraChainDistSq" href="espressopp.analysis.IntraChainDistSq.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,20 @@
              <a style="float:right;"  href="espressopp.analysis.LBOutputScreen.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.analysis.LBOutput"></span><div class="section" id="lboutput-abstract-base-class-for-analysis-output-in-lb-simulations">
+<h1><strong>LBOutput</strong> - abstract base class for analysis / output in LB simulations<a class="headerlink" href="#lboutput-abstract-base-class-for-analysis-output-in-lb-simulations" title="Permalink to this headline">¶</a></h1>
+<p>Abstract base class for arbitrary output from LB simulations. At the moment, the implemented realisations are:</p>
+<ul class="simple">
+<li><a class="reference internal" href="espressopp.analysis.LBOutputScreen.html#module-espressopp.analysis.LBOutputScreen" title="espressopp.analysis.LBOutputScreen"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputScreen</span></code></a> to output local density <img class="math" src="images/math/e790d0e1aed49aa60e0d56f5928f98e2d4362a7e.png" alt="rho"/> and <img class="math" src="images/math/77e45681b112377352a596664f0f9b85516213c9.png" alt="v_z"/> component of the velocity as a function of the coordinate <img class="math" src="images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/>.</li>
+<li><a class="reference internal" href="espressopp.analysis.LBOutputVzInTime.html#module-espressopp.analysis.LBOutputVzInTime" title="espressopp.analysis.LBOutputVzInTime"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputVzInTime</span></code></a> to output velocity component <img class="math" src="images/math/77e45681b112377352a596664f0f9b85516213c9.png" alt="v_z"/> of a specific lattice site (the value used at the moment is <img class="math" src="images/math/5d10e6ce1fde7b5b4070b458467d953ee27027f7.png" alt="{0.25*N_i, 0, 0}"/>) in time.</li>
+<li><a class="reference internal" href="espressopp.analysis.LBOutputVzOfX.html#module-espressopp.analysis.LBOutputVzOfX" title="espressopp.analysis.LBOutputVzOfX"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputVzOfX</span></code></a> to output simulation progress and control flux conservation when using MD to LB coupling.</li>
+</ul>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Other types of output classes are possible. It is a subject of user requests.</p>
+</div>
+</div>
+
 
             
              <a href="espressopp.analysis.IntraChainDistSq.html">previous</a>

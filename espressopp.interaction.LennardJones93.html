@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.interaction.LennardJones93Wall &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="interaction" href="interaction.html" />
     <link rel="next" title="io" href="io.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.interaction.Zero.html" /> 
+    <link rel="prev" title="espressopp.interaction.Zero" href="espressopp.interaction.Zero.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,100 @@
              <a style="float:right;"  href="io.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.interaction.LennardJones93Wall"></span><div class="section" id="espressopp-interaction-lennardjones93wall">
+<h1><strong>espressopp.interaction.LennardJones93Wall</strong><a class="headerlink" href="#espressopp-interaction-lennardjones93wall" title="Permalink to this headline">¶</a></h1>
+<p>This class defines a Lennard-Jones 9-3 SingleParticlePotential in the direction x.</p>
+<div class="math">
+<p><img src="images/math/97235a8b2db21eebe3a6ba4a20826bc1f0741a17.png" alt="V(r) = \epsilon \left( \left(\frac{\sigma}{r}\right)^9 - \left(\frac{\sigma}{r}\right)^3 \right)"/></p>
+</div><p>where <img class="math" src="images/math/2ede365ad144ab396916ec60458da03860803078.png" alt="r"/> is the distance from the lower or upper wall in the x
+direction. <img class="math" src="images/math/6893d6d5f2d58dfac2ace7477d5a97997617ff7b.png" alt="V(r)=0"/> after a distance <cite>sigmaCutoff</cite>.</p>
+<p>The parameters have to be defined for every species present in the system with
+<cite>setParams</cite> and can be retrieved with <cite>getParams</cite>.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">LJ93</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">LennardJones93Wall</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LJ93</span><span class="o">.</span><span class="n">setParams</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">6.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="n">wall_cutoff</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">SPLJ93</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">SingleParticleLennardJones93Wall</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">LJ93</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">SPLJ93</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones93Wall.espressopp.interaction.LennardJones93Wall">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">LennardJones93Wall</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones93Wall.espressopp.interaction.LennardJones93Wall" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones93Wall.espressopp.interaction.LennardJones93Wall.getParams">
+<code class="descclassname">espressopp.interaction.LennardJones93Wall.</code><code class="descname">getParams</code><span class="sig-paren">(</span><em>type_var</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones93Wall.espressopp.interaction.LennardJones93Wall.getParams" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>type_var</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones93Wall.espressopp.interaction.LennardJones93Wall.setParams">
+<code class="descclassname">espressopp.interaction.LennardJones93Wall.</code><code class="descname">setParams</code><span class="sig-paren">(</span><em>type_var</em>, <em>epsilon</em>, <em>sigma</em>, <em>sigmaCutoff</em>, <em>r0</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones93Wall.espressopp.interaction.LennardJones93Wall.setParams" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type_var</strong> &#8211; </li>
+<li><strong>epsilon</strong> &#8211; </li>
+<li><strong>sigma</strong> &#8211; </li>
+<li><strong>sigmaCutoff</strong> &#8211; </li>
+<li><strong>r0</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones93Wall.espressopp.interaction.SingleParticleLennardJones93Wall">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">SingleParticleLennardJones93Wall</code><span class="sig-paren">(</span><em>system</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones93Wall.espressopp.interaction.SingleParticleLennardJones93Wall" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones93Wall.espressopp.interaction.SingleParticleLennardJones93Wall.setPotential">
+<code class="descclassname">espressopp.interaction.SingleParticleLennardJones93Wall.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones93Wall.espressopp.interaction.SingleParticleLennardJones93Wall.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.LennardJones93Wall.LennardJones93Wall">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.LennardJones93Wall.</code><code class="descname">LennardJones93Wall</code><a class="headerlink" href="#espressopp.interaction.LennardJones93Wall.LennardJones93Wall" title="Permalink to this definition">¶</a></dt>
+<dd><p>The LennardJones93Wall potential.</p>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.interaction.Zero.html">previous</a>

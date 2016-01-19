@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.analysis.SystemMonitor &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="analysis" href="analysis.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.analysis.Temperature.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.analysis.StaticStructF.html" /> 
+    <link rel="next" title="espressopp.analysis.Temperature" href="espressopp.analysis.Temperature.html" />
+    <link rel="prev" title="espressopp.analysis.StaticStructF" href="espressopp.analysis.StaticStructF.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,117 @@
              <a style="float:right;"  href="espressopp.analysis.Temperature.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.analysis.SystemMonitor"></span><div class="section" id="espressopp-analysis-systemmonitor">
+<h1><strong>espressopp.analysis.SystemMonitor</strong><a class="headerlink" href="#espressopp-analysis-systemmonitor" title="Permalink to this headline">¶</a></h1>
+<p>SystemMonitor prints and logs to file values obtained from Observables like
+temperature, pressure or potential energy.</p>
+<dl class="function">
+<dt id="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor">
+<code class="descclassname">espressopp.analysis.</code><code class="descname">SystemMonitor</code><span class="sig-paren">(</span><em>system</em>, <em>integrator</em>, <em>output</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; The system object.</li>
+<li><strong>integrator</strong> (<a class="reference internal" href="espressopp.integrator.MDIntegrator.html#module-espressopp.integrator.MDIntegrator" title="espressopp.integrator.MDIntegrator"><em>espressopp.integrator.MDIntegrator</em></a>) &#8211; The MD integrator.</li>
+<li><strong>output</strong> (<a class="reference internal" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitorOutputCSV" title="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitorOutputCSV"><em>espressopp.analysis.SystemMonitorOutputCSV</em></a>) &#8211; The output object.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.add_observable">
+<code class="descclassname">espressopp.analysis.SystemMonitor.</code><code class="descname">add_observable</code><span class="sig-paren">(</span><em>name</em>, <em>observable</em>, <em>is_visible</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.add_observable" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="descname">The function adds new observable to SystemMonitor.</code></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<em>str</em>) &#8211; The name of observable</li>
+<li><strong>observable</strong> &#8211; The observable, eg. espressopp.analysis.PotentialEnergy</li>
+<li><strong>is_visible</strong> (<em>bool</em>) &#8211; If set to True then values will be print on console.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.info">
+<code class="descclassname">espressopp.analysis.SystemMonitor.</code><code class="descname">info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.info" title="Permalink to this definition">¶</a></dt>
+<dt>
+<code class="descname">The method print out on console the values of observables.</code></dt>
+<dd></dd></dl>
+
+<div class="section" id="csv-output">
+<h2>CSV Output<a class="headerlink" href="#csv-output" title="Permalink to this headline">¶</a></h2>
+<p>The output of SystemMonitor to CSV files.</p>
+<dl class="function">
+<dt id="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitorOutputCSV">
+<code class="descclassname">espressopp.analysis.</code><code class="descname">SystemMonitorOutputCSV</code><span class="sig-paren">(</span><em>file_name</em>, <em>delimiter</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitorOutputCSV" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>file_name</strong> (<em>str</em>) &#8211; The name of CSV file.</li>
+<li><strong>delimiter</strong> (<em>str</em>) &#8211; The field delimiter, by default it is tabulator.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">interaction</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">VerletListLennardJones</span><span class="p">(</span><span class="n">verletlist</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">interaction</span><span class="o">.</span><span class="n">setPotential</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+<span class="go">                             potential=espressopp.interaction.LennardJones(epsilon=1.0, sigma=1.0,</span>
+<span class="go">                                                                           cutoff=2.0))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system_monitor_csv</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">SystemMonitorOutputCSV</span><span class="p">(</span><span class="s">&#39;out.csv&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system_monitor</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">SystemMonitor</span><span class="p">(</span>
+<span class="go">        system, integrator, espressopp.analysis.SystemMonitorOutputCSV(&#39;out.csv&#39;))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system_monitor</span><span class="o">.</span><span class="n">add_observable</span><span class="p">(</span><span class="s">&#39;pot&#39;</span><span class="p">,</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">PotentialEnergy</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">interaction</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ext_analysis</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">system_monitor</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">ext_analysis</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<span class="target" id="module-espressopp.analysis.PotentialEnergy"></span><div class="section" id="espressopp-analysis-potentialenergy">
+<h1><strong>espressopp.analysis.PotentialEnergy</strong><a class="headerlink" href="#espressopp-analysis-potentialenergy" title="Permalink to this headline">¶</a></h1>
+<p>The object that computes potential energy of different interactions.</p>
+<dl class="function">
+<dt id="espressopp.analysis.PotentialEnergy.espressopp.analysis.PotentialEnergy">
+<code class="descclassname">espressopp.analysis.</code><code class="descname">PotentialEnergy</code><span class="sig-paren">(</span><em>system</em>, <em>potential</em>, <em>compute_method=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.PotentialEnergy.espressopp.analysis.PotentialEnergy" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; The system object</li>
+<li><strong>interaction</strong> (<a class="reference internal" href="espressopp.interaction.Interaction.html#module-espressopp.interaction.Interaction" title="espressopp.interaction.Interaction"><em>espressopp.interaction.Interaction</em></a>) &#8211; The interaction object.</li>
+<li><strong>compute_method</strong> (<em>str</em>) &#8211; If set to <cite>ALL</cite> (default) then compute total potential energies,
+if set to <cite>CG</cite> then compute only coarse-grained part (if feasible),
+if set to <cite>AT</cite> then compute only atomitic part of potential energy.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.analysis.StaticStructF.html">previous</a>

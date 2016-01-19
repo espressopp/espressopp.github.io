@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>LBInitPopWave - creates initial populations with uniform density and harmonic velocity &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="integrator" href="integrator.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.integrator.LangevinBarostat.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.integrator.LBInitPopUniform.html" /> 
+    <link rel="next" title="LangevinBarostat - Langevin-Hoover barostat Object" href="espressopp.integrator.LangevinBarostat.html" />
+    <link rel="prev" title="LBInitPopUniform - creates initial populations with uniform density and velocity" href="espressopp.integrator.LBInitPopUniform.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,41 @@
              <a style="float:right;"  href="espressopp.integrator.LangevinBarostat.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.integrator.LBInitPopWave"></span><div class="section" id="lbinitpopwave-creates-initial-populations-with-uniform-density-and-harmonic-velocity">
+<h1><strong>LBInitPopWave</strong> - creates initial populations with uniform density and harmonic velocity<a class="headerlink" href="#lbinitpopwave-creates-initial-populations-with-uniform-density-and-harmonic-velocity" title="Permalink to this headline">¶</a></h1>
+<p>This class creates LB-fluid with uniform density and harmonic velocity:
+<img class="math" src="images/math/230aaf44d2b0260bbcf3150841d485228c519283.png" alt="v_x = 0"/>, 
+<img class="math" src="images/math/9af197a1db126dbe41dca6dbbc3f8a46b78a9c68.png" alt="v_y = 0"/>,
+<img class="math" src="images/math/42a3a72551a8e4b09b77991a0350942b5970d8e6.png" alt="v_z(i) = A * sin (2 * \pi * i / N_x)"/>,</p>
+<p>where <img class="math" src="images/math/0acafa529182e79b4f56165ec677554fba7fcf98.png" alt="A"/> is the amplitude of the velocity wave, <img class="math" src="images/math/27372ea14fc01cc9e3698e28d52e22de6264c7be.png" alt="N_x"/> is the number of lattice nodes in <img class="math" src="images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/>-direction and <img class="math" src="images/math/a581f053bbfa5115f42c13094857cdd12a37ec49.png" alt="i"/> is the node index that the velocity is calculated for.</p>
+<p>This may be used to test the system: total moment is zero and the liquid tends to equilibrium, i.e. relaxes to a uniform zero velocity.</p>
+<blockquote>
+<div><p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">initPop</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitPopWave</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">initPop</span><span class="o">.</span><span class="n">createDenVel</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">Real3D</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.0005</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c"># the Real3D vector in this case includes amplitudes of the velocities</span>
+</pre></div>
+</div>
+</div></blockquote>
+<dl class="function">
+<dt id="espressopp.integrator.LBInitPopWave.espressopp.integrator.LBInitPopWave">
+<code class="descclassname">espressopp.integrator.</code><code class="descname">LBInitPopWave</code><span class="sig-paren">(</span><em>system</em>, <em>latticeboltzmann</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LBInitPopWave.espressopp.integrator.LBInitPopWave" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>latticeboltzmann</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.integrator.LBInitPopUniform.html">previous</a>

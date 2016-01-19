@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>LBInit - abstract class for LatticeBoltzmann initialization and external force management &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="integrator" href="integrator.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.integrator.LBInitConstForce.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.integrator.LatticeBoltzmann.html" /> 
+    <link rel="next" title="LBInitConstForce - handles constant (gravity-like) external force" href="espressopp.integrator.LBInitConstForce.html" />
+    <link rel="prev" title="LatticeBoltzmann - class for lattice Boltzmann methods" href="espressopp.integrator.LatticeBoltzmann.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,115 @@
              <a style="float:right;"  href="espressopp.integrator.LBInitConstForce.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.integrator.LBInit"></span><div class="section" id="lbinit-abstract-class-for-latticeboltzmann-initialization-and-external-force-management">
+<h1><strong>LBInit</strong> - abstract class for LatticeBoltzmann initialization and external force management<a class="headerlink" href="#lbinit-abstract-class-for-latticeboltzmann-initialization-and-external-force-management" title="Permalink to this headline">¶</a></h1>
+<p>This abstract class provides the interface to (re-)initialize populations and handle external forces.</p>
+<dl class="function">
+<dt id="espressopp.integrator.LBInit.createDenVel">
+<code class="descclassname">espressopp.integrator.LBInit.</code><code class="descname">createDenVel</code><span class="sig-paren">(</span><em>rho0</em>, <em>u0</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LBInit.createDenVel" title="Permalink to this definition">¶</a></dt>
+<dd><p>to set initial density and velocity of the LB-fluid.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>rho0</strong> &#8211; density</li>
+<li><strong>u0</strong> &#8211; velocity</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>At the moment we support the following options for LB-fluid initialization:</p>
+<ul class="simple">
+<li><a class="reference internal" href="espressopp.integrator.LBInitPopUniform.html#module-espressopp.integrator.LBInitPopUniform" title="espressopp.integrator.LBInitPopUniform"><code class="xref py py-class docutils literal"><span class="pre">espressopp.integrator.LBInitPopUniform</span></code></a> for uniformly distributed density and velocity, i.e. on every lattice site the density is rho0 and velocity is u0;</li>
+<li><a class="reference internal" href="espressopp.integrator.LBInitPopWave.html#module-espressopp.integrator.LBInitPopWave" title="espressopp.integrator.LBInitPopWave"><code class="xref py py-class docutils literal"><span class="pre">espressopp.integrator.LBInitPopWave</span></code></a> for uniform density at every lattice site, but harmonic velocity <img class="math" src="images/math/23f2711198db489aab0cd94c09d97305798ccdaf.png" alt="v_z (x)"/> with the period of lattice sites in <em>x</em>-direction;</li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.integrator.LBInit.setForce">
+<code class="descclassname">espressopp.integrator.LBInit.</code><code class="descname">setForce</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LBInit.setForce" title="Permalink to this definition">¶</a></dt>
+<dd><p>to set an external force onto LB-fluid.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference internal" href="espressopp.Real3D.html#module-espressopp.Real3D" title="espressopp.Real3D"><em>Real3D</em></a>) &#8211; value of the force</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.integrator.LBInit.addForce">
+<code class="descclassname">espressopp.integrator.LBInit.</code><code class="descname">addForce</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LBInit.addForce" title="Permalink to this definition">¶</a></dt>
+<dd><p>to add a new external force to the existing one.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference internal" href="espressopp.Real3D.html#module-espressopp.Real3D" title="espressopp.Real3D"><em>Real3D</em></a>) &#8211; value of the force</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p>Two main external force types are implemented:</p>
+<ul class="simple">
+<li><a class="reference internal" href="espressopp.integrator.LBInitConstForce.html#module-espressopp.integrator.LBInitConstForce" title="espressopp.integrator.LBInitConstForce"><code class="xref py py-class docutils literal"><span class="pre">espressopp.integrator.LBInitConstForce</span></code></a> to manage constant (gravity-like) force acting on every lattice site and</li>
+<li><a class="reference internal" href="espressopp.integrator.LBInitPeriodicForce.html#module-espressopp.integrator.LBInitPeriodicForce" title="espressopp.integrator.LBInitPeriodicForce"><code class="xref py py-class docutils literal"><span class="pre">espressopp.integrator.LBInitPeriodicForce</span></code></a> to manage harmonic (position-dependent) force</li>
+</ul>
+<dl class="function">
+<dt id="espressopp.integrator.LBInit.espressopp.integrator.LBInit.addForce">
+<code class="descclassname">espressopp.integrator.LBInit.</code><code class="descname">addForce</code><span class="sig-paren">(</span><em>force</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LBInit.espressopp.integrator.LBInit.addForce" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>force</strong> &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.integrator.LBInit.espressopp.integrator.LBInit.createDenVel">
+<code class="descclassname">espressopp.integrator.LBInit.</code><code class="descname">createDenVel</code><span class="sig-paren">(</span><em>rho0</em>, <em>u0</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LBInit.espressopp.integrator.LBInit.createDenVel" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>rho0</strong> &#8211; </li>
+<li><strong>u0</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.integrator.LBInit.espressopp.integrator.LBInit.setForce">
+<code class="descclassname">espressopp.integrator.LBInit.</code><code class="descname">setForce</code><span class="sig-paren">(</span><em>force</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LBInit.espressopp.integrator.LBInit.setForce" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>force</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.integrator.LatticeBoltzmann.html">previous</a>

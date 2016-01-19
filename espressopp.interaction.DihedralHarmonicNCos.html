@@ -8,10 +8,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>&lt;no title&gt; &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.interaction.DihedralHarmonicNCos &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -22,14 +22,14 @@
         HAS_SOURCE:  true
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="interaction" href="interaction.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.interaction.DihedralHarmonicUniqueCos.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.interaction.DihedralHarmonicCos.html" /> 
+    <link rel="next" title="espressopp.interaction.DihedralHarmonicUniqueCos" href="espressopp.interaction.DihedralHarmonicUniqueCos.html" />
+    <link rel="prev" title="espressopp.interaction.DihedralHarmonicCos" href="espressopp.interaction.DihedralHarmonicCos.html" /> 
   </head>
   <body role="document">
   <div class="header"></div>
@@ -69,7 +69,90 @@
              <a style="float:right;"  href="espressopp.interaction.DihedralHarmonicUniqueCos.html">next</a>
             
 	    
-  
+  <span class="target" id="module-espressopp.interaction.DihedralHarmonicNCos"></span><div class="section" id="espressopp-interaction-dihedralharmonicncos">
+<h1><strong>espressopp.interaction.DihedralHarmonicNCos</strong><a class="headerlink" href="#espressopp-interaction-dihedralharmonicncos" title="Permalink to this headline">¶</a></h1>
+<p>The dihedral harmonic potential</p>
+<div class="math">
+<p><img src="images/math/39761f95fee5a89f83b6409eeeb0e30c9a9805c1.png" alt="U(\phi_{ijkl}) = K[1+cos(N\cdot\phi_{ijkl} - \phi_0)]"/></p>
+</div><p>where the <cite>K</cite> is a constant, the angles should be provided in radians.
+The <cite>N</cite> is a multiplicity.</p>
+<p>Reference: <a class="reference external" href="http://www.uark.edu/ua/fengwang/DLPOLY2/node49.html">http://www.uark.edu/ua/fengwang/DLPOLY2/node49.html</a></p>
+<dl class="function">
+<dt id="espressopp.interaction.DihedralHarmonicNCos.espressopp.interaction.DihedralHarmonicNCos">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">DihedralHarmonicNCos</code><span class="sig-paren">(</span><em>K</em>, <em>phi0</em>, <em>multiplicity</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralHarmonicNCos.espressopp.interaction.DihedralHarmonicNCos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>K</strong> (<em>real</em>) &#8211; (default: 0.0)</li>
+<li><strong>phi0</strong> (<em>real</em>) &#8211; (default: 0.0)</li>
+<li><strong>multiplicity</strong> (<em>int</em>) &#8211; (default: 1)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.DihedralHarmonicNCos.espressopp.interaction.FixedQuadrupleListDihedralHarmonicNCos">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedQuadrupleListDihedralHarmonicNCos</code><span class="sig-paren">(</span><em>system</em>, <em>fql</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralHarmonicNCos.espressopp.interaction.FixedQuadrupleListDihedralHarmonicNCos" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>fql</strong> &#8211; </li>
+<li><strong>potential</strong> &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.DihedralHarmonicNCos.espressopp.interaction.FixedQuadrupleListDihedralHarmonicNCos.getFixedQuadrupleList">
+<code class="descclassname">espressopp.interaction.FixedQuadrupleListDihedralHarmonicNCos.</code><code class="descname">getFixedQuadrupleList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralHarmonicNCos.espressopp.interaction.FixedQuadrupleListDihedralHarmonicNCos.getFixedQuadrupleList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.DihedralHarmonicNCos.espressopp.interaction.FixedQuadrupleListDihedralHarmonicNCos.setPotential">
+<code class="descclassname">espressopp.interaction.FixedQuadrupleListDihedralHarmonicNCos.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralHarmonicNCos.espressopp.interaction.FixedQuadrupleListDihedralHarmonicNCos.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> &#8211; </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.DihedralHarmonicNCos.DihedralHarmonicNCos">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.DihedralHarmonicNCos.</code><code class="descname">DihedralHarmonicNCos</code><a class="headerlink" href="#espressopp.interaction.DihedralHarmonicNCos.DihedralHarmonicNCos" title="Permalink to this definition">¶</a></dt>
+<dd><p>The DihedralHarmonicNCos potential.</p>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.DihedralHarmonicNCos.FixedQuadrupleListDihedralHarmonicNCosLocal">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.DihedralHarmonicNCos.</code><code class="descname">FixedQuadrupleListDihedralHarmonicNCosLocal</code><span class="sig-paren">(</span><em>system</em>, <em>fql</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralHarmonicNCos.FixedQuadrupleListDihedralHarmonicNCosLocal" title="Permalink to this definition">¶</a></dt>
+<dd><p>The (local) DihedralHarmonicNCos interaction using FixedQuadruple lists.</p>
+</dd></dl>
+
+</div>
+
 
             
              <a href="espressopp.interaction.DihedralHarmonicCos.html">previous</a>
