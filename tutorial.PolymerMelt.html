@@ -1,0 +1,203 @@
+<div id="outer">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Polymer Melt &mdash; ESPResSo++ 1.7 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.7',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
+    <link rel="up" title="ESPResSo++ Tutorial" href="tutorial.html" />
+    <link rel="next" title="AddNewPotential" href="tutorial.AddNewPotential.html" />
+    <link rel="prev" title="Advanced Lennard Jones System" href="tutorial.LennardJones2.html" /> 
+  </head>
+  <body role="document">
+  <div class="header"></div>
+
+
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
+      </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
+
+  <div class="document">
+      <div class="documentwrapper">
+	<div class="bodywrapper">
+	  <div class="body">
+            
+             <a href="tutorial.LennardJones2.html">previous</a>
+            
+            
+             <a style="float:right;"  href="tutorial.AddNewPotential.html">next</a>
+            
+	    
+  <div class="section" id="polymer-melt">
+<h1>Polymer Melt<a class="headerlink" href="#polymer-melt" title="Permalink to this headline">¶</a></h1>
+<p>We first import espressopp and then define all the parameters of the simulation:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">espressopp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">num_chains</span>          <span class="o">=</span> <span class="mi">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">monomers_per_chain</span>  <span class="o">=</span> <span class="mi">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">L</span>                   <span class="o">=</span> <span class="mi">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">box</span>                 <span class="o">=</span> <span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">L</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">bondlen</span>             <span class="o">=</span> <span class="mf">0.97</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rc</span>                  <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mf">1.0</span><span class="o">/</span><span class="mf">6.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">skin</span>                <span class="o">=</span> <span class="mf">0.3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dt</span>                  <span class="o">=</span> <span class="mf">0.005</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">epsilon</span>             <span class="o">=</span> <span class="mf">1.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">sigma</span>               <span class="o">=</span> <span class="mf">1.0</span>
+</pre></div>
+</div>
+<p>Like in the simple Lennard Jones tutorial we setup the system and the integrator.
+First the system with the excluded volume interaction (WCA, Lennard Jones type)</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span>         <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">System</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">rng</span>     <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">bc</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">OrthorhombicBC</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">rng</span><span class="p">,</span> <span class="n">box</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">skin</span>    <span class="o">=</span> <span class="n">skin</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">nodeGrid</span>       <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">decomp</span><span class="o">.</span><span class="n">nodeGrid</span><span class="p">(</span><span class="n">espressopp</span><span class="o">.</span><span class="n">MPI</span><span class="o">.</span><span class="n">COMM_WORLD</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cellGrid</span>       <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">decomp</span><span class="o">.</span><span class="n">cellGrid</span><span class="p">(</span><span class="n">box</span><span class="p">,</span> <span class="n">nodeGrid</span><span class="p">,</span> <span class="n">rc</span><span class="p">,</span> <span class="n">skin</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">DomainDecomposition</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">nodeGrid</span><span class="p">,</span> <span class="n">cellGrid</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">interaction</span>    <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">VerletListLennardJones</span><span class="p">(</span><span class="n">espressopp</span><span class="o">.</span><span class="n">VerletList</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">potLJ</span>          <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">LennardJones</span><span class="p">(</span><span class="n">epsilon</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">rc</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">interaction</span><span class="o">.</span><span class="n">setPotential</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">potential</span><span class="o">=</span><span class="n">potLJ</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">interaction</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Then the integrator with the Langevin extension</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span>     <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">VelocityVerlet</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">dt</span>  <span class="o">=</span> <span class="n">dt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span>     <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span><span class="o">.</span><span class="n">gamma</span>  <span class="o">=</span> <span class="mf">1.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span><span class="o">.</span><span class="n">temperature</span> <span class="o">=</span> <span class="n">temperature</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">thermostat</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Know we add the particles. Keep in mind that we want to create a polymer melt. This means
+that particles are &#8220;bonded&#8221; in chains. We setup each polymer chain as a random walk.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">props</span>    <span class="o">=</span> <span class="p">[</span><span class="s">&#39;id&#39;</span><span class="p">,</span> <span class="s">&#39;type&#39;</span><span class="p">,</span> <span class="s">&#39;mass&#39;</span><span class="p">,</span> <span class="s">&#39;pos&#39;</span><span class="p">,</span> <span class="s">&#39;v&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vel_zero</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In providing bonding information for the particles we &#8220;setup&#8221; the bonded chains.
+For this we use the FixedPairList object that needs to know where and in which storage
+the particles can be found:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">bondlist</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedPairList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pid</span>      <span class="o">=</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span>     <span class="o">=</span> <span class="mi">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">mass</span>     <span class="o">=</span> <span class="mf">1.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">chain</span>    <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+</div>
+<p>ESPResSo++ provides a function that will return position and bond information of a random walk.
+You have to provide a start ID (particle id) and a starting position which we will get from the
+random position generator of the boundary condition object:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_chains</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">startpos</span> <span class="o">=</span> <span class="n">system</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">getRandomPos</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">positions</span><span class="p">,</span> <span class="n">bonds</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">polymerRW</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="n">startpos</span><span class="p">,</span> <span class="n">monomers_per_chain</span><span class="p">,</span> <span class="n">bondlen</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">monomers_per_chain</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">part</span> <span class="o">=</span> <span class="p">[</span><span class="n">pid</span> <span class="o">+</span> <span class="n">k</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">mass</span><span class="p">,</span> <span class="n">positions</span><span class="p">[</span><span class="n">k</span><span class="p">],</span> <span class="n">vel_zero</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">chain</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">part</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">pid</span> <span class="o">+=</span> <span class="n">monomers_per_chain</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="nb">type</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">addParticles</span><span class="p">(</span><span class="n">chain</span><span class="p">,</span> <span class="o">*</span><span class="n">props</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">decompose</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">chain</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">bondlist</span><span class="o">.</span><span class="n">addBonds</span><span class="p">(</span><span class="n">bonds</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>try out the command</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">polymerRW</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="n">startpos</span><span class="p">,</span> <span class="n">monomers_per_chain</span><span class="p">,</span> <span class="n">bondlen</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="last">to see what it returns</p>
+</div>
+<p>Don&#8217;t forget to distribute the particles and the bondlist to the CPUs in the end:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">decompose</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Finally add the information about the bonding potential. In this example we are using
+a FENE-potential between the bonded particles.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">potFENE</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">FENE</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="mf">30.0</span><span class="p">,</span> <span class="n">r0</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">rMax</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">interFENE</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">FixedPairListFENE</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">bondlist</span><span class="p">,</span> <span class="n">potFENE</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">interFENE</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Start the integrator and observe how the system explodes. Like in the random Lennard Jones
+system, we have the same problem here: particles can strongly overlap and thus will
+get very high forces accelerating them to infinite (for the computer) speed.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">analyse</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nsteps</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">isteps</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">analyse</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">analyse</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="task-2">
+<h2>Task 2:<a class="headerlink" href="#task-2" title="Permalink to this headline">¶</a></h2>
+<p>Try to warmup and equilibrate a dense polymer melt (density=0.85) by using the warmup methods
+that you have learned in the Lennard Jones tutorial.</p>
+</div>
+<div class="section" id="hint">
+<h2>Hint:<a class="headerlink" href="#hint" title="Permalink to this headline">¶</a></h2>
+<p>During warmup you can slowly switch on the excluded volume interaction by starting with a small
+epsilon and increasing it during integration:
+You can do this by continuously overwriting the interaction potential after some time interval.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">potLJ</span>          <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">LennardJones</span><span class="p">(</span><span class="n">new_epsilon</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">rc</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">interaction</span><span class="o">.</span><span class="n">setPotential</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">potential</span><span class="o">=</span><span class="n">potLJ</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+            
+             <a href="tutorial.LennardJones2.html">previous</a>
+                
+            
+             <a style="float:right;"  href="tutorial.AddNewPotential.html">next</a>
+            
+          </div>
+        </div>
+     </div> 
+ </div>
+  </body>
+</html>
