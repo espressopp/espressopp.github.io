@@ -1,3 +1,6 @@
+
+<div id="outer">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +9,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>LatticeBoltzmann - class for lattice Boltzmann methods &mdash; ESPResSo++ 1.9.3 documentation</title>
+    <title>LatticeBoltzmann - class for lattice Boltzmann methods &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        URL_ROOT:    '',
+        VERSION:     '1.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,42 +27,53 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.9.3 documentation" href="index.html" />
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="integrator" href="integrator.html" />
     <link rel="next" title="LBInit - abstract class for LatticeBoltzmann initialization and external force management" href="espressopp.integrator.LBInit.html" />
     <link rel="prev" title="espressopp.integrator.Isokinetic" href="espressopp.integrator.Isokinetic.html" /> 
   </head>
-  <body role="document">
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.integrator.LBInit.html" title="LBInit - abstract class for LatticeBoltzmann initialization and external force management"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.integrator.Isokinetic.html" title="espressopp.integrator.Isokinetic"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="integrator.html" accesskey="U">integrator</a> &raquo;</li> 
-      </ul>
-    </div>  
+  <body>
+  <div class="header"></div>
 
-    <div class="document">
+
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
+      </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
+
+  <div class="document">
       <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+	<div class="bodywrapper">
+	  <div class="body">
             
+             <a href="espressopp.integrator.Isokinetic.html">previous</a>
+            
+            
+             <a style="float:right;"  href="espressopp.integrator.LBInit.html">next</a>
+            
+	    
   <span class="target" id="module-espressopp.integrator.LatticeBoltzmann"></span><div class="section" id="latticeboltzmann-class-for-lattice-boltzmann-methods">
 <h1><strong>LatticeBoltzmann</strong> - class for lattice Boltzmann methods<a class="headerlink" href="#latticeboltzmann-class-for-lattice-boltzmann-methods" title="Permalink to this headline">¶</a></h1>
 <p>The LatticeBoltzmann (LB) class is an extension to the integrator class of ESPResSo++. The main purpose of the LB-fluid in our simulation package is NOT in fluid dynamics applications or investigation of fluid-solid interfacial phenomena. We aim at complex soft matter systems, where the LB-fluid is a bulk solvent and therefore one has rather use some MD particles as solutes. Examples of such systems range from colloids (point-like MD-particles) to polymer chains (point-like MD-particles connected into chains) dissolved in some solvent (LB-fluid) with specific static and dynamic properties.</p>
-<p>It is therefore done ON PURPOSE that the user specifies parameters for LB-fluid in Lennard-Jones (LJ) units. In the kernel of the C++ code we transform these into LB-units, if neccessary. Such strategy helps users coming from MD-background to think of the LB-fluid as if it has particle-based structure: to mimic the solvent one only has to specify such parameters as liquid density, <img class="math" src="images/math/e790d0e1aed49aa60e0d56f5928f98e2d4362a7e.png" alt="rho"/>, temperature, <img class="math" src="images/math/6d42c88506b8da39a2a23653aecbfb7c29728063.png" alt="T"/>, and viscosity, <img class="math" src="images/math/9172efc523d7488d4c3ed299d0be813de01503b8.png" alt="\eta"/>. For a standard LJ-fluid one has: <img class="math" src="images/math/d124cbf7e6510b0db93f3ffaf14c1162e8458b00.png" alt="rho \sim 1 [\sigma^{-3}]"/>, <img class="math" src="images/math/c7348a70f74ad57d80c5c59f0fb1e86311a8a7c0.png" alt="T \sim 1 [\epsilon]"/>, and <img class="math" src="images/math/1d6e98c6e14d7321ad1fe4a156ba8ccfeb522be9.png" alt="\eta \sim 5 [units]"/>.</p>
+<p>It is therefore done ON PURPOSE that the user specifies parameters for LB-fluid in Lennard-Jones (LJ) units. In the kernel of the C++ code we transform these into LB-units, if neccessary. Such strategy helps users coming from MD-background to think of the LB-fluid as if it has particle-based structure: to mimic the solvent one only has to specify such parameters as liquid density, <span class="math">rho</span>, temperature, <span class="math">T</span>, and viscosity, <span class="math">\eta</span>. For a standard LJ-fluid one has: <span class="math">rho \sim 1 [\sigma^{-3}]</span>, <span class="math">T \sim 1 [\epsilon]</span>, and <span class="math">\eta \sim 5 [units]</span>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Experienced LB-users may find our approach unusual. However, we kindly ask them for a feedback, as for us it is also quite novel. Particularly, we are interested in suggestions on expansion of the LB-possibilities and would like at first get an overview of &#8220;what do the people need?&#8221;. Being it either BGK-scheme, implementation of boundary conditions or something else.</p>
@@ -115,7 +129,7 @@ In short, they control correspondent viscosities of the liquid.)</p>
 </div>
 <dl class="function">
 <dt id="espressopp.integrator.LatticeBoltzmann.espressopp.integrator.LatticeBoltzmann">
-<code class="descclassname">espressopp.integrator.</code><code class="descname">LatticeBoltzmann</code><span class="sig-paren">(</span><em>system</em>, <em>nodeGrid</em>, <em>Ni</em>, <em>a</em>, <em>tau</em>, <em>numDims</em>, <em>numVels</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LatticeBoltzmann.espressopp.integrator.LatticeBoltzmann" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.integrator.</tt><tt class="descname">LatticeBoltzmann</tt><big>(</big><em>system</em>, <em>nodeGrid</em>, <em>Ni</em>, <em>a</em>, <em>tau</em>, <em>numDims</em>, <em>numVels</em><big>)</big><a class="headerlink" href="#espressopp.integrator.LatticeBoltzmann.espressopp.integrator.LatticeBoltzmann" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -138,64 +152,15 @@ In short, they control correspondent viscosities of the liquid.)</p>
 </div>
 
 
+            
+             <a href="espressopp.integrator.Isokinetic.html">previous</a>
+                
+            
+             <a style="float:right;"  href="espressopp.integrator.LBInit.html">next</a>
+            
           </div>
         </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="espressopp.integrator.Isokinetic.html"
-                        title="previous chapter"><strong>espressopp.integrator.Isokinetic</strong></a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="espressopp.integrator.LBInit.html"
-                        title="next chapter"><strong>LBInit</strong> - abstract class for LatticeBoltzmann initialization and external force management</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="sources/espressopp.integrator.LatticeBoltzmann.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.integrator.LBInit.html" title="LBInit - abstract class for LatticeBoltzmann initialization and external force management"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.integrator.Isokinetic.html" title="espressopp.integrator.Isokinetic"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="integrator.html" >integrator</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &copy; Copyright 2013-2016, Max Planck Institute for Polymer Research.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
-    </div>
+     </div> 
+ </div>
   </body>
 </html>

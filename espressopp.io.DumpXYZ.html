@@ -1,3 +1,6 @@
+
+<div id="outer">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +9,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>DumpXYZ - IO Object &mdash; ESPResSo++ 1.9.3 documentation</title>
+    <title>DumpXYZ - IO Object &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        URL_ROOT:    '',
+        VERSION:     '1.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,38 +27,49 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.9.3 documentation" href="index.html" />
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="io" href="io.html" />
     <link rel="next" title="espressopp" href="espressopp.html" />
     <link rel="prev" title="DumpGRO - IO Object" href="espressopp.io.DumpGRO.html" /> 
   </head>
-  <body role="document">
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.html" title="espressopp"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.io.DumpGRO.html" title="DumpGRO - IO Object"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="io.html" accesskey="U">io</a> &raquo;</li> 
-      </ul>
-    </div>  
+  <body>
+  <div class="header"></div>
 
-    <div class="document">
+
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
+      </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
+
+  <div class="document">
       <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+	<div class="bodywrapper">
+	  <div class="body">
             
+             <a href="espressopp.io.DumpGRO.html">previous</a>
+            
+            
+             <a style="float:right;"  href="espressopp.html">next</a>
+            
+	    
   <span class="target" id="module-espressopp.io.DumpXYZ"></span><div class="section" id="dumpxyz-io-object">
 <h1><strong>DumpXYZ</strong> - IO Object<a class="headerlink" href="#dumpxyz-io-object" title="Permalink to this headline">¶</a></h1>
 <ul>
@@ -98,14 +112,14 @@ It is length unit. Can be LJ, nm or A. By default - LJ</p>
 </div>
 <p>Both exapmles will give the same result: 200 configurations in trajectory .xyz file.</p>
 <p>setting up length scale</p>
-<p>For example, the Lennard-Jones model for liquid argon with <img class="math" src="images/math/833bfea5566b2e667fa6879d88b83138e7796798.png" alt="\sigma=0.34 [nm]"/></p>
+<p>For example, the Lennard-Jones model for liquid argon with <span class="math">\sigma=0.34 [nm]</span></p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_xyz</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpXYZ</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s">&#39;trj.xyz&#39;</span><span class="p">,</span> <span class="n">unfolded</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">length_factor</span><span class="o">=</span><span class="mf">0.34</span><span class="p">,</span> <span class="n">length_unit</span><span class="o">=</span><span class="s">&#39;nm&#39;</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>will produce trj.xyz with in nanometers</p>
 <dl class="function">
 <dt id="espressopp.io.DumpXYZ.espressopp.io.DumpXYZ">
-<code class="descclassname">espressopp.io.</code><code class="descname">DumpXYZ</code><span class="sig-paren">(</span><em>system</em>, <em>integrator</em>, <em>filename</em>, <em>unfolded</em>, <em>length_factor</em>, <em>length_unit</em>, <em>append</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.io.DumpXYZ.espressopp.io.DumpXYZ" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.io.</tt><tt class="descname">DumpXYZ</tt><big>(</big><em>system</em>, <em>integrator</em>, <em>filename</em>, <em>unfolded</em>, <em>length_factor</em>, <em>length_unit</em>, <em>append</em><big>)</big><a class="headerlink" href="#espressopp.io.DumpXYZ.espressopp.io.DumpXYZ" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -127,7 +141,7 @@ It is length unit. Can be LJ, nm or A. By default - LJ</p>
 
 <dl class="function">
 <dt id="espressopp.io.DumpXYZ.espressopp.io.DumpXYZ.dump">
-<code class="descclassname">espressopp.io.DumpXYZ.</code><code class="descname">dump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.io.DumpXYZ.espressopp.io.DumpXYZ.dump" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.io.DumpXYZ.</tt><tt class="descname">dump</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.io.DumpXYZ.espressopp.io.DumpXYZ.dump" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -141,64 +155,15 @@ It is length unit. Can be LJ, nm or A. By default - LJ</p>
 </div>
 
 
+            
+             <a href="espressopp.io.DumpGRO.html">previous</a>
+                
+            
+             <a style="float:right;"  href="espressopp.html">next</a>
+            
           </div>
         </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="espressopp.io.DumpGRO.html"
-                        title="previous chapter"><strong>DumpGRO</strong> - IO Object</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="espressopp.html"
-                        title="next chapter">espressopp</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="sources/espressopp.io.DumpXYZ.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.html" title="espressopp"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.io.DumpGRO.html" title="DumpGRO - IO Object"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="io.html" >io</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &copy; Copyright 2013-2016, Max Planck Institute for Polymer Research.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
-    </div>
+     </div> 
+ </div>
   </body>
 </html>

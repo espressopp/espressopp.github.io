@@ -1,3 +1,6 @@
+
+<div id="outer">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +9,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>BerendsenThermostat - Berendsen thermostat Object &mdash; ESPResSo++ 1.9.3 documentation</title>
+    <title>BerendsenThermostat - Berendsen thermostat Object &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        URL_ROOT:    '',
+        VERSION:     '1.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,48 +27,59 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.9.3 documentation" href="index.html" />
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="integrator" href="integrator.html" />
     <link rel="next" title="CapForce - Integrator Extension" href="espressopp.integrator.CapForce.html" />
     <link rel="prev" title="BerendsenBarostatAnisotropic - Berendsen barostat Object" href="espressopp.integrator.BerendsenBarostatAnisotropic.html" /> 
   </head>
-  <body role="document">
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.integrator.CapForce.html" title="CapForce - Integrator Extension"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.integrator.BerendsenBarostatAnisotropic.html" title="BerendsenBarostatAnisotropic - Berendsen barostat Object"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="integrator.html" accesskey="U">integrator</a> &raquo;</li> 
-      </ul>
-    </div>  
+  <body>
+  <div class="header"></div>
 
-    <div class="document">
+
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
+      </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
+
+  <div class="document">
       <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+	<div class="bodywrapper">
+	  <div class="body">
             
+             <a href="espressopp.integrator.BerendsenBarostatAnisotropic.html">previous</a>
+            
+            
+             <a style="float:right;"  href="espressopp.integrator.CapForce.html">next</a>
+            
+	    
   <span class="target" id="module-espressopp.integrator.BerendsenThermostat"></span><div class="section" id="berendsenthermostat-berendsen-thermostat-object">
 <h1><strong>BerendsenThermostat</strong> - Berendsen thermostat Object<a class="headerlink" href="#berendsenthermostat-berendsen-thermostat-object" title="Permalink to this headline">¶</a></h1>
-<p>This is the Berendsen thermostat implementation according to the original paper <a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html#berendsen84" id="id1">[Berendsen84]</a>.
+<p>This is the Berendsen thermostat implementation according to the original paper <a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html#berendsen84">[Berendsen84]</a>.
 If Berendsen thermostat is defined (as a property of integrator) then at the each run the system size
-and the particle coordinates will be scaled by scaling parameter <img class="math" src="images/math/1ab0134b6e0837594649c75a2ed83cfd85a2d03d.png" alt="\lambda"/> according to
+and the particle coordinates will be scaled by scaling parameter <span class="math">\lambda</span> according to
 the formula:</p>
 <div class="math">
-<p><img src="images/math/45efaedf5d1aa50ff6ac4d314f2fbbca18bcbc51.png" alt="\lambda = [1 + \Delta t/\tau_{T} (T_{0}/T - 1)]^{1/2}"/></p>
-</div><p>where <img class="math" src="images/math/5b4271afe7fc7c0ee84172e0ad19b82caf450c00.png" alt="\Delta t"/> - integration timestep, <img class="math" src="images/math/af7553d0ef85593ff3ccd77d974a35896a2ac868.png" alt="\tau_{T}"/> - time parameter (coupling parameter),
-<img class="math" src="images/math/c0cb12cfa3d0f54027c07e0b2a1411d35be5f58a.png" alt="T_{0}"/> - external temperature and <img class="math" src="images/math/6d42c88506b8da39a2a23653aecbfb7c29728063.png" alt="T"/> - instantaneous temperature.</p>
+<p><span class="math">\lambda = [1 + \Delta t/\tau_{T} (T_{0}/T - 1)]^{1/2}</span></p>
+</div><p>where <span class="math">\Delta t</span> - integration timestep, <span class="math">\tau_{T}</span> - time parameter (coupling parameter),
+<span class="math">T_{0}</span> - external temperature and <span class="math">T</span> - instantaneous temperature.</p>
 <p>Example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenT</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenT</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">1.0</span>
@@ -84,10 +98,10 @@ the formula:</p>
 <p>Properties:</p>
 <ul>
 <li><p class="first"><em>berendsenT.tau</em></p>
-<p>The property &#8216;tau&#8217; defines the time parameter <img class="math" src="images/math/af7553d0ef85593ff3ccd77d974a35896a2ac868.png" alt="\tau_{T}"/>.</p>
+<p>The property &#8216;tau&#8217; defines the time parameter <span class="math">\tau_{T}</span>.</p>
 </li>
 <li><p class="first"><em>berendsenT.temperature</em></p>
-<p>The property &#8216;temperature&#8217; defines the external temperature <img class="math" src="images/math/c0cb12cfa3d0f54027c07e0b2a1411d35be5f58a.png" alt="T_{0}"/>.</p>
+<p>The property &#8216;temperature&#8217; defines the external temperature <span class="math">T_{0}</span>.</p>
 </li>
 </ul>
 <p>Setting the integration property:</p>
@@ -125,7 +139,7 @@ the formula:</p>
 </div></blockquote>
 <dl class="function">
 <dt id="espressopp.integrator.BerendsenThermostat.espressopp.integrator.BerendsenThermostat">
-<code class="descclassname">espressopp.integrator.</code><code class="descname">BerendsenThermostat</code><span class="sig-paren">(</span><em>system</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.BerendsenThermostat.espressopp.integrator.BerendsenThermostat" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.integrator.</tt><tt class="descname">BerendsenThermostat</tt><big>(</big><em>system</em><big>)</big><a class="headerlink" href="#espressopp.integrator.BerendsenThermostat.espressopp.integrator.BerendsenThermostat" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -139,64 +153,15 @@ the formula:</p>
 </div>
 
 
+            
+             <a href="espressopp.integrator.BerendsenBarostatAnisotropic.html">previous</a>
+                
+            
+             <a style="float:right;"  href="espressopp.integrator.CapForce.html">next</a>
+            
           </div>
         </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="espressopp.integrator.BerendsenBarostatAnisotropic.html"
-                        title="previous chapter"><strong>BerendsenBarostatAnisotropic</strong> - Berendsen barostat Object</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="espressopp.integrator.CapForce.html"
-                        title="next chapter"><strong>CapForce</strong> - Integrator Extension</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="sources/espressopp.integrator.BerendsenThermostat.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.integrator.CapForce.html" title="CapForce - Integrator Extension"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.integrator.BerendsenBarostatAnisotropic.html" title="BerendsenBarostatAnisotropic - Berendsen barostat Object"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="integrator.html" >integrator</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &copy; Copyright 2013-2016, Max Planck Institute for Polymer Research.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
-    </div>
+     </div> 
+ </div>
   </body>
 </html>

@@ -1,3 +1,6 @@
+
+<div id="outer">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +9,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>LBOutput - abstract base class for analysis / output in LB simulations &mdash; ESPResSo++ 1.9.3 documentation</title>
+    <title>LBOutput - abstract base class for analysis / output in LB simulations &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        URL_ROOT:    '',
+        VERSION:     '1.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,45 +27,56 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.9.3 documentation" href="index.html" />
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="analysis" href="analysis.html" />
     <link rel="next" title="LBOutputScreen - controls screen output in LB-simulations" href="espressopp.analysis.LBOutputScreen.html" />
     <link rel="prev" title="espressopp.analysis.IntraChainDistSq" href="espressopp.analysis.IntraChainDistSq.html" /> 
   </head>
-  <body role="document">
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.analysis.LBOutputScreen.html" title="LBOutputScreen - controls screen output in LB-simulations"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.analysis.IntraChainDistSq.html" title="espressopp.analysis.IntraChainDistSq"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="analysis.html" accesskey="U">analysis</a> &raquo;</li> 
-      </ul>
-    </div>  
+  <body>
+  <div class="header"></div>
 
-    <div class="document">
+
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
+      </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
+
+  <div class="document">
       <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+	<div class="bodywrapper">
+	  <div class="body">
             
+             <a href="espressopp.analysis.IntraChainDistSq.html">previous</a>
+            
+            
+             <a style="float:right;"  href="espressopp.analysis.LBOutputScreen.html">next</a>
+            
+	    
   <span class="target" id="module-espressopp.analysis.LBOutput"></span><div class="section" id="lboutput-abstract-base-class-for-analysis-output-in-lb-simulations">
 <h1><strong>LBOutput</strong> - abstract base class for analysis / output in LB simulations<a class="headerlink" href="#lboutput-abstract-base-class-for-analysis-output-in-lb-simulations" title="Permalink to this headline">¶</a></h1>
 <p>Abstract base class for arbitrary output from LB simulations. At the moment, the implemented realisations are:</p>
 <ul class="simple">
-<li><a class="reference internal" href="espressopp.analysis.LBOutputScreen.html#module-espressopp.analysis.LBOutputScreen" title="espressopp.analysis.LBOutputScreen"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputScreen</span></code></a> to output local density <img class="math" src="images/math/e790d0e1aed49aa60e0d56f5928f98e2d4362a7e.png" alt="rho"/> and <img class="math" src="images/math/77e45681b112377352a596664f0f9b85516213c9.png" alt="v_z"/> component of the velocity as a function of the coordinate <img class="math" src="images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/>.</li>
-<li><a class="reference internal" href="espressopp.analysis.LBOutputVzInTime.html#module-espressopp.analysis.LBOutputVzInTime" title="espressopp.analysis.LBOutputVzInTime"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputVzInTime</span></code></a> to output velocity component <img class="math" src="images/math/77e45681b112377352a596664f0f9b85516213c9.png" alt="v_z"/> of a specific lattice site (the value used at the moment is <img class="math" src="images/math/5d10e6ce1fde7b5b4070b458467d953ee27027f7.png" alt="{0.25*N_i, 0, 0}"/>) in time.</li>
-<li><a class="reference internal" href="espressopp.analysis.LBOutputVzOfX.html#module-espressopp.analysis.LBOutputVzOfX" title="espressopp.analysis.LBOutputVzOfX"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputVzOfX</span></code></a> to output simulation progress and control flux conservation when using MD to LB coupling.</li>
+<li><a class="reference internal" href="espressopp.analysis.LBOutputScreen.html#module-espressopp.analysis.LBOutputScreen" title="espressopp.analysis.LBOutputScreen"><tt class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputScreen</span></tt></a> to output local density <span class="math">rho</span> and <span class="math">v_z</span> component of the velocity as a function of the coordinate <span class="math">x</span>.</li>
+<li><a class="reference internal" href="espressopp.analysis.LBOutputVzInTime.html#module-espressopp.analysis.LBOutputVzInTime" title="espressopp.analysis.LBOutputVzInTime"><tt class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputVzInTime</span></tt></a> to output velocity component <span class="math">v_z</span> of a specific lattice site (the value used at the moment is <span class="math">{0.25*N_i, 0, 0}</span>) in time.</li>
+<li><a class="reference internal" href="espressopp.analysis.LBOutputVzOfX.html#module-espressopp.analysis.LBOutputVzOfX" title="espressopp.analysis.LBOutputVzOfX"><tt class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputVzOfX</span></tt></a> to output simulation progress and control flux conservation when using MD to LB coupling.</li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
@@ -71,64 +85,15 @@
 </div>
 
 
+            
+             <a href="espressopp.analysis.IntraChainDistSq.html">previous</a>
+                
+            
+             <a style="float:right;"  href="espressopp.analysis.LBOutputScreen.html">next</a>
+            
           </div>
         </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="espressopp.analysis.IntraChainDistSq.html"
-                        title="previous chapter"><strong>espressopp.analysis.IntraChainDistSq</strong></a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="espressopp.analysis.LBOutputScreen.html"
-                        title="next chapter"><strong>LBOutputScreen</strong> - controls screen output in LB-simulations</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="sources/espressopp.analysis.LBOutput.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.analysis.LBOutputScreen.html" title="LBOutputScreen - controls screen output in LB-simulations"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.analysis.IntraChainDistSq.html" title="espressopp.analysis.IntraChainDistSq"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="analysis.html" >analysis</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &copy; Copyright 2013-2016, Max Planck Institute for Polymer Research.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
-    </div>
+     </div> 
+ </div>
   </body>
 </html>

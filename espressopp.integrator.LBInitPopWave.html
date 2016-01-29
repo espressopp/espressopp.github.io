@@ -1,3 +1,6 @@
+
+<div id="outer">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +9,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>LBInitPopWave - creates initial populations with uniform density and harmonic velocity &mdash; ESPResSo++ 1.9.3 documentation</title>
+    <title>LBInitPopWave - creates initial populations with uniform density and harmonic velocity &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        URL_ROOT:    '',
+        VERSION:     '1.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,45 +27,56 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.9.3 documentation" href="index.html" />
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="integrator" href="integrator.html" />
     <link rel="next" title="LangevinBarostat - Langevin-Hoover barostat Object" href="espressopp.integrator.LangevinBarostat.html" />
     <link rel="prev" title="LBInitPopUniform - creates initial populations with uniform density and velocity" href="espressopp.integrator.LBInitPopUniform.html" /> 
   </head>
-  <body role="document">
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.integrator.LangevinBarostat.html" title="LangevinBarostat - Langevin-Hoover barostat Object"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.integrator.LBInitPopUniform.html" title="LBInitPopUniform - creates initial populations with uniform density and velocity"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="integrator.html" accesskey="U">integrator</a> &raquo;</li> 
-      </ul>
-    </div>  
+  <body>
+  <div class="header"></div>
 
-    <div class="document">
+
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
+      </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
+
+  <div class="document">
       <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+	<div class="bodywrapper">
+	  <div class="body">
             
+             <a href="espressopp.integrator.LBInitPopUniform.html">previous</a>
+            
+            
+             <a style="float:right;"  href="espressopp.integrator.LangevinBarostat.html">next</a>
+            
+	    
   <span class="target" id="module-espressopp.integrator.LBInitPopWave"></span><div class="section" id="lbinitpopwave-creates-initial-populations-with-uniform-density-and-harmonic-velocity">
 <h1><strong>LBInitPopWave</strong> - creates initial populations with uniform density and harmonic velocity<a class="headerlink" href="#lbinitpopwave-creates-initial-populations-with-uniform-density-and-harmonic-velocity" title="Permalink to this headline">¶</a></h1>
 <p>This class creates LB-fluid with uniform density and harmonic velocity:
-<img class="math" src="images/math/230aaf44d2b0260bbcf3150841d485228c519283.png" alt="v_x = 0"/>, 
-<img class="math" src="images/math/9af197a1db126dbe41dca6dbbc3f8a46b78a9c68.png" alt="v_y = 0"/>,
-<img class="math" src="images/math/42a3a72551a8e4b09b77991a0350942b5970d8e6.png" alt="v_z(i) = A * sin (2 * \pi * i / N_x)"/>,</p>
-<p>where <img class="math" src="images/math/0acafa529182e79b4f56165ec677554fba7fcf98.png" alt="A"/> is the amplitude of the velocity wave, <img class="math" src="images/math/27372ea14fc01cc9e3698e28d52e22de6264c7be.png" alt="N_x"/> is the number of lattice nodes in <img class="math" src="images/math/188c175aac0a8a9c22499336711b5d7256407254.png" alt="x"/>-direction and <img class="math" src="images/math/a581f053bbfa5115f42c13094857cdd12a37ec49.png" alt="i"/> is the node index that the velocity is calculated for.</p>
+<span class="math">v_x = 0</span>, 
+<span class="math">v_y = 0</span>,
+<span class="math">v_z(i) = A * sin (2 * \pi * i / N_x)</span>,</p>
+<p>where <span class="math">A</span> is the amplitude of the velocity wave, <span class="math">N_x</span> is the number of lattice nodes in <span class="math">x</span>-direction and <span class="math">i</span> is the node index that the velocity is calculated for.</p>
 <p>This may be used to test the system: total moment is zero and the liquid tends to equilibrium, i.e. relaxes to a uniform zero velocity.</p>
 <blockquote>
 <div><p>Example:</p>
@@ -74,7 +88,7 @@
 </div></blockquote>
 <dl class="function">
 <dt id="espressopp.integrator.LBInitPopWave.espressopp.integrator.LBInitPopWave">
-<code class="descclassname">espressopp.integrator.</code><code class="descname">LBInitPopWave</code><span class="sig-paren">(</span><em>system</em>, <em>latticeboltzmann</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LBInitPopWave.espressopp.integrator.LBInitPopWave" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.integrator.</tt><tt class="descname">LBInitPopWave</tt><big>(</big><em>system</em>, <em>latticeboltzmann</em><big>)</big><a class="headerlink" href="#espressopp.integrator.LBInitPopWave.espressopp.integrator.LBInitPopWave" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -92,64 +106,15 @@
 </div>
 
 
+            
+             <a href="espressopp.integrator.LBInitPopUniform.html">previous</a>
+                
+            
+             <a style="float:right;"  href="espressopp.integrator.LangevinBarostat.html">next</a>
+            
           </div>
         </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="espressopp.integrator.LBInitPopUniform.html"
-                        title="previous chapter"><strong>LBInitPopUniform</strong> - creates initial populations with uniform density and velocity</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="espressopp.integrator.LangevinBarostat.html"
-                        title="next chapter"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="sources/espressopp.integrator.LBInitPopWave.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.integrator.LangevinBarostat.html" title="LangevinBarostat - Langevin-Hoover barostat Object"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.integrator.LBInitPopUniform.html" title="LBInitPopUniform - creates initial populations with uniform density and velocity"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="integrator.html" >integrator</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &copy; Copyright 2013-2016, Max Planck Institute for Polymer Research.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
-    </div>
+     </div> 
+ </div>
   </body>
 </html>

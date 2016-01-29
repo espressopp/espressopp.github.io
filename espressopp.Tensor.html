@@ -1,3 +1,6 @@
+
+<div id="outer">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +9,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>espressopp.Tensor &mdash; ESPResSo++ 1.9.3 documentation</title>
+    <title>espressopp.Tensor &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        URL_ROOT:    '',
+        VERSION:     '1.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,50 +27,61 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.9.3 documentation" href="index.html" />
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="espressopp" href="espressopp.html" />
     <link rel="next" title="espressopp.VerletList" href="espressopp.VerletList.html" />
     <link rel="prev" title="RealND -" href="espressopp.RealND.html" /> 
   </head>
-  <body role="document">
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.VerletList.html" title="espressopp.VerletList"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.RealND.html" title="RealND -"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="espressopp.html" accesskey="U">espressopp</a> &raquo;</li> 
-      </ul>
-    </div>  
+  <body>
+  <div class="header"></div>
 
-    <div class="document">
+
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
+      </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
+
+  <div class="document">
       <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+	<div class="bodywrapper">
+	  <div class="body">
             
+             <a href="espressopp.RealND.html">previous</a>
+            
+            
+             <a style="float:right;"  href="espressopp.VerletList.html">next</a>
+            
+	    
   <span class="target" id="module-espressopp.Tensor"></span><div class="section" id="espressopp-tensor">
 <h1><strong>espressopp.Tensor</strong><a class="headerlink" href="#espressopp-tensor" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="espressopp.Tensor.toTensor">
-<code class="descclassname">espressopp.Tensor.</code><code class="descname">toTensor</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.Tensor.toTensor" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.Tensor.</tt><tt class="descname">toTensor</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#espressopp.Tensor.toTensor" title="Permalink to this definition">¶</a></dt>
 <dd><p>Try to convert the arguments to a Tensor, returns the argument,
 if it is already a Tensor.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="espressopp.Tensor.toTensorFromVector">
-<code class="descclassname">espressopp.Tensor.</code><code class="descname">toTensorFromVector</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.Tensor.toTensorFromVector" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.Tensor.</tt><tt class="descname">toTensorFromVector</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#espressopp.Tensor.toTensorFromVector" title="Permalink to this definition">¶</a></dt>
 <dd><p>Try to convert the arguments to a Tensor.</p>
 <p>This function will only convert to a Tensor if x, y and z are
 specified.</p>
@@ -76,64 +90,15 @@ specified.</p>
 </div>
 
 
+            
+             <a href="espressopp.RealND.html">previous</a>
+                
+            
+             <a style="float:right;"  href="espressopp.VerletList.html">next</a>
+            
           </div>
         </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="espressopp.RealND.html"
-                        title="previous chapter"><strong>RealND</strong> -</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="espressopp.VerletList.html"
-                        title="next chapter"><strong>espressopp.VerletList</strong></a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="sources/espressopp.Tensor.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.VerletList.html" title="espressopp.VerletList"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.RealND.html" title="RealND -"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="espressopp.html" >espressopp</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &copy; Copyright 2013-2016, Max Planck Institute for Polymer Research.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
-    </div>
+     </div> 
+ </div>
   </body>
 </html>

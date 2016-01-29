@@ -1,3 +1,6 @@
+
+<div id="outer">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +9,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Basic System Setup &mdash; ESPResSo++ 1.9.3 documentation</title>
+    <title>Basic System Setup &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        URL_ROOT:    '',
+        VERSION:     '1.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,37 +27,49 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.9.3 documentation" href="index.html" />
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="ESPResSo++ Tutorial" href="tutorial.html" />
     <link rel="next" title="Simple Lennard Jones System" href="tutorial.LennardJones.html" />
     <link rel="prev" title="Installation of ESPResSo++" href="tutorial.Installation.html" /> 
   </head>
-  <body role="document">
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="tutorial.LennardJones.html" title="Simple Lennard Jones System"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="tutorial.Installation.html" title="Installation of ESPResSo++"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="tutorial.html" accesskey="U">ESPResSo++ Tutorial</a> &raquo;</li> 
-      </ul>
-    </div>  
+  <body>
+  <div class="header"></div>
 
-    <div class="document">
+
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
+      </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
+
+  <div class="document">
       <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+	<div class="bodywrapper">
+	  <div class="body">
             
+             <a href="tutorial.Installation.html">previous</a>
+            
+            
+             <a style="float:right;"  href="tutorial.LennardJones.html">next</a>
+            
+	    
   <div class="section" id="basic-system-setup">
 <h1>Basic System Setup<a class="headerlink" href="#basic-system-setup" title="Permalink to this headline">¶</a></h1>
 <p>ESPResSo++ is implemented as a python module that has to be imported at the beginning
@@ -98,7 +113,7 @@ will be implemented in future versions.</p>
 <p>The <em>domain decomposition</em> storage needs to know how many CPUs (or cores, if there are multicore CPUs)
 are available for the simulation and how to assign the CPUs to the different domains of our simulation box.
 Moreover the storage needs to know the maximum interaction range of the particles. In a simple Lennard-Jones
-fluid this could for example be <img class="math" src="images/math/f6c05c0d68a9297aee9e5177a21154ab69d11a38.png" alt="r_{cut} = 2^\frac{1}{6}"/>. This value together with the <em>skin</em> value
+fluid this could for example be <span class="math">r_{cut} = 2^\frac{1}{6}</span>. This value together with the <em>skin</em> value
 determines the minimal size for the so called <em>linked cells</em> which are used to speed up Verlet list rebuilds
 (see Frenkel&amp;Smit or Allen&amp;Tildesley for the details).</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">maxcutoff</span>      <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="mf">2.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="o">/</span><span class="mf">6.0</span><span class="p">)</span>
@@ -232,63 +247,15 @@ looking at the configuration with some visualization programm (e.g. VMD):</p>
 </div>
 
 
+            
+             <a href="tutorial.Installation.html">previous</a>
+                
+            
+             <a style="float:right;"  href="tutorial.LennardJones.html">next</a>
+            
           </div>
         </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="tutorial.Installation.html"
-                        title="previous chapter">Installation of ESPResSo++</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="tutorial.LennardJones.html"
-                        title="next chapter">Simple Lennard Jones System</a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="sources/tutorial.SystemSetup.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="tutorial.LennardJones.html" title="Simple Lennard Jones System"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="tutorial.Installation.html" title="Installation of ESPResSo++"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="tutorial.html" >ESPResSo++ Tutorial</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &copy; Copyright 2013-2016, Max Planck Institute for Polymer Research.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
-    </div>
+     </div> 
+ </div>
   </body>
 </html>

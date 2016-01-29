@@ -1,3 +1,6 @@
+
+<div id="outer">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +9,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>espressopp.interaction.StillingerWeberPairTerm &mdash; ESPResSo++ 1.9.3 documentation</title>
+    <title>espressopp.interaction.StillingerWeberPairTerm &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        URL_ROOT:    '',
+        VERSION:     '1.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,48 +27,59 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.9.3 documentation" href="index.html" />
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="interaction" href="interaction.html" />
     <link rel="next" title="espressopp.interaction.StillingerWeberPairTermCapped" href="espressopp.interaction.StillingerWeberPairTermCapped.html" />
     <link rel="prev" title="espressopp.interaction.SoftCosine" href="espressopp.interaction.SoftCosine.html" /> 
   </head>
-  <body role="document">
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.interaction.StillingerWeberPairTermCapped.html" title="espressopp.interaction.StillingerWeberPairTermCapped"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.interaction.SoftCosine.html" title="espressopp.interaction.SoftCosine"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="interaction.html" accesskey="U">interaction</a> &raquo;</li> 
-      </ul>
-    </div>  
+  <body>
+  <div class="header"></div>
 
-    <div class="document">
+
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
+      </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
+
+  <div class="document">
       <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+	<div class="bodywrapper">
+	  <div class="body">
             
+             <a href="espressopp.interaction.SoftCosine.html">previous</a>
+            
+            
+             <a style="float:right;"  href="espressopp.interaction.StillingerWeberPairTermCapped.html">next</a>
+            
+	    
   <span class="target" id="module-espressopp.interaction.StillingerWeberPairTerm"></span><div class="section" id="espressopp-interaction-stillingerweberpairterm">
 <h1><strong>espressopp.interaction.StillingerWeberPairTerm</strong><a class="headerlink" href="#espressopp-interaction-stillingerweberpairterm" title="Permalink to this headline">¶</a></h1>
 <p>This class provides methods to compute forces and energies of
 2 body term of Stillinger-Weber potential.</p>
 <div class="math">
-<p><img src="images/math/ab0646b00b18555a2af819896a176944f37c83d4.png" alt="U = \varepsilon A  \left[ {\frac{d}{\sigma}}^{-p} (B  - 1 )\right] exp\left(\frac{1}{\frac{d}{\sigma} - r_c}\right)"/></p>
-</div><p>where <img class="math" src="images/math/c501f44ea1db5d51310372a9fc9ac94128bfb470.png" alt="r_c"/> is the cutoff-radius.</p>
+<p><span class="math">U = \varepsilon A  \left[ {\frac{d}{\sigma}}^{-p} (B  - 1 )\right] exp\left(\frac{1}{\frac{d}{\sigma} - r_c}\right)</span></p>
+</div><p>where <span class="math">r_c</span> is the cutoff-radius.</p>
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.StillingerWeberPairTerm">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">StillingerWeberPairTerm</code><span class="sig-paren">(</span><em>A</em>, <em>B</em>, <em>p</em>, <em>q</em>, <em>epsilon</em>, <em>sigma</em>, <em>cutoff</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.StillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.</tt><tt class="descname">StillingerWeberPairTerm</tt><big>(</big><em>A</em>, <em>B</em>, <em>p</em>, <em>q</em>, <em>epsilon</em>, <em>sigma</em>, <em>cutoff</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.StillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -87,7 +101,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListStillingerWeberPairTerm">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListStillingerWeberPairTerm</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListStillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.</tt><tt class="descname">VerletListStillingerWeberPairTerm</tt><big>(</big><em>vl</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListStillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -100,7 +114,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListStillingerWeberPairTerm.getPotential">
-<code class="descclassname">espressopp.interaction.VerletListStillingerWeberPairTerm.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListStillingerWeberPairTerm.getPotential" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.VerletListStillingerWeberPairTerm.</tt><tt class="descname">getPotential</tt><big>(</big><em>type1</em>, <em>type2</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListStillingerWeberPairTerm.getPotential" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -120,7 +134,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListStillingerWeberPairTerm.getVerletList">
-<code class="descclassname">espressopp.interaction.VerletListStillingerWeberPairTerm.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListStillingerWeberPairTerm.getVerletList" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.VerletListStillingerWeberPairTerm.</tt><tt class="descname">getVerletList</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListStillingerWeberPairTerm.getVerletList" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -133,7 +147,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListStillingerWeberPairTerm.setPotential">
-<code class="descclassname">espressopp.interaction.VerletListStillingerWeberPairTerm.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListStillingerWeberPairTerm.setPotential" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.VerletListStillingerWeberPairTerm.</tt><tt class="descname">setPotential</tt><big>(</big><em>type1</em>, <em>type2</em>, <em>potential</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListStillingerWeberPairTerm.setPotential" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -151,7 +165,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListAdressStillingerWeberPairTerm">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressStillingerWeberPairTerm</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListAdressStillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.</tt><tt class="descname">VerletListAdressStillingerWeberPairTerm</tt><big>(</big><em>vl</em>, <em>fixedtupleList</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListAdressStillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -168,7 +182,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListAdressStillingerWeberPairTerm.setPotentialAT">
-<code class="descclassname">espressopp.interaction.VerletListAdressStillingerWeberPairTerm.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListAdressStillingerWeberPairTerm.setPotentialAT" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.VerletListAdressStillingerWeberPairTerm.</tt><tt class="descname">setPotentialAT</tt><big>(</big><em>type1</em>, <em>type2</em>, <em>potential</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListAdressStillingerWeberPairTerm.setPotentialAT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -186,7 +200,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListAdressStillingerWeberPairTerm.setPotentialCG">
-<code class="descclassname">espressopp.interaction.VerletListAdressStillingerWeberPairTerm.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListAdressStillingerWeberPairTerm.setPotentialCG" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.VerletListAdressStillingerWeberPairTerm.</tt><tt class="descname">setPotentialCG</tt><big>(</big><em>type1</em>, <em>type2</em>, <em>potential</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListAdressStillingerWeberPairTerm.setPotentialCG" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -204,7 +218,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListHadressStillingerWeberPairTerm">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressStillingerWeberPairTerm</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListHadressStillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.</tt><tt class="descname">VerletListHadressStillingerWeberPairTerm</tt><big>(</big><em>vl</em>, <em>fixedtupleList</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListHadressStillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -221,7 +235,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListHadressStillingerWeberPairTerm.setPotentialAT">
-<code class="descclassname">espressopp.interaction.VerletListHadressStillingerWeberPairTerm.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListHadressStillingerWeberPairTerm.setPotentialAT" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.VerletListHadressStillingerWeberPairTerm.</tt><tt class="descname">setPotentialAT</tt><big>(</big><em>type1</em>, <em>type2</em>, <em>potential</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListHadressStillingerWeberPairTerm.setPotentialAT" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -239,7 +253,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListHadressStillingerWeberPairTerm.setPotentialCG">
-<code class="descclassname">espressopp.interaction.VerletListHadressStillingerWeberPairTerm.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListHadressStillingerWeberPairTerm.setPotentialCG" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.VerletListHadressStillingerWeberPairTerm.</tt><tt class="descname">setPotentialCG</tt><big>(</big><em>type1</em>, <em>type2</em>, <em>potential</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.VerletListHadressStillingerWeberPairTerm.setPotentialCG" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -257,7 +271,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.CellListStillingerWeberPairTerm">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">CellListStillingerWeberPairTerm</code><span class="sig-paren">(</span><em>stor</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.CellListStillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.</tt><tt class="descname">CellListStillingerWeberPairTerm</tt><big>(</big><em>stor</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.CellListStillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -270,7 +284,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.CellListStillingerWeberPairTerm.setPotential">
-<code class="descclassname">espressopp.interaction.CellListStillingerWeberPairTerm.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.CellListStillingerWeberPairTerm.setPotential" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.CellListStillingerWeberPairTerm.</tt><tt class="descname">setPotential</tt><big>(</big><em>type1</em>, <em>type2</em>, <em>potential</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.CellListStillingerWeberPairTerm.setPotential" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -288,7 +302,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.FixedPairListStillingerWeberPairTerm">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedPairListStillingerWeberPairTerm</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.FixedPairListStillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.</tt><tt class="descname">FixedPairListStillingerWeberPairTerm</tt><big>(</big><em>system</em>, <em>vl</em>, <em>potential</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.FixedPairListStillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -306,7 +320,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.FixedPairListStillingerWeberPairTerm.setPotential">
-<code class="descclassname">espressopp.interaction.FixedPairListStillingerWeberPairTerm.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.FixedPairListStillingerWeberPairTerm.setPotential" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.interaction.FixedPairListStillingerWeberPairTerm.</tt><tt class="descname">setPotential</tt><big>(</big><em>potential</em><big>)</big><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.FixedPairListStillingerWeberPairTerm.setPotential" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -319,71 +333,22 @@
 
 <dl class="class">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.StillingerWeberPairTerm">
-<em class="property">class </em><code class="descclassname">espressopp.interaction.StillingerWeberPairTerm.</code><code class="descname">StillingerWeberPairTerm</code><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.StillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">espressopp.interaction.StillingerWeberPairTerm.</tt><tt class="descname">StillingerWeberPairTerm</tt><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.StillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>
 <dd><p>The Lennard-Jones potential.</p>
 </dd></dl>
 
 </div>
 
 
+            
+             <a href="espressopp.interaction.SoftCosine.html">previous</a>
+                
+            
+             <a style="float:right;"  href="espressopp.interaction.StillingerWeberPairTermCapped.html">next</a>
+            
           </div>
         </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="espressopp.interaction.SoftCosine.html"
-                        title="previous chapter"><strong>espressopp.interaction.SoftCosine</strong></a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="espressopp.interaction.StillingerWeberPairTermCapped.html"
-                        title="next chapter"><strong>espressopp.interaction.StillingerWeberPairTermCapped</strong></a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="sources/espressopp.interaction.StillingerWeberPairTerm.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.interaction.StillingerWeberPairTermCapped.html" title="espressopp.interaction.StillingerWeberPairTermCapped"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.interaction.SoftCosine.html" title="espressopp.interaction.SoftCosine"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="interaction.html" >interaction</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &copy; Copyright 2013-2016, Max Planck Institute for Polymer Research.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
-    </div>
+     </div> 
+ </div>
   </body>
 </html>

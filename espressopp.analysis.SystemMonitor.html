@@ -1,3 +1,6 @@
+
+<div id="outer">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +9,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>espressopp.analysis.SystemMonitor &mdash; ESPResSo++ 1.9.3 documentation</title>
+    <title>espressopp.analysis.SystemMonitor &mdash; ESPResSo++ 1.7 documentation</title>
     
-    <link rel="stylesheet" href="static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        URL_ROOT:    '',
+        VERSION:     '1.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,45 +27,56 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.9.3 documentation" href="index.html" />
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
     <link rel="up" title="analysis" href="analysis.html" />
     <link rel="next" title="espressopp.analysis.Temperature" href="espressopp.analysis.Temperature.html" />
     <link rel="prev" title="espressopp.analysis.StaticStructF" href="espressopp.analysis.StaticStructF.html" /> 
   </head>
-  <body role="document">
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.analysis.Temperature.html" title="espressopp.analysis.Temperature"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.analysis.StaticStructF.html" title="espressopp.analysis.StaticStructF"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="analysis.html" accesskey="U">analysis</a> &raquo;</li> 
-      </ul>
-    </div>  
+  <body>
+  <div class="header"></div>
 
-    <div class="document">
+
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
+      </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
+
+  <div class="document">
       <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
+	<div class="bodywrapper">
+	  <div class="body">
             
+             <a href="espressopp.analysis.StaticStructF.html">previous</a>
+            
+            
+             <a style="float:right;"  href="espressopp.analysis.Temperature.html">next</a>
+            
+	    
   <span class="target" id="module-espressopp.analysis.SystemMonitor"></span><div class="section" id="espressopp-analysis-systemmonitor">
 <h1><strong>espressopp.analysis.SystemMonitor</strong><a class="headerlink" href="#espressopp-analysis-systemmonitor" title="Permalink to this headline">¶</a></h1>
 <p>SystemMonitor prints and logs to file values obtained from Observables like
 temperature, pressure or potential energy.</p>
 <dl class="function">
 <dt id="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor">
-<code class="descclassname">espressopp.analysis.</code><code class="descname">SystemMonitor</code><span class="sig-paren">(</span><em>system</em>, <em>integrator</em>, <em>output</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.analysis.</tt><tt class="descname">SystemMonitor</tt><big>(</big><em>system</em>, <em>integrator</em>, <em>output</em><big>)</big><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -70,7 +84,7 @@ temperature, pressure or potential energy.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; The system object.</li>
 <li><strong>integrator</strong> (<a class="reference internal" href="espressopp.integrator.MDIntegrator.html#module-espressopp.integrator.MDIntegrator" title="espressopp.integrator.MDIntegrator"><em>espressopp.integrator.MDIntegrator</em></a>) &#8211; The MD integrator.</li>
-<li><strong>output</strong> (<a class="reference internal" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitorOutputCSV" title="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitorOutputCSV"><em>espressopp.analysis.SystemMonitorOutputCSV</em></a>) &#8211; The output object.</li>
+<li><strong>output</strong> (<em>espressopp.analysis.SystemMonitorOutputCSV</em>) &#8211; The output object.</li>
 </ul>
 </td>
 </tr>
@@ -80,9 +94,9 @@ temperature, pressure or potential energy.</p>
 
 <dl class="function">
 <dt id="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.add_observable">
-<code class="descclassname">espressopp.analysis.SystemMonitor.</code><code class="descname">add_observable</code><span class="sig-paren">(</span><em>name</em>, <em>observable</em>, <em>is_visible</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.add_observable" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.analysis.SystemMonitor.</tt><tt class="descname">add_observable</tt><big>(</big><em>name</em>, <em>observable</em>, <em>is_visible</em><big>)</big><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.add_observable" title="Permalink to this definition">¶</a></dt>
 <dt>
-<code class="descname">The function adds new observable to SystemMonitor.</code></dt>
+<tt class="descname">The function adds new observable to SystemMonitor.</tt></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -100,9 +114,9 @@ temperature, pressure or potential energy.</p>
 
 <dl class="function">
 <dt id="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.info">
-<code class="descclassname">espressopp.analysis.SystemMonitor.</code><code class="descname">info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.info" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.analysis.SystemMonitor.</tt><tt class="descname">info</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.info" title="Permalink to this definition">¶</a></dt>
 <dt>
-<code class="descname">The method print out on console the values of observables.</code></dt>
+<tt class="descname">The method print out on console the values of observables.</tt></dt>
 <dd></dd></dl>
 
 <div class="section" id="csv-output">
@@ -110,7 +124,7 @@ temperature, pressure or potential energy.</p>
 <p>The output of SystemMonitor to CSV files.</p>
 <dl class="function">
 <dt id="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitorOutputCSV">
-<code class="descclassname">espressopp.analysis.</code><code class="descname">SystemMonitorOutputCSV</code><span class="sig-paren">(</span><em>file_name</em>, <em>delimiter</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitorOutputCSV" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.analysis.</tt><tt class="descname">SystemMonitorOutputCSV</tt><big>(</big><em>file_name</em>, <em>delimiter</em><big>)</big><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitorOutputCSV" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -147,7 +161,7 @@ temperature, pressure or potential energy.</p>
 <p>The object that computes potential energy of different interactions.</p>
 <dl class="function">
 <dt id="espressopp.analysis.PotentialEnergy.espressopp.analysis.PotentialEnergy">
-<code class="descclassname">espressopp.analysis.</code><code class="descname">PotentialEnergy</code><span class="sig-paren">(</span><em>system</em>, <em>potential</em>, <em>compute_method=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.PotentialEnergy.espressopp.analysis.PotentialEnergy" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.analysis.</tt><tt class="descname">PotentialEnergy</tt><big>(</big><em>system</em>, <em>potential</em>, <em>compute_method=None</em><big>)</big><a class="headerlink" href="#espressopp.analysis.PotentialEnergy.espressopp.analysis.PotentialEnergy" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -168,74 +182,15 @@ if set to <cite>AT</cite> then compute only atomitic part of potential energy.</
 </div>
 
 
+            
+             <a href="espressopp.analysis.StaticStructF.html">previous</a>
+                
+            
+             <a style="float:right;"  href="espressopp.analysis.Temperature.html">next</a>
+            
           </div>
         </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <h3><a href="index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#"><strong>espressopp.analysis.SystemMonitor</strong></a><ul>
-<li><a class="reference internal" href="#csv-output">CSV Output</a></li>
-<li><a class="reference internal" href="#example">Example</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#espressopp-analysis-potentialenergy"><strong>espressopp.analysis.PotentialEnergy</strong></a></li>
-</ul>
-
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="espressopp.analysis.StaticStructF.html"
-                        title="previous chapter"><strong>espressopp.analysis.StaticStructF</strong></a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="espressopp.analysis.Temperature.html"
-                        title="next chapter"><strong>espressopp.analysis.Temperature</strong></a></p>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="sources/espressopp.analysis.SystemMonitor.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="espressopp.analysis.Temperature.html" title="espressopp.analysis.Temperature"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="espressopp.analysis.StaticStructF.html" title="espressopp.analysis.StaticStructF"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">ESPResSo++ 1.9.3 documentation</a> &raquo;</li>
-          <li class="nav-item nav-item-1"><a href="classdescription.html" >ESPResSo++ User Interface - Class Description</a> &raquo;</li>
-          <li class="nav-item nav-item-2"><a href="analysis.html" >analysis</a> &raquo;</li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &copy; Copyright 2013-2016, Max Planck Institute for Polymer Research.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.1.
-    </div>
+     </div> 
+ </div>
   </body>
 </html>
