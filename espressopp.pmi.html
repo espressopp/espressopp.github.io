@@ -1,3 +1,6 @@
+
+<div id="outer">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +9,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>PMI - Parallel Method Invocation &mdash; ESPResSo++ v1.9.3</title>
+    <title>PMI - Parallel Method Invocation &mdash; ESPResSo++ 1.7 documentation</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        URL_ROOT:    '',
+        VERSION:     '1.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,78 +27,48 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
-    <link rel="up" title="User Interface" href="classdescription.html" />
-    <link rel="next" title="System - Object" href="espressopp.System.html" />
-    <link rel="prev" title="Version - Object" href="espressopp.Version.html" />
-   
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
+    <link rel="up" title="espressopp" href="espressopp.html" />
+    <link rel="next" title="espressopp.Exceptions" href="espressopp.Exceptions.html" />
+    <link rel="prev" title="espressopp" href="espressopp.html" /> 
   </head>
-  <body role="document">
-  <div id="outer">
+  <body>
   <div class="header"></div>
 
 
-
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="espressopp.Version.html"><strong>Version</strong> - Object</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href=""><strong>PMI</strong> - Parallel Method Invocation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.System.html"><strong>System</strong> - Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.BC.html"><strong>BC</strong> - Boundary Condition Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.OrthorhombicBC.html"><strong>OrthorhombicBC</strong> - Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.storage.html"><strong>Storage</strong> - Storage Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html"><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html"><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.tools.decomp.html"><strong>decomp.py</strong> - Auxiliary python functions</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
-<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
-</ul>
-<a href="http://www.espresso-pp.de/Impressum.html">Impressum</a>
-<div id="searchbox" style="display: none" role="search">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Search" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
       </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
 
   <div class="document">
-    <div class="documentwrapper">
+      <div class="documentwrapper">
 	<div class="bodywrapper">
 	  <div class="body">
+            
+             <a href="espressopp.html">previous</a>
+            
+            
+             <a style="float:right;"  href="espressopp.Exceptions.html">next</a>
+            
 	    
   <span class="target" id="module-espressopp.pmi"></span><div class="section" id="pmi-parallel-method-invocation">
 <h1><strong>PMI</strong> - Parallel Method Invocation<a class="headerlink" href="#pmi-parallel-method-invocation" title="Permalink to this headline">¶</a></h1>
@@ -214,7 +187,7 @@ the workers.</li>
 </ul>
 <dl class="function">
 <dt id="espressopp.pmi.exec_">
-<code class="descclassname">espressopp.pmi.</code><code class="descname">exec_</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.exec_" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.pmi.</tt><tt class="descname">exec_</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#espressopp.pmi.exec_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Controller command that executes arbitrary python code on all (active) workers.</p>
 <p>exec_() allows to execute arbitrary Python code on all workers.
 It can be used to define classes and functions on all workers.
@@ -231,7 +204,7 @@ workers.</p>
 
 <dl class="function">
 <dt id="espressopp.pmi.import_">
-<code class="descclassname">espressopp.pmi.</code><code class="descname">import_</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.import_" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.pmi.</tt><tt class="descname">import_</tt><big>(</big><em>*args</em><big>)</big><a class="headerlink" href="#espressopp.pmi.import_" title="Permalink to this definition">¶</a></dt>
 <dd><p>Controller command that imports python modules on all (active) workers.</p>
 <p>Each element of args should be a module name that is imported to
 all workers.</p>
@@ -244,7 +217,7 @@ all workers.</p>
 
 <dl class="function">
 <dt id="espressopp.pmi.create">
-<code class="descclassname">espressopp.pmi.</code><code class="descname">create</code><span class="sig-paren">(</span><em>cls=None</em>, <em>*args</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.create" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.pmi.</tt><tt class="descname">create</tt><big>(</big><em>cls=None</em>, <em>*args</em>, <em>**kwds</em><big>)</big><a class="headerlink" href="#espressopp.pmi.create" title="Permalink to this definition">¶</a></dt>
 <dd><p>Controller command that creates an object on all workers.</p>
 <p>cls describes the (new-style) class that should be instantiated.
 args are the arguments to the constructor of the class.  Only
@@ -275,7 +248,7 @@ calling module <em>and</em> via PMI.</p>
 
 <dl class="function">
 <dt id="espressopp.pmi.call">
-<code class="descclassname">espressopp.pmi.</code><code class="descname">call</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.call" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.pmi.</tt><tt class="descname">call</tt><big>(</big><em>*args</em>, <em>**kwds</em><big>)</big><a class="headerlink" href="#espressopp.pmi.call" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call a function on all workers, returning only the return value on the controller.</p>
 <p>function denotes the function that is to be called, args and kwds
 are the arguments to the function. If kwds contains keys that
@@ -300,7 +273,7 @@ been imported via <cite>exec_()</cite>.</p>
 
 <dl class="function">
 <dt id="espressopp.pmi.invoke">
-<code class="descclassname">espressopp.pmi.</code><code class="descname">invoke</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.invoke" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.pmi.</tt><tt class="descname">invoke</tt><big>(</big><em>*args</em>, <em>**kwds</em><big>)</big><a class="headerlink" href="#espressopp.pmi.invoke" title="Permalink to this definition">¶</a></dt>
 <dd><p>Invoke a function on all workers, gathering the return values into a list.</p>
 <p>function denotes the function that is to be called, args and
 kwds are the arguments to the function. If kwds contains keys
@@ -322,7 +295,7 @@ that have been imported to pmi via <cite>exec_()</cite> or <cite>import_()</cite
 
 <dl class="function">
 <dt id="espressopp.pmi.reduce">
-<code class="descclassname">espressopp.pmi.</code><code class="descname">reduce</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.reduce" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.pmi.</tt><tt class="descname">reduce</tt><big>(</big><em>*args</em>, <em>**kwds</em><big>)</big><a class="headerlink" href="#espressopp.pmi.reduce" title="Permalink to this definition">¶</a></dt>
 <dd><p>Invoke a function on all workers, reducing the return values to
 a single value.</p>
 <p>reduceOp is the (associative) operator that is used to process the
@@ -351,14 +324,14 @@ must have been imported to pmi via <cite>exec_()</cite> or <cite>import_()</cite
 
 <dl class="function">
 <dt id="espressopp.pmi.sync">
-<code class="descclassname">espressopp.pmi.</code><code class="descname">sync</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.sync" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.pmi.</tt><tt class="descname">sync</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.pmi.sync" title="Permalink to this definition">¶</a></dt>
 <dd><p>Controller command that deletes the PMI objects on the
 workers that have already been deleted on the controller.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="espressopp.pmi.receive">
-<code class="descclassname">espressopp.pmi.</code><code class="descname">receive</code><span class="sig-paren">(</span><em>expected=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.receive" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.pmi.</tt><tt class="descname">receive</tt><big>(</big><em>expected=None</em><big>)</big><a class="headerlink" href="#espressopp.pmi.receive" title="Permalink to this definition">¶</a></dt>
 <dd><p>Worker command that receives and handles the next PMI command.</p>
 <p>This function waits to receive and handle a single PMI command. If
 expected is not None and the received command does not equal
@@ -367,7 +340,7 @@ expected, raise a <cite>UserError</cite>.</p>
 
 <dl class="function">
 <dt id="espressopp.pmi.startWorkerLoop">
-<code class="descclassname">espressopp.pmi.</code><code class="descname">startWorkerLoop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.startWorkerLoop" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.pmi.</tt><tt class="descname">startWorkerLoop</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.pmi.startWorkerLoop" title="Permalink to this definition">¶</a></dt>
 <dd><p>Worker command that starts the main worker loop.</p>
 <p>This function starts a loop that expects to receive PMI commands
 until <cite>stopWorkerLoop()</cite> or <cite>finalizeWorkers()</cite> is called on the
@@ -376,33 +349,33 @@ controller.</p>
 
 <dl class="function">
 <dt id="espressopp.pmi.finalizeWorkers">
-<code class="descclassname">espressopp.pmi.</code><code class="descname">finalizeWorkers</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.finalizeWorkers" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.pmi.</tt><tt class="descname">finalizeWorkers</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.pmi.finalizeWorkers" title="Permalink to this definition">¶</a></dt>
 <dd><p>Controller command that stops and exits all workers.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="espressopp.pmi.stopWorkerLoop">
-<code class="descclassname">espressopp.pmi.</code><code class="descname">stopWorkerLoop</code><span class="sig-paren">(</span><em>doExit=False</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.stopWorkerLoop" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.pmi.</tt><tt class="descname">stopWorkerLoop</tt><big>(</big><em>doExit=False</em><big>)</big><a class="headerlink" href="#espressopp.pmi.stopWorkerLoop" title="Permalink to this definition">¶</a></dt>
 <dd><p>Controller command that stops all workers.</p>
 <p>If doExit is set, the workers exit afterwards.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="espressopp.pmi.registerAtExit">
-<code class="descclassname">espressopp.pmi.</code><code class="descname">registerAtExit</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.registerAtExit" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.pmi.</tt><tt class="descname">registerAtExit</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.pmi.registerAtExit" title="Permalink to this definition">¶</a></dt>
 <dd><p>Controller command that registers the function
 <cite>finalizeWorkers()</cite> via atexit.</p>
 </dd></dl>
 
 <dl class="class">
 <dt id="espressopp.pmi.Proxy">
-<em class="property">class </em><code class="descclassname">espressopp.pmi.</code><code class="descname">Proxy</code><span class="sig-paren">(</span><em>name</em>, <em>bases</em>, <em>dict</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.Proxy" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><tt class="descclassname">espressopp.pmi.</tt><tt class="descname">Proxy</tt><big>(</big><em>name</em>, <em>bases</em>, <em>dict</em><big>)</big><a class="headerlink" href="#espressopp.pmi.Proxy" title="Permalink to this definition">¶</a></dt>
 <dd><p>A metaclass to be used to create frontend serial objects.</p>
 </dd></dl>
 
 <dl class="exception">
 <dt id="espressopp.pmi.UserError">
-<em class="property">exception </em><code class="descclassname">espressopp.pmi.</code><code class="descname">UserError</code><span class="sig-paren">(</span><em>msg</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.UserError" title="Permalink to this definition">¶</a></dt>
+<em class="property">exception </em><tt class="descclassname">espressopp.pmi.</tt><tt class="descname">UserError</tt><big>(</big><em>msg</em><big>)</big><a class="headerlink" href="#espressopp.pmi.UserError" title="Permalink to this definition">¶</a></dt>
 <dd><p>Raised when PMI has encountered a user error.</p>
 </dd></dl>
 
@@ -410,31 +383,15 @@ controller.</p>
 </div>
 
 
-      </div>
-     </div>
+            
+             <a href="espressopp.html">previous</a>
+                
+            
+             <a style="float:right;"  href="espressopp.Exceptions.html">next</a>
+            
+          </div>
+        </div>
      </div> 
-  </div>
-
-    <div class="footer">
-      &copy;2013-2016, Max Planck Institute for Polymer Research.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
-      
-      |
-      <a href="sources/espressopp.pmi.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  <div class="footer">
-      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
-      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
-  </div>
-  </div>
-
+ </div>
   </body>
 </html>
