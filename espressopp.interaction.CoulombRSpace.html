@@ -1,6 +1,3 @@
-
-<div id="outer">
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -9,15 +6,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>CoulombRSpace - Coulomb potential and interaction Objects (R space part) &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>CoulombRSpace - Coulomb potential and interaction Objects (R space part) &mdash; ESPResSo++ v1.9.3</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '1.7',
+        URL_ROOT:    './',
+        VERSION:     '1.9.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -27,62 +24,92 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
-    <link rel="up" title="interaction" href="interaction.html" />
-    <link rel="next" title="espressopp.interaction.CoulombTruncated" href="espressopp.interaction.CoulombTruncated.html" />
-    <link rel="prev" title="CoulombKSpaceP3M - Coulomb potential and interaction Objects (K space part)" href="espressopp.interaction.CoulombKSpaceP3M.html" /> 
+    <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
+    <link rel="up" title="User Interface" href="classdescription.html" />
+    <link rel="next" title="CoulombKSpaceEwald - Coulomb potential and interaction Objects (K space part)" href="espressopp.interaction.CoulombKSpaceEwald.html" />
+    <link rel="prev" title="LangevinBarostat - Langevin-Hoover barostat Object" href="espressopp.integrator.LangevinBarostat.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
   </head>
-  <body>
+  <body role="document">
+  <div id="outer">
   <div class="header"></div>
 
 
-  
-    <div class="menu">
-      <ul class="nav">
-	<li><a href="../index.html">Home</a></li>
-	<li><a href="../Features.html">Features</a></li>
-	<li><a href="../Download.html">Download</a></li>
-	<li><a href="index.html">Documentation</a></li>
-	<li><a href="../Developer_Team.html">Developer Team</a></li>
-	<li><a href="../Getting_Help.html">Getting Help</a></li>
-	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
-      </ul>
-      <div id="searchbox" style="display: none">
-	<form class="search" action="search.html" method="get">
-	  <input type="text" name="q" size="12" />
-	  <input type="submit" value="Search" />
-	  <input type="hidden" name="check_keywords" value="yes" />
-	  <input type="hidden" name="area" value="default" />
-	</form>
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="espressopp.Version.html"><strong>Version</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.pmi.html"><strong>PMI</strong> - Parallel Method Invocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.System.html"><strong>System</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.BC.html"><strong>BC</strong> - Boundary Condition Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.OrthorhombicBC.html"><strong>OrthorhombicBC</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.storage.html"><strong>Storage</strong> - Storage Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html"><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href=""><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.tools.decomp.html"><strong>decomp.py</strong> - Auxiliary python functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
+</ul>
+<a href="http://www.espresso-pp.de/Impressum.html">Impressum</a>
+<div id="searchbox" style="display: none" role="search">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
       </div>
-      <script type="text/javascript">$('#searchbox').show(0);</script>
-    </div>
-   
 
   <div class="document">
-      <div class="documentwrapper">
+    <div class="documentwrapper">
 	<div class="bodywrapper">
 	  <div class="body">
-            
-             <a href="espressopp.interaction.CoulombKSpaceP3M.html">previous</a>
-            
-            
-             <a style="float:right;"  href="espressopp.interaction.CoulombTruncated.html">next</a>
-            
 	    
   <span class="target" id="module-espressopp.interaction.CoulombRSpace"></span><div class="section" id="coulombrspace-coulomb-potential-and-interaction-objects-r-space-part">
 <h1><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)<a class="headerlink" href="#coulombrspace-coulomb-potential-and-interaction-objects-r-space-part" title="Permalink to this headline">¶</a></h1>
 <div class="math">
-<p><span class="math">\sum^{N}_{i=1}
+<p><img src="images/math/470c37af5e88e13d9c98927aae0f0d5afe7d6d44.png" alt="\sum^{N}_{i=1}
 \sum_{j&gt;i \atop r_{ij}&lt;k_{max}}
 \frac{q_{i}q_{j}}{r_{ij}}
 erfc(\alpha r_{ij})
 - \frac{\alpha}{\sqrt{\pi}}
 \sum^{N}_{i=1}
-q_{i}^2</span></p>
+q_{i}^2"/></p>
 </div><p>This is the <cite>R</cite> space part of potential of Coulomb long range interaction according to the Ewald
-summation technique. Good explanation of Ewald summation could be found here <a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html#allen89">[Allen89]</a>,
-<a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html#deserno98">[Deserno98]</a>.</p>
+summation technique. Good explanation of Ewald summation could be found here <a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html#allen89" id="id1">[Allen89]</a>,
+<a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html#deserno98" id="id2">[Deserno98]</a>.</p>
 <p>Example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletList</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="o">+</span><span class="n">skin</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_pot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">CoulombRSpace</span><span class="p">(</span><span class="n">coulomb_prefactor</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="p">)</span>
@@ -106,7 +133,7 @@ summation technique. Good explanation of Ewald summation could be found here <a 
 <p>The property &#8216;prefactor&#8217; defines the Coulomb prefactor.</p>
 </li>
 <li><p class="first"><em>coulombR_pot.alpha</em></p>
-<p>The property &#8216;alpha&#8217; defines the Ewald parameter <span class="math">\\alpha</span>.</p>
+<p>The property &#8216;alpha&#8217; defines the Ewald parameter <img class="math" src="images/math/407490dc6fda43a6296df1f1719d70e293700b43.png" alt="\\alpha"/>.</p>
 </li>
 <li><p class="first"><em>coulombR_pot.cutoff</em></p>
 <p>The property &#8216;cutoff&#8217; defines the cutoff in R space.</p>
@@ -140,7 +167,7 @@ bunch of potentials for the different particle types.</p>
 </div>
 <dl class="function">
 <dt id="espressopp.interaction.CoulombRSpace.espressopp.interaction.CoulombRSpace">
-<tt class="descclassname">espressopp.interaction.</tt><tt class="descname">CoulombRSpace</tt><big>(</big><em>prefactor</em>, <em>alpha</em>, <em>cutoff</em><big>)</big><a class="headerlink" href="#espressopp.interaction.CoulombRSpace.espressopp.interaction.CoulombRSpace" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.</code><code class="descname">CoulombRSpace</code><span class="sig-paren">(</span><em>prefactor</em>, <em>alpha</em>, <em>cutoff</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombRSpace.espressopp.interaction.CoulombRSpace" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -158,7 +185,7 @@ bunch of potentials for the different particle types.</p>
 
 <dl class="function">
 <dt id="espressopp.interaction.CoulombRSpace.espressopp.interaction.VerletListCoulombRSpace">
-<tt class="descclassname">espressopp.interaction.</tt><tt class="descname">VerletListCoulombRSpace</tt><big>(</big><em>vl</em><big>)</big><a class="headerlink" href="#espressopp.interaction.CoulombRSpace.espressopp.interaction.VerletListCoulombRSpace" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListCoulombRSpace</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombRSpace.espressopp.interaction.VerletListCoulombRSpace" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -171,7 +198,7 @@ bunch of potentials for the different particle types.</p>
 
 <dl class="function">
 <dt id="espressopp.interaction.CoulombRSpace.espressopp.interaction.VerletListCoulombRSpace.getPotential">
-<tt class="descclassname">espressopp.interaction.VerletListCoulombRSpace.</tt><tt class="descname">getPotential</tt><big>(</big><em>type1</em>, <em>type2</em><big>)</big><a class="headerlink" href="#espressopp.interaction.CoulombRSpace.espressopp.interaction.VerletListCoulombRSpace.getPotential" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.VerletListCoulombRSpace.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombRSpace.espressopp.interaction.VerletListCoulombRSpace.getPotential" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -191,7 +218,7 @@ bunch of potentials for the different particle types.</p>
 
 <dl class="function">
 <dt id="espressopp.interaction.CoulombRSpace.espressopp.interaction.VerletListCoulombRSpace.getVerletList">
-<tt class="descclassname">espressopp.interaction.VerletListCoulombRSpace.</tt><tt class="descname">getVerletList</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.interaction.CoulombRSpace.espressopp.interaction.VerletListCoulombRSpace.getVerletList" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.VerletListCoulombRSpace.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombRSpace.espressopp.interaction.VerletListCoulombRSpace.getVerletList" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -204,7 +231,7 @@ bunch of potentials for the different particle types.</p>
 
 <dl class="function">
 <dt id="espressopp.interaction.CoulombRSpace.espressopp.interaction.VerletListCoulombRSpace.setPotential">
-<tt class="descclassname">espressopp.interaction.VerletListCoulombRSpace.</tt><tt class="descname">setPotential</tt><big>(</big><em>type1</em>, <em>type2</em>, <em>potential</em><big>)</big><a class="headerlink" href="#espressopp.interaction.CoulombRSpace.espressopp.interaction.VerletListCoulombRSpace.setPotential" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.VerletListCoulombRSpace.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombRSpace.espressopp.interaction.VerletListCoulombRSpace.setPotential" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -223,15 +250,31 @@ bunch of potentials for the different particle types.</p>
 </div>
 
 
-            
-             <a href="espressopp.interaction.CoulombKSpaceP3M.html">previous</a>
-                
-            
-             <a style="float:right;"  href="espressopp.interaction.CoulombTruncated.html">next</a>
-            
-          </div>
-        </div>
+      </div>
+     </div>
      </div> 
- </div>
+  </div>
+
+    <div class="footer">
+      &copy;2013-2016, Max Planck Institute for Polymer Research.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="sources/espressopp.interaction.CoulombRSpace.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  <div class="footer">
+      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
+      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
+  </div>
+  </div>
+
   </body>
 </html>
