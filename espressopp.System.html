@@ -104,14 +104,19 @@ interactions are added with the <cite>addInteraction()</cite> method of the Syst
 
 <dl class="function">
 <dt id="espressopp.System.espressopp.System.addInteraction">
-<tt class="descclassname">espressopp.System.</tt><tt class="descname">addInteraction</tt><big>(</big><em>interaction</em><big>)</big><a class="headerlink" href="#espressopp.System.espressopp.System.addInteraction" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.System.</tt><tt class="descname">addInteraction</tt><big>(</big><em>interaction</em>, <em>name</em><big>)</big><a class="headerlink" href="#espressopp.System.espressopp.System.addInteraction" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>interaction</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>interaction</strong> &#8211; </li>
+<li><strong>name</strong> (<em>string</em>) &#8211; The optional name of the interaction.</li>
+</ul>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">bool</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -155,6 +160,19 @@ interactions are added with the <cite>addInteraction()</cite> method of the Syst
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>number</strong> &#8211; </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.System.espressopp.System.removeInteractionByName">
+<tt class="descclassname">espressopp.System.</tt><tt class="descname">removeInteractionByName</tt><big>(</big><em>self</em>, <em>name</em><big>)</big><a class="headerlink" href="#espressopp.System.espressopp.System.removeInteractionByName" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) &#8211; The name of the interaction to remove.</td>
 </tr>
 </tbody>
 </table>
