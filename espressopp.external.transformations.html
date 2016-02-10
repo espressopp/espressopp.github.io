@@ -1,6 +1,3 @@
-
-<div id="outer">
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -9,15 +6,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Requirements &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>Requirements &mdash; ESPResSo++ v1.9.3</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '1.7',
+        URL_ROOT:    './',
+        VERSION:     '1.9.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -27,48 +24,78 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
+    <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
     <link rel="up" title="external" href="external.html" />
     <link rel="next" title="integrator" href="integrator.html" />
-    <link rel="prev" title="external" href="external.html" /> 
+    <link rel="prev" title="external" href="external.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
   </head>
-  <body>
+  <body role="document">
+  <div id="outer">
   <div class="header"></div>
 
 
-  
-    <div class="menu">
-      <ul class="nav">
-	<li><a href="../index.html">Home</a></li>
-	<li><a href="../Features.html">Features</a></li>
-	<li><a href="../Download.html">Download</a></li>
-	<li><a href="index.html">Documentation</a></li>
-	<li><a href="../Developer_Team.html">Developer Team</a></li>
-	<li><a href="../Getting_Help.html">Getting Help</a></li>
-	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
-      </ul>
-      <div id="searchbox" style="display: none">
-	<form class="search" action="search.html" method="get">
-	  <input type="text" name="q" size="12" />
-	  <input type="submit" value="Search" />
-	  <input type="hidden" name="check_keywords" value="yes" />
-	  <input type="hidden" name="area" value="default" />
-	</form>
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="espressopp.Version.html"><strong>Version</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.pmi.html"><strong>PMI</strong> - Parallel Method Invocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.System.html"><strong>System</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.BC.html"><strong>BC</strong> - Boundary Condition Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.OrthorhombicBC.html"><strong>OrthorhombicBC</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.storage.html"><strong>Storage</strong> - Storage Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html"><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html"><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.tools.decomp.html"><strong>decomp.py</strong> - Auxiliary python functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
+</ul>
+<a href="http://www.espresso-pp.de/Impressum.html">Impressum</a>
+<div id="searchbox" style="display: none" role="search">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
       </div>
-      <script type="text/javascript">$('#searchbox').show(0);</script>
-    </div>
-   
 
   <div class="document">
-      <div class="documentwrapper">
+    <div class="documentwrapper">
 	<div class="bodywrapper">
 	  <div class="body">
-            
-             <a href="external.html">previous</a>
-            
-            
-             <a style="float:right;"  href="integrator.html">next</a>
-            
 	    
   <span class="target" id="module-espressopp.external.transformations"></span><p>Homogeneous Transformation Matrices and Quaternions.</p>
 <p>A library for calculating 4x4 matrices for translating, rotating, reflecting,
@@ -216,7 +243,7 @@ Itzhack Y Bar-Itzhack, J Guid Contr Dynam. 2000. 23(6): 1085-1087.</li>
 </div>
 <dl class="class">
 <dt id="espressopp.external.transformations.Arcball">
-<em class="property">class </em><tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">Arcball</tt><big>(</big><em>initial=None</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.Arcball" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">espressopp.external.transformations.</code><code class="descname">Arcball</code><span class="sig-paren">(</span><em>initial=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.Arcball" title="Permalink to this definition">¶</a></dt>
 <dd><p>Virtual Trackball Control.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ball</span> <span class="o">=</span> <span class="n">Arcball</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ball</span> <span class="o">=</span> <span class="n">Arcball</span><span class="p">(</span><span class="n">initial</span><span class="o">=</span><span class="n">numpy</span><span class="o">.</span><span class="n">identity</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
@@ -240,37 +267,37 @@ Itzhack Y Bar-Itzhack, J Guid Contr Dynam. 2000. 23(6): 1085-1087.</li>
 </div>
 <dl class="method">
 <dt id="espressopp.external.transformations.Arcball.down">
-<tt class="descname">down</tt><big>(</big><em>point</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.Arcball.down" title="Permalink to this definition">¶</a></dt>
+<code class="descname">down</code><span class="sig-paren">(</span><em>point</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.Arcball.down" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set initial cursor window coordinates and pick constrain-axis.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="espressopp.external.transformations.Arcball.drag">
-<tt class="descname">drag</tt><big>(</big><em>point</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.Arcball.drag" title="Permalink to this definition">¶</a></dt>
+<code class="descname">drag</code><span class="sig-paren">(</span><em>point</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.Arcball.drag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Update current cursor window coordinates.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="espressopp.external.transformations.Arcball.getconstrain">
-<tt class="descname">getconstrain</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.external.transformations.Arcball.getconstrain" title="Permalink to this definition">¶</a></dt>
+<code class="descname">getconstrain</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.Arcball.getconstrain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return state of constrain to axis mode.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="espressopp.external.transformations.Arcball.matrix">
-<tt class="descname">matrix</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.external.transformations.Arcball.matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descname">matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.Arcball.matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return homogeneous rotation matrix.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="espressopp.external.transformations.Arcball.next">
-<tt class="descname">next</tt><big>(</big><em>acceleration=0.0</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.Arcball.next" title="Permalink to this definition">¶</a></dt>
+<code class="descname">next</code><span class="sig-paren">(</span><em>acceleration=0.0</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.Arcball.next" title="Permalink to this definition">¶</a></dt>
 <dd><p>Continue rotation in direction of last drag.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="espressopp.external.transformations.Arcball.place">
-<tt class="descname">place</tt><big>(</big><em>center</em>, <em>radius</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.Arcball.place" title="Permalink to this definition">¶</a></dt>
+<code class="descname">place</code><span class="sig-paren">(</span><em>center</em>, <em>radius</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.Arcball.place" title="Permalink to this definition">¶</a></dt>
 <dd><p>Place Arcball, e.g. when window size changes.</p>
 <dl class="docutils">
 <dt>center <span class="classifier-delimiter">:</span> <span class="classifier">sequence[2]</span></dt>
@@ -282,13 +309,13 @@ Itzhack Y Bar-Itzhack, J Guid Contr Dynam. 2000. 23(6): 1085-1087.</li>
 
 <dl class="method">
 <dt id="espressopp.external.transformations.Arcball.setaxes">
-<tt class="descname">setaxes</tt><big>(</big><em>*axes</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.Arcball.setaxes" title="Permalink to this definition">¶</a></dt>
+<code class="descname">setaxes</code><span class="sig-paren">(</span><em>*axes</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.Arcball.setaxes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set axes to constrain rotations.</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="espressopp.external.transformations.Arcball.setconstrain">
-<tt class="descname">setconstrain</tt><big>(</big><em>constrain</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.Arcball.setconstrain" title="Permalink to this definition">¶</a></dt>
+<code class="descname">setconstrain</code><span class="sig-paren">(</span><em>constrain</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.Arcball.setconstrain" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set state of constrain to axis mode.</p>
 </dd></dl>
 
@@ -296,7 +323,7 @@ Itzhack Y Bar-Itzhack, J Guid Contr Dynam. 2000. 23(6): 1085-1087.</li>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.angle_between_vectors">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">angle_between_vectors</tt><big>(</big><em>v0</em>, <em>v1</em>, <em>directed=True</em>, <em>axis=0</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.angle_between_vectors" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">angle_between_vectors</code><span class="sig-paren">(</span><em>v0</em>, <em>v1</em>, <em>directed=True</em>, <em>axis=0</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.angle_between_vectors" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return angle between vectors.</p>
 <p>If directed is False, the input vectors are interpreted as undirected axes,
 i.e. the maximum angle is pi/2.</p>
@@ -322,25 +349,25 @@ i.e. the maximum angle is pi/2.</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.arcball_constrain_to_axis">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">arcball_constrain_to_axis</tt><big>(</big><em>point</em>, <em>axis</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.arcball_constrain_to_axis" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">arcball_constrain_to_axis</code><span class="sig-paren">(</span><em>point</em>, <em>axis</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.arcball_constrain_to_axis" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return sphere point perpendicular to axis.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.arcball_map_to_sphere">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">arcball_map_to_sphere</tt><big>(</big><em>point</em>, <em>center</em>, <em>radius</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.arcball_map_to_sphere" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">arcball_map_to_sphere</code><span class="sig-paren">(</span><em>point</em>, <em>center</em>, <em>radius</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.arcball_map_to_sphere" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return unit sphere coordinates from window coordinates.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.arcball_nearest_axis">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">arcball_nearest_axis</tt><big>(</big><em>point</em>, <em>axes</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.arcball_nearest_axis" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">arcball_nearest_axis</code><span class="sig-paren">(</span><em>point</em>, <em>axes</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.arcball_nearest_axis" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return axis, which arc is nearest to point.</p>
 </dd></dl>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.clip_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">clip_matrix</tt><big>(</big><em>left</em>, <em>right</em>, <em>bottom</em>, <em>top</em>, <em>near</em>, <em>far</em>, <em>perspective=False</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.clip_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">clip_matrix</code><span class="sig-paren">(</span><em>left</em>, <em>right</em>, <em>bottom</em>, <em>top</em>, <em>near</em>, <em>far</em>, <em>perspective=False</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.clip_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return matrix to obtain normalized device coordinates from frustrum.</p>
 <p>The frustrum bounds are axis-aligned along x (left, right),
 y (bottom, top) and z (near, far).</p>
@@ -373,7 +400,7 @@ need to be dehomogenized (devided by w coordinate).</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.compose_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">compose_matrix</tt><big>(</big><em>scale=None</em>, <em>shear=None</em>, <em>angles=None</em>, <em>translate=None</em>, <em>perspective=None</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.compose_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">compose_matrix</code><span class="sig-paren">(</span><em>scale=None</em>, <em>shear=None</em>, <em>angles=None</em>, <em>translate=None</em>, <em>perspective=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.compose_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return transformation matrix from sequence of transformations.</p>
 <p>This is the inverse of the decompose_matrix function.</p>
 <dl class="docutils">
@@ -400,7 +427,7 @@ perspective : perspective partition of matrix</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.concatenate_matrices">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">concatenate_matrices</tt><big>(</big><em>*matrices</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.concatenate_matrices" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">concatenate_matrices</code><span class="sig-paren">(</span><em>*matrices</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.concatenate_matrices" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return concatenation of series of transformation matrices.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">M</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">4</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span> <span class="o">-</span> <span class="mf">0.5</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">concatenate_matrices</span><span class="p">(</span><span class="n">M</span><span class="p">))</span>
@@ -413,7 +440,7 @@ perspective : perspective partition of matrix</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.decompose_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">decompose_matrix</tt><big>(</big><em>matrix</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.decompose_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">decompose_matrix</code><span class="sig-paren">(</span><em>matrix</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.decompose_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return sequence of transformations from transformation matrix.</p>
 <dl class="docutils">
 <dt>matrix <span class="classifier-delimiter">:</span> <span class="classifier">array_like</span></dt>
@@ -446,7 +473,7 @@ perspective : perspective partition of matrix</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.euler_from_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">euler_from_matrix</tt><big>(</big><em>matrix</em>, <em>axes='sxyz'</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.euler_from_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">euler_from_matrix</code><span class="sig-paren">(</span><em>matrix</em>, <em>axes='sxyz'</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.euler_from_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return Euler angles from rotation matrix for specified axis sequence.</p>
 <p>axes : One of 24 axis sequences as string or encoded tuple</p>
 <p>Note that many Euler angle triplets can describe one matrix.</p>
@@ -466,7 +493,7 @@ perspective : perspective partition of matrix</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.euler_from_quaternion">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">euler_from_quaternion</tt><big>(</big><em>quaternion</em>, <em>axes='sxyz'</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.euler_from_quaternion" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">euler_from_quaternion</code><span class="sig-paren">(</span><em>quaternion</em>, <em>axes='sxyz'</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.euler_from_quaternion" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return Euler angles from quaternion for specified axis sequence.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">angles</span> <span class="o">=</span> <span class="n">euler_from_quaternion</span><span class="p">([</span><span class="mf">0.99810947</span><span class="p">,</span> <span class="mf">0.06146124</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">angles</span><span class="p">,</span> <span class="p">[</span><span class="mf">0.123</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
@@ -477,7 +504,7 @@ perspective : perspective partition of matrix</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.euler_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">euler_matrix</tt><big>(</big><em>ai</em>, <em>aj</em>, <em>ak</em>, <em>axes='sxyz'</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.euler_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">euler_matrix</code><span class="sig-paren">(</span><em>ai</em>, <em>aj</em>, <em>ak</em>, <em>axes='sxyz'</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.euler_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return homogeneous rotation matrix from Euler angles and axis sequence.</p>
 <p>ai, aj, ak : Euler&#8217;s roll, pitch and yaw angles
 axes : One of 24 axis sequences as string or encoded tuple</p>
@@ -498,7 +525,7 @@ axes : One of 24 axis sequences as string or encoded tuple</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.identity_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">identity_matrix</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.external.transformations.identity_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">identity_matrix</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.identity_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return 4x4 identity/unit matrix.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">I</span> <span class="o">=</span> <span class="n">identity_matrix</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">I</span><span class="p">,</span> <span class="n">numpy</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">I</span><span class="p">,</span> <span class="n">I</span><span class="p">))</span>
@@ -513,7 +540,7 @@ axes : One of 24 axis sequences as string or encoded tuple</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.inverse_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">inverse_matrix</tt><big>(</big><em>matrix</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.inverse_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">inverse_matrix</code><span class="sig-paren">(</span><em>matrix</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.inverse_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return inverse of square transformation matrix.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">M0</span> <span class="o">=</span> <span class="n">random_rotation_matrix</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">M1</span> <span class="o">=</span> <span class="n">inverse_matrix</span><span class="p">(</span><span class="n">M0</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
@@ -529,7 +556,7 @@ axes : One of 24 axis sequences as string or encoded tuple</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.is_same_transform">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">is_same_transform</tt><big>(</big><em>matrix0</em>, <em>matrix1</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.is_same_transform" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">is_same_transform</code><span class="sig-paren">(</span><em>matrix0</em>, <em>matrix1</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.is_same_transform" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return True if two matrices perform same transformation.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">is_same_transform</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">identity</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="n">numpy</span><span class="o">.</span><span class="n">identity</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>
 <span class="go">True</span>
@@ -541,7 +568,7 @@ axes : One of 24 axis sequences as string or encoded tuple</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.orthogonalization_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">orthogonalization_matrix</tt><big>(</big><em>lengths</em>, <em>angles</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.orthogonalization_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">orthogonalization_matrix</code><span class="sig-paren">(</span><em>lengths</em>, <em>angles</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.orthogonalization_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return orthogonalization matrix for crystallographic cell coordinates.</p>
 <p>Angles are expected in degrees.</p>
 <p>The de-orthogonalization matrix is the inverse.</p>
@@ -557,7 +584,7 @@ axes : One of 24 axis sequences as string or encoded tuple</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.projection_from_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">projection_from_matrix</tt><big>(</big><em>matrix</em>, <em>pseudo=False</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.projection_from_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">projection_from_matrix</code><span class="sig-paren">(</span><em>matrix</em>, <em>pseudo=False</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.projection_from_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return projection plane and perspective point from projection matrix.</p>
 <p>Return values are same as arguments for projection_matrix function:
 point, normal, direction, perspective, and pseudo.</p>
@@ -591,7 +618,7 @@ point, normal, direction, perspective, and pseudo.</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.projection_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">projection_matrix</tt><big>(</big><em>point</em>, <em>normal</em>, <em>direction=None</em>, <em>perspective=None</em>, <em>pseudo=False</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.projection_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">projection_matrix</code><span class="sig-paren">(</span><em>point</em>, <em>normal</em>, <em>direction=None</em>, <em>perspective=None</em>, <em>pseudo=False</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.projection_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return matrix to project onto plane defined by point and normal.</p>
 <p>Using either perspective point, projection direction, or none of both.</p>
 <p>If pseudo is True, perspective projections will preserve relative depth
@@ -623,7 +650,7 @@ such that Perspective = dot(Orthogonal, PseudoPerspective).</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.quaternion_about_axis">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">quaternion_about_axis</tt><big>(</big><em>angle</em>, <em>axis</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.quaternion_about_axis" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">quaternion_about_axis</code><span class="sig-paren">(</span><em>angle</em>, <em>axis</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.quaternion_about_axis" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return quaternion for rotation about axis.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">quaternion_about_axis</span><span class="p">(</span><span class="mf">0.123</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="p">[</span><span class="mf">0.99810947</span><span class="p">,</span> <span class="mf">0.06146124</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
@@ -634,7 +661,7 @@ such that Perspective = dot(Orthogonal, PseudoPerspective).</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.quaternion_conjugate">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">quaternion_conjugate</tt><big>(</big><em>quaternion</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.quaternion_conjugate" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">quaternion_conjugate</code><span class="sig-paren">(</span><em>quaternion</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.quaternion_conjugate" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return conjugate of quaternion.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q0</span> <span class="o">=</span> <span class="n">random_quaternion</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">q1</span> <span class="o">=</span> <span class="n">quaternion_conjugate</span><span class="p">(</span><span class="n">q0</span><span class="p">)</span>
@@ -646,7 +673,7 @@ such that Perspective = dot(Orthogonal, PseudoPerspective).</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.quaternion_from_euler">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">quaternion_from_euler</tt><big>(</big><em>ai</em>, <em>aj</em>, <em>ak</em>, <em>axes='sxyz'</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.quaternion_from_euler" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">quaternion_from_euler</code><span class="sig-paren">(</span><em>ai</em>, <em>aj</em>, <em>ak</em>, <em>axes='sxyz'</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.quaternion_from_euler" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return quaternion from Euler angles and axis sequence.</p>
 <p>ai, aj, ak : Euler&#8217;s roll, pitch and yaw angles
 axes : One of 24 axis sequences as string or encoded tuple</p>
@@ -659,7 +686,7 @@ axes : One of 24 axis sequences as string or encoded tuple</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.quaternion_from_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">quaternion_from_matrix</tt><big>(</big><em>matrix</em>, <em>isprecise=False</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.quaternion_from_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">quaternion_from_matrix</code><span class="sig-paren">(</span><em>matrix</em>, <em>isprecise=False</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.quaternion_from_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return quaternion from rotation matrix.</p>
 <p>If isprecise=True, the input matrix is assumed to be a precise rotation
 matrix and a faster algorithm is used.</p>
@@ -693,7 +720,7 @@ matrix and a faster algorithm is used.</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.quaternion_imag">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">quaternion_imag</tt><big>(</big><em>quaternion</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.quaternion_imag" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">quaternion_imag</code><span class="sig-paren">(</span><em>quaternion</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.quaternion_imag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return imaginary part of quaternion.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">quaternion_imag</span><span class="p">([</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">])</span>
 <span class="go">[0.0, 1.0, 2.0]</span>
@@ -703,7 +730,7 @@ matrix and a faster algorithm is used.</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.quaternion_inverse">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">quaternion_inverse</tt><big>(</big><em>quaternion</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.quaternion_inverse" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">quaternion_inverse</code><span class="sig-paren">(</span><em>quaternion</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.quaternion_inverse" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return inverse of quaternion.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q0</span> <span class="o">=</span> <span class="n">random_quaternion</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">q1</span> <span class="o">=</span> <span class="n">quaternion_inverse</span><span class="p">(</span><span class="n">q0</span><span class="p">)</span>
@@ -715,7 +742,7 @@ matrix and a faster algorithm is used.</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.quaternion_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">quaternion_matrix</tt><big>(</big><em>quaternion</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.quaternion_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">quaternion_matrix</code><span class="sig-paren">(</span><em>quaternion</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.quaternion_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return homogeneous rotation matrix from quaternion.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">M</span> <span class="o">=</span> <span class="n">quaternion_matrix</span><span class="p">([</span><span class="mf">0.99810947</span><span class="p">,</span> <span class="mf">0.06146124</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">M</span><span class="p">,</span> <span class="n">rotation_matrix</span><span class="p">(</span><span class="mf">0.123</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)))</span>
@@ -732,7 +759,7 @@ matrix and a faster algorithm is used.</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.quaternion_multiply">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">quaternion_multiply</tt><big>(</big><em>quaternion1</em>, <em>quaternion0</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.quaternion_multiply" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">quaternion_multiply</code><span class="sig-paren">(</span><em>quaternion1</em>, <em>quaternion0</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.quaternion_multiply" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return multiplication of two quaternions.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">quaternion_multiply</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">q</span><span class="p">,</span> <span class="p">[</span><span class="mi">28</span><span class="p">,</span> <span class="o">-</span><span class="mi">44</span><span class="p">,</span> <span class="o">-</span><span class="mi">14</span><span class="p">,</span> <span class="mi">48</span><span class="p">])</span>
@@ -743,7 +770,7 @@ matrix and a faster algorithm is used.</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.quaternion_real">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">quaternion_real</tt><big>(</big><em>quaternion</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.quaternion_real" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">quaternion_real</code><span class="sig-paren">(</span><em>quaternion</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.quaternion_real" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return real part of quaternion.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">quaternion_real</span><span class="p">([</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">])</span>
 <span class="go">3.0</span>
@@ -753,7 +780,7 @@ matrix and a faster algorithm is used.</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.quaternion_slerp">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">quaternion_slerp</tt><big>(</big><em>quat0</em>, <em>quat1</em>, <em>fraction</em>, <em>spin=0</em>, <em>shortestpath=True</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.quaternion_slerp" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">quaternion_slerp</code><span class="sig-paren">(</span><em>quat0</em>, <em>quat1</em>, <em>fraction</em>, <em>spin=0</em>, <em>shortestpath=True</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.quaternion_slerp" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return spherical linear interpolation between two quaternions.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q0</span> <span class="o">=</span> <span class="n">random_quaternion</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">q1</span> <span class="o">=</span> <span class="n">random_quaternion</span><span class="p">()</span>
@@ -773,7 +800,7 @@ matrix and a faster algorithm is used.</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.random_quaternion">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">random_quaternion</tt><big>(</big><em>rand=None</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.random_quaternion" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">random_quaternion</code><span class="sig-paren">(</span><em>rand=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.random_quaternion" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return uniform random unit quaternion.</p>
 <dl class="docutils">
 <dt>rand: array like or None</dt>
@@ -792,7 +819,7 @@ between 0 and 1.</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.random_rotation_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">random_rotation_matrix</tt><big>(</big><em>rand=None</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.random_rotation_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">random_rotation_matrix</code><span class="sig-paren">(</span><em>rand=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.random_rotation_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return uniform random rotation matrix.</p>
 <dl class="docutils">
 <dt>rnd: array like</dt>
@@ -808,7 +835,7 @@ between 0 and 1 for each returned quaternion.</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.random_vector">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">random_vector</tt><big>(</big><em>size</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.random_vector" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">random_vector</code><span class="sig-paren">(</span><em>size</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.random_vector" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return array of random doubles in the half-open interval [0.0, 1.0).</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">random_vector</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">v</span> <span class="o">&gt;=</span> <span class="mf">0.0</span><span class="p">)</span> <span class="ow">and</span> <span class="n">numpy</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">v</span> <span class="o">&lt;</span> <span class="mf">1.0</span><span class="p">)</span>
@@ -823,7 +850,7 @@ between 0 and 1 for each returned quaternion.</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.reflection_from_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">reflection_from_matrix</tt><big>(</big><em>matrix</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.reflection_from_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">reflection_from_matrix</code><span class="sig-paren">(</span><em>matrix</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.reflection_from_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return mirror plane point and normal vector from reflection matrix.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v0</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.5</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">v1</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.5</span>
@@ -838,7 +865,7 @@ between 0 and 1 for each returned quaternion.</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.reflection_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">reflection_matrix</tt><big>(</big><em>point</em>, <em>normal</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.reflection_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">reflection_matrix</code><span class="sig-paren">(</span><em>point</em>, <em>normal</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.reflection_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return matrix to mirror at plane defined by point and normal vector.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v0</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.5</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">v0</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="mf">1.0</span>
@@ -860,7 +887,7 @@ between 0 and 1 for each returned quaternion.</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.rotation_from_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">rotation_from_matrix</tt><big>(</big><em>matrix</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.rotation_from_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">rotation_from_matrix</code><span class="sig-paren">(</span><em>matrix</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.rotation_from_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return rotation angle and axis from rotation matrix.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">angle</span> <span class="o">=</span> <span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">direc</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.5</span>
@@ -876,7 +903,7 @@ between 0 and 1 for each returned quaternion.</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.rotation_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">rotation_matrix</tt><big>(</big><em>angle</em>, <em>direction</em>, <em>point=None</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.rotation_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">rotation_matrix</code><span class="sig-paren">(</span><em>angle</em>, <em>direction</em>, <em>point=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.rotation_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return matrix to rotate about axis defined by point and direction.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">R</span> <span class="o">=</span> <span class="n">rotation_matrix</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mf">2.0</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">R</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]),</span> <span class="p">[</span> <span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">,</span>  <span class="mf">1.</span><span class="p">])</span>
@@ -904,7 +931,7 @@ between 0 and 1 for each returned quaternion.</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.scale_from_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">scale_from_matrix</tt><big>(</big><em>matrix</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.scale_from_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">scale_from_matrix</code><span class="sig-paren">(</span><em>matrix</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.scale_from_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return scaling factor, origin and direction from scaling matrix.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">factor</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">-</span> <span class="mi">5</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">origin</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.5</span>
@@ -925,7 +952,7 @@ between 0 and 1 for each returned quaternion.</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.scale_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">scale_matrix</tt><big>(</big><em>factor</em>, <em>origin=None</em>, <em>direction=None</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.scale_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">scale_matrix</code><span class="sig-paren">(</span><em>factor</em>, <em>origin=None</em>, <em>direction=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.scale_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return matrix to scale by factor around origin in direction.</p>
 <p>Use factor -1 for point symmetry.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="p">(</span><span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">*</span> <span class="mf">20.0</span>
@@ -944,7 +971,7 @@ between 0 and 1 for each returned quaternion.</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.shear_from_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">shear_from_matrix</tt><big>(</big><em>matrix</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.shear_from_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">shear_from_matrix</code><span class="sig-paren">(</span><em>matrix</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.shear_from_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return shear angle, direction and plane from shear matrix.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">angle</span> <span class="o">=</span> <span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span> <span class="o">-</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">*</span> <span class="mi">4</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">direct</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.5</span>
@@ -961,7 +988,7 @@ between 0 and 1 for each returned quaternion.</dd>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.shear_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">shear_matrix</tt><big>(</big><em>angle</em>, <em>direction</em>, <em>point</em>, <em>normal</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.shear_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">shear_matrix</code><span class="sig-paren">(</span><em>angle</em>, <em>direction</em>, <em>point</em>, <em>normal</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.shear_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return matrix to shear by angle along direction vector on shear plane.</p>
 <p>The shear plane is defined by a point and normal vector. The direction
 vector must be orthogonal to the plane&#8217;s normal vector.</p>
@@ -982,7 +1009,7 @@ of P onto the shear plane.</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.superimposition_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">superimposition_matrix</tt><big>(</big><em>v0</em>, <em>v1</em>, <em>scaling=False</em>, <em>usesvd=True</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.superimposition_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">superimposition_matrix</code><span class="sig-paren">(</span><em>v0</em>, <em>v1</em>, <em>scaling=False</em>, <em>usesvd=True</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.superimposition_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return matrix to transform given vector set into second vector set.</p>
 <p>v0 and v1 are shape (3, *) or (4, *) arrays of at least 3 vectors.</p>
 <p>If usesvd is True, the weighted sum of squared deviations (RMSD) is
@@ -1029,7 +1056,7 @@ this Python implementation).</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.translation_from_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">translation_from_matrix</tt><big>(</big><em>matrix</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.translation_from_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">translation_from_matrix</code><span class="sig-paren">(</span><em>matrix</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.translation_from_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return translation vector from translation matrix.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v0</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.5</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">v1</span> <span class="o">=</span> <span class="n">translation_from_matrix</span><span class="p">(</span><span class="n">translation_matrix</span><span class="p">(</span><span class="n">v0</span><span class="p">))</span>
@@ -1041,7 +1068,7 @@ this Python implementation).</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.translation_matrix">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">translation_matrix</tt><big>(</big><em>direction</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.translation_matrix" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">translation_matrix</code><span class="sig-paren">(</span><em>direction</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.translation_matrix" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return matrix to translate by direction vector.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span> <span class="o">-</span> <span class="mf">0.5</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">translation_matrix</span><span class="p">(</span><span class="n">v</span><span class="p">)[:</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
@@ -1052,7 +1079,7 @@ this Python implementation).</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.unit_vector">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">unit_vector</tt><big>(</big><em>data</em>, <em>axis=None</em>, <em>out=None</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.unit_vector" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">unit_vector</code><span class="sig-paren">(</span><em>data</em>, <em>axis=None</em>, <em>out=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.unit_vector" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return ndarray normalized by length, i.e. eucledian norm, along axis.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v0</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">v1</span> <span class="o">=</span> <span class="n">unit_vector</span><span class="p">(</span><span class="n">v0</span><span class="p">)</span>
@@ -1081,7 +1108,7 @@ this Python implementation).</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.vector_norm">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">vector_norm</tt><big>(</big><em>data</em>, <em>axis=None</em>, <em>out=None</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.vector_norm" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">vector_norm</code><span class="sig-paren">(</span><em>data</em>, <em>axis=None</em>, <em>out=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.vector_norm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return length, i.e. eucledian norm, of ndarray along axis.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">numpy</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">n</span> <span class="o">=</span> <span class="n">vector_norm</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
@@ -1109,7 +1136,7 @@ this Python implementation).</p>
 
 <dl class="function">
 <dt id="espressopp.external.transformations.vector_product">
-<tt class="descclassname">espressopp.external.transformations.</tt><tt class="descname">vector_product</tt><big>(</big><em>v0</em>, <em>v1</em>, <em>axis=0</em><big>)</big><a class="headerlink" href="#espressopp.external.transformations.vector_product" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.external.transformations.</code><code class="descname">vector_product</code><span class="sig-paren">(</span><em>v0</em>, <em>v1</em>, <em>axis=0</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.external.transformations.vector_product" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return vector perpendicular to vectors.</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">vector_product</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">numpy</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>
@@ -1131,15 +1158,31 @@ this Python implementation).</p>
 </div>
 
 
-            
-             <a href="external.html">previous</a>
-                
-            
-             <a style="float:right;"  href="integrator.html">next</a>
-            
-          </div>
-        </div>
+      </div>
+     </div>
      </div> 
- </div>
+  </div>
+
+    <div class="footer">
+      &copy;2013-2016, Max Planck Institute for Polymer Research.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="sources/espressopp.external.transformations.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  <div class="footer-logo">
+      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
+      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
+  </div>
+  </div>
+
   </body>
 </html>
