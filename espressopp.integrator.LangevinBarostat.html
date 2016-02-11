@@ -1,3 +1,6 @@
+
+<div id="outer">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +9,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>LangevinBarostat - Langevin-Hoover barostat Object &mdash; ESPResSo++ v1.9.3</title>
+    <title>LangevinBarostat - Langevin-Hoover barostat Object &mdash; ESPResSo++ 1.7 documentation</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        URL_ROOT:    '',
+        VERSION:     '1.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,109 +27,79 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
-    <link rel="up" title="User Interface" href="classdescription.html" />
-    <link rel="next" title="CoulombRSpace - Coulomb potential and interaction Objects (R space part)" href="espressopp.interaction.CoulombRSpace.html" />
-    <link rel="prev" title="BerendsenThermostat - Berendsen thermostat Object" href="espressopp.integrator.BerendsenThermostat.html" />
-   
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
+    <link rel="up" title="integrator" href="integrator.html" />
+    <link rel="next" title="espressopp.integrator.LangevinThermostat" href="espressopp.integrator.LangevinThermostat.html" />
+    <link rel="prev" title="LBInitPopWave - creates initial populations with uniform density and harmonic velocity" href="espressopp.integrator.LBInitPopWave.html" /> 
   </head>
-  <body role="document">
-  <div id="outer">
+  <body>
   <div class="header"></div>
 
 
-
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="espressopp.Version.html"><strong>Version</strong> - Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.pmi.html"><strong>PMI</strong> - Parallel Method Invocation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.System.html"><strong>System</strong> - Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.BC.html"><strong>BC</strong> - Boundary Condition Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.OrthorhombicBC.html"><strong>OrthorhombicBC</strong> - Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.storage.html"><strong>Storage</strong> - Storage Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html"><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href=""><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html"><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.tools.decomp.html"><strong>decomp.py</strong> - Auxiliary python functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="integrator.html">integrator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
-<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
-</ul>
-<a href="http://www.espresso-pp.de/Impressum.html">Impressum</a>
-<div id="searchbox" style="display: none" role="search">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Search" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
       </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
 
   <div class="document">
-    <div class="documentwrapper">
+      <div class="documentwrapper">
 	<div class="bodywrapper">
 	  <div class="body">
+            
+             <a href="espressopp.integrator.LBInitPopWave.html">previous</a>
+            
+            
+             <a style="float:right;"  href="espressopp.integrator.LangevinThermostat.html">next</a>
+            
 	    
   <span class="target" id="module-espressopp.integrator.LangevinBarostat"></span><div class="section" id="langevinbarostat-langevin-hoover-barostat-object">
 <h1><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object<a class="headerlink" href="#langevinbarostat-langevin-hoover-barostat-object" title="Permalink to this headline">¶</a></h1>
 <p>This is the barostat implementation to perform Langevin dynamics in a Hoover style extended system
-according to the paper <a class="reference internal" href="#quigley04" id="id1">[Quigley04]</a>. It includes corrections of Hoover approach which were introduced
-by Martyna et al <a class="reference internal" href="#martyna94" id="id2">[Martyna94]</a>.
+according to the paper <a class="reference internal" href="#quigley04">[Quigley04]</a>. It includes corrections of Hoover approach which were introduced
+by Martyna et al <a class="reference internal" href="#martyna94">[Martyna94]</a>.
 If LangevinBarostat is defined (as a property of integrator) the integration equations will be 
-modified. The volume of system <img class="math" src="images/math/c99df7a209495334da442b1ec998abaabfa320d8.png" alt="V"/> is introduced as a dynamical variable:</p>
+modified. The volume of system <span class="math">V</span> is introduced as a dynamical variable:</p>
 <div class="math">
-<p><img src="images/math/b90e76a7014440f176cf9ae379cb6dfebe101067.png" alt="\boldsymbol{\dot{r}}_{i} = \frac{\boldsymbol{p}_{i}}{m_{i}} +
-\frac{p_{\epsilon}}{W}\boldsymbol{r}_{i}"/></p>
+<p><span class="math">\boldsymbol{\dot{r}}_{i} = \frac{\boldsymbol{p}_{i}}{m_{i}} +
+\frac{p_{\epsilon}}{W}\boldsymbol{r}_{i}</span></p>
 </div><div class="math">
-<p><img src="images/math/85e742a8e9ac2c47ccf7ece98b5aa96904c47c0c.png" alt="\boldsymbol{\dot{p}}_{i} = -\bigtriangledown_{\boldsymbol{r}_{i}}\Phi -
+<p><span class="math">\boldsymbol{\dot{p}}_{i} = -\bigtriangledown_{\boldsymbol{r}_{i}}\Phi -
 (1+\frac{n}{N_{f}})\frac{p_{\epsilon}}{W}\boldsymbol{p}_{i} - 
-\gamma\boldsymbol{p}_{i} + \boldsymbol{R}_{i}"/></p>
+\gamma\boldsymbol{p}_{i} + \boldsymbol{R}_{i}</span></p>
 </div><div class="math">
-<p><img src="images/math/66e74aa47466a2eb24a4f8e3e8bba77a1ce82e00.png" alt="\dot{V} = dVp_{\epsilon}/W"/></p>
+<p><span class="math">\dot{V} = dVp_{\epsilon}/W</span></p>
 </div><div class="math">
-<p><img src="images/math/e5585f772598ba6b3325e59988cfd1a37729e967.png" alt="\dot{p}_{\epsilon} = nV(X-P_{ext})+
+<p><span class="math">\dot{p}_{\epsilon} = nV(X-P_{ext})+
 \frac{n}{N_{f}}\sum^{N}_{i=1}\frac{\boldsymbol{p}_{i}^{2}}{m_{i}} -
-\gamma_{p}p_{\epsilon} + R_{p}"/></p>
-</div><p>where volume has a fictitious mass <img class="math" src="images/math/fa34489cf430b7630b30f28b2eb050e2489e3523.png" alt="W"/> and associated momentum <img class="math" src="images/math/f93166728971cb4838156f17e73593d9b6e0de28.png" alt="p_{\epsilon}"/>,
-<img class="math" src="images/math/336d80576ea7f7179dfc2f6d93c7d084a9ef02ed.png" alt="\gamma_{p}"/> - friction coefficient,
-<img class="math" src="images/math/b797fc1b495532e701f248c30b753f6c9b7a7fd6.png" alt="P_{ext}"/> - external pressure and <img class="math" src="images/math/f026aecf11ec7f6141ab863f260d395f94b10f51.png" alt="X"/> - instantaneous pressure without white noise
-contribution from thermostat, <img class="math" src="images/math/413f8a8e40062a9090d9d50b88bc7b551b314c26.png" alt="n"/> - dimension, <img class="math" src="images/math/927360d7b86db82b37216a8bc5d406bb5cfd04e9.png" alt="N_{f}"/> - degrees of freedom (if there
-are no constrains and <img class="math" src="images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> is the number of particles in system <img class="math" src="images/math/ba94f56e4c9e2386bc804c002ab145e12052eb31.png" alt="N_{f}=nN"/>).
-<img class="math" src="images/math/ded82251bef88f7dd7471d2210d965344f86e633.png" alt="R_{p}"/> - values which are drawn from Gaussian distribution of zero mean and unit variance
+\gamma_{p}p_{\epsilon} + R_{p}</span></p>
+</div><p>where volume has a fictitious mass <span class="math">W</span> and associated momentum <span class="math">p_{\epsilon}</span>,
+<span class="math">\gamma_{p}</span> - friction coefficient,
+<span class="math">P_{ext}</span> - external pressure and <span class="math">X</span> - instantaneous pressure without white noise
+contribution from thermostat, <span class="math">n</span> - dimension, <span class="math">N_{f}</span> - degrees of freedom (if there
+are no constrains and <span class="math">N</span> is the number of particles in system <span class="math">N_{f}=nN</span>).
+<span class="math">R_{p}</span> - values which are drawn from Gaussian distribution of zero mean and unit variance
 scaled by</p>
 <div class="math">
-<p><img src="images/math/f0f46bbd698d9d2bbe856d483648e86c85df7b3f.png" alt="\sqrt{\frac{2k_{B}TW\gamma_{p}}{\Delta t}}"/></p>
-</div><p><strong>!IMPORTANT</strong> Terms <img class="math" src="images/math/ed6f4f9d7bc06ff65e8e272eb03b7bbb6e25d29e.png" alt="- \gamma\boldsymbol{p}_{i} + \boldsymbol{R}_{i}"/> correspond to the 
+<p><span class="math">\sqrt{\frac{2k_{B}TW\gamma_{p}}{\Delta t}}</span></p>
+</div><p><strong>!IMPORTANT</strong> Terms <span class="math">- \gamma\boldsymbol{p}_{i} + \boldsymbol{R}_{i}</span> correspond to the 
 termostat. They are not included here and will not be calculated if the Langevin Thermostat is not
 defined.</p>
 <p>Example:</p>
@@ -139,7 +112,7 @@ defined.</p>
 </pre></div>
 </div>
 <p><strong>!IMPORTANT</strong>  This barostat is supposed to be run in a couple with thermostat in order 
-to simulate the <em>npt</em> ensamble, because the term <img class="math" src="images/math/ded82251bef88f7dd7471d2210d965344f86e633.png" alt="R_{p}"/> needs the temperature as a 
+to simulate the <em>npt</em> ensamble, because the term <span class="math">R_{p}</span> needs the temperature as a 
 parameter.</p>
 <p>Definition:</p>
 <blockquote>
@@ -152,23 +125,23 @@ parameter.</p>
 <p id="rng">Properties:</p>
 <ul>
 <li><p class="first"><em>langevinP.gammaP</em></p>
-<p>The property &#8216;gammaP&#8217; defines the friction coefficient <img class="math" src="images/math/336d80576ea7f7179dfc2f6d93c7d084a9ef02ed.png" alt="\gamma_{p}"/>.</p>
+<p>The property &#8216;gammaP&#8217; defines the friction coefficient <span class="math">\gamma_{p}</span>.</p>
 </li>
 <li><p class="first"><em>langevinP.pressure</em></p>
-<p>The property &#8216;pressure&#8217; defines the external pressure <img class="math" src="images/math/b797fc1b495532e701f248c30b753f6c9b7a7fd6.png" alt="P_{ext}"/>.</p>
+<p>The property &#8216;pressure&#8217; defines the external pressure <span class="math">P_{ext}</span>.</p>
 </li>
 <li><p class="first"><em>langevinP.mass</em></p>
-<p>The property &#8216;mass&#8217; defines the fictitious mass <img class="math" src="images/math/fa34489cf430b7630b30f28b2eb050e2489e3523.png" alt="W"/>.</p>
+<p>The property &#8216;mass&#8217; defines the fictitious mass <span class="math">W</span>.</p>
 </li>
 </ul>
 <p>Methods:</p>
 <ul>
 <li><p class="first"><em>setMassByFrequency( frequency )</em></p>
-<p>Set the proper <em>langevinP.mass</em> using expression <img class="math" src="images/math/b94e285e776dcf7e5c4aa4efe807becfb2509e7f.png" alt="W=dNk_{b}T/\omega_{b}^{2}"/>, where
-frequency, <img class="math" src="images/math/933009d3a3dd70c3dce114d3b4109f30c5b21d32.png" alt="\omega_{b}"/>, is the frequency of required volume fluctuations. The value of
-<img class="math" src="images/math/933009d3a3dd70c3dce114d3b4109f30c5b21d32.png" alt="\omega_{b}"/> should be less then the lowest frequency which appears in the NVT temperature
-spectrum <a class="reference internal" href="#quigley04" id="id3">[Quigley04]</a> in order to match the canonical distribution. <img class="math" src="images/math/425d86ba2f2979d75b7535c2bcf92c33ed6b285a.png" alt="d"/> - dimensions,
-<img class="math" src="images/math/75e27f04188974063be3230dca208cd495b77ce1.png" alt="N"/> - number of particles, <img class="math" src="images/math/52f882d9185f791b45d0bcd7ec906bc529e6e360.png" alt="k_{b}"/> - Boltzmann constant, <img class="math" src="images/math/6d42c88506b8da39a2a23653aecbfb7c29728063.png" alt="T"/> - desired
+<p>Set the proper <em>langevinP.mass</em> using expression <span class="math">W=dNk_{b}T/\omega_{b}^{2}</span>, where
+frequency, <span class="math">\omega_{b}</span>, is the frequency of required volume fluctuations. The value of
+<span class="math">\omega_{b}</span> should be less then the lowest frequency which appears in the NVT temperature
+spectrum <a class="reference internal" href="#quigley04">[Quigley04]</a> in order to match the canonical distribution. <span class="math">d</span> - dimensions,
+<span class="math">N</span> - number of particles, <span class="math">k_{b}</span> - Boltzmann constant, <span class="math">T</span> - desired
 temperature.</p>
 </li>
 </ul>
@@ -237,7 +210,7 @@ the ensamble or whatever :)</p>
 </table>
 <dl class="function">
 <dt id="espressopp.integrator.LangevinBarostat.espressopp.integrator.LangevinBarostat">
-<code class="descclassname">espressopp.integrator.</code><code class="descname">LangevinBarostat</code><span class="sig-paren">(</span><em>system</em>, <em>rng</em>, <em>temperature</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LangevinBarostat.espressopp.integrator.LangevinBarostat" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.integrator.</tt><tt class="descname">LangevinBarostat</tt><big>(</big><em>system</em>, <em>rng</em>, <em>temperature</em><big>)</big><a class="headerlink" href="#espressopp.integrator.LangevinBarostat.espressopp.integrator.LangevinBarostat" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -256,31 +229,15 @@ the ensamble or whatever :)</p>
 </div>
 
 
-      </div>
-     </div>
+            
+             <a href="espressopp.integrator.LBInitPopWave.html">previous</a>
+                
+            
+             <a style="float:right;"  href="espressopp.integrator.LangevinThermostat.html">next</a>
+            
+          </div>
+        </div>
      </div> 
-  </div>
-
-    <div class="footer">
-      &copy;2013-2016, Max Planck Institute for Polymer Research.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
-      
-      |
-      <a href="sources/espressopp.integrator.LangevinBarostat.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  <div class="footer-logo">
-      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
-      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
-  </div>
-  </div>
-
+ </div>
   </body>
 </html>

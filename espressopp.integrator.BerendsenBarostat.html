@@ -1,3 +1,6 @@
+
+<div id="outer">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +9,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>BerendsenBarostat - Berendsen barostat Object &mdash; ESPResSo++ v1.9.3</title>
+    <title>BerendsenBarostat - Berendsen barostat Object &mdash; ESPResSo++ 1.7 documentation</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        URL_ROOT:    '',
+        VERSION:     '1.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,89 +27,59 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
-    <link rel="up" title="User Interface" href="classdescription.html" />
-    <link rel="next" title="BerendsenThermostat - Berendsen thermostat Object" href="espressopp.integrator.BerendsenThermostat.html" />
-    <link rel="prev" title="Storage - Storage Object" href="espressopp.storage.html" />
-   
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
+    <link rel="up" title="integrator" href="integrator.html" />
+    <link rel="next" title="BerendsenBarostatAnisotropic - Berendsen barostat Object" href="espressopp.integrator.BerendsenBarostatAnisotropic.html" />
+    <link rel="prev" title="AdResS - Object" href="espressopp.integrator.Adress.html" /> 
   </head>
-  <body role="document">
-  <div id="outer">
+  <body>
   <div class="header"></div>
 
 
-
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="espressopp.Version.html"><strong>Version</strong> - Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.pmi.html"><strong>PMI</strong> - Parallel Method Invocation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.System.html"><strong>System</strong> - Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.BC.html"><strong>BC</strong> - Boundary Condition Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.OrthorhombicBC.html"><strong>OrthorhombicBC</strong> - Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.storage.html"><strong>Storage</strong> - Storage Object</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href=""><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html"><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.tools.decomp.html"><strong>decomp.py</strong> - Auxiliary python functions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="integrator.html">integrator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
-<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
-</ul>
-<a href="http://www.espresso-pp.de/Impressum.html">Impressum</a>
-<div id="searchbox" style="display: none" role="search">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Search" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
       </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
 
   <div class="document">
-    <div class="documentwrapper">
+      <div class="documentwrapper">
 	<div class="bodywrapper">
 	  <div class="body">
+            
+             <a href="espressopp.integrator.Adress.html">previous</a>
+            
+            
+             <a style="float:right;"  href="espressopp.integrator.BerendsenBarostatAnisotropic.html">next</a>
+            
 	    
   <span class="target" id="module-espressopp.integrator.BerendsenBarostat"></span><div class="section" id="berendsenbarostat-berendsen-barostat-object">
 <h1><strong>BerendsenBarostat</strong> - Berendsen barostat Object<a class="headerlink" href="#berendsenbarostat-berendsen-barostat-object" title="Permalink to this headline">¶</a></h1>
-<p>This is the Berendsen barostat implementation according to the original paper <a class="reference internal" href="#berendsen84" id="id1">[Berendsen84]</a>.
+<p>This is the Berendsen barostat implementation according to the original paper <a class="reference internal" href="#berendsen84">[Berendsen84]</a>.
 If Berendsen barostat is defined (as a property of integrator) then at the each run the system size
-and the particle coordinates will be scaled by scaling parameter <img class="math" src="images/math/126e84ba38f7dece5f0ad64e929b9588b20f6440.png" alt="\mu"/> according to
+and the particle coordinates will be scaled by scaling parameter <span class="math">\mu</span> according to
 the formula:</p>
 <div class="math">
-<p><img src="images/math/8ed3f53f6c7cb9d3cc1f567a0807551a0e2908f3.png" alt="\mu = [1 - \Delta t/\tau (P_{0} - P)]^{1/3}"/></p>
-</div><p>where <img class="math" src="images/math/5b4271afe7fc7c0ee84172e0ad19b82caf450c00.png" alt="\Delta t"/> - integration timestep, <img class="math" src="images/math/d9e99c35d3632bb156b7aca0e93cd78a148a10e8.png" alt="\tau"/> - time parameter (coupling parameter),
-<img class="math" src="images/math/16dd9360549a9808b71079cd371a6fa5187df1a8.png" alt="P_{0}"/> - external pressure and <img class="math" src="images/math/f48b617185733d8dd6712643f1ab17c736661a06.png" alt="P"/> - instantaneous pressure.</p>
+<p><span class="math">\mu = [1 - \Delta t/\tau (P_{0} - P)]^{1/3}</span></p>
+</div><p>where <span class="math">\Delta t</span> - integration timestep, <span class="math">\tau</span> - time parameter (coupling parameter),
+<span class="math">P_{0}</span> - external pressure and <span class="math">P</span> - instantaneous pressure.</p>
 <p>Example:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">0.1</span>
@@ -127,10 +100,10 @@ the formula:</p>
 <p>Properties:</p>
 <ul>
 <li><p class="first"><em>berendsenP.tau</em></p>
-<p>The property &#8216;tau&#8217; defines the time parameter <img class="math" src="images/math/d9e99c35d3632bb156b7aca0e93cd78a148a10e8.png" alt="\tau"/>.</p>
+<p>The property &#8216;tau&#8217; defines the time parameter <span class="math">\tau</span>.</p>
 </li>
 <li><p class="first"><em>berendsenP.pressure</em></p>
-<p>The property &#8216;pressure&#8217; defines the external pressure <img class="math" src="images/math/16dd9360549a9808b71079cd371a6fa5187df1a8.png" alt="P_{0}"/>.</p>
+<p>The property &#8216;pressure&#8217; defines the external pressure <span class="math">P_{0}</span>.</p>
 </li>
 </ul>
 <p>Setting the integration property:</p>
@@ -180,7 +153,7 @@ the ensamble or whatever :)</p>
 </table>
 <dl class="function">
 <dt id="espressopp.integrator.BerendsenBarostat.espressopp.integrator.BerendsenBarostat">
-<code class="descclassname">espressopp.integrator.</code><code class="descname">BerendsenBarostat</code><span class="sig-paren">(</span><em>system</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.BerendsenBarostat.espressopp.integrator.BerendsenBarostat" title="Permalink to this definition">¶</a></dt>
+<tt class="descclassname">espressopp.integrator.</tt><tt class="descname">BerendsenBarostat</tt><big>(</big><em>system</em><big>)</big><a class="headerlink" href="#espressopp.integrator.BerendsenBarostat.espressopp.integrator.BerendsenBarostat" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -194,31 +167,15 @@ the ensamble or whatever :)</p>
 </div>
 
 
-      </div>
-     </div>
+            
+             <a href="espressopp.integrator.Adress.html">previous</a>
+                
+            
+             <a style="float:right;"  href="espressopp.integrator.BerendsenBarostatAnisotropic.html">next</a>
+            
+          </div>
+        </div>
      </div> 
-  </div>
-
-    <div class="footer">
-      &copy;2013-2016, Max Planck Institute for Polymer Research.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
-      
-      |
-      <a href="sources/espressopp.integrator.BerendsenBarostat.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  <div class="footer-logo">
-      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
-      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
-  </div>
-  </div>
-
+ </div>
   </body>
 </html>

@@ -1,8 +1,8 @@
-User Interface
-=========================
+ESPResSo++ User Interface - Class Description
+=============================================
 .. toctree::
    :maxdepth: 2
-
+   
    espressopp.Version.rst 
    espressopp.pmi.rst
    espressopp.System.rst
@@ -29,5 +29,3 @@ User Interface
    espressopp.rst
    standard_system.rst
    storage.rst
-
-   logging.rst

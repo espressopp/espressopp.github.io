@@ -1,3 +1,6 @@
+
+<div id="outer">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +9,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>AddNewPotential &mdash; ESPResSo++ v1.9.3</title>
+    <title>AddNewPotential &mdash; ESPResSo++ 1.7 documentation</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        URL_ROOT:    '',
+        VERSION:     '1.7',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -24,60 +27,48 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
-    <link rel="up" title="Tutorial" href="tutorial.html" />
+    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
+    <link rel="up" title="ESPResSo++ Tutorial" href="tutorial.html" />
     <link rel="next" title="Adaptive Resolution Scheme (AdResS)" href="tutorial.AdResS.html" />
-    <link rel="prev" title="Polymer Melt" href="tutorial.PolymerMelt.html" />
-   
-  
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
-
+    <link rel="prev" title="Polymer Melt" href="tutorial.PolymerMelt.html" /> 
   </head>
-  <body role="document">
-  <div id="outer">
+  <body>
   <div class="header"></div>
 
 
-
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="tutorial.html">Tutorial</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="tutorial.SystemSetup.html">Basic System Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial.LennardJones.html">Simple Lennard Jones System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial.LennardJones2.html">Advanced Lennard Jones System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial.PolymerMelt.html">Polymer Melt</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">AddNewPotential</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#appendices">Appendices</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial.AdResS.html">Adaptive Resolution Scheme (AdResS)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
-<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
-</ul>
-<a href="http://www.espresso-pp.de/Impressum.html">Impressum</a>
-<div id="searchbox" style="display: none" role="search">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Search" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-        </div>
+  
+    <div class="menu">
+      <ul class="nav">
+	<li><a href="../index.html">Home</a></li>
+	<li><a href="../Features.html">Features</a></li>
+	<li><a href="../Download.html">Download</a></li>
+	<li><a href="index.html">Documentation</a></li>
+	<li><a href="../Developer_Team.html">Developer Team</a></li>
+	<li><a href="../Getting_Help.html">Getting Help</a></li>
+	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
+      </ul>
+      <div id="searchbox" style="display: none">
+	<form class="search" action="search.html" method="get">
+	  <input type="text" name="q" size="12" />
+	  <input type="submit" value="Search" />
+	  <input type="hidden" name="check_keywords" value="yes" />
+	  <input type="hidden" name="area" value="default" />
+	</form>
       </div>
+      <script type="text/javascript">$('#searchbox').show(0);</script>
+    </div>
+   
 
   <div class="document">
-    <div class="documentwrapper">
+      <div class="documentwrapper">
 	<div class="bodywrapper">
 	  <div class="body">
+            
+             <a href="tutorial.PolymerMelt.html">previous</a>
+            
+            
+             <a style="float:right;"  href="tutorial.AdResS.html">next</a>
+            
 	    
   <div class="section" id="addnewpotential">
 <h1>AddNewPotential<a class="headerlink" href="#addnewpotential" title="Permalink to this headline">¶</a></h1>
@@ -88,8 +79,8 @@
 <h2>Steps for adding a new interaction potential<a class="headerlink" href="#steps-for-adding-a-new-interaction-potential" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li>Choose the potential and derive the force.</li>
-<li>Choose the appropriate interaction template from those in <code class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction</span></code>, e.g. <code class="docutils literal"><span class="pre">VerletListInteractionTemplate.hpp</span></code>, <code class="docutils literal"><span class="pre">FixedTripleListInteractionTemplate.hpp</span></code></li>
-<li>Create the .cpp, .hpp and .py files for your potential, place them in <code class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction</span></code> and modify <code class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction/bindings.cpp</span></code> and <code class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction/__init__.py</span></code></li>
+<li>Choose the appropriate interaction template from those in <tt class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction</span></tt>, e.g. <tt class="docutils literal"><span class="pre">VerletListInteractionTemplate.hpp</span></tt>, <tt class="docutils literal"><span class="pre">FixedTripleListInteractionTemplate.hpp</span></tt></li>
+<li>Create the .cpp, .hpp and .py files for your potential, place them in <tt class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction</span></tt> and modify <tt class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction/bindings.cpp</span></tt> and <tt class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction/__init__.py</span></tt></li>
 <li>Compile.</li>
 </ol>
 <p>These steps are described in more detail below for our tutorial example potential.</p>
@@ -100,24 +91,24 @@
 <h3>Step 1<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h3>
 <p>The potential we are implementing today is a two-body bonded potential with the form</p>
 <div class="math">
-<p><img src="images/math/e40cc77dc0de25ab5b74e04901d765d7d1856e8f.png" alt="V(r_{ij})=\frac{1}{4}k_{ij}(r^2_{ij}-r^2_{0,ij})^2"/></p>
+<p><span class="math">V(r_{ij})=\frac{1}{4}k_{ij}(r^2_{ij}-r^2_{0,ij})^2</span></p>
 </div><p>noindent
-where <img class="math" src="images/math/35bab58b40a77a2e24ecb9f58898f1813de64459.png" alt="r_{ij}"/> is the distance between particles <em>i</em> and <em>j</em>. The potential has two input parameters <img class="math" src="images/math/79589b66d931d336a183fd656ada8db266707c67.png" alt="r_{0}"/> and <img class="math" src="images/math/e9203da50e1059455123460d4e716c9c7f440cc3.png" alt="k"/>.</p>
+where <span class="math">r_{ij}</span> is the distance between particles <em>i</em> and <em>j</em>. The potential has two input parameters <span class="math">r_{0}</span> and <span class="math">k</span>.</p>
 <p>Derive the force.</p>
 </div>
 <div class="section" id="step-2">
 <h3>Step 2<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h3>
-<p>This is a 2-body interaction between a predefined (fixed) list of atom pairs. What is the appropriate interaction template to use? Choose one in <code class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction</span></code></p>
-<p>Open the interaction template file. (When you close the file later, close it without saving, or else later on your compile time will be very long, because of the number of dependencies on the interaction template!) Identify the functions <code class="docutils literal"><span class="pre">addForces()</span></code> and <code class="docutils literal"><span class="pre">computeEnergy()</span></code>. Many interaction templates also contain functions such as <code class="docutils literal"><span class="pre">computeVirial()</span></code>, <code class="docutils literal"><span class="pre">computeVirialX()</span></code> (for calculating the virial in slabs along the x-direction) etc.</p>
+<p>This is a 2-body interaction between a predefined (fixed) list of atom pairs. What is the appropriate interaction template to use? Choose one in <tt class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction</span></tt></p>
+<p>Open the interaction template file. (When you close the file later, close it without saving, or else later on your compile time will be very long, because of the number of dependencies on the interaction template!) Identify the functions <tt class="docutils literal"><span class="pre">addForces()</span></tt> and <tt class="docutils literal"><span class="pre">computeEnergy()</span></tt>. Many interaction templates also contain functions such as <tt class="docutils literal"><span class="pre">computeVirial()</span></tt>, <tt class="docutils literal"><span class="pre">computeVirialX()</span></tt> (for calculating the virial in slabs along the x-direction) etc.</p>
 <p>Find the function calls:</p>
 <div class="highlight-c"><div class="highlight"><pre><span class="n">potential</span><span class="o">-&gt;</span><span class="n">_computeForce</span><span class="p">(</span><span class="n">force</span><span class="p">,</span> <span class="n">dist</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>in <code class="docutils literal"><span class="pre">addForces()</span></code> and</p>
+<p>in <tt class="docutils literal"><span class="pre">addForces()</span></tt> and</p>
 <div class="highlight-c"><div class="highlight"><pre><span class="n">potential</span><span class="o">-&gt;</span><span class="n">_computeEnergy</span><span class="p">(</span><span class="n">r21</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>in <code class="docutils literal"><span class="pre">computeEnergy()</span></code>.</p>
+<p>in <tt class="docutils literal"><span class="pre">computeEnergy()</span></tt>.</p>
 <p>An interaction template can be combined with many different potentials (e.g. harmonic potential, Lennard Jones potential, etc.) Each potential will have its own C++ class containing functions to compute the energy and forces for that particular potential (see e.g. Harmonic.cpp/hpp, LennardJones.cpp/hpp) In turn, each potential can be combined with many different interaction templates.</p>
 <p>You don&#8217;t need to modify the interaction template file today. (Close it without saving!)</p>
 </div>
@@ -127,20 +118,20 @@ where <img class="math" src="images/math/35bab58b40a77a2e24ecb9f58898f1813de6445
 <div class="section" id="a-interfacing-potential-class-and-interaction-template">
 <h4>3(a) Interfacing potential class and interaction template<a class="headerlink" href="#a-interfacing-potential-class-and-interaction-template" title="Permalink to this headline">¶</a></h4>
 <p>In many cases, it&#8217;s not necessary to understand the contents of this section in order to implement a new potential. If you like, you can skip directly to Section <a class="reference internal" href="#b-creating-the-new-potential-class">3(b) Creating the new potential class</a>.</p>
-<p>Now we need to understand how the interaction template will interface with our new class. This is done via a class template, e.g. in <code class="docutils literal"><span class="pre">Potential.hpp</span></code>, <code class="docutils literal"><span class="pre">AnglePotential.hpp</span></code>, <code class="docutils literal"><span class="pre">DihedralPotential.hpp</span></code> etc.</p>
-<p>Still in <code class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction</span></code>, open the file <code class="docutils literal"><span class="pre">Potential.hpp</span></code>. (When you close the file later, close it without saving, or else later on your compile time will be very long, because of the number of dependencies on the file!)</p>
-<p>Find the functions <code class="docutils literal"><span class="pre">_computeForce(Real3D&amp;</span> <span class="pre">force,</span> <span class="pre">const</span> <span class="pre">Real3D&amp;</span> <span class="pre">dist)</span></code> and <code class="docutils literal"><span class="pre">_computeEnergy(real</span> <span class="pre">dist)</span></code> which you identified in the interaction template. Note that <code class="docutils literal"><span class="pre">_computeForce(Real3D&amp;</span> <span class="pre">force,</span> <span class="pre">const</span> <span class="pre">Real3D&amp;</span> <span class="pre">dist)</span></code> calls the function <code class="docutils literal"><span class="pre">_computeForceRaw(force,</span> <span class="pre">dist,</span> <span class="pre">distSqr)</span></code> and <code class="docutils literal"><span class="pre">_computeEnergy(real</span> <span class="pre">dist)</span></code> calls <code class="docutils literal"><span class="pre">_computeEnergySqr(dist*dist)</span></code> which calls <code class="docutils literal"><span class="pre">_computeEnergySqrRaw(distSqr)</span></code>. The functions <code class="docutils literal"><span class="pre">_computeForceRaw()</span></code> and <code class="docutils literal"><span class="pre">_computeEnergySqrRaw()</span></code> are the new functions we need to write for our new potential. They will be member methods of our new C++ class FourthPower.</p>
-<p>You don&#8217;t need to modify anything in <code class="docutils literal"><span class="pre">Potential.hpp</span></code> today. (Close it without saving!)</p>
+<p>Now we need to understand how the interaction template will interface with our new class. This is done via a class template, e.g. in <tt class="docutils literal"><span class="pre">Potential.hpp</span></tt>, <tt class="docutils literal"><span class="pre">AnglePotential.hpp</span></tt>, <tt class="docutils literal"><span class="pre">DihedralPotential.hpp</span></tt> etc.</p>
+<p>Still in <tt class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction</span></tt>, open the file <tt class="docutils literal"><span class="pre">Potential.hpp</span></tt>. (When you close the file later, close it without saving, or else later on your compile time will be very long, because of the number of dependencies on the file!)</p>
+<p>Find the functions <tt class="docutils literal"><span class="pre">_computeForce(Real3D&amp;</span> <span class="pre">force,</span> <span class="pre">const</span> <span class="pre">Real3D&amp;</span> <span class="pre">dist)</span></tt> and <tt class="docutils literal"><span class="pre">_computeEnergy(real</span> <span class="pre">dist)</span></tt> which you identified in the interaction template. Note that <tt class="docutils literal"><span class="pre">_computeForce(Real3D&amp;</span> <span class="pre">force,</span> <span class="pre">const</span> <span class="pre">Real3D&amp;</span> <span class="pre">dist)</span></tt> calls the function <tt class="docutils literal"><span class="pre">_computeForceRaw(force,</span> <span class="pre">dist,</span> <span class="pre">distSqr)</span></tt> and <tt class="docutils literal"><span class="pre">_computeEnergy(real</span> <span class="pre">dist)</span></tt> calls <tt class="docutils literal"><span class="pre">_computeEnergySqr(dist*dist)</span></tt> which calls <tt class="docutils literal"><span class="pre">_computeEnergySqrRaw(distSqr)</span></tt>. The functions <tt class="docutils literal"><span class="pre">_computeForceRaw()</span></tt> and <tt class="docutils literal"><span class="pre">_computeEnergySqrRaw()</span></tt> are the new functions we need to write for our new potential. They will be member methods of our new C++ class FourthPower.</p>
+<p>You don&#8217;t need to modify anything in <tt class="docutils literal"><span class="pre">Potential.hpp</span></tt> today. (Close it without saving!)</p>
 </div>
 <div class="section" id="b-creating-the-new-potential-class">
 <h4>3(b) Creating the new potential class<a class="headerlink" href="#b-creating-the-new-potential-class" title="Permalink to this headline">¶</a></h4>
 <p>An easy way to implement the new C++ class is to identify a previously implemented potential which somewhat resembles your new potential, e.g. here we could take the Harmonic potential, which is also a 2-body potential, and which has also been interfaced with the FixedPairListInteractionTemplate.</p>
-<p>Still in <code class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction</span></code>, copy the files <code class="docutils literal"><span class="pre">Harmonic.py</span></code>, <code class="docutils literal"><span class="pre">Harmonic.cpp</span></code> and <code class="docutils literal"><span class="pre">Harmonic.hpp</span></code> to new files <code class="docutils literal"><span class="pre">FourthPower.py</span></code>, <code class="docutils literal"><span class="pre">FourthPower.cpp</span></code> and <code class="docutils literal"><span class="pre">FourthPower.hpp</span></code>. In the new files, find and replace all occurences of &#8216;Harmonic&#8217; with &#8216;FourthPower&#8217;, and &#8216;HARMONIC&#8217; with &#8216;FOURTHPOWER&#8217;.</p>
-<p>First modify <code class="docutils literal"><span class="pre">FourthPower.hpp</span></code>.</p>
-<p>Note the <code class="docutils literal"><span class="pre">#include</span></code> statement for <code class="docutils literal"><span class="pre">FixedPairListInteractionTemplate.hpp</span></code> and <code class="docutils literal"><span class="pre">Potential.hpp</span></code>, the files you examined in <a class="reference internal" href="#step-2">Step 2</a> and Step <a class="reference internal" href="#a-interfacing-potential-class-and-interaction-template">3(a) Interfacing potential class and interaction template</a>.</p>
-<p>The Harmonic potential had parameters called <code class="docutils literal"><span class="pre">K</span></code> and <code class="docutils literal"><span class="pre">r0</span></code>. You can reuse these for the FourthPower potential, along with the setters and getters <code class="docutils literal"><span class="pre">setK</span></code>, <code class="docutils literal"><span class="pre">getK</span></code>, <code class="docutils literal"><span class="pre">setR0</span></code> and <code class="docutils literal"><span class="pre">getR0</span></code>. For better efficiency, you could also create a new variable which contains the square of <code class="docutils literal"><span class="pre">r0</span></code>.</p>
-<p>Now we need functions <code class="docutils literal"><span class="pre">_computeForceRaw()</span></code> and <code class="docutils literal"><span class="pre">_computeEnergySqrRaw()</span></code>, as explained in Step <a class="reference internal" href="#a-interfacing-potential-class-and-interaction-template">3(a) Interfacing potential class and interaction template</a>. Modify these functions to use the functional form of the fourth power potential as derived in <a class="reference internal" href="#step-1">Step 1</a>. Note that <code class="docutils literal"><span class="pre">Real3D</span> <span class="pre">dist</span></code>, which contains the vector between the two particles, has been defined as <img class="math" src="images/math/11b7edaa12fa7e166c57a1ca315608f2eef39409.png" alt="r_{p1} - r_{p2}"/> (see <code class="docutils literal"><span class="pre">addForces()</span></code> in <code class="docutils literal"><span class="pre">FixedPairListInteractionTemplate.hpp</span></code>).</p>
-<p>Next open <code class="docutils literal"><span class="pre">Harmonic.py</span></code> and <code class="docutils literal"><span class="pre">FourthPower.py</span></code>.</p>
+<p>Still in <tt class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction</span></tt>, copy the files <tt class="docutils literal"><span class="pre">Harmonic.py</span></tt>, <tt class="docutils literal"><span class="pre">Harmonic.cpp</span></tt> and <tt class="docutils literal"><span class="pre">Harmonic.hpp</span></tt> to new files <tt class="docutils literal"><span class="pre">FourthPower.py</span></tt>, <tt class="docutils literal"><span class="pre">FourthPower.cpp</span></tt> and <tt class="docutils literal"><span class="pre">FourthPower.hpp</span></tt>. In the new files, find and replace all occurences of &#8216;Harmonic&#8217; with &#8216;FourthPower&#8217;, and &#8216;HARMONIC&#8217; with &#8216;FOURTHPOWER&#8217;.</p>
+<p>First modify <tt class="docutils literal"><span class="pre">FourthPower.hpp</span></tt>.</p>
+<p>Note the <tt class="docutils literal"><span class="pre">#include</span></tt> statement for <tt class="docutils literal"><span class="pre">FixedPairListInteractionTemplate.hpp</span></tt> and <tt class="docutils literal"><span class="pre">Potential.hpp</span></tt>, the files you examined in <a class="reference internal" href="#step-2">Step 2</a> and Step <a class="reference internal" href="#a-interfacing-potential-class-and-interaction-template">3(a) Interfacing potential class and interaction template</a>.</p>
+<p>The Harmonic potential had parameters called <tt class="docutils literal"><span class="pre">K</span></tt> and <tt class="docutils literal"><span class="pre">r0</span></tt>. You can reuse these for the FourthPower potential, along with the setters and getters <tt class="docutils literal"><span class="pre">setK</span></tt>, <tt class="docutils literal"><span class="pre">getK</span></tt>, <tt class="docutils literal"><span class="pre">setR0</span></tt> and <tt class="docutils literal"><span class="pre">getR0</span></tt>. For better efficiency, you could also create a new variable which contains the square of <tt class="docutils literal"><span class="pre">r0</span></tt>.</p>
+<p>Now we need functions <tt class="docutils literal"><span class="pre">_computeForceRaw()</span></tt> and <tt class="docutils literal"><span class="pre">_computeEnergySqrRaw()</span></tt>, as explained in Step <a class="reference internal" href="#a-interfacing-potential-class-and-interaction-template">3(a) Interfacing potential class and interaction template</a>. Modify these functions to use the functional form of the fourth power potential as derived in <a class="reference internal" href="#step-1">Step 1</a>. Note that <tt class="docutils literal"><span class="pre">Real3D</span> <span class="pre">dist</span></tt>, which contains the vector between the two particles, has been defined as <span class="math">r_{p1} - r_{p2}</span> (see <tt class="docutils literal"><span class="pre">addForces()</span></tt> in <tt class="docutils literal"><span class="pre">FixedPairListInteractionTemplate.hpp</span></tt>).</p>
+<p>Next open <tt class="docutils literal"><span class="pre">Harmonic.py</span></tt> and <tt class="docutils literal"><span class="pre">FourthPower.py</span></tt>.</p>
 <p>Here is an example of an end-user&#8217;s python script to add an interaction using the harmonic potential:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">harmonicbondslist</span> <span class="o">=</span> <span class="n">espresso</span><span class="o">.</span><span class="n">FixedPairList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 <span class="n">harmonicbondslist</span><span class="o">.</span><span class="n">addBonds</span><span class="p">(</span><span class="n">bond_list</span><span class="p">)</span> <span class="c">#bond_list is a list of tuples [(particleindex_i,particleindex_j),...]</span>
@@ -149,19 +140,19 @@ where <img class="math" src="images/math/35bab58b40a77a2e24ecb9f58898f1813de6445
 <span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">harmonic_interaction</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Compare this to the contents of <code class="docutils literal"><span class="pre">Harmonic.py</span></code> to understand the python source code.</p>
-<p>Our new potential FourthPower can be called by the end-user in a similar way. Since the Harmonic and FourthPower potentials have similar input parameters (<code class="docutils literal"><span class="pre">K</span></code>, <code class="docutils literal"><span class="pre">r0</span></code>) and both use the FixedPairListInteractionTemplate, you don&#8217;t need to make any further modifications to the file <code class="docutils literal"><span class="pre">FourthPower.py</span></code>, besides replacing &#8216;Harmonic&#8217; with &#8216;FourthPower&#8217;.</p>
-<p>Next open <code class="docutils literal"><span class="pre">FourthPower.cpp</span></code>.</p>
-<p>Here you will find the C++/python interface, in the function <code class="docutils literal"><span class="pre">registerPython()</span></code>. If you want to understand this function, you will find details in <a class="reference internal" href="#exposing-a-c-class-or-struct-to-python-using-boost">Exposing a C++ class or struct to python using boost</a>. You don&#8217;t need to make any further modifications to this file, besides replacing &#8216;Harmonic&#8217; with &#8216;FourthPower&#8217;.</p>
+<p>Compare this to the contents of <tt class="docutils literal"><span class="pre">Harmonic.py</span></tt> to understand the python source code.</p>
+<p>Our new potential FourthPower can be called by the end-user in a similar way. Since the Harmonic and FourthPower potentials have similar input parameters (<tt class="docutils literal"><span class="pre">K</span></tt>, <tt class="docutils literal"><span class="pre">r0</span></tt>) and both use the FixedPairListInteractionTemplate, you don&#8217;t need to make any further modifications to the file <tt class="docutils literal"><span class="pre">FourthPower.py</span></tt>, besides replacing &#8216;Harmonic&#8217; with &#8216;FourthPower&#8217;.</p>
+<p>Next open <tt class="docutils literal"><span class="pre">FourthPower.cpp</span></tt>.</p>
+<p>Here you will find the C++/python interface, in the function <tt class="docutils literal"><span class="pre">registerPython()</span></tt>. If you want to understand this function, you will find details in <a class="reference internal" href="#exposing-a-c-class-or-struct-to-python-using-boost">Exposing a C++ class or struct to python using boost</a>. You don&#8217;t need to make any further modifications to this file, besides replacing &#8216;Harmonic&#8217; with &#8216;FourthPower&#8217;.</p>
 </div>
 <div class="section" id="c-including-the-new-class-in-espressopp">
 <h4>3(c) Including the new class in espressopp<a class="headerlink" href="#c-including-the-new-class-in-espressopp" title="Permalink to this headline">¶</a></h4>
-<p>Finally, update the files <code class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction/bindings.cpp</span></code> and <code class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction/__init__.py</span></code> (for example by copying and modifying all the lines referring to the Harmonic potential so that they now refer to the FourthPower potential). You need to make three modifications: to include the new .hpp file, to call the new registerPython() wrapper, and to import everything in the new python module.</p>
+<p>Finally, update the files <tt class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction/bindings.cpp</span></tt> and <tt class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction/__init__.py</span></tt> (for example by copying and modifying all the lines referring to the Harmonic potential so that they now refer to the FourthPower potential). You need to make three modifications: to include the new .hpp file, to call the new registerPython() wrapper, and to import everything in the new python module.</p>
 </div>
 </div>
 <div class="section" id="step-4">
 <h3>Step 4<a class="headerlink" href="#step-4" title="Permalink to this headline">¶</a></h3>
-<p>Move to the directory <code class="docutils literal"><span class="pre">$ESPRESSOHOME</span></code>. Update the makefiles and compile using the commands:</p>
+<p>Move to the directory <tt class="docutils literal"><span class="pre">$ESPRESSOHOME</span></tt>. Update the makefiles and compile using the commands:</p>
 <div class="highlight-c"><div class="highlight"><pre><span class="n">cmake</span> <span class="p">.</span>
 <span class="n">make</span>
 </pre></div>
@@ -170,8 +161,8 @@ where <img class="math" src="images/math/35bab58b40a77a2e24ecb9f58898f1813de6445
 </div>
 <div class="section" id="advanced-exercise">
 <h2>Advanced exercise<a class="headerlink" href="#advanced-exercise" title="Permalink to this headline">¶</a></h2>
-<p>For an interaction potential of your choosing, follow the steps above to implement it, e.g. a non-bonded two-body interaction, probably using <code class="docutils literal"><span class="pre">VerletListInteractionTemplate</span></code> and based on the <code class="docutils literal"><span class="pre">LennardJones</span></code> potential, or a bonded three-body interaction, probably using <code class="docutils literal"><span class="pre">FixedTripleListInteractionTemplate.hpp</span></code> and based on the <code class="docutils literal"><span class="pre">AngularHarmonic</span></code> potential.</p>
-<p>You will probably have to write setters and getters for the parameters in your potential in your .hpp file, and make the corresponding modifications to the function <code class="docutils literal"><span class="pre">registerPython()</span></code> in the .cpp file and the python user interface in the .py file.</p>
+<p>For an interaction potential of your choosing, follow the steps above to implement it, e.g. a non-bonded two-body interaction, probably using <tt class="docutils literal"><span class="pre">VerletListInteractionTemplate</span></tt> and based on the <tt class="docutils literal"><span class="pre">LennardJones</span></tt> potential, or a bonded three-body interaction, probably using <tt class="docutils literal"><span class="pre">FixedTripleListInteractionTemplate.hpp</span></tt> and based on the <tt class="docutils literal"><span class="pre">AngularHarmonic</span></tt> potential.</p>
+<p>You will probably have to write setters and getters for the parameters in your potential in your .hpp file, and make the corresponding modifications to the function <tt class="docutils literal"><span class="pre">registerPython()</span></tt> in the .cpp file and the python user interface in the .py file.</p>
 </div>
 </div>
 <div class="section" id="appendices">
@@ -198,7 +189,7 @@ where <img class="math" src="images/math/35bab58b40a77a2e24ecb9f58898f1813de6445
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>If there are additional constructors we can also expose them using <code class="docutils literal"><span class="pre">def()</span></code>, e.g. for an additional constructor which takes two doubles:</p>
+<p>If there are additional constructors we can also expose them using <tt class="docutils literal"><span class="pre">def()</span></tt>, e.g. for an additional constructor which takes two doubles:</p>
 <div class="highlight-c"><div class="highlight"><pre><span class="n">class_</span><span class="o">&lt;</span><span class="n">World</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">,</span> <span class="n">init</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">())</span>
     <span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="n">init</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span><span class="p">())</span>
     <span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;greet&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">greet</span><span class="p">)</span>
@@ -206,13 +197,13 @@ where <img class="math" src="images/math/35bab58b40a77a2e24ecb9f58898f1813de6445
 <span class="p">;</span>
 </pre></div>
 </div>
-<p>We can also expose the data members of the C++ class or struct and the associated access (getter and setter) functions using <code class="docutils literal"><span class="pre">add_property()</span></code>, e.g. for the variable myValue with access functions <code class="docutils literal"><span class="pre">getMyValue</span></code> and <code class="docutils literal"><span class="pre">setMyValue</span></code>:</p>
+<p>We can also expose the data members of the C++ class or struct and the associated access (getter and setter) functions using <tt class="docutils literal"><span class="pre">add_property()</span></tt>, e.g. for the variable myValue with access functions <tt class="docutils literal"><span class="pre">getMyValue</span></tt> and <tt class="docutils literal"><span class="pre">setMyValue</span></tt>:</p>
 <div class="highlight-c"><div class="highlight"><pre><span class="p">.</span><span class="n">add_property</span><span class="p">(</span><span class="s">&quot;myValue&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">getMyValue</span><span class="p">,</span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">setMyValue</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>C++ classes and structs may be derived from other classes. Say we have the C++ struct myDerivedStruct which is derived from the struct myBaseStruct:</p>
-<div class="highlight-c"><div class="highlight"><pre><span class="k">struct</span> <span class="n">myBaseStruct</span> <span class="p">{</span> <span class="n">virtual</span> <span class="o">~</span><span class="n">myBaseStruct</span><span class="p">();</span> <span class="p">};</span>
-<span class="k">struct</span> <span class="nl">myDerivedStruct</span> <span class="p">:</span> <span class="n">myBaseStruct</span> <span class="p">{};</span>
+<div class="highlight-c"><div class="highlight"><pre><span class="k">struct</span> <span class="n">myBaseStruct</span> <span class="p">{</span> <span class="k">virtual</span> <span class="o">~</span><span class="n">myBaseStruct</span><span class="p">();</span> <span class="p">};</span>
+<span class="k">struct</span> <span class="n">myDerivedStruct</span> <span class="o">:</span> <span class="n">myBaseStruct</span> <span class="p">{};</span>
 </pre></div>
 </div>
 <p>We can wrap the base class myBaseStruct as explained above:</p>
@@ -257,37 +248,21 @@ where <img class="math" src="images/math/35bab58b40a77a2e24ecb9f58898f1813de6445
 </div>
 <div class="section" id="pmi">
 <h3>PMI<a class="headerlink" href="#pmi" title="Permalink to this headline">¶</a></h3>
-<p>PMI = parallel method invocation. For more details see the file <code class="docutils literal"><span class="pre">$ESPRESSOHOME/src/pmi.py</span></code></p>
+<p>PMI = parallel method invocation. For more details see the file <tt class="docutils literal"><span class="pre">$ESPRESSOHOME/src/pmi.py</span></tt></p>
 </div>
 </div>
 </div>
 
 
-      </div>
-     </div>
+            
+             <a href="tutorial.PolymerMelt.html">previous</a>
+                
+            
+             <a style="float:right;"  href="tutorial.AdResS.html">next</a>
+            
+          </div>
+        </div>
      </div> 
-  </div>
-
-    <div class="footer">
-      &copy;2013-2016, Max Planck Institute for Polymer Research.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
-      
-      |
-      <a href="sources/tutorial.AddNewPotential.txt"
-          rel="nofollow">Page source</a>
-    </div>
-
-    
-
-    
-  <div class="footer-logo">
-      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
-      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
-  </div>
-  </div>
-
+ </div>
   </body>
 </html>
