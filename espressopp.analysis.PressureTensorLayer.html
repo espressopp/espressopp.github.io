@@ -1,6 +1,3 @@
-
-<div id="outer">
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -9,15 +6,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>PressureTensorLayer - Analysis &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>PressureTensorLayer - Analysis &mdash; ESPResSo++ v1.9.3</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '1.7',
+        URL_ROOT:    './',
+        VERSION:     '1.9.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -27,48 +24,78 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
+    <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
     <link rel="up" title="analysis" href="analysis.html" />
     <link rel="next" title="PressureTensorMultiLayer - Analysis" href="espressopp.analysis.PressureTensorMultiLayer.html" />
-    <link rel="prev" title="PressureTensor - Analysis" href="espressopp.analysis.PressureTensor.html" /> 
+    <link rel="prev" title="PressureTensor - Analysis" href="espressopp.analysis.PressureTensor.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
   </head>
-  <body>
+  <body role="document">
+  <div id="outer">
   <div class="header"></div>
 
 
-  
-    <div class="menu">
-      <ul class="nav">
-	<li><a href="../index.html">Home</a></li>
-	<li><a href="../Features.html">Features</a></li>
-	<li><a href="../Download.html">Download</a></li>
-	<li><a href="index.html">Documentation</a></li>
-	<li><a href="../Developer_Team.html">Developer Team</a></li>
-	<li><a href="../Getting_Help.html">Getting Help</a></li>
-	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
-      </ul>
-      <div id="searchbox" style="display: none">
-	<form class="search" action="search.html" method="get">
-	  <input type="text" name="q" size="12" />
-	  <input type="submit" value="Search" />
-	  <input type="hidden" name="check_keywords" value="yes" />
-	  <input type="hidden" name="area" value="default" />
-	</form>
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="espressopp.Version.html"><strong>Version</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.pmi.html"><strong>PMI</strong> - Parallel Method Invocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.System.html"><strong>System</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.BC.html"><strong>BC</strong> - Boundary Condition Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.OrthorhombicBC.html"><strong>OrthorhombicBC</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.storage.html"><strong>Storage</strong> - Storage Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html"><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html"><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.tools.decomp.html"><strong>decomp.py</strong> - Auxiliary python functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
+</ul>
+<a href="http://www.espresso-pp.de/Impressum.html">Impressum</a>
+<div id="searchbox" style="display: none" role="search">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
       </div>
-      <script type="text/javascript">$('#searchbox').show(0);</script>
-    </div>
-   
 
   <div class="document">
-      <div class="documentwrapper">
+    <div class="documentwrapper">
 	<div class="bodywrapper">
 	  <div class="body">
-            
-             <a href="espressopp.analysis.PressureTensor.html">previous</a>
-            
-            
-             <a style="float:right;"  href="espressopp.analysis.PressureTensorMultiLayer.html">next</a>
-            
 	    
   <span class="target" id="module-espressopp.analysis.PressureTensorLayer"></span><div class="section" id="pressuretensorlayer-analysis">
 <h1><strong>PressureTensorLayer</strong> - Analysis<a class="headerlink" href="#pressuretensorlayer-analysis" title="Permalink to this headline">¶</a></h1>
@@ -78,7 +105,7 @@ in combination with the integrator extension ExtAnalyze.</p>
 <div class="section" id="standalone-usage">
 <h2>Standalone Usage:<a class="headerlink" href="#standalone-usage" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pt</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">PressureTensorLayer</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">h0</span><span class="p">,</span> <span class="n">dh</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s">&quot;pressure tensor of current configuration = &quot;</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;pressure tensor of current configuration = &quot;</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>or</p>
@@ -86,7 +113,7 @@ in combination with the integrator extension ExtAnalyze.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">pt</span><span class="o">.</span><span class="n">performMeasurement</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s">&quot;average pressure tensor = &quot;</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">getAverageValue</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;average pressure tensor = &quot;</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">getAverageValue</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -97,9 +124,9 @@ in combination with the integrator extension ExtAnalyze.</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">extension_pt</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pt_ave</span> <span class="o">=</span> <span class="n">pt</span><span class="o">.</span><span class="n">getAverageValue</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s">&quot;average Pressure Tensor = &quot;</span><span class="p">,</span> <span class="n">pt_ave</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s">&quot;          std deviation = &quot;</span><span class="p">,</span> <span class="n">pt_ave</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s">&quot;number of measurements  = &quot;</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">getNumberOfMeasurements</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;average Pressure Tensor = &quot;</span><span class="p">,</span> <span class="n">pt_ave</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;          std deviation = &quot;</span><span class="p">,</span> <span class="n">pt_ave</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;number of measurements  = &quot;</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">getNumberOfMeasurements</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>The following methods are supported:</p>
@@ -139,7 +166,7 @@ does _not_ include measurements that have been done using &#8220;compute()&#8221
 </ul>
 <dl class="function">
 <dt id="espressopp.analysis.PressureTensorLayer.espressopp.analysis.PressureTensorLayer">
-<tt class="descclassname">espressopp.analysis.</tt><tt class="descname">PressureTensorLayer</tt><big>(</big><em>system</em>, <em>h0</em>, <em>dh</em><big>)</big><a class="headerlink" href="#espressopp.analysis.PressureTensorLayer.espressopp.analysis.PressureTensorLayer" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.analysis.</code><code class="descname">PressureTensorLayer</code><span class="sig-paren">(</span><em>system</em>, <em>h0</em>, <em>dh</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.PressureTensorLayer.espressopp.analysis.PressureTensorLayer" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -159,15 +186,31 @@ does _not_ include measurements that have been done using &#8220;compute()&#8221
 </div>
 
 
-            
-             <a href="espressopp.analysis.PressureTensor.html">previous</a>
-                
-            
-             <a style="float:right;"  href="espressopp.analysis.PressureTensorMultiLayer.html">next</a>
-            
-          </div>
-        </div>
+      </div>
+     </div>
      </div> 
- </div>
+  </div>
+
+    <div class="footer">
+      &copy;2013-2016, Max Planck Institute for Polymer Research.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="sources/espressopp.analysis.PressureTensorLayer.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  <div class="footer">
+      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
+      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
+  </div>
+  </div>
+
   </body>
 </html>

@@ -1,6 +1,3 @@
-
-<div id="outer">
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -9,15 +6,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>LangevinBarostat - Langevin-Hoover barostat Object &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>LangevinBarostat - Langevin-Hoover barostat Object &mdash; ESPResSo++ v1.9.3</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '1.7',
+        URL_ROOT:    './',
+        VERSION:     '1.9.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -27,79 +24,602 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
-    <link rel="up" title="integrator" href="integrator.html" />
-    <link rel="next" title="espressopp.integrator.LangevinThermostat" href="espressopp.integrator.LangevinThermostat.html" />
-    <link rel="prev" title="LBInitPopWave - creates initial populations with uniform density and harmonic velocity" href="espressopp.integrator.LBInitPopWave.html" /> 
+    <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
+    <link rel="up" title="User Interface" href="classdescription.html" />
+    <link rel="next" title="CoulombRSpace - Coulomb potential and interaction Objects (R space part)" href="espressopp.interaction.CoulombRSpace.html" />
+    <link rel="prev" title="BerendsenThermostat - Berendsen thermostat Object" href="espressopp.integrator.BerendsenThermostat.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
   </head>
-  <body>
+  <body role="document">
+  <div id="outer">
   <div class="header"></div>
 
 
-  
-    <div class="menu">
-      <ul class="nav">
-	<li><a href="../index.html">Home</a></li>
-	<li><a href="../Features.html">Features</a></li>
-	<li><a href="../Download.html">Download</a></li>
-	<li><a href="index.html">Documentation</a></li>
-	<li><a href="../Developer_Team.html">Developer Team</a></li>
-	<li><a href="../Getting_Help.html">Getting Help</a></li>
-	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
-      </ul>
-      <div id="searchbox" style="display: none">
-	<form class="search" action="search.html" method="get">
-	  <input type="text" name="q" size="12" />
-	  <input type="submit" value="Search" />
-	  <input type="hidden" name="check_keywords" value="yes" />
-	  <input type="hidden" name="area" value="default" />
-	</form>
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="espressopp.Version.html"><strong>Version</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.pmi.html"><strong>PMI</strong> - Parallel Method Invocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.System.html"><strong>System</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.BC.html"><strong>BC</strong> - Boundary Condition Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.OrthorhombicBC.html"><strong>OrthorhombicBC</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.storage.html"><strong>Storage</strong> - Storage Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html"><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href=""><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html"><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.tools.decomp.html"><strong>decomp.py</strong> - Auxiliary python functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
+</ul>
+<a href="http://www.espresso-pp.de/Impressum.html">Impressum</a>
+<div id="searchbox" style="display: none" role="search">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
       </div>
-      <script type="text/javascript">$('#searchbox').show(0);</script>
-    </div>
-   
 
   <div class="document">
-      <div class="documentwrapper">
+    <div class="documentwrapper">
 	<div class="bodywrapper">
 	  <div class="body">
-            
-             <a href="espressopp.integrator.LBInitPopWave.html">previous</a>
-            
-            
-             <a style="float:right;"  href="espressopp.integrator.LangevinThermostat.html">next</a>
-            
 	    
   <span class="target" id="module-espressopp.integrator.LangevinBarostat"></span><div class="section" id="langevinbarostat-langevin-hoover-barostat-object">
 <h1><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object<a class="headerlink" href="#langevinbarostat-langevin-hoover-barostat-object" title="Permalink to this headline">¶</a></h1>
 <p>This is the barostat implementation to perform Langevin dynamics in a Hoover style extended system
-according to the paper <a class="reference internal" href="#quigley04">[Quigley04]</a>. It includes corrections of Hoover approach which were introduced
-by Martyna et al <a class="reference internal" href="#martyna94">[Martyna94]</a>.
+according to the paper <a class="reference internal" href="#quigley04" id="id1">[Quigley04]</a>. It includes corrections of Hoover approach which were introduced
+by Martyna et al <a class="reference internal" href="#martyna94" id="id2">[Martyna94]</a>.
 If LangevinBarostat is defined (as a property of integrator) the integration equations will be 
-modified. The volume of system <span class="math">V</span> is introduced as a dynamical variable:</p>
-<div class="math">
-<p><span class="math">\boldsymbol{\dot{r}}_{i} = \frac{\boldsymbol{p}_{i}}{m_{i}} +
-\frac{p_{\epsilon}}{W}\boldsymbol{r}_{i}</span></p>
-</div><div class="math">
-<p><span class="math">\boldsymbol{\dot{p}}_{i} = -\bigtriangledown_{\boldsymbol{r}_{i}}\Phi -
+modified. The volume of system <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">V</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+ is introduced as a dynamical variable:</p>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">\boldsymbol{\dot{r}}_{i} = \frac{\boldsymbol{p}_{i}}{m_{i}} +
+\frac{p_{\epsilon}}{W}\boldsymbol{r}_{i}
+
+</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">\boldsymbol{\dot{p}}_{i} = -\bigtriangledown_{\boldsymbol{r}_{i}}\Phi -
 (1+\frac{n}{N_{f}})\frac{p_{\epsilon}}{W}\boldsymbol{p}_{i} - 
-\gamma\boldsymbol{p}_{i} + \boldsymbol{R}_{i}</span></p>
-</div><div class="math">
-<p><span class="math">\dot{V} = dVp_{\epsilon}/W</span></p>
-</div><div class="math">
-<p><span class="math">\dot{p}_{\epsilon} = nV(X-P_{ext})+
+\gamma\boldsymbol{p}_{i} + \boldsymbol{R}_{i}
+
+</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">\dot{V} = dVp_{\epsilon}/W
+
+</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">\dot{p}_{\epsilon} = nV(X-P_{ext})+
 \frac{n}{N_{f}}\sum^{N}_{i=1}\frac{\boldsymbol{p}_{i}^{2}}{m_{i}} -
-\gamma_{p}p_{\epsilon} + R_{p}</span></p>
-</div><p>where volume has a fictitious mass <span class="math">W</span> and associated momentum <span class="math">p_{\epsilon}</span>,
-<span class="math">\gamma_{p}</span> - friction coefficient,
-<span class="math">P_{ext}</span> - external pressure and <span class="math">X</span> - instantaneous pressure without white noise
-contribution from thermostat, <span class="math">n</span> - dimension, <span class="math">N_{f}</span> - degrees of freedom (if there
-are no constrains and <span class="math">N</span> is the number of particles in system <span class="math">N_{f}=nN</span>).
-<span class="math">R_{p}</span> - values which are drawn from Gaussian distribution of zero mean and unit variance
+\gamma_{p}p_{\epsilon} + R_{p}
+
+</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+<p>where volume has a fictitious mass <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">W</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+ and associated momentum <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">p_{\epsilon}</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+,
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">\gamma_{p}</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+ - friction coefficient,
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">P_{ext}</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+ - external pressure and <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">X</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+ - instantaneous pressure without white noise
+contribution from thermostat, <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">n</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+ - dimension, <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">N_{f}</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+ - degrees of freedom (if there
+are no constrains and <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">N</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+ is the number of particles in system <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">N_{f}=nN</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+).
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">R_{p}</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+ - values which are drawn from Gaussian distribution of zero mean and unit variance
 scaled by</p>
-<div class="math">
-<p><span class="math">\sqrt{\frac{2k_{B}TW\gamma_{p}}{\Delta t}}</span></p>
-</div><p><strong>!IMPORTANT</strong> Terms <span class="math">- \gamma\boldsymbol{p}_{i} + \boldsymbol{R}_{i}</span> correspond to the 
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">\sqrt{\frac{2k_{B}TW\gamma_{p}}{\Delta t}}
+
+</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+<p><strong>!IMPORTANT</strong> Terms <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">- \gamma\boldsymbol{p}_{i} + \boldsymbol{R}_{i}</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+ correspond to the 
 termostat. They are not included here and will not be calculated if the Langevin Thermostat is not
 defined.</p>
 <p>Example:</p>
@@ -112,7 +632,36 @@ defined.</p>
 </pre></div>
 </div>
 <p><strong>!IMPORTANT</strong>  This barostat is supposed to be run in a couple with thermostat in order 
-to simulate the <em>npt</em> ensamble, because the term <span class="math">R_{p}</span> needs the temperature as a 
+to simulate the <em>npt</em> ensamble, because the term <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">R_{p}</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+ needs the temperature as a 
 parameter.</p>
 <p>Definition:</p>
 <blockquote>
@@ -125,23 +674,323 @@ parameter.</p>
 <p id="rng">Properties:</p>
 <ul>
 <li><p class="first"><em>langevinP.gammaP</em></p>
-<p>The property &#8216;gammaP&#8217; defines the friction coefficient <span class="math">\gamma_{p}</span>.</p>
+<p>The property &#8216;gammaP&#8217; defines the friction coefficient <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">\gamma_{p}</tt>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+.</p>
 </li>
 <li><p class="first"><em>langevinP.pressure</em></p>
-<p>The property &#8216;pressure&#8217; defines the external pressure <span class="math">P_{ext}</span>.</p>
+<p>The property &#8216;pressure&#8217; defines the external pressure <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">P_{ext}</tt>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+.</p>
 </li>
 <li><p class="first"><em>langevinP.mass</em></p>
-<p>The property &#8216;mass&#8217; defines the fictitious mass <span class="math">W</span>.</p>
+<p>The property &#8216;mass&#8217; defines the fictitious mass <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">W</tt>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+.</p>
 </li>
 </ul>
 <p>Methods:</p>
 <ul>
 <li><p class="first"><em>setMassByFrequency( frequency )</em></p>
-<p>Set the proper <em>langevinP.mass</em> using expression <span class="math">W=dNk_{b}T/\omega_{b}^{2}</span>, where
-frequency, <span class="math">\omega_{b}</span>, is the frequency of required volume fluctuations. The value of
-<span class="math">\omega_{b}</span> should be less then the lowest frequency which appears in the NVT temperature
-spectrum <a class="reference internal" href="#quigley04">[Quigley04]</a> in order to match the canonical distribution. <span class="math">d</span> - dimensions,
-<span class="math">N</span> - number of particles, <span class="math">k_{b}</span> - Boltzmann constant, <span class="math">T</span> - desired
+<p>Set the proper <em>langevinP.mass</em> using expression <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">W=dNk_{b}T/\omega_{b}^{2}</tt>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+, where
+frequency, <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">\omega_{b}</tt>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+, is the frequency of required volume fluctuations. The value of
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">\omega_{b}</tt>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+ should be less then the lowest frequency which appears in the NVT temperature
+spectrum <a class="reference internal" href="#quigley04" id="id3">[Quigley04]</a> in order to match the canonical distribution. <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">d</tt>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+ - dimensions,
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">N</tt>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+ - number of particles, <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">k_{b}</tt>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+ - Boltzmann constant, <div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">T</tt>)</p>
+<p>latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</p>
+</div>
+ - desired
 temperature.</p>
 </li>
 </ul>
@@ -168,7 +1017,7 @@ temperature.</p>
 <div><blockquote>
 <div><p>If one do not need the pressure regulation in system anymore or need to switch
 the ensamble or whatever :)</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c"># define barostat with parameters</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># define barostat with parameters</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rngBaro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rngBaro</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">gammaP</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span>
@@ -176,11 +1025,11 @@ the ensamble or whatever :)</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">mass</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="mf">10.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">langevinBarostat</span> <span class="o">=</span> <span class="n">lP</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="o">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># some runs</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># some runs</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="o">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># disconnect barostat</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># disconnect barostat</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">langevinBarostat</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c"># the next runs will not include the modification of integration equations</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># the next runs will not include the modification of integration equations</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -210,7 +1059,7 @@ the ensamble or whatever :)</p>
 </table>
 <dl class="function">
 <dt id="espressopp.integrator.LangevinBarostat.espressopp.integrator.LangevinBarostat">
-<tt class="descclassname">espressopp.integrator.</tt><tt class="descname">LangevinBarostat</tt><big>(</big><em>system</em>, <em>rng</em>, <em>temperature</em><big>)</big><a class="headerlink" href="#espressopp.integrator.LangevinBarostat.espressopp.integrator.LangevinBarostat" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.integrator.</code><code class="descname">LangevinBarostat</code><span class="sig-paren">(</span><em>system</em>, <em>rng</em>, <em>temperature</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LangevinBarostat.espressopp.integrator.LangevinBarostat" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -229,15 +1078,31 @@ the ensamble or whatever :)</p>
 </div>
 
 
-            
-             <a href="espressopp.integrator.LBInitPopWave.html">previous</a>
-                
-            
-             <a style="float:right;"  href="espressopp.integrator.LangevinThermostat.html">next</a>
-            
-          </div>
-        </div>
+      </div>
+     </div>
      </div> 
- </div>
+  </div>
+
+    <div class="footer">
+      &copy;2013-2016, Max Planck Institute for Polymer Research.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="sources/espressopp.integrator.LangevinBarostat.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  <div class="footer">
+      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
+      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
+  </div>
+  </div>
+
   </body>
 </html>

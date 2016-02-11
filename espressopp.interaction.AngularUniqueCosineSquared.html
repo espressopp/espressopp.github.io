@@ -1,6 +1,3 @@
-
-<div id="outer">
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -9,15 +6,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>espressopp.interaction.AngularUniqueCosineSquared &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>espressopp.interaction.AngularUniqueCosineSquared &mdash; ESPResSo++ v1.9.3</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '1.7',
+        URL_ROOT:    './',
+        VERSION:     '1.9.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -27,57 +24,116 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
+    <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
     <link rel="up" title="interaction" href="interaction.html" />
     <link rel="next" title="espressopp.interaction.AngularUniqueHarmonic" href="espressopp.interaction.AngularUniqueHarmonic.html" />
-    <link rel="prev" title="espressopp.interaction.AngularPotential" href="espressopp.interaction.AngularPotential.html" /> 
+    <link rel="prev" title="espressopp.interaction.AngularPotential" href="espressopp.interaction.AngularPotential.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
   </head>
-  <body>
+  <body role="document">
+  <div id="outer">
   <div class="header"></div>
 
 
-  
-    <div class="menu">
-      <ul class="nav">
-	<li><a href="../index.html">Home</a></li>
-	<li><a href="../Features.html">Features</a></li>
-	<li><a href="../Download.html">Download</a></li>
-	<li><a href="index.html">Documentation</a></li>
-	<li><a href="../Developer_Team.html">Developer Team</a></li>
-	<li><a href="../Getting_Help.html">Getting Help</a></li>
-	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
-      </ul>
-      <div id="searchbox" style="display: none">
-	<form class="search" action="search.html" method="get">
-	  <input type="text" name="q" size="12" />
-	  <input type="submit" value="Search" />
-	  <input type="hidden" name="check_keywords" value="yes" />
-	  <input type="hidden" name="area" value="default" />
-	</form>
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="espressopp.Version.html"><strong>Version</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.pmi.html"><strong>PMI</strong> - Parallel Method Invocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.System.html"><strong>System</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.BC.html"><strong>BC</strong> - Boundary Condition Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.OrthorhombicBC.html"><strong>OrthorhombicBC</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.storage.html"><strong>Storage</strong> - Storage Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html"><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html"><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.tools.decomp.html"><strong>decomp.py</strong> - Auxiliary python functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
+</ul>
+<a href="http://www.espresso-pp.de/Impressum.html">Impressum</a>
+<div id="searchbox" style="display: none" role="search">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
       </div>
-      <script type="text/javascript">$('#searchbox').show(0);</script>
-    </div>
-   
 
   <div class="document">
-      <div class="documentwrapper">
+    <div class="documentwrapper">
 	<div class="bodywrapper">
 	  <div class="body">
-            
-             <a href="espressopp.interaction.AngularPotential.html">previous</a>
-            
-            
-             <a style="float:right;"  href="espressopp.interaction.AngularUniqueHarmonic.html">next</a>
-            
 	    
   <span class="target" id="module-espressopp.interaction.AngularUniqueCosineSquared"></span><div class="section" id="espressopp-interaction-angularuniquecosinesquared">
 <h1><strong>espressopp.interaction.AngularUniqueCosineSquared</strong><a class="headerlink" href="#espressopp-interaction-angularuniquecosinesquared" title="Permalink to this headline">¶</a></h1>
 <p>Calculates the angular unique cosine squared interaction.</p>
-<div class="math">
-<p><span class="math">U =  K (cos(\theta) - cos(\theta_{0}))^2</span></p>
-</div><dl class="function">
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">U =  K (cos(\theta) - cos(\theta_{0}))^2
+
+</tt>)</p>
+latex exited with error
+[stdout]
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
+entering extended mode
+(./math.tex
+LaTeX2e &lt;2009/09/24&gt;
+Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+
+! LaTeX Error: File `utf8x.def&#8217; not found.
+
+Type X to quit or &lt;RETURN&gt; to proceed,
+or enter new name. (Default extension: def)
+
+Enter file name: 
+! Emergency stop.
+&lt;read *&gt; 
+         
+l.131 \endinput
+               ^^M
+No pages of output.
+Transcript written on math.log.
+</div>
+<dl class="function">
 <dt id="espressopp.interaction.AngularUniqueCosineSquared.espressopp.interaction.AngularUniqueCosineSquared">
-<tt class="descclassname">espressopp.interaction.</tt><tt class="descname">AngularUniqueCosineSquared</tt><big>(</big><em>K</em><big>)</big><a class="headerlink" href="#espressopp.interaction.AngularUniqueCosineSquared.espressopp.interaction.AngularUniqueCosineSquared" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.</code><code class="descname">AngularUniqueCosineSquared</code><span class="sig-paren">(</span><em>K</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularUniqueCosineSquared.espressopp.interaction.AngularUniqueCosineSquared" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -90,7 +146,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.AngularUniqueCosineSquared.espressopp.interaction.FixedTripleAngleListAngularUniqueCosineSquared">
-<tt class="descclassname">espressopp.interaction.</tt><tt class="descname">FixedTripleAngleListAngularUniqueCosineSquared</tt><big>(</big><em>system</em>, <em>ftcl</em>, <em>potential</em><big>)</big><a class="headerlink" href="#espressopp.interaction.AngularUniqueCosineSquared.espressopp.interaction.FixedTripleAngleListAngularUniqueCosineSquared" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedTripleAngleListAngularUniqueCosineSquared</code><span class="sig-paren">(</span><em>system</em>, <em>ftcl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularUniqueCosineSquared.espressopp.interaction.FixedTripleAngleListAngularUniqueCosineSquared" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -108,7 +164,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.AngularUniqueCosineSquared.espressopp.interaction.FixedTripleAngleListAngularUniqueCosineSquared.getFixedTripleList">
-<tt class="descclassname">espressopp.interaction.FixedTripleAngleListAngularUniqueCosineSquared.</tt><tt class="descname">getFixedTripleList</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.interaction.AngularUniqueCosineSquared.espressopp.interaction.FixedTripleAngleListAngularUniqueCosineSquared.getFixedTripleList" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.FixedTripleAngleListAngularUniqueCosineSquared.</code><code class="descname">getFixedTripleList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularUniqueCosineSquared.espressopp.interaction.FixedTripleAngleListAngularUniqueCosineSquared.getFixedTripleList" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -121,7 +177,7 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.AngularUniqueCosineSquared.espressopp.interaction.FixedTripleAngleListAngularUniqueCosineSquared.setPotential">
-<tt class="descclassname">espressopp.interaction.FixedTripleAngleListAngularUniqueCosineSquared.</tt><tt class="descname">setPotential</tt><big>(</big><em>potential</em><big>)</big><a class="headerlink" href="#espressopp.interaction.AngularUniqueCosineSquared.espressopp.interaction.FixedTripleAngleListAngularUniqueCosineSquared.setPotential" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.FixedTripleAngleListAngularUniqueCosineSquared.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularUniqueCosineSquared.espressopp.interaction.FixedTripleAngleListAngularUniqueCosineSquared.setPotential" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -134,22 +190,38 @@
 
 <dl class="class">
 <dt id="espressopp.interaction.AngularUniqueCosineSquared.AngularUniqueCosineSquared">
-<em class="property">class </em><tt class="descclassname">espressopp.interaction.AngularUniqueCosineSquared.</tt><tt class="descname">AngularUniqueCosineSquared</tt><a class="headerlink" href="#espressopp.interaction.AngularUniqueCosineSquared.AngularUniqueCosineSquared" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">espressopp.interaction.AngularUniqueCosineSquared.</code><code class="descname">AngularUniqueCosineSquared</code><a class="headerlink" href="#espressopp.interaction.AngularUniqueCosineSquared.AngularUniqueCosineSquared" title="Permalink to this definition">¶</a></dt>
 <dd><p>The AngularUniqueCosineSquared potential.</p>
 </dd></dl>
 
 </div>
 
 
-            
-             <a href="espressopp.interaction.AngularPotential.html">previous</a>
-                
-            
-             <a style="float:right;"  href="espressopp.interaction.AngularUniqueHarmonic.html">next</a>
-            
-          </div>
-        </div>
+      </div>
+     </div>
      </div> 
- </div>
+  </div>
+
+    <div class="footer">
+      &copy;2013-2016, Max Planck Institute for Polymer Research.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="sources/espressopp.interaction.AngularUniqueCosineSquared.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  <div class="footer">
+      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
+      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
+  </div>
+  </div>
+
   </body>
 </html>

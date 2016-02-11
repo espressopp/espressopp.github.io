@@ -1,6 +1,3 @@
-
-<div id="outer">
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -9,15 +6,15 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>AnalysisBase - abstract base class for analysis/measurement &mdash; ESPResSo++ 1.7 documentation</title>
+    <title>AnalysisBase - abstract base class for analysis/measurement &mdash; ESPResSo++ v1.9.3</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '',
-        VERSION:     '1.7',
+        URL_ROOT:    './',
+        VERSION:     '1.9.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -27,48 +24,78 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ 1.7 documentation" href="index.html" />
+    <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
     <link rel="up" title="analysis" href="analysis.html" />
     <link rel="next" title="espressopp.analysis.Autocorrelation" href="espressopp.analysis.Autocorrelation.html" />
-    <link rel="prev" title="espressopp.analysis.AllParticlePos" href="espressopp.analysis.AllParticlePos.html" /> 
+    <link rel="prev" title="espressopp.analysis.AllParticlePos" href="espressopp.analysis.AllParticlePos.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
   </head>
-  <body>
+  <body role="document">
+  <div id="outer">
   <div class="header"></div>
 
 
-  
-    <div class="menu">
-      <ul class="nav">
-	<li><a href="../index.html">Home</a></li>
-	<li><a href="../Features.html">Features</a></li>
-	<li><a href="../Download.html">Download</a></li>
-	<li><a href="index.html">Documentation</a></li>
-	<li><a href="../Developer_Team.html">Developer Team</a></li>
-	<li><a href="../Getting_Help.html">Getting Help</a></li>
-	<li id="impressum"><a href="../Impressum.html">Impressum</a></li>
-      </ul>
-      <div id="searchbox" style="display: none">
-	<form class="search" action="search.html" method="get">
-	  <input type="text" name="q" size="12" />
-	  <input type="submit" value="Search" />
-	  <input type="hidden" name="check_keywords" value="yes" />
-	  <input type="hidden" name="area" value="default" />
-	</form>
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="espressopp.Version.html"><strong>Version</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.pmi.html"><strong>PMI</strong> - Parallel Method Invocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.System.html"><strong>System</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.BC.html"><strong>BC</strong> - Boundary Condition Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.OrthorhombicBC.html"><strong>OrthorhombicBC</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.storage.html"><strong>Storage</strong> - Storage Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html"><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html"><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.tools.decomp.html"><strong>decomp.py</strong> - Auxiliary python functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
+</ul>
+<a href="http://www.espresso-pp.de/Impressum.html">Impressum</a>
+<div id="searchbox" style="display: none" role="search">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
       </div>
-      <script type="text/javascript">$('#searchbox').show(0);</script>
-    </div>
-   
 
   <div class="document">
-      <div class="documentwrapper">
+    <div class="documentwrapper">
 	<div class="bodywrapper">
 	  <div class="body">
-            
-             <a href="espressopp.analysis.AllParticlePos.html">previous</a>
-            
-            
-             <a style="float:right;"  href="espressopp.analysis.Autocorrelation.html">next</a>
-            
 	    
   <span class="target" id="module-espressopp.analysis.AnalysisBase"></span><div class="section" id="analysisbase-abstract-base-class-for-analysis-measurement">
 <h1><strong>AnalysisBase</strong> - abstract base class for analysis/measurement<a class="headerlink" href="#analysisbase-abstract-base-class-for-analysis-measurement" title="Permalink to this headline">¶</a></h1>
@@ -77,7 +104,7 @@ functionality for classes that do analysis or observable measurements</p>
 <p>It provides the following methods:</p>
 <dl class="function">
 <dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.compute">
-<tt class="descclassname">espressopp.analysis.AnalysisBase.</tt><tt class="descname">compute</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.compute" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.compute" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes the instant value of the observable.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -91,7 +118,7 @@ functionality for classes that do analysis or observable measurements</p>
 
 <dl class="function">
 <dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getAverageValue">
-<tt class="descclassname">espressopp.analysis.AnalysisBase.</tt><tt class="descname">getAverageValue</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getAverageValue" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">getAverageValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getAverageValue" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns the average value for the observable and the standard deviation.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -105,7 +132,7 @@ functionality for classes that do analysis or observable measurements</p>
 
 <dl class="function">
 <dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getNumberOfMeasurements">
-<tt class="descclassname">espressopp.analysis.AnalysisBase.</tt><tt class="descname">getNumberOfMeasurements</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getNumberOfMeasurements" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">getNumberOfMeasurements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getNumberOfMeasurements" title="Permalink to this definition">¶</a></dt>
 <dd><p>counts the number of measurements that have been performed (standalone or in integrator)
 does _not_ include measurements that have been done using &#8220;compute()&#8221;</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -120,7 +147,7 @@ does _not_ include measurements that have been done using &#8220;compute()&#8221
 
 <dl class="function">
 <dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.performMeasurement">
-<tt class="descclassname">espressopp.analysis.AnalysisBase.</tt><tt class="descname">performMeasurement</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.performMeasurement" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">performMeasurement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.performMeasurement" title="Permalink to this definition">¶</a></dt>
 <dd><p>Computes the observable and updates average and standard deviation</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -134,7 +161,7 @@ does _not_ include measurements that have been done using &#8220;compute()&#8221
 
 <dl class="function">
 <dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.reset">
-<tt class="descclassname">espressopp.analysis.AnalysisBase.</tt><tt class="descname">reset</tt><big>(</big><big>)</big><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.reset" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.reset" title="Permalink to this definition">¶</a></dt>
 <dd><p>Resets average and standard deviation</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -149,15 +176,31 @@ does _not_ include measurements that have been done using &#8220;compute()&#8221
 </div>
 
 
-            
-             <a href="espressopp.analysis.AllParticlePos.html">previous</a>
-                
-            
-             <a style="float:right;"  href="espressopp.analysis.Autocorrelation.html">next</a>
-            
-          </div>
-        </div>
+      </div>
+     </div>
      </div> 
- </div>
+  </div>
+
+    <div class="footer">
+      &copy;2013-2016, Max Planck Institute for Polymer Research.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="sources/espressopp.analysis.AnalysisBase.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  <div class="footer">
+      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
+      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
+  </div>
+  </div>
+
   </body>
 </html>
