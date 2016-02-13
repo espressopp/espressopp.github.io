@@ -1,0 +1,17 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="espressopp::interaction::AngularUniquePotential",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classespressopp_1_1interaction_1_1AngularUniquePotential.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="espressopp::interaction::AngularUniquePotentialTemplate\< AngularUniqueCosineSquared \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classespressopp_1_1interaction_1_1AngularUniquePotentialTemplate.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="espressopp::interaction::AngularUniqueCosineSquared",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classespressopp_1_1interaction_1_1AngularUniqueCosineSquared.html",tooltip="This class provides methods to compute forces and energies of the AngularUniqueCosineSquared angular ..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="espressopp::interaction::AngularUniquePotentialTemplate\< AngularUniqueHarmonic \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classespressopp_1_1interaction_1_1AngularUniquePotentialTemplate.html"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="espressopp::interaction::AngularUniqueHarmonic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classespressopp_1_1interaction_1_1AngularUniqueHarmonic.html",tooltip="This class provides methods to compute forces and energies of the AngularUniqueHarmonic angular poten..."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="espressopp::interaction::AngularUniquePotentialTemplate\< Derived \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classespressopp_1_1interaction_1_1AngularUniquePotentialTemplate.html"];
+}

@@ -1,0 +1,21 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="espressopp::interaction::CellListAllPairsInteractionTemplate\< _Potential \>",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="espressopp::interaction::Interaction",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classespressopp_1_1interaction_1_1Interaction.html",tooltip="Interaction base class."];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" storage" ,fontname="Helvetica"];
+  Node3 [label="shared_ptr\< storage::Storage \>",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node4 -> Node3 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< storage::Storage \>" ,fontname="Helvetica"];
+  Node4 [label="shared_ptr",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" potentialArray" ,fontname="Helvetica"];
+  Node5 [label="espressopp::esutil::Array2D\< Potential, esutil::enlarge \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classespressopp_1_1esutil_1_1Array2D.html"];
+  Node6 -> Node5 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="std::vector\< Potential \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classstd_1_1vector.html"];
+  Node7 -> Node5 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< Potential, esutil::enlarge \>" ,fontname="Helvetica"];
+  Node7 [label="espressopp::esutil::Array2D\< T, outlier_mode \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classespressopp_1_1esutil_1_1Array2D.html",tooltip="A two-dimensional array (i.e."];
+  Node8 -> Node7 [dir="back",color="firebrick4",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="std::vector\< T \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classstd_1_1vector.html"];
+}

@@ -1,0 +1,7 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="boost::mpi::is_commutative\< UniqueReduce, int \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structboost_1_1mpi_1_1is__commutative_3_01UniqueReduce_00_01int_01_4.html"];
+}

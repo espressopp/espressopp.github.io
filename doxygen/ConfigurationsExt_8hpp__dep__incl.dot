@@ -1,0 +1,16 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="/home/travis/build/espressopp/espressopp/src/analysis/ConfigurationsExt.hpp",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="/home/travis/build/espressopp/espressopp/src/analysis/bindings.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$analysis_2bindings_8cpp.html"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="/home/travis/build/espressopp/espressopp/src/analysis/ConfigurationsExt.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$ConfigurationsExt_8cpp.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="/home/travis/build/espressopp/espressopp/src/io/DumpGRO.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$DumpGRO_8cpp.html"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="/home/travis/build/espressopp/espressopp/src/io/DumpGROAdress.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$DumpGROAdress_8cpp.html"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="/home/travis/build/espressopp/espressopp/src/io/DumpXYZ.cpp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$DumpXYZ_8cpp.html"];
+}

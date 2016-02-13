@@ -1,0 +1,15 @@
+digraph G
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="espressopp::FixedQuadrupleAngleList",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="espressopp::QuadrupleList",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structespressopp_1_1QuadrupleList.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="espressopp::esutil::ESPPContainer\< std::vector\< ParticleQuadruple \> \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classespressopp_1_1esutil_1_1ESPPContainer.html"];
+  Node4 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="std::vector\< ParticleQuadruple \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classstd_1_1vector.html"];
+  Node5 -> Node3 [dir="back",color="orange",fontsize="10",style="dashed",label=" \< std::vector\< ParticleQuadruple \> \>" ,fontname="Helvetica"];
+  Node5 [label="espressopp::esutil::ESPPContainer\< STLContainer \>",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classespressopp_1_1esutil_1_1ESPPContainer.html"];
+}
