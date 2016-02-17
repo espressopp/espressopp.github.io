@@ -128,7 +128,7 @@ next PMI call, while it will immediately return on the controller. On
 the workers, the loop ends only, when one of the commands
 <cite>finalizeWorkers()</cite> or <cite>stopWorkerLoop()</cite> is issued on the
 controller. A typical PMI main program looks like this:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># compute 2*factorial(42) in parallel</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># compute 2*factorial(42) in parallel</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pmi</span>
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># start the worker loop</span>
@@ -153,7 +153,7 @@ call to <cite>receive()</cite> that accepts any PMI command, or a call to the
 identical PMI command. In that case, the arguments of the call to the
 PMI command on the workers are ignored. In this way, it is possible to
 write SPMD scripts that profit from the PMI communication patterns.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># compute 2*factorial(42) in parallel</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># compute 2*factorial(42) in parallel</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pmi</span>
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import math&#39;</span><span class="p">)</span>
@@ -226,7 +226,7 @@ should be used.</p>
 <p>Each element of args should be string that is executed on all
 workers.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;hello.HelloWorld&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -239,7 +239,7 @@ workers.</p>
 <p>Each element of args should be a module name that is imported to
 all workers.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">import_</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">import_</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;hello.HelloWorld&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -254,7 +254,7 @@ args are the arguments to the constructor of the class.  Only
 classes that are known to PMI can be used, that is, classes that
 have been imported to pmi via <cite>exec_()</cite> or <cite>import_()</cite>.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;hello.HelloWorld&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">hw</span><span class="p">)</span>
 <span class="go">MPI process #0: Hello World!</span>
@@ -265,7 +265,7 @@ have been imported to pmi via <cite>exec_()</cite> or <cite>import_()</cite>.</p
 <p>Alternative:
 Note that in this case the class has to be imported to the
 calling module <em>and</em> via PMI.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hello</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hello</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">hello</span><span class="o">.</span><span class="n">HelloWorld</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">hw</span><span class="p">)</span>
@@ -289,7 +289,7 @@ returned.
 Only functions that are known to PMI can be used, that is functions
 that have been imported to pmi via <cite>exec_()</cite> or <cite>import_()</cite>.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;hello.HelloWorld&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">hw</span><span class="o">.</span><span class="n">hello</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># equivalent:</span>
@@ -314,7 +314,7 @@ workers as a list. On the workers, invoke returns None.
 Only functions that are known to PMI can be used, that is functions
 that have been imported to pmi via <cite>exec_()</cite> or <cite>import_()</cite>.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;hello.HelloWorld&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">messages</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="n">hw</span><span class="o">.</span><span class="n">hello</span><span class="p">())</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># alternative:</span>
@@ -339,7 +339,7 @@ associative.
 Both reduceOp and function have to be known to PMI, that is they
 must have been imported to pmi via <cite>exec_()</cite> or <cite>import_()</cite>.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;joinstr=lambda a,b: &quot;</span><span class="se">\n</span><span class="s1">&quot;.join(a,b)&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;hello.HelloWorld&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span><span class="p">(</span><span class="n">pmi</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="s1">&#39;joinstr&#39;</span><span class="p">,</span> <span class="n">hw</span><span class="o">.</span><span class="n">hello</span><span class="p">()))</span>

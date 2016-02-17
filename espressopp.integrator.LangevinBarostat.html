@@ -626,7 +626,7 @@ Transcript written on math.log.
 termostat. They are not included here and will not be calculated if the Langevin Thermostat is not
 defined.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">rng</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rng</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rng</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span><span class="o">.</span><span class="n">gammaP</span> <span class="o">=</span> <span class="mf">0.05</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="mf">1.0</span>
@@ -669,7 +669,7 @@ parameter.</p>
 <p>Definition:</p>
 <blockquote>
 <div><p>In order to define the Langevin-Hoover barostat</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rng</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rng</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>one should have the <a class="reference external" href="espressopp.System.html">System</a> and <a class="reference internal" href="#rng">RNG</a> defined and know the desired temperature.</p>
@@ -1001,13 +1001,13 @@ temperature.</p>
 (<em>setMassByFrequency( frequency )</em>)</p>
 <p>Adding to the integration:</p>
 <blockquote>
-<div><div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">langevinP</span><span class="p">)</span>
+<div><div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">langevinP</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>It will define Langevin-Hoover barostat as a property of integrator.</p>
 </div></blockquote>
 <p>One more example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">rngBaro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rngBaro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rngBaro</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">gammaP</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="mf">1.0</span>
@@ -1020,7 +1020,7 @@ temperature.</p>
 <div><blockquote>
 <div><p>If one do not need the pressure regulation in system anymore or need to switch
 the ensamble or whatever :)</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># define barostat with parameters</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># define barostat with parameters</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rngBaro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rngBaro</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">gammaP</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span>
@@ -1037,7 +1037,7 @@ the ensamble or whatever :)</p>
 </div>
 </div></blockquote>
 <p>Connecting the barostat back after the disconnection</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">langevinBarostat</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">langevinBarostat</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
 </pre></div>
 </div>
 </div></blockquote>

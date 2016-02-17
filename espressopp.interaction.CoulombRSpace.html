@@ -143,7 +143,7 @@ Transcript written on math.log.
 summation technique. Good explanation of Ewald summation could be found here <a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html#allen89" id="id1">[Allen89]</a>,
 <a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html#deserno98" id="id2">[Deserno98]</a>.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletList</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="o">+</span><span class="n">skin</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletList</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="o">+</span><span class="n">skin</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_pot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">CoulombRSpace</span><span class="p">(</span><span class="n">coulomb_prefactor</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_int</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">VerletListCoulombRSpace</span><span class="p">(</span><span class="n">vl</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_int</span><span class="o">.</span><span class="n">setPotential</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">potential</span> <span class="o">=</span> <span class="n">coulombR_pot</span><span class="p">)</span>
@@ -156,7 +156,7 @@ summation technique. Good explanation of Ewald summation could be found here <a 
 <div><p>It provides potential object <em>CoulombRSpace</em> and interaction object <em>VerletListCoulombRSpace</em></p>
 <p>The <em>potential</em> is based on parameters: Coulomb prefactor (coulomb_prefactor), Ewald parameter
 (alpha), and the cutoff in R space (rspacecutoff).</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_pot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">CoulombRSpace</span><span class="p">(</span><span class="n">coulomb_prefactor</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_pot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">CoulombRSpace</span><span class="p">(</span><span class="n">coulomb_prefactor</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Potential Properties:</p>
@@ -202,14 +202,14 @@ Transcript written on math.log.
 </li>
 </ul>
 <p>The <em>interaction</em> is based on the Verlet list (<a class="reference internal" href="#verletlist">VerletList</a>)</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletList</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="o">+</span><span class="n">skin</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletList</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="o">+</span><span class="n">skin</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_int</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">VerletListCoulombRSpace</span><span class="p">(</span><span class="n">vl</span><span class="p">)</span>
 </pre></div>
 </div>
 </div></blockquote>
 <blockquote id="verletlist">
 <div><p>It should include at least one potential</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_int</span><span class="o">.</span><span class="n">setPotential</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">potential</span> <span class="o">=</span> <span class="n">coulombR_pot</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_int</span><span class="o">.</span><span class="n">setPotential</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">potential</span> <span class="o">=</span> <span class="n">coulombR_pot</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Interaction Methods:</p>
@@ -224,7 +224,7 @@ bunch of potentials for the different particle types.</p>
 </ul>
 </div></blockquote>
 <p>Adding the interaction to the system:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">coulombR_int</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">coulombR_int</span><span class="p">)</span>
 </pre></div>
 </div>
 <dl class="function">

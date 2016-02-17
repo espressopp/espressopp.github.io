@@ -285,7 +285,7 @@ Transcript written on math.log.
 </div>
  - instantaneous pressure.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">0.1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="mf">1.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsenP</span><span class="p">)</span>
@@ -296,7 +296,7 @@ Transcript written on math.log.
 <p>Definition:</p>
 <blockquote>
 <div><p>In order to define the Berendsen barostat</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>one should have the <a class="reference external" href="espressopp.System.html">System</a> defined.</p>
@@ -372,13 +372,13 @@ Transcript written on math.log.
 </ul>
 <p>Setting the integration property:</p>
 <blockquote>
-<div><div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsenP</span><span class="p">)</span>
+<div><div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsenP</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>It will define Berendsen barostat as a property of integrator.</p>
 </div></blockquote>
 <p>One more example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_barostat</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_barostat</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_barostat</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">10.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_barostat</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="mf">3.5</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsen_barostat</span><span class="p">)</span>
@@ -389,7 +389,7 @@ Transcript written on math.log.
 <div><blockquote>
 <div><p>If one do not need the pressure regulation in system anymore or need to switch
 the ensamble or whatever :)</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># define barostat with parameters</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># define barostat with parameters</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">0.8</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="mf">15.0</span>
@@ -404,7 +404,7 @@ the ensamble or whatever :)</p>
 </div>
 </div></blockquote>
 <p>Connecting the barostat back after the disconnection</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
 </pre></div>
 </div>
 </div></blockquote>

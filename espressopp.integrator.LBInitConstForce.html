@@ -134,7 +134,7 @@ No pages of output.
 Transcript written on math.log.
 </div>
 :</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce1</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce1</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce1</span><span class="o">.</span><span class="n">setForce</span><span class="p">(</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.0005</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># a vector sets the external body force directly in lb-units</span>
 </pre></div>
@@ -169,7 +169,7 @@ No pages of output.
 Transcript written on math.log.
 </div>
  to the existing forces:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce2</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce2</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce2</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">0.0001</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># a vector sets the external body force directly in lb-units</span>
 </pre></div>

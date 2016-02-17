@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$classespressopp_1_1interaction_1_1SingleParticlePotential.html" title="This class is used to define single&#45;particle interactions, typically used for external forces on the ..." alt="" coords="5,59,301,88"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1SingleParticlePotentialTemplate.html" title="Provides a template for the simple implementation of a position&#45;dependent potential." alt="" coords="388,5,807,35"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1interaction_1_1SingleParticlePotentialTemplate.html" title="espressopp::interaction::SingleParticlePotentialTemplate\&lt; HarmonicTrap \&gt;" alt="" coords="369,59,825,88"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1SingleParticlePotentialTemplate.html" title="espressopp::interaction::SingleParticlePotentialTemplate\&lt; LennardJones93Wall \&gt;" alt="" coords="351,112,844,141"/>
+<area shape="rect" id="node7" href="$classespressopp_1_1interaction_1_1HarmonicTrap.html" title="This class provides methods to compute forces and energies for an harmonic well potential." alt="" coords="915,59,1160,88"/>
+<area shape="rect" id="node11" href="$classespressopp_1_1interaction_1_1LennardJones93Wall.html" title="This class provides methods to compute forces and energies for an Lennard&#45;Jones 9&#45;3 wall..." alt="" coords="895,112,1180,141"/>
+</map>

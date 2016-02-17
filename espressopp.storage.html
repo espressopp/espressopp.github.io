@@ -118,7 +118,7 @@ All derived classes implement at least the following methods:</p>
 <li><p class="first"><cite>removeParticle(pid)</cite>:</p>
 <blockquote>
 <div><p>Remove a particle with id number <em>pid</em> from the storage.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">removeParticle</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">removeParticle</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>There is an example in <em>examples</em> folder</p>
@@ -128,7 +128,7 @@ All derived classes implement at least the following methods:</p>
 <blockquote>
 <div><p>Get a particle object.
 This can be used to get specific particle information:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">particle</span> <span class="o">=</span> <span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">getParticle</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">particle</span> <span class="o">=</span> <span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">getParticle</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;Particle ID is       : &quot;</span><span class="p">,</span> <span class="n">particle</span><span class="o">.</span><span class="n">id</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;Particle position is : &quot;</span><span class="p">,</span> <span class="n">particle</span><span class="o">.</span><span class="n">pos</span>
 </pre></div>
@@ -162,7 +162,7 @@ You have to use the modifyParticle command for that (see below).</p>
 <p>Each particle in the list must be itself a list where each entry corresponds
 to the property specified in properties.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">addParticles</span><span class="p">([[</span><span class="nb">id</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="o">...</span> <span class="p">],</span> <span class="o">...</span><span class="p">],</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">addParticles</span><span class="p">([[</span><span class="nb">id</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="o">...</span> <span class="p">],</span> <span class="o">...</span><span class="p">],</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -171,7 +171,7 @@ to the property specified in properties.</p>
 <blockquote>
 <div><p>This routine allows to modify any properties of an already existing particle.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">modifyParticle</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="n">Real3D</span><span class="p">(</span><span class="n">new_x</span><span class="p">,</span> <span class="n">new_y</span><span class="p">,</span> <span class="n">new_z</span><span class="p">))</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">modifyParticle</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="n">Real3D</span><span class="p">(</span><span class="n">new_x</span><span class="p">,</span> <span class="n">new_y</span><span class="p">,</span> <span class="n">new_z</span><span class="p">))</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -186,7 +186,7 @@ to the property specified in properties.</p>
 </li>
 </ul>
 <p>Examples:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">addParticles</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)]],</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;pos&#39;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">addParticles</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)]],</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;pos&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">decompose</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">modifyParticle</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="n">Real3D</span><span class="p">(</span><span class="n">new_x</span><span class="p">,</span> <span class="n">new_y</span><span class="p">,</span> <span class="n">new_z</span><span class="p">))</span>
 </pre></div>

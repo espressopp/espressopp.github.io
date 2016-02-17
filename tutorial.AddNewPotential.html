@@ -229,11 +229,11 @@ Transcript written on math.log.
 <p>This is a 2-body interaction between a predefined (fixed) list of atom pairs. What is the appropriate interaction template to use? Choose one in <code class="docutils literal"><span class="pre">$ESPRESSOHOME/src/interaction</span></code></p>
 <p>Open the interaction template file. (When you close the file later, close it without saving, or else later on your compile time will be very long, because of the number of dependencies on the interaction template!) Identify the functions <code class="docutils literal"><span class="pre">addForces()</span></code> and <code class="docutils literal"><span class="pre">computeEnergy()</span></code>. Many interaction templates also contain functions such as <code class="docutils literal"><span class="pre">computeVirial()</span></code>, <code class="docutils literal"><span class="pre">computeVirialX()</span></code> (for calculating the virial in slabs along the x-direction) etc.</p>
 <p>Find the function calls:</p>
-<div class="highlight-c"><div class="highlight"><pre><span class="n">potential</span><span class="o">-&gt;</span><span class="n">_computeForce</span><span class="p">(</span><span class="n">force</span><span class="p">,</span> <span class="n">dist</span><span class="p">)</span>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="n">potential</span><span class="o">-&gt;</span><span class="n">_computeForce</span><span class="p">(</span><span class="n">force</span><span class="p">,</span> <span class="n">dist</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>in <code class="docutils literal"><span class="pre">addForces()</span></code> and</p>
-<div class="highlight-c"><div class="highlight"><pre><span class="n">potential</span><span class="o">-&gt;</span><span class="n">_computeEnergy</span><span class="p">(</span><span class="n">r21</span><span class="p">)</span>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="n">potential</span><span class="o">-&gt;</span><span class="n">_computeEnergy</span><span class="p">(</span><span class="n">r21</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>in <code class="docutils literal"><span class="pre">computeEnergy()</span></code>.</p>
@@ -290,7 +290,7 @@ Transcript written on math.log.
  (see <code class="docutils literal"><span class="pre">addForces()</span></code> in <code class="docutils literal"><span class="pre">FixedPairListInteractionTemplate.hpp</span></code>).</p>
 <p>Next open <code class="docutils literal"><span class="pre">Harmonic.py</span></code> and <code class="docutils literal"><span class="pre">FourthPower.py</span></code>.</p>
 <p>Here is an example of an end-user&#8217;s python script to add an interaction using the harmonic potential:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="n">harmonicbondslist</span> <span class="o">=</span> <span class="n">espresso</span><span class="o">.</span><span class="n">FixedPairList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">harmonicbondslist</span> <span class="o">=</span> <span class="n">espresso</span><span class="o">.</span><span class="n">FixedPairList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 <span class="n">harmonicbondslist</span><span class="o">.</span><span class="n">addBonds</span><span class="p">(</span><span class="n">bond_list</span><span class="p">)</span> <span class="c1">#bond_list is a list of tuples [(particleindex_i,particleindex_j),...]</span>
 <span class="n">harmonic_potential</span> <span class="o">=</span> <span class="n">espresso</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">Harmonic</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="mf">10.0</span><span class="p">,</span> <span class="n">r0</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">cutoff</span> <span class="o">=</span> <span class="mf">5.0</span><span class="p">,</span> <span class="n">shift</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">)</span>
 <span class="n">harmonic_interaction</span> <span class="o">=</span> <span class="n">espresso</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">FixedPairListHarmonic</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">harmonicbondslist</span><span class="p">,</span> <span class="n">potential</span><span class="o">=</span><span class="n">harmonic_potential</span><span class="p">)</span>
@@ -310,7 +310,7 @@ Transcript written on math.log.
 <div class="section" id="step-4">
 <h3>Step 4<a class="headerlink" href="#step-4" title="Permalink to this headline">¶</a></h3>
 <p>Move to the directory <code class="docutils literal"><span class="pre">$ESPRESSOHOME</span></code>. Update the makefiles and compile using the commands:</p>
-<div class="highlight-c"><div class="highlight"><pre><span class="n">cmake</span> <span class="p">.</span>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="p">.</span>
 <span class="n">make</span>
 </pre></div>
 </div>
@@ -328,7 +328,7 @@ Transcript written on math.log.
 <h2>Exposing a C++ class or struct to python using boost<a class="headerlink" href="#exposing-a-c-class-or-struct-to-python-using-boost" title="Permalink to this headline">¶</a></h2>
 <p>(See <a class="reference external" href="http://www.boost.org/doc/libs/1_56_0/libs/python/doc/tutorial/doc/html/python/exposing.html">http://www.boost.org/doc/libs/1_56_0/libs/python/doc/tutorial/doc/html/python/exposing.html</a>)</p>
 <p>Say we have a C++ struct called World:</p>
-<div class="highlight-c"><div class="highlight"><pre><span class="k">struct</span> <span class="n">World</span>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">World</span>
 <span class="p">{</span>
     <span class="n">World</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span><span class="o">:</span> <span class="n">msg</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="p">{}</span>              <span class="c1">// constructor</span>
     <span class="kt">void</span> <span class="n">set</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span> <span class="n">this</span><span class="o">-&gt;</span><span class="n">msg</span> <span class="o">=</span> <span class="n">msg</span><span class="p">;</span> <span class="p">}</span>   <span class="c1">// function set</span>
@@ -338,7 +338,7 @@ Transcript written on math.log.
 </pre></div>
 </div>
 <p>Now we write the C++ class wrapper for struct World to expose the constructor and the functions greet and set to python:</p>
-<div class="highlight-c"><div class="highlight"><pre><span class="p">{</span>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="n">class_</span><span class="o">&lt;</span><span class="n">World</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">,</span> <span class="n">init</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">())</span>
         <span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;greet&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">greet</span><span class="p">)</span>
         <span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;set&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">set</span><span class="p">)</span>
@@ -347,7 +347,7 @@ Transcript written on math.log.
 </pre></div>
 </div>
 <p>If there are additional constructors we can also expose them using <code class="docutils literal"><span class="pre">def()</span></code>, e.g. for an additional constructor which takes two doubles:</p>
-<div class="highlight-c"><div class="highlight"><pre><span class="n">class_</span><span class="o">&lt;</span><span class="n">World</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">,</span> <span class="n">init</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">())</span>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="n">class_</span><span class="o">&lt;</span><span class="n">World</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">,</span> <span class="n">init</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">())</span>
     <span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="n">init</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span><span class="p">())</span>
     <span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;greet&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">greet</span><span class="p">)</span>
     <span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;set&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">set</span><span class="p">)</span>
@@ -355,22 +355,22 @@ Transcript written on math.log.
 </pre></div>
 </div>
 <p>We can also expose the data members of the C++ class or struct and the associated access (getter and setter) functions using <code class="docutils literal"><span class="pre">add_property()</span></code>, e.g. for the variable myValue with access functions <code class="docutils literal"><span class="pre">getMyValue</span></code> and <code class="docutils literal"><span class="pre">setMyValue</span></code>:</p>
-<div class="highlight-c"><div class="highlight"><pre><span class="p">.</span><span class="n">add_property</span><span class="p">(</span><span class="s">&quot;myValue&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">getMyValue</span><span class="p">,</span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">setMyValue</span><span class="p">)</span>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="p">.</span><span class="n">add_property</span><span class="p">(</span><span class="s">&quot;myValue&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">getMyValue</span><span class="p">,</span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">setMyValue</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>C++ classes and structs may be derived from other classes. Say we have the C++ struct myDerivedStruct which is derived from the struct myBaseStruct:</p>
-<div class="highlight-c"><div class="highlight"><pre><span class="k">struct</span> <span class="n">myBaseStruct</span> <span class="p">{</span> <span class="n">virtual</span> <span class="o">~</span><span class="n">myBaseStruct</span><span class="p">();</span> <span class="p">};</span>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">myBaseStruct</span> <span class="p">{</span> <span class="n">virtual</span> <span class="o">~</span><span class="n">myBaseStruct</span><span class="p">();</span> <span class="p">};</span>
 <span class="k">struct</span> <span class="nl">myDerivedStruct</span> <span class="p">:</span> <span class="n">myBaseStruct</span> <span class="p">{};</span>
 </pre></div>
 </div>
 <p>We can wrap the base class myBaseStruct as explained above:</p>
-<div class="highlight-c"><div class="highlight"><pre><span class="o">&lt;</span><span class="n">Base</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;Base&quot;</span><span class="p">)</span>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Base</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;Base&quot;</span><span class="p">)</span>
    <span class="cm">/*...*/</span>
    <span class="p">;</span>
 </pre></div>
 </div>
 <p>Now when we want to wrap the class myDerivedStruct, we tell boost that it is derived from the base class myBaseStruct:</p>
-<div class="highlight-c"><div class="highlight"><pre><span class="n">class_</span><span class="o">&lt;</span><span class="n">myDerivedStruct</span><span class="p">,</span> <span class="n">bases</span><span class="o">&lt;</span><span class="n">myBaseStruct</span><span class="o">&gt;</span> <span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;myDerivedStruct&quot;</span><span class="p">)</span>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="n">class_</span><span class="o">&lt;</span><span class="n">myDerivedStruct</span><span class="p">,</span> <span class="n">bases</span><span class="o">&lt;</span><span class="n">myBaseStruct</span><span class="o">&gt;</span> <span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;myDerivedStruct&quot;</span><span class="p">)</span>
     <span class="cm">/*...*/</span>
     <span class="p">;</span>
 </pre></div>
@@ -383,7 +383,7 @@ Transcript written on math.log.
 <div class="section" id="typedef">
 <h2>typedef<a class="headerlink" href="#typedef" title="Permalink to this headline">¶</a></h2>
 <p>typedef declaration allows you to create an alias that can be used anywhere in place of a (possibly complex) type name</p>
-<div class="highlight-c"><div class="highlight"><pre><span class="k">typedef</span> <span class="n">DataType</span> <span class="n">AliasName</span><span class="p">;</span>
+<div class="highlight-c"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="n">DataType</span> <span class="n">AliasName</span><span class="p">;</span>
 </pre></div>
 </div>
 </div>
@@ -393,7 +393,7 @@ Transcript written on math.log.
 <h3>Syntax for classes in python<a class="headerlink" href="#syntax-for-classes-in-python" title="Permalink to this headline">¶</a></h3>
 <p>(See also <a class="reference external" href="https://docs.python.org/2/tutorial/classes.html">https://docs.python.org/2/tutorial/classes.html</a>)</p>
 <p>Here is a python class called DerivedClassName which is derived from two other base classes (BaseClassName1 and BaseClassName1), is initialised with two variables x and y which have default values 1 and 2, and contains a function myFunction.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="k">class</span> <span class="nc">DerivedClassName</span><span class="p">(</span><span class="n">BaseClassName1</span><span class="p">,</span> <span class="n">BaseClassName2</span><span class="p">):</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">DerivedClassName</span><span class="p">(</span><span class="n">BaseClassName1</span><span class="p">,</span> <span class="n">BaseClassName2</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;docstring&quot;&quot;&quot;</span>          <span class="c1">#a way of providing some documentation for the class</span>
     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span> <span class="c1">#takes two variable which have default values 1 and 2</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>

@@ -109,7 +109,7 @@
 <p class="last">Please note, that you have to specify the amplitude of the force. Its particular values at every lattice site will be calculated automatically.</p>
 </div>
 <p>Example to set an external force:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce1</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitPeriodicForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce1</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitPeriodicForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce1</span><span class="o">.</span><span class="n">setForce</span><span class="p">(</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.0005</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># a vector sets the external body force amplitude</span>
 </pre></div>
@@ -144,7 +144,7 @@ No pages of output.
 Transcript written on math.log.
 </div>
 :</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce2</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitPeriodicForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce2</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitPeriodicForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce2</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">0.0001</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># a vector adds the external body force with a Real3D amplitude</span>
 </pre></div>
