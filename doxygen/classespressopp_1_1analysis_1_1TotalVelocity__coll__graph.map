@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1ParticleAccess.html" title="espressopp::ParticleAccess" alt="" coords="7,312,191,341"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,232,192,261"/>
-<area shape="rect" id="node10" href="$classespressopp_1_1Real3D.html" title="espressopp::Real3D" alt="" coords="215,312,356,341"/>
+<map id="espressopp::analysis::TotalVelocity" name="espressopp::analysis::TotalVelocity">
+<area shape="rect" id="node2" href="$classespressopp_1_1ParticleAccess.html" title="espressopp::ParticleAccess" alt="" coords="7,331,191,360"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,251,192,280"/>
+<area shape="rect" id="node10" href="$classespressopp_1_1Real3D.html" title="espressopp::Real3D" alt="" coords="215,331,356,360"/>
 </map>

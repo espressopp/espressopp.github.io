@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction::DihedralPotentialTemplate\&lt; DihedralRB \&gt;" alt="" coords="852,7,1260,36"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1DihedralPotential.html" title="espressopp::interaction::DihedralPotential" alt="" coords="5,5,269,35"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction::DihedralPotentialTemplate\&lt; Derived \&gt;" alt="" coords="320,36,707,65"/>
+<map id="espressopp::interaction::DihedralRB" name="espressopp::interaction::DihedralRB">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; DihedralRB \&gt;" alt="" coords="543,5,724,69"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1DihedralPotential.html" title="espressopp::interaction\l::DihedralPotential" alt="" coords="5,13,163,59"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; Derived \&gt;" alt="" coords="215,48,396,112"/>
 </map>

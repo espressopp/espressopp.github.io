@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title="espressopp::interaction::InterpolationTemplate\&lt; InterpolationLinear \&gt;" alt="" coords="839,7,1257,36"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1Interpolation.html" title="espressopp::interaction::Interpolation" alt="" coords="7,5,241,35"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title="espressopp::interaction::InterpolationTemplate\&lt; Derived \&gt;" alt="" coords="295,36,652,65"/>
+<map id="espressopp::interaction::InterpolationLinear" name="espressopp::interaction::InterpolationLinear">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title="espressopp::interaction\l::InterpolationTemplate\l\&lt; InterpolationLinear \&gt;" alt="" coords="555,5,712,69"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1Interpolation.html" title="espressopp::interaction\l::Interpolation" alt="" coords="5,13,163,59"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title="espressopp::interaction\l::InterpolationTemplate\l\&lt; Derived \&gt;" alt="" coords="213,48,371,112"/>
 </map>

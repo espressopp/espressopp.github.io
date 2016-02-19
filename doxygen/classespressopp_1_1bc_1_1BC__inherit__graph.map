@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="espressopp::bc::BC" name="espressopp::bc::BC">
 <area shape="rect" id="node3" href="$classespressopp_1_1bc_1_1OrthorhombicBC.html" title="espressopp::bc::OrthorhombicBC" alt="" coords="5,83,221,112"/>
 <area shape="rect" id="node5" href="$classespressopp_1_1bc_1_1SlabBC.html" title="espressopp::bc::SlabBC" alt="" coords="245,83,408,112"/>
 </map>

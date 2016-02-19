@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="espressopp::io::DumpGRO" name="espressopp::io::DumpGRO">
 <area shape="rect" id="node2" href="$classespressopp_1_1ParticleAccess.html" title="espressopp::ParticleAccess" alt="" coords="7,83,191,112"/>
 <area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,5,192,35"/>
 </map>

@@ -1,16 +1,10 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classespressopp_1_1interaction_1_1DihedralPotential.html" title="espressopp::interaction::DihedralPotential" alt="" coords="5,165,269,195"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction::DihedralPotentialTemplate\&lt; DihedralHarmonic \&gt;" alt="" coords="335,5,780,35"/>
-<area shape="rect" id="node7" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction::DihedralPotentialTemplate\&lt; DihedralHarmonicCos \&gt;" alt="" coords="323,59,792,88"/>
-<area shape="rect" id="node11" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction::DihedralPotentialTemplate\&lt; DihedralHarmonicNCos \&gt;" alt="" coords="317,112,797,141"/>
-<area shape="rect" id="node15" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction::DihedralPotentialTemplate\&lt; DihedralRB \&gt;" alt="" coords="353,165,761,195"/>
-<area shape="rect" id="node19" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction::DihedralPotentialTemplate\&lt; OPLS \&gt;" alt="" coords="369,219,745,248"/>
-<area shape="rect" id="node23" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction::DihedralPotentialTemplate\&lt; TabulatedDihedral \&gt;" alt="" coords="335,272,780,301"/>
-<area shape="rect" id="node27" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction::DihedralPotentialTemplate\&lt; Derived \&gt;" alt="" coords="364,325,751,355"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1interaction_1_1DihedralHarmonic.html" title="This class provides methods to compute forces and energies of the DihedralHarmonic dihedral potential..." alt="" coords="863,5,1132,35"/>
-<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1DihedralHarmonicCos.html" title="This class provides methods to compute forces and energies of the DihedralHarmonicCos dihedral potent..." alt="" coords="851,59,1144,88"/>
-<area shape="rect" id="node13" href="$classespressopp_1_1interaction_1_1DihedralHarmonicNCos.html" title="This class provides methods to compute forces and energies of the DihedralHarmonicNCos dihedral poten..." alt="" coords="847,112,1148,141"/>
-<area shape="rect" id="node17" href="$classespressopp_1_1interaction_1_1DihedralRB.html" title="This class provides methods to compute forces and energies of the Ryckaert&#45;Bellemans dihedral potenti..." alt="" coords="881,165,1113,195"/>
-<area shape="rect" id="node21" href="$classespressopp_1_1interaction_1_1OPLS.html" title="This class provides methods to compute forces and energies of the OPLS dihedral potential." alt="" coords="897,219,1097,248"/>
-<area shape="rect" id="node25" href="$classespressopp_1_1interaction_1_1TabulatedDihedral.html" title="espressopp::interaction::TabulatedDihedral" alt="" coords="863,272,1132,301"/>
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classespressopp_1_1interaction_1_1Interpolation.html" title="espressopp::interaction\l::Interpolation" alt="" coords="5,146,163,193"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title="espressopp::interaction\l::InterpolationTemplate\l\&lt; Derived \&gt;" alt="" coords="211,5,368,69"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title="espressopp::interaction\l::InterpolationTemplate\l\&lt; InterpolationAkima \&gt;" alt="" coords="211,93,368,157"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title="espressopp::interaction\l::InterpolationTemplate\l\&lt; InterpolationCubic \&gt;" alt="" coords="211,181,368,245"/>
+<area shape="rect" id="node13" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title="espressopp::interaction\l::InterpolationTemplate\l\&lt; InterpolationLinear \&gt;" alt="" coords="211,269,368,333"/>
+<area shape="rect" id="node7" href="$classespressopp_1_1interaction_1_1InterpolationAkima.html" title="espressopp::interaction\l::InterpolationAkima" alt="" coords="416,102,573,149"/>
+<area shape="rect" id="node11" href="$classespressopp_1_1interaction_1_1InterpolationCubic.html" title="espressopp::interaction\l::InterpolationCubic" alt="" coords="416,190,573,237"/>
+<area shape="rect" id="node15" href="$classespressopp_1_1interaction_1_1InterpolationLinear.html" title="espressopp::interaction\l::InterpolationLinear" alt="" coords="416,278,573,325"/>
 </map>

@@ -1,4 +1,4 @@
-<map id="G" name="G">
+<map id="espressopp::Particle" name="espressopp::Particle">
 <area shape="rect" id="node2" href="$structespressopp_1_1ParticleLocal.html" title="espressopp::ParticleLocal" alt="" coords="227,8,397,37"/>
 <area shape="rect" id="node4" href="$classespressopp_1_1Int3D.html" title="espressopp::Int3D" alt="" coords="12,8,140,37"/>
 <area shape="rect" id="node6" href="$structespressopp_1_1ParticleMomentum.html" title="momentum&#45;like properties" alt="" coords="209,61,415,91"/>

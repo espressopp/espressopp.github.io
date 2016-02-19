@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1AngularUniquePotentialTemplate.html" title="espressopp::interaction::AngularUniquePotentialTemplate\&lt; AngularUniqueHarmonic \&gt;" alt="" coords="1000,7,1520,36"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1AngularUniquePotential.html" title="espressopp::interaction::AngularUniquePotential" alt="" coords="5,5,307,35"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1AngularUniquePotentialTemplate.html" title="espressopp::interaction::AngularUniquePotentialTemplate\&lt; Derived \&gt;" alt="" coords="357,36,781,65"/>
+<map id="espressopp::interaction::AngularUniqueHarmonic" name="espressopp::interaction::AngularUniqueHarmonic">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1AngularUniquePotentialTemplate.html" title="espressopp::interaction\l::AngularUniquePotentialTemplate\l\&lt; AngularUniqueHarmonic \&gt;" alt="" coords="665,5,884,69"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1AngularUniquePotential.html" title="espressopp::interaction\l::AngularUniquePotential" alt="" coords="7,13,172,59"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1AngularUniquePotentialTemplate.html" title="espressopp::interaction\l::AngularUniquePotentialTemplate\l\&lt; Derived \&gt;" alt="" coords="225,48,444,112"/>
 </map>

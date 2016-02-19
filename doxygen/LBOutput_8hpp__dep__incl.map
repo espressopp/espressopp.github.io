@@ -1,10 +1,10 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$analysis_2bindings_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/bindings.cpp" alt="" coords="496,160,915,189"/>
-<area shape="rect" id="node5" href="$LBOutputScreen_8hpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/LBOutputScreen.hpp" alt="" coords="201,83,668,112"/>
-<area shape="rect" id="node10" href="$LBOutputVzInTime_8hpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/LBOutputVzInTime.hpp" alt="" coords="743,83,1223,112"/>
-<area shape="rect" id="node15" href="$LBOutputVzOfX_8hpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/LBOutputVzOfX.hpp" alt="" coords="1247,83,1711,112"/>
-<area shape="rect" id="node20" href="$LBOutput_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/LBOutput.cpp" alt="" coords="1735,83,2159,112"/>
-<area shape="rect" id="node8" href="$LBOutputScreen_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/LBOutputScreen.cpp" alt="" coords="5,160,472,189"/>
-<area shape="rect" id="node13" href="$LBOutputVzInTime_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/LBOutputVzInTime.cpp" alt="" coords="939,160,1419,189"/>
-<area shape="rect" id="node18" href="$LBOutputVzOfX_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/LBOutputVzOfX.cpp" alt="" coords="1443,160,1907,189"/>
+<map id="/home/travis/build/espressopp/espressopp/src/analysis/LBOutput.hpp" name="/home/travis/build/espressopp/espressopp/src/analysis/LBOutput.hpp">
+<area shape="rect" id="node3" href="$analysis_2bindings_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/bindings.cpp" alt="" coords="251,229,424,293"/>
+<area shape="rect" id="node5" href="$LBOutputScreen_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/LBOutputScreen.hpp" alt="" coords="79,117,300,181"/>
+<area shape="rect" id="node10" href="$LBOutputVzInTime_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/LBOutputVzInTime.hpp" alt="" coords="375,117,609,181"/>
+<area shape="rect" id="node15" href="$LBOutputVzOfX_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/LBOutputVzOfX.hpp" alt="" coords="633,117,852,181"/>
+<area shape="rect" id="node20" href="$LBOutput_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/LBOutput.cpp" alt="" coords="876,117,1055,181"/>
+<area shape="rect" id="node8" href="$LBOutputScreen_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/LBOutputScreen.cpp" alt="" coords="5,229,227,293"/>
+<area shape="rect" id="node13" href="$LBOutputVzInTime_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/LBOutputVzInTime.cpp" alt="" coords="448,229,683,293"/>
+<area shape="rect" id="node18" href="$LBOutputVzOfX_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/LBOutputVzOfX.cpp" alt="" coords="707,229,925,293"/>
 </map>

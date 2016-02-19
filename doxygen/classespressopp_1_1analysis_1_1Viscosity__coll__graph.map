@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1Autocorrelation.html" title="espressopp::analysis::Autocorrelation" alt="" coords="5,312,245,341"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="32,232,219,261"/>
+<map id="espressopp::analysis::Viscosity" name="espressopp::analysis::Viscosity">
+<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1Autocorrelation.html" title="espressopp::analysis\l::Autocorrelation" alt="" coords="27,331,171,378"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,251,192,280"/>
 </map>

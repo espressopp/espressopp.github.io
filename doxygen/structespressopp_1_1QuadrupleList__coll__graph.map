@@ -1,5 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil::ESPPContainer\&lt; std::vector\&lt; ParticleQuadruple \&gt; \&gt;" alt="" coords="607,32,1047,61"/>
-<area shape="rect" id="node4" href="$classstd_1_1vector.html" title="std::vector\&lt; ParticleQuadruple \&gt;" alt="" coords="67,5,277,35"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="7,59,337,88"/>
+<map id="espressopp::QuadrupleList" name="espressopp::QuadrupleList">
+<area shape="rect" id="node2" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; ParticleQuadruple \&gt; \&gt;" alt="" coords="653,13,859,77"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="160,58,387,105"/>
 </map>

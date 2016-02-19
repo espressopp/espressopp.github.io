@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$classespressopp_1_1CellGrid.html" title="Grid with a ghost frame." alt="" coords="5,83,149,112"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1storage_1_1NodeGrid.html" title="Node grid point." alt="" coords="173,83,376,112"/>
+<map id="espressopp::esutil::Grid" name="espressopp::esutil::Grid">
+<area shape="rect" id="node3" href="$classespressopp_1_1CellGrid.html" title="Grid with a ghost frame." alt="" coords="5,111,149,140"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1storage_1_1NodeGrid.html" title="Node grid point." alt="" coords="173,102,312,149"/>
 </map>

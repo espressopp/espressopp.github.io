@@ -1,6 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structespressopp_1_1SingleList.html" title="espressopp::SingleList" alt="" coords="163,181,317,211"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil::ESPPContainer\&lt; std::vector\&lt; ParticleSingle \&gt; \&gt;" alt="" coords="31,101,449,131"/>
-<area shape="rect" id="node6" href="$classstd_1_1vector.html" title="std::vector\&lt; ParticleSingle \&gt;" alt="" coords="5,5,192,35"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="216,5,547,35"/>
+<map id="espressopp::FixedSingleList" name="espressopp::FixedSingleList">
+<area shape="rect" id="node2" href="$structespressopp_1_1SingleList.html" title="espressopp::SingleList" alt="" coords="89,315,244,344"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; ParticleSingle \&gt; \&gt;" alt="" coords="76,200,257,264"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="216,86,443,133"/>
 </map>

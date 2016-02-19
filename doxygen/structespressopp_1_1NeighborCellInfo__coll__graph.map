@@ -1,10 +1,8 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structespressopp_1_1Cell.html" title="espressopp::Cell" alt="" coords="1413,67,1533,96"/>
-<area shape="rect" id="node4" href="$structespressopp_1_1ParticleList.html" title="espressopp::ParticleList" alt="" coords="1101,40,1264,69"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil::ESPPContainer\&lt; std::vector\&lt; Particle \&gt; \&gt;" alt="" coords="627,40,1008,69"/>
-<area shape="rect" id="node8" href="$classstd_1_1vector.html" title="std::vector\&lt; Particle \&gt;" alt="" coords="96,5,248,35"/>
-<area shape="rect" id="node10" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="7,69,337,99"/>
-<area shape="rect" id="node14" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil::ESPPContainer\&lt; std::vector\&lt; NeighborCellInfo \&gt; \&gt;" alt="" coords="600,93,1035,123"/>
-<area shape="rect" id="node12" href="$structespressopp_1_1NeighborCellList.html" title="espressopp::NeighborCellList" alt="" coords="1087,93,1279,123"/>
-<area shape="rect" id="node16" href="$classstd_1_1vector.html" title="std::vector\&lt; NeighborCellInfo \&gt;" alt="" coords="69,135,275,164"/>
+<map id="espressopp::NeighborCellInfo" name="espressopp::NeighborCellInfo">
+<area shape="rect" id="node2" href="$structespressopp_1_1Cell.html" title="espressopp::Cell" alt="" coords="1179,71,1299,100"/>
+<area shape="rect" id="node4" href="$structespressopp_1_1ParticleList.html" title="espressopp::ParticleList" alt="" coords="867,43,1029,72"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; Particle \&gt; \&gt;" alt="" coords="624,15,776,79"/>
+<area shape="rect" id="node10" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="160,66,387,113"/>
+<area shape="rect" id="node16" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; NeighborCellInfo \&gt; \&gt;" alt="" coords="601,103,799,167"/>
+<area shape="rect" id="node14" href="$structespressopp_1_1NeighborCellList.html" title="espressopp::NeighborCellList" alt="" coords="852,99,1044,128"/>
 </map>

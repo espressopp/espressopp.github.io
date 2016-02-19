@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$classespressopp_1_1interaction_1_1PotentialUniqueDistTemplate.html" title="espressopp::interaction::PotentialUniqueDistTemplate\&lt; HarmonicUnique \&gt;" alt="" coords="5,181,461,211"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialUniqueDist.html" title="espressopp::interaction::PotentialUniqueDist" alt="" coords="93,5,373,35"/>
-<area shape="rect" id="node7" href="$classespressopp_1_1interaction_1_1HarmonicUnique.html" title="espressopp::interaction::HarmonicUnique" alt="" coords="103,261,364,291"/>
+<map id="espressopp::interaction::PotentialUniqueDistTemplate&lt; Derived &gt;" name="espressopp::interaction::PotentialUniqueDistTemplate&lt; Derived &gt;">
+<area shape="rect" id="node5" href="$classespressopp_1_1interaction_1_1PotentialUniqueDistTemplate.html" title="espressopp::interaction\l::PotentialUniqueDistTemplate\l\&lt; HarmonicUnique \&gt;" alt="" coords="5,235,205,299"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialUniqueDist.html" title="espressopp::interaction\l::PotentialUniqueDist" alt="" coords="27,6,184,53"/>
+<area shape="rect" id="node7" href="$classespressopp_1_1interaction_1_1HarmonicUnique.html" title="espressopp::interaction\l::HarmonicUnique" alt="" coords="27,350,184,397"/>
 </map>

@@ -1,3 +1,20 @@
-<map id="G" name="G">
-<area shape="rect" id="node1" href="$classespressopp_1_1Int3D.html" title="espressopp::Int3D" alt="" coords="7,5,135,35"/>
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node3" href="$structespressopp_1_1int3D__pickle__suite.html" title="espressopp::int3D_pickle\l_suite" alt="" coords="172,5,340,51"/>
+<area shape="rect" id="node5" href="$structespressopp_1_1interaction_1_1CoulombTruncatedUniqueCharge__pickle.html" title="espressopp::interaction\l::CoulombTruncatedUniqueCharge\l_pickle" alt="" coords="145,75,367,139"/>
+<area shape="rect" id="node7" href="$structespressopp_1_1interaction_1_1LennardJones__pickle.html" title="espressopp::interaction\l::LennardJones_pickle" alt="" coords="177,162,335,209"/>
+<area shape="rect" id="node9" href="$structespressopp_1_1interaction_1_1LennardJonesCapped__pickle.html" title="espressopp::interaction\l::LennardJonesCapped_pickle" alt="" coords="157,231,355,278"/>
+<area shape="rect" id="node11" href="$structespressopp_1_1interaction_1_1LennardJonesEnergyCapped__pickle.html" title="espressopp::interaction\l::LennardJonesEnergyCapped\l_pickle" alt="" coords="157,301,355,365"/>
+<area shape="rect" id="node13" href="$structespressopp_1_1interaction_1_1LennardJonesExpand__pickle.html" title="espressopp::interaction\l::LennardJonesExpand_pickle" alt="" coords="159,389,353,435"/>
+<area shape="rect" id="node15" href="$structespressopp_1_1interaction_1_1LennardJonesGeneric__pickle.html" title="espressopp::interaction\l::LennardJonesGeneric\l_pickle" alt="" coords="177,459,335,523"/>
+<area shape="rect" id="node17" href="$structespressopp_1_1interaction_1_1LennardJonesGromacs__pickle.html" title="espressopp::interaction\l::LennardJonesGromacs\l_pickle" alt="" coords="175,547,337,611"/>
+<area shape="rect" id="node19" href="$structespressopp_1_1interaction_1_1LJcos__pickle.html" title="espressopp::interaction\l::LJcos_pickle" alt="" coords="177,634,335,681"/>
+<area shape="rect" id="node21" href="$structespressopp_1_1interaction_1_1Morse__pickle.html" title="espressopp::interaction\l::Morse_pickle" alt="" coords="177,703,335,750"/>
+<area shape="rect" id="node23" href="$structespressopp_1_1interaction_1_1ReactionFieldGeneralized__pickle.html" title="espressopp::interaction\l::ReactionFieldGeneralized\l_pickle" alt="" coords="167,773,345,837"/>
+<area shape="rect" id="node25" href="$structespressopp_1_1interaction_1_1SoftCosine__pickle.html" title="espressopp::interaction\l::SoftCosine_pickle" alt="" coords="177,861,335,907"/>
+<area shape="rect" id="node27" href="$structespressopp_1_1interaction_1_1Tabulated__pickle.html" title="espressopp::interaction\l::Tabulated_pickle" alt="" coords="177,930,335,977"/>
+<area shape="rect" id="node29" href="$structespressopp_1_1interaction_1_1VSpherePair__pickle.html" title="espressopp::interaction\l::VSpherePair_pickle" alt="" coords="177,999,335,1046"/>
+<area shape="rect" id="node31" href="$structespressopp_1_1interaction_1_1Zero__pickle.html" title="espressopp::interaction\l::Zero_pickle" alt="" coords="177,1069,335,1115"/>
+<area shape="rect" id="node33" href="$structespressopp_1_1quaternion__pickle__suite.html" title="espressopp::quaternion\l_pickle_suite" alt="" coords="177,1138,335,1185"/>
+<area shape="rect" id="node35" href="$structespressopp_1_1real3D__pickle__suite.html" title="espressopp::real3D\l_pickle_suite" alt="" coords="189,1207,323,1254"/>
+<area shape="rect" id="node37" href="$structespressopp_1_1tensor__pickle__suite.html" title="espressopp::tensor\l_pickle_suite" alt="" coords="189,1277,323,1323"/>
 </map>

@@ -1,9 +1,8 @@
-<map id="G" name="G">
-<area shape="rect" id="node9" href="$classespressopp_1_1FixedListComm.html" title="espressopp::FixedListComm" alt="" coords="5,261,195,291"/>
-<area shape="rect" id="node11" href="$classespressopp_1_1FixedPairDistList.html" title="espressopp::FixedPairDistList" alt="" coords="219,261,416,291"/>
-<area shape="rect" id="node13" href="$classespressopp_1_1FixedPairList.html" title="espressopp::FixedPairList" alt="" coords="440,261,613,291"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil::ESPPContainer\&lt; std::vector\&lt; ParticlePair \&gt; \&gt;" alt="" coords="115,101,520,131"/>
-<area shape="rect" id="node4" href="$classstd_1_1vector.html" title="std::vector\&lt; ParticlePair \&gt;" alt="" coords="93,5,267,35"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="291,5,621,35"/>
-<area shape="rect" id="node15" href="$classespressopp_1_1FixedPairListAdress.html" title="This is a subclass of FixedPairList." alt="" coords="420,341,633,371"/>
+<map id="espressopp::PairList" name="espressopp::PairList">
+<area shape="rect" id="node11" href="$classespressopp_1_1FixedListComm.html" title="espressopp::FixedListComm" alt="" coords="5,395,195,424"/>
+<area shape="rect" id="node13" href="$classespressopp_1_1FixedPairDistList.html" title="espressopp::FixedPairDistList" alt="" coords="219,395,416,424"/>
+<area shape="rect" id="node15" href="$classespressopp_1_1FixedPairList.html" title="espressopp::FixedPairList" alt="" coords="440,395,613,424"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; ParticlePair \&gt; \&gt;" alt="" coords="233,200,401,264"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="361,86,588,133"/>
+<area shape="rect" id="node17" href="$classespressopp_1_1FixedPairListAdress.html" title="This is a subclass of FixedPairList." alt="" coords="440,475,613,522"/>
 </map>

@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structespressopp_1_1Triple.html" title="espressopp::Triple\&lt; class Particle *, class Particle *, class Particle * \&gt;" alt="" coords="5,101,437,131"/>
-<area shape="rect" id="node4" href="$structespressopp_1_1Triple.html" title="espressopp::Triple\&lt; T1, T2, T3 \&gt;" alt="" coords="115,5,328,35"/>
+<map id="espressopp::ParticleTriple" name="espressopp::ParticleTriple">
+<area shape="rect" id="node2" href="$structespressopp_1_1Triple.html" title="espressopp::Triple\l\&lt; class Particle *,\l class Particle *, class\l Particle * \&gt;" alt="" coords="16,155,168,237"/>
+<area shape="rect" id="node4" href="$structespressopp_1_1Triple.html" title="espressopp::Triple\l\&lt; T1, T2, T3 \&gt;" alt="" coords="28,6,156,53"/>
 </map>

@@ -1,15 +1,15 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$AngularCosineSquared_8hpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/AngularCosineSquared.hpp" alt="" coords="231,83,745,112"/>
-<area shape="rect" id="node5" href="$AngularCosineSquared_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/AngularCosineSquared.cpp" alt="" coords="5,160,520,189"/>
-<area shape="rect" id="node10" href="$AngularHarmonic_8hpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/AngularHarmonic.hpp" alt="" coords="769,83,1252,112"/>
-<area shape="rect" id="node12" href="$AngularHarmonic_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/AngularHarmonic.cpp" alt="" coords="1068,160,1551,189"/>
-<area shape="rect" id="node16" href="$Cosine_8hpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/Cosine.hpp" alt="" coords="1276,83,1697,112"/>
-<area shape="rect" id="node19" href="$Cosine_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/Cosine.cpp" alt="" coords="1575,160,1996,189"/>
-<area shape="rect" id="node22" href="$DihedralRB_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/DihedralRB.cpp" alt="" coords="1823,83,2271,112"/>
-<area shape="rect" id="node24" href="$OPLS_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/OPLS.cpp" alt="" coords="2295,83,2711,112"/>
-<area shape="rect" id="node26" href="$StillingerWeberTripleTerm_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/StillingerWeberTripleTerm.cpp" alt="" coords="2735,83,3265,112"/>
-<area shape="rect" id="node28" href="$TabulatedAngular_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/TabulatedAngular.cpp" alt="" coords="3289,83,3772,112"/>
-<area shape="rect" id="node30" href="$TabulatedDihedral_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/TabulatedDihedral.cpp" alt="" coords="3796,83,4281,112"/>
-<area shape="rect" id="node32" href="$TersoffTripleTerm_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/TersoffTripleTerm.cpp" alt="" coords="4305,83,4791,112"/>
-<area shape="rect" id="node7" href="$interaction_2bindings_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/bindings.cpp" alt="" coords="615,160,1044,189"/>
+<map id="/home/travis/build/espressopp/espressopp/src/interaction/FixedTripleListInteractionTemplate.hpp" name="/home/travis/build/espressopp/espressopp/src/interaction/FixedTripleListInteractionTemplate.hpp">
+<area shape="rect" id="node3" href="$AngularCosineSquared_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/AngularCosine\lSquared.hpp" alt="" coords="89,137,287,218"/>
+<area shape="rect" id="node5" href="$AngularCosineSquared_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/AngularCosine\lSquared.cpp" alt="" coords="5,267,203,349"/>
+<area shape="rect" id="node10" href="$AngularHarmonic_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/AngularHarmonic.hpp" alt="" coords="311,145,548,209"/>
+<area shape="rect" id="node12" href="$AngularHarmonic_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/AngularHarmonic.cpp" alt="" coords="488,276,725,340"/>
+<area shape="rect" id="node16" href="$Cosine_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/Cosine.hpp" alt="" coords="572,145,751,209"/>
+<area shape="rect" id="node19" href="$Cosine_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/Cosine.cpp" alt="" coords="749,276,928,340"/>
+<area shape="rect" id="node22" href="$DihedralRB_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/DihedralRB.cpp" alt="" coords="876,145,1079,209"/>
+<area shape="rect" id="node24" href="$OPLS_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/OPLS.cpp" alt="" coords="1103,145,1273,209"/>
+<area shape="rect" id="node26" href="$StillingerWeberTripleTerm_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/StillingerWeber\lTripleTerm.cpp" alt="" coords="1297,137,1497,218"/>
+<area shape="rect" id="node28" href="$TabulatedAngular_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/TabulatedAngular.cpp" alt="" coords="1521,145,1759,209"/>
+<area shape="rect" id="node30" href="$TabulatedDihedral_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/TabulatedDihedral.cpp" alt="" coords="1783,145,2025,209"/>
+<area shape="rect" id="node32" href="$TersoffTripleTerm_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/TersoffTriple\lTerm.cpp" alt="" coords="2049,137,2233,218"/>
+<area shape="rect" id="node7" href="$interaction_2bindings_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/bindings.cpp" alt="" coords="280,276,464,340"/>
 </map>

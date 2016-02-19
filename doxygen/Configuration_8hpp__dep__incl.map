@@ -1,20 +1,20 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$analysis_2bindings_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/bindings.cpp" alt="" coords="733,237,1152,267"/>
-<area shape="rect" id="node5" href="$Configurations_8hpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/Configurations.hpp" alt="" coords="230,83,684,112"/>
-<area shape="rect" id="node10" href="$Velocities_8hpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/Velocities.hpp" alt="" coords="708,83,1134,112"/>
-<area shape="rect" id="node15" href="$ConfigsParticleDecomp_8hpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/ConfigsParticleDecomp.hpp" alt="" coords="1158,83,1665,112"/>
-<area shape="rect" id="node35" href="$Configuration_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/Configuration.cpp" alt="" coords="1689,83,2134,112"/>
-<area shape="rect" id="node37" href="$RadialDistrF_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/RadialDistrF.cpp" alt="" coords="2158,83,2601,112"/>
-<area shape="rect" id="node39" href="$StaticStructF_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/StaticStructF.cpp" alt="" coords="2625,83,3070,112"/>
-<area shape="rect" id="node41" href="$XDensity_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/XDensity.cpp" alt="" coords="3094,83,3518,112"/>
-<area shape="rect" id="node43" href="$XTemperature_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/XTemperature.cpp" alt="" coords="3542,83,3993,112"/>
-<area shape="rect" id="node8" href="$Configurations_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/Configurations.cpp" alt="" coords="24,160,477,189"/>
-<area shape="rect" id="node13" href="$Velocities_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/Velocities.cpp" alt="" coords="552,160,978,189"/>
-<area shape="rect" id="node18" href="$VelocityAutocorrelation_8hpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/VelocityAutocorrelation.hpp" alt="" coords="1104,160,1608,189"/>
-<area shape="rect" id="node23" href="$MeanSquareDispl_8hpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/MeanSquareDispl.hpp" alt="" coords="1632,160,2104,189"/>
-<area shape="rect" id="node28" href="$MeanSquareInternalDist_8hpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/MeanSquareInternalDist.hpp" alt="" coords="2128,160,2637,189"/>
-<area shape="rect" id="node33" href="$ConfigsParticleDecomp_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/ConfigsParticleDecomp.cpp" alt="" coords="2661,160,3168,189"/>
-<area shape="rect" id="node21" href="$VelocityAutocorrelation_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/VelocityAutocorrelation.cpp" alt="" coords="1176,237,1680,267"/>
-<area shape="rect" id="node26" href="$MeanSquareDispl_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/MeanSquareDispl.cpp" alt="" coords="1704,237,2176,267"/>
-<area shape="rect" id="node31" href="$MeanSquareInternalDist_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/analysis/MeanSquareInternalDist.cpp" alt="" coords="2200,237,2709,267"/>
+<map id="/home/travis/build/espressopp/espressopp/src/analysis/Configuration.hpp" name="/home/travis/build/espressopp/espressopp/src/analysis/Configuration.hpp">
+<area shape="rect" id="node3" href="$analysis_2bindings_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/bindings.cpp" alt="" coords="435,388,608,452"/>
+<area shape="rect" id="node5" href="$Configurations_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/Configurations.hpp" alt="" coords="174,127,382,191"/>
+<area shape="rect" id="node10" href="$Velocities_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/Velocities.hpp" alt="" coords="443,127,624,191"/>
+<area shape="rect" id="node15" href="$ConfigsParticleDecomp_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/ConfigsParticle\lDecomp.hpp" alt="" coords="652,118,842,199"/>
+<area shape="rect" id="node35" href="$Configuration_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/Configuration.cpp" alt="" coords="866,127,1068,191"/>
+<area shape="rect" id="node37" href="$RadialDistrF_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/RadialDistrF.cpp" alt="" coords="1092,127,1290,191"/>
+<area shape="rect" id="node39" href="$StaticStructF_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/StaticStructF.cpp" alt="" coords="1314,127,1516,191"/>
+<area shape="rect" id="node41" href="$XDensity_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/XDensity.cpp" alt="" coords="1540,127,1719,191"/>
+<area shape="rect" id="node43" href="$XTemperature_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/XTemperature.cpp" alt="" coords="1743,127,1948,191"/>
+<area shape="rect" id="node8" href="$Configurations_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/Configurations.cpp" alt="" coords="32,257,240,321"/>
+<area shape="rect" id="node13" href="$Velocities_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/Velocities.cpp" alt="" coords="315,257,496,321"/>
+<area shape="rect" id="node18" href="$VelocityAutocorrelation_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/VelocityAutocorrelation.hpp" alt="" coords="622,257,880,321"/>
+<area shape="rect" id="node23" href="$MeanSquareDispl_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/MeanSquareDispl.hpp" alt="" coords="904,257,1131,321"/>
+<area shape="rect" id="node28" href="$MeanSquareInternalDist_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/MeanSquareInternal\lDist.hpp" alt="" coords="1155,249,1371,330"/>
+<area shape="rect" id="node33" href="$ConfigsParticleDecomp_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/ConfigsParticle\lDecomp.cpp" alt="" coords="1395,249,1584,330"/>
+<area shape="rect" id="node21" href="$VelocityAutocorrelation_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/VelocityAutocorrelation.cpp" alt="" coords="632,388,891,452"/>
+<area shape="rect" id="node26" href="$MeanSquareDispl_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/MeanSquareDispl.cpp" alt="" coords="915,388,1142,452"/>
+<area shape="rect" id="node31" href="$MeanSquareInternalDist_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/analysis/MeanSquareInternal\lDist.cpp" alt="" coords="1166,379,1382,461"/>
 </map>

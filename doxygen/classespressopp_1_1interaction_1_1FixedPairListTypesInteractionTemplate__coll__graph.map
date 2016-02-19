@@ -1,10 +1,7 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class." alt="" coords="949,5,1176,35"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="969,59,1156,88"/>
-<area shape="rect" id="node14" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil::Array2D\&lt; shared_ptr\&lt; Potential \&gt;, esutil::enlarge \&gt;" alt="" coords="847,165,1279,195"/>
-<area shape="rect" id="node16" href="$classstd_1_1vector.html" title="std::vector\&lt; shared_ptr\&lt; Potential \&gt; \&gt;" alt="" coords="273,165,516,195"/>
-<area shape="rect" id="node18" href="$classespressopp_1_1esutil_1_1Array2D.html" title="A two&#45;dimensional array (i.e." alt="" coords="245,229,544,259"/>
-<area shape="rect" id="node22" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil::Array2D\&lt; Potential, esutil::enlarge \&gt;" alt="" coords="889,251,1236,280"/>
-<area shape="rect" id="node20" href="$classstd_1_1vector.html" title="std::vector\&lt; T \&gt;" alt="" coords="7,229,121,259"/>
-<area shape="rect" id="node24" href="$classstd_1_1vector.html" title="std::vector\&lt; Potential \&gt;" alt="" coords="316,295,473,324"/>
+<map id="espressopp::interaction::FixedPairListTypesInteractionTemplate&lt; _Potential &gt;" name="espressopp::interaction::FixedPairListTypesInteractionTemplate&lt; _Potential &gt;">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class." alt="" coords="724,5,881,51"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="709,75,896,104"/>
+<area shape="rect" id="node14" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; shared_ptr\l\&lt; Potential \&gt;, esutil\l::enlarge \&gt;" alt="" coords="728,197,877,278"/>
+<area shape="rect" id="node18" href="$classespressopp_1_1esutil_1_1Array2D.html" title="A two&#45;dimensional array (i.e." alt="" coords="329,265,471,329"/>
+<area shape="rect" id="node22" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; Potential,\l esutil::enlarge \&gt;" alt="" coords="731,301,875,365"/>
 </map>

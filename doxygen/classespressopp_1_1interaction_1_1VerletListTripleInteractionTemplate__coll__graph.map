@@ -1,8 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class." alt="" coords="824,5,1051,35"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="844,59,1031,88"/>
-<area shape="rect" id="node14" href="$classespressopp_1_1esutil_1_1Array3D.html" title="espressopp::esutil::Array3D\&lt; Potential, esutil::enlarge \&gt;" alt="" coords="764,165,1111,195"/>
-<area shape="rect" id="node16" href="$classstd_1_1vector.html" title="std::vector\&lt; Potential \&gt;" alt="" coords="316,165,473,195"/>
-<area shape="rect" id="node18" href="$classespressopp_1_1esutil_1_1Array3D.html" title="A three&#45;dimensional array (i.e." alt="" coords="245,219,544,248"/>
-<area shape="rect" id="node20" href="$classstd_1_1vector.html" title="std::vector\&lt; T \&gt;" alt="" coords="7,219,121,248"/>
+<map id="espressopp::interaction::VerletListTripleInteractionTemplate&lt; _ThreeBodyPotential &gt;" name="espressopp::interaction::VerletListTripleInteractionTemplate&lt; _ThreeBodyPotential &gt;">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class." alt="" coords="689,5,847,51"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="675,75,861,104"/>
+<area shape="rect" id="node14" href="$classespressopp_1_1esutil_1_1Array3D.html" title="espressopp::esutil\l::Array3D\&lt; Potential,\l esutil::enlarge \&gt;" alt="" coords="696,197,840,261"/>
+<area shape="rect" id="node18" href="$classespressopp_1_1esutil_1_1Array3D.html" title="A three&#45;dimensional array (i.e." alt="" coords="329,256,471,320"/>
 </map>

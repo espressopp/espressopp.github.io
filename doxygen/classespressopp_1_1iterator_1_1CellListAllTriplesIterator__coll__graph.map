@@ -1,7 +1,7 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1ParticleTriple.html" title="espressopp::ParticleTriple" alt="" coords="1571,200,1744,229"/>
-<area shape="rect" id="node4" href="$structespressopp_1_1Triple.html" title="espressopp::Triple\&lt; class Particle *, class Particle *, class Particle * \&gt;" alt="" coords="1087,200,1519,229"/>
-<area shape="rect" id="node6" href="$structespressopp_1_1Particle.html" title="espressopp::Particle" alt="" coords="549,141,691,171"/>
+<map id="espressopp::iterator::CellListAllTriplesIterator" name="espressopp::iterator::CellListAllTriplesIterator">
+<area shape="rect" id="node2" href="$classespressopp_1_1ParticleTriple.html" title="espressopp::ParticleTriple" alt="" coords="1040,209,1213,239"/>
+<area shape="rect" id="node4" href="$structespressopp_1_1Triple.html" title="espressopp::Triple\l\&lt; class Particle *,\l class Particle *, class\l Particle * \&gt;" alt="" coords="836,183,988,265"/>
+<area shape="rect" id="node6" href="$structespressopp_1_1Particle.html" title="espressopp::Particle" alt="" coords="512,141,653,171"/>
 <area shape="rect" id="node8" href="$structespressopp_1_1ParticleLocal.html" title="espressopp::ParticleLocal" alt="" coords="227,8,397,37"/>
 <area shape="rect" id="node10" href="$classespressopp_1_1Int3D.html" title="espressopp::Int3D" alt="" coords="12,8,140,37"/>
 <area shape="rect" id="node12" href="$structespressopp_1_1ParticleMomentum.html" title="momentum&#45;like properties" alt="" coords="209,61,415,91"/>
@@ -9,5 +9,5 @@
 <area shape="rect" id="node18" href="$structespressopp_1_1ParticlePosition.html" title="position&#45;like properties" alt="" coords="219,115,405,144"/>
 <area shape="rect" id="node21" href="$structespressopp_1_1ParticleForce.html" title="force&#45;like properties" alt="" coords="225,168,399,197"/>
 <area shape="rect" id="node16" href="$structespressopp_1_1ParticleProperties.html" title="espressopp::ParticleProperties" alt="" coords="212,221,412,251"/>
-<area shape="rect" id="node24" href="$structespressopp_1_1Triple.html" title="espressopp::Triple\&lt; T1, T2, T3 \&gt;" alt="" coords="513,311,727,340"/>
+<area shape="rect" id="node24" href="$structespressopp_1_1Triple.html" title="espressopp::Triple\l\&lt; T1, T2, T3 \&gt;" alt="" coords="519,306,647,353"/>
 </map>

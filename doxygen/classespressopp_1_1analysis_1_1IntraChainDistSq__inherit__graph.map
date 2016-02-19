@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1AllParticlePos.html" title="espressopp::analysis::AllParticlePos" alt="" coords="15,83,249,112"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="39,5,225,35"/>
+<map id="espressopp::analysis::IntraChainDistSq" name="espressopp::analysis::IntraChainDistSq">
+<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1AllParticlePos.html" title="espressopp::analysis\l::AllParticlePos" alt="" coords="27,83,171,130"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,5,192,35"/>
 </map>

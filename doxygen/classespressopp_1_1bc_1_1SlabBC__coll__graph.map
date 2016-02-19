@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1bc_1_1BC.html" title="Abstract base class for boundary conditions." alt="" coords="24,197,163,227"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1Real3D.html" title="espressopp::Real3D" alt="" coords="187,197,328,227"/>
+<map id="espressopp::bc::SlabBC" name="espressopp::bc::SlabBC">
+<area shape="rect" id="node2" href="$classespressopp_1_1bc_1_1BC.html" title="Abstract base class for boundary conditions." alt="" coords="5,248,144,277"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1Real3D.html" title="espressopp::Real3D" alt="" coords="168,248,309,277"/>
 </map>

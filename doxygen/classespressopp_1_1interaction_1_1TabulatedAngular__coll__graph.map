@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="espressopp::interaction::AngularPotentialTemplate\&lt; TabulatedAngular \&gt;" alt="" coords="881,36,1319,65"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1AngularPotential.html" title="espressopp::interaction::AngularPotential" alt="" coords="7,5,265,35"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="319,36,700,65"/>
+<map id="espressopp::interaction::TabulatedAngular" name="espressopp::interaction::TabulatedAngular">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="espressopp::interaction\l::AngularPotentialTemplate\l\&lt; TabulatedAngular \&gt;" alt="" coords="593,36,772,100"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1AngularPotential.html" title="espressopp::interaction\l::AngularPotential" alt="" coords="5,5,163,51"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="Provides a template for the simple implementation of a &#160;shifted, absolute distance dependent potentia..." alt="" coords="213,40,392,104"/>
 </map>

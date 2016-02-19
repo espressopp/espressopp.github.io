@@ -1,4 +1,4 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class." alt="" coords="541,5,768,35"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="561,59,748,88"/>
+<map id="espressopp::interaction::FixedTripleAngleListInteractionTemplate&lt; _AngularPotential &gt;" name="espressopp::interaction::FixedTripleAngleListInteractionTemplate&lt; _AngularPotential &gt;">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class." alt="" coords="652,5,809,51"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="637,75,824,104"/>
 </map>

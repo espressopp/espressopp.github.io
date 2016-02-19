@@ -1,5 +1,5 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction::PotentialTemplate\&lt; LennardJonesEnergyCapped \&gt;" alt="" coords="856,7,1317,36"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction::Potential" alt="" coords="5,5,221,35"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="272,36,611,65"/>
+<map id="espressopp::interaction::LennardJonesEnergyCapped" name="espressopp::interaction::LennardJonesEnergyCapped">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Lennard\lJonesEnergyCapped \&gt;" alt="" coords="665,5,857,69"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="5,13,163,59"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a &#160;shifted, absolute distance dependent potentia..." alt="" coords="215,49,417,95"/>
 </map>

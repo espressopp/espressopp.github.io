@@ -1,6 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$LiquidGasLB_8hpp.html" title="/home/travis/build/espressopp/espressopp/src/integrator/LiquidGasLB.hpp" alt="" coords="255,83,705,112"/>
-<area shape="rect" id="node5" href="$integrator_2bindings_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/integrator/bindings.cpp" alt="" coords="5,160,429,189"/>
-<area shape="rect" id="node10" href="$LGLatticeSite_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/integrator/LGLatticeSite.cpp" alt="" coords="729,83,1183,112"/>
-<area shape="rect" id="node7" href="$LiquidGasLB_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/integrator/LiquidGasLB.cpp" alt="" coords="453,160,904,189"/>
+<map id="/home/travis/build/espressopp/espressopp/src/integrator/LGLatticeSite.hpp" name="/home/travis/build/espressopp/espressopp/src/integrator/LGLatticeSite.hpp">
+<area shape="rect" id="node3" href="$LiquidGasLB_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LiquidGasLB.hpp" alt="" coords="132,117,337,181"/>
+<area shape="rect" id="node5" href="$integrator_2bindings_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/bindings.cpp" alt="" coords="5,229,184,293"/>
+<area shape="rect" id="node10" href="$LGLatticeSite_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LGLatticeSite.cpp" alt="" coords="361,117,572,181"/>
+<area shape="rect" id="node7" href="$LiquidGasLB_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LiquidGasLB.cpp" alt="" coords="208,229,413,293"/>
 </map>

@@ -1,16 +1,13 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="1157,47,1344,76"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1InBuffer.html" title="espressopp::InBuffer" alt="" coords="1180,188,1321,217"/>
-<area shape="rect" id="node10" href="$classespressopp_1_1Buffer.html" title="Communication buffer." alt="" coords="673,147,804,176"/>
-<area shape="rect" id="node22" href="$classespressopp_1_1OutBuffer.html" title="espressopp::OutBuffer" alt="" coords="1175,107,1327,136"/>
-<area shape="rect" id="node14" href="$structespressopp_1_1LocalCellList.html" title="espressopp::LocalCellList" alt="" coords="1165,243,1336,272"/>
-<area shape="rect" id="node16" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil::ESPPContainer\&lt; std::vector\&lt; Cell \&gt; \&gt;" alt="" coords="559,245,919,275"/>
-<area shape="rect" id="node18" href="$classstd_1_1vector.html" title="std::vector\&lt; Cell \&gt;" alt="" coords="107,203,237,232"/>
-<area shape="rect" id="node20" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="7,341,337,371"/>
-<area shape="rect" id="node29" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil::ESPPContainer\&lt; std::vector\&lt; Particle \&gt; \&gt;" alt="" coords="548,412,929,441"/>
-<area shape="rect" id="node40" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil::ESPPContainer\&lt; std::vector\&lt; Cell * \&gt; \&gt;" alt="" coords="553,305,924,335"/>
-<area shape="rect" id="node27" href="$structespressopp_1_1ParticleList.html" title="espressopp::ParticleList" alt="" coords="1169,412,1332,441"/>
-<area shape="rect" id="node31" href="$classstd_1_1vector.html" title="std::vector\&lt; Particle \&gt;" alt="" coords="96,433,248,463"/>
-<area shape="rect" id="node38" href="$structespressopp_1_1CellList.html" title="espressopp::CellList" alt="" coords="1180,305,1321,335"/>
-<area shape="rect" id="node42" href="$classstd_1_1vector.html" title="std::vector\&lt; Cell * \&gt;" alt="" coords="103,256,241,285"/>
+<map id="espressopp::storage::Storage" name="espressopp::storage::Storage">
+<area shape="rect" id="node2" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="955,48,1141,77"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1InBuffer.html" title="espressopp::InBuffer" alt="" coords="977,189,1119,219"/>
+<area shape="rect" id="node10" href="$classespressopp_1_1Buffer.html" title="Communication buffer." alt="" coords="607,135,737,164"/>
+<area shape="rect" id="node24" href="$classespressopp_1_1OutBuffer.html" title="espressopp::OutBuffer" alt="" coords="972,108,1124,137"/>
+<area shape="rect" id="node14" href="$structespressopp_1_1LocalCellList.html" title="espressopp::LocalCellList" alt="" coords="963,243,1133,272"/>
+<area shape="rect" id="node16" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; Cell \&gt; \&gt;" alt="" coords="596,215,748,279"/>
+<area shape="rect" id="node20" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="160,371,387,418"/>
+<area shape="rect" id="node35" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; Particle \&gt; \&gt;" alt="" coords="596,444,748,508"/>
+<area shape="rect" id="node42" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; Cell * \&gt; \&gt;" alt="" coords="596,356,748,420"/>
+<area shape="rect" id="node33" href="$structespressopp_1_1ParticleList.html" title="espressopp::ParticleList" alt="" coords="967,435,1129,464"/>
+<area shape="rect" id="node40" href="$structespressopp_1_1CellList.html" title="espressopp::CellList" alt="" coords="977,373,1119,403"/>
 </map>

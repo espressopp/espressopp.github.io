@@ -1,15 +1,15 @@
-<map id="G" name="G">
-<area shape="rect" id="node5" href="$DihedralPotential_8hpp.html" title="DihedralPotential.hpp" alt="" coords="388,83,535,112"/>
-<area shape="rect" id="node7" href="$types_8hpp.html" title="types.hpp" alt="" coords="669,392,747,421"/>
-<area shape="rect" id="node28" href="$Real3D_8hpp.html" title="Real3D.hpp" alt="" coords="489,315,580,344"/>
-<area shape="rect" id="node31" href="$Particle_8hpp.html" title="Particle.hpp" alt="" coords="817,160,908,189"/>
-<area shape="rect" id="node58" href="$logging_8hpp.html" title="logging.hpp" alt="" coords="1649,160,1737,189"/>
-<area shape="rect" id="node21" href="$esconfig_8hpp.html" title="esconfig.hpp" alt="" coords="232,469,328,499"/>
-<area shape="rect" id="node34" href="$Single_8hpp.html" title="Single.hpp" alt="" coords="705,315,788,344"/>
-<area shape="rect" id="node37" href="$Triple_8hpp.html" title="Triple.hpp" alt="" coords="812,315,889,344"/>
-<area shape="rect" id="node40" href="$Quadruple_8hpp.html" title="Quadruple.hpp" alt="" coords="913,315,1020,344"/>
-<area shape="rect" id="node48" href="$ESPPIterator_8hpp.html" title="esutil/ESPPIterator.hpp" alt="" coords="1395,237,1552,267"/>
-<area shape="rect" id="node51" href="$Int3D_8hpp.html" title="Int3D.hpp" alt="" coords="575,237,652,267"/>
-<area shape="rect" id="node62" href="$log4espp_8hpp.html" title="log4espp.hpp" alt="" coords="1765,237,1864,267"/>
-<area shape="rect" id="node66" href="$Logger_8hpp.html" title="Class for logging." alt="" coords="1813,315,1933,344"/>
+<map id="/home/travis/build/espressopp/espressopp/src/interaction/DihedralRB.hpp" name="/home/travis/build/espressopp/espressopp/src/interaction/DihedralRB.hpp">
+<area shape="rect" id="node5" href="$DihedralPotential_8hpp.html" title="DihedralPotential.hpp" alt="" coords="239,117,385,147"/>
+<area shape="rect" id="node7" href="$types_8hpp.html" title="types.hpp" alt="" coords="520,445,597,475"/>
+<area shape="rect" id="node28" href="$Real3D_8hpp.html" title="Real3D.hpp" alt="" coords="340,368,431,397"/>
+<area shape="rect" id="node31" href="$Particle_8hpp.html" title="Particle.hpp" alt="" coords="668,195,759,224"/>
+<area shape="rect" id="node58" href="$logging_8hpp.html" title="logging.hpp" alt="" coords="1380,195,1468,224"/>
+<area shape="rect" id="node21" href="$esconfig_8hpp.html" title="esconfig.hpp" alt="" coords="109,532,205,561"/>
+<area shape="rect" id="node34" href="$Single_8hpp.html" title="Single.hpp" alt="" coords="556,368,639,397"/>
+<area shape="rect" id="node37" href="$Triple_8hpp.html" title="Triple.hpp" alt="" coords="663,368,740,397"/>
+<area shape="rect" id="node40" href="$Quadruple_8hpp.html" title="Quadruple.hpp" alt="" coords="764,368,871,397"/>
+<area shape="rect" id="node48" href="$ESPPIterator_8hpp.html" title="esutil/ESPPIterator.hpp" alt="" coords="1125,281,1283,311"/>
+<area shape="rect" id="node51" href="$Int3D_8hpp.html" title="Int3D.hpp" alt="" coords="425,281,503,311"/>
+<area shape="rect" id="node62" href="$log4espp_8hpp.html" title="log4espp.hpp" alt="" coords="1496,281,1595,311"/>
+<area shape="rect" id="node66" href="$Logger_8hpp.html" title="Class for logging." alt="" coords="1544,368,1664,397"/>
 </map>

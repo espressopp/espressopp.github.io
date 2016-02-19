@@ -1,6 +1,6 @@
-<map id="G" name="G">
-<area shape="rect" id="node2" href="$structespressopp_1_1Single.html" title="espressopp::Single\&lt; class Particle * \&gt;" alt="" coords="829,177,1075,207"/>
-<area shape="rect" id="node4" href="$structespressopp_1_1Particle.html" title="espressopp::Particle" alt="" coords="507,141,648,171"/>
+<map id="espressopp::ParticleSingle" name="espressopp::ParticleSingle">
+<area shape="rect" id="node2" href="$structespressopp_1_1Single.html" title="espressopp::Single\l\&lt; class Particle * \&gt;" alt="" coords="799,171,932,218"/>
+<area shape="rect" id="node4" href="$structespressopp_1_1Particle.html" title="espressopp::Particle" alt="" coords="491,141,632,171"/>
 <area shape="rect" id="node6" href="$structespressopp_1_1ParticleLocal.html" title="espressopp::ParticleLocal" alt="" coords="227,8,397,37"/>
 <area shape="rect" id="node8" href="$classespressopp_1_1Int3D.html" title="espressopp::Int3D" alt="" coords="12,8,140,37"/>
 <area shape="rect" id="node10" href="$structespressopp_1_1ParticleMomentum.html" title="momentum&#45;like properties" alt="" coords="209,61,415,91"/>
@@ -8,5 +8,5 @@
 <area shape="rect" id="node16" href="$structespressopp_1_1ParticlePosition.html" title="position&#45;like properties" alt="" coords="219,115,405,144"/>
 <area shape="rect" id="node19" href="$structespressopp_1_1ParticleForce.html" title="force&#45;like properties" alt="" coords="225,168,399,197"/>
 <area shape="rect" id="node14" href="$structespressopp_1_1ParticleProperties.html" title="espressopp::ParticleProperties" alt="" coords="212,221,412,251"/>
-<area shape="rect" id="node22" href="$structespressopp_1_1Single.html" title="espressopp::Single\&lt; T1 \&gt;" alt="" coords="492,221,663,251"/>
+<area shape="rect" id="node22" href="$structespressopp_1_1Single.html" title="espressopp::Single\l\&lt; T1 \&gt;" alt="" coords="495,217,628,263"/>
 </map>

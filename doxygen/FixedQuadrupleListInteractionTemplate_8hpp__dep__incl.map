@@ -1,8 +1,8 @@
-<map id="G" name="G">
-<area shape="rect" id="node3" href="$DihedralHarmonic_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/DihedralHarmonic.cpp" alt="" coords="5,83,491,112"/>
-<area shape="rect" id="node5" href="$DihedralHarmonicCos_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/DihedralHarmonicCos.cpp" alt="" coords="515,83,1024,112"/>
-<area shape="rect" id="node7" href="$DihedralHarmonicNCos_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/DihedralHarmonicNCos.cpp" alt="" coords="1048,83,1568,112"/>
-<area shape="rect" id="node9" href="$DihedralRB_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/DihedralRB.cpp" alt="" coords="1592,83,2040,112"/>
-<area shape="rect" id="node11" href="$OPLS_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/OPLS.cpp" alt="" coords="2064,83,2480,112"/>
-<area shape="rect" id="node13" href="$TabulatedDihedral_8cpp.html" title="/home/travis/build/espressopp/espressopp/src/interaction/TabulatedDihedral.cpp" alt="" coords="2504,83,2989,112"/>
+<map id="/home/travis/build/espressopp/espressopp/src/interaction/FixedQuadrupleListInteractionTemplate.hpp" name="/home/travis/build/espressopp/espressopp/src/interaction/FixedQuadrupleListInteractionTemplate.hpp">
+<area shape="rect" id="node3" href="$DihedralHarmonic_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/DihedralHarmonic.cpp" alt="" coords="5,145,245,209"/>
+<area shape="rect" id="node5" href="$DihedralHarmonicCos_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/DihedralHarmonic\lCos.cpp" alt="" coords="269,137,485,218"/>
+<area shape="rect" id="node7" href="$DihedralHarmonicNCos_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/DihedralHarmonic\lNCos.cpp" alt="" coords="509,137,725,218"/>
+<area shape="rect" id="node9" href="$DihedralRB_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/DihedralRB.cpp" alt="" coords="749,145,952,209"/>
+<area shape="rect" id="node11" href="$OPLS_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/OPLS.cpp" alt="" coords="976,145,1147,209"/>
+<area shape="rect" id="node13" href="$TabulatedDihedral_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/TabulatedDihedral.cpp" alt="" coords="1171,145,1413,209"/>
 </map>
