@@ -63,6 +63,7 @@
 </ul>
 <ul>
 	<li><a href="doxygen/index.html">Doxygen</a></li>
+	<li><a href="ESPResSo++.pdf">PDF manual</a></li>
 	<li><a href="http://www.espresso-pp.de/Impressum.html">Impressum</a></li>
 </ul>
 <div id="searchbox" style="display: none" role="search">
@@ -125,36 +126,7 @@ will be implemented in future versions.</p>
 <p>The <em>domain decomposition</em> storage needs to know how many CPUs (or cores, if there are multicore CPUs)
 are available for the simulation and how to assign the CPUs to the different domains of our simulation box.
 Moreover the storage needs to know the maximum interaction range of the particles. In a simple Lennard-Jones
-fluid this could for example be <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">r_{cut} = 2^\frac{1}{6}</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
-. This value together with the <em>skin</em> value
+fluid this could for example be <span class="math">r_{cut} = 2^\frac{1}{6}</span>. This value together with the <em>skin</em> value
 determines the minimal size for the so called <em>linked cells</em> which are used to speed up Verlet list rebuilds
 (see Frenkel&amp;Smit or Allen&amp;Tildesley for the details).</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">maxcutoff</span>      <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="mf">2.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="o">/</span><span class="mf">6.0</span><span class="p">)</span>

@@ -81,6 +81,7 @@
 </ul>
 <ul>
 	<li><a href="doxygen/index.html">Doxygen</a></li>
+	<li><a href="ESPResSo++.pdf">PDF manual</a></li>
 	<li><a href="http://www.espresso-pp.de/Impressum.html">Impressum</a></li>
 </ul>
 <div id="searchbox" style="display: none" role="search">
@@ -104,153 +105,8 @@
 <h1><strong>LBOutput</strong> - abstract base class for analysis / output in LB simulations<a class="headerlink" href="#lboutput-abstract-base-class-for-analysis-output-in-lb-simulations" title="Permalink to this headline">¶</a></h1>
 <p>Abstract base class for arbitrary output from LB simulations. At the moment, the implemented realisations are:</p>
 <ul class="simple">
-<li><a class="reference internal" href="espressopp.analysis.LBOutputScreen.html#module-espressopp.analysis.LBOutputScreen" title="espressopp.analysis.LBOutputScreen"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputScreen</span></code></a> to output local density <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">rho</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
- and <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">v_z</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
- component of the velocity as a function of the coordinate <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">x</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
-.</li>
-<li><a class="reference internal" href="espressopp.analysis.LBOutputVzInTime.html#module-espressopp.analysis.LBOutputVzInTime" title="espressopp.analysis.LBOutputVzInTime"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputVzInTime</span></code></a> to output velocity component <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">v_z</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
- of a specific lattice site (the value used at the moment is <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">{0.25*N_i, 0, 0}</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
-) in time.</li>
+<li><a class="reference internal" href="espressopp.analysis.LBOutputScreen.html#module-espressopp.analysis.LBOutputScreen" title="espressopp.analysis.LBOutputScreen"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputScreen</span></code></a> to output local density <span class="math">rho</span> and <span class="math">v_z</span> component of the velocity as a function of the coordinate <span class="math">x</span>.</li>
+<li><a class="reference internal" href="espressopp.analysis.LBOutputVzInTime.html#module-espressopp.analysis.LBOutputVzInTime" title="espressopp.analysis.LBOutputVzInTime"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputVzInTime</span></code></a> to output velocity component <span class="math">v_z</span> of a specific lattice site (the value used at the moment is <span class="math">{0.25*N_i, 0, 0}</span>) in time.</li>
 <li><a class="reference internal" href="espressopp.analysis.LBOutputVzOfX.html#module-espressopp.analysis.LBOutputVzOfX" title="espressopp.analysis.LBOutputVzOfX"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputVzOfX</span></code></a> to output simulation progress and control flux conservation when using MD to LB coupling.</li>
 </ul>
 <div class="admonition note">

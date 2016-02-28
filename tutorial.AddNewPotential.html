@@ -63,6 +63,7 @@
 </ul>
 <ul>
 	<li><a href="doxygen/index.html">Doxygen</a></li>
+	<li><a href="ESPResSo++.pdf">PDF manual</a></li>
 	<li><a href="http://www.espresso-pp.de/Impressum.html">Impressum</a></li>
 </ul>
 <div id="searchbox" style="display: none" role="search">
@@ -102,126 +103,10 @@
 <div class="section" id="step-1">
 <h3>Step 1<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h3>
 <p>The potential we are implementing today is a two-body bonded potential with the form</p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">V(r_{ij})=\frac{1}{4}k_{ij}(r^2_{ij}-r^2_{0,ij})^2
-
-</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
-<p>noindent
-where <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">r_{ij}</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
- is the distance between particles <em>i</em> and <em>j</em>. The potential has two input parameters <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">r_{0}</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
- and <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">k</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
-.</p>
+<div class="math">
+<p><span class="math">V(r_{ij})=\frac{1}{4}k_{ij}(r^2_{ij}-r^2_{0,ij})^2</span></p>
+</div><p>noindent
+where <span class="math">r_{ij}</span> is the distance between particles <em>i</em> and <em>j</em>. The potential has two input parameters <span class="math">r_{0}</span> and <span class="math">k</span>.</p>
 <p>Derive the force.</p>
 </div>
 <div class="section" id="step-2">
@@ -258,36 +143,7 @@ Transcript written on math.log.
 <p>First modify <code class="docutils literal"><span class="pre">FourthPower.hpp</span></code>.</p>
 <p>Note the <code class="docutils literal"><span class="pre">#include</span></code> statement for <code class="docutils literal"><span class="pre">FixedPairListInteractionTemplate.hpp</span></code> and <code class="docutils literal"><span class="pre">Potential.hpp</span></code>, the files you examined in <a class="reference internal" href="#step-2">Step 2</a> and Step <a class="reference internal" href="#a-interfacing-potential-class-and-interaction-template">3(a) Interfacing potential class and interaction template</a>.</p>
 <p>The Harmonic potential had parameters called <code class="docutils literal"><span class="pre">K</span></code> and <code class="docutils literal"><span class="pre">r0</span></code>. You can reuse these for the FourthPower potential, along with the setters and getters <code class="docutils literal"><span class="pre">setK</span></code>, <code class="docutils literal"><span class="pre">getK</span></code>, <code class="docutils literal"><span class="pre">setR0</span></code> and <code class="docutils literal"><span class="pre">getR0</span></code>. For better efficiency, you could also create a new variable which contains the square of <code class="docutils literal"><span class="pre">r0</span></code>.</p>
-<p>Now we need functions <code class="docutils literal"><span class="pre">_computeForceRaw()</span></code> and <code class="docutils literal"><span class="pre">_computeEnergySqrRaw()</span></code>, as explained in Step <a class="reference internal" href="#a-interfacing-potential-class-and-interaction-template">3(a) Interfacing potential class and interaction template</a>. Modify these functions to use the functional form of the fourth power potential as derived in <a class="reference internal" href="#step-1">Step 1</a>. Note that <code class="docutils literal"><span class="pre">Real3D</span> <span class="pre">dist</span></code>, which contains the vector between the two particles, has been defined as <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">r_{p1} - r_{p2}</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
- (see <code class="docutils literal"><span class="pre">addForces()</span></code> in <code class="docutils literal"><span class="pre">FixedPairListInteractionTemplate.hpp</span></code>).</p>
+<p>Now we need functions <code class="docutils literal"><span class="pre">_computeForceRaw()</span></code> and <code class="docutils literal"><span class="pre">_computeEnergySqrRaw()</span></code>, as explained in Step <a class="reference internal" href="#a-interfacing-potential-class-and-interaction-template">3(a) Interfacing potential class and interaction template</a>. Modify these functions to use the functional form of the fourth power potential as derived in <a class="reference internal" href="#step-1">Step 1</a>. Note that <code class="docutils literal"><span class="pre">Real3D</span> <span class="pre">dist</span></code>, which contains the vector between the two particles, has been defined as <span class="math">r_{p1} - r_{p2}</span> (see <code class="docutils literal"><span class="pre">addForces()</span></code> in <code class="docutils literal"><span class="pre">FixedPairListInteractionTemplate.hpp</span></code>).</p>
 <p>Next open <code class="docutils literal"><span class="pre">Harmonic.py</span></code> and <code class="docutils literal"><span class="pre">FourthPower.py</span></code>.</p>
 <p>Here is an example of an end-user&#8217;s python script to add an interaction using the harmonic potential:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">harmonicbondslist</span> <span class="o">=</span> <span class="n">espresso</span><span class="o">.</span><span class="n">FixedPairList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>

@@ -81,6 +81,7 @@
 </ul>
 <ul>
 	<li><a href="doxygen/index.html">Doxygen</a></li>
+	<li><a href="ESPResSo++.pdf">PDF manual</a></li>
 	<li><a href="http://www.espresso-pp.de/Impressum.html">Impressum</a></li>
 </ul>
 <div id="searchbox" style="display: none" role="search">
@@ -103,96 +104,9 @@
   <span class="target" id="module-espressopp.interaction.GravityTruncated"></span><div class="section" id="gravitytruncated">
 <h1><strong>GravityTruncated</strong><a class="headerlink" href="#gravitytruncated" title="Permalink to this headline">¶</a></h1>
 <p>This is an implementation of a truncated (cutoff) Gravity Potential</p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">U = P \cdot \frac{m_1 \cdot m_2}{ \lvert p_1 - p_2\rvert}
-
-</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
-<p>where <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">m_i</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
- is the mass of the <cite>i</cite> th particle, <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">p_i</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
- its position and <cite>P</cite> a prefactor.</p>
+<div class="math">
+<p><span class="math">U = P \cdot \frac{m_1 \cdot m_2}{ \lvert p_1 - p_2\rvert}</span></p>
+</div><p>where <span class="math">m_i</span> is the mass of the <cite>i</cite> th particle, <span class="math">p_i</span> its position and <cite>P</cite> a prefactor.</p>
 <dl class="function">
 <dt id="espressopp.interaction.GravityTruncated.espressopp.interaction.GravityTruncated">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">GravityTruncated</code><span class="sig-paren">(</span><em>prefactor</em>, <em>cutoff</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.GravityTruncated.espressopp.interaction.GravityTruncated" title="Permalink to this definition">¶</a></dt>

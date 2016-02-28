@@ -81,6 +81,7 @@
 </ul>
 <ul>
 	<li><a href="doxygen/index.html">Doxygen</a></li>
+	<li><a href="ESPResSo++.pdf">PDF manual</a></li>
 	<li><a href="http://www.espresso-pp.de/Impressum.html">Impressum</a></li>
 </ul>
 <div id="searchbox" style="display: none" role="search">
@@ -104,71 +105,13 @@
 <h1><strong>espressopp.interaction.ReactionFieldGeneralized</strong><a class="headerlink" href="#espressopp-interaction-reactionfieldgeneralized" title="Permalink to this headline">¶</a></h1>
 <p>This class provides methods to compute forces and energies of
 the generalized reaction field.</p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">U = PQ\left(
+<div class="math">
+<p><span class="math">U = PQ\left(
 \frac{1}{d} 
 - \frac{\left(1 + \frac{(\varepsilon_1 - 4 \varepsilon_2)(1 + \kappa r_c) - 2 \varepsilon_2  \kappa {r_c}^2}
 {(\varepsilon_1 + 2 \varepsilon_2)(1 + \kappa r_c) + \varepsilon_2  \kappa {r_c}^2}\right)}{r_c^3 2}
-\cdot d^2 -  \frac{3 \varepsilon_2}{r_c(2 \varepsilon_2 + 1)}\right)
-
-</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
-<p>where <cite>P</cite> is a prefactor, <cite>Q</cite> is the product of the charges of the two particles, <cite>d</cite> is their distance from each other, and <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">r_c</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
- the cutoff-radius.</p>
+\cdot d^2 -  \frac{3 \varepsilon_2}{r_c(2 \varepsilon_2 + 1)}\right)</span></p>
+</div><p>where <cite>P</cite> is a prefactor, <cite>Q</cite> is the product of the charges of the two particles, <cite>d</cite> is their distance from each other, and <span class="math">r_c</span> the cutoff-radius.</p>
 <dl class="function">
 <dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.ReactionFieldGeneralized">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">ReactionFieldGeneralized</code><span class="sig-paren">(</span><em>prefactor</em>, <em>kappa</em>, <em>epsilon1</em>, <em>epsilon2</em>, <em>cutoff</em>, <em>shift</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.ReactionFieldGeneralized" title="Permalink to this definition">¶</a></dt>

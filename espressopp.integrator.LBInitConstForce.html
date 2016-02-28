@@ -81,6 +81,7 @@
 </ul>
 <ul>
 	<li><a href="doxygen/index.html">Doxygen</a></li>
+	<li><a href="ESPResSo++.pdf">PDF manual</a></li>
 	<li><a href="http://www.espresso-pp.de/Impressum.html">Impressum</a></li>
 </ul>
 <div id="searchbox" style="display: none" role="search">
@@ -104,71 +105,13 @@
 <h1><strong>LBInitConstForce</strong> - handles constant (gravity-like) external force<a class="headerlink" href="#lbinitconstforce-handles-constant-gravity-like-external-force" title="Permalink to this headline">¶</a></h1>
 <p>This class sets or adds a constant (gravity-like) external force to the LB-fluid. At first, one has to create an instance. Only after it one may set or add this force to the system.</p>
 <blockquote>
-<div><p>Example to set the extenal force to <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">(0., 0., 0.0005)</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
-:</p>
+<div><p>Example to set the extenal force to <span class="math">(0., 0., 0.0005)</span>:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce1</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce1</span><span class="o">.</span><span class="n">setForce</span><span class="p">(</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.0005</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># a vector sets the external body force directly in lb-units</span>
 </pre></div>
 </div>
-<p>Example to add an extenal force of <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">(0.0001, 0., 0.)</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
- to the existing forces:</p>
+<p>Example to add an extenal force of <span class="math">(0.0001, 0., 0.)</span> to the existing forces:</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce2</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce2</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">0.0001</span><span class="p">,</span><span class="mf">0.</span><span class="p">,</span><span class="mf">0.</span><span class="p">))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># a vector sets the external body force directly in lb-units</span>

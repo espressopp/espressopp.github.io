@@ -81,6 +81,7 @@
 </ul>
 <ul>
 	<li><a href="doxygen/index.html">Doxygen</a></li>
+	<li><a href="ESPResSo++.pdf">PDF manual</a></li>
 	<li><a href="http://www.espresso-pp.de/Impressum.html">Impressum</a></li>
 </ul>
 <div id="searchbox" style="display: none" role="search">
@@ -104,67 +105,9 @@
 <h1><strong>espressopp.interaction.StillingerWeberPairTerm</strong><a class="headerlink" href="#espressopp-interaction-stillingerweberpairterm" title="Permalink to this headline">¶</a></h1>
 <p>This class provides methods to compute forces and energies of
 2 body term of Stillinger-Weber potential.</p>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">U = \varepsilon A  \left[ {\frac{d}{\sigma}}^{-p} (B  - 1 )\right] exp\left(\frac{1}{\frac{d}{\sigma} - r_c}\right)
-
-</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
-<p>where <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">r_c</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
- is the cutoff-radius.</p>
+<div class="math">
+<p><span class="math">U = \varepsilon A  \left[ {\frac{d}{\sigma}}^{-p} (B  - 1 )\right] exp\left(\frac{1}{\frac{d}{\sigma} - r_c}\right)</span></p>
+</div><p>where <span class="math">r_c</span> is the cutoff-radius.</p>
 <dl class="function">
 <dt id="espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.StillingerWeberPairTerm">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">StillingerWeberPairTerm</code><span class="sig-paren">(</span><em>A</em>, <em>B</em>, <em>p</em>, <em>q</em>, <em>epsilon</em>, <em>sigma</em>, <em>cutoff</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.StillingerWeberPairTerm.espressopp.interaction.StillingerWeberPairTerm" title="Permalink to this definition">¶</a></dt>

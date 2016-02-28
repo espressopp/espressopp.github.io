@@ -81,6 +81,7 @@
 </ul>
 <ul>
 	<li><a href="doxygen/index.html">Doxygen</a></li>
+	<li><a href="ESPResSo++.pdf">PDF manual</a></li>
 	<li><a href="http://www.espresso-pp.de/Impressum.html">Impressum</a></li>
 </ul>
 <div id="searchbox" style="display: none" role="search">
@@ -102,44 +103,15 @@
 	    
   <span class="target" id="module-espressopp.interaction.CoulombRSpace"></span><div class="section" id="coulombrspace-coulomb-potential-and-interaction-objects-r-space-part">
 <h1><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)<a class="headerlink" href="#coulombrspace-coulomb-potential-and-interaction-objects-r-space-part" title="Permalink to this headline">¶</a></h1>
-<div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">\sum^{N}_{i=1}
+<div class="math">
+<p><span class="math">\sum^{N}_{i=1}
 \sum_{j&gt;i \atop r_{ij}&lt;k_{max}}
 \frac{q_{i}q_{j}}{r_{ij}}
 erfc(\alpha r_{ij})
 - \frac{\alpha}{\sqrt{\pi}}
 \sum^{N}_{i=1}
-q_{i}^2
-
-</tt>)</p>
-latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</div>
-<p>This is the <cite>R</cite> space part of potential of Coulomb long range interaction according to the Ewald
+q_{i}^2</span></p>
+</div><p>This is the <cite>R</cite> space part of potential of Coulomb long range interaction according to the Ewald
 summation technique. Good explanation of Ewald summation could be found here <a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html#allen89" id="id1">[Allen89]</a>,
 <a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html#deserno98" id="id2">[Deserno98]</a>.</p>
 <p>Example:</p>
@@ -165,37 +137,7 @@ summation technique. Good explanation of Ewald summation could be found here <a 
 <p>The property &#8216;prefactor&#8217; defines the Coulomb prefactor.</p>
 </li>
 <li><p class="first"><em>coulombR_pot.alpha</em></p>
-<p>The property &#8216;alpha&#8217; defines the Ewald parameter <div class="system-message">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">\\alpha</tt>)</p>
-<p>latex exited with error
-[stdout]
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian)
-entering extended mode
-(./math.tex
-LaTeX2e &lt;2009/09/24&gt;
-Babel &lt;v3.8l&gt; and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, loaded.
-(/usr/share/texmf-texlive/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/share/texmf-texlive/tex/latex/base/size12.clo))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
-
-! LaTeX Error: File `utf8x.def&#8217; not found.
-
-Type X to quit or &lt;RETURN&gt; to proceed,
-or enter new name. (Default extension: def)
-
-Enter file name: 
-! Emergency stop.
-&lt;read *&gt; 
-         
-l.131 \endinput
-               ^^M
-No pages of output.
-Transcript written on math.log.
-</p>
-</div>
-.</p>
+<p>The property &#8216;alpha&#8217; defines the Ewald parameter <span class="math">\\alpha</span>.</p>
 </li>
 <li><p class="first"><em>coulombR_pot.cutoff</em></p>
 <p>The property &#8216;cutoff&#8217; defines the cutoff in R space.</p>
