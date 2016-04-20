@@ -113,7 +113,7 @@ the formula:</p>
 </div><p>where <span class="math">\Delta t</span> - integration timestep, <span class="math">\tau</span> - time parameter (coupling parameter),
 <span class="math">P_{0}</span> - external pressure and <span class="math">P</span> - instantaneous pressure.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostatAnisotropic</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostatAnisotropic</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">0.1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="mf">1.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsenP</span><span class="p">)</span>
@@ -124,7 +124,7 @@ the formula:</p>
 <p>Definition:</p>
 <blockquote>
 <div><p>In order to define the Berendsen barostat</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostatAnisotropic</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostatAnisotropic</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>one should have the <a class="reference external" href="espressopp.System.html">System</a> defined.</p>
@@ -140,13 +140,13 @@ the formula:</p>
 </ul>
 <p>Setting the integration property:</p>
 <blockquote>
-<div><div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsenP</span><span class="p">)</span>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsenP</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>It will define Berendsen barostat as a property of integrator.</p>
 </div></blockquote>
 <p>One more example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_barostat</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostatAnisotropic</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_barostat</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostatAnisotropic</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_barostat</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">10.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_barostat</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="mf">3.5</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsen_barostat</span><span class="p">)</span>
@@ -157,7 +157,7 @@ the formula:</p>
 <div><blockquote>
 <div><p>If one do not need the pressure regulation in system anymore or need to switch
 the ensamble or whatever :)</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># define barostat with parameters</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># define barostat with parameters</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenBarostatAnisotropic</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">0.8</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="mf">15.0</span>
@@ -172,7 +172,7 @@ the ensamble or whatever :)</p>
 </div>
 </div></blockquote>
 <p>Connecting the barostat back after the disconnection</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -201,7 +201,7 @@ the ensamble or whatever :)</p>
       &copy;2013-2016, Max Planck Institute for Polymer Research.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |

@@ -111,7 +111,7 @@ direction. <span class="math">V(r)=0</span> after a distance <cite>sigmaCutoff</
 <p>The parameters have to be defined for every species present in the system with
 <cite>setParams</cite> and can be retrieved with <cite>getParams</cite>.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">LJ93</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">LennardJones93Wall</span><span class="p">()</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">LJ93</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">LennardJones93Wall</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">LJ93</span><span class="o">.</span><span class="n">setParams</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">6.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">,</span> <span class="n">wall_cutoff</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">SPLJ93</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">SingleParticleLennardJones93Wall</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">LJ93</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">SPLJ93</span><span class="p">)</span>
@@ -205,7 +205,7 @@ direction. <span class="math">V(r)=0</span> after a distance <cite>sigmaCutoff</
       &copy;2013-2016, Max Planck Institute for Polymer Research.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.1</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
