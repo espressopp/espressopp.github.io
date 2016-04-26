@@ -26,7 +26,7 @@
     <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
     <link rel="up" title="interaction" href="interaction.html" />
-    <link rel="next" title="espressopp.interaction.DihedralHarmonicCos" href="espressopp.interaction.DihedralHarmonicCos.html" />
+    <link rel="next" title="espressopp.interaction.CoulombTruncatedUniqueCharge" href="espressopp.interaction.CoulombTruncatedUniqueCharge.html" />
     <link rel="prev" title="CoulombKSpaceP3M - Coulomb potential and interaction Objects (K space part)" href="espressopp.interaction.CoulombKSpaceP3M.html" />
    
   
@@ -104,10 +104,9 @@
   <span class="target" id="module-espressopp.interaction.CoulombTruncated"></span><div class="section" id="espressopp-interaction-coulombtruncated">
 <h1><strong>espressopp.interaction.CoulombTruncated</strong><a class="headerlink" href="#espressopp-interaction-coulombtruncated" title="Permalink to this headline">¶</a></h1>
 <div class="math">
-<p><span class="math">U = k</span></p>
-</div><p>rac{q_iq_j}{d_{ij}}</p>
-<p>where <cite>k</cite> is the user-supplied prefactor, <cite>q_i</cite> is the charge of particle <cite>i</cite>, and <cite>d_{ij}</cite> is interparticle distance</p>
-<p>In this interaction potential, a different charge can be associated with each particle. For a truncated Coulomb interaction potential where only one <cite>q_iq_j</cite> value is specified for all interactions, see CoulombTruncatedUniqueCharge.</p>
+<p><span class="math">U = k\frac{q_iq_j}{d_{ij}}</span></p>
+</div><p>where <span class="math">k</span> is the user-supplied prefactor, <span class="math">q_i</span> is the charge of particle <cite>i</cite>, and <span class="math">d_{ij}</span> is interparticle distance</p>
+<p>In this interaction potential, a different charge can be associated with each particle. For a truncated Coulomb interaction potential where only one <span class="math">q_iq_j</span> value is specified for all interactions, see CoulombTruncatedUniqueCharge.</p>
 <dl class="function">
 <dt id="espressopp.interaction.CoulombTruncated.espressopppp.interaction.CoulombTruncated">
 <code class="descclassname">espressopppp.interaction.</code><code class="descname">CoulombTruncated</code><span class="sig-paren">(</span><em>prefactor</em>, <em>cutoff</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.espressopppp.interaction.CoulombTruncated" title="Permalink to this definition">¶</a></dt>
@@ -116,8 +115,8 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>prefactor</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
-<li><strong>cutoff</strong> (<em>real</em>) &#8211; (default: infinity)</li>
+<li><strong>prefactor</strong> (<em>real</em>) &#8211; (default: 1.0) user-supplied prefactor <cite>k</cite></li>
+<li><strong>cutoff</strong> (<em>real</em>) &#8211; (default: infinity) user-supplied interaction cutoff</li>
 </ul>
 </td>
 </tr>
@@ -132,7 +131,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> (<a class="reference internal" href="espressopp.VerletList.html#espressopp.VerletList.espressopp.VerletList" title="espressopp.VerletList.espressopp.VerletList"><em>VerletList</em></a>) &#8211; verlet list object defined earlier in python script</td>
 </tr>
 </tbody>
 </table>
@@ -146,8 +145,8 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> &#8211; </li>
-<li><strong>type2</strong> &#8211; </li>
+<li><strong>type1</strong> (<em>integer</em>) &#8211; type of first atom in pair</li>
+<li><strong>type2</strong> (<em>integer</em>) &#8211; type of second atom in pair</li>
 </ul>
 </td>
 </tr>
@@ -163,9 +162,9 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> &#8211; </li>
-<li><strong>type2</strong> &#8211; </li>
-<li><strong>potential</strong> &#8211; </li>
+<li><strong>type1</strong> (<em>integer</em>) &#8211; type of first atom in pair</li>
+<li><strong>type2</strong> (<em>integer</em>) &#8211; type of second atom in pair</li>
+<li><strong>potential</strong> (<em>CoulombTruncated potential</em>) &#8211; potential object defined earlier in python script</li>
 </ul>
 </td>
 </tr>
@@ -175,14 +174,14 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.CoulombTruncated.espressopppp.interaction.FixedPairListTypesCoulombTruncated">
-<code class="descclassname">espressopppp.interaction.</code><code class="descname">FixedPairListTypesCoulombTruncated</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.espressopppp.interaction.FixedPairListTypesCoulombTruncated" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopppp.interaction.</code><code class="descname">FixedPairListTypesCoulombTruncated</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.espressopppp.interaction.FixedPairListTypesCoulombTruncated" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> &#8211; </li>
-<li><strong>vl</strong> &#8211; </li>
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.check.System.html#module-espressopp.check.System" title="espressopp.check.System"><em>System</em></a>) &#8211; system object defined earlier in the python script</li>
+<li><strong>vl</strong> (<a class="reference internal" href="espressopp.FixedPairList.html#espressopp.FixedPairList.espressopp.FixedPairList" title="espressopp.FixedPairList.espressopp.FixedPairList"><em>FixedPairList</em></a>) &#8211; fixedpairlist object defined earlier in the python script</li>
 </ul>
 </td>
 </tr>
@@ -198,9 +197,9 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>potential</strong> &#8211; </li>
-<li><strong>type1</strong> &#8211; </li>
-<li><strong>type2</strong> &#8211; </li>
+<li><strong>type1</strong> (<em>integer</em>) &#8211; type of first atom in pair</li>
+<li><strong>type2</strong> (<em>integer</em>) &#8211; type of second atom in pair</li>
+<li><strong>potential</strong> (<em>CoulombTruncated potential</em>) &#8211; potential object defined earlier in python script</li>
 </ul>
 </td>
 </tr>
@@ -208,28 +207,21 @@
 </table>
 </dd></dl>
 
+<p>#Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pref</span> <span class="o">=</span> <span class="mf">138.935485</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rc</span> <span class="o">=</span> <span class="mf">1.2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fixedpairlist</span> <span class="o">=</span> <span class="n">espresso</span><span class="o">.</span><span class="n">FixedPairList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fixedpairlist</span><span class="o">.</span><span class="n">addBonds</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">CoulombTruncated</span><span class="p">(</span><span class="n">prefactor</span><span class="o">=</span><span class="n">pref</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">interaction</span><span class="o">=</span><span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">FixedPairListTypesCoulombTruncated</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">fixedpairlist</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">interaction</span><span class="o">.</span><span class="n">setPotential</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">potential</span><span class="o">=</span><span class="n">pot</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">interaction</span><span class="p">)</span>
+</pre></div>
+</div>
 <dl class="class">
 <dt id="espressopp.interaction.CoulombTruncated.CoulombTruncated">
 <em class="property">class </em><code class="descclassname">espressopp.interaction.CoulombTruncated.</code><code class="descname">CoulombTruncated</code><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.CoulombTruncated" title="Permalink to this definition">¶</a></dt>
 <dd><p>The CoulombTruncated potential.</p>
-</dd></dl>
-
-<dl class="class">
-<dt id="espressopp.interaction.CoulombTruncated.CoulombTruncatedLocal">
-<em class="property">class </em><code class="descclassname">espressopp.interaction.CoulombTruncated.</code><code class="descname">CoulombTruncatedLocal</code><span class="sig-paren">(</span><em>prefactor=1.0</em>, <em>cutoff=inf</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.CoulombTruncatedLocal" title="Permalink to this definition">¶</a></dt>
-<dd><p>The (local) CoulombTruncated potential.</p>
-</dd></dl>
-
-<dl class="class">
-<dt id="espressopp.interaction.CoulombTruncated.FixedPairListTypesCoulombTruncatedLocal">
-<em class="property">class </em><code class="descclassname">espressopp.interaction.CoulombTruncated.</code><code class="descname">FixedPairListTypesCoulombTruncatedLocal</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.FixedPairListTypesCoulombTruncatedLocal" title="Permalink to this definition">¶</a></dt>
-<dd><p>The (local) CoulombTruncated interaction using FixedPair lists with types.</p>
-</dd></dl>
-
-<dl class="class">
-<dt id="espressopp.interaction.CoulombTruncated.VerletListCoulombTruncatedLocal">
-<em class="property">class </em><code class="descclassname">espressopp.interaction.CoulombTruncated.</code><code class="descname">VerletListCoulombTruncatedLocal</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.VerletListCoulombTruncatedLocal" title="Permalink to this definition">¶</a></dt>
-<dd><p>The (local) CoulombTruncated interaction using Verlet lists.</p>
 </dd></dl>
 
 </div>
