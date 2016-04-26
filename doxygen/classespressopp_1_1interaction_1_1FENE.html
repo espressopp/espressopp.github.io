@@ -60,9 +60,6 @@
 </div><!--header-->
 <div class="contents">
 
-<p>This class provides methods to compute forces and energies of the <a class="el" href="classespressopp_1_1interaction_1_1FENE.html" title="This class provides methods to compute forces and energies of the FENE potential.">FENE</a> potential.  
- <a href="classespressopp_1_1interaction_1_1FENE.html#details">More...</a></p>
-
 <p><code>#include &lt;<a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for espressopp::interaction::FENE:</div>
@@ -87,6 +84,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4ea561f337626b6a474e0688ebac2182"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5934df0ad00ef071dc79b8ab902255f5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1FENE.html#a5934df0ad00ef071dc79b8ab902255f5">FENE</a> (<a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> _K, <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> _r0, <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> _rMax, <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> _cutoff)</td></tr>
 <tr class="separator:a5934df0ad00ef071dc79b8ab902255f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3bbc7f4352e0bf36a7ae6e25ad0fce29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1FENE.html#a3bbc7f4352e0bf36a7ae6e25ad0fce29">preset</a> ()</td></tr>
+<tr class="separator:a3bbc7f4352e0bf36a7ae6e25ad0fce29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e2afa730cebc5272fc6e17ff92b173f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1FENE.html#a0e2afa730cebc5272fc6e17ff92b173f">setK</a> (<a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> _K)</td></tr>
 <tr class="separator:a0e2afa730cebc5272fc6e17ff92b173f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc3d637b0abc17039c9ba05cae38b84b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1FENE.html#abc3d637b0abc17039c9ba05cae38b84b">getK</a> () const </td></tr>
@@ -177,14 +176,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a0eff79db35c6a3c11a10bd9561b173b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d7ab1a6afd4fb45db00b3b1f98a1744"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1FENE.html#a4d7ab1a6afd4fb45db00b3b1f98a1744">rMax</a></td></tr>
 <tr class="separator:a4d7ab1a6afd4fb45db00b3b1f98a1744"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaff521c710d16c71d0c24314b0e0e862"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1FENE.html#aaff521c710d16c71d0c24314b0e0e862">rMaxSqr</a></td></tr>
+<tr class="separator:aaff521c710d16c71d0c24314b0e0e862"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This class provides methods to compute forces and energies of the <a class="el" href="classespressopp_1_1interaction_1_1FENE.html" title="This class provides methods to compute forces and energies of the FENE potential.">FENE</a> potential. </p>
-<p class="formulaDsp">
-<img class="formulaDsp" alt="\[ V(r) = -\frac{1}{2} \Delta r_{max}^2 K \log \left[ 1 - \left(\frac{r-r_0}{\Delta r_{max}} \right)^2 \right] \]" src="form_10.png"/>
-</p>
- 
-<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00040">40</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
+<div class="textblock">
+<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00034">34</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a06ee39da36780e81d1c5a6aad5cf2f72"></a>
 <div class="memitem">
@@ -207,9 +204,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00048">48</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
+<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00043">43</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>References <a class="el" href="esconfig_8hpp_source.html#l00039">espressopp::infinity</a>, <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a508cef6bf6ed8fdf7e008d36243ada5b">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::setCutoff()</a>, and <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a863fb31b1748db3436b9c558fe924b9e">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::setShift()</a>.</p>
+<p>References <a class="el" href="esconfig_8hpp_source.html#l00039">espressopp::infinity</a>, <a class="el" href="FENE_8hpp_source.html#l00066">preset()</a>, <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a508cef6bf6ed8fdf7e008d36243ada5b">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::setCutoff()</a>, and <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a863fb31b1748db3436b9c558fe924b9e">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::setShift()</a>.</p>
 
 </div>
 </div>
@@ -263,9 +260,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00054">54</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
+<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00050">50</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>References <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a508cef6bf6ed8fdf7e008d36243ada5b">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::setCutoff()</a>, and <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a863fb31b1748db3436b9c558fe924b9e">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::setShift()</a>.</p>
+<p>References <a class="el" href="FENE_8hpp_source.html#l00066">preset()</a>, <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a508cef6bf6ed8fdf7e008d36243ada5b">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::setCutoff()</a>, and <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a863fb31b1748db3436b9c558fe924b9e">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::setShift()</a>.</p>
 
 </div>
 </div>
@@ -313,9 +310,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00061">61</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
+<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00058">58</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>References <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::autoShift</a>, <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#abd6027dc5071e03c60df7955a38555cd">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::setAutoShift()</a>, and <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a508cef6bf6ed8fdf7e008d36243ada5b">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::setCutoff()</a>.</p>
+<p>References <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::autoShift</a>, <a class="el" href="FENE_8hpp_source.html#l00066">preset()</a>, <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#abd6027dc5071e03c60df7955a38555cd">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::setAutoShift()</a>, and <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a508cef6bf6ed8fdf7e008d36243ada5b">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::setCutoff()</a>.</p>
 
 </div>
 </div>
@@ -488,9 +485,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00088">88</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
+<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00089">89</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>References <a class="el" href="FENE_8hpp_source.html#l00042">K</a>, <a class="el" href="FENE_8hpp_source.html#l00043">r0</a>, and <a class="el" href="FENE_8hpp_source.html#l00044">rMax</a>.</p>
+<p>References <a class="el" href="FENE_8hpp_source.html#l00036">K</a>, <a class="el" href="FENE_8hpp_source.html#l00037">r0</a>, <a class="el" href="FENE_8hpp_source.html#l00038">rMax</a>, and <a class="el" href="FENE_8hpp_source.html#l00039">rMaxSqr</a>.</p>
 
 </div>
 </div>
@@ -652,9 +649,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00094">94</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
+<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00095">95</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>References <a class="el" href="FENE_8hpp_source.html#l00042">K</a>, <a class="el" href="FENE_8hpp_source.html#l00043">r0</a>, and <a class="el" href="FENE_8hpp_source.html#l00044">rMax</a>.</p>
+<p>References <a class="el" href="FENE_8hpp_source.html#l00036">K</a>, <a class="el" href="FENE_8hpp_source.html#l00037">r0</a>, <a class="el" href="FENE_8hpp_source.html#l00039">rMaxSqr</a>, and <a class="el" href="esconfig_8hpp_source.html#l00040">espressopp::ROUND_ERROR_PREC</a>.</p>
 
 </div>
 </div>
@@ -932,7 +929,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00074">74</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>References <a class="el" href="FENE_8hpp_source.html#l00042">K</a>.</p>
+<p>References <a class="el" href="FENE_8hpp_source.html#l00036">K</a>.</p>
 
 <p>Referenced by <a class="el" href="FENE_8cpp_source.html#l00035">registerPython()</a>.</p>
 
@@ -961,7 +958,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00080">80</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>References <a class="el" href="FENE_8hpp_source.html#l00043">r0</a>.</p>
+<p>References <a class="el" href="FENE_8hpp_source.html#l00037">r0</a>.</p>
 
 <p>Referenced by <a class="el" href="FENE_8cpp_source.html#l00035">registerPython()</a>.</p>
 
@@ -988,9 +985,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00086">86</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
+<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00087">87</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>References <a class="el" href="FENE_8hpp_source.html#l00044">rMax</a>.</p>
+<p>References <a class="el" href="FENE_8hpp_source.html#l00038">rMax</a>.</p>
 
 <p>Referenced by <a class="el" href="FENE_8cpp_source.html#l00035">registerPython()</a>.</p>
 
@@ -1045,6 +1042,35 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3bbc7f4352e0bf36a7ae6e25ad0fce29"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void espressopp::interaction::FENE::preset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00066">66</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
+
+<p>References <a class="el" href="FENE_8hpp_source.html#l00038">rMax</a>, and <a class="el" href="FENE_8hpp_source.html#l00039">rMaxSqr</a>.</p>
+
+<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00043">FENE()</a>, and <a class="el" href="FENE_8hpp_source.html#l00082">setRMax()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ae0247724789099d0424a5a1012af19f4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1068,7 +1094,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FENE_8cpp_source.html#l00035">35</a> of file <a class="el" href="FENE_8cpp_source.html">FENE.cpp</a>.</p>
 
-<p>References <a class="el" href="FENE_8hpp_source.html#l00074">getK()</a>, <a class="el" href="FENE_8hpp_source.html#l00080">getR0()</a>, <a class="el" href="FENE_8hpp_source.html#l00086">getRMax()</a>, <a class="el" href="FENE_8hpp_source.html#l00070">setK()</a>, <a class="el" href="FENE_8hpp_source.html#l00076">setR0()</a>, and <a class="el" href="FENE_8hpp_source.html#l00082">setRMax()</a>.</p>
+<p>References <a class="el" href="FENE_8hpp_source.html#l00074">getK()</a>, <a class="el" href="FENE_8hpp_source.html#l00080">getR0()</a>, <a class="el" href="FENE_8hpp_source.html#l00087">getRMax()</a>, <a class="el" href="FENE_8hpp_source.html#l00070">setK()</a>, <a class="el" href="FENE_8hpp_source.html#l00076">setR0()</a>, and <a class="el" href="FENE_8hpp_source.html#l00082">setRMax()</a>.</p>
 
 <p>Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00087">espressopp::interaction::registerPython()</a>.</p>
 
@@ -1097,7 +1123,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#ac9cfbeb28f1a5e6100fb6b58950cbf45">espressopp::interaction::Potential</a>.</p>
 
-<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00061">FENE()</a>.</p>
+<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00058">FENE()</a>.</p>
 
 </div>
 </div>
@@ -1125,7 +1151,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#afeef99f0ae3e765ca9c050296b448d8f">espressopp::interaction::Potential</a>.</p>
 
-<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00048">FENE()</a>.</p>
+<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00043">FENE()</a>.</p>
 
 </div>
 </div>
@@ -1153,7 +1179,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00070">70</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>References <a class="el" href="FENE_8hpp_source.html#l00042">K</a>, and <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#af95a23db6d043d8636de987c53c8fddf">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::updateAutoShift()</a>.</p>
+<p>References <a class="el" href="FENE_8hpp_source.html#l00036">K</a>, and <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#af95a23db6d043d8636de987c53c8fddf">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::updateAutoShift()</a>.</p>
 
 <p>Referenced by <a class="el" href="FENE_8cpp_source.html#l00035">registerPython()</a>.</p>
 
@@ -1183,7 +1209,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00076">76</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>References <a class="el" href="FENE_8hpp_source.html#l00043">r0</a>, and <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#af95a23db6d043d8636de987c53c8fddf">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::updateAutoShift()</a>.</p>
+<p>References <a class="el" href="FENE_8hpp_source.html#l00037">r0</a>, and <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#af95a23db6d043d8636de987c53c8fddf">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::updateAutoShift()</a>.</p>
 
 <p>Referenced by <a class="el" href="FENE_8cpp_source.html#l00035">registerPython()</a>.</p>
 
@@ -1213,7 +1239,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00082">82</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>References <a class="el" href="FENE_8hpp_source.html#l00044">rMax</a>, and <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#af95a23db6d043d8636de987c53c8fddf">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::updateAutoShift()</a>.</p>
+<p>References <a class="el" href="FENE_8hpp_source.html#l00066">preset()</a>, <a class="el" href="FENE_8hpp_source.html#l00038">rMax</a>, and <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#af95a23db6d043d8636de987c53c8fddf">espressopp::interaction::PotentialTemplate&lt; FENE &gt;::updateAutoShift()</a>.</p>
 
 <p>Referenced by <a class="el" href="FENE_8cpp_source.html#l00035">registerPython()</a>.</p>
 
@@ -1243,7 +1269,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a911943a63896c0ee02ba0dee54a03b33">espressopp::interaction::Potential</a>.</p>
 
-<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00048">FENE()</a>.</p>
+<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00043">FENE()</a>.</p>
 
 </div>
 </div>
@@ -1293,7 +1319,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00119">119</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00061">FENE()</a>.</p>
+<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00058">FENE()</a>.</p>
 
 </div>
 </div>
@@ -1359,9 +1385,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00042">42</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
+<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00036">36</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00088">_computeEnergySqrRaw()</a>, <a class="el" href="FENE_8hpp_source.html#l00094">_computeForceRaw()</a>, <a class="el" href="FENE_8hpp_source.html#l00074">getK()</a>, and <a class="el" href="FENE_8hpp_source.html#l00070">setK()</a>.</p>
+<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00089">_computeEnergySqrRaw()</a>, <a class="el" href="FENE_8hpp_source.html#l00095">_computeForceRaw()</a>, <a class="el" href="FENE_8hpp_source.html#l00074">getK()</a>, and <a class="el" href="FENE_8hpp_source.html#l00070">setK()</a>.</p>
 
 </div>
 </div>
@@ -1383,9 +1409,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00043">43</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
+<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00037">37</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00088">_computeEnergySqrRaw()</a>, <a class="el" href="FENE_8hpp_source.html#l00094">_computeForceRaw()</a>, <a class="el" href="FENE_8hpp_source.html#l00080">getR0()</a>, and <a class="el" href="FENE_8hpp_source.html#l00076">setR0()</a>.</p>
+<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00089">_computeEnergySqrRaw()</a>, <a class="el" href="FENE_8hpp_source.html#l00095">_computeForceRaw()</a>, <a class="el" href="FENE_8hpp_source.html#l00080">getR0()</a>, and <a class="el" href="FENE_8hpp_source.html#l00076">setR0()</a>.</p>
 
 </div>
 </div>
@@ -1407,9 +1433,33 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00044">44</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
+<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00038">38</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00088">_computeEnergySqrRaw()</a>, <a class="el" href="FENE_8hpp_source.html#l00094">_computeForceRaw()</a>, <a class="el" href="FENE_8hpp_source.html#l00086">getRMax()</a>, and <a class="el" href="FENE_8hpp_source.html#l00082">setRMax()</a>.</p>
+<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00089">_computeEnergySqrRaw()</a>, <a class="el" href="FENE_8hpp_source.html#l00087">getRMax()</a>, <a class="el" href="FENE_8hpp_source.html#l00066">preset()</a>, and <a class="el" href="FENE_8hpp_source.html#l00082">setRMax()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaff521c710d16c71d0c24314b0e0e862"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> espressopp::interaction::FENE::rMaxSqr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="FENE_8hpp_source.html#l00039">39</a> of file <a class="el" href="FENE_8hpp_source.html">FENE.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="FENE_8hpp_source.html#l00089">_computeEnergySqrRaw()</a>, <a class="el" href="FENE_8hpp_source.html#l00095">_computeForceRaw()</a>, and <a class="el" href="FENE_8hpp_source.html#l00066">preset()</a>.</p>
 
 </div>
 </div>
@@ -1442,7 +1492,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 26 2016 15:00:53 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Apr 26 2016 16:39:31 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

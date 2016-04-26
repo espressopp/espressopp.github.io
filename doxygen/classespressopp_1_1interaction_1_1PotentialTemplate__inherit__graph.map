@@ -40,7 +40,7 @@
 <area shape="rect" id="node43" href="$classespressopp_1_1interaction_1_1Harmonic.html" title="espressopp::interaction\l::Harmonic" alt="" coords="988,778,1145,825"/>
 <area shape="rect" id="node47" href="$classespressopp_1_1interaction_1_1Tabulated.html" title="This class provides methods to compute forces and energies of a tabulated potential." alt="" coords="988,847,1145,894"/>
 <area shape="rect" id="node51" href="$classespressopp_1_1interaction_1_1FENECapped.html" title="This class provides methods to compute forces and energies of the FENECapped potential." alt="" coords="988,917,1145,963"/>
-<area shape="rect" id="node55" href="$classespressopp_1_1interaction_1_1FENE.html" title="This class provides methods to compute forces and energies of the FENE potential." alt="" coords="988,986,1145,1033"/>
+<area shape="rect" id="node55" href="$classespressopp_1_1interaction_1_1FENE.html" title="espressopp::interaction\l::FENE" alt="" coords="988,986,1145,1033"/>
 <area shape="rect" id="node59" href="$classespressopp_1_1interaction_1_1VSphereSelf.html" title="This class provides methods to compute forces and energies of the VSphereSelf potential." alt="" coords="988,1065,1145,1111"/>
 <area shape="rect" id="node63" href="$classespressopp_1_1interaction_1_1LJcos.html" title="This class provides methods to compute forces and energies of the modified Lennard Jones potential..." alt="" coords="988,1143,1145,1190"/>
 <area shape="rect" id="node67" href="$classespressopp_1_1interaction_1_1LennardJonesExpand.html" title="espressopp::interaction\l::LennardJonesExpand" alt="" coords="988,1222,1145,1269"/>

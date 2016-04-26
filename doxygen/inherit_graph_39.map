@@ -34,7 +34,7 @@
 <area shape="rect" id="node15" href="$classespressopp_1_1interaction_1_1CoulombRSpace.html" title="espressopp::interaction\l::CoulombRSpace" alt="" coords="532,259,689,306"/>
 <area shape="rect" id="node19" href="$classespressopp_1_1interaction_1_1CoulombTruncated.html" title="espressopp::interaction\l::CoulombTruncated" alt="" coords="532,347,689,394"/>
 <area shape="rect" id="node23" href="$classespressopp_1_1interaction_1_1CoulombTruncatedUniqueCharge.html" title="espressopp::interaction\l::CoulombTruncatedUniqueCharge" alt="" coords="500,435,721,482"/>
-<area shape="rect" id="node27" href="$classespressopp_1_1interaction_1_1FENE.html" title="This class provides methods to compute forces and energies of the FENE potential." alt="" coords="532,514,689,561"/>
+<area shape="rect" id="node27" href="$classespressopp_1_1interaction_1_1FENE.html" title="espressopp::interaction\l::FENE" alt="" coords="532,514,689,561"/>
 <area shape="rect" id="node31" href="$classespressopp_1_1interaction_1_1FENECapped.html" title="This class provides methods to compute forces and energies of the FENECapped potential." alt="" coords="532,583,689,630"/>
 <area shape="rect" id="node35" href="$classespressopp_1_1interaction_1_1GravityTruncated.html" title="espressopp::interaction\l::GravityTruncated" alt="" coords="532,662,689,709"/>
 <area shape="rect" id="node39" href="$classespressopp_1_1interaction_1_1Harmonic.html" title="espressopp::interaction\l::Harmonic" alt="" coords="532,741,689,787"/>
