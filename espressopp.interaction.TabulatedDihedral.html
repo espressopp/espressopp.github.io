@@ -111,11 +111,10 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>itype</strong> &#8211; </li>
-<li><strong>filename</strong> &#8211; </li>
-</ul>
-</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>itype</strong> &#8211; The interpolation type: 1 - linear, 2 - akima spline, 3 - cubic spline
+:param filename: The tabulated potential filename.
+:type itype: int
+:type filename: str</td>
 </tr>
 </tbody>
 </table>
@@ -123,15 +122,15 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.TabulatedDihedral.espressopp.interaction.FixedQuadrupleListTabulatedDihedral">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedQuadrupleListTabulatedDihedral</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedDihedral.espressopp.interaction.FixedQuadrupleListTabulatedDihedral" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedQuadrupleListTabulatedDihedral</code><span class="sig-paren">(</span><em>system</em>, <em>fql</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedDihedral.espressopp.interaction.FixedQuadrupleListTabulatedDihedral" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> &#8211; </li>
-<li><strong>vl</strong> &#8211; </li>
-<li><strong>potential</strong> &#8211; </li>
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; The Espresso++ system object.</li>
+<li><strong>fql</strong> (<a class="reference internal" href="espressopp.FixedQuadrupleList.html#module-espressopp.FixedQuadrupleList" title="espressopp.FixedQuadrupleList"><em>espressopp.FixedQuadrupleList</em></a>) &#8211; The FixedQuadrupleList.</li>
+<li><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) &#8211; The potential.</li>
 </ul>
 </td>
 </tr>
@@ -141,15 +140,65 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.TabulatedDihedral.espressopp.interaction.FixedQuadrupleListTabulatedDihedral.setPotential">
-<code class="descclassname">espressopp.interaction.FixedQuadrupleListTabulatedDihedral.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedDihedral.espressopp.interaction.FixedQuadrupleListTabulatedDihedral.setPotential" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.FixedQuadrupleListTabulatedDihedral.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedDihedral.espressopp.interaction.FixedQuadrupleListTabulatedDihedral.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) &#8211; The potential object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedDihedral.espressopp.interaction.FixedQuadrupleListTypesTabulatedDihedral">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedQuadrupleListTypesTabulatedDihedral</code><span class="sig-paren">(</span><em>system</em>, <em>fql</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedDihedral.espressopp.interaction.FixedQuadrupleListTypesTabulatedDihedral" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> &#8211; </li>
-<li><strong>type2</strong> &#8211; </li>
-<li><strong>potential</strong> &#8211; </li>
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; The Espresso++ system object.</li>
+<li><strong>ftl</strong> (<a class="reference internal" href="espressopp.FixedQuadrupleList.html#module-espressopp.FixedQuadrupleList" title="espressopp.FixedQuadrupleList"><em>espressopp.FixedQuadrupleList</em></a>) &#8211; The FixedQuadrupleList list.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt>
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedQuadrupleListTypesTabulatedDihedral</code><span class="sig-paren">(</span><em>system</em>, <em>ftl</em><span class="sig-paren">)</span></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; The Espresso++ system object.</li>
+<li><strong>ftl</strong> (<a class="reference internal" href="espressopp.FixedQuadrupleList.html#module-espressopp.FixedQuadrupleList" title="espressopp.FixedQuadrupleList"><em>espressopp.FixedQuadrupleList</em></a>) &#8211; The FixedQuadruple list.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedDihedral.espressopp.interaction.FixedQuadrupleListTypesTabulatedDihedral.setPotential">
+<code class="descclassname">espressopp.interaction.FixedQuadrupleListTypesTabulatedDihedral.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>type3</em>, <em>type4</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedDihedral.espressopp.interaction.FixedQuadrupleListTypesTabulatedDihedral.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines dihedral potential for interaction between particles of types type1-type2-type3-type4.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) &#8211; Type of particle 1.</li>
+<li><strong>type2</strong> (<em>int</em>) &#8211; Type of particle 2.</li>
+<li><strong>type3</strong> (<em>int</em>) &#8211; Type of particle 3.</li>
+<li><strong>type4</strong> (<em>int</em>) &#8211; Type of particle 4.</li>
+<li><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.DihedralPotential.html#module-espressopp.interaction.DihedralPotential" title="espressopp.interaction.DihedralPotential"><em>espressopp.interaction.DihedralPotential</em></a>) &#8211; The potential to set up.</li>
 </ul>
 </td>
 </tr>

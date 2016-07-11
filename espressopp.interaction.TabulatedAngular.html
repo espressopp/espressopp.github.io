@@ -112,8 +112,8 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>itype</strong> &#8211; </li>
-<li><strong>filename</strong> &#8211; </li>
+<li><strong>itype</strong> (<em>int</em>) &#8211; The interpolation type: 1 - linear, 2 - akima spline, 3 - cubic spline</li>
+<li><strong>filename</strong> (<em>str</em>) &#8211; The tabulated potential filename.</li>
 </ul>
 </td>
 </tr>
@@ -123,15 +123,15 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListTabulatedAngular">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedTripleListTabulatedAngular</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListTabulatedAngular" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedTripleListTabulatedAngular</code><span class="sig-paren">(</span><em>system</em>, <em>ftl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListTabulatedAngular" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> &#8211; </li>
-<li><strong>vl</strong> &#8211; </li>
-<li><strong>potential</strong> &#8211; </li>
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; The Espresso++ system object.</li>
+<li><strong>ftl</strong> (<a class="reference internal" href="espressopp.FixedTripleList.html#module-espressopp.FixedTripleList" title="espressopp.FixedTripleList"><em>espressopp.FixedTripleList</em></a>) &#8211; The FixedTripleList.</li>
+<li><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) &#8211; The potential.</li>
 </ul>
 </td>
 </tr>
@@ -141,15 +141,47 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListTabulatedAngular.setPotential">
-<code class="descclassname">espressopp.interaction.FixedTripleListTabulatedAngular.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListTabulatedAngular.setPotential" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.FixedTripleListTabulatedAngular.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListTabulatedAngular.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) &#8211; The potential object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListTypesTabulatedAngular">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedTripleListTypesTabulatedAngular</code><span class="sig-paren">(</span><em>system</em>, <em>ftl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListTypesTabulatedAngular" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> &#8211; </li>
-<li><strong>type2</strong> &#8211; </li>
-<li><strong>potential</strong> &#8211; </li>
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; The Espresso++ system object.</li>
+<li><strong>ftl</strong> (<a class="reference internal" href="espressopp.FixedTripleList.html#module-espressopp.FixedTripleList" title="espressopp.FixedTripleList"><em>espressopp.FixedTripleList</em></a>) &#8211; The FixedTriple list.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListTypesTabulatedAngular.setPotential">
+<code class="descclassname">espressopp.interaction.FixedTripleListTypesTabulatedAngular.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>type3</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListTypesTabulatedAngular.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines angular potential for interaction between particles of types type1-type2-type3.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) &#8211; Type of particle 1.</li>
+<li><strong>type2</strong> (<em>int</em>) &#8211; Type of particle 2.</li>
+<li><strong>type3</strong> (<em>int</em>) &#8211; Type of particle 3.</li>
+<li><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.AngularPotential.html#module-espressopp.interaction.AngularPotential" title="espressopp.interaction.AngularPotential"><em>espressopp.interaction.AngularPotential</em></a>) &#8211; The potential to set up.</li>
 </ul>
 </td>
 </tr>

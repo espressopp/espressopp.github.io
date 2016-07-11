@@ -84,6 +84,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af28b008d903e326a9072ed6cf8e36fe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c745f08dee8177309f533ad3aff4669"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1TabulatedAngular.html#a9c745f08dee8177309f533ad3aff4669">TabulatedAngular</a> (int itype, const char *<a class="el" href="classespressopp_1_1interaction_1_1TabulatedAngular.html#a20cf60d683d8d65f1541e55c457df4b1">filename</a>, <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#a329453e72457a4e3d1df5e95d5b22206">cutoff</a>)</td></tr>
 <tr class="separator:a9c745f08dee8177309f533ad3aff4669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f890558d8d150576f79a3a83ff5a125"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1TabulatedAngular.html#a4f890558d8d150576f79a3a83ff5a125">setInterpolationType</a> (int itype)</td></tr>
+<tr class="memdesc:a4f890558d8d150576f79a3a83ff5a125"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setter for the interpolation type.  <a href="#a4f890558d8d150576f79a3a83ff5a125">More...</a><br/></td></tr>
+<tr class="separator:a4f890558d8d150576f79a3a83ff5a125"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4afdd237bccc0a0c944c76b50fe4709a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1TabulatedAngular.html#a4afdd237bccc0a0c944c76b50fe4709a">getInterpolationType</a> () const </td></tr>
+<tr class="memdesc:a4afdd237bccc0a0c944c76b50fe4709a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Getter for the interpolation type.  <a href="#a4afdd237bccc0a0c944c76b50fe4709a">More...</a><br/></td></tr>
+<tr class="separator:a4afdd237bccc0a0c944c76b50fe4709a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa801a518c86061212e6763b6ed6d1961"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1TabulatedAngular.html#aa801a518c86061212e6763b6ed6d1961">setFilename</a> (int itype, const char *_filename)</td></tr>
 <tr class="separator:aa801a518c86061212e6763b6ed6d1961"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0030d281c611c0b166741c7be7c2c4c9"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1TabulatedAngular.html#a0030d281c611c0b166741c7be7c2c4c9">getFilename</a> () const </td></tr>
@@ -148,10 +154,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a20cf60d683d8d65f1541e55c457df4b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5fb631a5753fdf4049d44b9acd30d64b"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1interaction_1_1Interpolation.html">Interpolation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1TabulatedAngular.html#a5fb631a5753fdf4049d44b9acd30d64b">table</a></td></tr>
 <tr class="separator:a5fb631a5753fdf4049d44b9acd30d64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace3d758b4e5fbd382b95ab0a769498c7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1TabulatedAngular.html#ace3d758b4e5fbd382b95ab0a769498c7">interpolationType</a></td></tr>
+<tr class="separator:ace3d758b4e5fbd382b95ab0a769498c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00033">33</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
+<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00035">35</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a67180413468138247029da25a6c4faef"></a>
 <div class="memitem">
@@ -174,7 +182,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00042">42</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
+<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00045">45</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
 
 </div>
 </div>
@@ -210,9 +218,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00047">47</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
+<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00050">50</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
 
-<p>References <a class="el" href="TabulatedAngular_8cpp_source.html#l00033">setFilename()</a>.</p>
+<p>References <a class="el" href="TabulatedAngular_8cpp_source.html#l00036">setFilename()</a>, and <a class="el" href="TabulatedAngular_8hpp_source.html#l00062">setInterpolationType()</a>.</p>
 
 </div>
 </div>
@@ -254,9 +262,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00052">52</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
+<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00055">55</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
 
-<p>References <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#a5cf81f630282d5b29edc36454af94d7a">espressopp::interaction::AngularPotentialTemplate&lt; TabulatedAngular &gt;::setCutoff()</a>, and <a class="el" href="TabulatedAngular_8cpp_source.html#l00033">setFilename()</a>.</p>
+<p>References <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#a5cf81f630282d5b29edc36454af94d7a">espressopp::interaction::AngularPotentialTemplate&lt; TabulatedAngular &gt;::setCutoff()</a>, <a class="el" href="TabulatedAngular_8cpp_source.html#l00036">setFilename()</a>, and <a class="el" href="TabulatedAngular_8hpp_source.html#l00062">setInterpolationType()</a>.</p>
 
 </div>
 </div>
@@ -381,9 +389,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00064">64</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
+<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00073">73</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
 
-<p>References <a class="el" href="TabulatedAngular_8hpp_source.html#l00037">table</a>.</p>
+<p>References <a class="el" href="log4espp_8hpp_source.html#l00489">LOG4ESPP_DEBUG</a>, and <a class="el" href="TabulatedAngular_8hpp_source.html#l00039">table</a>.</p>
 
 </div>
 </div>
@@ -529,9 +537,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00071">71</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
+<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00082">82</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
 
-<p>References <a class="el" href="TabulatedAngular_8hpp_source.html#l00037">table</a>.</p>
+<p>References <a class="el" href="log4espp_8hpp_source.html#l00489">LOG4ESPP_DEBUG</a>, and <a class="el" href="TabulatedAngular_8hpp_source.html#l00039">table</a>.</p>
 
 </div>
 </div>
@@ -557,9 +565,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00096">96</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
+<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00108">108</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
 
-<p>References <a class="el" href="TabulatedAngular_8hpp_source.html#l00037">table</a>.</p>
+<p>References <a class="el" href="TabulatedAngular_8hpp_source.html#l00039">table</a>.</p>
 
 </div>
 </div>
@@ -891,11 +899,42 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00060">60</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
+<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00069">69</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
 
-<p>References <a class="el" href="TabulatedAngular_8hpp_source.html#l00036">filename</a>.</p>
+<p>References <a class="el" href="TabulatedAngular_8hpp_source.html#l00038">filename</a>.</p>
 
-<p>Referenced by <a class="el" href="TabulatedAngular_8cpp_source.html#l00059">registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="TabulatedAngular_8hpp_source.html#l00116">espressopp::interaction::TabulatedAngular_pickle::getinitargs()</a>, and <a class="el" href="TabulatedAngular_8cpp_source.html#l00064">registerPython()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4afdd237bccc0a0c944c76b50fe4709a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int espressopp::interaction::TabulatedAngular::getInterpolationType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Getter for the interpolation type. </p>
+
+<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00065">65</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
+
+<p>References <a class="el" href="TabulatedAngular_8hpp_source.html#l00040">interpolationType</a>.</p>
+
+<p>Referenced by <a class="el" href="TabulatedAngular_8hpp_source.html#l00116">espressopp::interaction::TabulatedAngular_pickle::getinitargs()</a>.</p>
 
 </div>
 </div>
@@ -944,9 +983,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TabulatedAngular_8cpp_source.html#l00059">59</a> of file <a class="el" href="TabulatedAngular_8cpp_source.html">TabulatedAngular.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TabulatedAngular_8cpp_source.html#l00064">64</a> of file <a class="el" href="TabulatedAngular_8cpp_source.html">TabulatedAngular.cpp</a>.</p>
 
-<p>References <a class="el" href="TabulatedAngular_8hpp_source.html#l00060">getFilename()</a>, and <a class="el" href="TabulatedAngular_8cpp_source.html#l00033">setFilename()</a>.</p>
+<p>References <a class="el" href="TabulatedAngular_8hpp_source.html#l00069">getFilename()</a>, and <a class="el" href="TabulatedAngular_8cpp_source.html#l00036">setFilename()</a>.</p>
 
 <p>Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00087">espressopp::interaction::registerPython()</a>.</p>
 
@@ -976,7 +1015,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#a95cba5a39db955f4292d7f3e6ae193ba">espressopp::interaction::AngularPotential</a>.</p>
 
-<p>Referenced by <a class="el" href="TabulatedAngular_8hpp_source.html#l00052">TabulatedAngular()</a>.</p>
+<p>Referenced by <a class="el" href="TabulatedAngular_8hpp_source.html#l00055">TabulatedAngular()</a>.</p>
 
 </div>
 </div>
@@ -1004,11 +1043,43 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TabulatedAngular_8cpp_source.html#l00033">33</a> of file <a class="el" href="TabulatedAngular_8cpp_source.html">TabulatedAngular.cpp</a>.</p>
+<p>Definition at line <a class="el" href="TabulatedAngular_8cpp_source.html#l00036">36</a> of file <a class="el" href="TabulatedAngular_8cpp_source.html">TabulatedAngular.cpp</a>.</p>
 
-<p>References <a class="el" href="TabulatedAngular_8hpp_source.html#l00036">filename</a>, and <a class="el" href="TabulatedAngular_8hpp_source.html#l00037">table</a>.</p>
+<p>References <a class="el" href="TabulatedAngular_8hpp_source.html#l00038">filename</a>, and <a class="el" href="TabulatedAngular_8hpp_source.html#l00039">table</a>.</p>
 
-<p>Referenced by <a class="el" href="TabulatedAngular_8cpp_source.html#l00059">registerPython()</a>, and <a class="el" href="TabulatedAngular_8hpp_source.html#l00047">TabulatedAngular()</a>.</p>
+<p>Referenced by <a class="el" href="TabulatedAngular_8cpp_source.html#l00064">registerPython()</a>, and <a class="el" href="TabulatedAngular_8hpp_source.html#l00050">TabulatedAngular()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a4f890558d8d150576f79a3a83ff5a125"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void espressopp::interaction::TabulatedAngular::setInterpolationType </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>itype</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Setter for the interpolation type. </p>
+
+<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00062">62</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
+
+<p>References <a class="el" href="TabulatedAngular_8hpp_source.html#l00040">interpolationType</a>.</p>
+
+<p>Referenced by <a class="el" href="TabulatedAngular_8hpp_source.html#l00050">TabulatedAngular()</a>.</p>
 
 </div>
 </div>
@@ -1075,9 +1146,33 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00036">36</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
+<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00038">38</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="TabulatedAngular_8hpp_source.html#l00060">getFilename()</a>, and <a class="el" href="TabulatedAngular_8cpp_source.html#l00033">setFilename()</a>.</p>
+<p>Referenced by <a class="el" href="TabulatedAngular_8hpp_source.html#l00069">getFilename()</a>, and <a class="el" href="TabulatedAngular_8cpp_source.html#l00036">setFilename()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ace3d758b4e5fbd382b95ab0a769498c7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int espressopp::interaction::TabulatedAngular::interpolationType</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00040">40</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="TabulatedAngular_8hpp_source.html#l00065">getInterpolationType()</a>, and <a class="el" href="TabulatedAngular_8hpp_source.html#l00062">setInterpolationType()</a>.</p>
 
 </div>
 </div>
@@ -1099,9 +1194,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00037">37</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
+<p>Definition at line <a class="el" href="TabulatedAngular_8hpp_source.html#l00039">39</a> of file <a class="el" href="TabulatedAngular_8hpp_source.html">TabulatedAngular.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="TabulatedAngular_8hpp_source.html#l00064">_computeEnergyRaw()</a>, <a class="el" href="TabulatedAngular_8hpp_source.html#l00071">_computeForceRaw()</a>, and <a class="el" href="TabulatedAngular_8cpp_source.html#l00033">setFilename()</a>.</p>
+<p>Referenced by <a class="el" href="TabulatedAngular_8hpp_source.html#l00073">_computeEnergyRaw()</a>, <a class="el" href="TabulatedAngular_8hpp_source.html#l00082">_computeForceRaw()</a>, and <a class="el" href="TabulatedAngular_8cpp_source.html#l00036">setFilename()</a>.</p>
 
 </div>
 </div>
@@ -1112,7 +1207,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jul 8 2016 18:16:40 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 11 2016 15:08:34 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

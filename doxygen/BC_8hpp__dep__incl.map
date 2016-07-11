@@ -44,8 +44,8 @@
 <area shape="rect" id="node92" href="$VerletListHadressInteractionTemplate_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/VerletListHadress\lInteractionTemplate.hpp" alt="" coords="8605,118,8821,199"/>
 <area shape="rect" id="node94" href="$CoulombKSpaceP3M_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/CoulombKSpace\lP3M.hpp" alt="" coords="8845,118,9056,199"/>
 <area shape="rect" id="node96" href="$FixedQuadrupleListInteractionTemplate_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/FixedQuadruple\lListInteractionTemplate.hpp" alt="" coords="9080,118,9283,199"/>
-<area shape="rect" id="node98" href="$FixedQuadrupleAngleListInteractionTemplate_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/FixedQuadruple\lAngleListInteractionTemplate.hpp" alt="" coords="9307,118,9523,199"/>
-<area shape="rect" id="node100" href="$FixedPairDistListInteractionTemplate_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/FixedPairDist\lListInteractionTemplate.hpp" alt="" coords="9547,118,9736,199"/>
-<area shape="rect" id="node102" href="$SingleParticlePotential_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/SingleParticle\lPotential.cpp" alt="" coords="9760,118,9952,199"/>
-<area shape="rect" id="node104" href="$VerletListTripleInteractionTemplate_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/VerletListTriple\lInteractionTemplate.hpp" alt="" coords="9976,118,10173,199"/>
+<area shape="rect" id="node98" href="$FixedQuadrupleListTypesInteractionTemplate_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/FixedQuadruple\lListTypesInteractionTemplate.hpp" alt="" coords="9307,118,9525,199"/>
+<area shape="rect" id="node100" href="$FixedQuadrupleAngleListInteractionTemplate_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/FixedQuadruple\lAngleListInteractionTemplate.hpp" alt="" coords="9549,118,9765,199"/>
+<area shape="rect" id="node102" href="$FixedPairDistListInteractionTemplate_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/FixedPairDist\lListInteractionTemplate.hpp" alt="" coords="9789,118,9979,199"/>
+<area shape="rect" id="node104" href="$FixedTripleListTypesInteractionTemplate_8hpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/interaction/FixedTriple\lListTypesInteractionTemplate.hpp" alt="" coords="10003,118,10221,199"/>
 </map>
