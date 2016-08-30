@@ -78,8 +78,8 @@ Collaboration diagram for espressopp::integrator::MinimizeEnergy:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a66fe69d1180b6af6c36aba929eef570d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1integrator_1_1MinimizeEnergy.html#a66fe69d1180b6af6c36aba929eef570d">MinimizeEnergy</a> (shared_ptr&lt; class <a class="el" href="classespressopp_1_1System.html">espressopp::System</a> &gt; system, <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> gamma, <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> ftol, <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> max_displacement)</td></tr>
-<tr class="separator:a66fe69d1180b6af6c36aba929eef570d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5ae72ff9d2dfb9aca34e63e6cfad99a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1integrator_1_1MinimizeEnergy.html#ac5ae72ff9d2dfb9aca34e63e6cfad99a">MinimizeEnergy</a> (shared_ptr&lt; class <a class="el" href="classespressopp_1_1System.html">espressopp::System</a> &gt; system, <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> gamma, <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> ftol, <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> max_displacement, bool variable_step_flag)</td></tr>
+<tr class="separator:ac5ae72ff9d2dfb9aca34e63e6cfad99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad39265d057d4344df1cff729620062b7"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1integrator_1_1MinimizeEnergy.html#ad39265d057d4344df1cff729620062b7">~MinimizeEnergy</a> ()</td></tr>
 <tr class="separator:ad39265d057d4344df1cff729620062b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae5b214f82f10285625bda38e7456d8eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1integrator_1_1MinimizeEnergy.html#ae5b214f82f10285625bda38e7456d8eb">run</a> (int max_steps, bool verbose)</td></tr>
@@ -133,6 +133,11 @@ Private Attributes</h2></td></tr>
 <tr class="separator:aa28c233a78e7a69f1015eeb44a767185"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a4ab1c943cd9c120865e4c9c42e6c63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1integrator_1_1MinimizeEnergy.html#a3a4ab1c943cd9c120865e4c9c42e6c63">dp_sqr_max_</a></td></tr>
 <tr class="separator:a3a4ab1c943cd9c120865e4c9c42e6c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6be5eca8d04eeddf9bab7d12ac51cc17"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1integrator_1_1MinimizeEnergy.html#a6be5eca8d04eeddf9bab7d12ac51cc17">dp_MAX</a></td></tr>
+<tr class="separator:a6be5eca8d04eeddf9bab7d12ac51cc17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00817b94be1e72542132fcac15d101ae"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1integrator_1_1MinimizeEnergy.html#a00817b94be1e72542132fcac15d101ae">variable_step_flag_</a></td></tr>
+<tr class="memdesc:a00817b94be1e72542132fcac15d101ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">true implies that gamma is adjusted to the force strength.  <a href="#a00817b94be1e72542132fcac15d101ae">More...</a><br/></td></tr>
+<tr class="separator:a00817b94be1e72542132fcac15d101ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22a81bdb79dc10e4cbd6a6fa8e2af83e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1integrator_1_1MinimizeEnergy.html#a22a81bdb79dc10e4cbd6a6fa8e2af83e">resort_flag_</a></td></tr>
 <tr class="memdesc:a22a81bdb79dc10e4cbd6a6fa8e2af83e"><td class="mdescLeft">&#160;</td><td class="mdescRight">true implies need for resort of particles  <a href="#a22a81bdb79dc10e4cbd6a6fa8e2af83e">More...</a><br/></td></tr>
 <tr class="separator:a22a81bdb79dc10e4cbd6a6fa8e2af83e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,9 +146,9 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00039">39</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00041">41</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a66fe69d1180b6af6c36aba929eef570d"></a>
+<a class="anchor" id="ac5ae72ff9d2dfb9aca34e63e6cfad99a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -169,7 +174,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td>
-          <td class="paramname"><em>max_displacement</em>&#160;</td>
+          <td class="paramname"><em>max_displacement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>variable_step_flag</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -179,9 +190,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8cpp_source.html#l00033">33</a> of file <a class="el" href="MinimizeEnergy_8cpp_source.html">MinimizeEnergy.cpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8cpp_source.html#l00035">35</a> of file <a class="el" href="MinimizeEnergy_8cpp_source.html">MinimizeEnergy.cpp</a>.</p>
 
-<p>References <a class="el" href="log4espp_8hpp_source.html#l00500">LOG4ESPP_INFO</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00074">nstep_</a>, and <a class="el" href="MinimizeEnergy_8hpp_source.html#l00072">resort_flag_</a>.</p>
+<p>References <a class="el" href="MinimizeEnergy_8hpp_source.html#l00074">dp_MAX</a>, <a class="el" href="log4espp_8hpp_source.html#l00500">LOG4ESPP_INFO</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00080">nstep_</a>, and <a class="el" href="MinimizeEnergy_8hpp_source.html#l00078">resort_flag_</a>.</p>
 
 </div>
 </div>
@@ -206,7 +217,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8cpp_source.html#l00044">44</a> of file <a class="el" href="MinimizeEnergy_8cpp_source.html">MinimizeEnergy.cpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8cpp_source.html#l00049">49</a> of file <a class="el" href="MinimizeEnergy_8cpp_source.html">MinimizeEnergy.cpp</a>.</p>
 
 <p>References <a class="el" href="log4espp_8hpp_source.html#l00500">LOG4ESPP_INFO</a>.</p>
 
@@ -234,11 +245,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00060">60</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00063">63</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
 
-<p>References <a class="el" href="MinimizeEnergy_8hpp_source.html#l00070">dp_sqr_max_</a>.</p>
+<p>References <a class="el" href="MinimizeEnergy_8hpp_source.html#l00073">dp_sqr_max_</a>.</p>
 
-<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00179">registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00203">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -263,11 +274,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00056">56</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00059">59</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
 
-<p>References <a class="el" href="MinimizeEnergy_8hpp_source.html#l00069">f_max_sqr_</a>.</p>
+<p>References <a class="el" href="MinimizeEnergy_8hpp_source.html#l00072">f_max_sqr_</a>.</p>
 
-<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00179">registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00203">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -387,7 +398,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="SystemAccess_8hpp_source.html#l00096">espressopp::SystemAccess::getSystem()</a>.</p>
 
-<p>Referenced by <a class="el" href="Adress_8cpp_source.html#l00499">espressopp::integrator::Adress::aftCalcF()</a>, <a class="el" href="AssociationReaction_8cpp_source.html#l00449">espressopp::integrator::AssociationReaction::applyAR()</a>, <a class="el" href="FreeEnergyCompensation_8cpp_source.html#l00094">espressopp::integrator::FreeEnergyCompensation::applyForce()</a>, <a class="el" href="TDforce_8cpp_source.html#l00107">espressopp::integrator::TDforce::applyForce()</a>, <a class="el" href="CapForce_8cpp_source.html#l00159">espressopp::integrator::CapForce::applyForceCappingToAll()</a>, <a class="el" href="ExtForce_8cpp_source.html#l00097">espressopp::integrator::ExtForce::applyForceToAll()</a>, <a class="el" href="BerendsenBarostatAnisotropic_8cpp_source.html#l00083">espressopp::integrator::BerendsenBarostatAnisotropic::barostat()</a>, <a class="el" href="BerendsenBarostat_8cpp_source.html#l00094">espressopp::integrator::BerendsenBarostat::barostat()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00278">espressopp::integrator::VelocityVerletOnGroup::calcForces()</a>, <a class="el" href="FreeEnergyCompensation_8cpp_source.html#l00167">espressopp::integrator::FreeEnergyCompensation::computeCompEnergy()</a>, <a class="el" href="Settle_8cpp_source.html#l00131">espressopp::integrator::Settle::correctVelocities()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00757">espressopp::integrator::LatticeBoltzmann::coupleLBtoMD()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00569">espressopp::integrator::LatticeBoltzmann::findCMVelMD()</a>, <a class="el" href="GeneralizedLangevinThermostat_8cpp_source.html#l00141">espressopp::integrator::GeneralizedLangevinThermostat::friction()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00645">espressopp::integrator::LatticeBoltzmann::galileanTransf()</a>, <a class="el" href="OnTheFlyFEC_8cpp_source.html#l00123">espressopp::integrator::OnTheFlyFEC::gatherStats()</a>, <a class="el" href="VelocityVerletOnRadius_8cpp_source.html#l00091">espressopp::integrator::VelocityVerletOnRadius::initForces()</a>, <a class="el" href="Adress_8cpp_source.html#l00217">espressopp::integrator::Adress::initForces()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00322">espressopp::integrator::VelocityVerletOnGroup::initForces()</a>, <a class="el" href="DPDThermostat_8cpp_source.html#l00195">espressopp::integrator::DPDThermostat::initialize()</a>, <a class="el" href="LangevinBarostat_8cpp_source.html#l00254">espressopp::integrator::LangevinBarostat::initialize()</a>, <a class="el" href="StochasticVelocityRescaling_8cpp_source.html#l00098">espressopp::integrator::StochasticVelocityRescaling::initialize()</a>, <a class="el" href="GeneralizedLangevinThermostat_8cpp_source.html#l00094">espressopp::integrator::GeneralizedLangevinThermostat::integrate()</a>, <a class="el" href="VelocityVerletOnRadius_8cpp_source.html#l00058">espressopp::integrator::VelocityVerletOnRadius::integrate1()</a>, <a class="el" href="Adress_8cpp_source.html#l00244">espressopp::integrator::Adress::integrate1()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00184">espressopp::integrator::VelocityVerletOnGroup::integrate1()</a>, <a class="el" href="VelocityVerletOnRadius_8cpp_source.html#l00078">espressopp::integrator::VelocityVerletOnRadius::integrate2()</a>, <a class="el" href="Adress_8cpp_source.html#l00386">espressopp::integrator::Adress::integrate2()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00240">espressopp::integrator::VelocityVerletOnGroup::integrate2()</a>, <a class="el" href="VerletListTriple_8cpp_source.html#l00130">espressopp::VerletListTriple::localSize()</a>, <a class="el" href="VerletList_8cpp_source.html#l00140">espressopp::VerletList::localSize()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00535">espressopp::integrator::LatticeBoltzmann::makeDecompose()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00340">espressopp::integrator::VelocityVerletOnGroup::printForces()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00366">espressopp::integrator::VelocityVerletOnGroup::printPositions()</a>, <a class="el" href="AssociationReaction_8cpp_source.html#l00178">espressopp::integrator::AssociationReaction::react()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00926">espressopp::integrator::LatticeBoltzmann::readCouplForces()</a>, <a class="el" href="VerletListAdress_8cpp_source.html#l00095">espressopp::VerletListAdress::rebuild()</a>, <a class="el" href="Isokinetic_8cpp_source.html#l00089">espressopp::integrator::Isokinetic::rescaleVelocities()</a>, <a class="el" href="StochasticVelocityRescaling_8cpp_source.html#l00113">espressopp::integrator::StochasticVelocityRescaling::rescaleVelocities()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00881">espressopp::integrator::LatticeBoltzmann::restoreLBForces()</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00048">run()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00069">espressopp::integrator::VelocityVerletOnGroup::run()</a>, <a class="el" href="VelocityVerlet_8cpp_source.html#l00061">espressopp::integrator::VelocityVerlet::run()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00996">espressopp::integrator::LatticeBoltzmann::saveCouplForces()</a>, <a class="el" href="Settle_8cpp_source.html#l00096">espressopp::integrator::Settle::saveOldPos()</a>, <a class="el" href="Storage_8cpp_source.html#l00698">espressopp::storage::Storage::savePosition()</a>, <a class="el" href="DomainDecomposition_8cpp_source.html#l00164">espressopp::storage::DomainDecomposition::scaleVolume()</a>, <a class="el" href="AssociationReaction_8cpp_source.html#l00236">espressopp::integrator::AssociationReaction::sendMultiMap()</a>, <a class="el" href="LangevinBarostat_8cpp_source.html#l00119">espressopp::integrator::LangevinBarostat::setMassByFrequency()</a>, <a class="el" href="Adress_8cpp_source.html#l00114">espressopp::integrator::Adress::SetPosVel()</a>, <a class="el" href="MDIntegrator_8cpp_source.html#l00054">espressopp::integrator::MDIntegrator::setTimeStep()</a>, <a class="el" href="Settle_8cpp_source.html#l00158">espressopp::integrator::Settle::settlep()</a>, <a class="el" href="Settle_8cpp_source.html#l00287">espressopp::integrator::Settle::settlev()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00258">espressopp::integrator::VelocityVerletOnGroup::setUp()</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00150">steepestDescentStep()</a>, <a class="el" href="LangevinThermostat_8cpp_source.html#l00126">espressopp::integrator::LangevinThermostat::thermalize()</a>, <a class="el" href="DPDThermostat_8cpp_source.html#l00118">espressopp::integrator::DPDThermostat::thermalize()</a>, <a class="el" href="LangevinThermostat1D_8cpp_source.html#l00135">espressopp::integrator::LangevinThermostat1D::thermalize()</a>, <a class="el" href="LangevinThermostat_8cpp_source.html#l00140">espressopp::integrator::LangevinThermostat::thermalizeAdr()</a>, <a class="el" href="LangevinThermostat1D_8cpp_source.html#l00149">espressopp::integrator::LangevinThermostat1D::thermalizeAdr()</a>, <a class="el" href="LangevinThermostatHybrid_8cpp_source.html#l00130">espressopp::integrator::LangevinThermostatHybrid::thermalizeAdr()</a>, <a class="el" href="BerendsenThermostat_8cpp_source.html#l00083">espressopp::integrator::BerendsenThermostat::thermostat()</a>, <a class="el" href="VerletListTriple_8cpp_source.html#l00121">espressopp::VerletListTriple::totalSize()</a>, <a class="el" href="VerletList_8cpp_source.html#l00130">espressopp::VerletList::totalSize()</a>, <a class="el" href="VerletListAdress_8cpp_source.html#l00361">espressopp::VerletListAdress::totalSize()</a>, <a class="el" href="AssociationReaction_8cpp_source.html#l00346">espressopp::integrator::AssociationReaction::uniqueA()</a>, <a class="el" href="AssociationReaction_8cpp_source.html#l00398">espressopp::integrator::AssociationReaction::uniqueB()</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00112">updateForces()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00300">espressopp::integrator::VelocityVerletOnGroup::updateForces()</a>, <a class="el" href="LangevinBarostat_8cpp_source.html#l00233">espressopp::integrator::LangevinBarostat::updDisplacement()</a>, <a class="el" href="LangevinBarostat_8cpp_source.html#l00221">espressopp::integrator::LangevinBarostat::updForces()</a>, <a class="el" href="LangevinBarostat_8cpp_source.html#l00143">espressopp::integrator::LangevinBarostat::updVolume()</a>, <a class="el" href="LangevinBarostat_8cpp_source.html#l00172">espressopp::integrator::LangevinBarostat::updVolumeMomentum()</a>, and <a class="el" href="LBOutputScreen_8cpp_source.html#l00034">espressopp::analysis::LBOutputScreen::writeOutput()</a>.</p>
+<p>Referenced by <a class="el" href="Adress_8cpp_source.html#l00499">espressopp::integrator::Adress::aftCalcF()</a>, <a class="el" href="AssociationReaction_8cpp_source.html#l00449">espressopp::integrator::AssociationReaction::applyAR()</a>, <a class="el" href="FreeEnergyCompensation_8cpp_source.html#l00094">espressopp::integrator::FreeEnergyCompensation::applyForce()</a>, <a class="el" href="TDforce_8cpp_source.html#l00107">espressopp::integrator::TDforce::applyForce()</a>, <a class="el" href="CapForce_8cpp_source.html#l00159">espressopp::integrator::CapForce::applyForceCappingToAll()</a>, <a class="el" href="ExtForce_8cpp_source.html#l00097">espressopp::integrator::ExtForce::applyForceToAll()</a>, <a class="el" href="BerendsenBarostatAnisotropic_8cpp_source.html#l00083">espressopp::integrator::BerendsenBarostatAnisotropic::barostat()</a>, <a class="el" href="BerendsenBarostat_8cpp_source.html#l00094">espressopp::integrator::BerendsenBarostat::barostat()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00278">espressopp::integrator::VelocityVerletOnGroup::calcForces()</a>, <a class="el" href="FreeEnergyCompensation_8cpp_source.html#l00167">espressopp::integrator::FreeEnergyCompensation::computeCompEnergy()</a>, <a class="el" href="Settle_8cpp_source.html#l00131">espressopp::integrator::Settle::correctVelocities()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00757">espressopp::integrator::LatticeBoltzmann::coupleLBtoMD()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00569">espressopp::integrator::LatticeBoltzmann::findCMVelMD()</a>, <a class="el" href="GeneralizedLangevinThermostat_8cpp_source.html#l00141">espressopp::integrator::GeneralizedLangevinThermostat::friction()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00645">espressopp::integrator::LatticeBoltzmann::galileanTransf()</a>, <a class="el" href="OnTheFlyFEC_8cpp_source.html#l00123">espressopp::integrator::OnTheFlyFEC::gatherStats()</a>, <a class="el" href="VelocityVerletOnRadius_8cpp_source.html#l00091">espressopp::integrator::VelocityVerletOnRadius::initForces()</a>, <a class="el" href="Adress_8cpp_source.html#l00217">espressopp::integrator::Adress::initForces()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00322">espressopp::integrator::VelocityVerletOnGroup::initForces()</a>, <a class="el" href="DPDThermostat_8cpp_source.html#l00195">espressopp::integrator::DPDThermostat::initialize()</a>, <a class="el" href="LangevinBarostat_8cpp_source.html#l00254">espressopp::integrator::LangevinBarostat::initialize()</a>, <a class="el" href="StochasticVelocityRescaling_8cpp_source.html#l00098">espressopp::integrator::StochasticVelocityRescaling::initialize()</a>, <a class="el" href="GeneralizedLangevinThermostat_8cpp_source.html#l00094">espressopp::integrator::GeneralizedLangevinThermostat::integrate()</a>, <a class="el" href="VelocityVerletOnRadius_8cpp_source.html#l00058">espressopp::integrator::VelocityVerletOnRadius::integrate1()</a>, <a class="el" href="Adress_8cpp_source.html#l00244">espressopp::integrator::Adress::integrate1()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00184">espressopp::integrator::VelocityVerletOnGroup::integrate1()</a>, <a class="el" href="VelocityVerletOnRadius_8cpp_source.html#l00078">espressopp::integrator::VelocityVerletOnRadius::integrate2()</a>, <a class="el" href="Adress_8cpp_source.html#l00386">espressopp::integrator::Adress::integrate2()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00240">espressopp::integrator::VelocityVerletOnGroup::integrate2()</a>, <a class="el" href="VerletListTriple_8cpp_source.html#l00130">espressopp::VerletListTriple::localSize()</a>, <a class="el" href="VerletList_8cpp_source.html#l00140">espressopp::VerletList::localSize()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00535">espressopp::integrator::LatticeBoltzmann::makeDecompose()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00340">espressopp::integrator::VelocityVerletOnGroup::printForces()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00366">espressopp::integrator::VelocityVerletOnGroup::printPositions()</a>, <a class="el" href="AssociationReaction_8cpp_source.html#l00178">espressopp::integrator::AssociationReaction::react()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00926">espressopp::integrator::LatticeBoltzmann::readCouplForces()</a>, <a class="el" href="VerletListAdress_8cpp_source.html#l00095">espressopp::VerletListAdress::rebuild()</a>, <a class="el" href="Isokinetic_8cpp_source.html#l00089">espressopp::integrator::Isokinetic::rescaleVelocities()</a>, <a class="el" href="StochasticVelocityRescaling_8cpp_source.html#l00113">espressopp::integrator::StochasticVelocityRescaling::rescaleVelocities()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00881">espressopp::integrator::LatticeBoltzmann::restoreLBForces()</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00053">run()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00069">espressopp::integrator::VelocityVerletOnGroup::run()</a>, <a class="el" href="VelocityVerlet_8cpp_source.html#l00061">espressopp::integrator::VelocityVerlet::run()</a>, <a class="el" href="LatticeBoltzmann_8cpp_source.html#l00996">espressopp::integrator::LatticeBoltzmann::saveCouplForces()</a>, <a class="el" href="Settle_8cpp_source.html#l00096">espressopp::integrator::Settle::saveOldPos()</a>, <a class="el" href="Storage_8cpp_source.html#l00698">espressopp::storage::Storage::savePosition()</a>, <a class="el" href="DomainDecomposition_8cpp_source.html#l00164">espressopp::storage::DomainDecomposition::scaleVolume()</a>, <a class="el" href="AssociationReaction_8cpp_source.html#l00236">espressopp::integrator::AssociationReaction::sendMultiMap()</a>, <a class="el" href="LangevinBarostat_8cpp_source.html#l00119">espressopp::integrator::LangevinBarostat::setMassByFrequency()</a>, <a class="el" href="Adress_8cpp_source.html#l00114">espressopp::integrator::Adress::SetPosVel()</a>, <a class="el" href="MDIntegrator_8cpp_source.html#l00054">espressopp::integrator::MDIntegrator::setTimeStep()</a>, <a class="el" href="Settle_8cpp_source.html#l00158">espressopp::integrator::Settle::settlep()</a>, <a class="el" href="Settle_8cpp_source.html#l00287">espressopp::integrator::Settle::settlev()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00258">espressopp::integrator::VelocityVerletOnGroup::setUp()</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00161">steepestDescentStep()</a>, <a class="el" href="LangevinThermostat_8cpp_source.html#l00126">espressopp::integrator::LangevinThermostat::thermalize()</a>, <a class="el" href="DPDThermostat_8cpp_source.html#l00118">espressopp::integrator::DPDThermostat::thermalize()</a>, <a class="el" href="LangevinThermostat1D_8cpp_source.html#l00135">espressopp::integrator::LangevinThermostat1D::thermalize()</a>, <a class="el" href="LangevinThermostat_8cpp_source.html#l00140">espressopp::integrator::LangevinThermostat::thermalizeAdr()</a>, <a class="el" href="LangevinThermostat1D_8cpp_source.html#l00149">espressopp::integrator::LangevinThermostat1D::thermalizeAdr()</a>, <a class="el" href="LangevinThermostatHybrid_8cpp_source.html#l00130">espressopp::integrator::LangevinThermostatHybrid::thermalizeAdr()</a>, <a class="el" href="BerendsenThermostat_8cpp_source.html#l00083">espressopp::integrator::BerendsenThermostat::thermostat()</a>, <a class="el" href="VerletListTriple_8cpp_source.html#l00121">espressopp::VerletListTriple::totalSize()</a>, <a class="el" href="VerletList_8cpp_source.html#l00130">espressopp::VerletList::totalSize()</a>, <a class="el" href="VerletListAdress_8cpp_source.html#l00361">espressopp::VerletListAdress::totalSize()</a>, <a class="el" href="AssociationReaction_8cpp_source.html#l00346">espressopp::integrator::AssociationReaction::uniqueA()</a>, <a class="el" href="AssociationReaction_8cpp_source.html#l00398">espressopp::integrator::AssociationReaction::uniqueB()</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00123">updateForces()</a>, <a class="el" href="VelocityVerletOnGroup_8cpp_source.html#l00300">espressopp::integrator::VelocityVerletOnGroup::updateForces()</a>, <a class="el" href="LangevinBarostat_8cpp_source.html#l00233">espressopp::integrator::LangevinBarostat::updDisplacement()</a>, <a class="el" href="LangevinBarostat_8cpp_source.html#l00221">espressopp::integrator::LangevinBarostat::updForces()</a>, <a class="el" href="LangevinBarostat_8cpp_source.html#l00143">espressopp::integrator::LangevinBarostat::updVolume()</a>, <a class="el" href="LangevinBarostat_8cpp_source.html#l00172">espressopp::integrator::LangevinBarostat::updVolumeMomentum()</a>, and <a class="el" href="LBOutputScreen_8cpp_source.html#l00034">espressopp::analysis::LBOutputScreen::writeOutput()</a>.</p>
 
 </div>
 </div>
@@ -492,9 +503,9 @@ Private Attributes</h2></td></tr>
 
 <p>Register this class so it can be used from Python. </p>
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8cpp_source.html#l00179">179</a> of file <a class="el" href="MinimizeEnergy_8cpp_source.html">MinimizeEnergy.cpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8cpp_source.html#l00203">203</a> of file <a class="el" href="MinimizeEnergy_8cpp_source.html">MinimizeEnergy.cpp</a>.</p>
 
-<p>References <a class="el" href="MinimizeEnergy_8hpp_source.html#l00060">getDpMax()</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00056">getFMax()</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00074">nstep_</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00048">run()</a>.</p>
+<p>References <a class="el" href="MinimizeEnergy_8hpp_source.html#l00063">getDpMax()</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00059">getFMax()</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00080">nstep_</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00053">run()</a>.</p>
 
 <p>Referenced by <a class="el" href="integrator_2bindings_8cpp_source.html#l00066">espressopp::integrator::registerPython()</a>.</p>
 
@@ -524,11 +535,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8cpp_source.html#l00048">48</a> of file <a class="el" href="MinimizeEnergy_8cpp_source.html">MinimizeEnergy.cpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8cpp_source.html#l00053">53</a> of file <a class="el" href="MinimizeEnergy_8cpp_source.html">MinimizeEnergy.cpp</a>.</p>
 
-<p>References <a class="el" href="Storage_8cpp_source.html#l00555">espressopp::storage::Storage::decompose()</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00070">dp_sqr_max_</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00069">f_max_sqr_</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00067">ftol_sqr_</a>, <a class="el" href="System_8cpp_source.html#l00091">espressopp::System::getSkin()</a>, <a class="el" href="SystemAccess_8hpp_source.html#l00049">espressopp::SystemAccess::getSystemRef()</a>, <a class="el" href="log4espp_8hpp_source.html#l00489">LOG4ESPP_DEBUG</a>, <a class="el" href="log4espp_8hpp_source.html#l00500">LOG4ESPP_INFO</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00066">max_displacement_</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00074">nstep_</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00072">resort_flag_</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00150">steepestDescentStep()</a>, <a class="el" href="System_8hpp_source.html#l00051">espressopp::System::storage</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00112">updateForces()</a>.</p>
+<p>References <a class="el" href="Storage_8cpp_source.html#l00555">espressopp::storage::Storage::decompose()</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00074">dp_MAX</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00073">dp_sqr_max_</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00072">f_max_sqr_</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00070">ftol_sqr_</a>, <a class="el" href="System_8cpp_source.html#l00091">espressopp::System::getSkin()</a>, <a class="el" href="SystemAccess_8hpp_source.html#l00049">espressopp::SystemAccess::getSystemRef()</a>, <a class="el" href="log4espp_8hpp_source.html#l00489">LOG4ESPP_DEBUG</a>, <a class="el" href="log4espp_8hpp_source.html#l00500">LOG4ESPP_INFO</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00069">max_displacement_</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00080">nstep_</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00078">resort_flag_</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00161">steepestDescentStep()</a>, <a class="el" href="System_8hpp_source.html#l00051">espressopp::System::storage</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00123">updateForces()</a>.</p>
 
-<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00179">registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00203">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -553,11 +564,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8cpp_source.html#l00150">150</a> of file <a class="el" href="MinimizeEnergy_8cpp_source.html">MinimizeEnergy.cpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8cpp_source.html#l00161">161</a> of file <a class="el" href="MinimizeEnergy_8cpp_source.html">MinimizeEnergy.cpp</a>.</p>
 
-<p>References <a class="el" href="System_8hpp_source.html#l00049">espressopp::System::comm</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00070">dp_sqr_max_</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00065">gamma_</a>, <a class="el" href="SystemAccess_8hpp_source.html#l00049">espressopp::SystemAccess::getSystemRef()</a>, <a class="el" href="CellListIterator_8hpp_source.html#l00088">espressopp::iterator::CellListIterator::isDone()</a>, <a class="el" href="log4espp_8hpp_source.html#l00500">LOG4ESPP_INFO</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00066">max_displacement_</a>, and <a class="el" href="System_8hpp_source.html#l00051">espressopp::System::storage</a>.</p>
+<p>References <a class="el" href="System_8hpp_source.html#l00049">espressopp::System::comm</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00073">dp_sqr_max_</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00072">f_max_sqr_</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00068">gamma_</a>, <a class="el" href="SystemAccess_8hpp_source.html#l00049">espressopp::SystemAccess::getSystemRef()</a>, <a class="el" href="CellListIterator_8hpp_source.html#l00088">espressopp::iterator::CellListIterator::isDone()</a>, <a class="el" href="log4espp_8hpp_source.html#l00500">LOG4ESPP_INFO</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00069">max_displacement_</a>, <a class="el" href="System_8hpp_source.html#l00051">espressopp::System::storage</a>, and <a class="el" href="MinimizeEnergy_8hpp_source.html#l00076">variable_step_flag_</a>.</p>
 
-<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00048">run()</a>.</p>
+<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00053">run()</a>.</p>
 
 </div>
 </div>
@@ -582,15 +593,39 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8cpp_source.html#l00112">112</a> of file <a class="el" href="MinimizeEnergy_8cpp_source.html">MinimizeEnergy.cpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8cpp_source.html#l00123">123</a> of file <a class="el" href="MinimizeEnergy_8cpp_source.html">MinimizeEnergy.cpp</a>.</p>
 
-<p>References <a class="el" href="System_8hpp_source.html#l00049">espressopp::System::comm</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00069">f_max_sqr_</a>, <a class="el" href="SystemAccess_8hpp_source.html#l00049">espressopp::SystemAccess::getSystemRef()</a>, <a class="el" href="CellListIterator_8hpp_source.html#l00088">espressopp::iterator::CellListIterator::isDone()</a>, <a class="el" href="log4espp_8hpp_source.html#l00489">LOG4ESPP_DEBUG</a>, <a class="el" href="log4espp_8hpp_source.html#l00500">LOG4ESPP_INFO</a>, <a class="el" href="System_8hpp_source.html#l00055">espressopp::System::shortRangeInteractions</a>, and <a class="el" href="System_8hpp_source.html#l00051">espressopp::System::storage</a>.</p>
+<p>References <a class="el" href="System_8hpp_source.html#l00049">espressopp::System::comm</a>, <a class="el" href="MinimizeEnergy_8hpp_source.html#l00072">f_max_sqr_</a>, <a class="el" href="SystemAccess_8hpp_source.html#l00049">espressopp::SystemAccess::getSystemRef()</a>, <a class="el" href="CellListIterator_8hpp_source.html#l00088">espressopp::iterator::CellListIterator::isDone()</a>, <a class="el" href="log4espp_8hpp_source.html#l00489">LOG4ESPP_DEBUG</a>, <a class="el" href="log4espp_8hpp_source.html#l00500">LOG4ESPP_INFO</a>, <a class="el" href="System_8hpp_source.html#l00055">espressopp::System::shortRangeInteractions</a>, and <a class="el" href="System_8hpp_source.html#l00051">espressopp::System::storage</a>.</p>
 
-<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00048">run()</a>.</p>
+<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00053">run()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a6be5eca8d04eeddf9bab7d12ac51cc17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> espressopp::integrator::MinimizeEnergy::dp_MAX</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00074">74</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00035">MinimizeEnergy()</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00053">run()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a3a4ab1c943cd9c120865e4c9c42e6c63"></a>
 <div class="memitem">
 <div class="memproto">
@@ -609,9 +644,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00070">70</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00073">73</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="MinimizeEnergy_8hpp_source.html#l00060">getDpMax()</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00048">run()</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00150">steepestDescentStep()</a>.</p>
+<p>Referenced by <a class="el" href="MinimizeEnergy_8hpp_source.html#l00063">getDpMax()</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00053">run()</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00161">steepestDescentStep()</a>.</p>
 
 </div>
 </div>
@@ -633,9 +668,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00069">69</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00072">72</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="MinimizeEnergy_8hpp_source.html#l00056">getFMax()</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00048">run()</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00112">updateForces()</a>.</p>
+<p>Referenced by <a class="el" href="MinimizeEnergy_8hpp_source.html#l00059">getFMax()</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00053">run()</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00161">steepestDescentStep()</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00123">updateForces()</a>.</p>
 
 </div>
 </div>
@@ -657,9 +692,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00067">67</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00070">70</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00048">run()</a>.</p>
+<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00053">run()</a>.</p>
 
 </div>
 </div>
@@ -681,9 +716,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00065">65</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00068">68</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00150">steepestDescentStep()</a>.</p>
+<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00161">steepestDescentStep()</a>.</p>
 
 </div>
 </div>
@@ -705,9 +740,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00066">66</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00069">69</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00048">run()</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00150">steepestDescentStep()</a>.</p>
+<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00053">run()</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00161">steepestDescentStep()</a>.</p>
 
 </div>
 </div>
@@ -729,9 +764,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00074">74</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00080">80</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00033">MinimizeEnergy()</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00179">registerPython()</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00048">run()</a>.</p>
+<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00035">MinimizeEnergy()</a>, <a class="el" href="MinimizeEnergy_8cpp_source.html#l00203">registerPython()</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00053">run()</a>.</p>
 
 </div>
 </div>
@@ -755,9 +790,35 @@ Private Attributes</h2></td></tr>
 
 <p>true implies need for resort of particles </p>
 
-<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00072">72</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
+<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00078">78</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00033">MinimizeEnergy()</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00048">run()</a>.</p>
+<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00035">MinimizeEnergy()</a>, and <a class="el" href="MinimizeEnergy_8cpp_source.html#l00053">run()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a00817b94be1e72542132fcac15d101ae"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool espressopp::integrator::MinimizeEnergy::variable_step_flag_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>true implies that gamma is adjusted to the force strength. </p>
+
+<p>Definition at line <a class="el" href="MinimizeEnergy_8hpp_source.html#l00076">76</a> of file <a class="el" href="MinimizeEnergy_8hpp_source.html">MinimizeEnergy.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="MinimizeEnergy_8cpp_source.html#l00161">steepestDescentStep()</a>.</p>
 
 </div>
 </div>
@@ -768,7 +829,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Aug 25 2016 14:47:57 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Aug 30 2016 14:22:50 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
