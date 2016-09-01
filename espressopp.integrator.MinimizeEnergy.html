@@ -106,19 +106,29 @@
   <span class="target" id="module-espressopp.integrator.MinimizeEnergy"></span><div class="section" id="espressopp-integrator-minimizeenergy">
 <h1><strong>espressopp.integrator.MinimizeEnergy</strong><a class="headerlink" href="#espressopp-integrator-minimizeenergy" title="Permalink to this headline">¶</a></h1>
 <p>This is a very simple approach to perform energy minimization of the system. The module uses
-a <a class="reference external" href="https://en.wikipedia.org/wiki/Gradient_descent">steepest descent method</a>. The position of particles is
-updated following the equation:</p>
+a <a class="reference external" href="https://en.wikipedia.org/wiki/Gradient_descent">steepest descent method</a>. The position of particles is updated following the equation:</p>
 <div class="math">
 <p><span class="math">p_{i+1} = p_i + min(\gamma F_i, d_{max})</span></p>
 </div><p>where <span class="math">p_{i+}</span> is a new position, <span class="math">p_i</span> is a position at current step with corresponding
 force <span class="math">F_i</span>. The parameters <span class="math">\gamma</span> and <span class="math">d_{max}</span> are set by user and control the relaxation
-of the energy and the maximum update of the coordinates per step.
-The routine runs until the maximum force is bigger than <span class="math">f_{max}</span> or for at most <em>n</em> steps.</p>
+of the energy and the maximum update of the coordinates per step.</p>
+<p>Additionaly, a variable <span class="math">\gamma</span> step is also implemented. In this case, the position of particles is updated following the equation:</p>
+<div class="math">
+<p><span class="math">p_{i+1} = p_i + d_{max}/f_{max} F_i</span></p>
+</div><p>where <span class="math">f_{max}</span> is a maximum force in a single step of steepest descent method. <span class="math">\gamma=d_{max}/f_{max}</span> is automatically adjusted to a force magnitude.</p>
+<p>In both cases, the routine runs until the maximum force is bigger than <span class="math">f_{max}</span> or for at most <em>n</em> steps.</p>
 <p><strong>Please note</strong>
 This module does not support any integrator extensions.</p>
-<div class="section" id="example">
-<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="example1">
+<h2>Example1<a class="headerlink" href="#example1" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">em</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">MinimizeEnergy</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.001</span><span class="p">,</span> <span class="n">ftol</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">max_displacement</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">em</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="example2">
+<h2>Example2<a class="headerlink" href="#example2" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">em</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">MinimizeEnergy</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">gamma</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">ftol</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">max_displacement</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">variable_step_flag</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">em</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
 </pre></div>
 </div>
