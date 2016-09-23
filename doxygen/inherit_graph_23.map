@@ -10,13 +10,14 @@
 <area shape="rect" id="node19" href="$structespressopp_1_1interaction_1_1LJcos__pickle.html" title="espressopp::interaction\l::LJcos_pickle" alt="" coords="177,634,335,681"/>
 <area shape="rect" id="node21" href="$structespressopp_1_1interaction_1_1Morse__pickle.html" title="espressopp::interaction\l::Morse_pickle" alt="" coords="177,703,335,750"/>
 <area shape="rect" id="node23" href="$structespressopp_1_1interaction_1_1ReactionFieldGeneralized__pickle.html" title="espressopp::interaction\l::ReactionFieldGeneralized\l_pickle" alt="" coords="167,773,345,837"/>
-<area shape="rect" id="node25" href="$structespressopp_1_1interaction_1_1SoftCosine__pickle.html" title="espressopp::interaction\l::SoftCosine_pickle" alt="" coords="177,861,335,907"/>
-<area shape="rect" id="node27" href="$structespressopp_1_1interaction_1_1Tabulated__pickle.html" title="espressopp::interaction\l::Tabulated_pickle" alt="" coords="177,930,335,977"/>
-<area shape="rect" id="node29" href="$structespressopp_1_1interaction_1_1TabulatedAngular__pickle.html" title="espressopp::interaction\l::TabulatedAngular_pickle" alt="" coords="171,999,341,1046"/>
-<area shape="rect" id="node31" href="$structespressopp_1_1interaction_1_1TabulatedDihedral__pickle.html" title="espressopp::interaction\l::TabulatedDihedral_pickle" alt="" coords="168,1069,344,1115"/>
-<area shape="rect" id="node33" href="$structespressopp_1_1interaction_1_1VSpherePair__pickle.html" title="espressopp::interaction\l::VSpherePair_pickle" alt="" coords="177,1138,335,1185"/>
-<area shape="rect" id="node35" href="$structespressopp_1_1interaction_1_1Zero__pickle.html" title="espressopp::interaction\l::Zero_pickle" alt="" coords="177,1207,335,1254"/>
-<area shape="rect" id="node37" href="$structespressopp_1_1quaternion__pickle__suite.html" title="espressopp::quaternion\l_pickle_suite" alt="" coords="177,1277,335,1323"/>
-<area shape="rect" id="node39" href="$structespressopp_1_1real3D__pickle__suite.html" title="espressopp::real3D\l_pickle_suite" alt="" coords="189,1346,323,1393"/>
-<area shape="rect" id="node41" href="$structespressopp_1_1tensor__pickle__suite.html" title="espressopp::tensor\l_pickle_suite" alt="" coords="189,1415,323,1462"/>
+<area shape="rect" id="node25" href="$structespressopp_1_1interaction_1_1ReactionFieldGeneralizedTI__pickle.html" title="espressopp::interaction\l::ReactionFieldGeneralizedTI\l_pickle" alt="" coords="161,861,351,925"/>
+<area shape="rect" id="node27" href="$structespressopp_1_1interaction_1_1SoftCosine__pickle.html" title="espressopp::interaction\l::SoftCosine_pickle" alt="" coords="177,949,335,995"/>
+<area shape="rect" id="node29" href="$structespressopp_1_1interaction_1_1Tabulated__pickle.html" title="espressopp::interaction\l::Tabulated_pickle" alt="" coords="177,1018,335,1065"/>
+<area shape="rect" id="node31" href="$structespressopp_1_1interaction_1_1TabulatedAngular__pickle.html" title="espressopp::interaction\l::TabulatedAngular_pickle" alt="" coords="171,1087,341,1134"/>
+<area shape="rect" id="node33" href="$structespressopp_1_1interaction_1_1TabulatedDihedral__pickle.html" title="espressopp::interaction\l::TabulatedDihedral_pickle" alt="" coords="168,1157,344,1203"/>
+<area shape="rect" id="node35" href="$structespressopp_1_1interaction_1_1VSpherePair__pickle.html" title="espressopp::interaction\l::VSpherePair_pickle" alt="" coords="177,1226,335,1273"/>
+<area shape="rect" id="node37" href="$structespressopp_1_1interaction_1_1Zero__pickle.html" title="espressopp::interaction\l::Zero_pickle" alt="" coords="177,1295,335,1342"/>
+<area shape="rect" id="node39" href="$structespressopp_1_1quaternion__pickle__suite.html" title="espressopp::quaternion\l_pickle_suite" alt="" coords="177,1365,335,1411"/>
+<area shape="rect" id="node41" href="$structespressopp_1_1real3D__pickle__suite.html" title="espressopp::real3D\l_pickle_suite" alt="" coords="189,1434,323,1481"/>
+<area shape="rect" id="node43" href="$structespressopp_1_1tensor__pickle__suite.html" title="espressopp::tensor\l_pickle_suite" alt="" coords="189,1503,323,1550"/>
 </map>

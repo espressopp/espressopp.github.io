@@ -52,7 +52,7 @@
 </div><!--header-->
 <div class="contents">
 <a href="Interaction_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013,2016</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">      Max Planck Institute for Polymer Research</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  Copyright (C) 2008,2009,2010,2011</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">      Max-Planck-Institute for Polymer Research &amp; Fraunhofer SCAI</span></div>
@@ -89,18 +89,19 @@
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      <a class="code" href="classespressopp_1_1python_1_1class__.html">class_&lt; Interaction, boost::noncopyable &gt;</a>(<span class="stringliteral">&quot;interaction_Interaction&quot;</span>, no_init)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        .def(<span class="stringliteral">&quot;computeEnergy&quot;</span>, &amp;<a class="code" href="classespressopp_1_1interaction_1_1Interaction.html#a0147b5dc240a0493cc310500da0cef6e">Interaction::computeEnergy</a>)</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        .def(<span class="stringliteral">&quot;computeEnergyAA&quot;</span>, &amp;<a class="code" href="classespressopp_1_1interaction_1_1Interaction.html#a0a985a00d1d8065cace4cf70a0d43749">Interaction::computeEnergyAA</a>)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        .def(<span class="stringliteral">&quot;computeEnergyCG&quot;</span>, &amp;<a class="code" href="classespressopp_1_1interaction_1_1Interaction.html#aac7f1433dd2ae9ffbe19f4186e00b187">Interaction::computeEnergyCG</a>)</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        .def(<span class="stringliteral">&quot;computeVirial&quot;</span>, &amp;<a class="code" href="classespressopp_1_1interaction_1_1Interaction.html#a363be8e9c6d3f6b36fd5bbe0453ddaf3">Interaction::computeVirial</a>)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        .def(<span class="stringliteral">&quot;bondType&quot;</span>, &amp;<a class="code" href="classespressopp_1_1interaction_1_1Interaction.html#a4cab299fd0afc66264c5447360cb240a">Interaction::bondType</a>)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      ;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        .def(<span class="stringliteral">&quot;computeEnergyDeriv&quot;</span>, &amp;<a class="code" href="classespressopp_1_1interaction_1_1Interaction.html#a542093b4375a6d67adb8ec27b8593acd">Interaction::computeEnergyDeriv</a>)</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        .def(<span class="stringliteral">&quot;computeEnergyAA&quot;</span>, &amp;<a class="code" href="classespressopp_1_1interaction_1_1Interaction.html#a0a985a00d1d8065cace4cf70a0d43749">Interaction::computeEnergyAA</a>)</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        .def(<span class="stringliteral">&quot;computeEnergyCG&quot;</span>, &amp;<a class="code" href="classespressopp_1_1interaction_1_1Interaction.html#aac7f1433dd2ae9ffbe19f4186e00b187">Interaction::computeEnergyCG</a>)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        .def(<span class="stringliteral">&quot;computeVirial&quot;</span>, &amp;<a class="code" href="classespressopp_1_1interaction_1_1Interaction.html#a363be8e9c6d3f6b36fd5bbe0453ddaf3">Interaction::computeVirial</a>)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        .def(<span class="stringliteral">&quot;bondType&quot;</span>, &amp;<a class="code" href="classespressopp_1_1interaction_1_1Interaction.html#a4cab299fd0afc66264c5447360cb240a">Interaction::bondType</a>)</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      ;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 19 2016 18:08:11 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 23 2016 14:37:30 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

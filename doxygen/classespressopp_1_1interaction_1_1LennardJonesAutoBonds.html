@@ -143,6 +143,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a34a58299634ae8b78d53d6a936dec3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4f091a5e65e565356a7066d7f5cad4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#ae4f091a5e65e565356a7066d7f5cad4c">_computeEnergy</a> (const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p1, const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p2, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist) const</td></tr>
 <tr class="separator:ae4f091a5e65e565356a7066d7f5cad4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0fe101d38238fa75a5f84a261a293e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a3a0fe101d38238fa75a5f84a261a293e">_computeEnergyDeriv</a> (const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p1, const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p2) const</td></tr>
+<tr class="separator:a3a0fe101d38238fa75a5f84a261a293e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e29ded36182b3fd7f144c9f891e2feb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a9e29ded36182b3fd7f144c9f891e2feb">_computeForce</a> (<a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;force, const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p1, const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p2, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist) const</td></tr>
 <tr class="separator:a9e29ded36182b3fd7f144c9f891e2feb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -339,7 +341,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00068">68</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p>References <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::autoShift</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00077">preset()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>.</p>
+<p>References <a class="el" href="Potential_8hpp_source.html#l00121">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::autoShift</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00077">preset()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>.</p>
 
 </div>
 </div>
@@ -478,6 +480,40 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3a0fe101d38238fa75a5f84a261a293e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::_computeEnergyDeriv </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a7bb92882aa58279a7ae1f8f1b2757038"></a>
 <div class="memitem">
 <div class="memproto">
@@ -502,7 +538,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00157">157</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p>References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00204">_computeEnergySqrRaw()</a>, <a class="el" href="Potential_8hpp_source.html#l00117">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Potential_8hpp_source.html#l00121">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::derived_this()</a>, <a class="el" href="log4espp_8hpp_source.html#l00481">LOG4ESPP_TRACE</a>, and <a class="el" href="Potential_8hpp_source.html#l00118">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::shift</a>.</p>
+<p>References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00204">_computeEnergySqrRaw()</a>, <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Potential_8hpp_source.html#l00123">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::derived_this()</a>, <a class="el" href="log4espp_8hpp_source.html#l00481">LOG4ESPP_TRACE</a>, and <a class="el" href="Potential_8hpp_source.html#l00120">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::shift</a>.</p>
 
 <p>Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00149">_computeEnergy()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00140">computeEnergySqr()</a>.</p>
 
@@ -624,7 +660,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00179">179</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p>References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00047">bondlist</a>, <a class="el" href="Potential_8hpp_source.html#l00117">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Particle_8hpp_source.html#l00285">espressopp::Particle::ghost()</a>, <a class="el" href="Particle_8hpp_source.html#l00208">espressopp::Particle::id()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00048">max_crosslinks</a>, <a class="el" href="Particle_8hpp_source.html#l00241">espressopp::Particle::position()</a>, and <a class="el" href="Real3D_8hpp_source.html#l00214">espressopp::Real3D::sqr()</a>.</p>
+<p>References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00047">bondlist</a>, <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Particle_8hpp_source.html#l00285">espressopp::Particle::ghost()</a>, <a class="el" href="Particle_8hpp_source.html#l00208">espressopp::Particle::id()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00048">max_crosslinks</a>, <a class="el" href="Particle_8hpp_source.html#l00241">espressopp::Particle::position()</a>, and <a class="el" href="Real3D_8hpp_source.html#l00214">espressopp::Real3D::sqr()</a>.</p>
 
 <p>Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00172">computeForce()</a>.</p>
 
@@ -664,7 +700,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00195">195</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p>References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00211">_computeForceRaw()</a>, <a class="el" href="Potential_8hpp_source.html#l00117">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Potential_8hpp_source.html#l00121">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::derived_this()</a>, and <a class="el" href="Real3D_8hpp_source.html#l00214">espressopp::Real3D::sqr()</a>.</p>
+<p>References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00211">_computeForceRaw()</a>, <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Potential_8hpp_source.html#l00123">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::derived_this()</a>, and <a class="el" href="Real3D_8hpp_source.html#l00214">espressopp::Real3D::sqr()</a>.</p>
 
 </div>
 </div>
@@ -937,7 +973,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00121">121</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00123">123</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00157">_computeEnergySqr()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00195">_computeForce()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>.</p>
 
@@ -964,7 +1000,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00125">125</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00127">127</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1183,7 +1219,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00093">getEpsilon()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00102">getMaxCrosslinks()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00100">getSigma()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00087">setEpsilon()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00104">setMaxCrosslinks()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00095">setSigma()</a>.</p>
 
-<p>Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00087">espressopp::interaction::registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00089">espressopp::interaction::registerPython()</a>.</p>
 
 </div>
 </div>
@@ -1212,7 +1248,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">119</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p>References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00204">_computeEnergySqrRaw()</a>, <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::autoShift</a>, <a class="el" href="Potential_8hpp_source.html#l00117">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Potential_8hpp_source.html#l00121">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::derived_this()</a>, <a class="el" href="esconfig_8hpp_source.html#l00039">espressopp::infinity</a>, and <a class="el" href="Potential_8hpp_source.html#l00118">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::shift</a>.</p>
+<p>References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00204">_computeEnergySqrRaw()</a>, <a class="el" href="Potential_8hpp_source.html#l00121">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::autoShift</a>, <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Potential_8hpp_source.html#l00123">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::derived_this()</a>, <a class="el" href="esconfig_8hpp_source.html#l00039">espressopp::infinity</a>, and <a class="el" href="Potential_8hpp_source.html#l00120">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::shift</a>.</p>
 
 <p>Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00068">LennardJonesAutoBonds()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00128">updateAutoShift()</a>.</p>
 
@@ -1244,7 +1280,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">113</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p>References <a class="el" href="Potential_8hpp_source.html#l00116">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoff</a>, <a class="el" href="Potential_8hpp_source.html#l00117">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00128">updateAutoShift()</a>.</p>
+<p>References <a class="el" href="Potential_8hpp_source.html#l00118">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoff</a>, <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00128">updateAutoShift()</a>.</p>
 
 <p>Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00053">LennardJonesAutoBonds()</a>.</p>
 
@@ -1391,7 +1427,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00128">128</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p>References <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::autoShift</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>.</p>
+<p>References <a class="el" href="Potential_8hpp_source.html#l00121">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::autoShift</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>.</p>
 
 <p>Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00087">setEpsilon()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00095">setSigma()</a>.</p>
 
@@ -1416,7 +1452,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00119">119</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00121">121</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00068">LennardJonesAutoBonds()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00128">updateAutoShift()</a>.</p>
 
@@ -1464,7 +1500,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00116">116</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00118">118</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>.</p>
 
@@ -1488,7 +1524,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00117">117</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00119">119</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00157">_computeEnergySqr()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00179">_computeForce()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>.</p>
 
@@ -1656,7 +1692,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00118">118</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00120">120</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00157">_computeEnergySqr()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>.</p>
 
@@ -1693,7 +1729,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 19 2016 18:08:15 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 23 2016 14:37:35 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -151,6 +151,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae4f091a5e65e565356a7066d7f5cad4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac37132cdbbb673d4b13edc5a5d9e3ccf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#ac37132cdbbb673d4b13edc5a5d9e3ccf">_computeEnergySqr</a> (<a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> distSqr) const</td></tr>
 <tr class="separator:ac37132cdbbb673d4b13edc5a5d9e3ccf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0fe101d38238fa75a5f84a261a293e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a3a0fe101d38238fa75a5f84a261a293e">_computeEnergyDeriv</a> (const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p1, const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p2) const</td></tr>
+<tr class="separator:a3a0fe101d38238fa75a5f84a261a293e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21f0fcb2e55b27c985af0ad9f7d9c410"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a21f0fcb2e55b27c985af0ad9f7d9c410">_computeForce</a> (<a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;force, const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p1, const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p2) const</td></tr>
 <tr class="separator:a21f0fcb2e55b27c985af0ad9f7d9c410"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab61087127fcd840e2b0d6042467d3a37"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#ab61087127fcd840e2b0d6042467d3a37">_computeForce</a> (<a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;force, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist) const</td></tr>
@@ -432,6 +434,40 @@ Private Attributes</h2></td></tr>
           <td></td>
           <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
           <td class="paramname"><em>dist</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a0fe101d38238fa75a5f84a261a293e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberPairTerm.html">StillingerWeberPairTerm</a>  &gt;::_computeEnergyDeriv </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -861,7 +897,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00121">121</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00123">123</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -886,7 +922,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00125">125</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00127">127</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1194,7 +1230,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="StillingerWeberPairTerm_8hpp_source.html#l00073">getA()</a>, <a class="el" href="StillingerWeberPairTerm_8hpp_source.html#l00076">getB()</a>, <a class="el" href="StillingerWeberPairTerm_8hpp_source.html#l00090">getEpsilon()</a>, <a class="el" href="StillingerWeberPairTerm_8hpp_source.html#l00079">getP()</a>, <a class="el" href="StillingerWeberPairTerm_8hpp_source.html#l00082">getQ()</a>, <a class="el" href="StillingerWeberPairTerm_8hpp_source.html#l00096">getSigma()</a>, <a class="el" href="StillingerWeberPairTerm_8hpp_source.html#l00069">setA()</a>, <a class="el" href="StillingerWeberPairTerm_8hpp_source.html#l00075">setB()</a>, <a class="el" href="StillingerWeberPairTerm_8hpp_source.html#l00085">setEpsilon()</a>, <a class="el" href="StillingerWeberPairTerm_8hpp_source.html#l00078">setP()</a>, <a class="el" href="StillingerWeberPairTerm_8hpp_source.html#l00081">setQ()</a>, and <a class="el" href="StillingerWeberPairTerm_8hpp_source.html#l00092">setSigma()</a>.</p>
 
-<p>Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00087">espressopp::interaction::registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00089">espressopp::interaction::registerPython()</a>.</p>
 
 </div>
 </div>
@@ -1525,7 +1561,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00119">119</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00121">121</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1571,7 +1607,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00116">116</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00118">118</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1593,7 +1629,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00117">117</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00119">119</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1711,7 +1747,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00118">118</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Potential_8hpp_source.html#l00120">120</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1746,7 +1782,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 19 2016 18:08:15 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 23 2016 14:37:35 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

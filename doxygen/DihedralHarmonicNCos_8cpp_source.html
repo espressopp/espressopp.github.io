@@ -101,26 +101,29 @@
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                  init&lt; shared_ptr&lt;System&gt;,</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                        shared_ptr&lt;FixedQuadrupleList&gt;,</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                        shared_ptr&lt;DihedralHarmonicNCos&gt; &gt;())</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        .def(<span class="stringliteral">&quot;setPotential&quot;</span>, &amp;FixedQuadrupleListDihedralHarmonicNCos::setPotential)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        .def(<span class="stringliteral">&quot;getFixedQuadrupleList&quot;</span>, &amp;FixedQuadrupleListDihedralHarmonicNCos::getFixedQuadrupleList)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        ;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      <span class="keyword">typedef</span> <span class="keyword">class </span><a class="code" href="classespressopp_1_1interaction_1_1FixedQuadrupleListTypesInteractionTemplate.html">FixedQuadrupleListTypesInteractionTemplate</a>&lt;DihedralHarmonicNCos&gt;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;          FixedQuadrupleListTypesDihedralHarmonicNCos;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      <a class="code" href="classespressopp_1_1python_1_1class__.html">class_&lt; FixedQuadrupleListTypesDihedralHarmonicNCos, bases&lt; Interaction &gt;</a> &gt;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;          (<span class="stringliteral">&quot;interaction_FixedQuadrupleListTypesDihedralHarmonicNCos&quot;</span>,</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;           init&lt; shared_ptr&lt;System&gt;, shared_ptr&lt;FixedQuadrupleList&gt; &gt;())</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          .def(<span class="stringliteral">&quot;setPotential&quot;</span>, &amp;FixedQuadrupleListTypesDihedralHarmonicNCos::setPotential)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;          .def(<span class="stringliteral">&quot;getPotential&quot;</span>, &amp;FixedQuadrupleListTypesDihedralHarmonicNCos::getPotentialPtr)</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;          .def(<span class="stringliteral">&quot;setFixedQuadrupleList&quot;</span>, &amp;FixedQuadrupleListTypesDihedralHarmonicNCos::setFixedQuadrupleList)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          .def(<span class="stringliteral">&quot;getFixedQuadrupleList&quot;</span>, &amp;FixedQuadrupleListTypesDihedralHarmonicNCos::getFixedQuadrupleList);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    }</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        .def(init&lt; shared_ptr&lt;System&gt;,</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                   shared_ptr&lt;FixedQuadrupleListAdress&gt;,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                   shared_ptr&lt;DihedralHarmonicNCos&gt; &gt;())</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        .def(<span class="stringliteral">&quot;setPotential&quot;</span>, &amp;FixedQuadrupleListDihedralHarmonicNCos::setPotential)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        .def(<span class="stringliteral">&quot;getFixedQuadrupleList&quot;</span>, &amp;FixedQuadrupleListDihedralHarmonicNCos::getFixedQuadrupleList)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        ;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      <span class="keyword">typedef</span> <span class="keyword">class </span><a class="code" href="classespressopp_1_1interaction_1_1FixedQuadrupleListTypesInteractionTemplate.html">FixedQuadrupleListTypesInteractionTemplate</a>&lt;DihedralHarmonicNCos&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;          FixedQuadrupleListTypesDihedralHarmonicNCos;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <a class="code" href="classespressopp_1_1python_1_1class__.html">class_&lt; FixedQuadrupleListTypesDihedralHarmonicNCos, bases&lt; Interaction &gt;</a> &gt;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;          (<span class="stringliteral">&quot;interaction_FixedQuadrupleListTypesDihedralHarmonicNCos&quot;</span>,</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;           init&lt; shared_ptr&lt;System&gt;, shared_ptr&lt;FixedQuadrupleList&gt; &gt;())</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;          .def(<span class="stringliteral">&quot;setPotential&quot;</span>, &amp;FixedQuadrupleListTypesDihedralHarmonicNCos::setPotential)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          .def(<span class="stringliteral">&quot;getPotential&quot;</span>, &amp;FixedQuadrupleListTypesDihedralHarmonicNCos::getPotentialPtr)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;          .def(<span class="stringliteral">&quot;setFixedQuadrupleList&quot;</span>, &amp;FixedQuadrupleListTypesDihedralHarmonicNCos::setFixedQuadrupleList)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;          .def(<span class="stringliteral">&quot;getFixedQuadrupleList&quot;</span>, &amp;FixedQuadrupleListTypesDihedralHarmonicNCos::getFixedQuadrupleList);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 19 2016 18:08:11 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 23 2016 14:37:30 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
