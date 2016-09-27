@@ -118,22 +118,25 @@ by Adress::initForces</li>
 Adress::integrate1 and Adress::integrate2</li>
 </ul>
 <p>Example - how to turn on the AdResS integrator extension:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">adress</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">Adress</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">adress</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">Adress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">verletlist</span><span class="p">,</span> <span class="n">fixedtuplelist</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">adress</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>If KTI is set to True, then the resolution parameters are not updated. This can be used for example for Kirkwood thermodynamic integration, during which one manually sets the whole system on different resolution parameters. KTI = True then prevents overwriting these manually set values.
+Furthermore, when having moving AdResS regions based on particles, regionupdates specifies the update frequency of the AdResS region in number of steps (or, to be more precise, calls of communicateAdrPositions()). Note that there is a tradeoff: The more frequently the AdResS region is updated, the more gradually and accurately the AdResS region changes and adapts it shape. This could allow for a smaller overall AdResS region and possibly a smoother simulation. However, when having many AdResS region defining particles, these frequent updates can become computationally significant and cost additional simulation time. The optimum is highly system and application dependent.</p>
 <dl class="function">
 <dt id="espressopp.integrator.Adress.espressopp.integrator.Adress">
-<code class="descclassname">espressopp.integrator.</code><code class="descname">Adress</code><span class="sig-paren">(</span><em>_system</em>, <em>_verletlist</em>, <em>_fixedtuplelist</em>, <em>KTI</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.Adress.espressopp.integrator.Adress" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.integrator.</code><code class="descname">Adress</code><span class="sig-paren">(</span><em>_system</em>, <em>_verletlist</em>, <em>_fixedtuplelist</em>, <em>KTI</em>, <em>regionupdates</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.Adress.espressopp.integrator.Adress" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>_system</strong> &#8211; </li>
-<li><strong>_verletlist</strong> &#8211; </li>
-<li><strong>_fixedtuplelist</strong> &#8211; </li>
-<li><strong>KTI</strong> &#8211; (default: False)</li>
+<li><strong>_system</strong> (<em>shared_ptr&lt;System&gt;</em>) &#8211; system object</li>
+<li><strong>_verletlist</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) &#8211; verletlist object</li>
+<li><strong>_fixedtuplelist</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) &#8211; fixedtuplelist object</li>
+<li><strong>KTI</strong> (<em>bool</em>) &#8211; (default: False) update resolution parameter? (Yes: set False, No: set True)</li>
+<li><strong>regionupdates</strong> (<em>int</em>) &#8211; (default: 1) after how many steps does the AdResS region needs to be updated?</li>
 </ul>
 </td>
 </tr>

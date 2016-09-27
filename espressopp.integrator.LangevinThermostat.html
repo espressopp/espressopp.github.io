@@ -105,6 +105,20 @@
 	    
   <span class="target" id="module-espressopp.integrator.LangevinThermostat"></span><div class="section" id="espressopp-integrator-langevinthermostat">
 <h1><strong>espressopp.integrator.LangevinThermostat</strong><a class="headerlink" href="#espressopp-integrator-langevinthermostat" title="Permalink to this headline">¶</a></h1>
+<p>Langevin Thermostat</p>
+<p>Example:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># set up the thermostat</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span><span class="o">.</span><span class="n">gamma</span> <span class="o">=</span> <span class="n">gamma</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># set friction coefficient gamma</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span><span class="o">.</span><span class="n">temperature</span> <span class="o">=</span> <span class="n">temp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># set temperature</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span><span class="o">.</span><span class="n">adress</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># set adress (default is False)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">langevin</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># add extensions to a previously defined integrator</span>
+</pre></div>
+</div>
 <dl class="function">
 <dt id="espressopp.integrator.LangevinThermostat.espressopp.integrator.LangevinThermostat">
 <code class="descclassname">espressopp.integrator.</code><code class="descname">LangevinThermostat</code><span class="sig-paren">(</span><em>system</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LangevinThermostat.espressopp.integrator.LangevinThermostat" title="Permalink to this definition">¶</a></dt>
@@ -112,7 +126,20 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>system</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>system</strong> (<em>shared_ptr&lt;System&gt;</em>) &#8211; system object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.integrator.LangevinThermostat.espressopp.integrator.LangevinThermostat.addExclusions">
+<code class="descclassname">espressopp.integrator.LangevinThermostat.</code><code class="descname">addExclusions</code><span class="sig-paren">(</span><em>pidlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LangevinThermostat.espressopp.integrator.LangevinThermostat.addExclusions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pidlist</strong> (<em>list of ints</em>) &#8211; list of particle ids to be excluded from thermostating. In adaptive (AdResS) simulations, add ids of atomistic particles to be excluded (thermostats acts in this case on atomistic level). For normal simulations, add normal or coarse-grained particle ids.</td>
 </tr>
 </tbody>
 </table>

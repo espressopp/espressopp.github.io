@@ -52,25 +52,25 @@
 </div><!--header-->
 <div class="contents">
 <a href="FreeEnergyCompensation_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013,2014,2015,2016</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">      Max Planck Institute for Polymer Research</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  Copyright (C) 2008,2009,2010,2011</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">      Max-Planck-Institute for Polymer Research &amp; Fraunhofer SCAI</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">  This file is part of ESPResSo++.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">  ESPResSo++ is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">  it under the terms of the GNU General Public License as published by</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">  the Free Software Foundation, either version 3 of the License, or</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">  (at your option) any later version.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">  ESPResSo++ is distributed in the hope that it will be useful,</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">  GNU General Public License for more details.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  You should have received a copy of the GNU General Public License</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// ESPP_CLASS</span></div>
@@ -97,42 +97,43 @@
 <div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html">   44</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html">FreeEnergyCompensation</a> : <span class="keyword">public</span> <a class="code" href="classespressopp_1_1integrator_1_1Extension.html">Extension</a> {</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a290bdabd0b09557604d406f15d912dc6">FreeEnergyCompensation</a>(shared_ptr&lt;System&gt; system);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a3c573cd187d39c02f9895ca5869bd60d">~FreeEnergyCompensation</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a897fb64614b564318b893484a07a323c" title="Setter for the filename, will read in the table.">addForce</a>(<span class="keywordtype">int</span> itype, <span class="keyword">const</span> <span class="keywordtype">char</span>* _filename, <span class="keywordtype">int</span> <a class="code" href="classespressopp_1_1integrator_1_1Extension.html#a10d1301515e87b9fbc1a347a1994e63a">type</a>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a95bd4b3969075e236166d95415bd9b12">   52</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a95bd4b3969075e236166d95415bd9b12">getFilename</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a97aeb71e64e13948c57ff89ae7a3835f">filename</a>.c_str(); }</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#ad6caddde6096c0d2ea29d74300c93912">applyForce</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#ab4cb6c2cd7af901e8874960d93cb1189">computeCompEnergy</a>();</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a4ddbaf54bbb98f0b8569d21428f34298">setCenter</a>(<a class="code" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> x, <a class="code" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> y, <a class="code" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> z);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a8c0ba1a58966a47b46b0cd1d29a4f33e">registerPython</a>();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;      <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a32a9c350044c30d14ef4a82e010c78e6">   64</a></span>&#160;        boost::signals2::connection <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a32a9c350044c30d14ef4a82e010c78e6">_applyForce</a>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#aa94584941b07e91a8d433d98ed25dd76">connect</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#ae7a37d27ec2678ca680f7303a6d91b62">disconnect</a>();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#ac8fc3e81498791c13e18b3df9d6d434a">   69</a></span>&#160;        <a class="code" href="classespressopp_1_1Real3D.html">Real3D</a> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#ac8fc3e81498791c13e18b3df9d6d434a">center</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a97aeb71e64e13948c57ff89ae7a3835f">   70</a></span>&#160;        std::string <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a97aeb71e64e13948c57ff89ae7a3835f">filename</a>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a842ba11136cd92be000479bc35120d31">   71</a></span>&#160;        <span class="keyword">typedef</span> shared_ptr &lt;interaction::Interpolation&gt; <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a842ba11136cd92be000479bc35120d31">Table</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#af361bdd6b4645761a45bf89321dd0404">   72</a></span>&#160;        std::map&lt;int, Table&gt; <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#af361bdd6b4645761a45bf89321dd0404">forces</a>; <span class="comment">// map type to force</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">static</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a4c6201039467315847c346c1f99ffa2b">LOG4ESPP_DECL_LOGGER</a>(theLogger);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    };</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;}</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a1fcc1309484bb7329bfbe6e5b2a3b371">   47</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a1fcc1309484bb7329bfbe6e5b2a3b371">sphereAdr</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a669c70938c5d42ceeceaca538ef6ff5a">FreeEnergyCompensation</a>(shared_ptr&lt;System&gt; system, <span class="keywordtype">bool</span> _sphereAdr = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">virtual</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a3c573cd187d39c02f9895ca5869bd60d">~FreeEnergyCompensation</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a897fb64614b564318b893484a07a323c" title="Setter for the filename, will read in the table.">addForce</a>(<span class="keywordtype">int</span> itype, <span class="keyword">const</span> <span class="keywordtype">char</span>* _filename, <span class="keywordtype">int</span> <a class="code" href="classespressopp_1_1integrator_1_1Extension.html#a10d1301515e87b9fbc1a347a1994e63a">type</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a95bd4b3969075e236166d95415bd9b12">   53</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a95bd4b3969075e236166d95415bd9b12">getFilename</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a97aeb71e64e13948c57ff89ae7a3835f">filename</a>.c_str(); }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#ad6caddde6096c0d2ea29d74300c93912">applyForce</a>();</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#ab4cb6c2cd7af901e8874960d93cb1189">computeCompEnergy</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a4ddbaf54bbb98f0b8569d21428f34298">setCenter</a>(<a class="code" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> x, <a class="code" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> y, <a class="code" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> z);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a8c0ba1a58966a47b46b0cd1d29a4f33e">registerPython</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a32a9c350044c30d14ef4a82e010c78e6">   65</a></span>&#160;        boost::signals2::connection <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a32a9c350044c30d14ef4a82e010c78e6">_applyForce</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#aa94584941b07e91a8d433d98ed25dd76">connect</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#ae7a37d27ec2678ca680f7303a6d91b62">disconnect</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#ac8fc3e81498791c13e18b3df9d6d434a">   70</a></span>&#160;        <a class="code" href="classespressopp_1_1Real3D.html">Real3D</a> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#ac8fc3e81498791c13e18b3df9d6d434a">center</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a97aeb71e64e13948c57ff89ae7a3835f">   71</a></span>&#160;        std::string <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a97aeb71e64e13948c57ff89ae7a3835f">filename</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a842ba11136cd92be000479bc35120d31">   72</a></span>&#160;        <span class="keyword">typedef</span> shared_ptr &lt;interaction::Interpolation&gt; <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a842ba11136cd92be000479bc35120d31">Table</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#af361bdd6b4645761a45bf89321dd0404">   73</a></span>&#160;        std::map&lt;int, Table&gt; <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#af361bdd6b4645761a45bf89321dd0404">forces</a>; <span class="comment">// map type to force</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">static</span> <a class="code" href="classespressopp_1_1integrator_1_1FreeEnergyCompensation.html#a4c6201039467315847c346c1f99ffa2b">LOG4ESPP_DECL_LOGGER</a>(theLogger);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    };</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 23 2016 14:37:29 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 15:22:43 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

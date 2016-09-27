@@ -6,8 +6,8 @@
 <area shape="rect" id="node21" href="$classespressopp_1_1analysis_1_1ConfigurationsExt.html" title="espressopp::analysis\l::ConfigurationsExt" alt="" coords="288,594,432,641"/>
 <area shape="rect" id="node23" href="$classespressopp_1_1analysis_1_1ConfigurationsExtAdress.html" title="espressopp::analysis\l::ConfigurationsExtAdress" alt="" coords="273,663,447,710"/>
 <area shape="rect" id="node25" href="$classespressopp_1_1analysis_1_1Observable.html" title="All quantities to be measured derive from this abstract base class." alt="" coords="288,733,432,779"/>
-<area shape="rect" id="node51" href="$classespressopp_1_1analysis_1_1Velocities.html" title="espressopp::analysis\l::Velocities" alt="" coords="288,802,432,849"/>
-<area shape="rect" id="node53" href="$classespressopp_1_1integrator_1_1Extension.html" title="espressopp::integrator\l::Extension" alt="" coords="285,871,435,918"/>
+<area shape="rect" id="node53" href="$classespressopp_1_1analysis_1_1Velocities.html" title="espressopp::analysis\l::Velocities" alt="" coords="288,802,432,849"/>
+<area shape="rect" id="node55" href="$classespressopp_1_1integrator_1_1Extension.html" title="espressopp::integrator\l::Extension" alt="" coords="285,871,435,918"/>
 <area shape="rect" id="node61" href="$classespressopp_1_1integrator_1_1MDIntegrator.html" title="espressopp::integrator\l::MDIntegrator" alt="" coords="285,941,435,987"/>
 <area shape="rect" id="node63" href="$classespressopp_1_1integrator_1_1MinimizeEnergy.html" title="espressopp::integrator\l::MinimizeEnergy" alt="" coords="285,1010,435,1057"/>
 <area shape="rect" id="node65" href="$classespressopp_1_1interaction_1_1FixedPairDistListInteractionTemplate.html" title="espressopp::interaction\l::FixedPairDistListInteraction\lTemplate\&lt; _Potential \&gt;" alt="" coords="265,1080,455,1144"/>
@@ -32,19 +32,19 @@
 <area shape="rect" id="node13" href="$classespressopp_1_1analysis_1_1MeanSquareDispl.html" title="espressopp::analysis\l::MeanSquareDispl" alt="" coords="541,143,685,190"/>
 <area shape="rect" id="node15" href="$classespressopp_1_1analysis_1_1MeanSquareInternalDist.html" title="espressopp::analysis\l::MeanSquareInternalDist" alt="" coords="528,213,699,259"/>
 <area shape="rect" id="node17" href="$classespressopp_1_1analysis_1_1VelocityAutocorrelation.html" title="espressopp::analysis\l::VelocityAutocorrelation" alt="" coords="532,282,695,329"/>
-<area shape="rect" id="node27" href="$classespressopp_1_1analysis_1_1CenterOfMass.html" title="Class to compute the center&#45;of&#45;mass of the system." alt="" coords="541,351,685,398"/>
-<area shape="rect" id="node29" href="$classespressopp_1_1analysis_1_1MaxPID.html" title="Class to get the number of particles in the system." alt="" coords="541,421,685,467"/>
-<area shape="rect" id="node31" href="$classespressopp_1_1analysis_1_1NeighborFluctuation.html" title="Class to get the number of particles in the system." alt="" coords="540,490,687,537"/>
-<area shape="rect" id="node33" href="$classespressopp_1_1analysis_1_1NPart.html" title="Class to get the number of particles in the system." alt="" coords="541,559,685,606"/>
-<area shape="rect" id="node35" href="$classespressopp_1_1analysis_1_1PotentialEnergy.html" title="espressopp::analysis\l::PotentialEnergy" alt="" coords="541,629,685,675"/>
-<area shape="rect" id="node37" href="$classespressopp_1_1analysis_1_1Pressure.html" title="Class to compute the pressure." alt="" coords="541,698,685,745"/>
-<area shape="rect" id="node39" href="$classespressopp_1_1analysis_1_1RadialDistrF.html" title="Class to compute the radial distribution function of the system." alt="" coords="541,767,685,814"/>
-<area shape="rect" id="node41" href="$classespressopp_1_1analysis_1_1RDFatomistic.html" title="Class to compute the radial distribution function of the system." alt="" coords="541,837,685,883"/>
-<area shape="rect" id="node43" href="$classespressopp_1_1analysis_1_1StaticStructF.html" title="Class to compute the static structure function of the system." alt="" coords="541,906,685,953"/>
-<area shape="rect" id="node45" href="$classespressopp_1_1analysis_1_1XDensity.html" title="espressopp::analysis\l::XDensity" alt="" coords="541,975,685,1022"/>
-<area shape="rect" id="node47" href="$classespressopp_1_1analysis_1_1XPressure.html" title="espressopp::analysis\l::XPressure" alt="" coords="541,1045,685,1091"/>
-<area shape="rect" id="node49" href="$classespressopp_1_1analysis_1_1XTemperature.html" title="espressopp::analysis\l::XTemperature" alt="" coords="541,1114,685,1161"/>
-<area shape="rect" id="node55" href="$classespressopp_1_1integrator_1_1Adress.html" title="espressopp::integrator\l::Adress" alt="" coords="539,1183,688,1230"/>
-<area shape="rect" id="node57" href="$classespressopp_1_1integrator_1_1AssociationReaction.html" title="Reaction scheme for polymer growth and curing/crosslinking." alt="" coords="539,1253,688,1299"/>
-<area shape="rect" id="node59" href="$classespressopp_1_1integrator_1_1BerendsenBarostat.html" title="espressopp::integrator\l::BerendsenBarostat" alt="" coords="539,1322,688,1369"/>
+<area shape="rect" id="node27" href="$classespressopp_1_1analysis_1_1AdressDensity.html" title="espressopp::analysis\l::AdressDensity" alt="" coords="541,351,685,398"/>
+<area shape="rect" id="node29" href="$classespressopp_1_1analysis_1_1CenterOfMass.html" title="Class to compute the center&#45;of&#45;mass of the system." alt="" coords="541,421,685,467"/>
+<area shape="rect" id="node31" href="$classespressopp_1_1analysis_1_1MaxPID.html" title="Class to get the number of particles in the system." alt="" coords="541,490,685,537"/>
+<area shape="rect" id="node33" href="$classespressopp_1_1analysis_1_1NeighborFluctuation.html" title="Class to get the number of particles in the system." alt="" coords="540,559,687,606"/>
+<area shape="rect" id="node35" href="$classespressopp_1_1analysis_1_1NPart.html" title="Class to get the number of particles in the system." alt="" coords="541,629,685,675"/>
+<area shape="rect" id="node37" href="$classespressopp_1_1analysis_1_1PotentialEnergy.html" title="espressopp::analysis\l::PotentialEnergy" alt="" coords="541,698,685,745"/>
+<area shape="rect" id="node39" href="$classespressopp_1_1analysis_1_1Pressure.html" title="Class to compute the pressure." alt="" coords="541,767,685,814"/>
+<area shape="rect" id="node41" href="$classespressopp_1_1analysis_1_1RadialDistrF.html" title="Class to compute the radial distribution function of the system." alt="" coords="541,837,685,883"/>
+<area shape="rect" id="node43" href="$classespressopp_1_1analysis_1_1RDFatomistic.html" title="Class to compute the radial distribution function of the system." alt="" coords="541,906,685,953"/>
+<area shape="rect" id="node45" href="$classespressopp_1_1analysis_1_1StaticStructF.html" title="Class to compute the static structure function of the system." alt="" coords="541,975,685,1022"/>
+<area shape="rect" id="node47" href="$classespressopp_1_1analysis_1_1XDensity.html" title="espressopp::analysis\l::XDensity" alt="" coords="541,1045,685,1091"/>
+<area shape="rect" id="node49" href="$classespressopp_1_1analysis_1_1XPressure.html" title="espressopp::analysis\l::XPressure" alt="" coords="541,1114,685,1161"/>
+<area shape="rect" id="node51" href="$classespressopp_1_1analysis_1_1XTemperature.html" title="espressopp::analysis\l::XTemperature" alt="" coords="541,1183,685,1230"/>
+<area shape="rect" id="node57" href="$classespressopp_1_1integrator_1_1Adress.html" title="espressopp::integrator\l::Adress" alt="" coords="539,1253,688,1299"/>
+<area shape="rect" id="node59" href="$classespressopp_1_1integrator_1_1AssociationReaction.html" title="Reaction scheme for polymer growth and curing/crosslinking." alt="" coords="539,1322,688,1369"/>
 </map>

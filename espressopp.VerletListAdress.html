@@ -106,7 +106,7 @@
   <span class="target" id="module-espressopp.VerletListAdress"></span><div class="section" id="verletlistadress-object">
 <h1><strong>VerletListAdress</strong> - Object<a class="headerlink" href="#verletlistadress-object" title="Permalink to this headline">¶</a></h1>
 <p>The VerletListAdress is the Verlet List to be used for AdResS or H-AdResS
-simulations. When creating the VerletListAdress one has to provide the system 
+simulations. When creating the VerletListAdress one has to provide the system
 and specify both cutoff for the CG interaction and adrcutoff for the atomistic
 interaction. Often, it is important to set the atomistic adrcutoff much bigger
 than the actual interaction&#8217;s cutoff would be, since also the atomistic part of
@@ -115,9 +115,8 @@ positions. For a much larger coarse-grained cutoff it is for example possible
 to also set the atomistic cutoff on the same value as the coarse-grained one.</p>
 <p>Furthermore, the sizes of the explicit and hybrid region have to be
 provided (dEx and dHy in the example below) and the center of the atomistic
-region has to be set (adrCenter). In the current implementation this results in
-a resolution change along the x-direction of the box. A spherical symmetry can
-be obtained by only minor code changes.</p>
+region has to be set (adrCenter). Additionally, it can be chosen between a spherical and a slab-like geometry (sphereAdr).</p>
+<p>The AdResS region can also be defined based on one or more particles. For a single particle, in this case a spherical region moves along with the particle. For many such region defining particles, the high-resolution/hybrid region corresponds to the overlap of the different spherical regions based on the individual particles (for details see Kreis et al., JCTC doi: 10.1021/acs.jctc.6b00440). Note that more region defining particles mean a higher computational overhead as these particles need to be communicated among all processors (also see explanations in AdResS.py). Also note that region defining particles should be normal/CG particles, not atomistic/AdResS ones.</p>
 <div class="section" id="bascially-the-verlistadress-provides-4-lists">
 <h2>Bascially the VerListAdress provides 4 lists:<a class="headerlink" href="#bascially-the-verlistadress-provides-4-lists" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -140,8 +139,12 @@ i.e. in the coarse-grained region</li>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">adrCenter</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Example - creating the VerletListAdress for a spherical adress region centered on a particle and moving with the particle</p>
+<p>Example - creating the VerletListAdress for a spherical adress region centered on one particle and moving with the particle</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">pids</span><span class="o">=</span><span class="p">[</span><span class="n">adrCenterPID</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Example - creating the VerletListAdress for a adress region based on the overlapping spherical regions by several particles</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">pids</span><span class="o">=</span><span class="p">[</span><span class="n">adrCenterPID1</span><span class="p">,</span><span class="n">adrCenterPID2</span><span class="p">,</span><span class="n">adrCenterPID3</span><span class="p">,</span> <span class="o">...</span> <span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <dl class="function">

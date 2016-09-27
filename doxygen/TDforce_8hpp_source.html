@@ -52,25 +52,25 @@
 </div><!--header-->
 <div class="contents">
 <a href="TDforce_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013,2014,2015,2016</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">      Max Planck Institute for Polymer Research</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  Copyright (C) 2008,2009,2010,2011</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">      Max-Planck-Institute for Polymer Research &amp; Fraunhofer SCAI</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">  This file is part of ESPResSo++.</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">  ESPResSo++ is free software: you can redistribute it and/or modify</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">  it under the terms of the GNU General Public License as published by</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">  the Free Software Foundation, either version 3 of the License, or</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">  (at your option) any later version.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">  ESPResSo++ is distributed in the hope that it will be useful,</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">  but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">  GNU General Public License for more details.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">  </span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">  You should have received a copy of the GNU General Public License</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;. </span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">  along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// ESPP_CLASS</span></div>
@@ -99,48 +99,43 @@
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#af8043a96c71e4ea8d7ec73b0263034f2">   48</a></span>&#160;        shared_ptr&lt;VerletListAdress&gt; <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#af8043a96c71e4ea8d7ec73b0263034f2">verletList</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#afa73d222ae73c59ba801c003874036ec">TDforce</a>(shared_ptr&lt;System&gt; system,shared_ptr&lt;VerletListAdress&gt; _verletList);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ab261c12732e40414256e246cde88b18c">~TDforce</a>();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ad8ea22befaf3a2a20ee3e90890f8430e" title="Setter for the filename, will read in the table.">addForce</a>(<span class="keywordtype">int</span> itype, <span class="keyword">const</span> <span class="keywordtype">char</span>* _filename, <span class="keywordtype">int</span> <a class="code" href="classespressopp_1_1integrator_1_1Extension.html#a10d1301515e87b9fbc1a347a1994e63a">type</a>);</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a236830600066d678078ccb86b3042ac0">   55</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a236830600066d678078ccb86b3042ac0">getFilename</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a8194a2c2fd01328f21b14a688a4bcf02">filename</a>.c_str(); }</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#aab39eb9771e23e3bbff2b28799aaf404">applyForce</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">// should use centre from verletlistadress instead of setting the following info here in TDforce</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">//void setCenter(real x, real y, real z); </span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">//void setAdrRegionType(bool _sphereAdr); </span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">//bool getAdrRegionType();</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">//void addAdrParticle(longint pid); //used for defining the AdResS centre instead of setCenter</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="comment">//std::vector&lt;Real3D*&gt; adrPositions; // positions that define centres of adress zone (either from setCenter or at each step from tfList)</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#aff58e151738b0e0b8aaca0fca80ec891">   49</a></span>&#160;        <a class="code" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#aff58e151738b0e0b8aaca0fca80ec891">startdist</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#af8d0c419abe5c25da6841662ee4f3ca1">   50</a></span>&#160;        <a class="code" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#af8d0c419abe5c25da6841662ee4f3ca1">enddist</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a88baf75dfcd89e04ff2f42df215edb52">   51</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a88baf75dfcd89e04ff2f42df215edb52">edgeweightmultiplier</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#af4155142ba8e8661ffa5e88a6a313027">TDforce</a>(shared_ptr&lt;System&gt; system, shared_ptr&lt;VerletListAdress&gt; _verletList, <a class="code" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> _startdist = 0.0, <a class="code" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> _enddist = 0.0, <span class="keywordtype">int</span> _edgeweightmultiplier = 1);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ab261c12732e40414256e246cde88b18c">~TDforce</a>();</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ad8ea22befaf3a2a20ee3e90890f8430e" title="Setter for the filename, will read in the table.">addForce</a>(<span class="keywordtype">int</span> itype, <span class="keyword">const</span> <span class="keywordtype">char</span>* _filename, <span class="keywordtype">int</span> <a class="code" href="classespressopp_1_1integrator_1_1Extension.html#a10d1301515e87b9fbc1a347a1994e63a">type</a>);</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a236830600066d678078ccb86b3042ac0">   58</a></span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a236830600066d678078ccb86b3042ac0">getFilename</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a8194a2c2fd01328f21b14a688a4bcf02">filename</a>.c_str(); }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#aab39eb9771e23e3bbff2b28799aaf404">applyForce</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a10774bde9bf401d3065c2c5b6bb6161f">registerPython</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a10774bde9bf401d3065c2c5b6bb6161f">registerPython</a>();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#abad2c877f3df0dfd8b828310b42ea09d">   66</a></span>&#160;        boost::signals2::connection <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#abad2c877f3df0dfd8b828310b42ea09d">_applyForce</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a5ce77b332717d91af79c0f3d5524afd6">connect</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ad8eb0834a2ed2726646eeab9cdee1cae">disconnect</a>();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#abad2c877f3df0dfd8b828310b42ea09d">   71</a></span>&#160;        boost::signals2::connection <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#abad2c877f3df0dfd8b828310b42ea09d">_applyForce</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a5ce77b332717d91af79c0f3d5524afd6">connect</a>();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ad8eb0834a2ed2726646eeab9cdee1cae">disconnect</a>();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#adc67f567c00d8e91f21f1f6741281d33">   76</a></span>&#160;        <a class="code" href="classespressopp_1_1Real3D.html">Real3D</a> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#adc67f567c00d8e91f21f1f6741281d33">center</a>; <span class="comment">// center of adress zone, from verletlistadress (assumes only one point as center)</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ad9329e383830cc861ebe39fa2b562490">   77</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ad9329e383830cc861ebe39fa2b562490">sphereAdr</a>; <span class="comment">// true: adress region is spherical centered on point x,y,z or particle pid; false: adress region is slab centered on point x or particle pid, from verletlistadres</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a8194a2c2fd01328f21b14a688a4bcf02">   78</a></span>&#160;        std::string <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a8194a2c2fd01328f21b14a688a4bcf02">filename</a>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a58a341cf7f31b65d2f638ece502fb080">   79</a></span>&#160;        <span class="keyword">typedef</span> shared_ptr &lt;interaction::Interpolation&gt; <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a58a341cf7f31b65d2f638ece502fb080">Table</a>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ab41071f261c19bec01cbedda7f91fa3b">   80</a></span>&#160;        std::map&lt;int, Table&gt; <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ab41071f261c19bec01cbedda7f91fa3b">forces</a>; <span class="comment">// map type to force</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#adc67f567c00d8e91f21f1f6741281d33">   71</a></span>&#160;        <a class="code" href="classespressopp_1_1Real3D.html">Real3D</a> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#adc67f567c00d8e91f21f1f6741281d33">center</a>; <span class="comment">// center of adress zone, from verletlistadress (assumes only one point as center)</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ad9329e383830cc861ebe39fa2b562490">   72</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ad9329e383830cc861ebe39fa2b562490">sphereAdr</a>; <span class="comment">// true: adress region is spherical centered on point x,y,z or particle pid; false: adress region is slab centered on point x or particle pid, from verletlistadres</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a8194a2c2fd01328f21b14a688a4bcf02">   73</a></span>&#160;        std::string <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a8194a2c2fd01328f21b14a688a4bcf02">filename</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a58a341cf7f31b65d2f638ece502fb080">   74</a></span>&#160;        <span class="keyword">typedef</span> shared_ptr &lt;interaction::Interpolation&gt; <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a58a341cf7f31b65d2f638ece502fb080">Table</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ab41071f261c19bec01cbedda7f91fa3b">   75</a></span>&#160;        std::map&lt;int, Table&gt; <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#ab41071f261c19bec01cbedda7f91fa3b">forces</a>; <span class="comment">// map type to force</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">static</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a2748f09e3c42b56dd7af0a907b1354a4">LOG4ESPP_DECL_LOGGER</a>(theLogger);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    };</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">static</span> <a class="code" href="classespressopp_1_1integrator_1_1TDforce.html#a2748f09e3c42b56dd7af0a907b1354a4">LOG4ESPP_DECL_LOGGER</a>(theLogger);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    };</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 23 2016 14:37:30 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 27 2016 15:22:44 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
