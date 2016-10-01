@@ -24,6 +24,8 @@
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
     <link rel="up" title="io" href="io.html" />
     <link rel="next" title="standard_system" href="standard_system.html" />
@@ -107,7 +109,7 @@
 <h1><strong>DumpXYZ</strong> - IO Object<a class="headerlink" href="#dumpxyz-io-object" title="Permalink to this headline">¶</a></h1>
 <ul>
 <li><p class="first"><cite>dump()</cite>
-write configuration to trajectory XYZ file. By default filename is &#8220;out.xyz&#8221;, 
+write configuration to trajectory XYZ file. By default filename is &#8220;out.xyz&#8221;,
 coordinates are folded.</p>
 <p>Properties</p>
 </li>
@@ -122,10 +124,25 @@ True if new trajectory data is appended to existing trajectory file. By default 
 </li>
 <li><p class="first"><cite>length_factor</cite>
 If length dimension in current system is nm, and unit is 0.23 nm, for example, then
-length_factor should be 0.23</p>
+length_factor should be 0.23
+Default: 1.0</p>
 </li>
 <li><p class="first"><cite>length_unit</cite>
 It is length unit. Can be LJ, nm or A. By default - LJ</p>
+</li>
+<li><dl class="first docutils">
+<dt><cite>store_pids</cite></dt>
+<dd><p class="first last">True if you want to store pids as fastwritexyz does. False otherwise (standard XYZ)
+Default: False</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><cite>store_velocities</cite></dt>
+<dd><p class="first last">True if you want to store velocities. False otherwise (XYZ doesn&#8217;t require it)
+Default: False</p>
+</dd>
+</dl>
 </li>
 </ul>
 <p>usage:</p>
@@ -133,7 +150,7 @@ It is length unit. Can be LJ, nm or A. By default - LJ</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_xyz</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpXYZ</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trajectory.xyz&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">200</span><span class="p">):</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span>  <span class="n">xyz</span><span class="o">.</span><span class="n">dump</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">dump_conf_xyz</span><span class="o">.</span><span class="n">dump</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>writing down trajectory using ExtAnalyze extension</p>
@@ -146,25 +163,58 @@ It is length unit. Can be LJ, nm or A. By default - LJ</p>
 <p>Both exapmles will give the same result: 200 configurations in trajectory .xyz file.</p>
 <p>setting up length scale</p>
 <p>For example, the Lennard-Jones model for liquid argon with <span class="math">\sigma=0.34 [nm]</span></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_xyz</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpXYZ</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trj.xyz&#39;</span><span class="p">,</span> <span class="n">unfolded</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">length_factor</span><span class="o">=</span><span class="mf">0.34</span><span class="p">,</span> <span class="n">length_unit</span><span class="o">=</span><span class="s1">&#39;nm&#39;</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_xyz</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpXYZ</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trj.xyz&#39;</span><span class="p">,</span>
+<span class="go">                                          unfolded=False, length_factor=0.34,</span>
+<span class="go">                                          length_unit=&#39;nm&#39;, store_pids=True,</span>
+<span class="go">                                          store_velocities = True, append=True)</span>
 </pre></div>
 </div>
 <p>will produce trj.xyz with in nanometers</p>
 <dl class="function">
-<dt id="espressopp.io.DumpXYZ.espressopp.io.DumpXYZ">
-<code class="descclassname">espressopp.io.</code><code class="descname">DumpXYZ</code><span class="sig-paren">(</span><em>system</em>, <em>integrator</em>, <em>filename</em>, <em>unfolded</em>, <em>length_factor</em>, <em>length_unit</em>, <em>append</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.io.DumpXYZ.espressopp.io.DumpXYZ" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dt>
+<code class="descname">espressopp.io.DumpXYZ(system, integrator, filename, unfolded,</code></dt>
+<dt>
+<code class="descname">length_factor, length_unit, store_pids,</code></dt>
+<dt>
+<code class="descname">store_velocities, append)</code></dt>
+<dd><blockquote>
+<div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">param system:</th><td class="field-body"></td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">param integrator:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">param filename:</th><td class="field-body">(default: &#8216;out.xyz&#8217;)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">param unfolded:</th><td class="field-body">(default: False)</td>
+</tr>
+<tr class="field-odd field"><th class="field-name" colspan="2">param length_factor:</th></tr>
+<tr class="field-odd field"><td>&nbsp;</td><td class="field-body">(default: 1.0)</td>
+</tr>
+<tr class="field-even field"><th class="field-name" colspan="2">param length_unit:</th></tr>
+<tr class="field-even field"><td>&nbsp;</td><td class="field-body">(default: &#8216;LJ&#8217;)</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> &#8211; </li>
-<li><strong>integrator</strong> &#8211; </li>
-<li><strong>filename</strong> &#8211; (default: &#8216;out.xyz&#8217;)</li>
-<li><strong>unfolded</strong> &#8211; (default: False)</li>
-<li><strong>length_factor</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
-<li><strong>length_unit</strong> &#8211; (default: &#8216;LJ&#8217;)</li>
-<li><strong>append</strong> &#8211; (default: True)</li>
+<li><strong>store_pids</strong> (<em>bool</em>) &#8211; (default: False)</li>
+<li><strong>store_velocities</strong> (<em>bool
+:type append:</em>) &#8211; (default: False)
+:param append: (default: True)
+:type system:
+:type integrator:
+:type filename:
+:type unfolded:
+:type length_factor: real
+:type length_unit:</li>
 </ul>
 </td>
 </tr>
@@ -197,7 +247,7 @@ It is length unit. Can be LJ, nm or A. By default - LJ</p>
       &copy;2013-2016, Max Planck Institute for Polymer Research.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.6</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
       
       |

@@ -66,9 +66,15 @@
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a60cdfe3023da53e03b67063b76ef1e3c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigurationExtIterator.html#a60cdfe3023da53e03b67063b76ef1e3c">ConfigurationExtIterator</a> (std::map&lt; size_t, <a class="el" href="classespressopp_1_1RealND.html">RealND</a> &gt; &amp;coordinates)</td></tr>
 <tr class="separator:a60cdfe3023da53e03b67063b76ef1e3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0255836cb1c5818377ab31a9284c2635"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigurationExtIterator.html#a0255836cb1c5818377ab31a9284c2635">nextId</a> ()</td></tr>
-<tr class="memdesc:a0255836cb1c5818377ab31a9284c2635"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get next particle id for which properties are available.  <a href="#a0255836cb1c5818377ab31a9284c2635">More...</a><br/></td></tr>
-<tr class="separator:a0255836cb1c5818377ab31a9284c2635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab34e1d2be4e253e21d136c888ff3c009"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigurationExtIterator.html#ab34e1d2be4e253e21d136c888ff3c009">currentId</a> ()</td></tr>
+<tr class="separator:ab34e1d2be4e253e21d136c888ff3c009"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8df24f1945f69b918b55b7e47a4ef0cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1RealND.html">RealND</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigurationExtIterator.html#a8df24f1945f69b918b55b7e47a4ef0cd">currentProperties</a> ()</td></tr>
+<tr class="separator:a8df24f1945f69b918b55b7e47a4ef0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53256c4e737238c626de892fed587647"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigurationExtIterator.html#a53256c4e737238c626de892fed587647">incrementIterator</a> ()</td></tr>
+<tr class="separator:a53256c4e737238c626de892fed587647"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47f82512b530424638fe74c56c4e8d50"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigurationExtIterator.html#a47f82512b530424638fe74c56c4e8d50">nextId</a> ()</td></tr>
+<tr class="memdesc:a47f82512b530424638fe74c56c4e8d50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get next particle id for which properties are available.  <a href="#a47f82512b530424638fe74c56c4e8d50">More...</a><br/></td></tr>
+<tr class="separator:a47f82512b530424638fe74c56c4e8d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcc835c79c8af53acfddcf02c30346bb"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classespressopp_1_1RealND.html">RealND</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigurationExtIterator.html#adcc835c79c8af53acfddcf02c30346bb">nextProperties</a> ()</td></tr>
 <tr class="separator:adcc835c79c8af53acfddcf02c30346bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -84,7 +90,7 @@ Private Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Iterator class for configuration to be used in Python. </p>
 
-<p>Definition at line <a class="el" href="ConfigurationExt_8hpp_source.html#l00038">38</a> of file <a class="el" href="ConfigurationExt_8hpp_source.html">ConfigurationExt.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ConfigurationExt_8hpp_source.html#l00040">40</a> of file <a class="el" href="ConfigurationExt_8hpp_source.html">ConfigurationExt.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a60cdfe3023da53e03b67063b76ef1e3c"></a>
 <div class="memitem">
@@ -100,17 +106,74 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ConfigurationExt_8cpp_source.html#l00086">86</a> of file <a class="el" href="ConfigurationExt_8cpp_source.html">ConfigurationExt.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ConfigurationExt_8cpp_source.html#l00088">88</a> of file <a class="el" href="ConfigurationExt_8cpp_source.html">ConfigurationExt.cpp</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0255836cb1c5818377ab31a9284c2635"></a>
+<a class="anchor" id="ab34e1d2be4e253e21d136c888ff3c009"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int espressopp::analysis::ConfigurationExtIterator::nextId </td>
+          <td class="memname">size_t espressopp::analysis::ConfigurationExtIterator::currentId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ConfigurationExt_8cpp_source.html#l00096">96</a> of file <a class="el" href="ConfigurationExt_8cpp_source.html">ConfigurationExt.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="DumpXYZ_8cpp_source.html#l00042">espressopp::io::DumpXYZ::dump()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8df24f1945f69b918b55b7e47a4ef0cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1RealND.html">RealND</a> espressopp::analysis::ConfigurationExtIterator::currentProperties </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ConfigurationExt_8cpp_source.html#l00107">107</a> of file <a class="el" href="ConfigurationExt_8cpp_source.html">ConfigurationExt.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="DumpXYZ_8cpp_source.html#l00042">espressopp::io::DumpXYZ::dump()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a53256c4e737238c626de892fed587647"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void espressopp::analysis::ConfigurationExtIterator::incrementIterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="ConfigurationExt_8cpp_source.html#l00118">118</a> of file <a class="el" href="ConfigurationExt_8cpp_source.html">ConfigurationExt.cpp</a>.</p>
+
+<p>Referenced by <a class="el" href="DumpXYZ_8cpp_source.html#l00042">espressopp::io::DumpXYZ::dump()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a47f82512b530424638fe74c56c4e8d50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t espressopp::analysis::ConfigurationExtIterator::nextId </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -120,9 +183,9 @@ Private Attributes</h2></td></tr>
 
 <p>Get next particle id for which properties are available. </p>
 
-<p>Definition at line <a class="el" href="ConfigurationExt_8cpp_source.html#l00094">94</a> of file <a class="el" href="ConfigurationExt_8cpp_source.html">ConfigurationExt.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ConfigurationExt_8cpp_source.html#l00123">123</a> of file <a class="el" href="ConfigurationExt_8cpp_source.html">ConfigurationExt.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="ConfigurationExt_8cpp_source.html#l00134">espressopp::analysis::ConfigurationExt::registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="ConfigurationExt_8cpp_source.html#l00163">espressopp::analysis::ConfigurationExt::registerPython()</a>.</p>
 
 </div>
 </div>
@@ -139,9 +202,9 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ConfigurationExt_8cpp_source.html#l00107">107</a> of file <a class="el" href="ConfigurationExt_8cpp_source.html">ConfigurationExt.cpp</a>.</p>
+<p>Definition at line <a class="el" href="ConfigurationExt_8cpp_source.html#l00136">136</a> of file <a class="el" href="ConfigurationExt_8cpp_source.html">ConfigurationExt.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="DumpXYZ_8cpp_source.html#l00038">espressopp::io::DumpXYZ::dump()</a>, <a class="el" href="DumpGRO_8cpp_source.html#l00041">espressopp::io::DumpGRO::dump()</a>, and <a class="el" href="DumpGROAdress_8cpp_source.html#l00042">espressopp::io::DumpGROAdress::dump()</a>.</p>
+<p>Referenced by <a class="el" href="DumpGRO_8cpp_source.html#l00041">espressopp::io::DumpGRO::dump()</a>, and <a class="el" href="DumpGROAdress_8cpp_source.html#l00042">espressopp::io::DumpGROAdress::dump()</a>.</p>
 
 </div>
 </div>
@@ -164,7 +227,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ConfigurationExt_8hpp_source.html#l00055">55</a> of file <a class="el" href="ConfigurationExt_8hpp_source.html">ConfigurationExt.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ConfigurationExt_8hpp_source.html#l00062">62</a> of file <a class="el" href="ConfigurationExt_8hpp_source.html">ConfigurationExt.hpp</a>.</p>
 
 </div>
 </div>
@@ -186,7 +249,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="ConfigurationExt_8hpp_source.html#l00054">54</a> of file <a class="el" href="ConfigurationExt_8hpp_source.html">ConfigurationExt.hpp</a>.</p>
+<p>Definition at line <a class="el" href="ConfigurationExt_8hpp_source.html#l00061">61</a> of file <a class="el" href="ConfigurationExt_8hpp_source.html">ConfigurationExt.hpp</a>.</p>
 
 </div>
 </div>
@@ -197,7 +260,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Sep 30 2016 17:33:05 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Oct 1 2016 22:15:32 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
