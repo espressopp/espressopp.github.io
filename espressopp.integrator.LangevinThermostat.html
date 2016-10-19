@@ -148,6 +148,39 @@
 </dd></dl>
 
 </div>
+<span class="target" id="module-espressopp.integrator.LangevinThermostatOnGroup"></span><div class="section" id="espressopp-integrator-langevinthermostatongroup">
+<h1><strong>espressopp.integrator.LangevinThermostatOnGroup</strong><a class="headerlink" href="#espressopp-integrator-langevinthermostatongroup" title="Permalink to this headline">¶</a></h1>
+<p>Thermalize particles in the ParticleGroup only.</p>
+<dl class="function">
+<dt id="espressopp.integrator.LangevinThermostatOnGroup.espressopp.integrator.LangevinThermostatOnGroup">
+<code class="descclassname">espressopp.integrator.</code><code class="descname">LangevinThermostatOnGroup</code><span class="sig-paren">(</span><em>system</em>, <em>particle_group</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LangevinThermostatOnGroup.espressopp.integrator.LangevinThermostatOnGroup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; The system object.</li>
+<li><strong>particle_group</strong> (<a class="reference internal" href="espressopp.ParticleGroup.html#module-espressopp.ParticleGroup" title="espressopp.ParticleGroup"><em>espressopp.ParticleGroup</em></a>) &#8211; The particle group.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pg</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">ParticleGroup</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">pid</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">pg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">pid</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinThermostatOnGroup</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">pg</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span><span class="o">.</span><span class="n">temperature</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span><span class="o">.</span><span class="n">gamma</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">thermostat</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
 
 
       </div>

@@ -17,13 +17,14 @@
 <area shape="rect" id="node35" href="$classespressopp_1_1integrator_1_1LangevinThermostat.html" title="Langevin thermostat." alt="" coords="475,1045,624,1091"/>
 <area shape="rect" id="node37" href="$classespressopp_1_1integrator_1_1LangevinThermostat1D.html" title="Langevin thermostat." alt="" coords="467,1114,632,1161"/>
 <area shape="rect" id="node39" href="$classespressopp_1_1integrator_1_1LangevinThermostatHybrid.html" title="For use in AdResS simulations." alt="" coords="456,1183,643,1230"/>
-<area shape="rect" id="node41" href="$classespressopp_1_1integrator_1_1LatticeBoltzmann.html" title="espressopp::integrator\l::LatticeBoltzmann" alt="" coords="475,1253,624,1299"/>
-<area shape="rect" id="node43" href="$classespressopp_1_1integrator_1_1LiquidGasLB.html" title="espressopp::integrator\l::LiquidGasLB" alt="" coords="475,1322,624,1369"/>
-<area shape="rect" id="node45" href="$classespressopp_1_1integrator_1_1OnTheFlyFEC.html" title="espressopp::integrator\l::OnTheFlyFEC" alt="" coords="475,1391,624,1438"/>
-<area shape="rect" id="node47" href="$classespressopp_1_1integrator_1_1Rattle.html" title="espressopp::integrator\l::Rattle" alt="" coords="475,1461,624,1507"/>
-<area shape="rect" id="node49" href="$classespressopp_1_1integrator_1_1Settle.html" title="espressopp::integrator\l::Settle" alt="" coords="475,1530,624,1577"/>
-<area shape="rect" id="node51" href="$classespressopp_1_1integrator_1_1StochasticVelocityRescaling.html" title="espressopp::integrator\l::StochasticVelocityRescaling" alt="" coords="451,1599,648,1646"/>
-<area shape="rect" id="node53" href="$classespressopp_1_1integrator_1_1TDforce.html" title="espressopp::integrator\l::TDforce" alt="" coords="475,1669,624,1715"/>
-<area shape="rect" id="node55" href="$classespressopp_1_1integrator_1_1VelocityVerletOnRadius.html" title="espressopp::integrator\l::VelocityVerletOnRadius" alt="" coords="465,1738,633,1785"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,880,192,909"/>
+<area shape="rect" id="node41" href="$classespressopp_1_1integrator_1_1LangevinThermostatOnGroup.html" title="Langevin thermostat on ParticleGroup." alt="" coords="449,1253,649,1299"/>
+<area shape="rect" id="node43" href="$classespressopp_1_1integrator_1_1LatticeBoltzmann.html" title="espressopp::integrator\l::LatticeBoltzmann" alt="" coords="475,1322,624,1369"/>
+<area shape="rect" id="node45" href="$classespressopp_1_1integrator_1_1LiquidGasLB.html" title="espressopp::integrator\l::LiquidGasLB" alt="" coords="475,1391,624,1438"/>
+<area shape="rect" id="node47" href="$classespressopp_1_1integrator_1_1OnTheFlyFEC.html" title="espressopp::integrator\l::OnTheFlyFEC" alt="" coords="475,1461,624,1507"/>
+<area shape="rect" id="node49" href="$classespressopp_1_1integrator_1_1Rattle.html" title="espressopp::integrator\l::Rattle" alt="" coords="475,1530,624,1577"/>
+<area shape="rect" id="node51" href="$classespressopp_1_1integrator_1_1Settle.html" title="espressopp::integrator\l::Settle" alt="" coords="475,1599,624,1646"/>
+<area shape="rect" id="node53" href="$classespressopp_1_1integrator_1_1StochasticVelocityRescaling.html" title="espressopp::integrator\l::StochasticVelocityRescaling" alt="" coords="451,1669,648,1715"/>
+<area shape="rect" id="node55" href="$classespressopp_1_1integrator_1_1TDforce.html" title="espressopp::integrator\l::TDforce" alt="" coords="475,1738,624,1785"/>
+<area shape="rect" id="node57" href="$classespressopp_1_1integrator_1_1VelocityVerletOnRadius.html" title="espressopp::integrator\l::VelocityVerletOnRadius" alt="" coords="465,1807,633,1854"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,915,192,944"/>
 </map>

@@ -14,10 +14,11 @@
 <area shape="rect" id="node27" href="$LangevinThermostat_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LangevinThermostat.cpp" alt="" coords="2621,127,2869,191"/>
 <area shape="rect" id="node29" href="$LangevinThermostat1D_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LangevinThermostat1D.cpp" alt="" coords="2893,127,3160,191"/>
 <area shape="rect" id="node31" href="$LangevinThermostatHybrid_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LangevinThermostat\lHybrid.cpp" alt="" coords="3184,118,3408,199"/>
-<area shape="rect" id="node33" href="$LatticeBoltzmann_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LatticeBoltzmann.cpp" alt="" coords="3432,127,3664,191"/>
-<area shape="rect" id="node35" href="$LatticeSite_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LatticeSite.cpp" alt="" coords="3688,127,3880,191"/>
-<area shape="rect" id="node37" href="$LGLatticeSite_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LGLatticeSite.cpp" alt="" coords="3904,127,4115,191"/>
-<area shape="rect" id="node39" href="$LiquidGasLB_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LiquidGasLB.cpp" alt="" coords="4139,127,4344,191"/>
-<area shape="rect" id="node41" href="$StochasticVelocityRescaling_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/StochasticVelocity\lRescaling.cpp" alt="" coords="4368,118,4581,199"/>
-<area shape="rect" id="node43" href="$System_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/System.cpp" alt="" coords="4605,127,4768,191"/>
+<area shape="rect" id="node33" href="$LangevinThermostatOnGroup_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LangevinThermostat\lOnGroup.cpp" alt="" coords="3432,118,3656,199"/>
+<area shape="rect" id="node35" href="$LatticeBoltzmann_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LatticeBoltzmann.cpp" alt="" coords="3680,127,3912,191"/>
+<area shape="rect" id="node37" href="$LatticeSite_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LatticeSite.cpp" alt="" coords="3936,127,4128,191"/>
+<area shape="rect" id="node39" href="$LGLatticeSite_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LGLatticeSite.cpp" alt="" coords="4152,127,4363,191"/>
+<area shape="rect" id="node41" href="$LiquidGasLB_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/LiquidGasLB.cpp" alt="" coords="4387,127,4592,191"/>
+<area shape="rect" id="node43" href="$StochasticVelocityRescaling_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/integrator/StochasticVelocity\lRescaling.cpp" alt="" coords="4616,118,4829,199"/>
+<area shape="rect" id="node45" href="$System_8cpp.html" title="/home/travis/build\l/espressopp/espressopp\l/src/System.cpp" alt="" coords="4853,127,5016,191"/>
 </map>
