@@ -28,7 +28,7 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
     <link rel="up" title="User Interface" href="classdescription.html" />
-    <link rel="next" title="AdResS - Object" href="espressopp.integrator.Adress.html" />
+    <link rel="next" title="AdResS - adaptive resolution simulations" href="espressopp.integrator.Adress.html" />
     <link rel="prev" title="Requirements" href="espressopp.external.transformations.html" />
    
   <link rel="stylesheet" href="static/custom.css" type="text/css" />
@@ -62,7 +62,6 @@
 <li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html"><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.tools.decomp.html"><strong>decomp.py</strong> - Auxiliary python functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
@@ -75,6 +74,7 @@
 <li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
 <li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
 <li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
 </ul>
 </li>
@@ -109,10 +109,7 @@
 <h1>integrator<a class="headerlink" href="#integrator" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.Adress.html"><strong>AdResS</strong> - Object</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.Adress.html#in-detail-the-adress-extension-makes-sure">In detail the AdResS extension makes sure:</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.Adress.html"><strong>AdResS</strong> - adaptive resolution simulations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html"><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.BerendsenBarostatAnisotropic.html"><strong>BerendsenBarostatAnisotropic</strong> - Berendsen barostat Object</a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
@@ -129,6 +126,7 @@
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.Extension.html"><strong>espressopp.integrator.Extension</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.FixPositions.html"><strong>espressopp.integrator.FixPositions</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.FreeEnergyCompensation.html"><strong>espressopp.integrator.FreeEnergyCompensation</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.GeneralizedLangevinThermostat.html"><strong>espressopp.integrator.GeneralizedLangevinThermostat</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.Isokinetic.html"><strong>espressopp.integrator.Isokinetic</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.LatticeBoltzmann.html"><strong>LatticeBoltzmann</strong> - class for lattice Boltzmann methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.LBInit.html"><strong>LBInit</strong> - abstract class for LatticeBoltzmann initialization and external force management</a></li>
@@ -139,7 +137,11 @@
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.LangevinThermostat.html"><strong>espressopp.integrator.LangevinThermostat</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.LangevinThermostat1D.html"><strong>espressopp.integrator.LangevinThermostat1D</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.LangevinThermostatHybrid.html"><strong>espressopp.integrator.LangevinThermostatHybrid</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.LiquidGasLB.html"><strong>LiquidGasLB</strong> - class for lattice Boltzmann methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.MDIntegrator.html"><strong>espressopp.integrator.MDIntegrator</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.OnTheFlyFEC.html"><strong>espressopp.integrator.OnTheFlyFEC</strong></a></li>
+<li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.Rattle.html"><strong>Rattle</strong> - rigid bonds to hydrogen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.Settle.html"><strong>espressopp.integrator.Settle</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.StochasticVelocityRescaling.html"><strong>espressopp.integrator.StochasticVelocityRescaling</strong></a></li>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.integrator.TDforce.html"><strong>espressopp.integrator.TDforce</strong></a></li>

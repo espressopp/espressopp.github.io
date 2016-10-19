@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>AdResS - Object &#8212; ESPResSo++ v1.9.3</title>
+    <title>AdResS - adaptive resolution simulations &#8212; ESPResSo++ v1.9.3</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
@@ -62,7 +62,6 @@
 <li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html"><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.tools.decomp.html"><strong>decomp.py</strong> - Auxiliary python functions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
 <li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
@@ -75,6 +74,7 @@
 <li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
 <li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
 <li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
 </ul>
 </li>
@@ -105,14 +105,13 @@
 	<div class="bodywrapper">
 	  <div class="body">
 	    
-  <span class="target" id="module-espressopp.integrator.Adress"></span><div class="section" id="adress-object">
-<h1><strong>AdResS</strong> - Object<a class="headerlink" href="#adress-object" title="Permalink to this headline">¶</a></h1>
+  <span class="target" id="module-espressopp.integrator.Adress"></span><div class="section" id="adress-adaptive-resolution-simulations">
+<h1><strong>AdResS</strong> - adaptive resolution simulations<a class="headerlink" href="#adress-adaptive-resolution-simulations" title="Permalink to this headline">¶</a></h1>
 <p>The AdResS object is an extension to the integrator. It makes sure that the
 integrator also processes the atomistic particles and not only the CG particles.
 Hence, this object is of course only used when performing AdResS or H-AdResS
 simulations.</p>
-<div class="section" id="in-detail-the-adress-extension-makes-sure">
-<h2>In detail the AdResS extension makes sure:<a class="headerlink" href="#in-detail-the-adress-extension-makes-sure" title="Permalink to this headline">¶</a></h2>
+<p>In detail the AdResS extension makes sure:</p>
 <ul class="simple">
 <li>that also the forces on the atomistic particles are initialized and set to
 by Adress::initForces</li>
@@ -146,7 +145,6 @@ Furthermore, when having moving AdResS regions based on particles, regionupdates
 </table>
 </dd></dl>
 
-</div>
 </div>
 
 
