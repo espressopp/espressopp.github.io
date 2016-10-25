@@ -52,7 +52,7 @@
 </div><!--header-->
 <div class="contents">
 <a href="FixedPairList_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013,2016</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">      Max Planck Institute for Polymer Research</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  Copyright (C) 2008,2009,2010,2011</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">      Max-Planck-Institute for Polymer Research &amp; Fraunhofer SCAI</span></div>
@@ -310,32 +310,41 @@
 <div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <a class="code" href="log4espp_8hpp.html#ada9b286b16f43aab4f30f9cf5cef5088">LOG4ESPP_INFO</a>(theLogger, <span class="stringliteral">&quot;regenerated local fixed pair list from global list&quot;</span>);</div>
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;  }</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;  <span class="comment">/****************************************************</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="comment">  ** REGISTRATION WITH PYTHON</span></div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="comment">  ****************************************************/</span></div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno"><a class="code" href="classespressopp_1_1FixedPairList.html#a764ea245343b98f51cecdeb03cf80d31">  264</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedPairList.html#a764ea245343b98f51cecdeb03cf80d31">FixedPairList::registerPython</a>() {</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keyword">using namespace </span>espressopp::python;</div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="code" href="classespressopp_1_1FixedPairList.html#a22b5c3b3e40139b8b7a0030d19737265">  260</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedPairList.html#a22b5c3b3e40139b8b7a0030d19737265">FixedPairList::remove</a>() {</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;      this-&gt;clear();</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;      <a class="code" href="classespressopp_1_1FixedPairList.html#af04b2ea760c3da0008dfa553f4f9e4ef">globalPairs</a>.clear();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      <a class="code" href="classespressopp_1_1FixedPairList.html#a70aa4cb1ce37a7228cd866e05bb4d40e">sigBeforeSend</a>.disconnect();</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      <a class="code" href="classespressopp_1_1FixedPairList.html#a060045577b76902896ac7e5e719b51d1">sigAfterRecv</a>.disconnect();</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;      <a class="code" href="classespressopp_1_1FixedPairList.html#a0ddd2be15edd63ac8ad6bb481356f435">sigOnParticlesChanged</a>.disconnect();</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;  }</div>
 <div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    bool (<a class="code" href="classespressopp_1_1FixedPairList.html">FixedPairList</a>::*pyAdd)(<a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid1, <a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid2)</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      = &amp;<a class="code" href="classespressopp_1_1FixedPairList.html#a59917d9d86ae7de700a8868af0529857" title="Add the given particle pair to the list on this processor if the  particle with the lower id belongs ...">FixedPairList::add</a>;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="comment">//bool (FixedPairList::*pyAdd)(pvec pids) = &amp;FixedPairList::add;</span></div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;  <span class="comment">/****************************************************</span></div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;<span class="comment">  ** REGISTRATION WITH PYTHON</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="comment">  ****************************************************/</span></div>
 <div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <a class="code" href="classespressopp_1_1python_1_1class__.html">class_&lt;FixedPairList, shared_ptr&lt;FixedPairList&gt;</a> &gt;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;      (<span class="stringliteral">&quot;FixedPairList&quot;</span>, init &lt;shared_ptr&lt;storage::Storage&gt; &gt;())</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;      .def(<span class="stringliteral">&quot;add&quot;</span>, pyAdd)</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;      .def(<span class="stringliteral">&quot;size&quot;</span>, &amp;<a class="code" href="classespressopp_1_1FixedPairList.html#af2dd1150648ce5c4f7ecf6c6c933f9fb" title="Get the number of bonds in the GlobalPairs list.">FixedPairList::size</a>)</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;      .def(<span class="stringliteral">&quot;getBonds&quot;</span>,  &amp;<a class="code" href="classespressopp_1_1FixedPairList.html#acf045623a6658d23b9eaea553cd589f8">FixedPairList::getBonds</a>)</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      .def(<span class="stringliteral">&quot;resetLongtimeMaxBondSqr&quot;</span>, &amp;<a class="code" href="classespressopp_1_1FixedPairList.html#a3635072b4d5001f36a4c4eed17777e07">FixedPairList::resetLongtimeMaxBondSqr</a>)</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;      .def(<span class="stringliteral">&quot;getLongtimeMaxBondSqr&quot;</span>, &amp;<a class="code" href="classespressopp_1_1FixedPairList.html#a0ca3717fba55fc74ec46b2e92d4080a3">FixedPairList::getLongtimeMaxBondSqr</a>)</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;      ;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;  }</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;}</div>
+<div class="line"><a name="l00272"></a><span class="lineno"><a class="code" href="classespressopp_1_1FixedPairList.html#a764ea245343b98f51cecdeb03cf80d31">  272</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedPairList.html#a764ea245343b98f51cecdeb03cf80d31">FixedPairList::registerPython</a>() {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    <span class="keyword">using namespace </span>espressopp::python;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    bool (<a class="code" href="classespressopp_1_1FixedPairList.html">FixedPairList</a>::*pyAdd)(<a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid1, <a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid2)</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      = &amp;<a class="code" href="classespressopp_1_1FixedPairList.html#a59917d9d86ae7de700a8868af0529857" title="Add the given particle pair to the list on this processor if the  particle with the lower id belongs ...">FixedPairList::add</a>;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="comment">//bool (FixedPairList::*pyAdd)(pvec pids) = &amp;FixedPairList::add;</span></div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <a class="code" href="classespressopp_1_1python_1_1class__.html">class_&lt;FixedPairList, shared_ptr&lt;FixedPairList&gt;</a> &gt;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      (<span class="stringliteral">&quot;FixedPairList&quot;</span>, init &lt;shared_ptr&lt;storage::Storage&gt; &gt;())</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      .def(<span class="stringliteral">&quot;add&quot;</span>, pyAdd)</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      .def(<span class="stringliteral">&quot;size&quot;</span>, &amp;<a class="code" href="classespressopp_1_1FixedPairList.html#af2dd1150648ce5c4f7ecf6c6c933f9fb" title="Get the number of bonds in the GlobalPairs list.">FixedPairList::size</a>)</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      .def(<span class="stringliteral">&quot;getBonds&quot;</span>,  &amp;<a class="code" href="classespressopp_1_1FixedPairList.html#acf045623a6658d23b9eaea553cd589f8">FixedPairList::getBonds</a>)</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;      .def(<span class="stringliteral">&quot;remove&quot;</span>,  &amp;<a class="code" href="classespressopp_1_1FixedPairList.html#a22b5c3b3e40139b8b7a0030d19737265">FixedPairList::remove</a>)</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;      .def(<span class="stringliteral">&quot;resetLongtimeMaxBondSqr&quot;</span>, &amp;<a class="code" href="classespressopp_1_1FixedPairList.html#a3635072b4d5001f36a4c4eed17777e07">FixedPairList::resetLongtimeMaxBondSqr</a>)</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;      .def(<span class="stringliteral">&quot;getLongtimeMaxBondSqr&quot;</span>, &amp;<a class="code" href="classespressopp_1_1FixedPairList.html#a0ca3717fba55fc74ec46b2e92d4080a3">FixedPairList::getLongtimeMaxBondSqr</a>)</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;      ;</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;  }</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 22 2016 17:40:28 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 25 2016 21:44:20 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

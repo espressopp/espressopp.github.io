@@ -104,6 +104,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a76bd61d8bf454b68d9afba1d3cff5d6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1FixedQuadrupleList.html#a76bd61d8bf454b68d9afba1d3cff5d6d">size</a> ()</td></tr>
 <tr class="memdesc:a76bd61d8bf454b68d9afba1d3cff5d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of quadruples in the GlobalQuadruples list.  <a href="#a76bd61d8bf454b68d9afba1d3cff5d6d">More...</a><br/></td></tr>
 <tr class="separator:a76bd61d8bf454b68d9afba1d3cff5d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0d6c4dbd32a2057404c60985ff799b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1FixedQuadrupleList.html#a1e0d6c4dbd32a2057404c60985ff799b">remove</a> ()</td></tr>
+<tr class="separator:a1e0d6c4dbd32a2057404c60985ff799b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad65458db7e4e5d19c2dbd1ebcd7459ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structespressopp_1_1QuadrupleList.html#ad65458db7e4e5d19c2dbd1ebcd7459ed">add</a> (<a class="el" href="structespressopp_1_1Particle.html">Particle</a> *p1, <a class="el" href="structespressopp_1_1Particle.html">Particle</a> *p2, <a class="el" href="structespressopp_1_1Particle.html">Particle</a> *p3, <a class="el" href="structespressopp_1_1Particle.html">Particle</a> *p4)</td></tr>
 <tr class="separator:ad65458db7e4e5d19c2dbd1ebcd7459ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb93e18c5e7dbbbeb7d7083d0eb1197c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structespressopp_1_1QuadrupleList.html#adb93e18c5e7dbbbeb7d7083d0eb1197c">add</a> (<a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p1, <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p2, <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p3, <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p4)</td></tr>
@@ -300,7 +302,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p>References <a class="el" href="Error_8cpp_source.html#l00051">espressopp::esutil::Error::checkException()</a>, <a class="el" href="System_8hpp_source.html#l00049">espressopp::System::comm</a>, <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00044">globalQuadruples</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="Error_8hpp_source.html#l00099">espressopp::esutil::Error::setException()</a>, and <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00041">storage</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00232">onParticlesChanged()</a>, and <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00285">registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00232">onParticlesChanged()</a>, and <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00290">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -515,7 +517,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p>References <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00044">globalQuadruples</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00216">espressopp::FixedQuadrupleListAdress::registerPython()</a>, and <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00285">registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00216">espressopp::FixedQuadrupleListAdress::registerPython()</a>, and <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00290">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -595,11 +597,33 @@ Static Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00285">285</a> of file <a class="el" href="FixedQuadrupleList_8cpp_source.html">FixedQuadrupleList.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00290">290</a> of file <a class="el" href="FixedQuadrupleList_8cpp_source.html">FixedQuadrupleList.cpp</a>.</p>
 
-<p>References <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00084">add()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00147">getQuadruples()</a>, and <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00066">size()</a>.</p>
+<p>References <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00084">add()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00147">getQuadruples()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00280">remove()</a>, and <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00066">size()</a>.</p>
 
 <p>Referenced by <a class="el" href="bindings_8cpp_source.html#l00063">espressopp::registerPython()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1e0d6c4dbd32a2057404c60985ff799b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void espressopp::FixedQuadrupleList::remove </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00280">280</a> of file <a class="el" href="FixedQuadrupleList_8cpp_source.html">FixedQuadrupleList.cpp</a>.</p>
+
+<p>References <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00044">globalQuadruples</a>, <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00040">sigAfterRecv</a>, and <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00040">sigBeforeSend</a>.</p>
+
+<p>Referenced by <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00290">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -630,7 +654,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p>References <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00044">globalQuadruples</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00201">afterRecvParticles()</a>, <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00216">espressopp::FixedQuadrupleListAdress::registerPython()</a>, and <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00285">registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00201">afterRecvParticles()</a>, <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00216">espressopp::FixedQuadrupleListAdress::registerPython()</a>, and <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00290">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -655,7 +679,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00044">44</a> of file <a class="el" href="FixedQuadrupleList_8hpp_source.html">FixedQuadrupleList.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00061">espressopp::FixedQuadrupleListAdress::add()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00084">add()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00201">afterRecvParticles()</a>, <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00122">espressopp::FixedQuadrupleListAdress::beforeSendATParticles()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00160">beforeSendParticles()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00147">getQuadruples()</a>, <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00165">espressopp::FixedQuadrupleListAdress::onParticlesChanged()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00232">onParticlesChanged()</a>, and <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00066">size()</a>.</p>
+<p>Referenced by <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00061">espressopp::FixedQuadrupleListAdress::add()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00084">add()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00201">afterRecvParticles()</a>, <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00122">espressopp::FixedQuadrupleListAdress::beforeSendATParticles()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00160">beforeSendParticles()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00147">getQuadruples()</a>, <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00165">espressopp::FixedQuadrupleListAdress::onParticlesChanged()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00232">onParticlesChanged()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00280">remove()</a>, and <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00066">size()</a>.</p>
 
 </div>
 </div>
@@ -679,7 +703,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00040">40</a> of file <a class="el" href="FixedQuadrupleList_8hpp_source.html">FixedQuadrupleList.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00048">FixedQuadrupleList()</a>, <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00039">espressopp::FixedQuadrupleListAdress::FixedQuadrupleListAdress()</a>, and <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00061">~FixedQuadrupleList()</a>.</p>
+<p>Referenced by <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00048">FixedQuadrupleList()</a>, <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00039">espressopp::FixedQuadrupleListAdress::FixedQuadrupleListAdress()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00280">remove()</a>, and <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00061">~FixedQuadrupleList()</a>.</p>
 
 </div>
 </div>
@@ -703,7 +727,7 @@ Static Private Member Functions</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FixedQuadrupleList_8hpp_source.html#l00040">40</a> of file <a class="el" href="FixedQuadrupleList_8hpp_source.html">FixedQuadrupleList.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00048">FixedQuadrupleList()</a>, <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00039">espressopp::FixedQuadrupleListAdress::FixedQuadrupleListAdress()</a>, and <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00061">~FixedQuadrupleList()</a>.</p>
+<p>Referenced by <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00048">FixedQuadrupleList()</a>, <a class="el" href="FixedQuadrupleListAdress_8cpp_source.html#l00039">espressopp::FixedQuadrupleListAdress::FixedQuadrupleListAdress()</a>, <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00280">remove()</a>, and <a class="el" href="FixedQuadrupleList_8cpp_source.html#l00061">~FixedQuadrupleList()</a>.</p>
 
 </div>
 </div>
@@ -762,7 +786,7 @@ Static Private Member Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 22 2016 17:40:30 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 25 2016 21:44:22 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

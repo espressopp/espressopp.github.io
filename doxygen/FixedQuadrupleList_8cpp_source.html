@@ -52,7 +52,7 @@
 </div><!--header-->
 <div class="contents">
 <a href="FixedQuadrupleList_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013,2016</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">      Max Planck Institute for Polymer Research</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  Copyright (C) 2008,2009,2010,2011</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">      Max-Planck-Institute for Polymer Research &amp; Fraunhofer SCAI</span></div>
@@ -330,32 +330,38 @@
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <a class="code" href="log4espp_8hpp.html#ada9b286b16f43aab4f30f9cf5cef5088">LOG4ESPP_INFO</a>(theLogger, <span class="stringliteral">&quot;regenerated local fixed quadruple list from global list&quot;</span>);</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;  }</div>
 <div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;  <span class="comment">/****************************************************</span></div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;<span class="comment">  ** REGISTRATION WITH PYTHON</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="comment">  ****************************************************/</span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00285"></a><span class="lineno"><a class="code" href="classespressopp_1_1FixedQuadrupleList.html#a52015995535df233f7d0f51600c42938">  285</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedQuadrupleList.html#a52015995535df233f7d0f51600c42938">FixedQuadrupleList::registerPython</a>() {</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;    <span class="keyword">using namespace </span>espressopp::python;</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;    bool (<a class="code" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a>::*pyAdd)(<a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid1, <a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid2,</div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;           <a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid3, <a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid4) = &amp;<a class="code" href="classespressopp_1_1FixedQuadrupleList.html#aa2b0b97f1672f4f16f4c8315d84b9733" title="Add the given particle quadruple to the list on this processor if the particle with the lower id belo...">FixedQuadrupleList::add</a>;</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="comment">//bool (FixedQuadrupleList::*pyAdd)(pvec pids)</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="comment">//          = &amp;FixedQuadrupleList::add;</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno"><a class="code" href="classespressopp_1_1FixedQuadrupleList.html#a1e0d6c4dbd32a2057404c60985ff799b">  280</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedQuadrupleList.html#a1e0d6c4dbd32a2057404c60985ff799b">FixedQuadrupleList::remove</a>() {</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;      this-&gt;clear();</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;      <a class="code" href="classespressopp_1_1FixedQuadrupleList.html#a83d8a73c34daa18ea807dfbbb31a5ed5">globalQuadruples</a>.clear();</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;      <a class="code" href="classespressopp_1_1FixedQuadrupleList.html#ad9757a790ec06841a9fe18bb116a34a3">sigBeforeSend</a>.disconnect();</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;      <a class="code" href="classespressopp_1_1FixedQuadrupleList.html#aad955a18d4aaa86cc1b6718e5300fc19">sigAfterRecv</a>.disconnect();</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;  }</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;  <span class="comment">/****************************************************</span></div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="comment">  ** REGISTRATION WITH PYTHON</span></div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">  ****************************************************/</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;</div>
+<div class="line"><a name="l00290"></a><span class="lineno"><a class="code" href="classespressopp_1_1FixedQuadrupleList.html#a52015995535df233f7d0f51600c42938">  290</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedQuadrupleList.html#a52015995535df233f7d0f51600c42938">FixedQuadrupleList::registerPython</a>() {</div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keyword">using namespace </span>espressopp::python;</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    <a class="code" href="classespressopp_1_1python_1_1class__.html">class_&lt; FixedQuadrupleList, shared_ptr&lt; FixedQuadrupleList &gt;</a> &gt;</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;      (<span class="stringliteral">&quot;FixedQuadrupleList&quot;</span>, init&lt; shared_ptr&lt; storage::Storage &gt; &gt;())</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;      .def(<span class="stringliteral">&quot;add&quot;</span>, pyAdd)</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;      .def(<span class="stringliteral">&quot;size&quot;</span>, &amp;<a class="code" href="classespressopp_1_1FixedQuadrupleList.html#a76bd61d8bf454b68d9afba1d3cff5d6d" title="Get the number of quadruples in the GlobalQuadruples list.">FixedQuadrupleList::size</a>)</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;      .def(<span class="stringliteral">&quot;getQuadruples&quot;</span>,  &amp;<a class="code" href="classespressopp_1_1FixedQuadrupleList.html#afd281e350a45742319d9041f25b65fd0">FixedQuadrupleList::getQuadruples</a>)</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;     ;</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;  }</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;}</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    bool (<a class="code" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a>::*pyAdd)(<a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid1, <a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid2,</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;           <a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid3, <a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid4) = &amp;<a class="code" href="classespressopp_1_1FixedQuadrupleList.html#aa2b0b97f1672f4f16f4c8315d84b9733" title="Add the given particle quadruple to the list on this processor if the particle with the lower id belo...">FixedQuadrupleList::add</a>;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="comment">//bool (FixedQuadrupleList::*pyAdd)(pvec pids)</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;    <span class="comment">//          = &amp;FixedQuadrupleList::add;</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <a class="code" href="classespressopp_1_1python_1_1class__.html">class_&lt; FixedQuadrupleList, shared_ptr&lt; FixedQuadrupleList &gt;</a> &gt;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;      (<span class="stringliteral">&quot;FixedQuadrupleList&quot;</span>, init&lt; shared_ptr&lt; storage::Storage &gt; &gt;())</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;      .def(<span class="stringliteral">&quot;add&quot;</span>, pyAdd)</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;      .def(<span class="stringliteral">&quot;size&quot;</span>, &amp;<a class="code" href="classespressopp_1_1FixedQuadrupleList.html#a76bd61d8bf454b68d9afba1d3cff5d6d" title="Get the number of quadruples in the GlobalQuadruples list.">FixedQuadrupleList::size</a>)</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;      .def(<span class="stringliteral">&quot;remove&quot;</span>,  &amp;<a class="code" href="classespressopp_1_1FixedQuadrupleList.html#a1e0d6c4dbd32a2057404c60985ff799b">FixedQuadrupleList::remove</a>)</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;      .def(<span class="stringliteral">&quot;getQuadruples&quot;</span>,  &amp;<a class="code" href="classespressopp_1_1FixedQuadrupleList.html#afd281e350a45742319d9041f25b65fd0">FixedQuadrupleList::getQuadruples</a>)</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;     ;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;  }</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 22 2016 17:40:28 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 25 2016 21:44:20 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -52,7 +52,7 @@
 </div><!--header-->
 <div class="contents">
 <a href="FixedTripleListAdress_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013,2016</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">      Max Planck Institute for Polymer Research</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  Copyright (C) 2008,2009,2010,2011</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">      Max-Planck-Institute for Polymer Research &amp; Fraunhofer SCAI</span></div>
@@ -281,30 +281,41 @@
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="log4espp_8hpp.html#ada9b286b16f43aab4f30f9cf5cef5088">LOG4ESPP_INFO</a>(theLogger, <span class="stringliteral">&quot;regenerated local fixed pair list from global list&quot;</span>);</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;  }</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;  <span class="comment">/****************************************************</span></div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;<span class="comment">  ** REGISTRATION WITH PYTHON</span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;<span class="comment">  ****************************************************/</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno"><a class="code" href="classespressopp_1_1FixedTripleListAdress.html#ab027098d5e53fde647bc451c0e667586">  235</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedTripleListAdress.html#ab027098d5e53fde647bc451c0e667586">FixedTripleListAdress::registerPython</a>() {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <span class="keyword">using namespace </span>espressopp::python;</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;    bool (<a class="code" href="classespressopp_1_1FixedTripleListAdress.html" title="This is a subclass of FixedTripleList.">FixedTripleListAdress</a>::*pyAdd)(<a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid1, <a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid2, <a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid3)</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      = &amp;<a class="code" href="classespressopp_1_1FixedTripleListAdress.html#aba21490563f68fbf7d6732d27724f59c" title="Add the given particle triple to the list on this processor if the  particle with the lower id belong...">FixedTripleListAdress::add</a>;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <a class="code" href="classespressopp_1_1python_1_1class__.html">class_&lt;FixedTripleListAdress, shared_ptr&lt;FixedTripleListAdress&gt;</a> &gt;</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;      (<span class="stringliteral">&quot;FixedTripleListAdress&quot;</span>,</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;              init &lt;shared_ptr&lt;storage::Storage&gt;,</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                     shared_ptr&lt;FixedTupleListAdress&gt; &gt;())</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      .def(<span class="stringliteral">&quot;add&quot;</span>, pyAdd)</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;      ;</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;  }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;}</div>
+<div class="line"><a name="l00231"></a><span class="lineno"><a class="code" href="classespressopp_1_1FixedTripleListAdress.html#a2f24526e5116af01af1a7b7395fcbd32">  231</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedTripleListAdress.html#a2f24526e5116af01af1a7b7395fcbd32">FixedTripleListAdress::remove</a>(<span class="keywordtype">void</span>) {</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;      this-&gt;clear();</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      <a class="code" href="classespressopp_1_1FixedTripleList.html#a71d4fd258ef4cd3ed09975b8a9819034">globalTriples</a>.clear();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      <a class="code" href="classespressopp_1_1FixedTripleList.html#ae9e67c1b0d6330e10927addc84a78b8d">sigBeforeSend</a>.disconnect();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;      <a class="code" href="classespressopp_1_1FixedTripleList.html#a24e552c1c8c048450e42f2f06d81d194">sigAfterRecv</a>.disconnect();</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      <a class="code" href="classespressopp_1_1FixedTripleListAdress.html#a221c89572d80162e3cc00bd04a85fe13">sigBeforeSendAT</a>.disconnect();</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <a class="code" href="classespressopp_1_1FixedTripleListAdress.html#a3bb595ba0557dfec1db448b2f7f7a547">sigAfterRecvAT</a>.disconnect();</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;      <a class="code" href="classespressopp_1_1FixedTripleList.html#a30711e692a576fc63e6cef066faea141">sigOnParticleChanged</a>.disconnect();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;  <span class="comment">/****************************************************</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<span class="comment">  ** REGISTRATION WITH PYTHON</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;<span class="comment">  ****************************************************/</span></div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno"><a class="code" href="classespressopp_1_1FixedTripleListAdress.html#ab027098d5e53fde647bc451c0e667586">  245</a></span>&#160;  <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedTripleListAdress.html#ab027098d5e53fde647bc451c0e667586">FixedTripleListAdress::registerPython</a>() {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keyword">using namespace </span>espressopp::python;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;    bool (<a class="code" href="classespressopp_1_1FixedTripleListAdress.html" title="This is a subclass of FixedTripleList.">FixedTripleListAdress</a>::*pyAdd)(<a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid1, <a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid2, <a class="code" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> pid3)</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;      = &amp;<a class="code" href="classespressopp_1_1FixedTripleListAdress.html#aba21490563f68fbf7d6732d27724f59c" title="Add the given particle triple to the list on this processor if the  particle with the lower id belong...">FixedTripleListAdress::add</a>;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <a class="code" href="classespressopp_1_1python_1_1class__.html">class_&lt;FixedTripleListAdress, shared_ptr&lt;FixedTripleListAdress&gt;</a> &gt;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;      (<span class="stringliteral">&quot;FixedTripleListAdress&quot;</span>,</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;              init &lt;shared_ptr&lt;storage::Storage&gt;,</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;                     shared_ptr&lt;FixedTupleListAdress&gt; &gt;())</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;      .def(<span class="stringliteral">&quot;add&quot;</span>, pyAdd)</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      .def(<span class="stringliteral">&quot;remove&quot;</span>,  &amp;<a class="code" href="classespressopp_1_1FixedTripleList.html#a87f1b2d877e12dd048a9b66b9f813bde">FixedTripleList::remove</a>)</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      ;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;  }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 22 2016 17:40:28 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 25 2016 21:44:20 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

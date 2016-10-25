@@ -52,7 +52,7 @@
 </div><!--header-->
 <div class="contents">
 <a href="FixedPairList_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">  Copyright (C) 2012,2013,2016</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">      Max Planck Institute for Polymer Research</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">  Copyright (C) 2008,2009,2010,2011</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">      Max-Planck-Institute for Polymer Research &amp; Fraunhofer SCAI</span></div>
@@ -111,27 +111,28 @@
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedPairList.html#a80225128eae76653944ae41e47dbf57d">beforeSendParticles</a>(<a class="code" href="structespressopp_1_1ParticleList.html">ParticleList</a>&amp; pl, <span class="keyword">class</span> <a class="code" href="classespressopp_1_1OutBuffer.html">OutBuffer</a>&amp; buf);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedPairList.html#a46acca752377d1c8ad3d2876d8393c89">afterRecvParticles</a>(<a class="code" href="structespressopp_1_1ParticleList.html">ParticleList</a>&amp; pl, <span class="keyword">class</span> <a class="code" href="classespressopp_1_1InBuffer.html">InBuffer</a>&amp; buf);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedPairList.html#a26349ce76ac05e6f940882a6368f5ea3">onParticlesChanged</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="keywordtype">void</span> <span class="keyword">remove</span>();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            python::list <a class="code" href="classespressopp_1_1FixedPairList.html#acf045623a6658d23b9eaea553cd589f8">getBonds</a>();</div>
 <div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="classespressopp_1_1FixedPairList.html#aa080b38dc5051db75e1724ace35ec82b">   69</a></span>&#160;            <a class="code" href="classespressopp_1_1FixedPairList.html#a7d8356e627ec0b340c3f7b0525b10b0f">GlobalPairs</a>* <a class="code" href="classespressopp_1_1FixedPairList.html#aa080b38dc5051db75e1724ace35ec82b">getGlobalPairs</a>() {<span class="keywordflow">return</span> &amp;<a class="code" href="classespressopp_1_1FixedPairList.html#af04b2ea760c3da0008dfa553f4f9e4ef">globalPairs</a>;};</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="classespressopp_1_1FixedPairList.html#af2dd1150648ce5c4f7ecf6c6c933f9fb">   72</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classespressopp_1_1FixedPairList.html#af2dd1150648ce5c4f7ecf6c6c933f9fb" title="Get the number of bonds in the GlobalPairs list.">size</a>() {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classespressopp_1_1FixedPairList.html#af04b2ea760c3da0008dfa553f4f9e4ef">globalPairs</a>.size();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            }</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedPairList.html#a764ea245343b98f51cecdeb03cf80d31">registerPython</a>();</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                  <span class="keyword">static</span> <a class="code" href="classespressopp_1_1FixedPairList.html#a0f1a9e994b30660962905c56e28eab07">LOG4ESPP_DECL_LOGGER</a>(theLogger);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        };</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;}</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="classespressopp_1_1FixedPairList.html#af2dd1150648ce5c4f7ecf6c6c933f9fb">   73</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="classespressopp_1_1FixedPairList.html#af2dd1150648ce5c4f7ecf6c6c933f9fb" title="Get the number of bonds in the GlobalPairs list.">size</a>() {</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">return</span> <a class="code" href="classespressopp_1_1FixedPairList.html#af04b2ea760c3da0008dfa553f4f9e4ef">globalPairs</a>.size();</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classespressopp_1_1FixedPairList.html#a764ea245343b98f51cecdeb03cf80d31">registerPython</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;          <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                  <span class="keyword">static</span> <a class="code" href="classespressopp_1_1FixedPairList.html#a0f1a9e994b30660962905c56e28eab07">LOG4ESPP_DECL_LOGGER</a>(theLogger);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        };</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 22 2016 17:40:28 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 25 2016 21:44:20 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

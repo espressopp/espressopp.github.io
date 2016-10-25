@@ -103,6 +103,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a90486604af0e621fb7761b50bdf29f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f63b0eb528e03bad5dbf958ddfb2ddb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1FixedTripleListAdress.html#a2f63b0eb528e03bad5dbf958ddfb2ddb">onParticlesChanged</a> ()</td></tr>
 <tr class="separator:a2f63b0eb528e03bad5dbf958ddfb2ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f24526e5116af01af1a7b7395fcbd32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1FixedTripleListAdress.html#a2f24526e5116af01af1a7b7395fcbd32">remove</a> ()</td></tr>
+<tr class="separator:a2f24526e5116af01af1a7b7395fcbd32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60c8a6ef4808712afff15985d313656a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structespressopp_1_1TripleList.html#a60c8a6ef4808712afff15985d313656a">add</a> (<a class="el" href="structespressopp_1_1Particle.html">Particle</a> *p1, <a class="el" href="structespressopp_1_1Particle.html">Particle</a> *p2, <a class="el" href="structespressopp_1_1Particle.html">Particle</a> *p3)</td></tr>
 <tr class="separator:a60c8a6ef4808712afff15985d313656a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acbbd90df9ccdeba89426e17e28602390"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structespressopp_1_1TripleList.html#acbbd90df9ccdeba89426e17e28602390">add</a> (<a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p1, <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p2, <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p3)</td></tr>
@@ -332,7 +334,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="Error_8cpp_source.html#l00051">espressopp::esutil::Error::checkException()</a>, <a class="el" href="System_8hpp_source.html#l00049">espressopp::System::comm</a>, <a class="el" href="FixedTripleList_8hpp_source.html#l00042">espressopp::FixedTripleList::globalTriples</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="Error_8hpp_source.html#l00099">espressopp::esutil::Error::setException()</a>, and <a class="el" href="FixedTripleList_8hpp_source.html#l00040">espressopp::FixedTripleList::storage</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00185">onParticlesChanged()</a>, and <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00235">registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00185">onParticlesChanged()</a>, and <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00245">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -589,7 +591,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="FixedTripleList_8hpp_source.html#l00042">espressopp::FixedTripleList::globalTriples</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedTripleList_8cpp_source.html#l00289">espressopp::FixedTripleList::registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="FixedTripleList_8cpp_source.html#l00296">espressopp::FixedTripleList::registerPython()</a>.</p>
 
 </div>
 </div>
@@ -667,11 +669,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00235">235</a> of file <a class="el" href="FixedTripleListAdress_8cpp_source.html">FixedTripleListAdress.cpp</a>.</p>
+<p>Definition at line <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00245">245</a> of file <a class="el" href="FixedTripleListAdress_8cpp_source.html">FixedTripleListAdress.cpp</a>.</p>
 
-<p>References <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00067">add()</a>.</p>
+<p>References <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00067">add()</a>, and <a class="el" href="FixedTripleList_8cpp_source.html#l00285">espressopp::FixedTripleList::remove()</a>.</p>
 
 <p>Referenced by <a class="el" href="bindings_8cpp_source.html#l00063">espressopp::registerPython()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a2f24526e5116af01af1a7b7395fcbd32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void espressopp::FixedTripleListAdress::remove </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00231">231</a> of file <a class="el" href="FixedTripleListAdress_8cpp_source.html">FixedTripleListAdress.cpp</a>.</p>
+
+<p>References <a class="el" href="FixedTripleList_8hpp_source.html#l00042">espressopp::FixedTripleList::globalTriples</a>, <a class="el" href="FixedTripleList_8hpp_source.html#l00039">espressopp::FixedTripleList::sigAfterRecv</a>, <a class="el" href="FixedTripleListAdress_8hpp_source.html#l00066">sigAfterRecvAT</a>, <a class="el" href="FixedTripleList_8hpp_source.html#l00039">espressopp::FixedTripleList::sigBeforeSend</a>, <a class="el" href="FixedTripleListAdress_8hpp_source.html#l00066">sigBeforeSendAT</a>, and <a class="el" href="FixedTripleList_8hpp_source.html#l00039">espressopp::FixedTripleList::sigOnParticleChanged</a>.</p>
 
 </div>
 </div>
@@ -702,7 +724,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="FixedTripleList_8hpp_source.html#l00042">espressopp::FixedTripleList::globalTriples</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedTripleList_8cpp_source.html#l00213">espressopp::FixedTripleList::afterRecvParticles()</a>, and <a class="el" href="FixedTripleList_8cpp_source.html#l00289">espressopp::FixedTripleList::registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="FixedTripleList_8cpp_source.html#l00213">espressopp::FixedTripleList::afterRecvParticles()</a>, and <a class="el" href="FixedTripleList_8cpp_source.html#l00296">espressopp::FixedTripleList::registerPython()</a>.</p>
 
 </div>
 </div>
@@ -751,7 +773,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FixedTripleList_8hpp_source.html#l00042">42</a> of file <a class="el" href="FixedTripleList_8hpp_source.html">FixedTripleList.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedTripleList_8cpp_source.html#l00081">espressopp::FixedTripleList::add()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00067">add()</a>, <a class="el" href="FixedTripleList_8cpp_source.html#l00213">espressopp::FixedTripleList::afterRecvParticles()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00132">beforeSendATParticles()</a>, <a class="el" href="FixedTripleList_8cpp_source.html#l00170">espressopp::FixedTripleList::beforeSendParticles()</a>, <a class="el" href="FixedTripleList_8cpp_source.html#l00157">espressopp::FixedTripleList::getTriples()</a>, <a class="el" href="FixedTripleList_8cpp_source.html#l00242">espressopp::FixedTripleList::onParticlesChanged()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00185">onParticlesChanged()</a>, and <a class="el" href="FixedTripleList_8hpp_source.html#l00065">espressopp::FixedTripleList::size()</a>.</p>
+<p>Referenced by <a class="el" href="FixedTripleList_8cpp_source.html#l00081">espressopp::FixedTripleList::add()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00067">add()</a>, <a class="el" href="FixedTripleList_8cpp_source.html#l00213">espressopp::FixedTripleList::afterRecvParticles()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00132">beforeSendATParticles()</a>, <a class="el" href="FixedTripleList_8cpp_source.html#l00170">espressopp::FixedTripleList::beforeSendParticles()</a>, <a class="el" href="FixedTripleList_8cpp_source.html#l00157">espressopp::FixedTripleList::getTriples()</a>, <a class="el" href="FixedTripleList_8cpp_source.html#l00242">espressopp::FixedTripleList::onParticlesChanged()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00185">onParticlesChanged()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00231">remove()</a>, <a class="el" href="FixedTripleList_8cpp_source.html#l00285">espressopp::FixedTripleList::remove()</a>, and <a class="el" href="FixedTripleList_8hpp_source.html#l00065">espressopp::FixedTripleList::size()</a>.</p>
 
 </div>
 </div>
@@ -775,7 +797,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FixedTripleList_8hpp_source.html#l00039">39</a> of file <a class="el" href="FixedTripleList_8hpp_source.html">FixedTripleList.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedTripleList_8cpp_source.html#l00047">espressopp::FixedTripleList::FixedTripleList()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00042">FixedTripleListAdress()</a>, and <a class="el" href="FixedTripleList_8cpp_source.html#l00060">espressopp::FixedTripleList::~FixedTripleList()</a>.</p>
+<p>Referenced by <a class="el" href="FixedTripleList_8cpp_source.html#l00047">espressopp::FixedTripleList::FixedTripleList()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00042">FixedTripleListAdress()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00231">remove()</a>, <a class="el" href="FixedTripleList_8cpp_source.html#l00285">espressopp::FixedTripleList::remove()</a>, and <a class="el" href="FixedTripleList_8cpp_source.html#l00060">espressopp::FixedTripleList::~FixedTripleList()</a>.</p>
 
 </div>
 </div>
@@ -799,7 +821,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FixedTripleListAdress_8hpp_source.html#l00066">66</a> of file <a class="el" href="FixedTripleListAdress_8hpp_source.html">FixedTripleListAdress.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00042">FixedTripleListAdress()</a>, and <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00058">~FixedTripleListAdress()</a>.</p>
+<p>Referenced by <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00042">FixedTripleListAdress()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00231">remove()</a>, and <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00058">~FixedTripleListAdress()</a>.</p>
 
 </div>
 </div>
@@ -823,7 +845,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FixedTripleList_8hpp_source.html#l00039">39</a> of file <a class="el" href="FixedTripleList_8hpp_source.html">FixedTripleList.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedTripleList_8cpp_source.html#l00047">espressopp::FixedTripleList::FixedTripleList()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00042">FixedTripleListAdress()</a>, and <a class="el" href="FixedTripleList_8cpp_source.html#l00060">espressopp::FixedTripleList::~FixedTripleList()</a>.</p>
+<p>Referenced by <a class="el" href="FixedTripleList_8cpp_source.html#l00047">espressopp::FixedTripleList::FixedTripleList()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00042">FixedTripleListAdress()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00231">remove()</a>, <a class="el" href="FixedTripleList_8cpp_source.html#l00285">espressopp::FixedTripleList::remove()</a>, and <a class="el" href="FixedTripleList_8cpp_source.html#l00060">espressopp::FixedTripleList::~FixedTripleList()</a>.</p>
 
 </div>
 </div>
@@ -847,7 +869,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FixedTripleListAdress_8hpp_source.html#l00066">66</a> of file <a class="el" href="FixedTripleListAdress_8hpp_source.html">FixedTripleListAdress.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00042">FixedTripleListAdress()</a>, and <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00058">~FixedTripleListAdress()</a>.</p>
+<p>Referenced by <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00042">FixedTripleListAdress()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00231">remove()</a>, and <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00058">~FixedTripleListAdress()</a>.</p>
 
 </div>
 </div>
@@ -871,7 +893,7 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="FixedTripleList_8hpp_source.html#l00039">39</a> of file <a class="el" href="FixedTripleList_8hpp_source.html">FixedTripleList.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="FixedTripleList_8cpp_source.html#l00047">espressopp::FixedTripleList::FixedTripleList()</a>, and <a class="el" href="FixedTripleList_8cpp_source.html#l00060">espressopp::FixedTripleList::~FixedTripleList()</a>.</p>
+<p>Referenced by <a class="el" href="FixedTripleList_8cpp_source.html#l00047">espressopp::FixedTripleList::FixedTripleList()</a>, <a class="el" href="FixedTripleListAdress_8cpp_source.html#l00231">remove()</a>, <a class="el" href="FixedTripleList_8cpp_source.html#l00285">espressopp::FixedTripleList::remove()</a>, and <a class="el" href="FixedTripleList_8cpp_source.html#l00060">espressopp::FixedTripleList::~FixedTripleList()</a>.</p>
 
 </div>
 </div>
@@ -906,7 +928,7 @@ Private Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Oct 22 2016 17:40:30 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 25 2016 21:44:22 for ESPResSo++ by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
