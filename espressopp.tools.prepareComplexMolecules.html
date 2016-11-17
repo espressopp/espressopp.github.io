@@ -167,6 +167,37 @@
 </table>
 </dd></dl>
 
+<dl class="function">
+<dt id="espressopp.tools.prepareComplexMolecules.espressopp.tools.readSimpleSystem">
+<code class="descclassname">espressopp.tools.</code><code class="descname">readSimpleSystem</code><span class="sig-paren">(</span><em>filename</em>, <em>nparticles</em>, <em>header</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.prepareComplexMolecules.espressopp.tools.readSimpleSystem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read in a column-formatted file containing information about the 
+particles in a simple system, for example a coarsegrained protein.</p>
+<p>This function expects the input file to have between 2 and 5 columns.
+The number of columns in the file is automatically detected.
+The function reads each column into a list and returns the lists.
+Column types are interpreted as follows:
+2 columns: float, float
+3 columns: float, float, int
+4 columns: float, float, int, str
+5 columns: float, float, int, str, str</p>
+<p>For example in the case of a coarsegrained protein model, these could be:
+mass, charge, corresponding atomistic index, beadname, beadtype</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>filename</strong> (<em>string</em>) &#8211; name of file to open and read</li>
+<li><strong>nparticles</strong> (<em>int</em>) &#8211; number of particles in file</li>
+<li><strong>header</strong> (<em>int</em>) &#8211; number of lines to skip at start of file (default 0)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p>Returns: between 2 and 5 lists</p>
+</dd></dl>
+
 </div>
 
 
