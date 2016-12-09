@@ -17,7 +17,8 @@
         VERSION:     '1.9.3',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="static/jquery.js"></script>
@@ -26,8 +27,6 @@
     <link rel="shortcut icon" href="static/favicon.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="top" title="ESPResSo++ v1.9.3" href="contents.html" />
-    <link rel="up" title="tools" href="tools.html" />
     <link rel="next" title="gromacs - parser for Gromacs files" href="espressopp.tools.gromacs.html" />
     <link rel="prev" title="timers - print timings from C++" href="espressopp.tools.timers.html" />
    
@@ -109,12 +108,11 @@
 <h1><strong>warmup</strong> - method to warm up a system<a class="headerlink" href="#warmup-method-to-warm-up-a-system" title="Permalink to this headline">¶</a></h1>
 <p>This method does a warm up for a system with a density of 0.85.</p>
 <p>The method needs the following parameters:</p>
-<ul>
+<ul class="simple">
 <li><dl class="first docutils">
 <dt>system, integrator</dt>
-<dd><p class="first last">ESPResSo system which schoul be warmed up and the correspondig integrator e.g.:
-&gt;&gt;&gt;system, integrator = espressopp.standard_system.LennardJones(100,(10,10,10))</p>
-</dd>
+<dd>ESPResSo system which schoul be warmed up and the correspondig integrator e.g.:
+&gt;&gt;&gt;system, integrator = espressopp.standard_system.LennardJones(100,(10,10,10))</dd>
 </dl>
 </li>
 </ul>
@@ -140,11 +138,11 @@
       &copy;2013-2016, Max Planck Institute for Polymer Research.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.4.8</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
       
       |
-      <a href="sources/espressopp.tools.warmup.txt"
+      <a href="sources/espressopp.tools.warmup.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 
