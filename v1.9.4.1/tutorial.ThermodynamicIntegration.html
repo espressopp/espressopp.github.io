@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Thermodynamic integration &mdash; ESPResSo++ v1.9.4</title>
+    
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.9.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="top" title="ESPResSo++ v1.9.4" href="contents.html" />
+    <link rel="up" title="Tutorial" href="tutorial.html" />
+    <link rel="next" title="User Interface" href="classdescription.html" />
+    <link rel="prev" title="Adaptive Resolution Simulations" href="tutorial.AdResS.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  <div id="outer">
+  <div class="header"></div>
+
+
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="tutorial.html">Tutorial</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tutorial.SystemSetup.html">Basic System Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.LennardJones.html">Simple Lennard Jones System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.LennardJones2.html">Advanced Lennard Jones System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.PolymerMelt.html">Polymer Melt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.AddNewPotential.html">AddNewPotential</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.AddNewPotential.html#appendices">Appendices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.AdResS.html">Adaptive Resolution Simulations</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Thermodynamic integration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
+</ul>
+<ul>
+	<li><a href="doxygen/index.html">Doxygen</a></li>
+	<li><a href="ESPResSo++.pdf">PDF manual</a></li>
+	<li><a href="http://www.espresso-pp.de/Impressum.html">Impressum</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+  <div class="document">
+    <div class="documentwrapper">
+	<div class="bodywrapper">
+	  <div class="body">
+	    
+  <div class="section" id="thermodynamic-integration">
+<h1>Thermodynamic integration<a class="headerlink" href="#thermodynamic-integration" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="theoretical-explanation">
+<h2>Theoretical explanation<a class="headerlink" href="#theoretical-explanation" title="Permalink to this headline">¶</a></h2>
+<p>Thermodynamic integration (TI) is a method used to calculate the free energy difference between two states A and B. For the theoretical background, see e.g. <a class="reference external" href="http://www.alchemistry.org">http://www.alchemistry.org</a>. In this tutorial, we show how to perform TI calculations with ESPResSo++. We calculate the free energy of solvation of methanol in water. The complete python script is available in the ESPResSo+ source code under <code class="docutils literal"><span class="pre">examples/thd_integration_solvation</span></code></p>
+<p>To do TI, we define states A and B, with potentials <span class="math">U^A</span> and <span class="math">U^B</span>. We then construct a pathway of intermediate states between A and B by defining a parameter <span class="math">\lambda</span> that takes values between 0 and 1 and writing the system potential <span class="math">U</span> as a function of <span class="math">\lambda</span>, <span class="math">U^A</span> and <span class="math">U^B</span>. The free energy difference between the states A and B is then given by</p>
+<div class="math">
+<p><span class="math">\Delta A = \int^1_0 \left&lt;\frac{dU(\lambda)}{d\lambda}\right&gt;_{\lambda}\mathrm{d}\lambda</span></p>
+</div><p>In practise, we discretise <span class="math">\lambda</span> and perform a series of MD simulations with different <span class="math">\lambda</span> values between 0 and 1, sampling <span class="math">\frac{dU(\lambda)}{d\lambda}</span> in each simulation.</p>
+<p>To calculate the solvation free energy of methanol in water, we use a box of water containing one methanol molecule. We simulate desolvation via two separate TI calculations. (Note that the procedure described here is decoupling, and solute-solute interactions will be treated differently if you&#8217;re doing annihilation instead of decoupling, see Note 1.)</p>
+<hr class="docutils" />
+<p><strong>Step 1:</strong> free energy change for switching off the Coulombic interactions</p>
+<p><em>State A:</em> methanol has full non-bonded (Coulomb and Lennard Jones) interactions with the solvent</p>
+<p><em>State B:</em> methanol has only Lennard Jones interactions with the solvent</p>
+<hr class="docutils" />
+<p><strong>Step 2:</strong> free energy change for switching off the Lennard Jones interactions</p>
+<p><em>State A:</em> methanol has only Lennard Jones interactions with the solvent</p>
+<p><em>State B:</em> methanol has no interaction with the solvent</p>
+<hr class="docutils" />
+<p>Step 1 can be done using a linear function of <span class="math">\lambda</span>:</p>
+<div class="math">
+<p><span class="math">U(\lambda_C) = (1-\lambda_C)U_C^A + U_{unaffected}</span></p>
+</div><p>where <span class="math">U_C^A</span> is the solute-solvent Coulombic interaction in state A. In ESPResSo++ the charges used for state A are the particle charges contained in the particle property <code class="docutils literal"><span class="pre">charge</span></code>. The charges in state B are zero, so <span class="math">U_C^B(q)</span> does not appear in the expression. (The case where A and B both have non-zero charges is not implemented in ESPResSo++). The term <span class="math">U_{unaffected}</span> is all other parts of the potential that don&#8217;t change with <span class="math">\lambda_C</span> including all bonded interactions, any solute-solute Coulombic interactions, solvent-solvent Coulombic interactions and all Lennard-Jones interactions. The parameter <span class="math">\lambda_C</span> goes from 0 to 1 in Step 1.</p>
+<p>Step 2 must be done using a softcore potential because of the singularity in the Lennard-Jones potential at <span class="math">r_{ij} = 0</span>.</p>
+<div class="math">
+<p><span class="math">U(\lambda_L) = \sum_{i,j} U_L(r_{ij},\lambda_L) + U_{unaffected}
+
+U_L(r_{ij},\lambda_L) = (1-\lambda_L)U_H^A(r_A) + \lambda_L U_H^B(r_B)
+
+r_A=(\alpha\sigma^6_A\lambda^p+r_{ij}^6)^{1/6}
+
+r_B=(\alpha\sigma^6_B(1-\lambda)^p+r_{ij}^6)^{1/6}</span></p>
+</div><p>The terms <span class="math">U_H^A(r_A)</span> and <span class="math">U_H^B(r_B)</span> are the normal Lennard-Jones 12-6 hardcore potentials:</p>
+<div class="math">
+<p><span class="math">U_H^A(r_A) = 4.0\epsilon_A(\frac{\sigma_A}{r_A}^{12} - \frac{\sigma_A}{r_A}^6)</span></p>
+</div><p>The sum <span class="math">\sum_{i,j} U_L(r_{ij},\lambda_L)</span> is over all solute-solvent interactions. The term <span class="math">U_{unaffected}</span> is all other parts of the potential that don&#8217;t change with <span class="math">\lambda_L</span> including any solute-solute Lennard-Jones interactions and solvent-solvent Lennard-Jones interactions, which are treated using standard hardcore Lennard-Jones. (In this particular example of methanol, there are no solute-solute Lennard-Jones interactions). Finally <span class="math">\alpha</span> and <span class="math">p</span> are adjustable parameters of the softcore potential.</p>
+<p>The ESPResSo++ C++ code allows for different values of <span class="math">\epsilon_A</span>, <span class="math">\epsilon_B</span>, <span class="math">\sigma_A</span> and <span class="math">\sigma_B</span> for every pair of atomtypes interacting via this potential. In this example, we will set <span class="math">\epsilon_B</span> to 0 (we are switching off the Lennard-Jones interaction). The parameter <span class="math">\lambda_L</span> goes from 0 to 1 in Step 2.</p>
+</div>
+<div class="section" id="espp-code">
+<h2>ESPResSo++ code<a class="headerlink" href="#espp-code" title="Permalink to this headline">¶</a></h2>
+<p>We must perform many separate simulations, each with a different <span class="math">\lambda</span> value. It is convenient to define a list of <span class="math">\lambda</span> values in the python script and use an index to access a different element of the list in each separate simulation. The script for the first simulation contains these lines:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1"># Parameters for Thermodynamic Integration</span>
+<span class="n">stateBIndices</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="c1">#indices of the methanol atoms</span>
+<span class="n">lambdaVectorCoul</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.10</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.20</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.30</span><span class="p">,</span> <span class="mf">0.35</span><span class="p">,</span> <span class="mf">0.40</span><span class="p">,</span> <span class="mf">0.45</span><span class="p">,</span> <span class="mf">0.50</span><span class="p">,</span>
+                    <span class="mf">0.55</span><span class="p">,</span> <span class="mf">0.60</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="mf">0.70</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.80</span><span class="p">,</span> <span class="mf">0.85</span><span class="p">,</span> <span class="mf">0.90</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="mf">1.00</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span>
+                    <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span>
+                    <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span>
+                    <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span>
+                    <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span>
+                    <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">]</span>
+<span class="n">lambdaVectorVdwl</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span>
+                    <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.025</span><span class="p">,</span>
+                    <span class="mf">0.050</span><span class="p">,</span> <span class="mf">0.075</span><span class="p">,</span> <span class="mf">0.100</span><span class="p">,</span> <span class="mf">0.125</span><span class="p">,</span> <span class="mf">0.150</span><span class="p">,</span> <span class="mf">0.175</span><span class="p">,</span> <span class="mf">0.200</span><span class="p">,</span> <span class="mf">0.225</span><span class="p">,</span> <span class="mf">0.250</span><span class="p">,</span>
+                    <span class="mf">0.275</span><span class="p">,</span> <span class="mf">0.300</span><span class="p">,</span> <span class="mf">0.325</span><span class="p">,</span> <span class="mf">0.350</span><span class="p">,</span> <span class="mf">0.375</span><span class="p">,</span> <span class="mf">0.400</span><span class="p">,</span> <span class="mf">0.425</span><span class="p">,</span> <span class="mf">0.450</span><span class="p">,</span> <span class="mf">0.475</span><span class="p">,</span>
+                    <span class="mf">0.500</span><span class="p">,</span> <span class="mf">0.525</span><span class="p">,</span> <span class="mf">0.550</span><span class="p">,</span> <span class="mf">0.575</span><span class="p">,</span> <span class="mf">0.600</span><span class="p">,</span> <span class="mf">0.625</span><span class="p">,</span> <span class="mf">0.650</span><span class="p">,</span> <span class="mf">0.675</span><span class="p">,</span> <span class="mf">0.700</span><span class="p">,</span>
+                    <span class="mf">0.725</span><span class="p">,</span> <span class="mf">0.750</span><span class="p">,</span> <span class="mf">0.775</span><span class="p">,</span> <span class="mf">0.800</span><span class="p">,</span> <span class="mf">0.825</span><span class="p">,</span> <span class="mf">0.850</span><span class="p">,</span> <span class="mf">0.875</span><span class="p">,</span> <span class="mf">0.900</span><span class="p">,</span> <span class="mf">0.925</span><span class="p">,</span>
+                    <span class="mf">0.950</span><span class="p">,</span> <span class="mf">0.975</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">]</span>
+<span class="n">lambdaIndex</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">lambdaTICoul</span> <span class="o">=</span> <span class="n">lambdaVectorCoul</span><span class="p">[</span><span class="n">lambdaIndex</span><span class="p">]</span>
+<span class="n">lambdaTIVdwl</span> <span class="o">=</span> <span class="n">lambdaVectorVdwl</span><span class="p">[</span><span class="n">lambdaIndex</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The list <code class="docutils literal"><span class="pre">lambdaVectorCoul</span></code> contains the values of <span class="math">\lambda_C</span> and the list <code class="docutils literal"><span class="pre">lambdaVectorVdwl</span></code> contains the values of <span class="math">\lambda_L</span>. The total number of simulations to do Step 1 and Step 2 will be <code class="docutils literal"><span class="pre">len(lambdaVectorCoul)</span></code> or <code class="docutils literal"><span class="pre">len(lambdaVectorVdwl)</span></code>. We must make a copy of the python script for each simulation, changing each time the value of <code class="docutils literal"><span class="pre">lambdaIndex</span></code>.</p>
+<p>Next we set up the Coulombic interactions, assuming we already have created a <code class="docutils literal"><span class="pre">system</span></code> and a <code class="docutils literal"><span class="pre">verletlist</span></code>. The electrostatics method used is generalised reaction field.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1">#atTypes - list of all atomtypes (integers) used in the pairs interacting via this potential</span>
+<span class="c1">#epsilon1,epsilon2,kappa - reaction field parameters</span>
+<span class="c1">#annihilate=False means decoupling is used (see Note 1)</span>
+<span class="c1">#ftpl - a FixedTupleListAdResS object (see AdResS tutorial)</span>
+<span class="c1">#for non-AdResS simulations, simply set adress=False, and the parameter ftpl is not needed</span>
+<span class="n">qq_adres_interaction</span> <span class="o">=</span> <span class="n">gromacs</span><span class="o">.</span><span class="n">setCoulombInteractionsTI</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">verletlist</span><span class="p">,</span> <span class="n">nbCutoff</span><span class="p">,</span>
+                                                <span class="n">atTypes</span><span class="p">,</span> <span class="n">epsilon1</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">epsilon2</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span>
+                                                <span class="n">kappa</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">lambdaTI</span><span class="o">=</span><span class="n">lambdaTICoul</span><span class="p">,</span>
+                                                <span class="n">pidlist</span><span class="o">=</span><span class="n">stateBIndices</span><span class="p">,</span>
+                                                <span class="n">annihilate</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">adress</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">ftpl</span><span class="o">=</span><span class="n">ftpl</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now we set up the softcore Lennard Jones interaction.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1">#atomtypeparameters - dictionary of format {atomtype: {&#39;eps&#39;: epsilon, &#39;sig&#39;: sigma}}</span>
+<span class="c1">#                     where atomtype is integer and epsilon and sigma are real</span>
+<span class="c1">#defaults - dictionary containing a key &#39;combinationrule&#39; with value 1 if the contents</span>
+<span class="c1">#           of atomtypeparameters need to be converted from c6,c12 format to</span>
+<span class="c1">#           epsilon,sigma format; can also be an empty dictionary if no conversion needed</span>
+<span class="c1">#sigmaSC, alphaSC, powerSC - parameters of the softcore potential</span>
+<span class="n">alphaSC</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="n">powerSC</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="n">epsilonB</span> <span class="o">=</span> <span class="mf">0.0</span>
+<span class="n">sigmaSC</span> <span class="o">=</span> <span class="mf">0.3</span>
+<span class="n">lj_adres_interaction</span> <span class="o">=</span> <span class="n">gromacs</span><span class="o">.</span><span class="n">setLennardJonesInteractionsTI</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">defaults</span><span class="p">,</span>
+                                       <span class="n">atomtypeparameters</span><span class="p">,</span> <span class="n">verletlist</span><span class="p">,</span> <span class="n">nbCutoff</span><span class="p">,</span>
+                                       <span class="n">epsilonB</span><span class="o">=</span><span class="n">epsilonB</span><span class="p">,</span> <span class="n">sigmaSC</span><span class="o">=</span><span class="n">sigmaSC</span><span class="p">,</span> <span class="n">alphaSC</span><span class="o">=</span><span class="n">alphaSC</span><span class="p">,</span>
+                                       <span class="n">powerSC</span><span class="o">=</span><span class="n">powerSC</span><span class="p">,</span> <span class="n">lambdaTI</span><span class="o">=</span><span class="n">lambdaTIVdwl</span><span class="p">,</span>
+                                       <span class="n">pidlist</span><span class="o">=</span><span class="n">stateBIndices</span><span class="p">,</span> <span class="n">annihilate</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
+                                       <span class="n">adress</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">ftpl</span><span class="o">=</span><span class="n">ftpl</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We open an output file. In the first line we write the values of <span class="math">\lambda_C</span> and <span class="math">\lambda_L</span> for this simulation.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">dhdlF</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;dhdl.xvg&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+<span class="n">dhdlF</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;#(coul-lambda, vdw-lambda) = (&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">lambdaTICoul</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;, &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">lambdaTIVdwl</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;)</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>During the MD run, every x number of MD steps, we return to the python level and calculate the derivatives of the energies with respect to <span class="math">\lambda</span>.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">dhdlCoul</span> <span class="o">=</span> <span class="n">qq_adres_interaction</span><span class="o">.</span><span class="n">computeEnergyDeriv</span><span class="p">()</span>
+<span class="n">dhdlVdwl</span> <span class="o">=</span> <span class="n">lj_adres_interaction</span><span class="o">.</span><span class="n">computeEnergyDeriv</span><span class="p">()</span>
+<span class="n">dhdlF</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">time</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">dhdlCoul</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">dhdlVdwl</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>After all simulations, we can now average <span class="math">\frac{dU(\lambda)}{d\lambda}</span> for each value of <span class="math">\lambda_C</span> or <span class="math">\lambda_L</span>, integrate over <span class="math">\lambda_C</span> and <span class="math">\lambda_L</span>, add the values <span class="math">\Delta A_C</span> and <span class="math">\Delta A_L</span>, and take the negative (because the procedure described here is desolvation and we want the free energy of solvation).</p>
+</div>
+<div class="section" id="some-notes">
+<h2>Some notes<a class="headerlink" href="#some-notes" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>This example given here uses decoupling (solute-solvent interactions are a function of <span class="math">\lambda</span>, solute-solute interactions are not affected by changes in <span class="math">\lambda</span>). In ESPResSo++ it is also possible to do annihilation, where both solute-solvent and solute-solute interactions are a function of <span class="math">\lambda</span>, by setting <code class="docutils literal"><span class="pre">annihilate=True</span></code> when creating the non-bonded interactions.</li>
+<li>The procedure described here is desolvation. To get the free energy of solvation, we take the negative of the value obtained after integration.</li>
+<li>The example Python code snippets here use the helper functions <code class="docutils literal"><span class="pre">gromacs.setLennardJonesInteractionsTI</span></code> and <code class="docutils literal"><span class="pre">gromacs.setCoulombInteractionsTI</span></code> contained in <code class="docutils literal"><span class="pre">$ESPRESSOHOME/src/tools/convert/gromacs.py</span></code>, but this is not necessary. You can do TI with ESPResSo++ without the Gromacs parser by directly calling <code class="docutils literal"><span class="pre">espresso.interaction.LennardJonesSoftcoreTI</span></code> and <code class="docutils literal"><span class="pre">espresso.interaction.ReactionFieldGeneralizedTI</span></code>. See the documentation of these two classes.</li>
+</ol>
+</div>
+</div>
+
+
+      </div>
+     </div>
+     </div> 
+  </div>
+
+    <div class="footer">
+      &copy;2013-2016, Max Planck Institute for Polymer Research.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="sources/tutorial.ThermodynamicIntegration.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  <div class="footer">
+      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
+      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
+  </div>
+  </div>
+
+  </body>
+</html>

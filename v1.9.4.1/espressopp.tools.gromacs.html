@@ -1,0 +1,278 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>gromacs - parser for Gromacs files &mdash; ESPResSo++ v1.9.4</title>
+    
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.9.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="top" title="ESPResSo++ v1.9.4" href="contents.html" />
+    <link rel="up" title="tools" href="tools.html" />
+    <link rel="next" title="units - convert to Real Units" href="espressopp.tools.units.html" />
+    <link rel="prev" title="warmup - method to warm up a system" href="espressopp.tools.warmup.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  <div id="outer">
+  <div class="header"></div>
+
+
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="espressopp.Version.html"><strong>Version</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.pmi.html"><strong>PMI</strong> - Parallel Method Invocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.System.html"><strong>System</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.BC.html"><strong>BC</strong> - Boundary Condition Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.OrthorhombicBC.html"><strong>OrthorhombicBC</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.storage.html"><strong>Storage</strong> - Storage Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html"><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html"><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="tools.html">tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
+</ul>
+<ul>
+	<li><a href="doxygen/index.html">Doxygen</a></li>
+	<li><a href="ESPResSo++.pdf">PDF manual</a></li>
+	<li><a href="http://www.espresso-pp.de/Impressum.html">Impressum</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+  <div class="document">
+    <div class="documentwrapper">
+	<div class="bodywrapper">
+	  <div class="body">
+	    
+  <span class="target" id="module-espressopp.tools.convert.gromacs"></span><div class="section" id="gromacs-parser-for-gromacs-files">
+<h1><strong>gromacs</strong> - parser for Gromacs files<a class="headerlink" href="#gromacs-parser-for-gromacs-files" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>This Python module allows one to use GROMACS data files as the
+input to an ESPResSo++ simulation, set interactions for given
+particle types and convert GROMACS potential tables into
+ESPResSo++ tables.
+It containts functions: read(), setInteractions(), convertTable()</p>
+<p>Some tips for using the gromacs parser:</p>
+<p>Tip 1.</p>
+<p>topol.top includes solvent via #include statements</p>
+<p>If the included .itp file ONLY contains the solvent molecule you&#8217;re using (e.g. spc/e water using spce.itp) then this is okay.</p>
+<p>But if the .itp file contains info about many molecules (e.g. you want to use one ion from ions.itp), then gromacs.py will just take the first one listed. You must edit your topol.top file to explicitly include the solvent molecule you&#8217;re using.</p>
+<p>e.g. replace:</p>
+<div class="highlight-none"><div class="highlight"><pre>; Include topology for ions
+#include &quot;amber03.ff/ions.itp&quot;
+</pre></div>
+</div>
+<p>by:</p>
+<div class="highlight-none"><div class="highlight"><pre>; Include topology for ions
+[ moleculetype ]
+; molname       nrexcl
+CL              1
+
+[ atoms ]
+; id    at type         res nr  residu name     at name  cg nr  charge
+1       Cl              1       CL              CL       1      -1.00000
+</pre></div>
+</div>
+<p>Tip 2. impropers</p>
+<p>impropers in the topol.top file (function type 4) need to be labelled &#8216;[ impropers ]&#8217;, not &#8216;[ dihedrals ]&#8217; as in standard gromacs format&#8221;</p>
+<p>Also, the dihedrals should be listed before the impropers (this is usuall the case by default in gromacs-format files).</p>
+<p>Tip 3.</p>
+<p>For rigid SPC/E water using Settle, spce.itp file should look like this:</p>
+<div class="highlight-none"><div class="highlight"><pre>[ moleculetype ]
+; molname       nrexcl
+SOL             2
+
+[ atoms ]
+; id  at type     res nr  res name  at name  cg nr  charge    mass
+  1   OW_spc      1       SOL       OW       1      -0.8476   15.99940
+  2   HW_spc      1       SOL       HW1      1       0.4238    1.00800
+  3   HW_spc      1       SOL       HW2      1       0.4238    1.00800
+
+[ bonds ]
+; i     j       funct   length  force.c.
+1       2       1       0.1     345000  0.1     345000
+1       3       1       0.1     345000  0.1     345000
+
+[ angles ]
+; i     j       k       funct   angle   force.c.
+2       1       3       1       109.47  383     109.47  383
+</pre></div>
+</div>
+<p>The bonds section is used to generate exclusions, but bond and angle parameters are not relevant if the Settle extension is used. The geometry is that specified in the python script when adding the Settle extension</p>
+<p>Include modified spce file in topol.top, e.g. replace</p>
+<p>#include &#8220;amber03.ff/spce.itp&#8221;</p>
+<p>by</p>
+<p>#include &#8220;amber03.ff/spce-for-espressopp.itp&#8221;</p>
+<p>Tip 4.</p>
+<p>Use absolute paths for any include files which are not in the standard gromacs topology directory ($GMXLIB)</p>
+<p>e.g. replace</p>
+<p>#include &#8220;mynewresidue.itp&#8221;</p>
+<p>by</p>
+<p>#include &#8220;path/to/mynewres/file/mynewresidue.itp&#8221;</p>
+<p>Tip 5.</p>
+<p>The parser won&#8217;t work if the particles ids in the include files conflict with the particle ids in the topol.top file itself, and the bonded interaction parameters in the itp file need to be looked up via particle type in the standard gromacs topology directory ($GMXLIB)</p>
+<p>i.e. Okay for an itp file like spce.itp above, where the bonds and angles parameters are given in the itp file, as in:</p>
+<div class="highlight-none"><div class="highlight"><pre>[ bonds ]
+; i     j       funct   length  force.c.
+1       2       1       0.1     345000  0.1     345000
+</pre></div>
+</div>
+<p>Not okay for an itp file containing lines like:</p>
+<div class="highlight-none"><div class="highlight"><pre>[ bonds ]
+; i     j       funct   length  force.c.
+1       2       1
+</pre></div>
+</div>
+</div></blockquote>
+<dl class="function">
+<dt id="espressopp.tools.convert.gromacs.convertTable">
+<code class="descclassname">espressopp.tools.convert.gromacs.</code><code class="descname">convertTable</code><span class="sig-paren">(</span><em>gro_in_file</em>, <em>esp_out_file</em>, <em>sigma=1.0</em>, <em>epsilon=1.0</em>, <em>c6=1.0</em>, <em>c12=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.convert.gromacs.convertTable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert GROMACS tabulated file into ESPResSo++ tabulated file (new file
+is created). First column of input file can be either distance or angle.
+For non-bonded files, c6 and c12 can be provided. Default value for sigma, epsilon,
+c6 and c12 is 1.0. Electrostatics are not taken into account (f and fd columns).</p>
+<p>Keyword arguments:
+gro_in_file &#8211; the GROMACS tabulated file name (bonded, nonbonded, angle
+or dihedral).
+esp_out_file &#8211; filename of the ESPResSo++ tabulated file to be written.
+sigma &#8211; optional, depending on whether you want to convert units or not.
+epsilon &#8211; optional, depending on whether you want to convert units or not.
+c6 &#8211; optional
+c12 &#8211; optional</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.tools.convert.gromacs.read">
+<code class="descclassname">espressopp.tools.convert.gromacs.</code><code class="descname">read</code><span class="sig-paren">(</span><em>gro_file</em>, <em>top_file=''</em>, <em>doRegularExcl=True</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.convert.gromacs.read" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read GROMACS data files.</p>
+<p>Arguments:
+:param gro_file: &#8211; contains coordinates of all particles, the number of particles, velocities and box size.
+:type gro_file: string
+:param top_file: &#8211; contains topology information. Included topology files (.itp) are also read
+:type gro_file: string
+:param doRegularExcl: &#8211; if True, exclusions are generated automatically based on the nregxcl parameter (see gromacs manual)
+:type doRegularExcl: bool</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.tools.convert.gromacs.setLennardJones14Interactions">
+<code class="descclassname">espressopp.tools.convert.gromacs.</code><code class="descname">setLennardJones14Interactions</code><span class="sig-paren">(</span><em>system</em>, <em>defaults</em>, <em>atomtypeparams</em>, <em>onefourlist</em>, <em>cutoff</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.convert.gromacs.setLennardJones14Interactions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set lennard jones interactions which were read from gromacs based on the atomypes</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.tools.convert.gromacs.setLennardJonesInteractions">
+<code class="descclassname">espressopp.tools.convert.gromacs.</code><code class="descname">setLennardJonesInteractions</code><span class="sig-paren">(</span><em>system</em>, <em>defaults</em>, <em>atomtypeparams</em>, <em>verletlist</em>, <em>cutoff</em>, <em>hadress=False</em>, <em>adress=False</em>, <em>ftpl=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.convert.gromacs.setLennardJonesInteractions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set lennard jones interactions which were read from gromacs based on the atomypes</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.tools.convert.gromacs.setLennardJonesInteractionsTI">
+<code class="descclassname">espressopp.tools.convert.gromacs.</code><code class="descname">setLennardJonesInteractionsTI</code><span class="sig-paren">(</span><em>system</em>, <em>defaults</em>, <em>atomtypeparams</em>, <em>verletlist</em>, <em>cutoff</em>, <em>epsilonB</em>, <em>sigmaSC</em>, <em>alphaSC</em>, <em>powerSC</em>, <em>lambdaTI</em>, <em>pidlist</em>, <em>annihilate=True</em>, <em>hadress=False</em>, <em>adress=False</em>, <em>ftpl=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.convert.gromacs.setLennardJonesInteractionsTI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set lennard jones interactions which were read from gromacs based on the atomypes</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.tools.convert.gromacs.setTabulatedInteractions">
+<code class="descclassname">espressopp.tools.convert.gromacs.</code><code class="descname">setTabulatedInteractions</code><span class="sig-paren">(</span><em>potentials</em>, <em>particleTypes</em>, <em>system</em>, <em>interaction</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.convert.gromacs.setTabulatedInteractions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set interactions for all given particle types.
+Return value is a system with all interactions added.</p>
+<p>Keyword arguments:
+potentials &#8211; is a dictionary where key is a string composed
+of two particle types and value is a potential.
+example: {&#8220;A_A&#8221;:potAA, &#8220;A_B&#8221;:potAB, &#8220;B_B&#8221;:potBB}
+particleTypes &#8211; is a dictionary where key is the particle type, and
+value is a list of particles of that type.
+example: {&#8220;A&#8221;:[&#8220;A1m&#8221;, &#8220;A2m&#8221;],&#8221;B&#8221;:[&#8220;B1u&#8221;,&#8221;B2u&#8221;]}
+system &#8211; is the system to which the interaction will be added
+interaction &#8211; is the interaction to which to add the potentials</p>
+</dd></dl>
+
+</div>
+
+
+      </div>
+     </div>
+     </div> 
+  </div>
+
+    <div class="footer">
+      &copy;2013-2016, Max Planck Institute for Polymer Research.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="sources/espressopp.tools.gromacs.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  <div class="footer">
+      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
+      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
+  </div>
+  </div>
+
+  </body>
+</html>

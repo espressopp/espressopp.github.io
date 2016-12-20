@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>espressopp.analysis.RDFatomistic &mdash; ESPResSo++ v1.9.4</title>
+    
+    <link rel="stylesheet" href="static/default.css" type="text/css" />
+    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.9.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="static/jquery.js"></script>
+    <script type="text/javascript" src="static/underscore.js"></script>
+    <script type="text/javascript" src="static/doctools.js"></script>
+    <link rel="shortcut icon" href="static/favicon.ico"/>
+    <link rel="top" title="ESPResSo++ v1.9.4" href="contents.html" />
+    <link rel="up" title="analysis" href="analysis.html" />
+    <link rel="next" title="espressopp.analysis.RadialDistrF" href="espressopp.analysis.RadialDistrF.html" />
+    <link rel="prev" title="PressureTensorMultiLayer - Analysis" href="espressopp.analysis.PressureTensorMultiLayer.html" />
+   
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body role="document">
+  <div id="outer">
+  <div class="header"></div>
+
+
+
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="espressopp.Version.html"><strong>Version</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.pmi.html"><strong>PMI</strong> - Parallel Method Invocation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.System.html"><strong>System</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.BC.html"><strong>BC</strong> - Boundary Condition Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.bc.OrthorhombicBC.html"><strong>OrthorhombicBC</strong> - Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.storage.html"><strong>Storage</strong> - Storage Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html"><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html"><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
+</ul>
+<ul>
+	<li><a href="doxygen/index.html">Doxygen</a></li>
+	<li><a href="ESPResSo++.pdf">PDF manual</a></li>
+	<li><a href="http://www.espresso-pp.de/Impressum.html">Impressum</a></li>
+</ul>
+<div id="searchbox" style="display: none" role="search">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+  <div class="document">
+    <div class="documentwrapper">
+	<div class="bodywrapper">
+	  <div class="body">
+	    
+  <span class="target" id="module-espressopp.analysis.RDFatomistic"></span><div class="section" id="espressopp-analysis-rdfatomistic">
+<h1><strong>espressopp.analysis.RDFatomistic</strong><a class="headerlink" href="#espressopp-analysis-rdfatomistic" title="Permalink to this headline">¶</a></h1>
+<p>Class to compute radial distribution functions in adaptive resolution simulations in subregions of the box.</p>
+<p>Option 1 (spanbased = True): the RDF can be calculated in a cuboid region in the center of the box (periodic in y,z, limited in x). In this case, particle pairs are considered for which at least one of them is in the defined cuboid region. This can be useful when the high resolution region has a slab geometry. No further normalization should be required.</p>
+<p>Option 2 (spanbased = False): the routine can also calculate unnormalized RDFs using particle pairs with both particles being in the high resolution region (based on the resolution value lambda, the span parameter is not used then). This can be useful when atomistic region has complicated or spherical geometries.</p>
+<p>In any case, only pairs of atomistic particles belonging to two different coarse-grained particles are considered. Furthermore, note that the routine uses L_y / half (L_y is the box length in y-direction) as the maximum distance for the RDF calculation, which is then binned according to rdfN during the computation. Hence, L_y should be the shortest box side (or, equally short as L_x and/or L_z).</p>
+<p>Examples:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">rdf_0_1</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">RDFatomistic</span><span class="p">(</span><span class="n">system</span> <span class="o">=</span> <span class="n">system</span><span class="p">,</span> <span class="n">type1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">type2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">spanbased</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">span</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># creates the class for calculating the RDF between atomistic particles of type 1 and 0 between different molecules,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># At least one of these particles has to be within plus/minus 1.5 from the center of the box in x-direction</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">rdf_0_1</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># computes the rdf using 100 bins over a distance corresponding to L_y / 2.0</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt id="espressopp.analysis.RDFatomistic.espressopp.analysis.RDFatomistic">
+<code class="descclassname">espressopp.analysis.</code><code class="descname">RDFatomistic</code><span class="sig-paren">(</span><em>system</em>, <em>type1</em>, <em>type2</em>, <em>spanbased</em>, <em>span</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.RDFatomistic.espressopp.analysis.RDFatomistic" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> (<em>shared_ptr&lt;System&gt;</em>) &#8211; system object</li>
+<li><strong>type1</strong> (<em>int</em>) &#8211; type of atom 1</li>
+<li><strong>type2</strong> (<em>int</em>) &#8211; type of atom 2</li>
+<li><strong>spanbased</strong> (<em>bool</em>) &#8211; (default: True) If True, calculates RDFs in a cuboid region of radius span from the center (limited in x, periodic in y,z). If False, calculates RDFs with both particles being in the high resolution region (using lambda resolution values and ignoring span parameter).</li>
+<li><strong>span</strong> (<em>real</em>) &#8211; (default: 1.0) +/- distance from centre of box in x-direction of the cuboid region used for RDF calculation if spanbased == True. If spanbased == False, this parameter is not used.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.analysis.RDFatomistic.espressopp.analysis.RDFatomistic.compute">
+<code class="descclassname">espressopp.analysis.RDFatomistic.</code><code class="descname">compute</code><span class="sig-paren">(</span><em>rdfN</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.RDFatomistic.espressopp.analysis.RDFatomistic.compute" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>rdfN</strong> (<em>int</em>) &#8211; number of bins</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">list of reals</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+      </div>
+     </div>
+     </div> 
+  </div>
+
+    <div class="footer">
+      &copy;2013-2016, Max Planck Institute for Polymer Research.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+      
+      |
+      <a href="sources/espressopp.analysis.RDFatomistic.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  <div class="footer">
+      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
+      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
+  </div>
+  </div>
+
+  </body>
+</html>
