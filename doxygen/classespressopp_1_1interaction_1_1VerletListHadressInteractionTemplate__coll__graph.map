@@ -1,6 +1,0 @@
-<map id="espressopp::interaction::VerletListHadressInteractionTemplate&lt; _PotentialAT, _PotentialCG &gt;" name="espressopp::interaction::VerletListHadressInteractionTemplate&lt; _PotentialAT, _PotentialCG &gt;">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class." alt="" coords="563,5,720,51"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialAT,\l esutil::enlarge \&gt;" alt="" coords="560,75,723,139"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1Array2D.html" title="A two&#45;dimensional array (i.e." alt="" coords="192,104,333,168"/>
-<area shape="rect" id="node16" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialCG,\l esutil::enlarge \&gt;" alt="" coords="559,163,724,227"/>
-</map>

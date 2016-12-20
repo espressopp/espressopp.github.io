@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Adaptive Resolution Simulations &#8212; ESPResSo++ v1.9.3</title>
+    <title>Adaptive Resolution Simulations &mdash; ESPResSo++ v1.9.4</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
@@ -14,24 +14,21 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        VERSION:     '1.9.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="static/jquery.js"></script>
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="ESPResSo++ v1.9.4" href="contents.html" />
+    <link rel="up" title="Tutorial" href="tutorial.html" />
     <link rel="next" title="Thermodynamic integration" href="tutorial.ThermodynamicIntegration.html" />
     <link rel="prev" title="AddNewPotential" href="tutorial.AddNewPotential.html" />
    
-  <link rel="stylesheet" href="static/custom.css" type="text/css" />
-  
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
@@ -55,7 +52,7 @@
 <li class="toctree-l2"><a class="reference internal" href="tutorial.PolymerMelt.html">Polymer Melt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial.AddNewPotential.html">AddNewPotential</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial.AddNewPotential.html#appendices">Appendices</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Adaptive Resolution Simulations</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Adaptive Resolution Simulations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial.ThermodynamicIntegration.html">Thermodynamic integration</a></li>
 </ul>
 </li>
@@ -113,7 +110,7 @@
 <div class="section" id="adress-domain-decomposition">
 <h3>Adress Domain Decomposition<a class="headerlink" href="#adress-domain-decomposition" title="Permalink to this headline">¶</a></h3>
 <p>When setting up the storage we have to use an appropriate domain decomposition that accomodates storage and proper interprocessor communication of both AT and CG particles.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># (H-)AdResS domain decomposition</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1"># (H-)AdResS domain decomposition</span>
 <span class="n">system</span><span class="o">.</span><span class="n">storage</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">DomainDecompositionAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">nodeGrid</span><span class="p">,</span> <span class="n">cellGrid</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -121,13 +118,13 @@
 <div class="section" id="atomistic-and-coarse-grained-particles">
 <h3>Atomistic and Coarse-Grained particles<a class="headerlink" href="#atomistic-and-coarse-grained-particles" title="Permalink to this headline">¶</a></h3>
 <p>When adding particles to the storage, we have to define them as atomistic or coarse-grained. This has been implemented as the particle property &#8220;adrat&#8221;. If it is 0, the particle is coarse-grained. If it is 1, it is an atomistic particle.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># add particles to system</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1"># add particles to system</span>
 <span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">addParticles</span><span class="p">(</span><span class="n">allParticles</span><span class="p">,</span> <span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;pos&quot;</span><span class="p">,</span> <span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="s2">&quot;f&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">,</span> <span class="s2">&quot;mass&quot;</span><span class="p">,</span> <span class="s2">&quot;adrat&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>When adding the particles as above, it is important that a set of atomistic particles belonging to one CG particle appears in the list of particles <code class="docutils literal"><span class="pre">allParticles</span></code> always after the corresponding CG particle.</p>
 <p>Next, the FixedTupleListAdress defines which atomistic particles belong to which coarse-grained particles.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># create FixedTupleList object and add the tuples</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1"># create FixedTupleList object and add the tuples</span>
 <span class="n">ftpl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedTupleListAdress</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 <span class="n">ftpl</span><span class="o">.</span><span class="n">addTuples</span><span class="p">(</span><span class="n">tuples</span><span class="p">)</span>
 <span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">setFixedTuplesAdress</span><span class="p">(</span><span class="n">ftpl</span><span class="p">)</span>
@@ -135,7 +132,7 @@
 </div>
 <p>In this example, <code class="docutils literal"><span class="pre">tuples</span></code> is a list of tuples, where each tuple itself is another short list in which the first element is the CG particle and the other elements are the AT particles belonging to it. Note that in ESPResSo++ the CG particle is positioned always in the center of mass of its atoms.</p>
 <p>Having set up the FixedTupleList, we can also set up an AdResS fixed pair list that defines bonds between AT particles within individual molecules. This is done in the following way:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># add bonds between AT particles</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1"># add bonds between AT particles</span>
 <span class="n">fpl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedPairListAdress</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">)</span>
 <span class="n">fpl</span><span class="o">.</span><span class="n">addBonds</span><span class="p">(</span><span class="n">bonds</span><span class="p">)</span>
 </pre></div>
@@ -145,7 +142,7 @@
 <div class="section" id="adress-verlet-list">
 <h3>AdResS Verlet List<a class="headerlink" href="#adress-verlet-list" title="Permalink to this headline">¶</a></h3>
 <p>Next, we construct the AdResS Verlet list object for non-bonded interacting particle pairs:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># AdResS Verlet list</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1"># AdResS Verlet list</span>
 <span class="n">vl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="mf">1.4</span><span class="p">,</span>
                                 <span class="n">dEx</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
                                 <span class="n">adrCenter</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
@@ -157,7 +154,7 @@
 <div class="section" id="interactions">
 <h3>Interactions<a class="headerlink" href="#interactions" title="Permalink to this headline">¶</a></h3>
 <p>When adding interactions to the system we have to use the corresponding interaction templates. Here is how to set up a non-bonded interaction in a H-AdResS system:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># H-AdResS non-bonded interaction: WCA potential between AT particles</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1"># H-AdResS non-bonded interaction: WCA potential between AT particles</span>
 <span class="c1"># and tabulated potential between CG particles</span>
 <span class="n">interNB</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">VerletListHadressLennardJones</span><span class="p">(</span><span class="n">vl</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">)</span>
 <span class="n">potWCA</span>  <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">LennardJones</span><span class="p">(</span><span class="n">epsilon</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">sigma</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">shift</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span>
@@ -174,14 +171,14 @@
 <div class="section" id="adress-integrator-extension">
 <h3>AdResS Integrator Extension<a class="headerlink" href="#adress-integrator-extension" title="Permalink to this headline">¶</a></h3>
 <p>Finally, we have to set up the AdResS integrator extension:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># AdResS integrator extension</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1"># AdResS integrator extension</span>
 <span class="n">adress</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">Adress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">verletlist</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">,</span> <span class="n">regionupdates</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
 <span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">adress</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>It takes as arguments the Verlet list and the fixed tuple list. Additionally, for the case of a moving and/or deforming AdResS region based on one or more particles, the parameter <code class="docutils literal"><span class="pre">regionupdates</span></code> specifies how regularly we want to update the shape of the AdResS region in number of steps. This is to avoid as much as possible of the additional communication required to inform different processors of the change of the AdResS region. The parameter defaults to 1 and is not used at all for static AdResS regions.</p>
 <p>Having set up the AdResS extension, we can distribute all particles in the box and place the CG molecules in the centers of mass of the atoms which they belong to. This can be done conveniently via</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># distribute atoms and CG molecules according to AdResS domain decomposition,</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1"># distribute atoms and CG molecules according to AdResS domain decomposition,</span>
 <span class="c1"># place CG molecules in the center of mass</span>
 <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">AdressDecomp</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">)</span>
 </pre></div>
@@ -190,7 +187,7 @@
 <div class="section" id="free-energy-compensation">
 <h3>Free Energy Compensation<a class="headerlink" href="#free-energy-compensation" title="Permalink to this headline">¶</a></h3>
 <p>When using H-AdResS, we probably want to also employ a FEC. This can be done as follows:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># set up FEC</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1"># set up FEC</span>
 <span class="n">fec</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">FreeEnergyCompensation</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
 <span class="n">fec</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">itype</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s2">&quot;table_fec.tab&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">fec</span><span class="p">)</span>
@@ -201,7 +198,7 @@
 <div class="section" id="thermodynamic-force">
 <h3>Thermodynamic Force<a class="headerlink" href="#thermodynamic-force" title="Permalink to this headline">¶</a></h3>
 <p>When using force-based AdResS, or, alternatively, in addition to the FEC in H-AdResS, we can use the thermodynamic force. It can be set up in the following way, very similar to the FEC before:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># set up Thermodynamic Force</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1"># set up Thermodynamic Force</span>
 <span class="n">thdforce</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">TDforce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">verletlist</span><span class="p">)</span>
 <span class="n">thdforce</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">itype</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;table_tf.tab&quot;</span><span class="p">,</span><span class="nb">type</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">thdforce</span><span class="p">)</span>
@@ -209,7 +206,7 @@
 </div>
 <p>It works largely as for the FEC with the following differences: The table should not provide resolution values in the first column but actual distance values, this is, the distance from the (closest) AT region center. This allows to extend the application of the thermodynamic force slightly beyond the borders of the hybrid region where the resolution is constant. Furthermore, the Thermodynamic Force needs the verletlist as argument.</p>
 <p>It is also possible to define a thermodynamic force, which is suited for an adaptive resolution setup with an AT region that is constructed via the overlap of several spherical regions. In this case, the extension needs more information:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># set up Thermodynamic Force</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1"># set up Thermodynamic Force</span>
 <span class="n">thdforce</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">TDforce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">verletlist</span><span class="p">,</span> <span class="n">startdist</span> <span class="o">=</span> <span class="mf">0.9</span><span class="p">,</span>
                                     <span class="n">enddist</span> <span class="o">=</span> <span class="mf">2.1</span><span class="p">,</span> <span class="n">edgeweightmultiplier</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span>
 <span class="n">thdforce</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">itype</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;table_tf.tab&quot;</span><span class="p">,</span><span class="nb">type</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -264,11 +261,11 @@
       &copy;2013-2016, Max Planck Institute for Polymer Research.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
-      <a href="sources/tutorial.AdResS.rst.txt"
+      <a href="sources/tutorial.AdResS.txt"
           rel="nofollow">Page source</a>
     </div>
 

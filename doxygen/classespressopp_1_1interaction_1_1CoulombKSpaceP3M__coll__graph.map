@@ -1,7 +1,0 @@
-<map id="espressopp::interaction::CoulombKSpaceP3M" name="espressopp::interaction::CoulombKSpaceP3M">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Coulomb\lKSpaceP3M \&gt;" alt="" coords="623,5,820,69"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="5,9,163,55"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a &#160;shifted, absolute distance dependent potentia..." alt="" coords="215,45,417,91"/>
-<area shape="rect" id="node9" href="$classespressopp_1_1Real3D.html" title="espressopp::Real3D" alt="" coords="651,93,792,123"/>
-<area shape="rect" id="node15" href="$classespressopp_1_1Int3D.html" title="espressopp::Int3D" alt="" coords="657,216,785,245"/>
-</map>

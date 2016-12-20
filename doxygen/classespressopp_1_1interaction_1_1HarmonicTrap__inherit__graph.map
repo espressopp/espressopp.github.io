@@ -1,5 +1,0 @@
-<map id="espressopp::interaction::HarmonicTrap" name="espressopp::interaction::HarmonicTrap">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1SingleParticlePotentialTemplate.html" title="espressopp::interaction\l::SingleParticlePotentialTemplate\l\&lt; HarmonicTrap \&gt;" alt="" coords="596,5,809,69"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1SingleParticlePotential.html" title="This class is used to define single&#45;particle interactions, typically used for external forces on the ..." alt="" coords="7,13,167,59"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1SingleParticlePotentialTemplate.html" title="Provides a template for the simple implementation of a position&#45;dependent potential." alt="" coords="220,48,433,112"/>
-</map>

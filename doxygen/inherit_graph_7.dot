@@ -1,7 +1,0 @@
-digraph G
-{
-  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
-  node [fontname="Helvetica",fontsize="10",shape=record];
-  rankdir="LR";
-  Node1 [label="espressopp::analysis::sBuf",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structespressopp_1_1analysis_1_1sBuf.html",tooltip="Class provides pid and position information of all particles on all cpus (used e.g."];
-}

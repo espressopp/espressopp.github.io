@@ -1,5 +1,0 @@
-<map id="espressopp::interaction::LennardJones93Wall" name="espressopp::interaction::LennardJones93Wall">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1SingleParticlePotentialTemplate.html" title="espressopp::interaction\l::SingleParticlePotentialTemplate\l\&lt; LennardJones93Wall \&gt;" alt="" coords="633,5,847,69"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1SingleParticlePotential.html" title="This class is used to define single&#45;particle interactions, typically used for external forces on the ..." alt="" coords="7,13,167,59"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1SingleParticlePotentialTemplate.html" title="Provides a template for the simple implementation of a position&#45;dependent potential." alt="" coords="220,48,433,112"/>
-</map>

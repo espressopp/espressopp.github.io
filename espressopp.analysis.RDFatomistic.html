@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>espressopp.analysis.RDFatomistic &#8212; ESPResSo++ v1.9.3</title>
+    <title>espressopp.analysis.RDFatomistic &mdash; ESPResSo++ v1.9.4</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
@@ -14,24 +14,21 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        VERSION:     '1.9.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="static/jquery.js"></script>
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="ESPResSo++ v1.9.4" href="contents.html" />
+    <link rel="up" title="analysis" href="analysis.html" />
     <link rel="next" title="espressopp.analysis.RadialDistrF" href="espressopp.analysis.RadialDistrF.html" />
     <link rel="prev" title="PressureTensorMultiLayer - Analysis" href="espressopp.analysis.PressureTensorMultiLayer.html" />
    
-  <link rel="stylesheet" href="static/custom.css" type="text/css" />
-  
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
@@ -111,12 +108,12 @@
 <p>Option 2 (spanbased = False): the routine can also calculate unnormalized RDFs using particle pairs with both particles being in the high resolution region (based on the resolution value lambda, the span parameter is not used then). This can be useful when atomistic region has complicated or spherical geometries.</p>
 <p>In any case, only pairs of atomistic particles belonging to two different coarse-grained particles are considered. Furthermore, note that the routine uses L_y / half (L_y is the box length in y-direction) as the maximum distance for the RDF calculation, which is then binned according to rdfN during the computation. Hence, L_y should be the shortest box side (or, equally short as L_x and/or L_z).</p>
 <p>Examples:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rdf_0_1</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">RDFatomistic</span><span class="p">(</span><span class="n">system</span> <span class="o">=</span> <span class="n">system</span><span class="p">,</span> <span class="n">type1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">type2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">spanbased</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">span</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">rdf_0_1</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">RDFatomistic</span><span class="p">(</span><span class="n">system</span> <span class="o">=</span> <span class="n">system</span><span class="p">,</span> <span class="n">type1</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">type2</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">spanbased</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span> <span class="n">span</span> <span class="o">=</span> <span class="mf">1.5</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># creates the class for calculating the RDF between atomistic particles of type 1 and 0 between different molecules,</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># At least one of these particles has to be within plus/minus 1.5 from the center of the box in x-direction</span>
 </pre></div>
 </div>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rdf_0_1</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">rdf_0_1</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># computes the rdf using 100 bins over a distance corresponding to L_y / 2.0</span>
 </pre></div>
 </div>
@@ -167,11 +164,11 @@
       &copy;2013-2016, Max Planck Institute for Polymer Research.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
-      <a href="sources/espressopp.analysis.RDFatomistic.rst.txt"
+      <a href="sources/espressopp.analysis.RDFatomistic.txt"
           rel="nofollow">Page source</a>
     </div>
 

@@ -1,9 +1,0 @@
-<map id="espressopp::FixedListComm" name="espressopp::FixedListComm">
-<area shape="rect" id="node2" href="$structespressopp_1_1PairList.html" title="espressopp::PairList" alt="" coords="928,51,1069,80"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; ParticlePair \&gt; \&gt;" alt="" coords="672,7,840,71"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="160,82,387,129"/>
-<area shape="rect" id="node14" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; ParticleTriple \&gt; \&gt;" alt="" coords="667,95,845,159"/>
-<area shape="rect" id="node21" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; ParticleQuadruple \&gt; \&gt;" alt="" coords="653,183,859,247"/>
-<area shape="rect" id="node12" href="$structespressopp_1_1TripleList.html" title="espressopp::TripleList" alt="" coords="924,112,1073,141"/>
-<area shape="rect" id="node19" href="$structespressopp_1_1QuadrupleList.html" title="espressopp::QuadrupleList" alt="" coords="911,173,1087,203"/>
-</map>

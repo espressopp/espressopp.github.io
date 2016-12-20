@@ -1,8 +1,0 @@
-<map id="espressopp::PairList" name="espressopp::PairList">
-<area shape="rect" id="node11" href="$classespressopp_1_1FixedListComm.html" title="espressopp::FixedListComm" alt="" coords="5,395,195,424"/>
-<area shape="rect" id="node13" href="$classespressopp_1_1FixedPairDistList.html" title="espressopp::FixedPairDistList" alt="" coords="219,395,416,424"/>
-<area shape="rect" id="node15" href="$classespressopp_1_1FixedPairList.html" title="espressopp::FixedPairList" alt="" coords="440,395,613,424"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; ParticlePair \&gt; \&gt;" alt="" coords="233,200,401,264"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="361,86,588,133"/>
-<area shape="rect" id="node17" href="$classespressopp_1_1FixedPairListAdress.html" title="This is a subclass of FixedPairList." alt="" coords="440,475,613,522"/>
-</map>

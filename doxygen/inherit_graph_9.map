@@ -1,5 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classespressopp_1_1bc_1_1BC.html" title="Abstract base class for boundary conditions." alt="" coords="5,32,144,61"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1bc_1_1OrthorhombicBC.html" title="espressopp::bc::OrthorhombicBC" alt="" coords="192,5,408,35"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1bc_1_1SlabBC.html" title="espressopp::bc::SlabBC" alt="" coords="219,59,381,88"/>
-</map>

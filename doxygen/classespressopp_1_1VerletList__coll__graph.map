@@ -1,6 +1,0 @@
-<map id="espressopp::VerletList" name="espressopp::VerletList">
-<area shape="rect" id="node2" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="907,48,1093,77"/>
-<area shape="rect" id="node8" href="$structespressopp_1_1PairList.html" title="espressopp::PairList" alt="" coords="929,103,1071,132"/>
-<area shape="rect" id="node10" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; ParticlePair \&gt; \&gt;" alt="" coords="617,100,785,164"/>
-<area shape="rect" id="node14" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="160,157,387,203"/>
-</map>

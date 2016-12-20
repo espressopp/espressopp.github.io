@@ -1,7 +1,0 @@
-<map id="espressopp::integrator::VelocityVerlet" name="espressopp::integrator::VelocityVerlet">
-<area shape="rect" id="node2" href="$classespressopp_1_1integrator_1_1MDIntegrator.html" title="espressopp::integrator\l::MDIntegrator" alt="" coords="828,102,977,149"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="552,45,739,75"/>
-<area shape="rect" id="node10" href="$structespressopp_1_1integrator_1_1ExtensionList.html" title="espressopp::integrator\l::ExtensionList" alt="" coords="571,102,720,149"/>
-<area shape="rect" id="node14" href="$classespressopp_1_1esutil_1_1WallTimer.html" title="timer measuring the wall time." alt="" coords="839,171,967,218"/>
-<area shape="rect" id="node16" href="$classespressopp_1_1esutil_1_1Timer.html" title="simple timer for obtaining typically microsecond precision timings." alt="" coords="581,171,709,218"/>
-</map>

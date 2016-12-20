@@ -1,5 +1,0 @@
-<map id="espressopp::analysis::AnalysisBaseTemplate&lt; ResultType &gt;" name="espressopp::analysis::AnalysisBaseTemplate&lt; ResultType &gt;">
-<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1AnalysisBase.html" title="All quantities to be measured derive from this abstract base class and the corresponding template..." alt="" coords="27,411,171,458"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1ParticleAccess.html" title="espressopp::ParticleAccess" alt="" coords="7,331,191,360"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,251,192,280"/>
-</map>

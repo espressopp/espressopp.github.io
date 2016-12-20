@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>espressopp.interaction.LennardJonesSoftcoreTI &#8212; ESPResSo++ v1.9.3</title>
+    <title>espressopp.interaction.LennardJonesSoftcoreTI &mdash; ESPResSo++ v1.9.4</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
@@ -14,24 +14,21 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        VERSION:     '1.9.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="static/jquery.js"></script>
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="ESPResSo++ v1.9.4" href="contents.html" />
+    <link rel="up" title="interaction" href="interaction.html" />
     <link rel="next" title="espressopp.interaction.MirrorLennardJones" href="espressopp.interaction.MirrorLennardJones.html" />
     <link rel="prev" title="espressopp.interaction.LennardJonesGromacs" href="espressopp.interaction.LennardJonesGromacs.html" />
    
-  <link rel="stylesheet" href="static/custom.css" type="text/css" />
-  
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
@@ -139,7 +136,7 @@ r_B=(\alpha\sigma^6_B(1-\lambda)^p+r_{ij}^6)^{1/6}</span></p>
 <p>The <span class="math">\lambda</span> (<code class="docutils literal"><span class="pre">lambdaTI</span></code>) parameter used here should not be confused with the <span class="math">\lambda</span> (<code class="docutils literal"><span class="pre">lambda_adr</span></code>) particle property used in AdResS simulations.</p>
 <p>See also the Thermodynamic Integration tutorial.</p>
 <p>Example python script:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1">#value of lambda</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1">#value of lambda</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lambdaTI</span> <span class="o">=</span> <span class="mf">0.3</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1">#softcore parameters</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">alphaSC</span> <span class="o">=</span> <span class="mf">0.5</span>
@@ -151,14 +148,14 @@ r_B=(\alpha\sigma^6_B(1-\lambda)^p+r_{ij}^6)^{1/6}</span></p>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1">#loop over list of all types for particles interacting with this atomistic potential</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">types</span><span class="p">:</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">types</span><span class="p">:</span>
-<span class="gp">&gt;&gt;&gt; </span>    <span class="n">ljpot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">LennardJonesSoftcoreTI</span><span class="p">(</span><span class="n">epsilonA</span><span class="o">=</span><span class="n">epsA</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">sigmaA</span><span class="o">=</span><span class="n">sigA</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">epsilonB</span><span class="o">=</span><span class="n">epsB</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">sigmaB</span><span class="o">=</span><span class="n">sigB</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="n">alphaSC</span><span class="p">,</span> <span class="n">power</span><span class="o">=</span><span class="n">powerSC</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">cutoff</span><span class="p">,</span> <span class="n">lambdaTI</span><span class="o">=</span><span class="n">lambdaTI</span><span class="p">,</span> <span class="n">annihilate</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">ljpot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">LennardJonesSoftcoreTI</span><span class="p">(</span><span class="n">epsilonA</span><span class="o">=</span><span class="n">epsA</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">sigmaA</span><span class="o">=</span><span class="n">sigA</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">epsilonB</span><span class="o">=</span><span class="n">epsB</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">sigmaB</span><span class="o">=</span><span class="n">sigB</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="n">alphaSC</span><span class="p">,</span> <span class="n">power</span><span class="o">=</span><span class="n">powerSC</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">cutoff</span><span class="p">,</span> <span class="n">lambdaTI</span><span class="o">=</span><span class="n">lambdaTI</span><span class="p">,</span> <span class="n">annihilate</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">ljpot</span><span class="o">.</span><span class="n">addPids</span><span class="p">(</span><span class="n">pidlist</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">lj_adres_interaction</span><span class="o">.</span><span class="n">setPotentialAT</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="n">i</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">potential</span><span class="o">=</span><span class="n">ljpot</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">lj_adres_interaction</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>During the MD run, one can then calculate the derivative of the RF energy wrt lambda</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1">#calculate dU/dlambda</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1">#calculate dU/dlambda</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">dUdl</span> <span class="o">=</span> <span class="n">lj_adres_interaction</span><span class="o">.</span><span class="n">computeEnergyDeriv</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -270,11 +267,11 @@ r_B=(\alpha\sigma^6_B(1-\lambda)^p+r_{ij}^6)^{1/6}</span></p>
       &copy;2013-2016, Max Planck Institute for Polymer Research.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
-      <a href="sources/espressopp.interaction.LennardJonesSoftcoreTI.rst.txt"
+      <a href="sources/espressopp.interaction.LennardJonesSoftcoreTI.txt"
           rel="nofollow">Page source</a>
     </div>
 

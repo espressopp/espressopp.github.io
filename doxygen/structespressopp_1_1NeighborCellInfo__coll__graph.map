@@ -1,8 +1,0 @@
-<map id="espressopp::NeighborCellInfo" name="espressopp::NeighborCellInfo">
-<area shape="rect" id="node2" href="$structespressopp_1_1Cell.html" title="espressopp::Cell" alt="" coords="1179,71,1299,100"/>
-<area shape="rect" id="node4" href="$structespressopp_1_1ParticleList.html" title="espressopp::ParticleList" alt="" coords="867,43,1029,72"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; Particle \&gt; \&gt;" alt="" coords="624,15,776,79"/>
-<area shape="rect" id="node10" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; STLContainer \&gt;" alt="" coords="160,66,387,113"/>
-<area shape="rect" id="node16" href="$classespressopp_1_1esutil_1_1ESPPContainer.html" title="espressopp::esutil\l::ESPPContainer\&lt; std\l::vector\&lt; NeighborCellInfo \&gt; \&gt;" alt="" coords="601,103,799,167"/>
-<area shape="rect" id="node14" href="$structespressopp_1_1NeighborCellList.html" title="espressopp::NeighborCellList" alt="" coords="852,99,1044,128"/>
-</map>

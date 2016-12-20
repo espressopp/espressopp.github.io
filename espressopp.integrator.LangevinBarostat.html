@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>LangevinBarostat - Langevin-Hoover barostat Object &#8212; ESPResSo++ v1.9.3</title>
+    <title>LangevinBarostat - Langevin-Hoover barostat Object &mdash; ESPResSo++ v1.9.4</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
@@ -14,24 +14,21 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        VERSION:     '1.9.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="static/jquery.js"></script>
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="ESPResSo++ v1.9.4" href="contents.html" />
+    <link rel="up" title="User Interface" href="classdescription.html" />
     <link rel="next" title="CoulombRSpace - Coulomb potential and interaction Objects (R space part)" href="espressopp.interaction.CoulombRSpace.html" />
     <link rel="prev" title="BerendsenThermostat - Berendsen thermostat Object" href="espressopp.integrator.BerendsenThermostat.html" />
    
-  <link rel="stylesheet" href="static/custom.css" type="text/css" />
-  
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
@@ -58,7 +55,7 @@
 <li class="toctree-l2"><a class="reference internal" href="espressopp.storage.html"><strong>Storage</strong> - Storage Object</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html"><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href=""><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html"><strong>CoulombRSpace</strong> - Coulomb potential and interaction Objects (<cite>R</cite> space part)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html"><strong>CoulombKSpaceEwald</strong> - Coulomb potential and interaction Objects (<cite>K</cite> space part)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
@@ -137,7 +134,7 @@ scaled by</p>
 termostat. They are not included here and will not be calculated if the Langevin Thermostat is not
 defined.</p>
 <p>Example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rng</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">rng</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rng</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span><span class="o">.</span><span class="n">gammaP</span> <span class="o">=</span> <span class="mf">0.05</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="mf">1.0</span>
@@ -151,7 +148,7 @@ parameter.</p>
 <p>Definition:</p>
 <blockquote>
 <div><p>In order to define the Langevin-Hoover barostat</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rng</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rng</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>one should have the <a class="reference external" href="espressopp.System.html">System</a> and <a class="reference internal" href="#rng">RNG</a> defined and know the desired temperature.</p>
@@ -183,13 +180,13 @@ temperature.</p>
 (<em>setMassByFrequency( frequency )</em>)</p>
 <p>Adding to the integration:</p>
 <blockquote>
-<div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">langevinP</span><span class="p">)</span>
+<div><div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">langevinP</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>It will define Langevin-Hoover barostat as a property of integrator.</p>
 </div></blockquote>
 <p>One more example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rngBaro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">rngBaro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rngBaro</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">gammaP</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="mf">1.0</span>
@@ -202,7 +199,7 @@ temperature.</p>
 <div><blockquote>
 <div><p>If one do not need the pressure regulation in system anymore or need to switch
 the ensamble or whatever :)</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># define barostat with parameters</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># define barostat with parameters</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rngBaro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rngBaro</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">gammaP</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span>
@@ -219,7 +216,7 @@ the ensamble or whatever :)</p>
 </div>
 </div></blockquote>
 <p>Connecting the barostat back after the disconnection</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">langevinBarostat</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">langevinBarostat</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -272,11 +269,11 @@ the ensamble or whatever :)</p>
       &copy;2013-2016, Max Planck Institute for Polymer Research.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
-      <a href="sources/espressopp.integrator.LangevinBarostat.rst.txt"
+      <a href="sources/espressopp.integrator.LangevinBarostat.txt"
           rel="nofollow">Page source</a>
     </div>
 

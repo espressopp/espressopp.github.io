@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Thermodynamic integration &#8212; ESPResSo++ v1.9.3</title>
+    <title>Thermodynamic integration &mdash; ESPResSo++ v1.9.4</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
@@ -14,24 +14,21 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        VERSION:     '1.9.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="static/jquery.js"></script>
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="ESPResSo++ v1.9.4" href="contents.html" />
+    <link rel="up" title="Tutorial" href="tutorial.html" />
     <link rel="next" title="User Interface" href="classdescription.html" />
     <link rel="prev" title="Adaptive Resolution Simulations" href="tutorial.AdResS.html" />
    
-  <link rel="stylesheet" href="static/custom.css" type="text/css" />
-  
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
@@ -56,7 +53,7 @@
 <li class="toctree-l2"><a class="reference internal" href="tutorial.AddNewPotential.html">AddNewPotential</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial.AddNewPotential.html#appendices">Appendices</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial.AdResS.html">Adaptive Resolution Simulations</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Thermodynamic integration</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Thermodynamic integration</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
@@ -128,7 +125,7 @@ r_B=(\alpha\sigma^6_B(1-\lambda)^p+r_{ij}^6)^{1/6}</span></p>
 <div class="section" id="espp-code">
 <h2>ESPResSo++ code<a class="headerlink" href="#espp-code" title="Permalink to this headline">¶</a></h2>
 <p>We must perform many separate simulations, each with a different <span class="math">\lambda</span> value. It is convenient to define a list of <span class="math">\lambda</span> values in the python script and use an index to access a different element of the list in each separate simulation. The script for the first simulation contains these lines:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Parameters for Thermodynamic Integration</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1"># Parameters for Thermodynamic Integration</span>
 <span class="n">stateBIndices</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="c1">#indices of the methanol atoms</span>
 <span class="n">lambdaVectorCoul</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.00</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.10</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">,</span> <span class="mf">0.20</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.30</span><span class="p">,</span> <span class="mf">0.35</span><span class="p">,</span> <span class="mf">0.40</span><span class="p">,</span> <span class="mf">0.45</span><span class="p">,</span> <span class="mf">0.50</span><span class="p">,</span>
                     <span class="mf">0.55</span><span class="p">,</span> <span class="mf">0.60</span><span class="p">,</span> <span class="mf">0.65</span><span class="p">,</span> <span class="mf">0.70</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mf">0.80</span><span class="p">,</span> <span class="mf">0.85</span><span class="p">,</span> <span class="mf">0.90</span><span class="p">,</span> <span class="mf">0.95</span><span class="p">,</span> <span class="mf">1.00</span><span class="p">,</span> <span class="mf">1.000</span><span class="p">,</span>
@@ -151,7 +148,7 @@ r_B=(\alpha\sigma^6_B(1-\lambda)^p+r_{ij}^6)^{1/6}</span></p>
 </div>
 <p>The list <code class="docutils literal"><span class="pre">lambdaVectorCoul</span></code> contains the values of <span class="math">\lambda_C</span> and the list <code class="docutils literal"><span class="pre">lambdaVectorVdwl</span></code> contains the values of <span class="math">\lambda_L</span>. The total number of simulations to do Step 1 and Step 2 will be <code class="docutils literal"><span class="pre">len(lambdaVectorCoul)</span></code> or <code class="docutils literal"><span class="pre">len(lambdaVectorVdwl)</span></code>. We must make a copy of the python script for each simulation, changing each time the value of <code class="docutils literal"><span class="pre">lambdaIndex</span></code>.</p>
 <p>Next we set up the Coulombic interactions, assuming we already have created a <code class="docutils literal"><span class="pre">system</span></code> and a <code class="docutils literal"><span class="pre">verletlist</span></code>. The electrostatics method used is generalised reaction field.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1">#atTypes - list of all atomtypes (integers) used in the pairs interacting via this potential</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1">#atTypes - list of all atomtypes (integers) used in the pairs interacting via this potential</span>
 <span class="c1">#epsilon1,epsilon2,kappa - reaction field parameters</span>
 <span class="c1">#annihilate=False means decoupling is used (see Note 1)</span>
 <span class="c1">#ftpl - a FixedTupleListAdResS object (see AdResS tutorial)</span>
@@ -164,7 +161,7 @@ r_B=(\alpha\sigma^6_B(1-\lambda)^p+r_{ij}^6)^{1/6}</span></p>
 </pre></div>
 </div>
 <p>Now we set up the softcore Lennard Jones interaction.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1">#atomtypeparameters - dictionary of format {atomtype: {&#39;eps&#39;: epsilon, &#39;sig&#39;: sigma}}</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="c1">#atomtypeparameters - dictionary of format {atomtype: {&#39;eps&#39;: epsilon, &#39;sig&#39;: sigma}}</span>
 <span class="c1">#                     where atomtype is integer and epsilon and sigma are real</span>
 <span class="c1">#defaults - dictionary containing a key &#39;combinationrule&#39; with value 1 if the contents</span>
 <span class="c1">#           of atomtypeparameters need to be converted from c6,c12 format to</span>
@@ -183,12 +180,12 @@ r_B=(\alpha\sigma^6_B(1-\lambda)^p+r_{ij}^6)^{1/6}</span></p>
 </pre></div>
 </div>
 <p>We open an output file. In the first line we write the values of <span class="math">\lambda_C</span> and <span class="math">\lambda_L</span> for this simulation.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">dhdlF</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;dhdl.xvg&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">dhdlF</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;dhdl.xvg&quot;</span><span class="p">,</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
 <span class="n">dhdlF</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;#(coul-lambda, vdw-lambda) = (&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">lambdaTICoul</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;, &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">lambdaTIVdwl</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;)</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>During the MD run, every x number of MD steps, we return to the python level and calculate the derivatives of the energies with respect to <span class="math">\lambda</span>.</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="n">dhdlCoul</span> <span class="o">=</span> <span class="n">qq_adres_interaction</span><span class="o">.</span><span class="n">computeEnergyDeriv</span><span class="p">()</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">dhdlCoul</span> <span class="o">=</span> <span class="n">qq_adres_interaction</span><span class="o">.</span><span class="n">computeEnergyDeriv</span><span class="p">()</span>
 <span class="n">dhdlVdwl</span> <span class="o">=</span> <span class="n">lj_adres_interaction</span><span class="o">.</span><span class="n">computeEnergyDeriv</span><span class="p">()</span>
 <span class="n">dhdlF</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">time</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">dhdlCoul</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot; &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">dhdlVdwl</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
@@ -215,11 +212,11 @@ r_B=(\alpha\sigma^6_B(1-\lambda)^p+r_{ij}^6)^{1/6}</span></p>
       &copy;2013-2016, Max Planck Institute for Polymer Research.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
-      <a href="sources/tutorial.ThermodynamicIntegration.rst.txt"
+      <a href="sources/tutorial.ThermodynamicIntegration.txt"
           rel="nofollow">Page source</a>
     </div>
 

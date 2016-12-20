@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Storage - Storage Object &#8212; ESPResSo++ v1.9.3</title>
+    <title>Storage - Storage Object &mdash; ESPResSo++ v1.9.4</title>
     
     <link rel="stylesheet" href="static/default.css" type="text/css" />
     <link rel="stylesheet" href="static/pygments.css" type="text/css" />
@@ -14,24 +14,21 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
-        VERSION:     '1.9.3',
+        VERSION:     '1.9.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
+        HAS_SOURCE:  true
       };
     </script>
     <script type="text/javascript" src="static/jquery.js"></script>
     <script type="text/javascript" src="static/underscore.js"></script>
     <script type="text/javascript" src="static/doctools.js"></script>
     <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="top" title="ESPResSo++ v1.9.4" href="contents.html" />
+    <link rel="up" title="User Interface" href="classdescription.html" />
     <link rel="next" title="BerendsenBarostat - Berendsen barostat Object" href="espressopp.integrator.BerendsenBarostat.html" />
     <link rel="prev" title="OrthorhombicBC - Object" href="espressopp.bc.OrthorhombicBC.html" />
    
-  <link rel="stylesheet" href="static/custom.css" type="text/css" />
-  
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
@@ -55,7 +52,7 @@
 <li class="toctree-l2"><a class="reference internal" href="espressopp.System.html"><strong>System</strong> - Object</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.bc.BC.html"><strong>BC</strong> - Boundary Condition Object</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.bc.OrthorhombicBC.html"><strong>OrthorhombicBC</strong> - Object</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#"><strong>Storage</strong> - Storage Object</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href=""><strong>Storage</strong> - Storage Object</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html"><strong>BerendsenBarostat</strong> - Berendsen barostat Object</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html"><strong>BerendsenThermostat</strong> - Berendsen thermostat Object</a></li>
 <li class="toctree-l2"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html"><strong>LangevinBarostat</strong> - Langevin-Hoover barostat Object</a></li>
@@ -122,7 +119,7 @@ All derived classes implement at least the following methods:</p>
 <li><p class="first"><cite>removeParticle(pid)</cite>:</p>
 <blockquote>
 <div><p>Remove a particle with id number <em>pid</em> from the storage.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">removeParticle</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">removeParticle</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>There is an example in <em>examples</em> folder</p>
@@ -132,9 +129,9 @@ All derived classes implement at least the following methods:</p>
 <blockquote>
 <div><p>Get a particle object.
 This can be used to get specific particle information:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">particle</span> <span class="o">=</span> <span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">getParticle</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;Particle ID is       : &quot;</span><span class="p">,</span> <span class="n">particle</span><span class="o">.</span><span class="n">id</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;Particle position is : &quot;</span><span class="p">,</span> <span class="n">particle</span><span class="o">.</span><span class="n">pos</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">particle</span> <span class="o">=</span> <span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">getParticle</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;Particle ID is       : &quot;</span><span class="p">,</span> <span class="n">particle</span><span class="o">.</span><span class="n">id</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;Particle position is : &quot;</span><span class="p">,</span> <span class="n">particle</span><span class="o">.</span><span class="n">pos</span>
 </pre></div>
 </div>
 <p>you cannot use this particle object to modify particle data.
@@ -166,7 +163,7 @@ You have to use the modifyParticle command for that (see below).</p>
 <p>Each particle in the list must be itself a list where each entry corresponds
 to the property specified in properties.</p>
 <p>Example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">addParticles</span><span class="p">([[</span><span class="nb">id</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="o">...</span> <span class="p">],</span> <span class="o">...</span><span class="p">],</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">addParticles</span><span class="p">([[</span><span class="nb">id</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="o">...</span> <span class="p">],</span> <span class="o">...</span><span class="p">],</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -175,7 +172,7 @@ to the property specified in properties.</p>
 <blockquote>
 <div><p>This routine allows to modify any properties of an already existing particle.</p>
 <p>Example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">modifyParticle</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="n">Real3D</span><span class="p">(</span><span class="n">new_x</span><span class="p">,</span> <span class="n">new_y</span><span class="p">,</span> <span class="n">new_z</span><span class="p">))</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">modifyParticle</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="n">Real3D</span><span class="p">(</span><span class="n">new_x</span><span class="p">,</span> <span class="n">new_y</span><span class="p">,</span> <span class="n">new_z</span><span class="p">))</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -190,7 +187,7 @@ to the property specified in properties.</p>
 </li>
 </ul>
 <p>Examples:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">addParticles</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)]],</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;pos&#39;</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">addParticles</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)]],</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;pos&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">decompose</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">modifyParticle</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="n">Real3D</span><span class="p">(</span><span class="n">new_x</span><span class="p">,</span> <span class="n">new_y</span><span class="p">,</span> <span class="n">new_z</span><span class="p">))</span>
 </pre></div>
@@ -426,11 +423,11 @@ to the property specified in properties.</p>
       &copy;2013-2016, Max Planck Institute for Polymer Research.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.9</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
-      <a href="sources/espressopp.storage.rst.txt"
+      <a href="sources/espressopp.storage.txt"
           rel="nofollow">Page source</a>
     </div>
 
