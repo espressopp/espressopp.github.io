@@ -1,72 +1,77 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Adaptive Resolution Simulations &mdash; ESPResSo++ v1.9.4</title>
-    
-    <link rel="stylesheet" href="static/default.css" type="text/css" />
-    <link rel="stylesheet" href="static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.9.4',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
-    <script type="text/javascript" src="static/jquery.js"></script>
-    <script type="text/javascript" src="static/underscore.js"></script>
-    <script type="text/javascript" src="static/doctools.js"></script>
-    <link rel="shortcut icon" href="static/favicon.ico"/>
-    <link rel="top" title="ESPResSo++ v1.9.4" href="contents.html" />
-    <link rel="up" title="Tutorial" href="tutorial.html" />
-    <link rel="next" title="Thermodynamic integration" href="tutorial.ThermodynamicIntegration.html" />
-    <link rel="prev" title="AddNewPotential" href="tutorial.AddNewPotential.html" />
-   
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Adaptive Resolution Simulations &mdash; ESPResSo++ v1.9.4</title>
+  
 
-  </head>
-  <body role="document">
-  <div id="outer">
-  <div class="header"></div>
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
 
+  
 
+  
+  
+    
 
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-<ul><li class="toctree-l1"><a href="index.html">Home</a></a></ul>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="tutorial.html">Tutorial</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="tutorial.SystemSetup.html">Basic System Setup</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial.LennardJones.html">Simple Lennard Jones System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial.LennardJones2.html">Advanced Lennard Jones System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial.PolymerMelt.html">Polymer Melt</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial.AddNewPotential.html">AddNewPotential</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial.AddNewPotential.html#appendices">Appendices</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Adaptive Resolution Simulations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tutorial.ThermodynamicIntegration.html">Thermodynamic integration</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
-<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
-<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
-</ul>
-<ul>
-	<li><a href="doxygen/index.html">Doxygen</a></li>
-	<li><a href="ESPResSo++.pdf">PDF manual</a></li>
-	<li><a href="http://www.espresso-pp.de/Impressum.html">Impressum</a></li>
-</ul>
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ESPResSo++ v1.9.4" href="index.html"/>
+        <link rel="up" title="Tutorial" href="tutorial.html"/>
+        <link rel="next" title="Thermodynamic integration" href="tutorial.ThermodynamicIntegration.html"/>
+        <link rel="prev" title="AddNewPotential" href="tutorial.AddNewPotential.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ESPResSo++
+          
+
+          
+            
+            <img src="_static/logo_theory_group_200x48.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.9.4
+              </div>
+            
+          
+
+          
 <div id="searchbox" style="display: none" role="search">
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
@@ -76,36 +81,103 @@
     </form>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="tutorial.html">Tutorial</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="tutorial.SystemSetup.html">Basic System Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.LennardJones.html">Simple Lennard Jones System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.LennardJones2.html">Advanced Lennard Jones System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.PolymerMelt.html">Polymer Melt</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.AddNewPotential.html">AddNewPotential</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.AddNewPotential.html#appendices">Appendices</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Adaptive Resolution Simulations</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial.ThermodynamicIntegration.html">Thermodynamic integration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
+</ul>
+
+            
+          
         </div>
       </div>
+    </nav>
 
-  <div class="document">
-    <div class="documentwrapper">
-	<div class="bodywrapper">
-	  <div class="body">
-	    
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ESPResSo++</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="tutorial.html">Tutorial</a> &raquo;</li>
+      
+    <li>Adaptive Resolution Simulations</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/tutorial.AdResS.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
   <div class="section" id="adaptive-resolution-simulations">
 <h1>Adaptive Resolution Simulations<a class="headerlink" href="#adaptive-resolution-simulations" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="theory-and-background">
 <h2>Theory and Background<a class="headerlink" href="#theory-and-background" title="Permalink to this headline">¶</a></h2>
 <p>ESPResSo++ provides functionality to run adaptive resolution simulations using the Adaptive Resolution Simulation Scheme (AdResS). In AdResS molecules in different regions in a simulation box are described by different non-bonded force fields, typically atomistic (AT) and coarse-grained (CG). These different subregions are interfaced and coupled via a hybrid region, where the interaction smoothly changes. Molecules can diffuse between the different regions and change their interaction on the fly.</p>
-<p>There are two different AdResS approaches: The force-based scheme, in which forces are interpolated, as well as the energy-based scheme (Hamiltonian AdResS or H-AdResS) which interpolates on the level of potential energies. In force-based AdResS (see, for example, Praprotnik et al., J. Chem. Phys. 123, 224106 (2005) as well as Annu. Rev. Phys. Chem. 59, 545 (2008)), we have for the net force between the molecules <span class="math">\alpha</span> and <span class="math">\beta</span></p>
+<p>There are two different AdResS approaches: The force-based scheme, in which forces are interpolated, as well as the energy-based scheme (Hamiltonian AdResS or H-AdResS) which interpolates on the level of potential energies. In force-based AdResS (see, for example, Praprotnik et al., J. Chem. Phys. 123, 224106 (2005) as well as Annu. Rev. Phys. Chem. 59, 545 (2008)), we have for the net force between the molecules <span class="math">\(\alpha\)</span> and <span class="math">\(\beta\)</span></p>
 <div class="math">
-<p><span class="math">\mathbf{F}_{\alpha|\beta} = \lambda(\mathbf{R}_\alpha)\lambda(\mathbf{R}_\beta)\mathbf{F}_{\alpha|\beta}^{\text{AT}} + \left(1-\lambda(\mathbf{R}_\alpha)\lambda(\mathbf{R}_\beta)\right)\mathbf{F}_{\alpha|\beta}^{\text{CG}},</span></p>
-</div><p>where <span class="math">\mathbf{F}_{\alpha|\beta}^{\text{AT}}</span> is an AT force field based on the individual atoms belonging to the molecules <span class="math">\alpha</span> and <span class="math">\beta</span> and <span class="math">\lambda</span> is a position dependent resolution function smoothly changing from 1 in the AT region to 0 in the CG region via the hybrid buffer region. It is evaluated based on the molecules&#8217; center of mass positions <span class="math">\mathbf{R_\alpha}</span>. Note that there can of course also be bonded interactions, but these are typically not interpolated, as they are computationally usually much cheaper to evaluate than the non-bonded forces. For the sake of clarity, we omit them here.</p>
+\[\mathbf{F}_{\alpha|\beta} = \lambda(\mathbf{R}_\alpha)\lambda(\mathbf{R}_\beta)\mathbf{F}_{\alpha|\beta}^{\text{AT}} + \left(1-\lambda(\mathbf{R}_\alpha)\lambda(\mathbf{R}_\beta)\right)\mathbf{F}_{\alpha|\beta}^{\text{CG}},\]</div>
+<p>where <span class="math">\(\mathbf{F}_{\alpha|\beta}^{\text{AT}}\)</span> is an AT force field based on the individual atoms belonging to the molecules <span class="math">\(\alpha\)</span> and <span class="math">\(\beta\)</span> and <span class="math">\(\lambda\)</span> is a position dependent resolution function smoothly changing from 1 in the AT region to 0 in the CG region via the hybrid buffer region. It is evaluated based on the molecules&#8217; center of mass positions <span class="math">\(\mathbf{R_\alpha}\)</span>. Note that there can of course also be bonded interactions, but these are typically not interpolated, as they are computationally usually much cheaper to evaluate than the non-bonded forces. For the sake of clarity, we omit them here.</p>
 <p>In H-AdResS (see Potestio et al., Phys. Rev. Lett. 110, 108301 (2013)), interpolation is performed directly on potential energies in the Hamiltonian as</p>
 <div class="math">
-<p><span class="math">H  = \sum_\alpha \sum_{i\in\alpha} \frac{\mathbf{p}_{\alpha i}^2}{2m_{\alpha i}}+\sum_{\alpha} \left\{\lambda({\mathbf{R}_\alpha}) V^{\text{AT}}_\alpha + \left(1 - \lambda({\mathbf{R}_\alpha})\right) V^{\text{CG}}_\alpha \right\},</span></p>
-</div><p>where the first term corresponds to the kinetic energy and we again omitted intramolecular interactions. The forces obtained from this Hamiltonian are</p>
+\[H  = \sum_\alpha \sum_{i\in\alpha} \frac{\mathbf{p}_{\alpha i}^2}{2m_{\alpha i}}+\sum_{\alpha} \left\{\lambda({\mathbf{R}_\alpha}) V^{\text{AT}}_\alpha + \left(1 - \lambda({\mathbf{R}_\alpha})\right) V^{\text{CG}}_\alpha \right\},\]</div>
+<p>where the first term corresponds to the kinetic energy and we again omitted intramolecular interactions. The forces obtained from this Hamiltonian are</p>
 <div class="math">
-<p><span class="math">\textbf{F}_{\alpha i} = &amp; \sum_{\beta\neq\alpha}\sum_{j\in\beta}\left\{ \frac{\lambda_\alpha+\lambda_\beta}{2}\textbf{F}_{\alpha i|\beta j}^{\text{AT}} + \left(1-\frac{\lambda_\alpha+\lambda_\beta}{2}\right)\textbf{F}_{\alpha i|\beta}^{\text{CG}}  \right\} \\
-&amp; - [V^{\text{AT}}_\alpha - V^{\text{CG}}_\alpha] \,\nabla_{\alpha i}\lambda_\alpha.</span></p>
-</div><p>The last term, the so-called drift force, comes from applying the position gradient on the position-dependent resolution function <span class="math">\lambda</span>. It acts only in the hybrid region and unphysically pushes molecules from one region to the other. Therefore, it needs to be corrected. On the other hand, force-based AdResS, contrary to H-AdResS, does not allow a Hamiltonian formulation at all.</p>
+\[\begin{split}\textbf{F}_{\alpha i} = &amp; \sum_{\beta\neq\alpha}\sum_{j\in\beta}\left\{ \frac{\lambda_\alpha+\lambda_\beta}{2}\textbf{F}_{\alpha i|\beta j}^{\text{AT}} + \left(1-\frac{\lambda_\alpha+\lambda_\beta}{2}\right)\textbf{F}_{\alpha i|\beta}^{\text{CG}}  \right\} \\
+&amp; - [V^{\text{AT}}_\alpha - V^{\text{CG}}_\alpha] \,\nabla_{\alpha i}\lambda_\alpha.\end{split}\]</div>
+<p>The last term, the so-called drift force, comes from applying the position gradient on the position-dependent resolution function <span class="math">\(\lambda\)</span>. It acts only in the hybrid region and unphysically pushes molecules from one region to the other. Therefore, it needs to be corrected. On the other hand, force-based AdResS, contrary to H-AdResS, does not allow a Hamiltonian formulation at all.</p>
 <p>Usually, the force fields used in the different regions of the adaptive simulation setup have significantly different pressures given the same temperature and particle density. This pressure gradient leads, in addition to the drift force in H-AdResS, to particles being pushed across the hybrid region. Eventually, the system would evolve to an equilibrium state with a inhomogeneous density profile across the simulation box. Therefore, correction forces needs to be applied in the hybrid region to counter these effects. In H-AdResS one can use a so-called free energy correction (FEC), which on average cancels the drift force in the hybrid region (see Potestio et al., Phys. Rev. Lett. 110, 108301 (2013)). The FEC corresponds to the free energy difference between the subsystems and can, for instance, be derived from Kirkwood thermodynamic integration. An alternative approach which is typically used to cancel the pressure gradient in force-based AdResS is the so-called thermodynamic force (see Fritsch et al., Phys. Rev. Lett. 108, 170602 (2012)). It is derived by constructing the correction directly from the distorted density profile which is obtained without any correction and then refined iteratively.</p>
 </div>
 <div class="section" id="espp-code">
 <h2>ESPResSo++ code<a class="headerlink" href="#espp-code" title="Permalink to this headline">¶</a></h2>
-<p>Several measures had to be taken to implement adaptive resolution simulations in ESPResSo++. On top of the normal particles, which serve as the CG particles in AdResS, another layer of extra AT particles is introduced such that one has access to both atomistic and CG particles throughout the whole system. A mapping between the two defines which atoms belong to which CG bead. The resolution function <span class="math">\lambda</span> is implemented as a particle property of the CG particles that is updated after each integration step based on the new positions. This happens in an extension to the Velocity Verlet integrator. The actual adaptive resolution scheme is then implemented via new interaction templates that define how forces and energies are computed in force-based and energy-based AdResS. These templates use for particle pairs in the atomistic region the actual atoms, this is the AT particles, for the force and energy computation while in the CG region they use the CG particles. In the hybrid region, both are used, as defined in the equations above. The drift term of H-AdResS is implemented similarly. Furthermore, the AdResS integrator extension makes sure that the atomistic particles in the CG region travel along with the CG particles and that similarly the CG particles in the AT region are properly updated according to the new atomistic positions after each integration step. The FEC as well as a module to apply the Thermodynamic Force are implemented as integrator extensions.</p>
+<p>Several measures had to be taken to implement adaptive resolution simulations in ESPResSo++. On top of the normal particles, which serve as the CG particles in AdResS, another layer of extra AT particles is introduced such that one has access to both atomistic and CG particles throughout the whole system. A mapping between the two defines which atoms belong to which CG bead. The resolution function <span class="math">\(\lambda\)</span> is implemented as a particle property of the CG particles that is updated after each integration step based on the new positions. This happens in an extension to the Velocity Verlet integrator. The actual adaptive resolution scheme is then implemented via new interaction templates that define how forces and energies are computed in force-based and energy-based AdResS. These templates use for particle pairs in the atomistic region the actual atoms, this is the AT particles, for the force and energy computation while in the CG region they use the CG particles. In the hybrid region, both are used, as defined in the equations above. The drift term of H-AdResS is implemented similarly. Furthermore, the AdResS integrator extension makes sure that the atomistic particles in the CG region travel along with the CG particles and that similarly the CG particles in the AT region are properly updated according to the new atomistic positions after each integration step. The FEC as well as a module to apply the Thermodynamic Force are implemented as integrator extensions.</p>
 <p>In the following, we explain the new features step by step (more details about parameters etc. can be found in the documention of the different classes).</p>
 <div class="section" id="adress-domain-decomposition">
 <h3>Adress Domain Decomposition<a class="headerlink" href="#adress-domain-decomposition" title="Permalink to this headline">¶</a></h3>
@@ -193,7 +265,7 @@
 <span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">fec</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The FEC takes as arguments the system object as well as the center of the AT region. Then we add the actual force, which needs to be provided in a table (first column: resolution <span class="math">\lambda</span>, second: energy, third: force). <code class="docutils literal"><span class="pre">itype</span></code> defines which type of interpolation should be used for values between the ones provided in the table. 1 corresponds to linear interpolation, 2 to akima splines, 3 to cubic splines. We suggest to use cubic splines. The FEC is applied on CG particles and distributed among the atoms belonging to the CG particle. <code class="docutils literal"><span class="pre">type</span></code> specifies the CG particle type for which this correction should be applied. One can, for example, use different FECs for different molecules types.</p>
+<p>The FEC takes as arguments the system object as well as the center of the AT region. Then we add the actual force, which needs to be provided in a table (first column: resolution <span class="math">\(\lambda\)</span>, second: energy, third: force). <code class="docutils literal"><span class="pre">itype</span></code> defines which type of interpolation should be used for values between the ones provided in the table. 1 corresponds to linear interpolation, 2 to akima splines, 3 to cubic splines. We suggest to use cubic splines. The FEC is applied on CG particles and distributed among the atoms belonging to the CG particle. <code class="docutils literal"><span class="pre">type</span></code> specifies the CG particle type for which this correction should be applied. One can, for example, use different FECs for different molecules types.</p>
 </div>
 <div class="section" id="thermodynamic-force">
 <h3>Thermodynamic Force<a class="headerlink" href="#thermodynamic-force" title="Permalink to this headline">¶</a></h3>
@@ -252,31 +324,79 @@
 </div>
 
 
-      </div>
-     </div>
-     </div> 
-  </div>
-
-    <div class="footer">
-      &copy;2013-2017, Max Planck Institute for Polymer Research.
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.3.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
+        <a href="tutorial.ThermodynamicIntegration.html" class="btn btn-neutral float-right" title="Thermodynamic integration" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      |
-      <a href="sources/tutorial.AdResS.txt"
-          rel="nofollow">Page source</a>
+      
+        <a href="tutorial.AddNewPotential.html" class="btn btn-neutral" title="AddNewPotential" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
     </div>
+  
 
-    
+  <hr/>
 
-    
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013-2017, Max Planck Institute for Polymer Research.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.9.4',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
   <div class="footer">
       <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
       <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
   </div>
   </div>
 
-  </body>
+
+</body>
 </html>

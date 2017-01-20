@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>espressopp.io.DumpGROAdress &mdash; ESPResSo++ v1.9.4</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ESPResSo++ v1.9.4" href="index.html"/>
+        <link rel="up" title="io" href="io.html"/>
+        <link rel="next" title="espressopp.io.DumpXYZ" href="espressopp.io.DumpXYZ.html"/>
+        <link rel="prev" title="espressopp.io.DumpGRO" href="espressopp.io.DumpGRO.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ESPResSo++
+          
+
+          
+            
+            <img src="_static/logo_theory_group_200x48.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.9.4
+              </div>
+            
+          
+
+          
+<div id="searchbox" style="display: none" role="search">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="io.html">io</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="espressopp.io.DumpGRO.html">espressopp.io.DumpGRO</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">espressopp.io.DumpGROAdress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.io.DumpXYZ.html">espressopp.io.DumpXYZ</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ESPResSo++</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="classdescription.html">User Interface</a> &raquo;</li>
+      
+          <li><a href="io.html">io</a> &raquo;</li>
+      
+    <li>espressopp.io.DumpGROAdress</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/espressopp.io.DumpGROAdress.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span class="target" id="module-espressopp.io.DumpGROAdress"></span><div class="section" id="espressopp-io-dumpgroadress">
+<h1>espressopp.io.DumpGROAdress<a class="headerlink" href="#espressopp-io-dumpgroadress" title="Permalink to this headline">¶</a></h1>
+<p>dumps coordinates of atomistic particles instead of coarse-grained particles in Adress simulation</p>
+<ul>
+<li><p class="first"><cite>dump()</cite>
+write configuration to trajectory GRO file. By default filename is &#8220;out.gro&#8221;, 
+coordinates are folded.</p>
+<p>Properties</p>
+</li>
+<li><p class="first"><cite>filename</cite>
+Name of trajectory file. By default trajectory file name is &#8220;out.gro&#8221;</p>
+</li>
+<li><p class="first"><cite>unfolded</cite>
+False if coordinates are folded, True if unfolded. By default - False</p>
+</li>
+<li><p class="first"><cite>append</cite>
+True if new trajectory data is appended to existing trajectory file. By default - True</p>
+</li>
+<li><p class="first"><cite>length_factor</cite>
+If length dimension in current system is nm, and unit is 0.23 nm, for example, then
+length_factor should be 0.23</p>
+</li>
+<li><p class="first"><cite>length_unit</cite>
+It is length unit. Can be LJ, nm or A. By default - LJ</p>
+</li>
+<li><p class="first">ftpl 
+fixedtuplelist for the adres system</p>
+</li>
+</ul>
+<p>usage:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ftpl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedTupleListAdress</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ftpl</span><span class="o">.</span><span class="n">addTuples</span><span class="p">(</span><span class="n">tuples</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">setFixedTuplesAdress</span><span class="p">(</span><span class="n">ftpl</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">decompose</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>writing down trajectory</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_gro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpGROAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trajectory.gro&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">200</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">dump_conf_gro</span><span class="o">.</span><span class="n">dump</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>writing down trajectory using ExtAnalyze extension</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_gro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpGROAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trajectory.gro&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ext_analyze</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">dump_conf_gro</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">ext_analyze</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Both exapmles will give the same result: 200 configurations in trajectory .gro file.</p>
+<p>setting up length scale</p>
+<p>For example, the Lennard-Jones model for liquid argon with <span class="math">\(\sigma=0.34 [nm]\)</span></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_gro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpGROAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trj.gro&#39;</span><span class="p">,</span> <span class="n">unfolded</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">length_factor</span><span class="o">=</span><span class="mf">0.34</span><span class="p">,</span> <span class="n">length_unit</span><span class="o">=</span><span class="s1">&#39;nm&#39;</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>will produce trj.gro with in nanometers</p>
+<dl class="function">
+<dt id="espressopp.io.DumpGROAdress.espressopp.io.DumpGROAdress">
+<code class="descclassname">espressopp.io.</code><code class="descname">DumpGROAdress</code><span class="sig-paren">(</span><em>system</em>, <em>fixedtuplelist</em>, <em>integrator</em>, <em>filename</em>, <em>unfolded</em>, <em>length_factor</em>, <em>length_unit</em>, <em>append</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.io.DumpGROAdress.espressopp.io.DumpGROAdress" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> &#8211; </li>
+<li><strong>fixedtuplelist</strong> &#8211; </li>
+<li><strong>integrator</strong> &#8211; </li>
+<li><strong>filename</strong> &#8211; (default: &#8216;out.gro&#8217;)</li>
+<li><strong>unfolded</strong> &#8211; (default: False)</li>
+<li><strong>length_factor</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
+<li><strong>length_unit</strong> &#8211; (default: &#8216;LJ&#8217;)</li>
+<li><strong>append</strong> &#8211; (default: True)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.io.DumpGROAdress.espressopp.io.DumpGROAdress.dump">
+<code class="descclassname">espressopp.io.DumpGROAdress.</code><code class="descname">dump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.io.DumpGROAdress.espressopp.io.DumpGROAdress.dump" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="espressopp.io.DumpXYZ.html" class="btn btn-neutral float-right" title="espressopp.io.DumpXYZ" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="espressopp.io.DumpGRO.html" class="btn btn-neutral" title="espressopp.io.DumpGRO" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013-2017, Max Planck Institute for Polymer Research.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.9.4',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+  <div class="footer">
+      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
+      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
+  </div>
+  </div>
+
+
+</body>
+</html>

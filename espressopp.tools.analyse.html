@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>information and analysis &mdash; ESPResSo++ v1.9.4</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ESPResSo++ v1.9.4" href="index.html"/>
+        <link rel="up" title="tools" href="tools.html"/>
+        <link rel="next" title="initializing particles" href="espressopp.tools.initcfg.html"/>
+        <link rel="prev" title="tools" href="tools.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ESPResSo++
+          
+
+          
+            
+            <img src="_static/logo_theory_group_200x48.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.9.4
+              </div>
+            
+          
+
+          
+<div id="searchbox" style="display: none" role="search">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Search" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="tools.html">tools</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="">information and analysis</a><ul class="simple">
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.initcfg.html">initializing particles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.decomp.html">decomp - auxiliary python functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html">DumpConfigurations - read/write xyz files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.espresso_old.html">espresso_old - read espressomd files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html">gromacs - parser for Gromacs files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.io_extended.html">io_extended - read/write configurational files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.lammps.html">lammps - read lammps files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.pathintegral.html">pathintegral - nuclear quantum effects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.pdb.html">PDB - read and write pdb format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.povwrite.html">povwrite - write povray files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.prepareComplexMolecules.html">prepareComplexMolecules - set up proteins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.prepareAdress.html">prepareAdress - setup AdResS simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.psf.html">PSF - read and write psf format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.tabulated.html">tabulated - write tabulated file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.topology_helper.html">topology_helper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.units.html">units - convert to real units</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_help.html">Getting help</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">Developer Team</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bib.html">References</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">ESPResSo++</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="classdescription.html">User Interface</a> &raquo;</li>
+      
+          <li><a href="tools.html">tools</a> &raquo;</li>
+      
+    <li>information and analysis</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/espressopp.tools.analyse.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="information-and-analysis">
+<h1>information and analysis<a class="headerlink" href="#information-and-analysis" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">Overview</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.tools.analyse" title="espressopp.tools.analyse"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.tools.analyse</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#module-espressopp.tools.info" title="espressopp.tools.info"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.tools.info</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.tools.timers" title="espressopp.tools.timers"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.tools.timers</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#module-espressopp.tools.vmd" title="espressopp.tools.vmd"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.tools.vmd</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Details</p>
+<div class="section" id="module-espressopp.tools.analyse">
+<span id="espressopp-tools-analyse"></span><h2>espressopp.tools.analyse<a class="headerlink" href="#module-espressopp.tools.analyse" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="espressopp.tools.analyse.final_info">
+<code class="descclassname">espressopp.tools.analyse.</code><code class="descname">final_info</code><span class="sig-paren">(</span><em>system</em>, <em>integrator</em>, <em>vl</em>, <em>start_time</em>, <em>end_time</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.analyse.final_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>final report on the simulation statistics</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.tools.analyse.info">
+<code class="descclassname">espressopp.tools.analyse.</code><code class="descname">info</code><span class="sig-paren">(</span><em>system</em>, <em>integrator</em>, <em>per_atom=False</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.analyse.info" title="Permalink to this definition">¶</a></dt>
+<dd><p>reports on the simulation progress</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-espressopp.tools.info">
+<span id="espressopp-tools-info"></span><h2>espressopp.tools.info<a class="headerlink" href="#module-espressopp.tools.info" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="espressopp.tools.info.getAllBonds">
+<code class="descclassname">espressopp.tools.info.</code><code class="descname">getAllBonds</code><span class="sig-paren">(</span><em>system</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.info.getAllBonds" title="Permalink to this definition">¶</a></dt>
+<dd><p>return all bonds of the system (currently only FixedPairLists are supported)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.tools.info.getAllParticles">
+<code class="descclassname">espressopp.tools.info.</code><code class="descname">getAllParticles</code><span class="sig-paren">(</span><em>system</em>, <em>*properties</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.info.getAllParticles" title="Permalink to this definition">¶</a></dt>
+<dd><p>returns a list of all particle properties of all particles of the system (currently no atomistic AdResS particles are included)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-espressopp.tools.timers">
+<span id="espressopp-tools-timers"></span><h2>espressopp.tools.timers<a class="headerlink" href="#module-espressopp.tools.timers" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="espressopp.tools.timers.show">
+<code class="descclassname">espressopp.tools.timers.</code><code class="descname">show</code><span class="sig-paren">(</span><em>alltimers</em>, <em>precision=1</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.timers.show" title="Permalink to this definition">¶</a></dt>
+<dd><p>Python functions to print timings from C++.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-espressopp.tools.vmd">
+<span id="espressopp-tools-vmd"></span><h2>espressopp.tools.vmd<a class="headerlink" href="#module-espressopp.tools.vmd" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="espressopp.tools.vmd.connect">
+<code class="descclassname">espressopp.tools.vmd.</code><code class="descname">connect</code><span class="sig-paren">(</span><em>system</em>, <em>molsize=10</em>, <em>pqrfile=False</em>, <em>vmd_path='vmd'</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.vmd.connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connects to the VMD.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>system</strong> (<em>espressopp.system</em>) &#8211; The system object.</li>
+<li><strong>molsize</strong> (<em>int</em>) &#8211; The optional size of the molecule.</li>
+<li><strong>pqrfile</strong> (<em>bool</em>) &#8211; If set to True then the pqr vmd.pqr file will be used otherwise (default)
+the vmd.pdb file will be used.</li>
+<li><strong>vmd_path</strong> (<em>str</em>) &#8211; The path to the executable of vmd, by default it is set to &#8216;vmd&#8217;.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Socket to the VMD.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="espressopp.tools.initcfg.html" class="btn btn-neutral float-right" title="initializing particles" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tools.html" class="btn btn-neutral" title="tools" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013-2017, Max Planck Institute for Polymer Research.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.9.4',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+  <div class="footer">
+      <a href="http://www.mpip-mainz.mpg.de"><img src="static/mpip_logo.png" id="mpip_logo"></a>
+      <a href="http://www.scai.fraunhofer.de"><img src="static/scai_logo.png" id="scai_logo"></a>
+  </div>
+  </div>
+
+
+</body>
+</html>
