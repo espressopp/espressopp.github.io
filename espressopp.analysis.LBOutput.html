@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>LBOutput - abstract base class for analysis / output in LB simulations &mdash; ESPResSo++ v1.9.4</title>
+  <title>espressopp.analysis.LBOutput &mdash; ESPResSo++ v1.9.4</title>
   
 
   
@@ -34,7 +34,7 @@
   
     <link rel="top" title="ESPResSo++ v1.9.4" href="index.html"/>
         <link rel="up" title="analysis" href="analysis.html"/>
-        <link rel="next" title="LBOutputScreen - controls screen output in LB-simulations" href="espressopp.analysis.LBOutputScreen.html"/>
+        <link rel="next" title="espressopp.analysis.MaxPID" href="espressopp.analysis.MaxPID.html"/>
         <link rel="prev" title="espressopp.analysis.IntraChainDistSq" href="espressopp.analysis.IntraChainDistSq.html"/> 
 
   
@@ -105,10 +105,9 @@
 <li class="toctree-l3"><a class="reference internal" href="espressopp.analysis.ConfigurationsExt.html">espressopp.analysis.ConfigurationsExt</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espressopp.analysis.Energy.html">espressopp.analysis.Energy</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espressopp.analysis.IntraChainDistSq.html">espressopp.analysis.IntraChainDistSq</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href=""><strong>LBOutput</strong> - abstract base class for analysis / output in LB simulations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="espressopp.analysis.LBOutputScreen.html"><strong>LBOutputScreen</strong> - controls screen output in LB-simulations</a></li>
-<li class="toctree-l3"><a class="reference internal" href="espressopp.analysis.LBOutputVzInTime.html"><strong>LBOutputVzInTime</strong> - controls output of the velocity component on a site in time</a></li>
-<li class="toctree-l3"><a class="reference internal" href="espressopp.analysis.LBOutputVzOfX.html"><strong>LBOutputVzOfX</strong> - controls output of the velocity component profile</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">espressopp.analysis.LBOutput</a><ul class="simple">
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="espressopp.analysis.MaxPID.html">espressopp.analysis.MaxPID</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espressopp.analysis.MeanSquareDispl.html">espressopp.analysis.MeanSquareDispl</a></li>
 <li class="toctree-l3"><a class="reference internal" href="espressopp.analysis.MeanSquareInternalDist.html">espressopp.analysis.MeanSquareInternalDist</a></li>
@@ -189,7 +188,7 @@
       
           <li><a href="analysis.html">analysis</a> &raquo;</li>
       
-    <li><strong>LBOutput</strong> - abstract base class for analysis / output in LB simulations</li>
+    <li>espressopp.analysis.LBOutput</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -203,17 +202,140 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="module-espressopp.analysis.LBOutput"></span><div class="section" id="lboutput-abstract-base-class-for-analysis-output-in-lb-simulations">
-<h1><strong>LBOutput</strong> - abstract base class for analysis / output in LB simulations<a class="headerlink" href="#lboutput-abstract-base-class-for-analysis-output-in-lb-simulations" title="Permalink to this headline">¶</a></h1>
-<p>Abstract base class for arbitrary output from LB simulations. At the moment, the implemented realisations are:</p>
+  <div class="section" id="espressopp-analysis-lboutput">
+<h1>espressopp.analysis.LBOutput<a class="headerlink" href="#espressopp-analysis-lboutput" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">Overview</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.analysis.LBOutputScreen" title="espressopp.analysis.LBOutputScreen"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.analysis.LBOutputScreen</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#module-espressopp.analysis.LBOutputVzInTime" title="espressopp.analysis.LBOutputVzInTime"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.analysis.LBOutputVzInTime</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.analysis.LBOutputVzOfX" title="espressopp.analysis.LBOutputVzOfX"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.analysis.LBOutputVzOfX</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Details</p>
+<span class="target" id="module-espressopp.analysis.LBOutput"></span><p>Abstract output class for LB simulations. The implemented realisations are:</p>
 <ul class="simple">
-<li><a class="reference internal" href="espressopp.analysis.LBOutputScreen.html#module-espressopp.analysis.LBOutputScreen" title="espressopp.analysis.LBOutputScreen"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputScreen</span></code></a> to output local density <span class="math">\(rho\)</span> and <span class="math">\(v_z\)</span> component of the velocity as a function of the coordinate <span class="math">\(x\)</span>.</li>
-<li><a class="reference internal" href="espressopp.analysis.LBOutputVzInTime.html#module-espressopp.analysis.LBOutputVzInTime" title="espressopp.analysis.LBOutputVzInTime"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputVzInTime</span></code></a> to output velocity component <span class="math">\(v_z\)</span> of a specific lattice site (the value used at the moment is <span class="math">\({0.25*N_i, 0, 0}\)</span>) in time.</li>
-<li><a class="reference internal" href="espressopp.analysis.LBOutputVzOfX.html#module-espressopp.analysis.LBOutputVzOfX" title="espressopp.analysis.LBOutputVzOfX"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputVzOfX</span></code></a> to output simulation progress and control flux conservation when using MD to LB coupling.</li>
+<li><a class="reference internal" href="#module-espressopp.analysis.LBOutputScreen" title="espressopp.analysis.LBOutputScreen"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputScreen</span></code></a> to output simulation progress and control flux conservation when using MD to LB coupling.</li>
+<li><a class="reference internal" href="#module-espressopp.analysis.LBOutputVzInTime" title="espressopp.analysis.LBOutputVzInTime"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputVzInTime</span></code></a> to output velocity component <span class="math">\(v_z\)</span> on the lattice site with an index <span class="math">\((0.25*N_i, 0, 0)\)</span> in time.</li>
+<li><a class="reference internal" href="#module-espressopp.analysis.LBOutputVzOfX" title="espressopp.analysis.LBOutputVzOfX"><code class="xref py py-class docutils literal"><span class="pre">espressopp.analysis.LBOutputVzOfX</span></code></a> to output local density <span class="math">\(\rho\)</span> and <span class="math">\(v_z\)</span> component of the velocity as a function of the coordinate <span class="math">\(x\)</span>.</li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Other types of output classes are possible. It is a subject of user requests.</p>
+<p class="last">all derived output classes have to be called from class <a class="reference internal" href="espressopp.integrator.ExtAnalyze.html#module-espressopp.integrator.ExtAnalyze" title="espressopp.integrator.ExtAnalyze"><code class="xref py py-class docutils literal"><span class="pre">espressopp.integrator.ExtAnalyze</span></code></a>
+with specified periodicity of invokation and after this added to the integrator. See examples.</p>
+</div>
+<div class="section" id="module-espressopp.analysis.LBOutputScreen">
+<span id="espressopp-analysis-lboutputscreen"></span><h2>espressopp.analysis.LBOutputScreen<a class="headerlink" href="#module-espressopp.analysis.LBOutputScreen" title="Permalink to this headline">¶</a></h2>
+<p>Computes and outputs to the screen the simulation progress (finished step) and
+controls mass flux conservation when using MD-to-LB coupling. Ideally, the sum of mass
+fluxes should be <span class="math">\(0\)</span>, i.e. <span class="math">\(j_{LB} + j_{MD} = 0\)</span>.</p>
+<dl class="class">
+<dt id="espressopp.analysis.LBOutputScreen.espressopp.analysis.LBOutputScreen">
+<em class="property">class </em><code class="descclassname">espressopp.analysis.</code><code class="descname">LBOutputScreen</code><span class="sig-paren">(</span><em>system</em>, <em>lb</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.LBOutputScreen.espressopp.analysis.LBOutputScreen" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> (<em>shared_ptr</em>) &#8211; system object defined earlier in the python-script</li>
+<li><strong>lb</strong> (<em>lb_object</em>) &#8211; lattice boltzmann object defined earlier in the python-script</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># initialise output to the screen </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">outputScreen</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">LBOutputScreen</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># initialise external analysis object with previously created output object </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># and periodicity of invocation (steps):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">extAnalysis</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">outputScreen</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># add the external analysis object as an extension to the integrator</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span> <span class="n">extAnalysis</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="module-espressopp.analysis.LBOutputVzInTime">
+<span id="espressopp-analysis-lboutputvzintime"></span><h2>espressopp.analysis.LBOutputVzInTime<a class="headerlink" href="#module-espressopp.analysis.LBOutputVzInTime" title="Permalink to this headline">¶</a></h2>
+<p>Computes and outputs the velocity component <span class="math">\(v_z\)</span> in time on the lattice site with 
+an index <span class="math">\((0.25*N_i, 0, 0)\)</span>.</p>
+<dl class="class">
+<dt id="espressopp.analysis.LBOutputVzInTime.espressopp.analysis.LBOutputVzInTime">
+<em class="property">class </em><code class="descclassname">espressopp.analysis.</code><code class="descname">LBOutputVzInTime</code><span class="sig-paren">(</span><em>system</em>, <em>lb</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.LBOutputVzInTime.espressopp.analysis.LBOutputVzInTime" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> (<em>shared_ptr</em>) &#8211; system object defined earlier in the python-script</li>
+<li><strong>lb</strong> (<em>lb_object</em>) &#8211; lattice boltzmann object defined earlier in the python-script</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># initialise output of the Vz as a function of time </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">outputVzInTime</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">LBOutputVzInTime</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># initialise external analysis object with previously created output object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># and periodicity of invocation (steps):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">extAnalysis</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">outputVzInTime</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># add the external analysis object as an extension to the integrator</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span> <span class="n">extAnalysis</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="module-espressopp.analysis.LBOutputVzOfX">
+<span id="espressopp-analysis-lboutputvzofx"></span><h2>espressopp.analysis.LBOutputVzOfX<a class="headerlink" href="#module-espressopp.analysis.LBOutputVzOfX" title="Permalink to this headline">¶</a></h2>
+<p>Computes and outputs simulation progress (finished step) and controls flux
+conservation when using MD to LB coupling.</p>
+<dl class="class">
+<dt id="espressopp.analysis.LBOutputVzOfX.espressopp.analysis.LBOutputVzOfX">
+<em class="property">class </em><code class="descclassname">espressopp.analysis.</code><code class="descname">LBOutputVzOfX</code><span class="sig-paren">(</span><em>system</em>, <em>lb</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.LBOutputVzOfX.espressopp.analysis.LBOutputVzOfX" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> (<em>shared_ptr</em>) &#8211; system object defined earlier in the python-script</li>
+<li><strong>lb</strong> (<em>lb_object</em>) &#8211; lattice boltzmann object defined earlier in the python-script</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># initialise output of the Vz as a function of x-coordinate</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">outputVzOfX</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">LBOutputVzOfX</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># initialise external analysis object with previously created output object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># and periodicity of invocation (steps):</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">extAnalysis</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">outputVzOfX</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># add the external analysis object as an extension to the integrator</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span> <span class="n">extAnalysis</span> <span class="p">)</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -224,7 +346,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.analysis.LBOutputScreen.html" class="btn btn-neutral float-right" title="LBOutputScreen - controls screen output in LB-simulations" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.analysis.MaxPID.html" class="btn btn-neutral float-right" title="espressopp.analysis.MaxPID" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="espressopp.analysis.IntraChainDistSq.html" class="btn btn-neutral" title="espressopp.analysis.IntraChainDistSq" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
