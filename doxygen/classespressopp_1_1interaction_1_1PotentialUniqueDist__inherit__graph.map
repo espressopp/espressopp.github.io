@@ -1,0 +1,5 @@
+<map id="espressopp::interaction::PotentialUniqueDist" name="espressopp::interaction::PotentialUniqueDist">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialUniqueDistTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent Potential..." alt="" coords="212,5,412,61"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1PotentialUniqueDistTemplate.html" title="espressopp::interaction\l::PotentialUniqueDistTemplate\l\&lt; HarmonicUnique \&gt;" alt="" coords="585,44,785,100"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1HarmonicUnique.html" title="espressopp::interaction\l::HarmonicUnique" alt="" coords="835,51,992,93"/>
+</map>

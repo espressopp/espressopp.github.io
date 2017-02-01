@@ -1,0 +1,4 @@
+<map id="espressopp::esutil::Timer" name="espressopp::esutil::Timer">
+<area shape="rect" id="node2" href="$classespressopp_1_1esutil_1_1UserTimer.html" title="timer measuring the user time. " alt="" coords="5,95,133,136"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1esutil_1_1WallTimer.html" title="timer measuring the wall time. " alt="" coords="157,95,285,136"/>
+</map>

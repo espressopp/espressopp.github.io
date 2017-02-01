@@ -1,0 +1,7 @@
+<map id="espressopp::interaction::AngularUniquePotentialTemplate&lt; Derived &gt;" name="espressopp::interaction::AngularUniquePotentialTemplate&lt; Derived &gt;">
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1AngularUniquePotentialTemplate.html" title="espressopp::interaction\l::AngularUniquePotentialTemplate\l\&lt; AngularUniqueHarmonic \&gt;" alt="" coords="692,5,912,61"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1interaction_1_1AngularUniquePotentialTemplate.html" title="espressopp::interaction\l::AngularUniquePotentialTemplate\l\&lt; AngularUniqueCosineSquared \&gt;" alt="" coords="692,85,912,141"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1AngularUniquePotential.html" title="espressopp::interaction\l::AngularUniquePotential" alt="" coords="5,62,172,103"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1AngularUniqueHarmonic.html" title="This class provides methods to compute forces and energies of the AngularUniqueHarmonic angular poten..." alt="" coords="978,13,1149,54"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1AngularUniqueCosineSquared.html" title="This class provides methods to compute forces and energies of the AngularUniqueCosineSquared angular ..." alt="" coords="961,93,1165,134"/>
+</map>

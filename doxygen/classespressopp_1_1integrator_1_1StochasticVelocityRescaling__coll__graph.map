@@ -1,0 +1,5 @@
+<map id="espressopp::integrator::StochasticVelocityRescaling" name="espressopp::integrator::StochasticVelocityRescaling">
+<area shape="rect" id="node2" href="$classespressopp_1_1integrator_1_1Extension.html" title="espressopp::integrator\l::Extension" alt="" coords="919,66,1069,107"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="625,36,812,63"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1integrator_1_1GammaDistribution.html" title="espressopp::integrator\l::GammaDistribution" alt="" coords="919,195,1069,237"/>
+</map>

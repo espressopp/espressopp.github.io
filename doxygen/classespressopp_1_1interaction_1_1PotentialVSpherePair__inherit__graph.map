@@ -1,0 +1,5 @@
+<map id="espressopp::interaction::PotentialVSpherePair" name="espressopp::interaction::PotentialVSpherePair">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialVSpherePairTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="212,5,420,61"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1PotentialVSpherePairTemplate.html" title="espressopp::interaction\l::PotentialVSpherePairTemplate\l\&lt; VSpherePair \&gt;" alt="" coords="569,44,777,100"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1VSpherePair.html" title="This class provides methods to compute forces and energies of the VSpherePair potential. " alt="" coords="827,51,984,93"/>
+</map>

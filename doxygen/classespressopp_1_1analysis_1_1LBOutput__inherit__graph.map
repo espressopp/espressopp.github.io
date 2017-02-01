@@ -1,0 +1,10 @@
+<map id="espressopp::analysis::LBOutput" name="espressopp::analysis::LBOutput">
+<area shape="rect" id="node7" href="$classespressopp_1_1analysis_1_1LBOutputScreen.html" title="espressopp::analysis\l::LBOutputScreen" alt="" coords="1340,5,1485,47"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1analysis_1_1LBOutputVzInTime.html" title="espressopp::analysis\l::LBOutputVzInTime" alt="" coords="1340,71,1485,112"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1analysis_1_1LBOutputVzOfX.html" title="espressopp::analysis\l::LBOutputVzOfX" alt="" coords="1340,136,1485,177"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; real \&gt;" alt="" coords="932,63,1096,119"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1analysis_1_1AnalysisBase.html" title="All quantities to be measured derive from this abstract base class and the corresponding template..." alt="" coords="476,63,621,104"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; ResultType \&gt;" alt="" coords="671,103,835,159"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1ParticleAccess.html" title="espressopp::ParticleAccess" alt="" coords="241,70,427,97"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,70,192,97"/>
+</map>

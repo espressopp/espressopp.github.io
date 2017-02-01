@@ -1,0 +1,5 @@
+<map id="espressopp::interaction::AngularHarmonic" name="espressopp::interaction::AngularHarmonic">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="espressopp::interaction\l::AngularPotentialTemplate\l\&lt; AngularHarmonic \&gt;" alt="" coords="568,5,747,61"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1AngularPotential.html" title="espressopp::interaction\l::AngularPotential" alt="" coords="5,13,163,54"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="212,45,391,101"/>
+</map>

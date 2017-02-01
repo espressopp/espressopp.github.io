@@ -1,0 +1,5 @@
+<map id="espressopp::interaction::LJcos" name="espressopp::interaction::LJcos">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; LJcos \&gt;" alt="" coords="528,7,723,48"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="5,5,163,47"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="212,41,416,83"/>
+</map>
