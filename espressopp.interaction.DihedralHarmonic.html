@@ -290,6 +290,15 @@
 </table>
 </dd></dl>
 
+<p><strong>Example of usage</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># The following example shows how to add a torsional potential to particles 1,2,3,4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fql</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedQuadrupleList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fql</span><span class="o">.</span><span class="n">addQuadruples</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">#phi0 is in radians, IUPAC convention definition</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">interaction</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">FixedQuadrupleListDihedralHarmonic</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">fql</span><span class="p">,</span><span class="n">potential</span><span class="o">=</span><span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">DihedralHarmonic</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">phi0</span><span class="o">=</span><span class="mf">0.0</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">interaction</span><span class="p">)</span>
+</pre></div>
+</div>
 <dl class="class">
 <dt id="espressopp.interaction.DihedralHarmonic.DihedralHarmonic">
 <em class="property">class </em><code class="descclassname">espressopp.interaction.DihedralHarmonic.</code><code class="descname">DihedralHarmonic</code><a class="headerlink" href="#espressopp.interaction.DihedralHarmonic.DihedralHarmonic" title="Permalink to this definition">¶</a></dt>

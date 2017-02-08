@@ -224,6 +224,12 @@
             
   <span class="target" id="module-espressopp.interaction.TabulatedDihedral"></span><div class="section" id="espressopp-interaction-tabulateddihedral">
 <h1>espressopp.interaction.TabulatedDihedral<a class="headerlink" href="#espressopp-interaction-tabulateddihedral" title="Permalink to this headline">¶</a></h1>
+<p>Calculates energies and forces for a dihedral tabulated potential.
+In the tabulated potential file, angles should be in radians, and
+the file should cover the range -pi radians to +pi radians (-180 to
++180 degrees).</p>
+<p>Note that this class has only been tested for symmetric tabulated
+potentials.</p>
 <dl class="function">
 <dt id="espressopp.interaction.TabulatedDihedral.espressopp.interaction.TabulatedDihedral">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">TabulatedDihedral</code><span class="sig-paren">(</span><em>itype</em>, <em>filename</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedDihedral.espressopp.interaction.TabulatedDihedral" title="Permalink to this definition">¶</a></dt>
