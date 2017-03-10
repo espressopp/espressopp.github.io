@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>ESPResSo++: espressopp::analysis::TotalVelocity Class Reference</title>
+<title>ESPResSo++: espressopp::analysis::CMVelocity Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -44,7 +44,7 @@
   </div>
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="namespaceespressopp.html">espressopp</a></li><li class="navelem"><a class="el" href="namespaceespressopp_1_1analysis.html">analysis</a></li><li class="navelem"><a class="el" href="classespressopp_1_1analysis_1_1TotalVelocity.html">TotalVelocity</a></li>  </ul>
+<li class="navelem"><a class="el" href="namespaceespressopp.html">espressopp</a></li><li class="navelem"><a class="el" href="namespaceespressopp_1_1analysis.html">analysis</a></li><li class="navelem"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html">CMVelocity</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -52,53 +52,75 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-static-methods">Static Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
-<a href="classespressopp_1_1analysis_1_1TotalVelocity-members.html">List of all members</a>  </div>
+<a href="classespressopp_1_1analysis_1_1CMVelocity-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">espressopp::analysis::TotalVelocity Class Reference</div>  </div>
+<div class="title">espressopp::analysis::CMVelocity Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>Class to compute the total velocity of a system.  
- <a href="classespressopp_1_1analysis_1_1TotalVelocity.html#details">More...</a></p>
+ <a href="classespressopp_1_1analysis_1_1CMVelocity.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="TotalVelocity_8hpp_source.html">TotalVelocity.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="CMVelocity_8hpp_source.html">CMVelocity.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for espressopp::analysis::TotalVelocity:</div>
+Inheritance diagram for espressopp::analysis::CMVelocity:</div>
 <div class="dyncontent">
-<div class="center"><img src="classespressopp_1_1analysis_1_1TotalVelocity__inherit__graph.png" border="0" usemap="#espressopp_1_1analysis_1_1TotalVelocity_inherit__map" alt="Inheritance graph"/></div>
-<map name="espressopp_1_1analysis_1_1TotalVelocity_inherit__map" id="espressopp_1_1analysis_1_1TotalVelocity_inherit__map">
-<area shape="rect" id="node2" href="classespressopp_1_1ParticleAccess.html" title="espressopp::ParticleAccess" alt="" coords="6,80,191,107"/>
-<area shape="rect" id="node3" href="classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,5,192,32"/>
+<div class="center"><img src="classespressopp_1_1analysis_1_1CMVelocity__inherit__graph.png" border="0" usemap="#espressopp_1_1analysis_1_1CMVelocity_inherit__map" alt="Inheritance graph"/></div>
+<map name="espressopp_1_1analysis_1_1CMVelocity_inherit__map" id="espressopp_1_1analysis_1_1CMVelocity_inherit__map">
+<area shape="rect" id="node2" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; Real3D \&gt;" alt="" coords="956,6,1120,62"/>
+<area shape="rect" id="node3" href="classespressopp_1_1analysis_1_1AnalysisBase.html" title="All quantities to be measured derive from this abstract base class and the corresponding template..." alt="" coords="476,5,621,47"/>
+<area shape="rect" id="node6" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; ResultType \&gt;" alt="" coords="671,46,835,102"/>
+<area shape="rect" id="node4" href="classespressopp_1_1ParticleAccess.html" title="espressopp::ParticleAccess" alt="" coords="241,13,427,39"/>
+<area shape="rect" id="node5" href="classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,13,192,39"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
-Collaboration diagram for espressopp::analysis::TotalVelocity:</div>
+Collaboration diagram for espressopp::analysis::CMVelocity:</div>
 <div class="dyncontent">
-<div class="center"><img src="classespressopp_1_1analysis_1_1TotalVelocity__coll__graph.png" border="0" usemap="#espressopp_1_1analysis_1_1TotalVelocity_coll__map" alt="Collaboration graph"/></div>
-<map name="espressopp_1_1analysis_1_1TotalVelocity_coll__map" id="espressopp_1_1analysis_1_1TotalVelocity_coll__map">
-<area shape="rect" id="node2" href="classespressopp_1_1ParticleAccess.html" title="espressopp::ParticleAccess" alt="" coords="6,304,191,331"/>
-<area shape="rect" id="node3" href="classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,228,192,255"/>
-<area shape="rect" id="node6" href="classespressopp_1_1Real3D.html" title="espressopp::Real3D" alt="" coords="216,304,357,331"/>
+<div class="center"><img src="classespressopp_1_1analysis_1_1CMVelocity__coll__graph.png" border="0" usemap="#espressopp_1_1analysis_1_1CMVelocity_coll__map" alt="Collaboration graph"/></div>
+<map name="espressopp_1_1analysis_1_1CMVelocity_coll__map" id="espressopp_1_1analysis_1_1CMVelocity_coll__map">
+<area shape="rect" id="node2" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; Real3D \&gt;" alt="" coords="1587,136,1751,192"/>
+<area shape="rect" id="node3" href="classespressopp_1_1analysis_1_1AnalysisBase.html" title="All quantities to be measured derive from this abstract base class and the corresponding template..." alt="" coords="1021,106,1167,147"/>
+<area shape="rect" id="node9" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; ResultType \&gt;" alt="" coords="1295,43,1459,99"/>
+<area shape="rect" id="node4" href="classespressopp_1_1ParticleAccess.html" title="espressopp::ParticleAccess" alt="" coords="787,113,972,140"/>
+<area shape="rect" id="node5" href="classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="551,113,737,140"/>
+<area shape="rect" id="node8" href="classespressopp_1_1Real3D.html" title="espressopp::Real3D" alt="" coords="1306,223,1447,249"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2a78af06f1da5b12b0023506e15861fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1TotalVelocity.html#a2a78af06f1da5b12b0023506e15861fc">TotalVelocity</a> (shared_ptr&lt; <a class="el" href="classespressopp_1_1System.html">System</a> &gt; system)</td></tr>
-<tr class="separator:a2a78af06f1da5b12b0023506e15861fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86ab07ae752c9f54c7fecb927193fe23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1TotalVelocity.html#a86ab07ae752c9f54c7fecb927193fe23">~TotalVelocity</a> ()</td></tr>
-<tr class="separator:a86ab07ae752c9f54c7fecb927193fe23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07a838984f1455e647c22ada257b04de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1TotalVelocity.html#a07a838984f1455e647c22ada257b04de">compute</a> ()</td></tr>
-<tr class="memdesc:a07a838984f1455e647c22ada257b04de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the total velocity of the system.  <a href="#a07a838984f1455e647c22ada257b04de">More...</a><br /></td></tr>
-<tr class="separator:a07a838984f1455e647c22ada257b04de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f87df39daab2c15a7a08db8d18f1c6c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1TotalVelocity.html#a8f87df39daab2c15a7a08db8d18f1c6c">reset</a> ()</td></tr>
-<tr class="memdesc:a8f87df39daab2c15a7a08db8d18f1c6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the total velocity of the system.  <a href="#a8f87df39daab2c15a7a08db8d18f1c6c">More...</a><br /></td></tr>
-<tr class="separator:a8f87df39daab2c15a7a08db8d18f1c6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a68d5cb2ab723d5b72a2d99eaaf41b89b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1TotalVelocity.html#a68d5cb2ab723d5b72a2d99eaaf41b89b">perform_action</a> ()</td></tr>
-<tr class="separator:a68d5cb2ab723d5b72a2d99eaaf41b89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a721fae3f0b9a155e5932f873c9c325"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1TotalVelocity.html#a5a721fae3f0b9a155e5932f873c9c325">getV</a> () const </td></tr>
-<tr class="separator:a5a721fae3f0b9a155e5932f873c9c325"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc0d84b552fcf216ba63aea6ee67a1c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#acc0d84b552fcf216ba63aea6ee67a1c8">CMVelocity</a> (shared_ptr&lt; <a class="el" href="classespressopp_1_1System.html">System</a> &gt; system)</td></tr>
+<tr class="separator:acc0d84b552fcf216ba63aea6ee67a1c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dd0003b4c9089f809d8b037ae50362a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#a8dd0003b4c9089f809d8b037ae50362a">~CMVelocity</a> ()</td></tr>
+<tr class="separator:a8dd0003b4c9089f809d8b037ae50362a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850188e81eda26f78ec59ace279aa221"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#a850188e81eda26f78ec59ace279aa221">reset</a> ()</td></tr>
+<tr class="memdesc:a850188e81eda26f78ec59ace279aa221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the total velocity of the system.  <a href="#a850188e81eda26f78ec59ace279aa221">More...</a><br /></td></tr>
+<tr class="separator:a850188e81eda26f78ec59ace279aa221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057575f2853ca9f32c9dd67f17eb662e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#a057575f2853ca9f32c9dd67f17eb662e">perform_action</a> ()</td></tr>
+<tr class="separator:a057575f2853ca9f32c9dd67f17eb662e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad90d853b3aab99dbf36b7fa02d089b79"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#ad90d853b3aab99dbf36b7fa02d089b79">getV</a> () const </td></tr>
+<tr class="memdesc:ad90d853b3aab99dbf36b7fa02d089b79"><td class="mdescLeft">&#160;</td><td class="mdescRight">get current velocity  <a href="#ad90d853b3aab99dbf36b7fa02d089b79">More...</a><br /></td></tr>
+<tr class="separator:ad90d853b3aab99dbf36b7fa02d089b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f50f93cff889f4b287d11c637ca9a1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#a8f50f93cff889f4b287d11c637ca9a1f">computeRaw</a> ()</td></tr>
+<tr class="memdesc:a8f50f93cff889f4b287d11c637ca9a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">virtual functions from <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBase.html" title="All quantities to be measured derive from this abstract base class and the corresponding template...">AnalysisBase</a> class  <a href="#a8f50f93cff889f4b287d11c637ca9a1f">More...</a><br /></td></tr>
+<tr class="separator:a8f50f93cff889f4b287d11c637ca9a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a004a349d281a322bfae0efdab0c5ccb1"><td class="memItemLeft" align="right" valign="top">python::list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#a004a349d281a322bfae0efdab0c5ccb1">compute</a> ()</td></tr>
+<tr class="separator:a004a349d281a322bfae0efdab0c5ccb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f538034068c749a87973540cffd3b9"><td class="memItemLeft" align="right" valign="top">python::list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#a43f538034068c749a87973540cffd3b9">getAverageValue</a> ()</td></tr>
+<tr class="separator:a43f538034068c749a87973540cffd3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65bd229dff6c62aaf2153cf9561c513e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#a65bd229dff6c62aaf2153cf9561c513e">resetAverage</a> ()</td></tr>
+<tr class="separator:a65bd229dff6c62aaf2153cf9561c513e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c3049211fc111a33f901d1251f043b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#a0c3049211fc111a33f901d1251f043b7">updateAverage</a> (<a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> res)</td></tr>
+<tr class="separator:a0c3049211fc111a33f901d1251f043b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae476efc6daca8aa0939a25b7c0d3daf9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html#ae476efc6daca8aa0939a25b7c0d3daf9">performMeasurement</a> ()</td></tr>
+<tr class="memdesc:ae476efc6daca8aa0939a25b7c0d3daf9"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method will measure the observable and can be called from within the integrator by using the ExtAnalyse extension.  <a href="#ae476efc6daca8aa0939a25b7c0d3daf9">More...</a><br /></td></tr>
+<tr class="separator:ae476efc6daca8aa0939a25b7c0d3daf9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abab2ed46c34bb001d2917250a4f91ce8"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html#abab2ed46c34bb001d2917250a4f91ce8">getNumberOfMeasurements</a> ()</td></tr>
+<tr class="memdesc:abab2ed46c34bb001d2917250a4f91ce8"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the number of measurements since the last reset  <a href="#abab2ed46c34bb001d2917250a4f91ce8">More...</a><br /></td></tr>
+<tr class="separator:abab2ed46c34bb001d2917250a4f91ce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3ab06ab696e89f38cb125456336cd38"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1System.html">System</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1SystemAccess.html#ad3ab06ab696e89f38cb125456336cd38">getSystem</a> () const </td></tr>
 <tr class="memdesc:ad3ab06ab696e89f38cb125456336cd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get shared pointer to the system.  <a href="#ad3ab06ab696e89f38cb125456336cd38">More...</a><br /></td></tr>
 <tr class="separator:ad3ab06ab696e89f38cb125456336cd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,26 +138,39 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8f3ccd6f4bfc7e81729a1301e7116eb2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1TotalVelocity.html#a8f3ccd6f4bfc7e81729a1301e7116eb2">registerPython</a> ()</td></tr>
-<tr class="separator:a8f3ccd6f4bfc7e81729a1301e7116eb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8aa777c7c58cba688481ff7044f1348f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#a8aa777c7c58cba688481ff7044f1348f">registerPython</a> ()</td></tr>
+<tr class="separator:a8aa777c7c58cba688481ff7044f1348f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
 Static Protected Member Functions</h2></td></tr>
-<tr class="memitem:a983aae8ad78950cccfaa6a25d058dd74"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1TotalVelocity.html#a983aae8ad78950cccfaa6a25d058dd74">LOG4ESPP_DECL_LOGGER</a> (logger)</td></tr>
-<tr class="separator:a983aae8ad78950cccfaa6a25d058dd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e86b7acc5c2de10d759d76afa2d5e54"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#a3e86b7acc5c2de10d759d76afa2d5e54">LOG4ESPP_DECL_LOGGER</a> (logger)</td></tr>
+<tr class="separator:a3e86b7acc5c2de10d759d76afa2d5e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a6191d3f38f0c957b1c860ceba8fe419d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html#a6191d3f38f0c957b1c860ceba8fe419d">newAverage</a></td></tr>
+<tr class="separator:a6191d3f38f0c957b1c860ceba8fe419d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf1cbfeb96b964b46f1a34bb7e70635"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html#addf1cbfeb96b964b46f1a34bb7e70635">lastAverage</a></td></tr>
+<tr class="separator:addf1cbfeb96b964b46f1a34bb7e70635"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaec6f85ac3fbd90845403032de590550"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html#aaec6f85ac3fbd90845403032de590550">newVariance</a></td></tr>
+<tr class="separator:aaec6f85ac3fbd90845403032de590550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c998f1f113cbed2f0705441fb901220"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html#a8c998f1f113cbed2f0705441fb901220">lastVariance</a></td></tr>
+<tr class="separator:a8c998f1f113cbed2f0705441fb901220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d5e97cc3b78e05bdc3f2e60576abd72"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html#a3d5e97cc3b78e05bdc3f2e60576abd72">nMeasurements</a></td></tr>
+<tr class="separator:a3d5e97cc3b78e05bdc3f2e60576abd72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:acacd62e227e5349c461d5a18a414e8bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1TotalVelocity.html#acacd62e227e5349c461d5a18a414e8bb">v</a></td></tr>
-<tr class="separator:acacd62e227e5349c461d5a18a414e8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163d45e3f78640d2992e3c80b3860897"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#a163d45e3f78640d2992e3c80b3860897">v</a></td></tr>
+<tr class="separator:a163d45e3f78640d2992e3c80b3860897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class to compute the total velocity of a system. </p>
-<p><a class="el" href="classespressopp_1_1analysis_1_1TotalVelocity.html" title="Class to compute the total velocity of a system. ">TotalVelocity</a> provides a facility to reset the total velocity of the system. </p>
+<p><a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html" title="Class to compute the total velocity of a system. ">CMVelocity</a> provides a facility to reset the total velocity of the system. </p>
 
-<p>Definition at line <a class="el" href="TotalVelocity_8hpp_source.html#l00039">39</a> of file <a class="el" href="TotalVelocity_8hpp_source.html">TotalVelocity.hpp</a>.</p>
+<p>Definition at line <a class="el" href="CMVelocity_8hpp_source.html#l00039">39</a> of file <a class="el" href="CMVelocity_8hpp_source.html">CMVelocity.hpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a2a78af06f1da5b12b0023506e15861fc"></a>
+<a class="anchor" id="acc0d84b552fcf216ba63aea6ee67a1c8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -143,7 +178,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">espressopp::analysis::TotalVelocity::TotalVelocity </td>
+          <td class="memname">espressopp::analysis::CMVelocity::CMVelocity </td>
           <td>(</td>
           <td class="paramtype">shared_ptr&lt; <a class="el" href="classespressopp_1_1System.html">System</a> &gt;&#160;</td>
           <td class="paramname"><em>system</em></td><td>)</td>
@@ -157,11 +192,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TotalVelocity_8hpp_source.html#l00043">43</a> of file <a class="el" href="TotalVelocity_8hpp_source.html">TotalVelocity.hpp</a>.</p>
+<p>Definition at line <a class="el" href="CMVelocity_8hpp_source.html#l00043">43</a> of file <a class="el" href="CMVelocity_8hpp_source.html">CMVelocity.hpp</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a86ab07ae752c9f54c7fecb927193fe23"></a>
+<a class="anchor" id="a8dd0003b4c9089f809d8b037ae50362a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -169,7 +204,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">espressopp::analysis::TotalVelocity::~TotalVelocity </td>
+          <td class="memname">espressopp::analysis::CMVelocity::~CMVelocity </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -182,33 +217,126 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TotalVelocity_8hpp_source.html#l00045">45</a> of file <a class="el" href="TotalVelocity_8hpp_source.html">TotalVelocity.hpp</a>.</p>
+<p>Definition at line <a class="el" href="CMVelocity_8hpp_source.html#l00045">45</a> of file <a class="el" href="CMVelocity_8hpp_source.html">CMVelocity.hpp</a>.</p>
 
-<p>References <a class="el" href="TotalVelocity_8cpp_source.html#l00042">compute()</a>, and <a class="el" href="TotalVelocity_8cpp_source.html#l00080">reset()</a>.</p>
+<p>References <a class="el" href="CMVelocity_8cpp_source.html#l00075">reset()</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a07a838984f1455e647c22ada257b04de"></a>
+<a class="anchor" id="a004a349d281a322bfae0efdab0c5ccb1"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void espressopp::analysis::TotalVelocity::compute </td>
+          <td class="memname">python::list espressopp::analysis::CMVelocity::compute </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Compute the total velocity of the system. </p>
+<p>Implements <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html#ab63a2301ebf69e294249deaf58cccde3">espressopp::analysis::AnalysisBaseTemplate&lt; Real3D &gt;</a>.</p>
 
-<p>Definition at line <a class="el" href="TotalVelocity_8cpp_source.html#l00042">42</a> of file <a class="el" href="TotalVelocity_8cpp_source.html">TotalVelocity.cpp</a>.</p>
+<p>Definition at line <a class="el" href="CMVelocity_8hpp_source.html#l00060">60</a> of file <a class="el" href="CMVelocity_8hpp_source.html">CMVelocity.hpp</a>.</p>
+
+<p>References <a class="el" href="CMVelocity_8cpp_source.html#l00039">computeRaw()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8f50f93cff889f4b287d11c637ca9a1f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> espressopp::analysis::CMVelocity::computeRaw </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>virtual functions from <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBase.html" title="All quantities to be measured derive from this abstract base class and the corresponding template...">AnalysisBase</a> class </p>
+
+<p>Implements <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html#a6bea221f0ed16c2e1acba838d02d9495">espressopp::analysis::AnalysisBaseTemplate&lt; Real3D &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="CMVelocity_8cpp_source.html#l00039">39</a> of file <a class="el" href="CMVelocity_8cpp_source.html">CMVelocity.cpp</a>.</p>
 
 <p>References <a class="el" href="System_8hpp_source.html#l00049">espressopp::System::comm</a>, <a class="el" href="CellListIterator_8hpp_source.html#l00088">espressopp::iterator::CellListIterator::isDone()</a>, and <a class="el" href="System_8hpp_source.html#l00051">espressopp::System::storage</a>.</p>
 
-<p>Referenced by <a class="el" href="TotalVelocity_8cpp_source.html#l00093">registerPython()</a>, and <a class="el" href="TotalVelocity_8hpp_source.html#l00045">~TotalVelocity()</a>.</p>
+<p>Referenced by <a class="el" href="CMVelocity_8hpp_source.html#l00060">compute()</a>, and <a class="el" href="CMVelocity_8hpp_source.html#l00050">perform_action()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a43f538034068c749a87973540cffd3b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">python::list espressopp::analysis::CMVelocity::getAverageValue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html#acb845b1b4211d18e4056671bf4a0efcc">espressopp::analysis::AnalysisBaseTemplate&lt; Real3D &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="CMVelocity_8hpp_source.html#l00067">67</a> of file <a class="el" href="CMVelocity_8hpp_source.html">CMVelocity.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="abab2ed46c34bb001d2917250a4f91ce8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual int <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html">espressopp::analysis::AnalysisBaseTemplate</a>&lt; <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>  &gt;::getNumberOfMeasurements </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return the number of measurements since the last reset </p>
+
+<p>Implements <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBase.html#ae1e740d35294eee3b5742dd70b33e079">espressopp::analysis::AnalysisBase</a>.</p>
 
 </div>
 </div>
@@ -386,36 +514,28 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a5a721fae3f0b9a155e5932f873c9c325"></a>
+<a class="anchor" id="ad90d853b3aab99dbf36b7fa02d089b79"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> espressopp::analysis::TotalVelocity::getV </td>
+          <td class="memname"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> espressopp::analysis::CMVelocity::getV </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TotalVelocity_8hpp_source.html#l00055">55</a> of file <a class="el" href="TotalVelocity_8hpp_source.html">TotalVelocity.hpp</a>.</p>
+<p>get current velocity </p>
 
-<p>References <a class="el" href="classespressopp_1_1analysis_1_1TotalVelocity.html#a983aae8ad78950cccfaa6a25d058dd74">LOG4ESPP_DECL_LOGGER()</a>, <a class="el" href="TotalVelocity_8cpp_source.html#l00093">registerPython()</a>, and <a class="el" href="TotalVelocity_8hpp_source.html#l00065">v</a>.</p>
+<p>Definition at line <a class="el" href="CMVelocity_8cpp_source.html#l00090">90</a> of file <a class="el" href="CMVelocity_8cpp_source.html">CMVelocity.cpp</a>.</p>
 
-<p>Referenced by <a class="el" href="TotalVelocity_8cpp_source.html#l00093">registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="CMVelocity_8hpp_source.html#l00050">perform_action()</a>, and <a class="el" href="CMVelocity_8cpp_source.html#l00094">registerPython()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a983aae8ad78950cccfaa6a25d058dd74"></a>
+<a class="anchor" id="a3e86b7acc5c2de10d759d76afa2d5e54"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -423,7 +543,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static espressopp::analysis::TotalVelocity::LOG4ESPP_DECL_LOGGER </td>
+          <td class="memname">static espressopp::analysis::CMVelocity::LOG4ESPP_DECL_LOGGER </td>
           <td>(</td>
           <td class="paramtype">logger&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -437,11 +557,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Referenced by <a class="el" href="TotalVelocity_8hpp_source.html#l00055">getV()</a>.</p>
+<p>Referenced by <a class="el" href="CMVelocity_8hpp_source.html#l00074">updateAverage()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a68d5cb2ab723d5b72a2d99eaaf41b89b"></a>
+<a class="anchor" id="a057575f2853ca9f32c9dd67f17eb662e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -449,7 +569,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void espressopp::analysis::TotalVelocity::perform_action </td>
+          <td class="memname">void espressopp::analysis::CMVelocity::perform_action </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -462,15 +582,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classespressopp_1_1ParticleAccess.html#a2006731775f5e6751e895c14a9c43b31">espressopp::ParticleAccess</a>.</p>
+<p>Reimplemented from <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBase.html#aa2082ecd583ee82d291529ae0189f0f7">espressopp::analysis::AnalysisBase</a>.</p>
 
-<p>Definition at line <a class="el" href="TotalVelocity_8hpp_source.html#l00053">53</a> of file <a class="el" href="TotalVelocity_8hpp_source.html">TotalVelocity.hpp</a>.</p>
+<p>Definition at line <a class="el" href="CMVelocity_8hpp_source.html#l00050">50</a> of file <a class="el" href="CMVelocity_8hpp_source.html">CMVelocity.hpp</a>.</p>
 
-<p>References <a class="el" href="TotalVelocity_8cpp_source.html#l00080">reset()</a>.</p>
+<p>References <a class="el" href="CMVelocity_8cpp_source.html#l00039">computeRaw()</a>, <a class="el" href="CMVelocity_8cpp_source.html#l00090">getV()</a>, <a class="el" href="CMVelocity_8cpp_source.html#l00094">registerPython()</a>, and <a class="el" href="CMVelocity_8cpp_source.html#l00075">reset()</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a8f3ccd6f4bfc7e81729a1301e7116eb2"></a>
+<a class="anchor" id="ae476efc6daca8aa0939a25b7c0d3daf9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -478,7 +598,35 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void espressopp::analysis::TotalVelocity::registerPython </td>
+          <td class="memname">virtual void <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html">espressopp::analysis::AnalysisBaseTemplate</a>&lt; <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>  &gt;::performMeasurement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This method will measure the observable and can be called from within the integrator by using the ExtAnalyse extension. </p>
+<p>It can also be called from python. It will also update the average value (typically also the variance) of the observable </p>
+
+<p>Implements <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBase.html#a5af558c1f8dd4c463a23417b66188f37">espressopp::analysis::AnalysisBase</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8aa777c7c58cba688481ff7044f1348f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void espressopp::analysis::CMVelocity::registerPython </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -491,39 +639,15 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TotalVelocity_8cpp_source.html#l00093">93</a> of file <a class="el" href="TotalVelocity_8cpp_source.html">TotalVelocity.cpp</a>.</p>
+<p>Definition at line <a class="el" href="CMVelocity_8cpp_source.html#l00094">94</a> of file <a class="el" href="CMVelocity_8cpp_source.html">CMVelocity.cpp</a>.</p>
 
-<p>References <a class="el" href="TotalVelocity_8cpp_source.html#l00042">compute()</a>, <a class="el" href="TotalVelocity_8hpp_source.html#l00055">getV()</a>, and <a class="el" href="TotalVelocity_8cpp_source.html#l00080">reset()</a>.</p>
+<p>References <a class="el" href="CMVelocity_8cpp_source.html#l00090">getV()</a>.</p>
 
-<p>Referenced by <a class="el" href="TotalVelocity_8hpp_source.html#l00055">getV()</a>, and <a class="el" href="analysis_2bindings_8cpp_source.html#l00074">espressopp::analysis::registerPython()</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a8f87df39daab2c15a7a08db8d18f1c6c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void espressopp::analysis::TotalVelocity::reset </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reset the total velocity of the system. </p>
-
-<p>Definition at line <a class="el" href="TotalVelocity_8cpp_source.html#l00080">80</a> of file <a class="el" href="TotalVelocity_8cpp_source.html">TotalVelocity.cpp</a>.</p>
-
-<p>References <a class="el" href="CellListIterator_8hpp_source.html#l00088">espressopp::iterator::CellListIterator::isDone()</a>, and <a class="el" href="System_8hpp_source.html#l00051">espressopp::System::storage</a>.</p>
-
-<p>Referenced by <a class="el" href="TotalVelocity_8hpp_source.html#l00053">perform_action()</a>, <a class="el" href="TotalVelocity_8cpp_source.html#l00093">registerPython()</a>, and <a class="el" href="TotalVelocity_8hpp_source.html#l00045">~TotalVelocity()</a>.</p>
+<p>Referenced by <a class="el" href="CMVelocity_8hpp_source.html#l00050">perform_action()</a>, and <a class="el" href="analysis_2bindings_8cpp_source.html#l00074">espressopp::analysis::registerPython()</a>.</p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="acacd62e227e5349c461d5a18a414e8bb"></a>
+<a class="anchor" id="a850188e81eda26f78ec59ace279aa221"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -531,7 +655,208 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> espressopp::analysis::TotalVelocity::v</td>
+          <td class="memname">void espressopp::analysis::CMVelocity::reset </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reset the total velocity of the system. </p>
+
+<p>Reimplemented from <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html#a40cf6a669016b3a12a40f4d488968241">espressopp::analysis::AnalysisBaseTemplate&lt; Real3D &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="CMVelocity_8cpp_source.html#l00075">75</a> of file <a class="el" href="CMVelocity_8cpp_source.html">CMVelocity.cpp</a>.</p>
+
+<p>References <a class="el" href="CellListIterator_8hpp_source.html#l00088">espressopp::iterator::CellListIterator::isDone()</a>, and <a class="el" href="System_8hpp_source.html#l00051">espressopp::System::storage</a>.</p>
+
+<p>Referenced by <a class="el" href="CMVelocity_8hpp_source.html#l00050">perform_action()</a>, and <a class="el" href="CMVelocity_8hpp_source.html#l00045">~CMVelocity()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a65bd229dff6c62aaf2153cf9561c513e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void espressopp::analysis::CMVelocity::resetAverage </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html#a72a78169a206e93040c5de7fdb67ca25">espressopp::analysis::AnalysisBaseTemplate&lt; Real3D &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="CMVelocity_8hpp_source.html#l00072">72</a> of file <a class="el" href="CMVelocity_8hpp_source.html">CMVelocity.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a0c3049211fc111a33f901d1251f043b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void espressopp::analysis::CMVelocity::updateAverage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>&#160;</td>
+          <td class="paramname"><em>res</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html#a55b32051ed433378ec9a9c5eed506a60">espressopp::analysis::AnalysisBaseTemplate&lt; Real3D &gt;</a>.</p>
+
+<p>Definition at line <a class="el" href="CMVelocity_8hpp_source.html#l00074">74</a> of file <a class="el" href="CMVelocity_8hpp_source.html">CMVelocity.hpp</a>.</p>
+
+<p>References <a class="el" href="classespressopp_1_1analysis_1_1CMVelocity.html#a3e86b7acc5c2de10d759d76afa2d5e54">LOG4ESPP_DECL_LOGGER()</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="addf1cbfeb96b964b46f1a34bb7e70635"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>  <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html">espressopp::analysis::AnalysisBaseTemplate</a>&lt; <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>  &gt;::lastAverage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AnalysisBase_8hpp_source.html#l00079">79</a> of file <a class="el" href="AnalysisBase_8hpp_source.html">AnalysisBase.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c998f1f113cbed2f0705441fb901220"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>  <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html">espressopp::analysis::AnalysisBaseTemplate</a>&lt; <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>  &gt;::lastVariance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AnalysisBase_8hpp_source.html#l00080">80</a> of file <a class="el" href="AnalysisBase_8hpp_source.html">AnalysisBase.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6191d3f38f0c957b1c860ceba8fe419d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>  <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html">espressopp::analysis::AnalysisBaseTemplate</a>&lt; <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>  &gt;::newAverage</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AnalysisBase_8hpp_source.html#l00079">79</a> of file <a class="el" href="AnalysisBase_8hpp_source.html">AnalysisBase.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aaec6f85ac3fbd90845403032de590550"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>  <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html">espressopp::analysis::AnalysisBaseTemplate</a>&lt; <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>  &gt;::newVariance</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AnalysisBase_8hpp_source.html#l00080">80</a> of file <a class="el" href="AnalysisBase_8hpp_source.html">AnalysisBase.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3d5e97cc3b78e05bdc3f2e60576abd72"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html">espressopp::analysis::AnalysisBaseTemplate</a>&lt; <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a>  &gt;::nMeasurements</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="AnalysisBase_8hpp_source.html#l00081">81</a> of file <a class="el" href="AnalysisBase_8hpp_source.html">AnalysisBase.hpp</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a163d45e3f78640d2992e3c80b3860897"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> espressopp::analysis::CMVelocity::v</td>
         </tr>
       </table>
   </td>
@@ -541,15 +866,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="TotalVelocity_8hpp_source.html#l00065">65</a> of file <a class="el" href="TotalVelocity_8hpp_source.html">TotalVelocity.hpp</a>.</p>
-
-<p>Referenced by <a class="el" href="TotalVelocity_8hpp_source.html#l00055">getV()</a>.</p>
+<p>Definition at line <a class="el" href="CMVelocity_8hpp_source.html#l00082">82</a> of file <a class="el" href="CMVelocity_8hpp_source.html">CMVelocity.hpp</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/home/espressopp/espressopp/src/analysis/<a class="el" href="TotalVelocity_8hpp_source.html">TotalVelocity.hpp</a></li>
-<li>/home/espressopp/espressopp/src/analysis/<a class="el" href="TotalVelocity_8cpp_source.html">TotalVelocity.cpp</a></li>
+<li>/home/espressopp/espressopp/src/analysis/<a class="el" href="CMVelocity_8hpp_source.html">CMVelocity.hpp</a></li>
+<li>/home/espressopp/espressopp/src/analysis/<a class="el" href="CMVelocity_8cpp_source.html">CMVelocity.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

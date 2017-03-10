@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>espressopp.analysis.TotalVelocity &mdash; ESPResSo++ vlatest</title>
+  <title>espressopp.analysis.CMVelocity &mdash; ESPResSo++ vlatest</title>
   
 
   
@@ -34,8 +34,8 @@
   
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="analysis" href="analysis.html"/>
-        <link rel="next" title="espressopp.analysis.Velocities" href="espressopp.analysis.Velocities.html"/>
-        <link rel="prev" title="espressopp.analysis.Test" href="espressopp.analysis.Test.html"/> 
+        <link rel="next" title="espressopp.analysis.ConfigsParticleDecomp" href="espressopp.analysis.ConfigsParticleDecomp.html"/>
+        <link rel="prev" title="espressopp.analysis.CenterOfMass" href="espressopp.analysis.CenterOfMass.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -159,13 +159,13 @@
         
           <li><a href="analysis.html">analysis</a> &raquo;</li>
         
-      <li>espressopp.analysis.TotalVelocity</li>
+      <li>espressopp.analysis.CMVelocity</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.analysis.TotalVelocity.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.analysis.CMVelocity.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -178,56 +178,71 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="module-espressopp.analysis.TotalVelocity"></span><div class="section" id="espressopp-analysis-totalvelocity">
-<h1>espressopp.analysis.TotalVelocity<a class="headerlink" href="#espressopp-analysis-totalvelocity" title="Permalink to this headline">¶</a></h1>
-<dl class="function">
-<dt id="espressopp.analysis.TotalVelocity.espressopp.analysis.TotalVelocity">
-<code class="descclassname">espressopp.analysis.</code><code class="descname">TotalVelocity</code><span class="sig-paren">(</span><em>system</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.TotalVelocity.espressopp.analysis.TotalVelocity" title="Permalink to this definition">¶</a></dt>
+  <span class="target" id="module-espressopp.analysis.CMVelocity"></span><div class="section" id="espressopp-analysis-cmvelocity">
+<h1>espressopp.analysis.CMVelocity<a class="headerlink" href="#espressopp-analysis-cmvelocity" title="Permalink to this headline">¶</a></h1>
+<p>Compute and reset (set to zero) the center-of-mass (CM) velocity of the system.</p>
+<dl class="class">
+<dt id="espressopp.analysis.CMVelocity.espressopp.analysis.CMVelocity">
+<em class="property">class </em><code class="descclassname">espressopp.analysis.</code><code class="descname">CMVelocity</code><span class="sig-paren">(</span><em>system</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.CMVelocity.espressopp.analysis.CMVelocity" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; The system object.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; system object</td>
 </tr>
 </tbody>
 </table>
-</dd></dl>
-
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last"><a class="reference internal" href="#module-espressopp.analysis.CMVelocity" title="espressopp.analysis.CMVelocity"><code class="xref py py-class docutils literal"><span class="pre">CMVelocity</span></code></a> can be attached to 
+the <em>integrator</em>. In this case the <a class="reference internal" href="#espressopp.analysis.CMVelocity.espressopp.analysis.CMVelocity.reset" title="espressopp.analysis.CMVelocity.espressopp.analysis.CMVelocity.reset"><code class="xref py py-meth docutils literal"><span class="pre">reset()</span></code></a> method is called, so 
+you will reset the CM-velocity every <cite>n-th</cite> steps.</p>
+</div>
+<p><strong>Methods</strong></p>
 <dl class="function">
-<dt id="espressopp.analysis.TotalVelocity.espressopp.analysis.TotalVelocity.compute">
-<code class="descclassname">espressopp.analysis.TotalVelocity.</code><code class="descname">compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.TotalVelocity.espressopp.analysis.TotalVelocity.compute" title="Permalink to this definition">¶</a></dt>
-<dd><p>Compute the total velocity of the system.</p>
-<blockquote>
-<div><table class="docutils field-list" frame="void" rules="none">
+<dt id="espressopp.analysis.CMVelocity.espressopp.analysis.CMVelocity.compute">
+<code class="descname">compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.CMVelocity.espressopp.analysis.CMVelocity.compute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the CM-velocity of the system</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">rtype:</th><td class="field-body">float</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="espressopp.Real3D.html#module-espressopp.Real3D" title="espressopp.Real3D">Real3D</a></td>
 </tr>
 </tbody>
 </table>
-</div></blockquote>
 </dd></dl>
 
 <dl class="function">
-<dt id="espressopp.analysis.TotalVelocity.espressopp.analysis.TotalVelocity.reset">
-<code class="descclassname">espressopp.analysis.TotalVelocity.</code><code class="descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.TotalVelocity.espressopp.analysis.TotalVelocity.reset" title="Permalink to this definition">¶</a></dt>
-<dd><p>Subtract the total velocity of the system from every particle.</p>
+<dt id="espressopp.analysis.CMVelocity.espressopp.analysis.CMVelocity.reset">
+<code class="descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.CMVelocity.espressopp.analysis.CMVelocity.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reset (set to zero) the CM-velocity of the system. Done by computing the
+CM-velocity of the system and subtracting it then from every particle.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
 <p>Example of resetting velocity</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">total_velocity</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">TotalVelocity</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">total_velocity</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">CMVelocity</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">total_velocity</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>Example of attaching to integrator</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># This extension can be attached to integrator</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># and run `reset()` every `n-th` steps.</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">total_velocity</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">TotalVelocity</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ext_remove_com</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">total_velocity</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">total_velocity</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">CMVelocity</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ext_remove_com</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">total_velocity</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">ext_remove_com</span><span class="p">)</span>
 </pre></div>
 </div>
+</dd></dl>
+
 </div>
 
 
@@ -240,10 +255,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.analysis.Velocities.html" class="btn btn-neutral float-right" title="espressopp.analysis.Velocities" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.analysis.ConfigsParticleDecomp.html" class="btn btn-neutral float-right" title="espressopp.analysis.ConfigsParticleDecomp" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.analysis.Test.html" class="btn btn-neutral" title="espressopp.analysis.Test" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.analysis.CenterOfMass.html" class="btn btn-neutral" title="espressopp.analysis.CenterOfMass" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
