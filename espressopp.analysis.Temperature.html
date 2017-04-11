@@ -33,9 +33,9 @@
 
   
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
-        <link rel="up" title="analysis" href="analysis.html"/>
+        <link rel="up" title="espressopp.analysis.AnalysisBase" href="espressopp.analysis.AnalysisBase.html"/>
         <link rel="next" title="espressopp.analysis.Test" href="espressopp.analysis.Test.html"/>
-        <link rel="prev" title="espressopp.analysis.SystemMonitor" href="espressopp.analysis.SystemMonitor.html"/> 
+        <link rel="prev" title="espressopp.analysis.PressureTensorMultiLayer" href="espressopp.analysis.PressureTensorMultiLayer.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -159,6 +159,8 @@
         
           <li><a href="analysis.html">analysis</a> &raquo;</li>
         
+          <li><a href="espressopp.analysis.AnalysisBase.html">espressopp.analysis.AnalysisBase</a> &raquo;</li>
+        
       <li>espressopp.analysis.Temperature</li>
     
     
@@ -180,6 +182,7 @@
             
   <span class="target" id="module-espressopp.analysis.Temperature"></span><div class="section" id="espressopp-analysis-temperature">
 <h1>espressopp.analysis.Temperature<a class="headerlink" href="#espressopp-analysis-temperature" title="Permalink to this headline">¶</a></h1>
+<p>Calculate the temperature of the system (in <span class="math">\(k_B T\)</span> units).</p>
 <dl class="function">
 <dt id="espressopp.analysis.Temperature.espressopp.analysis.Temperature">
 <code class="descclassname">espressopp.analysis.</code><code class="descname">Temperature</code><span class="sig-paren">(</span><em>system</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.Temperature.espressopp.analysis.Temperature" title="Permalink to this definition">¶</a></dt>
@@ -187,10 +190,28 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>system</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>system</strong> (<em>shared_ptr</em>) &#8211; system object</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">temperature</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">real</td>
 </tr>
 </tbody>
 </table>
+<p>Temperature of the system of <span class="math">\(N\)</span> particles is calculated as:</p>
+<div class="math">
+\[T = \frac{1}{N_f} \sum^N_{i=1} m_i v_i^2,\]</div>
+<p>where <span class="math">\(m_i\)</span> and <span class="math">\(v_i\)</span> are the mass and velocity of a
+particle <span class="math">\(i\)</span>.</p>
+<p><span class="math">\(N_f = 3N\)</span> is the number of the system&#8217;s degrees of freedom.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># declare an object, e.g., T:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">T</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">Temperature</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># later in your script compute temperature and print it:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">T</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
+</pre></div>
+</div>
 </dd></dl>
 
 </div>
@@ -208,7 +229,7 @@
         <a href="espressopp.analysis.Test.html" class="btn btn-neutral float-right" title="espressopp.analysis.Test" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.analysis.SystemMonitor.html" class="btn btn-neutral" title="espressopp.analysis.SystemMonitor" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.analysis.PressureTensorMultiLayer.html" class="btn btn-neutral" title="espressopp.analysis.PressureTensorMultiLayer" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
