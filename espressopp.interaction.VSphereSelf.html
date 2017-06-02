@@ -183,9 +183,10 @@
 <p>This class provides methods to compute forces and energies of
 the VSphereSelf potential.</p>
 <div class="math">
-\[U  =   e_1\left(\frac{4}{3}\pi \sigma_2\right)^{\frac{3}{2}}
-          + \frac{a_1 {N_b}^3}{{\sigma_2}^3}
-          + \frac{2a_2}{N_b} \sigma_2\]</div>
+\[U  =   e_1\left(\frac{4}{3}\pi \sigma^2\right)^{\frac{3}{2}}
+          + \frac{a_1 {N_b}^3}{\sigma^6}
+          + \frac{a_2}{N_b} \sigma^2\]</div>
+<p>Reference: Flactuating soft-sphere approach to coars-graining of polymer melts, Soft matter, 2010, 6, 2282</p>
 <dl class="function">
 <dt id="espressopp.interaction.VSphereSelf.espressopp.interaction.VSphereSelf">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">VSphereSelf</code><span class="sig-paren">(</span><em>e1</em>, <em>a1</em>, <em>a2</em>, <em>Nb</em>, <em>cutoff</em>, <em>shift</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.VSphereSelf.espressopp.interaction.VSphereSelf" title="Permalink to this definition">¶</a></dt>
