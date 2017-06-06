@@ -15,4 +15,4 @@
 \form#14:\[ V(r) = V_{LJ}(r_m - |r-r_m|) \]
 \form#15:\[ V_{LJ} \]
 \form#16:\[ V(r) = A \left[ 1.0 + cos \left( \frac{\pi r}{r_c} \right) \right] \]
-\form#17:\[ V(r_ij, \sigma_ij) = \frac{\varepsilon}{\beta} \left( \frac{2 \pi}{3} \right) \sigma_ij^{- \frac{3}{2}} e^{- \frac{3}{2} \frac{r_ij}{\sigma_ij}} , r_ij = \left| \vec{r_i} - \vec{r_j} \right| , \sigma_ij = \sigma_i^2 + \sigma_j^2 \]
+\form#17:\[ V(r_{ij}, \sigma_{ij}) = \varepsilon \left( \frac{2 \pi}{3} \sigma_{ij} \right)^{- \frac{3}{2}} e^{- \frac{3}{2} \frac{r_{ij}^2}{\sigma_{ij}}} , r_{ij} = \left| \vec{r_i} - \vec{r_j} \right| , \sigma_{ij} = \sigma_i^2 + \sigma_j^2 \]
