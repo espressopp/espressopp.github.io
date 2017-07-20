@@ -3,8 +3,9 @@
 <area shape="rect" id="node24" href="$classespressopp_1_1analysis_1_1SystemMonitor.html" title="espressopp::analysis\l::SystemMonitor" alt="" coords="514,398,659,439"/>
 <area shape="rect" id="node25" href="$classespressopp_1_1io_1_1DumpGRO.html" title="espressopp::io::DumpGRO" alt="" coords="497,464,677,491"/>
 <area shape="rect" id="node26" href="$classespressopp_1_1io_1_1DumpGROAdress.html" title="espressopp::io::DumpGROAdress" alt="" coords="476,515,697,541"/>
-<area shape="rect" id="node27" href="$classespressopp_1_1io_1_1DumpXYZ.html" title="espressopp::io::DumpXYZ" alt="" coords="499,565,675,592"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,464,192,491"/>
+<area shape="rect" id="node27" href="$classespressopp_1_1io_1_1DumpXTC.html" title="espressopp::io::DumpXTC" alt="" coords="498,565,675,592"/>
+<area shape="rect" id="node28" href="$classespressopp_1_1io_1_1DumpXYZ.html" title="espressopp::io::DumpXYZ" alt="" coords="499,616,675,643"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,489,192,516"/>
 <area shape="rect" id="node4" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; int \&gt;" alt="" coords="1088,201,1252,257"/>
 <area shape="rect" id="node6" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; real \&gt;" alt="" coords="1088,103,1252,159"/>
 <area shape="rect" id="node12" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; Real3D \&gt;" alt="" coords="1088,5,1252,61"/>

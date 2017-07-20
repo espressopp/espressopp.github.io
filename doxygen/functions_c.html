@@ -268,6 +268,9 @@
 <li>clearSavedPositions()
 : <a class="el" href="classespressopp_1_1storage_1_1Storage.html#a99ebeba378de4ba98d48e8aaa331ad23">espressopp::storage::Storage</a>
 </li>
+<li>close()
+: <a class="el" href="classespressopp_1_1io_1_1DumpXTC.html#a4ee4efe85fb61756a4ffd43a3d5114d5">espressopp::io::DumpXTC</a>
+</li>
 <li>cluster_analysis()
 : <a class="el" href="classespressopp_1_1analysis_1_1OrderParameter.html#a659c40c281de263c5de14e3df193e0ac">espressopp::analysis::OrderParameter</a>
 </li>
@@ -526,7 +529,7 @@
 , <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a266e488c0b78951b96e990b3fad31631">espressopp::interaction::PotentialTemplate&lt; Derived &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1PotentialUniqueDist.html#acf55b9eac272d10a93084ad9096ff9cc">espressopp::interaction::PotentialUniqueDist</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1PotentialUniqueDistTemplate.html#aeb72d5a6e2db9310073feb708d509146">espressopp::interaction::PotentialUniqueDistTemplate&lt; Derived &gt;</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1PotentialVSpherePair.html#a960ee5204ae3a78779ac38024fe48d2a">espressopp::interaction::PotentialVSpherePair</a>
+, <a class="el" href="classespressopp_1_1interaction_1_1PotentialVSpherePair.html#a3234d86539c128c1c6db4bf468bc9857">espressopp::interaction::PotentialVSpherePair</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1PotentialVSpherePairTemplate.html#a8806e33c3fbad477999cdf7d8ca65c98">espressopp::interaction::PotentialVSpherePairTemplate&lt; Derived &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1SingleParticlePotential.html#a255d7a5111b9dec864f44eac52e9e4bf">espressopp::interaction::SingleParticlePotential</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1SingleParticlePotentialTemplate.html#a2e81192abe4e25b31957923e0b310f6d">espressopp::interaction::SingleParticlePotentialTemplate&lt; Derived &gt;</a>
@@ -584,23 +587,23 @@
 </li>
 <li>computeVirialTensor()
 : <a class="el" href="classespressopp_1_1interaction_1_1CellListAllPairsInteractionTemplate.html#aa7959ee6d3bea7fd09904145432a5e4e">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1CellListAllParticlesInteractionTemplate.html#a12e2d63798f3c518e691df694bb09e1c">espressopp::interaction::CellListAllParticlesInteractionTemplate&lt; _Potential &gt;</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1FixedPairDistListInteractionTemplate.html#ab9ac69ebd14e9a8d92f139ec462cbb83">espressopp::interaction::FixedPairDistListInteractionTemplate&lt; _Potential &gt;</a>
+, <a class="el" href="classespressopp_1_1interaction_1_1CellListAllParticlesInteractionTemplate.html#a16f02c76dc8952ebdb08f4099bc65e01">espressopp::interaction::CellListAllParticlesInteractionTemplate&lt; _Potential &gt;</a>
+, <a class="el" href="classespressopp_1_1interaction_1_1FixedPairDistListInteractionTemplate.html#aa6c08cb5f275ce9e154ed66c6157ddb8">espressopp::interaction::FixedPairDistListInteractionTemplate&lt; _Potential &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1FixedPairListInteractionTemplate.html#a3e98a75ea5b8d3e7c7da22a6763b69cc">espressopp::interaction::FixedPairListInteractionTemplate&lt; _Potential &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1FixedPairListTypesInteractionTemplate.html#a6e151c0227684ba202bda50234e056bf">espressopp::interaction::FixedPairListTypesInteractionTemplate&lt; _Potential &gt;</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1FixedQuadrupleAngleListInteractionTemplate.html#a013aa2f2411b5e37539c2b5d8643a345">espressopp::interaction::FixedQuadrupleAngleListInteractionTemplate&lt; _DihedralPotential &gt;</a>
+, <a class="el" href="classespressopp_1_1interaction_1_1FixedQuadrupleAngleListInteractionTemplate.html#acf1bd3f19404543def84deb911749f85">espressopp::interaction::FixedQuadrupleAngleListInteractionTemplate&lt; _DihedralPotential &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1FixedQuadrupleListInteractionTemplate.html#a4aae6ba75a7c000b1fc81bddb213d202">espressopp::interaction::FixedQuadrupleListInteractionTemplate&lt; _DihedralPotential &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1FixedQuadrupleListTypesInteractionTemplate.html#a582e0b96f346c0fdda4fc6b73d85d933">espressopp::interaction::FixedQuadrupleListTypesInteractionTemplate&lt; _DihedralPotential &gt;</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1FixedTripleAngleListInteractionTemplate.html#aa3cff1842951a4361528d3335a6c0b06">espressopp::interaction::FixedTripleAngleListInteractionTemplate&lt; _AngularPotential &gt;</a>
+, <a class="el" href="classespressopp_1_1interaction_1_1FixedTripleAngleListInteractionTemplate.html#aefcb7299967a41933825c8a7690959ca">espressopp::interaction::FixedTripleAngleListInteractionTemplate&lt; _AngularPotential &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1FixedTripleListInteractionTemplate.html#a78fd748eb3057e11d9ab64742ec721b4">espressopp::interaction::FixedTripleListInteractionTemplate&lt; _AngularPotential &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1FixedTripleListTypesInteractionTemplate.html#a9359dea4ba9cfd88e91b7522c42732f3">espressopp::interaction::FixedTripleListTypesInteractionTemplate&lt; _Potential &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#adeec12ec2da7f78c67191e6ad9609a48">espressopp::interaction::Interaction</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1SingleParticleInteractionTemplate.html#ae76fb3f7da743c1195fc9ddfd7e2c0f7">espressopp::interaction::SingleParticleInteractionTemplate&lt; _Potential &gt;</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1VerletListAdressInteractionTemplate.html#adc572d41e12f6ac7b67e8b02e37e65a2">espressopp::interaction::VerletListAdressInteractionTemplate&lt; _PotentialAT, _PotentialCG &gt;</a>
+, <a class="el" href="classespressopp_1_1interaction_1_1SingleParticleInteractionTemplate.html#ac24c18a802a3fa34f8d7a12b5c07e19e">espressopp::interaction::SingleParticleInteractionTemplate&lt; _Potential &gt;</a>
+, <a class="el" href="classespressopp_1_1interaction_1_1VerletListAdressInteractionTemplate.html#a25607445b9aa6bd7b9bf702421799259">espressopp::interaction::VerletListAdressInteractionTemplate&lt; _PotentialAT, _PotentialCG &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1VerletListHadressInteractionTemplate.html#aac8a6330f2ac5ad041586caf276b8af1">espressopp::interaction::VerletListHadressInteractionTemplate&lt; _PotentialAT, _PotentialCG &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1VerletListInteractionTemplate.html#a33075b1d118b73c93a5b4747d7e2bde9">espressopp::interaction::VerletListInteractionTemplate&lt; _Potential &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1VerletListTripleInteractionTemplate.html#a6bd76c714d36a2711de45e38c543751a">espressopp::interaction::VerletListTripleInteractionTemplate&lt; _ThreeBodyPotential &gt;</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1VerletListVSphereInteractionTemplate.html#a3f6e49c29a6c71c591d02da6d07fc3cc">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;</a>
+, <a class="el" href="classespressopp_1_1interaction_1_1VerletListVSphereInteractionTemplate.html#a13b1d6a9f6ffe9a98e152d24329768ab">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1VSphereSelfInteractionTemplate.html#af44ef8bbcdf629310d3e2a7942ff07fa">espressopp::interaction::VSphereSelfInteractionTemplate&lt; _Potential &gt;</a>
 </li>
 <li>computeVirialX()
@@ -661,10 +664,10 @@
 : <a class="el" href="classespressopp_1_1ParticleGroup.html#a1d9f11f242c57b7b40ee7a552717d899">espressopp::ParticleGroup</a>
 </li>
 <li>ConfigsParticleDecomp()
-: <a class="el" href="classespressopp_1_1analysis_1_1ConfigsParticleDecomp.html#ac23bedfc04af37b6a557158321656e23">espressopp::analysis::ConfigsParticleDecomp</a>
+: <a class="el" href="classespressopp_1_1analysis_1_1ConfigsParticleDecomp.html#af902c103d582348b490973c908381a60">espressopp::analysis::ConfigsParticleDecomp</a>
 </li>
 <li>Configuration()
-: <a class="el" href="classespressopp_1_1analysis_1_1Configuration.html#ab39b92080819189eafd3aafe377668a3">espressopp::analysis::Configuration</a>
+: <a class="el" href="classespressopp_1_1analysis_1_1Configuration.html#a8eb0779c103773620e1dee91bb908038">espressopp::analysis::Configuration</a>
 </li>
 <li>ConfigurationExt()
 : <a class="el" href="classespressopp_1_1analysis_1_1ConfigurationExt.html#a7df919f8815d27ea3b989d673cd07325">espressopp::analysis::ConfigurationExt</a>
@@ -674,25 +677,25 @@
 </li>
 <li>configurations
 : <a class="el" href="classespressopp_1_1analysis_1_1ConfigsParticleDecomp.html#a77c6c0cfb435ae3f3401da69d3a7bdee">espressopp::analysis::ConfigsParticleDecomp</a>
+, <a class="el" href="classespressopp_1_1analysis_1_1Configurations.html#a870b0a4c740ef10955c138260e68d3df">espressopp::analysis::Configurations</a>
 </li>
 <li>Configurations()
 : <a class="el" href="classespressopp_1_1analysis_1_1Configurations.html#a1470fe8291ca0e110e5cdaab1c943f09">espressopp::analysis::Configurations</a>
 </li>
 <li>configurations
-: <a class="el" href="classespressopp_1_1analysis_1_1Configurations.html#a870b0a4c740ef10955c138260e68d3df">espressopp::analysis::Configurations</a>
-, <a class="el" href="classespressopp_1_1analysis_1_1Velocities.html#af1c086dcdfa2398851b9d8dae47adf2a">espressopp::analysis::Velocities</a>
-</li>
-<li>ConfigurationsExt()
-: <a class="el" href="classespressopp_1_1analysis_1_1ConfigurationsExt.html#a34d6f0607b0001d622574a8d97d3720f">espressopp::analysis::ConfigurationsExt</a>
+: <a class="el" href="classespressopp_1_1analysis_1_1Velocities.html#af1c086dcdfa2398851b9d8dae47adf2a">espressopp::analysis::Velocities</a>
 </li>
 <li>configurationsExt
 : <a class="el" href="classespressopp_1_1analysis_1_1ConfigurationsExt.html#ac6a08717e960774afd4390a10f11a077">espressopp::analysis::ConfigurationsExt</a>
 </li>
-<li>ConfigurationsExtAdress()
-: <a class="el" href="classespressopp_1_1analysis_1_1ConfigurationsExtAdress.html#a33a00b3023a62e9e7566740ba8329c07">espressopp::analysis::ConfigurationsExtAdress</a>
+<li>ConfigurationsExt()
+: <a class="el" href="classespressopp_1_1analysis_1_1ConfigurationsExt.html#a34d6f0607b0001d622574a8d97d3720f">espressopp::analysis::ConfigurationsExt</a>
 </li>
 <li>configurationsExtAdress
 : <a class="el" href="classespressopp_1_1analysis_1_1ConfigurationsExtAdress.html#adad6d8f2a2d8219412ac4cc8ad14c549">espressopp::analysis::ConfigurationsExtAdress</a>
+</li>
+<li>ConfigurationsExtAdress()
+: <a class="el" href="classespressopp_1_1analysis_1_1ConfigurationsExtAdress.html#a33a00b3023a62e9e7566740ba8329c07">espressopp::analysis::ConfigurationsExtAdress</a>
 </li>
 <li>configure()
 : <a class="el" href="classlog4espp_1_1Logger.html#a9ff4ec284aaf984a5ea07d2175e18a31">log4espp::Logger</a>
@@ -774,7 +777,7 @@
 : <a class="el" href="classlog4espp_1_1Logger.html#a762db4ab724360fb9f08365f246f26d7">log4espp::Logger</a>
 </li>
 <li>convertDirToCoord()
-: <a class="el" href="classespressopp_1_1storage_1_1NodeGrid.html#a7cbcb578dd52d59c00c24dd4518928fd">espressopp::storage::NodeGrid</a>
+: <a class="el" href="classespressopp_1_1storage_1_1NodeGrid.html#ab6854a857f41cd9944d0e1762cc97de2">espressopp::storage::NodeGrid</a>
 </li>
 <li>convLenMDtoLB()
 : <a class="el" href="classespressopp_1_1integrator_1_1LatticeBoltzmann.html#a881492cfc76589e94f1be960421f1b38">espressopp::integrator::LatticeBoltzmann</a>
@@ -832,7 +835,7 @@
 : <a class="el" href="classespressopp_1_1interaction_1_1AngularCosineSquared.html#af85197ab9fb19a82e060c1eddb506c2a">espressopp::interaction::AngularCosineSquared</a>
 </li>
 <li>Cosine()
-: <a class="el" href="classespressopp_1_1interaction_1_1Cosine.html#a5b42b2d6bda70164c676fe6797def9dc">espressopp::interaction::Cosine</a>
+: <a class="el" href="classespressopp_1_1interaction_1_1Cosine.html#a13e572ff0b9ddc1a145a5b3ca40f4cc5">espressopp::interaction::Cosine</a>
 </li>
 <li>cosTeta0
 : <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html#a6103382dfadc86db9e905335a3fdf978">espressopp::interaction::StillingerWeberTripleTerm</a>
@@ -850,10 +853,10 @@
 : <a class="el" href="classespressopp_1_1interaction_1_1CoulombRSpace.html#a88e3c92d63dfa6d72b266562cb756a2c">espressopp::interaction::CoulombRSpace</a>
 </li>
 <li>CoulombTruncated()
-: <a class="el" href="classespressopp_1_1interaction_1_1CoulombTruncated.html#a5dc951b729696f154e888d17dc8b769d">espressopp::interaction::CoulombTruncated</a>
+: <a class="el" href="classespressopp_1_1interaction_1_1CoulombTruncated.html#a3e33562a49e0b862c5b4d101d1e9ce5f">espressopp::interaction::CoulombTruncated</a>
 </li>
 <li>CoulombTruncatedUniqueCharge()
-: <a class="el" href="classespressopp_1_1interaction_1_1CoulombTruncatedUniqueCharge.html#aa34abbb04d5acba636532a8664114414">espressopp::interaction::CoulombTruncatedUniqueCharge</a>
+: <a class="el" href="classespressopp_1_1interaction_1_1CoulombTruncatedUniqueCharge.html#aad5d8feabbd7116e4333b07560d81743">espressopp::interaction::CoulombTruncatedUniqueCharge</a>
 </li>
 <li>count_charges()
 : <a class="el" href="classespressopp_1_1interaction_1_1CoulombKSpaceEwald.html#a85929631c7795a19d788dce7f55279eb">espressopp::interaction::CoulombKSpaceEwald</a>
