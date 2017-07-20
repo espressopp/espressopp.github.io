@@ -123,6 +123,9 @@
 <li>d_op
 : <a class="el" href="classespressopp_1_1interaction_1_1CoulombKSpaceP3M.html#a597ede811a72055f63b44e67f7711c8b">espressopp::interaction::CoulombKSpaceP3M</a>
 </li>
+<li>dampingmass
+: <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostatOnRadius.html#a7f74e418c8e109734708742933c3a96f">espressopp::integrator::LangevinThermostatOnRadius</a>
+</li>
 <li>data
 : <a class="el" href="classespressopp_1_1Int3D.html#ae02f215a1078947830b3e1577421a570">espressopp::Int3D</a>
 , <a class="el" href="classespressopp_1_1Real3D.html#adb07c874d126ba8a67ef3fa96c01f6d0">espressopp::Real3D</a>
@@ -204,7 +207,7 @@
 , <a class="el" href="classespressopp_1_1interaction_1_1AngularUniquePotentialTemplate.html#a6633d35abb14de8cbd5f506694dacc17">espressopp::interaction::AngularUniquePotentialTemplate&lt; Derived &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a3869d2885a6a08843356754760114b14">espressopp::interaction::DihedralPotentialTemplate&lt; Derived &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1DihedralUniquePotentialTemplate.html#aca29e28d01b9cd9c1dcc8408fcad3cc3">espressopp::interaction::DihedralUniquePotentialTemplate&lt; Derived &gt;</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1InterpolationTemplate.html#a472d83fcfd925b5481e3cc0ccc08e9d2">espressopp::interaction::InterpolationTemplate&lt; Derived &gt;</a>
+, <a class="el" href="classespressopp_1_1interaction_1_1InterpolationTemplate.html#a0c44c13a1f84c28c3d04401504b1ece0">espressopp::interaction::InterpolationTemplate&lt; Derived &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#ae9a0639476d0d778689cd85d96fa666b">espressopp::interaction::PotentialTemplate&lt; Derived &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1PotentialUniqueDistTemplate.html#afc8f56f0c791bb40162bb21f84d36ff6">espressopp::interaction::PotentialUniqueDistTemplate&lt; Derived &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1PotentialVSpherePairTemplate.html#abbbeb228987c24e6b3a2ef96233ec91b">espressopp::interaction::PotentialVSpherePairTemplate&lt; Derived &gt;</a>
@@ -251,7 +254,7 @@
 : <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonicCos.html#acbce98ed8a9f3b30bb5997d24e330faa">espressopp::interaction::DihedralHarmonicCos</a>
 </li>
 <li>DihedralHarmonicNCos()
-: <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonicNCos.html#a0b7b89b83af20ab10667de3a83193f59">espressopp::interaction::DihedralHarmonicNCos</a>
+: <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonicNCos.html#adaa1d4699cd24f3f35d2861152061e28">espressopp::interaction::DihedralHarmonicNCos</a>
 </li>
 <li>DihedralHarmonicUniqueCos()
 : <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonicUniqueCos.html#abfddd84d7569f7db26fd2698918d6f6d">espressopp::interaction::DihedralHarmonicUniqueCos</a>
@@ -300,6 +303,7 @@
 , <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostat.html#aa7fb7b9c264ce55464c10a0b108d1b7a">espressopp::integrator::LangevinThermostat</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostatHybrid.html#ae69a7412cdb271e930fb155b5953958a">espressopp::integrator::LangevinThermostatHybrid</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostatOnGroup.html#af2b4edcd67bacf0494bf726ec7750b67">espressopp::integrator::LangevinThermostatOnGroup</a>
+, <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostatOnRadius.html#a445e29996b31db32ae3d9a4555b64bf5">espressopp::integrator::LangevinThermostatOnRadius</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1LatticeBoltzmann.html#a37e6010aa8cda592c3a9453671f06322">espressopp::integrator::LatticeBoltzmann</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1OnTheFlyFEC.html#aa64ce491476f0ea09eb156a4b7be45e7">espressopp::integrator::OnTheFlyFEC</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1Rattle.html#acafba10bfd0249d10bf49c8952299479">espressopp::integrator::Rattle</a>
@@ -369,11 +373,11 @@
 , <a class="el" href="classespressopp_1_1integrator_1_1GammaDistributionNR3rd.html#a9e817735d99eaace4447cfbd3ec1c5c1">espressopp::integrator::GammaDistributionNR3rd</a>
 </li>
 <li>drift()
-: <a class="el" href="structespressopp_1_1Particle.html#ad0dc3e3eec24217dcf0e476353dda770">espressopp::Particle</a>
+: <a class="el" href="structespressopp_1_1Particle.html#a985874f17ee105ac122b303a5439eb60">espressopp::Particle</a>
 , <a class="el" href="structespressopp_1_1ParticleProperties.html#ad2e326df4f5de241b77a6abf356c70af">espressopp::ParticleProperties</a>
 </li>
 <li>dround()
-: <a class="el" href="classespressopp_1_1interaction_1_1CoulombKSpaceP3M.html#a2262d1fe73863dd73559a5839a1e82f6">espressopp::interaction::CoulombKSpaceP3M</a>
+: <a class="el" href="classespressopp_1_1interaction_1_1CoulombKSpaceP3M.html#ae03bad2260fa7582b814344c2ad7edae">espressopp::interaction::CoulombKSpaceP3M</a>
 </li>
 <li>dt
 : <a class="el" href="classespressopp_1_1integrator_1_1AssociationReaction.html#a2bd06daa4f4e116f402d3c9e22f6095e">espressopp::integrator::AssociationReaction</a>

@@ -101,6 +101,7 @@
 , <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostat.html#a7bfc385449d72459338fe92a2fe82993">espressopp::integrator::LangevinThermostat</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostatHybrid.html#a28f427438c0ae16720a03e9c39ada9ff">espressopp::integrator::LangevinThermostatHybrid</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostatOnGroup.html#a2b82b16f1b3cc5f192601908aed082f3">espressopp::integrator::LangevinThermostatOnGroup</a>
+, <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostatOnRadius.html#a12e4d7eef99af720cc038b5e2330882c">espressopp::integrator::LangevinThermostatOnRadius</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1LatticeBoltzmann.html#ad23334907719c8ee9caa70c4e1a80e3e">espressopp::integrator::LatticeBoltzmann</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1LJcos.html#a2c80abf63b7f1edcdad9022512208449">espressopp::interaction::LJcos</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1TersoffTripleTerm.html#ab66043510d3a3f6f465e18807ef559fb">espressopp::interaction::TersoffTripleTerm</a>
@@ -428,12 +429,10 @@
 <li>getD()
 : <a class="el" href="classespressopp_1_1analysis_1_1OrderParticleProps.html#a01ceaa0fa1ba414bd2b0d91f1169534f">espressopp::analysis::OrderParticleProps</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1TersoffPairTerm.html#a3156e2d82f1345f91c1c4bda913384e6">espressopp::interaction::TersoffPairTerm</a>
+, <a class="el" href="classespressopp_1_1interaction_1_1TersoffTripleTerm.html#a009204d29943dd77699682565a4421ba">espressopp::interaction::TersoffTripleTerm</a>
 </li>
 <li>getd()
 : <a class="el" href="classespressopp_1_1interaction_1_1TersoffTripleTerm.html#a6d4c7629fd021abbb0ee4b30ae1e26dc">espressopp::interaction::TersoffTripleTerm</a>
-</li>
-<li>getD()
-: <a class="el" href="classespressopp_1_1interaction_1_1TersoffTripleTerm.html#a009204d29943dd77699682565a4421ba">espressopp::interaction::TersoffTripleTerm</a>
 </li>
 <li>getD_max()
 : <a class="el" href="classespressopp_1_1analysis_1_1OrderParameter.html#a339506f53a6ac5043a7c4e4661cb0474">espressopp::analysis::OrderParameter</a>
@@ -626,6 +625,7 @@
 , <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostat.html#a3fcc145554524b25a79c44ee4b11301b">espressopp::integrator::LangevinThermostat</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostatHybrid.html#a0888ffdbf45b6b02ae92a353a2679c9d">espressopp::integrator::LangevinThermostatHybrid</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostatOnGroup.html#a11a08654fa9c4e24da345f17e7daf0f5">espressopp::integrator::LangevinThermostatOnGroup</a>
+, <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostatOnRadius.html#a2bf9d20785cfe220ed2ff57e5edf8c4d">espressopp::integrator::LangevinThermostatOnRadius</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1LatticeBoltzmann.html#adee30a2d503a8c85cf68a54ff388f68d">espressopp::integrator::LatticeBoltzmann</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1TersoffTripleTerm.html#ac0b3af099a130754900f3a1f6727c039">espressopp::interaction::TersoffTripleTerm</a>
 </li>
@@ -961,7 +961,7 @@
 , <a class="el" href="classespressopp_1_1bc_1_1SlabBC.html#a35732b5e1435fb0aae4683295eae9181">espressopp::bc::SlabBC</a>
 </li>
 <li>getMinimumImageVector()
-: <a class="el" href="classespressopp_1_1bc_1_1BC.html#abdea6ae787d24428fe74121d55823671">espressopp::bc::BC</a>
+: <a class="el" href="classespressopp_1_1bc_1_1BC.html#a5a24b9b3a83be9ff97d738fe96870d61">espressopp::bc::BC</a>
 , <a class="el" href="classespressopp_1_1bc_1_1OrthorhombicBC.html#a7ac3e4b1707f977ca987f22861b1a56a">espressopp::bc::OrthorhombicBC</a>
 , <a class="el" href="classespressopp_1_1bc_1_1SlabBC.html#ad75210849d55448d4cc7972bdc2b7603">espressopp::bc::SlabBC</a>
 </li>
@@ -985,9 +985,9 @@
 : <a class="el" href="classespressopp_1_1storage_1_1NodeGrid.html#a4e94f5e2d39a845b55d39a2f1219e0ed">espressopp::storage::NodeGrid</a>
 </li>
 <li>getMyLeft()
-: <a class="el" href="classespressopp_1_1CellGrid.html#a6bac4cc3b95114b0647cd2a55c4a8402">espressopp::CellGrid</a>
+: <a class="el" href="classespressopp_1_1CellGrid.html#a8afbe3e1d448792d31b46a88c499f937">espressopp::CellGrid</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1LatticeBoltzmann.html#a5cd35af79c29fe6f19a91e3f59aba071">espressopp::integrator::LatticeBoltzmann</a>
-, <a class="el" href="classespressopp_1_1storage_1_1NodeGrid.html#a34fd5a87c7f748171f1eb9965713547a">espressopp::storage::NodeGrid</a>
+, <a class="el" href="classespressopp_1_1storage_1_1NodeGrid.html#aaca422df8d88666bba8b79e5cbb403e0">espressopp::storage::NodeGrid</a>
 </li>
 <li>getMyNeigh()
 : <a class="el" href="classespressopp_1_1integrator_1_1LatticeBoltzmann.html#aabeedf918f93771a016c8180dcf8b819">espressopp::integrator::LatticeBoltzmann</a>
@@ -1385,6 +1385,7 @@
 , <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostat.html#abb586eb8d35d2729729089d846b3ed08">espressopp::integrator::LangevinThermostat</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostatHybrid.html#a6bf8f4cbddcd545c1877d1680a2ca6c5">espressopp::integrator::LangevinThermostatHybrid</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostatOnGroup.html#a19dfbf69b08aa6b6856c4c43a8144b8b">espressopp::integrator::LangevinThermostatOnGroup</a>
+, <a class="el" href="classespressopp_1_1integrator_1_1LangevinThermostatOnRadius.html#a25db5e6ec0f7ca980b2d58eaa8f0a00e">espressopp::integrator::LangevinThermostatOnRadius</a>
 , <a class="el" href="classespressopp_1_1integrator_1_1StochasticVelocityRescaling.html#a237802c545622feb0c462e4922e3fa7b">espressopp::integrator::StochasticVelocityRescaling</a>
 </li>
 <li>getTGamma()
@@ -1474,7 +1475,7 @@
 : <a class="el" href="classespressopp_1_1interaction_1_1CoulombKSpaceP3M.html#ac88b34d1f652315a939396d8f90b1b44">espressopp::interaction::CoulombKSpaceP3M</a>
 </li>
 <li>ghost()
-: <a class="el" href="structespressopp_1_1Particle.html#aec61805a44285981c1d9bdbcf8e6b754">espressopp::Particle</a>
+: <a class="el" href="structespressopp_1_1Particle.html#a31023148c1a4844aa26b3307b2e41759">espressopp::Particle</a>
 , <a class="el" href="structespressopp_1_1ParticleLocal.html#aaebd1a4e329689c97f36e9f5251bd015">espressopp::ParticleLocal</a>
 </li>
 <li>ghostCells
@@ -1499,11 +1500,11 @@
 <li>globalLists
 : <a class="el" href="classespressopp_1_1FixedListComm.html#a3e066c285f39cdb47d801ab8f2649d00">espressopp::FixedListComm</a>
 </li>
-<li>globalPairs
-: <a class="el" href="classespressopp_1_1FixedPairList.html#af04b2ea760c3da0008dfa553f4f9e4ef">espressopp::FixedPairList</a>
-</li>
 <li>GlobalPairs
 : <a class="el" href="classespressopp_1_1FixedPairList.html#a7d8356e627ec0b340c3f7b0525b10b0f">espressopp::FixedPairList</a>
+</li>
+<li>globalPairs
+: <a class="el" href="classespressopp_1_1FixedPairList.html#af04b2ea760c3da0008dfa553f4f9e4ef">espressopp::FixedPairList</a>
 </li>
 <li>globalQuadruples
 : <a class="el" href="classespressopp_1_1FixedQuadrupleList.html#a83d8a73c34daa18ea807dfbbb31a5ed5">espressopp::FixedQuadrupleList</a>
@@ -1511,11 +1512,11 @@
 <li>GlobalQuadruples
 : <a class="el" href="classespressopp_1_1FixedQuadrupleList.html#a48efe372bbb31933f2f340a2bff3cebc">espressopp::FixedQuadrupleList</a>
 </li>
-<li>GlobalSingles
-: <a class="el" href="classespressopp_1_1FixedSingleList.html#a924471e14c340b3e05abf3b0e93384ea">espressopp::FixedSingleList</a>
-</li>
 <li>globalSingles
 : <a class="el" href="classespressopp_1_1FixedSingleList.html#a3e3d6e3dfe569dee2624f7c188939324">espressopp::FixedSingleList</a>
+</li>
+<li>GlobalSingles
+: <a class="el" href="classespressopp_1_1FixedSingleList.html#a924471e14c340b3e05abf3b0e93384ea">espressopp::FixedSingleList</a>
 </li>
 <li>globalTriples
 : <a class="el" href="classespressopp_1_1FixedTripleList.html#a71d4fd258ef4cd3ed09975b8a9819034">espressopp::FixedTripleList</a>
@@ -1528,13 +1529,13 @@
 </li>
 <li>GlobalTuples
 : <a class="el" href="classespressopp_1_1FixedLocalTupleList.html#a9cf00bb2a8e5bdaf774fc884f5227fbb">espressopp::FixedLocalTupleList</a>
+, <a class="el" href="classespressopp_1_1FixedTupleList.html#a44839e3691a169d0b843406608f4d951">espressopp::FixedTupleList</a>
 </li>
 <li>globalTuples
 : <a class="el" href="classespressopp_1_1FixedTupleList.html#ac696f741d33c6923a087c5c7bf71711d">espressopp::FixedTupleList</a>
 </li>
 <li>GlobalTuples
-: <a class="el" href="classespressopp_1_1FixedTupleList.html#a44839e3691a169d0b843406608f4d951">espressopp::FixedTupleList</a>
-, <a class="el" href="classespressopp_1_1FixedTupleListAdress.html#a87b5aabeb7a1845b384c244334225da2">espressopp::FixedTupleListAdress</a>
+: <a class="el" href="classespressopp_1_1FixedTupleListAdress.html#a87b5aabeb7a1845b384c244334225da2">espressopp::FixedTupleListAdress</a>
 </li>
 <li>globalTuples
 : <a class="el" href="classespressopp_1_1FixedTupleListAdress.html#a6ccb4363ce9cab3256d083fdc031ec9f">espressopp::FixedTupleListAdress</a>
@@ -1543,7 +1544,7 @@
 : <a class="el" href="classespressopp_1_1interaction_1_1GravityTruncated.html#a03753f0f967d17e4b6cf09f3bbdec6e9">espressopp::interaction::GravityTruncated</a>
 </li>
 <li>Grid()
-: <a class="el" href="classespressopp_1_1esutil_1_1Grid.html#a45ca00eb1e885753436d8ddd7c212bc7">espressopp::esutil::Grid</a>
+: <a class="el" href="classespressopp_1_1esutil_1_1Grid.html#a2ba0cdc96b294c4e3f1a7951e35b4954">espressopp::esutil::Grid</a>
 </li>
 <li>group
 : <a class="el" href="classespressopp_1_1integrator_1_1VelocityVerletOnGroup.html#ad2752b1ede2613a0c6c75faa401a6815">espressopp::integrator::VelocityVerletOnGroup</a>
