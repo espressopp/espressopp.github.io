@@ -352,12 +352,10 @@
 <li>setD()
 : <a class="el" href="classespressopp_1_1analysis_1_1OrderParticleProps.html#af5d5f4d85e487d62d4afe19ffe22dcb6">espressopp::analysis::OrderParticleProps</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1TersoffPairTerm.html#a5c34532988407bb8ad1f9942a15fdeb5">espressopp::interaction::TersoffPairTerm</a>
+, <a class="el" href="classespressopp_1_1interaction_1_1TersoffTripleTerm.html#ad00c7e158be2ed2cbcf3551ef86f8b2a">espressopp::interaction::TersoffTripleTerm</a>
 </li>
 <li>setd()
 : <a class="el" href="classespressopp_1_1interaction_1_1TersoffTripleTerm.html#a781f6c7cbf461e3ff1e85f2ff945b311">espressopp::interaction::TersoffTripleTerm</a>
-</li>
-<li>setD()
-: <a class="el" href="classespressopp_1_1interaction_1_1TersoffTripleTerm.html#ad00c7e158be2ed2cbcf3551ef86f8b2a">espressopp::interaction::TersoffTripleTerm</a>
 </li>
 <li>setD_max()
 : <a class="el" href="classespressopp_1_1analysis_1_1OrderParameter.html#aa951d35d65adde54a1468a13e078c132">espressopp::analysis::OrderParameter</a>
@@ -460,6 +458,7 @@
 </li>
 <li>setFixedLocalTupleList()
 : <a class="el" href="classespressopp_1_1interaction_1_1FixedLocalTupleComListInteractionTemplate.html#a3a56e918891dcf6eb98de6fcd7a0e289">espressopp::interaction::FixedLocalTupleComListInteractionTemplate&lt; _Potential &gt;</a>
+, <a class="el" href="classespressopp_1_1interaction_1_1FixedLocalTupleRgListInteractionTemplate.html#afa8afc724c98f368fa608d19d6c0c5c7">espressopp::interaction::FixedLocalTupleRgListInteractionTemplate&lt; _Potential &gt;</a>
 </li>
 <li>setFixedPairList()
 : <a class="el" href="classespressopp_1_1interaction_1_1FixedPairDistListInteractionTemplate.html#afb95903096f9388a14eb9e3f0b00d9bb">espressopp::interaction::FixedPairDistListInteractionTemplate&lt; _Potential &gt;</a>
@@ -640,6 +639,9 @@
 <li>setK_com()
 : <a class="el" href="classespressopp_1_1interaction_1_1ConstrainCOM.html#aea599f1809473729525d0bfbb3a8fc36">espressopp::interaction::ConstrainCOM</a>
 </li>
+<li>setK_rg()
+: <a class="el" href="classespressopp_1_1interaction_1_1ConstrainRG.html#a8d4884e9298ab355d388a4069d29f52e">espressopp::interaction::ConstrainRG</a>
+</li>
 <li>setKMax()
 : <a class="el" href="classespressopp_1_1interaction_1_1CoulombKSpaceEwald.html#a6f5dc0e10caa63c1c81116342a31c46a">espressopp::interaction::CoulombKSpaceEwald</a>
 </li>
@@ -805,6 +807,7 @@
 <li>setPotential()
 : <a class="el" href="classespressopp_1_1interaction_1_1CellListAllPairsInteractionTemplate.html#abbd835a68ebfe3357b91758088df865a">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1FixedLocalTupleComListInteractionTemplate.html#a08ed8383f2413a099863316cef571657">espressopp::interaction::FixedLocalTupleComListInteractionTemplate&lt; _Potential &gt;</a>
+, <a class="el" href="classespressopp_1_1interaction_1_1FixedLocalTupleRgListInteractionTemplate.html#ac3dc29a128ed5f2e57fc64d27f194839">espressopp::interaction::FixedLocalTupleRgListInteractionTemplate&lt; _Potential &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1FixedPairDistListInteractionTemplate.html#aa1e1f5d8f06b44738bf22db5e3998ef0">espressopp::interaction::FixedPairDistListInteractionTemplate&lt; _Potential &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1FixedPairListInteractionTemplate.html#aa658208a537af125394ba6d6110c87c9">espressopp::interaction::FixedPairListInteractionTemplate&lt; _Potential &gt;</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1FixedPairListTypesInteractionTemplate.html#aa9653f675d7854381033e5e42da1f37b">espressopp::interaction::FixedPairListTypesInteractionTemplate&lt; _Potential &gt;</a>
@@ -899,6 +902,9 @@
 </li>
 <li>setReal()
 : <a class="el" href="classespressopp_1_1Quaternion.html#a04dd4d684b17ed7760952585da360668">espressopp::Quaternion</a>
+</li>
+<li>setRG()
+: <a class="el" href="classespressopp_1_1interaction_1_1FixedLocalTupleRgListInteractionTemplate.html#aea9701c3911af3de744f35485f8f7665">espressopp::interaction::FixedLocalTupleRgListInteractionTemplate&lt; _Potential &gt;</a>
 </li>
 <li>setRMax()
 : <a class="el" href="classespressopp_1_1interaction_1_1FENE.html#a58f23122e6e8ac540a9c08e5a4cedb59">espressopp::interaction::FENE</a>
@@ -1159,7 +1165,7 @@
 : <a class="el" href="classespressopp_1_1interaction_1_1CoulombKSpaceP3M.html#a510b1ada32646b67f1bb081080826469">espressopp::interaction::CoulombKSpaceP3M</a>
 </li>
 <li>Single()
-: <a class="el" href="structespressopp_1_1Single.html#a4d686619e31187936d6ae5e4322100a0">espressopp::Single&lt; T1 &gt;</a>
+: <a class="el" href="structespressopp_1_1Single.html#a0f64844f23d3bd986c04fbe7adc4dcf0">espressopp::Single&lt; T1 &gt;</a>
 </li>
 <li>SingleParticleInteractionTemplate()
 : <a class="el" href="classespressopp_1_1interaction_1_1SingleParticleInteractionTemplate.html#a4d29601be0e09e713bbb0d5bbb79e715">espressopp::interaction::SingleParticleInteractionTemplate&lt; _Potential &gt;</a>
@@ -1236,7 +1242,7 @@
 : <a class="el" href="classespressopp_1_1storage_1_1NodeGrid.html#a7d8c74a547ca15e6c637de2ca5c9fd06">espressopp::storage::NodeGrid</a>
 </li>
 <li>SoftCosine()
-: <a class="el" href="classespressopp_1_1interaction_1_1SoftCosine.html#ad53b0bd903587dc5cbd35a4ea128baed">espressopp::interaction::SoftCosine</a>
+: <a class="el" href="classespressopp_1_1interaction_1_1SoftCosine.html#a4fd072985b2818e5f7adf11d995b7cfa">espressopp::interaction::SoftCosine</a>
 </li>
 <li>sons
 : <a class="el" href="classlog4espp_1_1Logger.html#a39aadd94b4e664d3a0d4af7cbe414bbe">log4espp::Logger</a>
