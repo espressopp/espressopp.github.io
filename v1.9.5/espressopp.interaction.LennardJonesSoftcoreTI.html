@@ -1,0 +1,406 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>espressopp.interaction.LennardJonesSoftcoreTI &mdash; ESPResSo++ vlatest</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon_blue.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
+        <link rel="up" title="interaction" href="interaction.html"/>
+        <link rel="next" title="espressopp.interaction.LJcos" href="espressopp.interaction.LJcos.html"/>
+        <link rel="prev" title="espressopp.interaction.LennardJonesGromacs" href="espressopp.interaction.LennardJonesGromacs.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="http://www.espresso-pp.de/" class="icon icon-home"> ESPResSo++
+            <a href="http://www.mpip-mainz.mpg.de/polymer_theory" style="font-size:90%">MPIP Mainz
+          
+
+          
+            
+            <!--<a href="http://www.mpip-mainz.mpg.de/polymer_theory"><img src="_static/logo_theory_group.png" class="logo"/></a>-->
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ESPResSo++</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="classdescription.html">User Interface</a> &raquo;</li>
+        
+          <li><a href="interaction.html">interaction</a> &raquo;</li>
+        
+      <li>espressopp.interaction.LennardJonesSoftcoreTI</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/espressopp.interaction.LennardJonesSoftcoreTI.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span class="target" id="module-espressopp.interaction.LennardJonesSoftcoreTI"></span><div class="section" id="espressopp-interaction-lennardjonessoftcoreti">
+<h1>espressopp.interaction.LennardJonesSoftcoreTI<a class="headerlink" href="#espressopp-interaction-lennardjonessoftcoreti" title="Permalink to this headline">¶</a></h1>
+<p>This module is for performing simulations (e.g. as part of Thermodynamic Integration) where some Lennard-Jones interactions are a function of a parameter <span class="math">\(\lambda\)</span>, used to construct a pathway between states A and B.</p>
+<p>For those interactions which are a function of <span class="math">\(\lambda\)</span>, the potential is softcore Lennard Jones with the following form:</p>
+<div class="math">
+\[U_S(r_{ij},\lambda) = (1-\lambda)U_H^A(r_A) + \lambda U_H^B(r_B)\]\[r_A=(\alpha\sigma^6_A\lambda^p+r_{ij}^6)^{1/6}\]\[r_B=(\alpha\sigma^6_B(1-\lambda)^p+r_{ij}^6)^{1/6}\]</div>
+<p>where <span class="math">\(\epsilon_A\)</span>, <span class="math">\(\epsilon_B\)</span>, <span class="math">\(\sigma_A\)</span> and <span class="math">\(\sigma_B\)</span> are the parameters of states A and B, and <span class="math">\(\alpha\)</span> and <span class="math">\(p\)</span> are adjustable parameters of the softcore potential. The potentials <span class="math">\(U_H^A(r_A)\)</span> and <span class="math">\(U_H^B(r_B)\)</span> are the normal Lennard-Jones 12-6 hardcore potentials:</p>
+<div class="math">
+\[U_H^A(r_A) = 4.0\epsilon_A(\frac{\sigma_A}{r_A}^{12} - \frac{\sigma_A}{r_A}^6)\]</div>
+<p>The user specifies a list of particles, pidlist. For all pairs of particles with particletypes interacting via this potential, the LJ interaction between two particles i and j is calculated as follows:</p>
+<dl class="docutils">
+<dt>if (i not in pidlist) and (j not in pidlist):</dt>
+<dd><span class="math">\(U_{H}^A\)</span> (full state A hardcore LJ interaction)</dd>
+<dt>if (i in pidlist) and (j in pidlist):</dt>
+<dd><dl class="first last docutils">
+<dt>if annihilate==True:</dt>
+<dd><span class="math">\(U_{S}\)</span> (softcore LJ interaction, function of lambda)</dd>
+<dt>if annihilate==False:</dt>
+<dd><span class="math">\(U_{H}^A\)</span> (full state A hardcore LJ interaction)</dd>
+</dl>
+</dd>
+<dt>if (i in pidlist) xor (j in pidlist):</dt>
+<dd><span class="math">\(U_{S}\)</span> (softcore LJ interaction, function of lambda)</dd>
+</dl>
+<p>The default is annihilation (interactions within pidlist are coupled to lambda, and cross-interactions between particles in pidlist and particles in the rest of the system are also coupled to lambda). The alternative is decoupling (only cross-interactions between particles in pidlist and particles in the rest of the system are coupled to lambda. Interactions within pidlist are not affected by the value of lambda.) If annihilation==False, then decoupling is performed. See: <a class="reference external" href="http://www.alchemistry.org/wiki/Decoupling_and_annihilation">http://www.alchemistry.org/wiki/Decoupling_and_annihilation</a></p>
+<p>Exclusions apply as normal, i.e. interactions are only calculated for pairs of particles not already excluded.</p>
+<p>This class does not do any automatic shifting of the potential.</p>
+<p>So far only VerletListAdressLennardJonesSoftcoreTI is implemented, however VerletListLennardJonesSoftcoreTI, VerletListHadressLennardJonesSoftcoreTI, etc. can also be easily implemented.</p>
+<p>The <span class="math">\(\lambda\)</span> (<code class="docutils literal"><span class="pre">lambdaTI</span></code>) parameter used here should not be confused with the <span class="math">\(\lambda\)</span> (<code class="docutils literal"><span class="pre">lambda_adr</span></code>) particle property used in AdResS simulations.</p>
+<p>See also the Thermodynamic Integration tutorial.</p>
+<p>Example python script:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1">#value of lambda</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lambdaTI</span> <span class="o">=</span> <span class="mf">0.3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">#softcore parameters</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">alphaSC</span> <span class="o">=</span> <span class="mf">0.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">powerSC</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">#make list of indices of particles whose LJ parameters are different in TI states A and B</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">pidlist</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">#create interaction using VerletListAdress object and FixedTupleListAdress object</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lj_adres_interaction</span><span class="o">=</span><span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">VerletListAdressLennardJonesSoftcoreTI</span><span class="p">(</span><span class="n">verletlist</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1">#loop over list of all types for particles interacting with this atomistic potential</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">types</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">types</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">ljpot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">LennardJonesSoftcoreTI</span><span class="p">(</span><span class="n">epsilonA</span><span class="o">=</span><span class="n">epsA</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">sigmaA</span><span class="o">=</span><span class="n">sigA</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">epsilonB</span><span class="o">=</span><span class="n">epsB</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">sigmaB</span><span class="o">=</span><span class="n">sigB</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="n">alphaSC</span><span class="p">,</span> <span class="n">power</span><span class="o">=</span><span class="n">powerSC</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">cutoff</span><span class="p">,</span> <span class="n">lambdaTI</span><span class="o">=</span><span class="n">lambdaTI</span><span class="p">,</span> <span class="n">annihilate</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">ljpot</span><span class="o">.</span><span class="n">addPids</span><span class="p">(</span><span class="n">pidlist</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">lj_adres_interaction</span><span class="o">.</span><span class="n">setPotentialAT</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="n">i</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">potential</span><span class="o">=</span><span class="n">ljpot</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">lj_adres_interaction</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>During the MD run, one can then calculate the derivative of the RF energy wrt lambda</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1">#calculate dU/dlambda</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dUdl</span> <span class="o">=</span> <span class="n">lj_adres_interaction</span><span class="o">.</span><span class="n">computeEnergyDeriv</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt id="espressopp.interaction.LennardJonesSoftcoreTI.espressopppp.interaction.LennardJonesSoftcoreTI">
+<code class="descclassname">espressopppp.interaction.</code><code class="descname">LennardJonesSoftcoreTI</code><span class="sig-paren">(</span><em>epsilonA</em>, <em>sigmaA</em>, <em>epsilonB</em>, <em>sigmaB</em>, <em>alpha</em>, <em>power</em>, <em>cutoff</em>, <em>lambdaTI</em>, <em>annihilate</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJonesSoftcoreTI.espressopppp.interaction.LennardJonesSoftcoreTI" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>epsilonA</strong> (<em>real</em>) &#8211; (default: 1.0) LJ interaction parameter</li>
+<li><strong>sigmaA</strong> (<em>real</em>) &#8211; (default: 1.0) LJ interaction parameter</li>
+<li><strong>epsilonB</strong> (<em>real</em>) &#8211; (default: 0.0) LJ interaction parameter</li>
+<li><strong>sigmaB</strong> (<em>real</em>) &#8211; (default: 1.0) LJ interaction parameter</li>
+<li><strong>alpha</strong> (<em>real</em>) &#8211; (default: 1.0) softcore parameter</li>
+<li><strong>power</strong> (<em>real</em>) &#8211; (default: 1.0) softcore parameter</li>
+<li><strong>cutoff</strong> (<em>real</em>) &#8211; (default: infinity) interaction cutoff</li>
+<li><strong>lambdaTI</strong> (<em>real</em>) &#8211; (default: 0.0) TI lambda parameter</li>
+<li><strong>annihilate</strong> (<em>bool</em>) &#8211; (default: True) switch between annihilation and decoupling</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJonesSoftcoreTI.espressopppp.interaction.LennardJonesSoftcoreTI.addPids">
+<code class="descclassname">espressopppp.interaction.LennardJonesSoftcoreTI.</code><code class="descname">addPids</code><span class="sig-paren">(</span><em>pidlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJonesSoftcoreTI.espressopppp.interaction.LennardJonesSoftcoreTI.addPids" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pidlist</strong> (<em>python list</em>) &#8211; list of particle ids of particles whose interaction parameters differ in state A and B</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJonesSoftcoreTI.espressopppp.interaction.VerletListAdressLennardJones">
+<code class="descclassname">espressopppp.interaction.</code><code class="descname">VerletListAdressLennardJones</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJonesSoftcoreTI.espressopppp.interaction.VerletListAdressLennardJones" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>VerletListAdress object</em>) &#8211; Verlet list</li>
+<li><strong>fixedtupleList</strong> (<em>FixedTupleListAdress object</em>) &#8211; list of tuples describing mapping between CG and AT particles</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJonesSoftcoreTI.espressopppp.interaction.VerletListAdressLennardJones.setPotentialAT">
+<code class="descclassname">espressopppp.interaction.VerletListAdressLennardJones.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJonesSoftcoreTI.espressopppp.interaction.VerletListAdressLennardJones.setPotentialAT" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) &#8211; atomtype</li>
+<li><strong>type2</strong> (<em>int</em>) &#8211; atomtype</li>
+<li><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>Potential</em></a>) &#8211; espressopppp potential</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJonesSoftcoreTI.espressopppp.interaction.VerletListAdressLennardJones.setPotentialCG">
+<code class="descclassname">espressopppp.interaction.VerletListAdressLennardJones.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJonesSoftcoreTI.espressopppp.interaction.VerletListAdressLennardJones.setPotentialCG" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) &#8211; atomtype</li>
+<li><strong>type2</strong> (<em>int</em>) &#8211; atomtype</li>
+<li><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>Potential</em></a>) &#8211; espressopppp potential</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.LennardJonesSoftcoreTI.LennardJonesSoftcoreTI">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.LennardJonesSoftcoreTI.</code><code class="descname">LennardJonesSoftcoreTI</code><a class="headerlink" href="#espressopp.interaction.LennardJonesSoftcoreTI.LennardJonesSoftcoreTI" title="Permalink to this definition">¶</a></dt>
+<dd><p>The Lennard-Jones potential.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="espressopp.interaction.LJcos.html" class="btn btn-neutral float-right" title="espressopp.interaction.LJcos" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="espressopp.interaction.LennardJonesGromacs.html" class="btn btn-neutral" title="espressopp.interaction.LennardJonesGromacs" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013-2017, Max Planck Institute for Polymer Research.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: ''
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

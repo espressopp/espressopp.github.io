@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>initializing particles &mdash; ESPResSo++ vlatest</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon_blue.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
+        <link rel="up" title="tools" href="tools.html"/>
+        <link rel="next" title="decomp - auxiliary python functions" href="espressopp.tools.decomp.html"/>
+        <link rel="prev" title="information and analysis" href="espressopp.tools.analyse.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="http://www.espresso-pp.de/" class="icon icon-home"> ESPResSo++
+            <a href="http://www.mpip-mainz.mpg.de/polymer_theory" style="font-size:90%">MPIP Mainz
+          
+
+          
+            
+            <!--<a href="http://www.mpip-mainz.mpg.de/polymer_theory"><img src="_static/logo_theory_group.png" class="logo"/></a>-->
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="tools.html">tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ESPResSo++</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="classdescription.html">User Interface</a> &raquo;</li>
+        
+          <li><a href="tools.html">tools</a> &raquo;</li>
+        
+      <li>initializing particles</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/espressopp.tools.initcfg.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="initializing-particles">
+<h1>initializing particles<a class="headerlink" href="#initializing-particles" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">Overview</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.tools.lattice" title="espressopp.tools.lattice"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.tools.lattice</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#module-espressopp.tools.replicate" title="espressopp.tools.replicate"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.tools.replicate</span></code></a>(bonds,&nbsp;angles,&nbsp;x,&nbsp;...)</td>
+<td>Replicates configuration in each dimension.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.tools.topology" title="espressopp.tools.topology"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.tools.topology</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#module-espressopp.tools.velocities" title="espressopp.tools.velocities"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.tools.velocities</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.tools.warmup" title="espressopp.tools.warmup"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.tools.warmup</span></code></a>(system,&nbsp;integrator)</td>
+<td>Warm up for a system with a density of 0.85.</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Details</p>
+<div class="section" id="module-espressopp.tools.lattice">
+<span id="espressopp-tools-lattice"></span><h2>espressopp.tools.lattice<a class="headerlink" href="#module-espressopp.tools.lattice" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="espressopp.tools.lattice.createCubic">
+<code class="descclassname">espressopp.tools.lattice.</code><code class="descname">createCubic</code><span class="sig-paren">(</span><em>N</em>, <em>rho</em>, <em>perfect=True</em>, <em>RNG=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.lattice.createCubic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes particles on the sites of a simple cubic lattice. 
+By setting <code class="docutils literal"><span class="pre">perfect=False</span></code> 
+the particle positions will be given random displacements
+with a magnitude of one-tenth the lattice spacing.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.tools.lattice.createDiamond">
+<code class="descclassname">espressopp.tools.lattice.</code><code class="descname">createDiamond</code><span class="sig-paren">(</span><em>N</em>, <em>rho</em>, <em>perfect=True</em>, <em>RNG=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.lattice.createDiamond" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes particles on the sites of a diamond lattice.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-espressopp.tools.replicate">
+<span id="espressopp-tools-replicate"></span><h2>espressopp.tools.replicate<a class="headerlink" href="#module-espressopp.tools.replicate" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="espressopp.tools.replicate.replicate">
+<code class="descclassname">espressopp.tools.replicate.</code><code class="descname">replicate</code><span class="sig-paren">(</span><em>bonds</em>, <em>angles</em>, <em>x</em>, <em>y</em>, <em>z</em>, <em>Lx</em>, <em>Ly</em>, <em>Lz</em>, <em>xdim=1</em>, <em>ydim=1</em>, <em>zdim=1</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.replicate.replicate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replicates configuration in each dimension.</p>
+<p>This may be used to increase the size of an equilibrated melt by a factor of 8 or more.</p>
+<p>Presently this routine works only for semiflexible polymers. A general
+class should be written to deal with files containing coordinates
+and topology data.</p>
+<p>xdim = ydim = zdim = 1 returns the original system not replicated.
+xdim = ydim = zdim = 2 returns the original system replicated to 8x.
+xdim = ydim = zdim = 3 returns the original system replicated to 27x.
+xdim = ydim = 1, zdim = 2 returns the original system replicated in the z-direction.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-espressopp.tools.topology">
+<span id="espressopp-tools-topology"></span><h2>espressopp.tools.topology<a class="headerlink" href="#module-espressopp.tools.topology" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="espressopp.tools.topology.polymerRW">
+<code class="descclassname">espressopp.tools.topology.</code><code class="descname">polymerRW</code><span class="sig-paren">(</span><em>pid</em>, <em>startpos</em>, <em>numberOfMonomers</em>, <em>bondlength</em>, <em>return_angles=False</em>, <em>return_dihedrals=False</em>, <em>mindist=None</em>, <em>rng=None</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.topology.polymerRW" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializes polymers through random walk</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-espressopp.tools.velocities">
+<span id="espressopp-tools-velocities"></span><h2>espressopp.tools.velocities<a class="headerlink" href="#module-espressopp.tools.velocities" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="espressopp.tools.velocities.gaussian">
+<code class="descclassname">espressopp.tools.velocities.</code><code class="descname">gaussian</code><span class="sig-paren">(</span><em>T</em>, <em>N</em>, <em>zero_momentum=True</em>, <em>seed=7654321</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.velocities.gaussian" title="Permalink to this definition">¶</a></dt>
+<dd><p>This Python module generates initial particle velocities
+with temperature T according to a Maxwell-Boltzmann distribution.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-espressopp.tools.warmup">
+<span id="espressopp-tools-warmup"></span><h2>espressopp.tools.warmup<a class="headerlink" href="#module-espressopp.tools.warmup" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="espressopp.tools.warmup.warmup">
+<code class="descclassname">espressopp.tools.warmup.</code><code class="descname">warmup</code><span class="sig-paren">(</span><em>system</em>, <em>integrator</em>, <em>number=80</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.warmup.warmup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Warm up for a system with a density of 0.85.</p>
+<p>The method needs the following parameters:</p>
+<ul>
+<li><p class="first">system, integrator
+ESPResSo system which schoul be warmed up and the correspondig integrator e.g.:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">standard_system</span><span class="o">.</span><span class="n">LennardJones</span><span class="p">(</span><span class="mi">100</span><span class="p">,(</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">number
+number of steps of the warm up</p>
+<p>for a system with a density of 0.85, if it explodes try a higher number</p>
+</li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="espressopp.tools.decomp.html" class="btn btn-neutral float-right" title="decomp - auxiliary python functions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="espressopp.tools.analyse.html" class="btn btn-neutral" title="information and analysis" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013-2017, Max Planck Institute for Polymer Research.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: ''
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

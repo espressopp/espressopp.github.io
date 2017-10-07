@@ -1,0 +1,286 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation &mdash; ESPResSo++ vlatest</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon_blue.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
+        <link rel="next" title="Tutorial" href="tutorial.html"/>
+        <link rel="prev" title="ESPResSo++" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="http://www.espresso-pp.de/" class="icon icon-home"> ESPResSo++
+            <a href="http://www.mpip-mainz.mpg.de/polymer_theory" style="font-size:90%">MPIP Mainz
+          
+
+          
+            
+            <!--<a href="http://www.mpip-mainz.mpg.de/polymer_theory"><img src="_static/logo_theory_group.png" class="logo"/></a>-->
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ESPResSo++</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Installation</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/instalation.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>The first step in the installation of ESPResSo++ is to download the latest release from the
+following location:</p>
+<blockquote>
+<div><a class="reference external" href="https://github.com/espressopp/espressopp/releases">https://github.com/espressopp/espressopp/releases</a></div></blockquote>
+<p>On the command line type:</p>
+<pre class="literal-block">
+tar -xzf espressopp-latest.tgz
+</pre>
+<p>This will create a subdirectory espressopp-latest</p>
+<p>Enter this subdirectory</p>
+<pre class="literal-block">
+cd espressopp-latest
+</pre>
+<p>Create the Makefiles using the cmake command. If you don&#8217;t have it yet, you have to
+install it first. It is available for all major Linux distributions and also for Mac OS X.
+(ubuntu,debian: &#8220;apt-get install cmake&#8221; or get it from <a class="reference external" href="http://www.cmake.org">http://www.cmake.org</a> )</p>
+<div class="highlight-bash"><div class="highlight"><pre>cmake .
+</pre></div>
+</div>
+<p>(the space and dot after <em>cmake</em> are necessary)</p>
+<p>If cmake doesn&#8217;t finish successfully (e.g. it didn&#8217;t find all the libraries) you can
+tell cmake manually, where to find them by typing:</p>
+<div class="highlight-bash"><div class="highlight"><pre>ccmake .
+</pre></div>
+</div>
+<p>This will open an interactive page where all configuration information can be specified.
+Alternatively, if cmake . complains on missing BOOST or MPI4PY libraries and you had not
+installed them, you can try</p>
+<div class="highlight-bash"><div class="highlight"><pre>cmake . -DEXTERNAL_BOOST<span class="o">=</span>OFF -DEXTERNAL_MPI4PY<span class="o">=</span>OFF
+</pre></div>
+</div>
+<p>In this case, ESPResSo++ will try to use internal Boost and mpi4py libraries.</p>
+<p>After successfully building all the Makefiles you should build ESPResSo++ with:</p>
+<div class="highlight-bash"><div class="highlight"><pre>make
+</pre></div>
+</div>
+<p>(This will take several minutes)</p>
+<p>Before beeing able to use the espressopp  module in Python you need to source the ESPRC file:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span class="nb">source</span> ESPRC
+</pre></div>
+</div>
+<p>(This sets all corresponding environment variables to point to the module, e.g. PYTHONPATH)
+You have to source this file every time you want to work with espressopp. It would advisable to
+e.g. source the file in your .bashrc file ( &#8220;source &lt;path_to_espressopp&gt;/ESPRC&#8221; )</p>
+<p>In order to use matplotlib.pyplot for graphical output get the open source code from:</p>
+<blockquote>
+<div><a class="reference external" href="http://sourceforge.net/projects/matplotlib">http://sourceforge.net/projects/matplotlib</a></div></blockquote>
+<p>and follow the installation instructions of your distribution.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tutorial.html" class="btn btn-neutral float-right" title="Tutorial" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="ESPResSo++" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013-2017, Max Planck Institute for Polymer Research.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: ''
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

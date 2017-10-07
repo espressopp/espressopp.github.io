@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>espressopp.Quaternion &mdash; ESPResSo++ vlatest</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon_blue.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
+        <link rel="up" title="espressopp" href="espressopp.html"/>
+        <link rel="next" title="espressopp.Real3D" href="espressopp.Real3D.html"/>
+        <link rel="prev" title="espressopp.pmi" href="espressopp.pmi.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="http://www.espresso-pp.de/" class="icon icon-home"> ESPResSo++
+            <a href="http://www.mpip-mainz.mpg.de/polymer_theory" style="font-size:90%">MPIP Mainz
+          
+
+          
+            
+            <!--<a href="http://www.mpip-mainz.mpg.de/polymer_theory"><img src="_static/logo_theory_group.png" class="logo"/></a>-->
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ESPResSo++</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="classdescription.html">User Interface</a> &raquo;</li>
+        
+          <li><a href="espressopp.html">espressopp</a> &raquo;</li>
+        
+      <li>espressopp.Quaternion</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/espressopp.Quaternion.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span class="target" id="module-espressopp.Quaternion"></span><div class="section" id="espressopp-quaternion">
+<h1>espressopp.Quaternion<a class="headerlink" href="#espressopp-quaternion" title="Permalink to this headline">¶</a></h1>
+<p>This class provides quaternions with the associate methods. 
+Quaternions can be used as an efficient representation for the orientation 
+and rotation of 3D vector objects in 3D euclidean space. A Quaternion as 
+such has a real part and an imaginary part. For implementation purposes, 
+the representation through one real scalar and one real 3D vector is used 
+here. The vector part is defined using the Real3D class of espressopp.</p>
+<p>The format of a quaternion is &#8220;(real_part, unreal_part)&#8221; with the types
+&#8220;real&#8221; and &#8220;Real3D&#8221;, respectively.</p>
+<p>While there are other possible applications for quaternions (rotation) 
+in the simulation code, they will be used at the C++-level in order to per-
+form the integration of the Euler equations of motion regarding the partic-
+les angular motion, i.e. the rigid body dynamics.</p>
+<p><strong>Usage:</strong></p>
+<p>The following methods from C++-level are available at the python-level:</p>
+<ul>
+<li><dl class="first docutils">
+<dt>getReal()</dt>
+<dd><p class="first last">return the scalar part of the quaternion</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>setReal(real)</dt>
+<dd><p class="first last">sets the scalar part of the quaternion</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>getImag()</dt>
+<dd><p class="first last">returns the vector part of the quaternion</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>getImagItem(i)</dt>
+<dd><p class="first last">returns element i of vector part of the quaternion</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>setImag(Real3D)</dt>
+<dd><p class="first last">sets the vector part of the quaternion</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>setImagItem(i, real)</dt>
+<dd><p class="first last">sets element i of vector part of the quaternion</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>sqr()</dt>
+<dd><p class="first last">the inner product of the quaternion</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>abs()</dt>
+<dd><p class="first last">the absolute value of the quaternion</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>normalize()</dt>
+<dd><p class="first last">normalizes the quaternion to unit length</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>transpose()</dt>
+<dd><p class="first last">transposes the quaternion (changes sign of unreal_part)</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The multiplication operator is overloaded in order to perform quaternion 
+multiplication, see examples below. Furthermore, it is possible to multi-
+ply a quaternion with a scalar, in order to rescale it.</p>
+<p><strong>Examples:</strong></p>
+<p><strong>Initialize:</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">()</span>
+<span class="go">Quaternion(0.0, Real3D(0.0, 0.0, 0.0)) </span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<span class="go">Quaternion(1.0, Real3D(1.0, 2.0, 3.0)) </span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">vec</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Quaternion</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span> 
+<span class="go">Quaternion(0.0, Real3D(1.0, 2.0, 3.0))</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="go">Quaternion(1.0, Real3D(0.0, 0.0, 0.0))</span>
+</pre></div>
+</div>
+<p><strong>Get:</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">getReal</span><span class="p">()</span>
+<span class="go">0.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">getImag</span><span class="p">()</span>
+<span class="go">Real3D(1.0, 2.0, 3.0)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">getImagItem</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="go">1.0</span>
+</pre></div>
+</div>
+<p><strong>Set:</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">setReal</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">vec</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">setImag</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span>
+<span class="go">Quaternion(1.0, Real3D(1.0, 2.0, 3.0))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">setImagItem</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+<span class="go">Quaternion(1.0, Real3D(0.0, 2.0, 3.0))</span>
+</pre></div>
+</div>
+<p><strong>Transpose and normalize:</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+<span class="go">Quaternion(0.0, Real3D(-1.0, -2.0, -3.0))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">normalize</span><span class="p">()</span>
+<span class="go">Quaternion(0.0, Real3D(0.2672612419124244, 0.5345224838248488, 0.8017837257372732))</span>
+</pre></div>
+</div>
+<p><strong>Inner product and absolute value:</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">sqr</span><span class="p">()</span>
+<span class="go">14.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span>
+<span class="go">3.7416573867739413</span>
+</pre></div>
+</div>
+<p><strong>Quaternion multiplication (compare, e.g., wikipedia):</strong></p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<span class="go">Quaternion(-14.0, Real3D(0.0, 0.0, 0.0))</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt id="espressopp.Quaternion.toQuaternion">
+<code class="descclassname">espressopp.Quaternion.</code><code class="descname">toQuaternion</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.Quaternion.toQuaternion" title="Permalink to this definition">¶</a></dt>
+<dd><p>Try to convert the arguments to a Quaternion, 
+return the argument if it is already a Quaternion.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.Quaternion.toQuaternionFromVector">
+<code class="descclassname">espressopp.Quaternion.</code><code class="descname">toQuaternionFromVector</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.Quaternion.toQuaternionFromVector" title="Permalink to this definition">¶</a></dt>
+<dd><p>Try to convert the arguments to a Quaternion.</p>
+<p>This function will only convert to a Quaternion if real_part, 
+unreal_part[0], unreal_part[1] and unreal_part[2] are specified.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="espressopp.Real3D.html" class="btn btn-neutral float-right" title="espressopp.Real3D" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="espressopp.pmi.html" class="btn btn-neutral" title="espressopp.pmi" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013-2017, Max Planck Institute for Polymer Research.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: ''
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

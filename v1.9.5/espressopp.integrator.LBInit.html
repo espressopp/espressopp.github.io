@@ -1,0 +1,430 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>espressopp.integrator.LBInit &mdash; ESPResSo++ vlatest</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon_blue.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
+        <link rel="up" title="integrator" href="integrator.html"/>
+        <link rel="next" title="espressopp.integrator.MDIntegrator" href="espressopp.integrator.MDIntegrator.html"/>
+        <link rel="prev" title="espressopp.integrator.LatticeBoltzmann" href="espressopp.integrator.LatticeBoltzmann.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="http://www.espresso-pp.de/" class="icon icon-home"> ESPResSo++
+            <a href="http://www.mpip-mainz.mpg.de/polymer_theory" style="font-size:90%">MPIP Mainz
+          
+
+          
+            
+            <!--<a href="http://www.mpip-mainz.mpg.de/polymer_theory"><img src="_static/logo_theory_group.png" class="logo"/></a>-->
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ESPResSo++</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="classdescription.html">User Interface</a> &raquo;</li>
+        
+          <li><a href="integrator.html">integrator</a> &raquo;</li>
+        
+      <li>espressopp.integrator.LBInit</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/espressopp.integrator.LBInit.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="espressopp-integrator-lbinit">
+<h1>espressopp.integrator.LBInit<a class="headerlink" href="#espressopp-integrator-lbinit" title="Permalink to this headline">¶</a></h1>
+<p class="rubric">Overview</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.integrator.LBInitPopUniform" title="espressopp.integrator.LBInitPopUniform"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.integrator.LBInitPopUniform</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#module-espressopp.integrator.LBInitPopWave" title="espressopp.integrator.LBInitPopWave"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.integrator.LBInitPopWave</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.integrator.LBInitConstForce" title="espressopp.integrator.LBInitConstForce"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.integrator.LBInitConstForce</span></code></a></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#module-espressopp.integrator.LBInitPeriodicForce" title="espressopp.integrator.LBInitPeriodicForce"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.integrator.LBInitPeriodicForce</span></code></a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Details</p>
+<span class="target" id="module-espressopp.integrator.LBInit"></span><p>This abstract class provides the interface to (re-)initialize populations and handle external forces.</p>
+<dl class="class">
+<dt id="espressopp.integrator.LBInit.espressopp.integrator.LBInit">
+<em class="property">class </em><code class="descclassname">espressopp.integrator.</code><code class="descname">LBInit</code><a class="headerlink" href="#espressopp.integrator.LBInit.espressopp.integrator.LBInit" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="espressopp.integrator.LBInit.espressopp.integrator.LBInit.createDenVel">
+<code class="descname">createDenVel</code><span class="sig-paren">(</span><em>rho0</em>, <em>u0</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LBInit.espressopp.integrator.LBInit.createDenVel" title="Permalink to this definition">¶</a></dt>
+<dd><p>to set initial density and velocity of the LB-fluid.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>rho0</strong> (<em>real</em>) &#8211; density</li>
+<li><strong>u0</strong> (<a class="reference internal" href="espressopp.Real3D.html#module-espressopp.Real3D" title="espressopp.Real3D"><em>Real3D</em></a>) &#8211; velocity</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p>The following options for LB-fluid initialization are supported:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#module-espressopp.integrator.LBInitPopUniform" title="espressopp.integrator.LBInitPopUniform"><code class="xref py py-class docutils literal"><span class="pre">espressopp.integrator.LBInitPopUniform</span></code></a> A typical choice. It initializes uniformly distributed density and velocity: On every lattice site the density is <code class="docutils literal"><span class="pre">rho0</span></code> and velocity is <code class="docutils literal"><span class="pre">u0</span></code></li>
+<li><a class="reference internal" href="#module-espressopp.integrator.LBInitPopWave" title="espressopp.integrator.LBInitPopWave"><code class="xref py py-class docutils literal"><span class="pre">espressopp.integrator.LBInitPopWave</span></code></a> for uniform density at every lattice site, but harmonic velocity <span class="math">\(v_z (x)\)</span> with the period of lattice sites in <em>x</em>-direction</li>
+</ul>
+<dl class="method">
+<dt id="espressopp.integrator.LBInit.espressopp.integrator.LBInit.setForce">
+<code class="descname">setForce</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LBInit.espressopp.integrator.LBInit.setForce" title="Permalink to this definition">¶</a></dt>
+<dd><p>to set an external force onto LB-fluid.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference internal" href="espressopp.Real3D.html#module-espressopp.Real3D" title="espressopp.Real3D"><em>Real3D</em></a>) &#8211; value of the force</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="espressopp.integrator.LBInit.espressopp.integrator.LBInit.addForce">
+<code class="descname">addForce</code><span class="sig-paren">(</span><em>force</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LBInit.espressopp.integrator.LBInit.addForce" title="Permalink to this definition">¶</a></dt>
+<dd><p>to add a new external force to the existing one.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>force</strong> (<a class="reference internal" href="espressopp.Real3D.html#module-espressopp.Real3D" title="espressopp.Real3D"><em>Real3D</em></a>) &#8211; value of the force</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<p>Two main external force types are implemented:</p>
+<ul class="simple">
+<li><a class="reference internal" href="#module-espressopp.integrator.LBInitConstForce" title="espressopp.integrator.LBInitConstForce"><code class="xref py py-class docutils literal"><span class="pre">espressopp.integrator.LBInitConstForce</span></code></a> to manage constant (gravity-like) forces acting on every lattice site and</li>
+<li><a class="reference internal" href="#module-espressopp.integrator.LBInitPeriodicForce" title="espressopp.integrator.LBInitPeriodicForce"><code class="xref py py-class docutils literal"><span class="pre">espressopp.integrator.LBInitPeriodicForce</span></code></a> to manage periodic (sin-like) forces</li>
+</ul>
+</dd></dl>
+
+<div class="section" id="module-espressopp.integrator.LBInitPopUniform">
+<span id="espressopp-integrator-lbinitpopuniform"></span><h2>espressopp.integrator.LBInitPopUniform<a class="headerlink" href="#module-espressopp.integrator.LBInitPopUniform" title="Permalink to this headline">¶</a></h2>
+<p>This class creates LB-fluid with uniform density <code class="docutils literal"><span class="pre">rho0</span></code> and velocity <code class="docutils literal"><span class="pre">u0</span></code> (<em>lattice
+units</em>).</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set initial density and velocity</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">initDen</span> <span class="o">=</span> <span class="mf">1.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">initVel</span> <span class="o">=</span> <span class="n">Real3D</span><span class="p">(</span> <span class="mf">0.</span> <span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># create initPop object and initialize populations</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">initPop</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitPopUniform</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">initPop</span><span class="o">.</span><span class="n">createDenVel</span><span class="p">(</span> <span class="n">initDen</span><span class="p">,</span> <span class="n">initVel</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="module-espressopp.integrator.LBInitPopWave">
+<span id="espressopp-integrator-lbinitpopwave"></span><h2>espressopp.integrator.LBInitPopWave<a class="headerlink" href="#module-espressopp.integrator.LBInitPopWave" title="Permalink to this headline">¶</a></h2>
+<p>This class creates LB-fluid with uniform density and harmonic velocity (<em>lattice units</em>):</p>
+<p><span class="math">\(v_x = 0\)</span>,
+<span class="math">\(v_y = 0\)</span>,
+<span class="math">\(v_z(i) = A \cdot sin (2 \pi \cdot i \,/ N_x)\)</span>,
+where <span class="math">\(A\)</span> is the amplitude of the velocity wave, 
+<span class="math">\(N_x\)</span> is the number of lattice nodes in <span class="math">\(x\)</span>-direction and 
+<span class="math">\(i\)</span> is the index of the node the velocity is calculated for.</p>
+<p>This may be used to test the system: total moment is zero and the liquid tends to 
+equilibrium, i.e. relaxes to a uniform zero velocity.</p>
+<p>Example:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set initial density</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">initDen</span> <span class="o">=</span> <span class="mf">1.</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># set initial velocity</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Vx</span> <span class="o">=</span> <span class="n">Vy</span> <span class="o">=</span> <span class="mf">0.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ampVz</span> <span class="o">=</span> <span class="mf">0.0005</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">initVel</span> <span class="o">=</span> <span class="n">Real3D</span><span class="p">(</span> <span class="n">Vx</span><span class="p">,</span> <span class="n">Vy</span><span class="p">,</span> <span class="n">ampVz</span> <span class="p">)</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># create initPop object and initialize populations</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">initPop</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitPopWave</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">initPop</span><span class="o">.</span><span class="n">createDenVel</span><span class="p">(</span> <span class="n">initDen</span><span class="p">,</span> <span class="n">initVel</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="module-espressopp.integrator.LBInitConstForce">
+<span id="espressopp-integrator-lbinitconstforce"></span><h2>espressopp.integrator.LBInitConstForce<a class="headerlink" href="#module-espressopp.integrator.LBInitConstForce" title="Permalink to this headline">¶</a></h2>
+<p>This class allows to set or add constant (gravity-like) external forces 
+(<em>lattice units</em>) to the LB-fluid. At first, one has to create a force object and then 
+set or add this force to the system.</p>
+<p>Example to set extenal force:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">extForceToSet</span> <span class="o">=</span> <span class="n">Real3D</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.0005</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce</span><span class="o">.</span><span class="n">setForce</span><span class="p">(</span> <span class="n">extForceToSet</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p>Example to add extenal force to the existing forces:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">extForceToAdd</span> <span class="o">=</span> <span class="n">Real3D</span><span class="p">(</span><span class="mf">0.0001</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span> <span class="n">extForceToAdd</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="module-espressopp.integrator.LBInitPeriodicForce">
+<span id="espressopp-integrator-lbinitperiodicforce"></span><h2>espressopp.integrator.LBInitPeriodicForce<a class="headerlink" href="#module-espressopp.integrator.LBInitPeriodicForce" title="Permalink to this headline">¶</a></h2>
+<p>This class allows to set or add external periodic forces 
+(<em>lattice units</em>) to the LB-fluid. At first, one has to create a force object and then 
+set or add this force to the system.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Please note, that a periodic (sin-like) force acts in <em>z</em>-direction as a function 
+of <em>x</em>. The <em>z</em>-component of the force provides therefore the amplitude of the
+sin-modulation. The <em>x</em>- and <em>y</em>-components of the specified force interpreted as
+body forces in corresponding directions.</p>
+</div>
+<p>Example to set external sin-like force.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ampFz</span> <span class="o">=</span> <span class="mf">0.0001</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Fx</span> <span class="o">=</span> <span class="n">Fy</span> <span class="o">=</span> <span class="mf">0.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">extForceToSet</span> <span class="o">=</span> <span class="n">Real3D</span><span class="p">(</span> <span class="n">Fx</span><span class="p">,</span> <span class="n">Fy</span><span class="p">,</span> <span class="n">ampFz</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lbforceSin</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lbforceSin</span><span class="o">.</span><span class="n">setForce</span><span class="p">(</span> <span class="n">extForceToSet</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p>Example to add external sin-like force.</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ampFz</span> <span class="o">=</span> <span class="mf">0.0005</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Fx</span> <span class="o">=</span> <span class="n">Fy</span> <span class="o">=</span> <span class="mf">0.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">extForceToAdd</span> <span class="o">=</span> <span class="n">Real3D</span><span class="p">(</span> <span class="n">Fx</span><span class="p">,</span> <span class="n">Fy</span><span class="p">,</span> <span class="n">ampFz</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lbforceSin</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lbforceSin</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span> <span class="n">extForceToAdd</span> <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="espressopp.integrator.MDIntegrator.html" class="btn btn-neutral float-right" title="espressopp.integrator.MDIntegrator" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="espressopp.integrator.LatticeBoltzmann.html" class="btn btn-neutral" title="espressopp.integrator.LatticeBoltzmann" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013-2017, Max Planck Institute for Polymer Research.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: ''
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
