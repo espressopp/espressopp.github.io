@@ -253,9 +253,19 @@ xdim = ydim = 1, zdim = 2 returns the original system replicated in the z-direct
 <span id="espressopp-tools-velocities"></span><h2>espressopp.tools.velocities<a class="headerlink" href="#module-espressopp.tools.velocities" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="espressopp.tools.velocities.gaussian">
-<code class="descclassname">espressopp.tools.velocities.</code><code class="descname">gaussian</code><span class="sig-paren">(</span><em>T</em>, <em>N</em>, <em>zero_momentum=True</em>, <em>seed=7654321</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.velocities.gaussian" title="Permalink to this definition">¶</a></dt>
-<dd><p>This Python module generates initial particle velocities
-with temperature T according to a Maxwell-Boltzmann distribution.</p>
+<code class="descclassname">espressopp.tools.velocities.</code><code class="descname">gaussian</code><span class="sig-paren">(</span><em>T</em>, <em>N</em>, <em>particle_mass=None</em>, <em>zero_momentum=True</em>, <em>seed=7654321</em>, <em>kb=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.velocities.gaussian" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates velocities with temperature T according to a Maxwell-Boltzmann distribution.</p>
+<dl class="docutils">
+<dt>Args:</dt>
+<dd>T: The desired temperature expre.
+N: The number of particles.
+particle_mass: The list of particle mass if not then every particle has mass 1.0
+zero_momentum: Remove the center-of-mass motion.
+seed: The seed for the random number generator.
+kb: The Boltzmann constant.</dd>
+<dt>Returns:</dt>
+<dd>The tuple with lists of x,y,z components of the velocity.</dd>
+</dl>
 </dd></dl>
 
 </div>
