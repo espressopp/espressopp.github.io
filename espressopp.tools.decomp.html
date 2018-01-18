@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>decomp - auxiliary python functions &mdash; ESPResSo++ vlatest</title>
+  <title>decomp - Domain Decomposition python functions &mdash; ESPResSo++ vlatest</title>
   
 
   
@@ -159,7 +159,7 @@
         
           <li><a href="tools.html">tools</a> &raquo;</li>
         
-      <li>decomp - auxiliary python functions</li>
+      <li>decomp - Domain Decomposition python functions</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -178,13 +178,76 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="module-espressopp.tools.decomp"></span><div class="section" id="decomp-auxiliary-python-functions">
-<h1>decomp - auxiliary python functions<a class="headerlink" href="#decomp-auxiliary-python-functions" title="Permalink to this headline">¶</a></h1>
+  <span class="target" id="module-espressopp.tools.decomp"></span><div class="section" id="decomp-domain-decomposition-python-functions">
+<h1>decomp - Domain Decomposition python functions<a class="headerlink" href="#decomp-domain-decomposition-python-functions" title="Permalink to this headline">¶</a></h1>
 <ul>
-<li><p class="first"><cite>nodeGrid(n)</cite>:</p>
+<li><p class="first"><cite>nodeGrid(n,box_size,rc,skin,eh_size=0,ratioMS=0,idealGas=0,slabMSDims=[0,0,0])</cite>:</p>
 <blockquote>
-<div><p>It determines how the processors are distributed and how the cells are arranged.
+<div><p>It determines how the processors are distributed and how the cells are arranged. 
+The algorithm is dimensional sensitive for both homogeneous and inhomogeneous setups. 
+On top of such functionality it presents specific features for region divided heterogenous
+setups (e.g. for AdResS) [see H.V. Guzman et. al, Phys. Rev. E, 96, 053311 (2017)]
+Link to the paper: <a class="reference external" href="https://doi.org/10.1103/PhysRevE.96.053311">https://doi.org/10.1103/PhysRevE.96.053311</a></p>
+<p><cite>box_size</cite> - 3D vector cointainig the size of the simulation box box_size [L_x,L_y,L_z]
+<cite>rc</cite> - cutoff radius of interaction
+<cite>skin</cite> - skin size for the verlet list calculation
+<cite>n</cite> - total number of processes
+<cite>eh_size</cite> - 1D length of the high-resolution region (e.g. for AdResS Atomistic/Explicit+Hybrid regions)
+<cite>ratioMS</cite> - spatial mapping ratio between high-resolution region and the low-resolution one</p>
+<blockquote>
+<div><p>(e.g. for AdResS mapping the atomistic water molecule to the CG-model; leads to a ratioMS=3)</p>
+</div></blockquote>
+<dl class="docutils">
+<dt><cite>idealGas</cite> - this is a Flag for treating the low-resolution region as an Ideal Gas, when TRUE (no interactions included,</dt>
+<dd><p class="first last">thus none force computations load)</p>
+</dd>
+</dl>
+<p><cite>slabMSDims</cite> - 3D vector cointainig flags describing the type of axis, if heterogeneous value is 1, else 0</p>
+</div></blockquote>
+</li>
+<li><dl class="first docutils">
+<dt><cite>nodeGridSimple(n)</cite>:</dt>
+<dd><p class="first last">It determines how the processors are distributed and how the cells are arranged. Note: Use it exclusively for Lattice-Boltzmann simulations, or non-parallelized tests.
 <cite>n</cite> - number of processes</p>
+</dd>
+</dl>
+</li>
+<li><p class="first"><cite>cherrypickTotalProcs(box_size,rc,skin,MnN,CpN,percTol=0.2,eh_size=0,ratioMS=0,idealGas=0,slabMSDims=[0,0,0])</cite>:</p>
+<blockquote>
+<div><p>To be used for heterogenous simulations where the spatial heterogeinity is known on an a-priori manner,
+where this function returns <cite>n</cite> as the total number of processes to be used for the best decomposition of the
+system as a function of a tolerance ratio which depending on the giving range [0, MnN*CpN] of processors availability
+different combinations of P_x,P_y and P_z can be found and hence several values of <cite>n</cite> this &#8216;n&#8217; can become an array.
+Most of the parameters have been described for nodeGrid(...), except:</p>
+<p><cite>MnN</cite> - M number of Nodes to be available (e.g. 128 processes/cores, 16 cores per Node gives a total of 8 Nodes)
+<cite>CpN</cite> - C number of Cores available in each Node (e.g. 16 Cores per Node or 20 Cores per Node)
+<cite>percTol</cite> - Axis base tolerance percentage to the ideal distribution of P-processors per axes P_x,P_y,P_z</p>
+</div></blockquote>
+</li>
+<li><p class="first"><cite>neiListHom(node_grid,box,rc,skin)</cite>:</p>
+<blockquote>
+<div><p>The new domain decomposition divides the subdomains in a neighborlist of corse in a grid of 3 arrays [N_x,N_y,N_z]. In
+this case, the neighbor list is homogeneous (non a-priori load imbalance). Most of the parameters have been described 
+above, except:</p>
+<p><cite>node_grid</cite> - M number of Nodes to be available (e.g. 128 processes/cores, 16 cores per Node gives a total of 8 Nodes)</p>
+</div></blockquote>
+</li>
+<li><p class="first"><cite>neiListAdress(node_grid, cell_grid,rc,skin,eh_size,adrCenter,ratioMS,idealGasFlag=True,sphereAdr=False,slabMSDims=[1,0,0])</cite>:</p>
+<blockquote>
+<div><p>The new domain decomposition divides the subdomains in a neighborlist of corse in a grid of 3 arrays [N_x,N_y,N_z]. In
+this case, the neighbor list is homogeneous (non a-priori load imbalance). Most of the parameters have been described 
+above, except:</p>
+<p><cite>cell_grid</cite> - Based on the homogenous allocation of cells per subdomain, a referential value
+<cite>adrCenter</cite> - Box center of the heterogeneous simulation box [adrCenter_x,adrCenter_y,adrCenter_z], commonly the middle of</p>
+<blockquote>
+<div><p>high-resolution region.</p>
+</div></blockquote>
+<dl class="docutils">
+<dt><cite>idealGasFlag</cite> - This is a Flag for treating the low-resolution region as an Ideal Gas (no interactions included,</dt>
+<dd><p class="first last">thus less load)</p>
+</dd>
+</dl>
+<p><cite>sphereAdr</cite> - Geometry of the high-resolution region, if TRUE spherical, otherwise Slab-like</p>
 </div></blockquote>
 </li>
 <li><p class="first"><cite>cellGrid(box_size, node_grid, rc, skin)</cite>:</p>
