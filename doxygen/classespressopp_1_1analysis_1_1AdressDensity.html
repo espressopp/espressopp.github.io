@@ -96,6 +96,11 @@ Public Types</h2></td></tr>
  }<tr class="memdesc:add5d7d9a90d2c31e1faad4fc10530612"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classespressopp_1_1analysis_1_1Observable.html" title="All quantities to be measured derive from this abstract base class. ">Observable</a> can be int, real, scalar or vector.  <a href="classespressopp_1_1analysis_1_1Observable.html#add5d7d9a90d2c31e1faad4fc10530612">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:add5d7d9a90d2c31e1faad4fc10530612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bc366e2d8694940175fd569f0e538a4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1Observable.html#a4bc366e2d8694940175fd569f0e538a4">ObservableTypes</a> { <a class="el" href="classespressopp_1_1analysis_1_1Observable.html#a4bc366e2d8694940175fd569f0e538a4a6c8ea41ca289310c49eb5b2a44db55a5">POTENTIAL_ENERGY</a>, 
+<a class="el" href="classespressopp_1_1analysis_1_1Observable.html#a4bc366e2d8694940175fd569f0e538a4ac0a8ccd58b55b3055f7f884871f675aa">KINETIC_ENERGY</a>, 
+<a class="el" href="classespressopp_1_1analysis_1_1Observable.html#a4bc366e2d8694940175fd569f0e538a4a3df3b6aaefc5aa59f678c94bfafb4490">OTHER</a>
+ }</td></tr>
+<tr class="separator:a4bc366e2d8694940175fd569f0e538a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -166,10 +171,14 @@ Static Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a544361aa77b34506e4fa3694681cbe95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1analysis_1_1Observable.html#add5d7d9a90d2c31e1faad4fc10530612">result_types</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1Observable.html#a544361aa77b34506e4fa3694681cbe95">result_type</a></td></tr>
 <tr class="separator:a544361aa77b34506e4fa3694681cbe95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeb0a75186c9adb177cedc7480b91b11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1analysis_1_1Observable.html#a4bc366e2d8694940175fd569f0e538a4">ObservableTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1Observable.html#aaeb0a75186c9adb177cedc7480b91b11">observable_type</a></td></tr>
+<tr class="separator:aaeb0a75186c9adb177cedc7480b91b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6aed52138868bb8304d68f35c20383db"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1Observable.html#a6aed52138868bb8304d68f35c20383db">result_real_vector</a></td></tr>
 <tr class="separator:a6aed52138868bb8304d68f35c20383db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae6aa3099e181fbd7bb070356d14eb735"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1Observable.html#ae6aa3099e181fbd7bb070356d14eb735">result_int_vector</a></td></tr>
 <tr class="separator:ae6aa3099e181fbd7bb070356d14eb735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:added1d31308b0eb531652d11aa92e7e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1Observable.html#added1d31308b0eb531652d11aa92e7e5">result_vector_size</a></td></tr>
+<tr class="separator:added1d31308b0eb531652d11aa92e7e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -181,6 +190,36 @@ Private Attributes</h2></td></tr>
 <div class="textblock">
 <p>Definition at line <a class="el" href="AdressDensity_8hpp_source.html#l00033">33</a> of file <a class="el" href="AdressDensity_8hpp_source.html">AdressDensity.hpp</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a class="anchor" id="a4bc366e2d8694940175fd569f0e538a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classespressopp_1_1analysis_1_1Observable.html#a4bc366e2d8694940175fd569f0e538a4">espressopp::analysis::Observable::ObservableTypes</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a4bc366e2d8694940175fd569f0e538a4a6c8ea41ca289310c49eb5b2a44db55a5"></a>POTENTIAL_ENERGY&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4bc366e2d8694940175fd569f0e538a4ac0a8ccd58b55b3055f7f884871f675aa"></a>KINETIC_ENERGY&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a4bc366e2d8694940175fd569f0e538a4a3df3b6aaefc5aa59f678c94bfafb4490"></a>OTHER&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00040">40</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="add5d7d9a90d2c31e1faad4fc10530612"></a>
 <div class="memitem">
 <div class="memproto">
@@ -215,7 +254,7 @@ Private Attributes</h2></td></tr>
 </td></tr>
 </table>
 
-<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00037">37</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00039">39</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
 
 </div>
 </div>
@@ -366,7 +405,7 @@ Private Attributes</h2></td></tr>
 
 <p>returns observable of type int, used for Python and on C++ level </p>
 
-<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00047">47</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00057">57</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="Observable_8cpp_source.html#l00050">espressopp::analysis::Observable::registerPython()</a>.</p>
 
@@ -395,7 +434,7 @@ Private Attributes</h2></td></tr>
 
 <p>computes vector of integer values, used on C++ level only </p>
 
-<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00051">51</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00061">61</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
 
 <p>References <a class="el" href="Observable_8cpp_source.html#l00039">espressopp::analysis::Observable::compute_int_vector_python()</a>, and <a class="el" href="Observable_8cpp_source.html#l00032">espressopp::analysis::Observable::compute_real_vector_python()</a>.</p>
 
@@ -428,9 +467,9 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Observable_8cpp_source.html#l00039">39</a> of file <a class="el" href="Observable_8cpp_source.html">Observable.cpp</a>.</p>
 
-<p>References <a class="el" href="Observable_8hpp_source.html#l00051">espressopp::analysis::Observable::compute_int_vector()</a>, and <a class="el" href="Observable_8hpp_source.html#l00069">espressopp::analysis::Observable::result_int_vector</a>.</p>
+<p>References <a class="el" href="Observable_8hpp_source.html#l00061">espressopp::analysis::Observable::compute_int_vector()</a>, and <a class="el" href="Observable_8hpp_source.html#l00080">espressopp::analysis::Observable::result_int_vector</a>.</p>
 
-<p>Referenced by <a class="el" href="Observable_8hpp_source.html#l00051">espressopp::analysis::Observable::compute_int_vector()</a>, and <a class="el" href="Observable_8cpp_source.html#l00050">espressopp::analysis::Observable::registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="Observable_8hpp_source.html#l00061">espressopp::analysis::Observable::compute_int_vector()</a>, and <a class="el" href="Observable_8cpp_source.html#l00050">espressopp::analysis::Observable::registerPython()</a>.</p>
 
 </div>
 </div>
@@ -457,9 +496,9 @@ Private Attributes</h2></td></tr>
 
 <p>returns observable of type real, used for Python and on C++ level </p>
 
-<p>Reimplemented in <a class="el" href="classespressopp_1_1analysis_1_1PotentialEnergy.html#ac7eb40d9246d072d6b23955d15040fda">espressopp::analysis::PotentialEnergy</a>, and <a class="el" href="classespressopp_1_1analysis_1_1NPart.html#afb338ac68b4035f307076f35bf48f291">espressopp::analysis::NPart</a>.</p>
+<p>Reimplemented in <a class="el" href="classespressopp_1_1analysis_1_1Temperature.html#aae6ed4131a0648f169476db11eb609b6">espressopp::analysis::Temperature</a>, <a class="el" href="classespressopp_1_1analysis_1_1KineticEnergy.html#a933308f9587124235dc78fdb92450637">espressopp::analysis::KineticEnergy</a>, <a class="el" href="classespressopp_1_1analysis_1_1PotentialEnergy.html#ac7eb40d9246d072d6b23955d15040fda">espressopp::analysis::PotentialEnergy</a>, and <a class="el" href="classespressopp_1_1analysis_1_1NPart.html#afb338ac68b4035f307076f35bf48f291">espressopp::analysis::NPart</a>.</p>
 
-<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00045">45</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00055">55</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="Observable_8cpp_source.html#l00050">espressopp::analysis::Observable::registerPython()</a>.</p>
 
@@ -489,7 +528,7 @@ Private Attributes</h2></td></tr>
 <p>computes vector of real values (e.g. </p>
 <p>pressure tensor, ...), used on C++ level only </p>
 
-<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00049">49</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00059">59</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="Observable_8cpp_source.html#l00032">espressopp::analysis::Observable::compute_real_vector_python()</a>.</p>
 
@@ -521,9 +560,9 @@ Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="Observable_8cpp_source.html#l00032">32</a> of file <a class="el" href="Observable_8cpp_source.html">Observable.cpp</a>.</p>
 
-<p>References <a class="el" href="Observable_8hpp_source.html#l00049">espressopp::analysis::Observable::compute_real_vector()</a>, and <a class="el" href="Observable_8hpp_source.html#l00068">espressopp::analysis::Observable::result_real_vector</a>.</p>
+<p>References <a class="el" href="Observable_8hpp_source.html#l00059">espressopp::analysis::Observable::compute_real_vector()</a>, and <a class="el" href="Observable_8hpp_source.html#l00079">espressopp::analysis::Observable::result_real_vector</a>.</p>
 
-<p>Referenced by <a class="el" href="Observable_8hpp_source.html#l00051">espressopp::analysis::Observable::compute_int_vector()</a>, and <a class="el" href="Observable_8cpp_source.html#l00050">espressopp::analysis::Observable::registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="Observable_8hpp_source.html#l00061">espressopp::analysis::Observable::compute_int_vector()</a>, and <a class="el" href="Observable_8cpp_source.html#l00050">espressopp::analysis::Observable::registerPython()</a>.</p>
 
 </div>
 </div>
@@ -580,9 +619,9 @@ Private Attributes</h2></td></tr>
 
 <p>returns the result type of the observable </p>
 
-<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00062">62</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00072">72</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
 
-<p>References <a class="el" href="Observable_8cpp_source.html#l00050">espressopp::analysis::Observable::registerPython()</a>, and <a class="el" href="Observable_8hpp_source.html#l00067">espressopp::analysis::Observable::result_type</a>.</p>
+<p>References <a class="el" href="Observable_8cpp_source.html#l00050">espressopp::analysis::Observable::registerPython()</a>, and <a class="el" href="Observable_8hpp_source.html#l00077">espressopp::analysis::Observable::result_type</a>.</p>
 
 <p>Referenced by <a class="el" href="Observable_8cpp_source.html#l00050">espressopp::analysis::Observable::registerPython()</a>.</p>
 
@@ -811,7 +850,7 @@ Private Attributes</h2></td></tr>
 
 <p>References <a class="el" href="AdressDensity_8hpp_source.html#l00042">addExclpid()</a>, and <a class="el" href="AdressDensity_8cpp_source.html#l00040">computeArray()</a>.</p>
 
-<p>Referenced by <a class="el" href="AdressDensity_8hpp_source.html#l00042">addExclpid()</a>, and <a class="el" href="analysis_2bindings_8cpp_source.html#l00074">espressopp::analysis::registerPython()</a>.</p>
+<p>Referenced by <a class="el" href="AdressDensity_8hpp_source.html#l00042">addExclpid()</a>, and <a class="el" href="analysis_2bindings_8cpp_source.html#l00075">espressopp::analysis::registerPython()</a>.</p>
 
 </div>
 </div>
@@ -842,6 +881,30 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aaeb0a75186c9adb177cedc7480b91b11"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1analysis_1_1Observable.html#a4bc366e2d8694940175fd569f0e538a4">ObservableTypes</a> espressopp::analysis::Observable::observable_type</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00078">78</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
+
+<p>Referenced by <a class="el" href="KineticEnergy_8hpp_source.html#l00034">espressopp::analysis::KineticEnergy::KineticEnergy()</a>, and <a class="el" href="Observable_8hpp_source.html#l00045">espressopp::analysis::Observable::Observable()</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ae6aa3099e181fbd7bb070356d14eb735"></a>
 <div class="memitem">
 <div class="memproto">
@@ -860,7 +923,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00069">69</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00080">80</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="Observable_8cpp_source.html#l00039">espressopp::analysis::Observable::compute_int_vector_python()</a>.</p>
 
@@ -884,7 +947,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00068">68</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00079">79</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
 
 <p>Referenced by <a class="el" href="Observable_8cpp_source.html#l00032">espressopp::analysis::Observable::compute_real_vector_python()</a>.</p>
 
@@ -908,9 +971,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00067">67</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
+<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00077">77</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
 
-<p>Referenced by <a class="el" href="Observable_8hpp_source.html#l00062">espressopp::analysis::Observable::getResultType()</a>, <a class="el" href="NPart_8hpp_source.html#l00035">espressopp::analysis::NPart::NPart()</a>, <a class="el" href="Observable_8hpp_source.html#l00038">espressopp::analysis::Observable::Observable()</a>, and <a class="el" href="PotentialEnergy_8hpp_source.html#l00034">espressopp::analysis::PotentialEnergy::PotentialEnergy()</a>.</p>
+<p>Referenced by <a class="el" href="Observable_8hpp_source.html#l00072">espressopp::analysis::Observable::getResultType()</a>, <a class="el" href="KineticEnergy_8hpp_source.html#l00034">espressopp::analysis::KineticEnergy::KineticEnergy()</a>, <a class="el" href="NPart_8hpp_source.html#l00035">espressopp::analysis::NPart::NPart()</a>, <a class="el" href="Observable_8hpp_source.html#l00045">espressopp::analysis::Observable::Observable()</a>, and <a class="el" href="PotentialEnergy_8hpp_source.html#l00034">espressopp::analysis::PotentialEnergy::PotentialEnergy()</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="added1d31308b0eb531652d11aa92e7e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceespressopp.html#a345451aeb79c32019f74cb18899f1342">longint</a> espressopp::analysis::Observable::result_vector_size</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="Observable_8hpp_source.html#l00081">81</a> of file <a class="el" href="Observable_8hpp_source.html">Observable.hpp</a>.</p>
 
 </div>
 </div>
