@@ -10,7 +10,7 @@
 <area shape="rect" id="node32" href="$FixedPairListTypesInteractionTemplate_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/FixedPairListTypes\lInteractionTemplate.hpp" alt="" coords="4070,95,4294,151"/>
 <area shape="rect" id="node33" href="$SingleParticleInteractionTemplate_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/SingleParticle\lInteractionTemplate.hpp" alt="" coords="4318,95,4518,151"/>
 <area shape="rect" id="node34" href="$CellListAllParticlesInteractionTemplate_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/CellListAllParticles\lInteractionTemplate.hpp" alt="" coords="4541,95,4764,151"/>
-<area shape="rect" id="node35" href="$CoulombKSpaceEwald_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/CoulombKSpaceEwald.hpp" alt="" coords="4596,206,4867,247"/>
+<area shape="rect" id="node35" href="$CoulombKSpaceEwald_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/CoulombKSpaceEwald.hpp" alt="" coords="4597,206,4868,247"/>
 <area shape="rect" id="node36" href="$VerletListInteractionTemplate_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/VerletListInteraction\lTemplate.hpp" alt="" coords="4839,95,5067,151"/>
 <area shape="rect" id="node37" href="$VerletListAdressInteractionTemplate_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/VerletListAdress\lInteractionTemplate.hpp" alt="" coords="5091,95,5299,151"/>
 <area shape="rect" id="node38" href="$VerletListHadressInteractionTemplate_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/VerletListHadress\lInteractionTemplate.hpp" alt="" coords="5323,95,5539,151"/>
@@ -33,9 +33,9 @@
 <area shape="rect" id="node8" href="$PressureTensorLayer_8cpp.html" title="/home/espressopp/espressopp\l/src/analysis/PressureTensorLayer.cpp" alt="" coords="5,206,255,247"/>
 <area shape="rect" id="node10" href="$PressureTensorMultiLayer_8cpp.html" title="/home/espressopp/espressopp\l/src/analysis/PressureTensorMulti\lLayer.cpp" alt="" coords="279,199,499,255"/>
 <area shape="rect" id="node14" href="$AngularCosineSquared_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/AngularCosineSquared.hpp" alt="" coords="1456,206,1727,247"/>
-<area shape="rect" id="node15" href="$AngularCosineSquared_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/AngularCosineSquared.cpp" alt="" coords="1481,310,1752,351"/>
+<area shape="rect" id="node15" href="$AngularCosineSquared_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/AngularCosineSquared.cpp" alt="" coords="1508,310,1779,351"/>
 <area shape="rect" id="node16" href="$AngularHarmonic_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/AngularHarmonic.hpp" alt="" coords="2127,206,2365,247"/>
-<area shape="rect" id="node17" href="$AngularHarmonic_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/AngularHarmonic.cpp" alt="" coords="2102,310,2339,351"/>
+<area shape="rect" id="node17" href="$AngularHarmonic_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/AngularHarmonic.cpp" alt="" coords="2077,310,2314,351"/>
 <area shape="rect" id="node18" href="$Cosine_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/Cosine.hpp" alt="" coords="1802,206,2002,247"/>
 <area shape="rect" id="node19" href="$Cosine_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/Cosine.cpp" alt="" coords="1827,310,2027,351"/>
 <area shape="rect" id="node20" href="$DihedralRB_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralRB.cpp" alt="" coords="2880,206,3084,247"/>

@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="tools" href="tools.html"/>
         <link rel="next" title="io_extended - read/write configurational files" href="espressopp.tools.io_extended.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.tools.gromacs.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.tools.gromacs.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -188,15 +191,15 @@ It containts functions: read(), setInteractions(), convertTable()</p>
 <p>Some tips for using the gromacs parser:</p>
 <p><strong>Tip 1.</strong></p>
 <p>topol.top includes solvent via #include statements</p>
-<p>If the included .itp file ONLY contains the solvent molecule you&#8217;re using (e.g. spc/e water using spce.itp) then this is okay.</p>
-<p>But if the .itp file contains info about many molecules (e.g. you want to use one ion from ions.itp), then gromacs.py will just take the first one listed. You must edit your topol.top file to explicitly include the solvent molecule you&#8217;re using.</p>
+<p>If the included .itp file ONLY contains the solvent molecule you’re using (e.g. spc/e water using spce.itp) then this is okay.</p>
+<p>But if the .itp file contains info about many molecules (e.g. you want to use one ion from ions.itp), then gromacs.py will just take the first one listed. You must edit your topol.top file to explicitly include the solvent molecule you’re using.</p>
 <p>e.g. replace:</p>
-<div class="highlight-none"><div class="highlight"><pre>; Include topology for ions
+<div class="highlight-none"><div class="highlight"><pre><span></span>; Include topology for ions
 #include &quot;amber03.ff/ions.itp&quot;
 </pre></div>
 </div>
 <p>by:</p>
-<div class="highlight-none"><div class="highlight"><pre>; Include topology for ions
+<div class="highlight-none"><div class="highlight"><pre><span></span>; Include topology for ions
 [ moleculetype ]
 ; molname       nrexcl
 CL              1
@@ -207,11 +210,11 @@ CL              1
 </pre></div>
 </div>
 <p><strong>Tip 2. impropers</strong></p>
-<p>impropers in the topol.top file (function type 4) need to be labelled &#8216;[ impropers ]&#8217;, not &#8216;[ dihedrals ]&#8217; as in standard gromacs format&#8221;</p>
+<p>impropers in the topol.top file (function type 4) need to be labelled ‘[ impropers ]’, not ‘[ dihedrals ]’ as in standard gromacs format”</p>
 <p>Also, the dihedrals should be listed before the impropers (this is usuall the case by default in gromacs-format files).</p>
 <p><strong>Tip 3.</strong></p>
 <p>For rigid SPC/E water using Settle, spce.itp file should look like this:</p>
-<div class="highlight-none"><div class="highlight"><pre>[ moleculetype ]
+<div class="highlight-none"><div class="highlight"><pre><span></span>[ moleculetype ]
 ; molname       nrexcl
 SOL             2
 
@@ -234,25 +237,25 @@ SOL             2
 <hr class="docutils" />
 <p>The bonds section is used to generate exclusions, but bond and angle parameters are not relevant if the Settle extension is used. The geometry is that specified in the python script when adding the Settle extension</p>
 <p>Include modified spce file in topol.top, e.g. replace</p>
-<p>#include &#8220;amber03.ff/spce.itp&#8221;</p>
+<p>#include “amber03.ff/spce.itp”</p>
 <p>by</p>
-<p>#include &#8220;amber03.ff/spce-for-espressopp.itp&#8221;</p>
+<p>#include “amber03.ff/spce-for-espressopp.itp”</p>
 <p><strong>Tip 4.</strong></p>
 <p>Use absolute paths for any include files which are not in the standard gromacs topology directory ($GMXLIB)</p>
 <p>e.g. replace</p>
-<p>#include &#8220;mynewresidue.itp&#8221;</p>
+<p>#include “mynewresidue.itp”</p>
 <p>by</p>
-<p>#include &#8220;path/to/mynewres/file/mynewresidue.itp&#8221;</p>
+<p>#include “path/to/mynewres/file/mynewresidue.itp”</p>
 <p><strong>Tip 5.</strong></p>
-<p>The parser won&#8217;t work if the particles ids in the include files conflict with the particle ids in the topol.top file itself, and the bonded interaction parameters in the itp file need to be looked up via particle type in the standard gromacs topology directory ($GMXLIB)</p>
+<p>The parser won’t work if the particles ids in the include files conflict with the particle ids in the topol.top file itself, and the bonded interaction parameters in the itp file need to be looked up via particle type in the standard gromacs topology directory ($GMXLIB)</p>
 <p>i.e. Okay for an itp file like spce.itp above, where the bonds and angles parameters are given in the itp file, as in:</p>
-<div class="highlight-none"><div class="highlight"><pre>[ bonds ]
+<div class="highlight-none"><div class="highlight"><pre><span></span>[ bonds ]
 ; i     j       funct   length  force.c.
 1       2       1       0.1     345000  0.1     345000
 </pre></div>
 </div>
 <p>Not okay for an itp file containing lines like:</p>
-<div class="highlight-none"><div class="highlight"><pre>[ bonds ]
+<div class="highlight-none"><div class="highlight"><pre><span></span>[ bonds ]
 ; i     j       funct   length  force.c.
 1       2       1
 </pre></div>
@@ -265,13 +268,13 @@ is created). First column of input file can be either distance or angle.
 For non-bonded files, c6 and c12 can be provided. Default value for sigma, epsilon,
 c6 and c12 is 1.0. Electrostatics are not taken into account (f and fd columns).</p>
 <p>Keyword arguments:
-gro_in_file &#8211; the GROMACS tabulated file name (bonded, nonbonded, angle
+gro_in_file – the GROMACS tabulated file name (bonded, nonbonded, angle
 or dihedral).
-esp_out_file &#8211; filename of the ESPResSo++ tabulated file to be written.
-sigma &#8211; optional, depending on whether you want to convert units or not.
-epsilon &#8211; optional, depending on whether you want to convert units or not.
-c6 &#8211; optional
-c12 &#8211; optional</p>
+esp_out_file – filename of the ESPResSo++ tabulated file to be written.
+sigma – optional, depending on whether you want to convert units or not.
+epsilon – optional, depending on whether you want to convert units or not.
+c6 – optional
+c12 – optional</p>
 </dd></dl>
 
 <dl class="function">
@@ -279,11 +282,11 @@ c12 &#8211; optional</p>
 <code class="descclassname">espressopp.tools.gromacs.</code><code class="descname">read</code><span class="sig-paren">(</span><em>gro_file</em>, <em>top_file=''</em>, <em>doRegularExcl=True</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.gromacs.read" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read GROMACS data files.</p>
 <p>Arguments:
-:param gro_file: &#8211; contains coordinates of all particles, the number of particles, velocities and box size.
+:param gro_file: – contains coordinates of all particles, the number of particles, velocities and box size.
 :type gro_file: string
-:param top_file: &#8211; contains topology information. Included topology files (.itp) are also read
+:param top_file: – contains topology information. Included topology files (.itp) are also read
 :type gro_file: string
-:param doRegularExcl: &#8211; if True, exclusions are generated automatically based on the nregxcl parameter (see gromacs manual)
+:param doRegularExcl: – if True, exclusions are generated automatically based on the nregxcl parameter (see gromacs manual)
 :type doRegularExcl: bool</p>
 </dd></dl>
 
@@ -311,14 +314,14 @@ c12 &#8211; optional</p>
 <dd><p>Set interactions for all given particle types.
 Return value is a system with all interactions added.</p>
 <p>Keyword arguments:
-potentials &#8211; is a dictionary where key is a string composed
+potentials – is a dictionary where key is a string composed
 of two particle types and value is a potential.
-example: {&#8220;A_A&#8221;:potAA, &#8220;A_B&#8221;:potAB, &#8220;B_B&#8221;:potBB}
-particleTypes &#8211; is a dictionary where key is the particle type, and
+example: {“A_A”:potAA, “A_B”:potAB, “B_B”:potBB}
+particleTypes – is a dictionary where key is the particle type, and
 value is a list of particles of that type.
-example: {&#8220;A&#8221;:[&#8220;A1m&#8221;, &#8220;A2m&#8221;],&#8221;B&#8221;:[&#8220;B1u&#8221;,&#8221;B2u&#8221;]}
-system &#8211; is the system to which the interaction will be added
-interaction &#8211; is the interaction to which to add the potentials</p>
+example: {“A”:[“A1m”, “A2m”],”B”:[“B1u”,”B2u”]}
+system – is the system to which the interaction will be added
+interaction – is the interaction to which to add the potentials</p>
 </dd></dl>
 
 </div>
@@ -371,13 +374,13 @@ interaction &#8211; is the interaction to which to add the potentials</p>
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

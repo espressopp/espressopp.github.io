@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="espressopp.analysis.AnalysisBase" href="espressopp.analysis.AnalysisBase.html"/>
         <link rel="next" title="espressopp.analysis.Test" href="espressopp.analysis.Test.html"/>
@@ -167,7 +170,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.analysis.Temperature.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.analysis.Temperature.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -190,7 +193,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>system</strong> (<em>shared_ptr</em>) &#8211; system object</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>system</strong> (<em>shared_ptr</em>) – system object</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">temperature</td>
 </tr>
@@ -203,13 +206,13 @@
 \[T = \frac{1}{N_f} \sum^N_{i=1} m_i v_i^2,\]</div>
 <p>where <span class="math">\(m_i\)</span> and <span class="math">\(v_i\)</span> are the mass and velocity of a
 particle <span class="math">\(i\)</span>.</p>
-<p><span class="math">\(N_f = 3N\)</span> is the number of the system&#8217;s degrees of freedom.</p>
+<p><span class="math">\(N_f = 3N\)</span> is the number of the system’s degrees of freedom.</p>
 <p><strong>Example:</strong></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># declare an object, e.g., T:</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># declare an object, e.g., T:</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">Temperature</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># later in your script compute temperature and print it:</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="n">T</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">T</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -264,13 +267,13 @@ particle <span class="math">\(i\)</span>.</p>
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

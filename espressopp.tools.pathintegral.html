@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="tools" href="tools.html"/>
         <link rel="next" title="PDB - read and write pdb format" href="espressopp.tools.pdb.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.tools.pathintegral.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.tools.pathintegral.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -187,70 +190,58 @@
 <p>This method creates, based on the supplied topology of the system, an path-integral representation with P beads. 
 The path-integral system is a fully classical analog, which has to be run at an effective temperature P*T.</p>
 <p>The method needs the following parameters:</p>
-<ul>
+<ul class="simple">
 <li><dl class="first docutils">
 <dt>allParticles</dt>
-<dd><p class="first last">particles of the sytem</p>
-</dd>
+<dd>particles of the sytem</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>props</dt>
-<dd><p class="first last">particle properties</p>
-</dd>
+<dd>particle properties</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>types</dt>
-<dd><p class="first last">types, e.g. read from the gromacs parser</p>
-</dd>
+<dd>types, e.g. read from the gromacs parser</dd>
 </dl>
 </li>
-<li><p class="first">system</p>
-</li>
+<li>system</li>
 <li><dl class="first docutils">
 <dt>exclusions</dt>
-<dd><p class="first last">non-bonded exclusions</p>
-</dd>
+<dd>non-bonded exclusions</dd>
 </dl>
 </li>
-<li><p class="first">integrator</p>
-</li>
+<li>integrator</li>
 <li><dl class="first docutils">
 <dt>langevin</dt>
-<dd><p class="first last">langevin integrator</p>
-</dd>
+<dd>langevin integrator</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>rcut</dt>
-<dd><p class="first last">the cutoff used for the rings non-bonded interactions</p>
-</dd>
+<dd>the cutoff used for the rings non-bonded interactions</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>P</dt>
-<dd><p class="first last">the Trotter Number (number of imaginary time slices)</p>
-</dd>
+<dd>the Trotter Number (number of imaginary time slices)</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>polymerInitR</dt>
-<dd><p class="first last">polymer radius for setting up ring in 2d plane</p>
-</dd>
+<dd>polymer radius for setting up ring in 2d plane</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>hbar</dt>
-<dd><p class="first last">hbar in gromacs units [kJ/mol ps]</p>
-</dd>
+<dd>hbar in gromacs units [kJ/mol ps]</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>disableVVl</dt>
-<dd><p class="first last">disable Virtual Verlet List (slow but safe). If false, the neighbour search is based on the VirtualParticles extension, which contain 
-the rings. This speeds up neighbour search significantly.</p>
-</dd>
+<dd>disable Virtual Verlet List (slow but safe). If false, the neighbour search is based on the VirtualParticles extension, which contain 
+the rings. This speeds up neighbour search significantly.</dd>
 </dl>
 </li>
 </ul>
@@ -304,13 +295,13 @@ the rings. This speeds up neighbour search significantly.</p>
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

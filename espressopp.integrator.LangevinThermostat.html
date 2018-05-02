@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="integrator" href="integrator.html"/>
         <link rel="next" title="espressopp.integrator.LangevinThermostat1D" href="espressopp.integrator.LangevinThermostat1D.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.integrator.LangevinThermostat.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.integrator.LangevinThermostat.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -182,13 +185,13 @@
 <h1>espressopp.integrator.LangevinThermostat<a class="headerlink" href="#espressopp-integrator-langevinthermostat" title="Permalink to this headline">¶</a></h1>
 <p>Langevin Thermostat</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># set up the thermostat</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span><span class="o">.</span><span class="n">gamma</span> <span class="o">=</span> <span class="n">gamma</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># set friction coefficient gamma</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span><span class="o">.</span><span class="n">temperature</span> <span class="o">=</span> <span class="n">temp</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># set temperature</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span><span class="o">.</span><span class="n">adress</span> <span class="o">=</span> <span class="bp">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span><span class="o">.</span><span class="n">adress</span> <span class="o">=</span> <span class="kc">True</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># set adress (default is False)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">langevin</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># add extensions to a previously defined integrator</span>
@@ -201,7 +204,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>system</strong> (<em>shared_ptr&lt;System&gt;</em>) &#8211; system object</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>system</strong> (<em>shared_ptr&lt;System&gt;</em>) – system object</td>
 </tr>
 </tbody>
 </table>
@@ -214,7 +217,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pidlist</strong> (<em>list of ints</em>) &#8211; list of particle ids to be excluded from thermostating. In adaptive (AdResS) simulations, add ids of atomistic particles to be excluded (thermostats acts in this case on atomistic level). For normal simulations, add normal or coarse-grained particle ids.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pidlist</strong> (<em>list of ints</em>) – list of particle ids to be excluded from thermostating. In adaptive (AdResS) simulations, add ids of atomistic particles to be excluded (thermostats acts in this case on atomistic level). For normal simulations, add normal or coarse-grained particle ids.</td>
 </tr>
 </tbody>
 </table>
@@ -270,13 +273,13 @@
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

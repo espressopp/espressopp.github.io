@@ -1,7 +1,7 @@
 <map id="/home/espressopp/espressopp/src/Buffer.hpp" name="/home/espressopp/espressopp/src/Buffer.hpp">
 <area shape="rect" id="node2" href="$BufferDynamic_8hpp.html" title="BufferDynamic.hpp" alt="" coords="1095,95,1230,121"/>
 <area shape="rect" id="node3" href="$mpi_8hpp.html" title="mpi.hpp" alt="" coords="58,169,126,196"/>
-<area shape="rect" id="node6" href="$Particle_8hpp.html" title="Particle.hpp" alt="" coords="533,169,624,196"/>
+<area shape="rect" id="node6" href="$Particle_8hpp.html" title="Particle.hpp" alt="" coords="532,169,623,196"/>
 <area shape="rect" id="node7" href="$types_8hpp.html" title="types.hpp" alt="" coords="511,408,590,435"/>
 <area shape="rect" id="node16" href="$Single_8hpp.html" title="Single.hpp" alt="" coords="287,333,369,360"/>
 <area shape="rect" id="node17" href="$Triple_8hpp.html" title="Triple.hpp" alt="" coords="394,333,473,360"/>
@@ -9,5 +9,5 @@
 <area shape="rect" id="node21" href="$ESPPIterator_8hpp.html" title="esutil/ESPPIterator.hpp" alt="" coords="741,251,899,278"/>
 <area shape="rect" id="node22" href="$Real3D_8hpp.html" title="Real3D.hpp" alt="" coords="887,333,977,360"/>
 <area shape="rect" id="node23" href="$Int3D_8hpp.html" title="Int3D.hpp" alt="" coords="975,251,1054,278"/>
-<area shape="rect" id="node13" href="$esconfig_8hpp.html" title="esconfig.hpp" alt="" coords="737,490,833,517"/>
+<area shape="rect" id="node13" href="$esconfig_8hpp.html" title="esconfig.hpp" alt="" coords="731,490,827,517"/>
 </map>

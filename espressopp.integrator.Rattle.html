@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="integrator" href="integrator.html"/>
         <link rel="next" title="espressopp.integrator.Settle" href="espressopp.integrator.Settle.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.integrator.Rattle.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.integrator.Rattle.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -189,7 +192,7 @@
 <p>Note: At the moment, the RATTLE implementation only works if all atoms in an isolated group of rigid bonds are on the same CPU. This can be achieved by grouping all the particles using DomainDecompositionAdress and FixedTupleListAdress. The groups of rigid bonds can be identified using the dictionary constrainedBondsDict (see example below).</p>
 <p>Note: The constraints are not taken into account in other parts of the code, such as temperature or pressure calculation.</p>
 <p>Python example script for one methanol molecule where atoms are indexed in the order C H1 H2 H3 OH HO:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># list for each constrained bond which lists: heavy atom index, light atom index, bond length, heavy atom mass, light atom mass</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># list for each constrained bond which lists: heavy atom index, light atom index, bond length, heavy atom mass, light atom mass</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">constrainedBondsList</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">0.109</span><span class="p">,</span> <span class="mf">12.011</span><span class="p">,</span> <span class="mf">1.008</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mf">0.109</span><span class="p">,</span> <span class="mf">12.011</span><span class="p">,</span> <span class="mf">1.008</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mf">0.109</span><span class="p">,</span> <span class="mf">12.011</span><span class="p">,</span> <span class="mf">1.008</span><span class="p">],</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mf">0.096</span><span class="p">,</span> <span class="mf">15.9994</span><span class="p">,</span> <span class="mf">1.008</span><span class="p">]]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rattle</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">Rattle</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">maxit</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">tol</span> <span class="o">=</span> <span class="mf">1e-6</span><span class="p">,</span> <span class="n">rptol</span> <span class="o">=</span> <span class="mf">1e-6</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rattle</span><span class="o">.</span><span class="n">addConstrainedBonds</span><span class="p">(</span><span class="n">constrainedBondsList</span><span class="p">)</span>
@@ -197,7 +200,7 @@
 </pre></div>
 </div>
 <p>This list of lists of constrained bonds can be conveniently built using the espressopppp tool <cite>findConstrainedBonds</cite>.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Automatically identify hydrogen-containing bonds among the particles whose indices are in the list pidlist</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Automatically identify hydrogen-containing bonds among the particles whose indices are in the list pidlist</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># pidlist - list of indices of particles in which to search for hydrogens (list of int)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># masses - list of masses of all particles (list of real)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># massCutoff - atoms with mass &lt; massCutoff are identified as hydrogens (real)</span>
@@ -207,9 +210,9 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># hydrogenIDs - list of indices of hydrogen atoms</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># constrainedBondsDict - dictionary mapping from a heavy atom to all the light atoms it is bonded to, key: heavy atom index (int), value: list of light atom indices (list of int)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># constrainedBondsList - list of lists, constrained bonds for use with Rattle.addConstrainedBonds()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;# found&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">hydrogenIDs</span><span class="p">),</span><span class="s2">&quot; hydrogens in the solute&quot;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;# found&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">constrainedBondsDict</span><span class="p">),</span><span class="s2">&quot; heavy atoms involved in bonds to hydrogen&quot;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;# will constrain&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">constrainedBondsList</span><span class="p">),</span><span class="s2">&quot; bonds using RATTLE&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;# found&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">hydrogenIDs</span><span class="p">),</span><span class="s2">&quot; hydrogens in the solute&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;# found&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">constrainedBondsDict</span><span class="p">),</span><span class="s2">&quot; heavy atoms involved in bonds to hydrogen&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;# will constrain&quot;</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">constrainedBondsList</span><span class="p">),</span><span class="s2">&quot; bonds using RATTLE&quot;</span>
 </pre></div>
 </div>
 <dl class="function">
@@ -220,10 +223,10 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; espressopp system</li>
-<li><strong>maxit</strong> (<em>int</em>) &#8211; maximum number of iterations</li>
-<li><strong>tol</strong> (<em>real</em>) &#8211; tolerance for deciding if constraint distance and current distance are similar enough</li>
-<li><strong>rptol</strong> (<em>real</em>) &#8211; tolerance for deciding if the angle between the bond vector at end of previous timestep and current vector has become too large</li>
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) – espressopp system</li>
+<li><strong>maxit</strong> (<em>int</em>) – maximum number of iterations</li>
+<li><strong>tol</strong> (<em>real</em>) – tolerance for deciding if constraint distance and current distance are similar enough</li>
+<li><strong>rptol</strong> (<em>real</em>) – tolerance for deciding if the angle between the bond vector at end of previous timestep and current vector has become too large</li>
 </ul>
 </td>
 </tr>
@@ -238,7 +241,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bondDetailsLists</strong> (<em>list of [int, int, real, real, real]</em>) &#8211; list of lists, each list contains pid of heavy atom, pid of light atom, constraint distance, mass of heavy atom, mass of light atom</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bondDetailsLists</strong> (<em>list of</em><em> [</em><em>int</em><em>, </em><em>int</em><em>, </em><em>real</em><em>, </em><em>real</em><em>, </em><em>real</em><em>]</em>) – list of lists, each list contains pid of heavy atom, pid of light atom, constraint distance, mass of heavy atom, mass of light atom</td>
 </tr>
 </tbody>
 </table>
@@ -294,13 +297,13 @@
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

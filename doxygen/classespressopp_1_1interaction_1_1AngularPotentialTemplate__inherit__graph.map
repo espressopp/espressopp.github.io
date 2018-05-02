@@ -5,7 +5,7 @@
 <area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="espressopp::interaction\l::AngularPotentialTemplate\l\&lt; StillingerWeberTripleTerm \&gt;" alt="" coords="617,245,813,301"/>
 <area shape="rect" id="node11" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="espressopp::interaction\l::AngularPotentialTemplate\l\&lt; AngularCosineSquared \&gt;" alt="" coords="626,325,805,381"/>
 <area shape="rect" id="node13" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="espressopp::interaction\l::AngularPotentialTemplate\l\&lt; TersoffTripleTerm \&gt;" alt="" coords="626,405,805,461"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1AngularPotential.html" title="espressopp::interaction\l::AngularPotential" alt="" coords="5,222,163,263"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1AngularPotential.html" title="espressopp::interaction\l::AngularPotential" alt="" coords="5,213,163,254"/>
 <area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1Cosine.html" title="This class provides methods to compute forces and energies of the Cosine angular potential. " alt="" coords="874,13,1031,54"/>
 <area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1TabulatedAngular.html" title="espressopp::interaction\l::TabulatedAngular" alt="" coords="874,93,1031,134"/>
 <area shape="rect" id="node8" href="$classespressopp_1_1interaction_1_1AngularHarmonic.html" title="This class provides methods to compute forces and energies of the AngularHarmonic angular potential..." alt="" coords="874,173,1031,214"/>

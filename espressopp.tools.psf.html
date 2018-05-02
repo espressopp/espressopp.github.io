@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="tools" href="tools.html"/>
         <link rel="next" title="tabulated - write tabulated file" href="espressopp.tools.tabulated.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.tools.psf.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.tools.psf.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -190,11 +193,11 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>filename</strong> (<em>string</em>) &#8211; output file name</li>
-<li><strong>system</strong> (<em>espressopp System object</em>) &#8211; espressopp system</li>
-<li><strong>maxdist</strong> (<em>float</em>) &#8211; if this is specified, only bonds in which the pair of particles are separated by a distance &lt; maxdist are written to the !NBOND section</li>
-<li><strong>molsize</strong> (<em>int</em>) &#8211; if molsize&gt;0, the molecule count is increased every molsize particles</li>
-<li><strong>typenames</strong> (<em>dict, key=int, value=string</em>) &#8211; dictionary used for mapping from espressopp&#8217;s integer particle types to the particle type strings written in a psf file</li>
+<li><strong>filename</strong> (<em>string</em>) – output file name</li>
+<li><strong>system</strong> (<em>espressopp System object</em>) – espressopp system</li>
+<li><strong>maxdist</strong> (<em>float</em>) – if this is specified, only bonds in which the pair of particles are separated by a distance &lt; maxdist are written to the !NBOND section</li>
+<li><strong>molsize</strong> (<em>int</em>) – if molsize&gt;0, the molecule count is increased every molsize particles</li>
+<li><strong>typenames</strong> (<em>dict</em><em>, </em><em>key=int</em><em>, </em><em>value=string</em>) – dictionary used for mapping from espressopp’s integer particle types to the particle type strings written in a psf file</li>
 </ul>
 </td>
 </tr>
@@ -210,7 +213,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<em>string</em>) &#8211; input file name</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<em>string</em>) – input file name</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">pid,segname,resindex,resname,atomname,atomtype,mass,charge (lists of type int,str,int,str,str,str,float,float)</td>
 </tr>
@@ -268,13 +271,13 @@
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="integrator" href="integrator.html"/>
         <link rel="next" title="espressopp.integrator.LangevinThermostatOnRadius" href="espressopp.integrator.LangevinThermostatOnRadius.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.integrator.LangevinThermostatOnGroup.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.integrator.LangevinThermostatOnGroup.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -189,8 +192,8 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) &#8211; The system object.</li>
-<li><strong>particle_group</strong> (<a class="reference internal" href="espressopp.ParticleGroup.html#module-espressopp.ParticleGroup" title="espressopp.ParticleGroup"><em>espressopp.ParticleGroup</em></a>) &#8211; The particle group.</li>
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) – The system object.</li>
+<li><strong>particle_group</strong> (<a class="reference internal" href="espressopp.ParticleGroup.html#module-espressopp.ParticleGroup" title="espressopp.ParticleGroup"><em>espressopp.ParticleGroup</em></a>) – The particle group.</li>
 </ul>
 </td>
 </tr>
@@ -200,7 +203,7 @@
 
 <div class="section" id="example">
 <h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pg</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">ParticleGroup</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pg</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">ParticleGroup</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">pid</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">pg</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">pid</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinThermostatOnGroup</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">pg</span><span class="p">)</span>
@@ -260,13 +263,13 @@
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

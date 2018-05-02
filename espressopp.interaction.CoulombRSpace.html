@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="interaction" href="interaction.html"/>
         <link rel="next" title="espressopp.interaction.CoulombTruncated" href="espressopp.interaction.CoulombTruncated.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.interaction.CoulombRSpace.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.interaction.CoulombRSpace.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -182,18 +185,18 @@
 <h1>espressopp.interaction.CoulombRSpace<a class="headerlink" href="#espressopp-interaction-coulombrspace" title="Permalink to this headline">¶</a></h1>
 <p>Coulomb potential and interaction Objects (<cite>R</cite> space part)</p>
 <div class="math">
-\[\begin{split}\sum^{N}_{i=1}
+\[\sum^{N}_{i=1}
 \sum_{j&gt;i \atop r_{ij}&lt;k_{max}}
 \frac{q_{i}q_{j}}{r_{ij}}
 erfc(\alpha r_{ij})
 - \frac{\alpha}{\sqrt{\pi}}
 \sum^{N}_{i=1}
-q_{i}^2\end{split}\]</div>
+q_{i}^2\]</div>
 <p>This is the <cite>R</cite> space part of potential of Coulomb long range interaction according to the Ewald
 summation technique. Good explanation of Ewald summation could be found here <a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html#allen89" id="id1">[Allen89]</a>,
 <a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html#deserno98" id="id2">[Deserno98]</a>.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletList</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="o">+</span><span class="n">skin</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletList</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="o">+</span><span class="n">skin</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_pot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">CoulombRSpace</span><span class="p">(</span><span class="n">coulomb_prefactor</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_int</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">VerletListCoulombRSpace</span><span class="p">(</span><span class="n">vl</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_int</span><span class="o">.</span><span class="n">setPotential</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">potential</span> <span class="o">=</span> <span class="n">coulombR_pot</span><span class="p">)</span>
@@ -206,30 +209,30 @@ summation technique. Good explanation of Ewald summation could be found here <a 
 <div><p>It provides potential object <em>CoulombRSpace</em> and interaction object <em>VerletListCoulombRSpace</em></p>
 <p>The <em>potential</em> is based on parameters: Coulomb prefactor (coulomb_prefactor), Ewald parameter
 (alpha), and the cutoff in R space (rspacecutoff).</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_pot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">CoulombRSpace</span><span class="p">(</span><span class="n">coulomb_prefactor</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_pot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">CoulombRSpace</span><span class="p">(</span><span class="n">coulomb_prefactor</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Potential Properties:</p>
 <ul>
 <li><p class="first"><em>coulombR_pot.prefactor</em></p>
-<p>The property &#8216;prefactor&#8217; defines the Coulomb prefactor.</p>
+<p>The property ‘prefactor’ defines the Coulomb prefactor.</p>
 </li>
 <li><p class="first"><em>coulombR_pot.alpha</em></p>
-<p>The property &#8216;alpha&#8217; defines the Ewald parameter <span class="math">\(\\alpha\)</span>.</p>
+<p>The property ‘alpha’ defines the Ewald parameter <span class="math">\(\\alpha\)</span>.</p>
 </li>
 <li><p class="first"><em>coulombR_pot.cutoff</em></p>
-<p>The property &#8216;cutoff&#8217; defines the cutoff in R space.</p>
+<p>The property ‘cutoff’ defines the cutoff in R space.</p>
 </li>
 </ul>
 <p>The <em>interaction</em> is based on the Verlet list (<a class="reference internal" href="#verletlist">VerletList</a>)</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletList</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="o">+</span><span class="n">skin</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletList</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rspacecutoff</span><span class="o">+</span><span class="n">skin</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_int</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">VerletListCoulombRSpace</span><span class="p">(</span><span class="n">vl</span><span class="p">)</span>
 </pre></div>
 </div>
 </div></blockquote>
 <blockquote id="verletlist">
 <div><p>It should include at least one potential</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_int</span><span class="o">.</span><span class="n">setPotential</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">potential</span> <span class="o">=</span> <span class="n">coulombR_pot</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">coulombR_int</span><span class="o">.</span><span class="n">setPotential</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">potential</span> <span class="o">=</span> <span class="n">coulombR_pot</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Interaction Methods:</p>
@@ -244,7 +247,7 @@ bunch of potentials for the different particle types.</p>
 </ul>
 </div></blockquote>
 <p>Adding the interaction to the system:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">coulombR_int</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">coulombR_int</span><span class="p">)</span>
 </pre></div>
 </div>
 <dl class="function">
@@ -255,9 +258,9 @@ bunch of potentials for the different particle types.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>prefactor</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
-<li><strong>alpha</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
-<li><strong>cutoff</strong> &#8211; (default: infinity)</li>
+<li><strong>prefactor</strong> (<em>real</em>) – (default: 1.0)</li>
+<li><strong>alpha</strong> (<em>real</em>) – (default: 1.0)</li>
+<li><strong>cutoff</strong> – (default: infinity)</li>
 </ul>
 </td>
 </tr>
@@ -272,7 +275,7 @@ bunch of potentials for the different particle types.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> – </td>
 </tr>
 </tbody>
 </table>
@@ -286,8 +289,8 @@ bunch of potentials for the different particle types.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>type1</strong> &#8211; </li>
-<li><strong>type2</strong> &#8211; </li>
+<li><strong>type1</strong> – </li>
+<li><strong>type2</strong> – </li>
 </ul>
 </td>
 </tr>
@@ -319,9 +322,9 @@ bunch of potentials for the different particle types.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> &#8211; </li>
-<li><strong>type2</strong> &#8211; </li>
-<li><strong>potential</strong> &#8211; </li>
+<li><strong>type1</strong> – </li>
+<li><strong>type2</strong> – </li>
+<li><strong>potential</strong> – </li>
 </ul>
 </td>
 </tr>
@@ -379,13 +382,13 @@ bunch of potentials for the different particle types.</p>
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

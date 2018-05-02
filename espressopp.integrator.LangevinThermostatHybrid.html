@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="integrator" href="integrator.html"/>
         <link rel="next" title="espressopp.integrator.LangevinThermostatOnGroup" href="espressopp.integrator.LangevinThermostatOnGroup.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.integrator.LangevinThermostatHybrid.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.integrator.LangevinThermostatHybrid.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -181,7 +184,7 @@
   <span class="target" id="module-espressopp.integrator.LangevinThermostatHybrid"></span><div class="section" id="espressopp-integrator-langevinthermostathybrid">
 <h1>espressopp.integrator.LangevinThermostatHybrid<a class="headerlink" href="#espressopp-integrator-langevinthermostathybrid" title="Permalink to this headline">¶</a></h1>
 <p>As LangevinThermostat, but for use in AdResS systems, to allow the application of different thermostat friction constants (<span class="math">\(\gamma\)</span>) to different AdResS regions. Uses three values of <span class="math">\(\gamma\)</span>, one for the atomistic region, one for the hybrid region, and one for the coarse-grained region.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># create FixedTupleList object</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># create FixedTupleList object</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ftpl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedTupleListAdress</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ftpl</span><span class="o">.</span><span class="n">addTuples</span><span class="p">(</span><span class="n">tuples</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">setFixedTuplesAdress</span><span class="p">(</span><span class="n">ftpl</span><span class="p">)</span>
@@ -193,11 +196,11 @@
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># set Langevin friction constants</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span><span class="o">.</span><span class="n">gamma</span>       <span class="o">=</span> <span class="mf">0.0</span> <span class="c1"># units = 1/timeunit</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;# gamma for atomistic region for langevin thermostat = &quot;</span><span class="p">,</span><span class="n">thermostat</span><span class="o">.</span><span class="n">gamma</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;# gamma for atomistic region for langevin thermostat = &quot;</span><span class="p">,</span><span class="n">thermostat</span><span class="o">.</span><span class="n">gamma</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span><span class="o">.</span><span class="n">gammahy</span>     <span class="o">=</span> <span class="mf">10.0</span> <span class="c1"># units = 1/timeunit</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;# gamma for hybrid region for langevin thermostat = &quot;</span><span class="p">,</span><span class="n">thermostat</span><span class="o">.</span><span class="n">gammahy</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;# gamma for hybrid region for langevin thermostat = &quot;</span><span class="p">,</span><span class="n">thermostat</span><span class="o">.</span><span class="n">gammahy</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span><span class="o">.</span><span class="n">gammacg</span>     <span class="o">=</span> <span class="mf">10.0</span> <span class="c1"># units = 1/timeunit</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;# gamma for coarse-grained region for langevin thermostat = &quot;</span><span class="p">,</span><span class="n">thermostat</span><span class="o">.</span><span class="n">gammacg</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;# gamma for coarse-grained region for langevin thermostat = &quot;</span><span class="p">,</span><span class="n">thermostat</span><span class="o">.</span><span class="n">gammacg</span>
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># set temperature of thermostat</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span><span class="o">.</span><span class="n">temperature</span> <span class="o">=</span> <span class="n">kBT</span>
@@ -205,7 +208,7 @@
 </pre></div>
 </div>
 <p>No need to include the line</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span><span class="o">.</span><span class="n">adress</span> <span class="o">=</span> <span class="bp">True</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span><span class="o">.</span><span class="n">adress</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
 <p>as is necessary in the case of the basic LangevinThermostat, because LangevinThermostatHybrid is always only used in AdResS systems</p>
@@ -259,13 +262,13 @@
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

@@ -1,6 +1,6 @@
 <map id="espressopp::interaction::FixedQuadrupleListTypesInteractionTemplate&lt; _DihedralPotential &gt;" name="espressopp::interaction::FixedQuadrupleListTypesInteractionTemplate&lt; _DihedralPotential &gt;">
 <area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class. " alt="" coords="723,5,880,47"/>
 <area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="708,71,895,98"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1Array4D.html" title="espressopp::esutil\l::Array4D\&lt; Potential,\l esutil::enlarge \&gt;" alt="" coords="729,187,874,243"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1Array4D.html" title="espressopp::esutil\l::Array4D\&lt; Potential,\l esutil::enlarge \&gt;" alt="" coords="729,189,874,245"/>
 <area shape="rect" id="node10" href="$classespressopp_1_1esutil_1_1Array4D.html" title="A four&#45;dimensional array (i.e. " alt="" coords="327,242,469,298"/>
 </map>

@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="espressopp" href="espressopp.html"/>
         <link rel="next" title="espressopp.Tensor" href="espressopp.Tensor.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.System.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.System.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -197,7 +200,7 @@ class.</p>
 interactions are added with the <cite>addInteraction()</cite> method of the System</li>
 </ul>
 <p>Example (not complete):</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">System</span><span class="p">()</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">System</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span><span class="o">.</span><span class="n">bc</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">OrthorhombicBC</span><span class="p">(</span><span class="n">rng</span><span class="p">,</span> <span class="n">boxsize</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span><span class="o">.</span><span class="n">rng</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span><span class="o">.</span><span class="n">skin</span> <span class="o">=</span> <span class="mf">0.4</span>
@@ -217,8 +220,8 @@ interactions are added with the <cite>addInteraction()</cite> method of the Syst
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>interaction</strong> &#8211; </li>
-<li><strong>name</strong> (<em>string</em>) &#8211; The optional name of the interaction.</li>
+<li><strong>interaction</strong> – </li>
+<li><strong>name</strong> (<em>string</em>) – The optional name of the interaction.</li>
 </ul>
 </td>
 </tr>
@@ -236,7 +239,7 @@ interactions are added with the <cite>addInteraction()</cite> method of the Syst
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>number</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>number</strong> – </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
 </tr>
@@ -264,7 +267,7 @@ interactions are added with the <cite>addInteraction()</cite> method of the Syst
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>number</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>number</strong> – </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
 </tr>
@@ -279,7 +282,7 @@ interactions are added with the <cite>addInteraction()</cite> method of the Syst
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) &#8211; The name of the interaction to remove.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<em>str</em>) – The name of the interaction to remove.</td>
 </tr>
 </tbody>
 </table>
@@ -305,7 +308,7 @@ interactions are added with the <cite>addInteraction()</cite> method of the Syst
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>*args</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>*args</strong> – </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
 </tr>
@@ -320,7 +323,7 @@ interactions are added with the <cite>addInteraction()</cite> method of the Syst
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>switch</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>switch</strong> – </td>
 </tr>
 </tbody>
 </table>
@@ -376,13 +379,13 @@ interactions are added with the <cite>addInteraction()</cite> method of the Syst
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

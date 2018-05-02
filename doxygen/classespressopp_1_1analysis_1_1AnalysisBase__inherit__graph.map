@@ -1,23 +1,23 @@
 <map id="espressopp::analysis::AnalysisBase" name="espressopp::analysis::AnalysisBase">
-<area shape="rect" id="node4" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; int \&gt;" alt="" coords="1012,173,1176,229"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; real \&gt;" alt="" coords="1012,88,1176,144"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; int \&gt;" alt="" coords="1012,171,1176,227"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; real \&gt;" alt="" coords="1012,87,1176,143"/>
 <area shape="rect" id="node11" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; Real3D \&gt;" alt="" coords="1012,5,1176,61"/>
-<area shape="rect" id="node13" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; RealND \&gt;" alt="" coords="1012,545,1176,601"/>
-<area shape="rect" id="node15" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; result \&gt;" alt="" coords="1012,263,1176,319"/>
-<area shape="rect" id="node17" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; Tensor \&gt;" alt="" coords="1012,445,1176,501"/>
-<area shape="rect" id="node20" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; vector\&lt; Tensor \&gt; \&gt;" alt="" coords="1012,348,1176,404"/>
-<area shape="rect" id="node22" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; ResultType \&gt;" alt="" coords="671,271,835,327"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1ParticleAccess.html" title="espressopp::ParticleAccess" alt="" coords="241,339,427,365"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,339,192,365"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1analysis_1_1Test.html" title="Class to test AnalysisBase. " alt="" coords="1244,181,1389,222"/>
-<area shape="rect" id="node7" href="$classespressopp_1_1analysis_1_1LBOutput.html" title="Abstract base class for arbitrary output from LB simulations. " alt="" coords="1244,95,1389,137"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1analysis_1_1LBOutputScreen.html" title="espressopp::analysis\l::LBOutputScreen" alt="" coords="1457,30,1603,71"/>
-<area shape="rect" id="node9" href="$classespressopp_1_1analysis_1_1LBOutputVzInTime.html" title="espressopp::analysis\l::LBOutputVzInTime" alt="" coords="1457,95,1603,137"/>
-<area shape="rect" id="node10" href="$classespressopp_1_1analysis_1_1LBOutputVzOfX.html" title="espressopp::analysis\l::LBOutputVzOfX" alt="" coords="1457,161,1603,202"/>
+<area shape="rect" id="node13" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; RealND \&gt;" alt="" coords="1012,544,1176,600"/>
+<area shape="rect" id="node15" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; result \&gt;" alt="" coords="1012,259,1176,315"/>
+<area shape="rect" id="node17" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; Tensor \&gt;" alt="" coords="1012,441,1176,497"/>
+<area shape="rect" id="node20" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; vector\&lt; Tensor \&gt; \&gt;" alt="" coords="1012,340,1176,396"/>
+<area shape="rect" id="node22" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; ResultType \&gt;" alt="" coords="671,269,835,325"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1ParticleAccess.html" title="espressopp::ParticleAccess" alt="" coords="241,333,427,360"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,333,192,360"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1analysis_1_1Test.html" title="Class to test AnalysisBase. " alt="" coords="1244,178,1389,219"/>
+<area shape="rect" id="node7" href="$classespressopp_1_1analysis_1_1LBOutput.html" title="Abstract base class for arbitrary output from LB simulations. " alt="" coords="1244,94,1389,135"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1analysis_1_1LBOutputScreen.html" title="espressopp::analysis\l::LBOutputScreen" alt="" coords="1457,29,1603,70"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1analysis_1_1LBOutputVzInTime.html" title="espressopp::analysis\l::LBOutputVzInTime" alt="" coords="1457,94,1603,135"/>
+<area shape="rect" id="node10" href="$classespressopp_1_1analysis_1_1LBOutputVzOfX.html" title="espressopp::analysis\l::LBOutputVzOfX" alt="" coords="1457,159,1603,201"/>
 <area shape="rect" id="node12" href="$classespressopp_1_1analysis_1_1CMVelocity.html" title="Class to compute the total velocity of a system. " alt="" coords="1244,13,1389,54"/>
-<area shape="rect" id="node14" href="$classespressopp_1_1analysis_1_1OrderParameter.html" title="compute order parameter. " alt="" coords="1244,553,1389,594"/>
-<area shape="rect" id="node16" href="$classespressopp_1_1analysis_1_1ParticleRadiusDistribution.html" title="espressopp::analysis\l::ParticleRadiusDistribution" alt="" coords="1226,270,1407,311"/>
-<area shape="rect" id="node18" href="$classespressopp_1_1analysis_1_1PressureTensor.html" title="Class to compute the pressure tensor. " alt="" coords="1244,421,1389,462"/>
-<area shape="rect" id="node19" href="$classespressopp_1_1analysis_1_1PressureTensorLayer.html" title="Class to compute the pressure tensor. " alt="" coords="1239,486,1394,527"/>
-<area shape="rect" id="node21" href="$classespressopp_1_1analysis_1_1PressureTensorMultiLayer.html" title="Class to compute the pressure tensor. " alt="" coords="1225,355,1408,397"/>
+<area shape="rect" id="node14" href="$classespressopp_1_1analysis_1_1OrderParameter.html" title="compute order parameter. " alt="" coords="1244,551,1389,593"/>
+<area shape="rect" id="node16" href="$classespressopp_1_1analysis_1_1ParticleRadiusDistribution.html" title="espressopp::analysis\l::ParticleRadiusDistribution" alt="" coords="1226,266,1407,307"/>
+<area shape="rect" id="node18" href="$classespressopp_1_1analysis_1_1PressureTensor.html" title="Class to compute the pressure tensor. " alt="" coords="1244,415,1389,457"/>
+<area shape="rect" id="node19" href="$classespressopp_1_1analysis_1_1PressureTensorLayer.html" title="Class to compute the pressure tensor. " alt="" coords="1239,481,1394,522"/>
+<area shape="rect" id="node21" href="$classespressopp_1_1analysis_1_1PressureTensorMultiLayer.html" title="Class to compute the pressure tensor. " alt="" coords="1225,347,1408,389"/>
 </map>

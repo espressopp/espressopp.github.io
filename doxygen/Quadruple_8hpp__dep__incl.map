@@ -32,7 +32,7 @@
 <area shape="rect" id="node32" href="$ExtForce_8hpp.html" title="/home/espressopp/espressopp\l/src/integrator/ExtForce.hpp" alt="" coords="4386,295,4586,337"/>
 <area shape="rect" id="node33" href="$CapForce_8hpp.html" title="/home/espressopp/espressopp\l/src/integrator/CapForce.hpp" alt="" coords="4660,295,4860,337"/>
 <area shape="rect" id="node34" href="$VelocityVerletOnRadius_8hpp.html" title="/home/espressopp/espressopp\l/src/integrator/VelocityVerletOn\lRadius.hpp" alt="" coords="4885,288,5089,344"/>
-<area shape="rect" id="node35" href="$EmptyExtension_8hpp.html" title="/home/espressopp/espressopp\l/src/integrator/EmptyExtension.hpp" alt="" coords="5671,295,5898,337"/>
+<area shape="rect" id="node35" href="$EmptyExtension_8hpp.html" title="/home/espressopp/espressopp\l/src/integrator/EmptyExtension.hpp" alt="" coords="5674,295,5900,337"/>
 <area shape="rect" id="node36" href="$LangevinThermostat_8hpp.html" title="/home/espressopp/espressopp\l/src/integrator/LangevinThermostat.hpp" alt="" coords="4234,191,4484,233"/>
 <area shape="rect" id="node37" href="$LangevinThermostat1D_8hpp.html" title="/home/espressopp/espressopp\l/src/integrator/LangevinThermostat1D.hpp" alt="" coords="4508,191,4775,233"/>
 <area shape="rect" id="node38" href="$GeneralizedLangevinThermostat_8hpp.html" title="/home/espressopp/espressopp\l/src/integrator/GeneralizedLangevin\lThermostat.hpp" alt="" coords="4799,184,5026,240"/>

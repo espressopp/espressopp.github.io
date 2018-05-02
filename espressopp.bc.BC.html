@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="bc" href="bc.html"/>
         <link rel="next" title="check" href="check.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.bc.BC.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.bc.BC.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -210,8 +213,8 @@ the following methods:</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>pos</strong> &#8211; </li>
-<li><strong>imageBox</strong> &#8211; (default: None)</li>
+<li><strong>pos</strong> – </li>
+<li><strong>imageBox</strong> – (default: None)</li>
 </ul>
 </td>
 </tr>
@@ -230,8 +233,8 @@ the following methods:</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>pos1</strong> &#8211; </li>
-<li><strong>pos2</strong> &#8211; </li>
+<li><strong>pos1</strong> – </li>
+<li><strong>pos2</strong> – </li>
 </ul>
 </td>
 </tr>
@@ -263,8 +266,8 @@ the following methods:</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>pos</strong> &#8211; </li>
-<li><strong>imageBox</strong> &#8211; </li>
+<li><strong>pos</strong> – </li>
+<li><strong>imageBox</strong> – </li>
 </ul>
 </td>
 </tr>
@@ -287,7 +290,7 @@ in the documentation of the abstract class <strong>BC</strong>.</p>
 <p>The OrthorhombicBC class is responsible for the orthorhombic boundary condition.
 Currently only periodic boundary conditions are supported.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">boxsize</span> <span class="o">=</span> <span class="p">(</span><span class="n">Lx</span><span class="p">,</span> <span class="n">Ly</span><span class="p">,</span> <span class="n">Lz</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boxsize</span> <span class="o">=</span> <span class="p">(</span><span class="n">Lx</span><span class="p">,</span> <span class="n">Ly</span><span class="p">,</span> <span class="n">Lz</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">bc</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">OrthorhombicBC</span><span class="p">(</span><span class="n">rng</span><span class="p">,</span> <span class="n">boxsize</span><span class="p">)</span> 
 </pre></div>
 </div>
@@ -299,8 +302,8 @@ Currently only periodic boundary conditions are supported.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>rng</strong> &#8211; </li>
-<li><strong>boxL</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
+<li><strong>rng</strong> – </li>
+<li><strong>boxL</strong> (<em>real</em>) – (default: 1.0)</li>
 </ul>
 </td>
 </tr>
@@ -315,7 +318,7 @@ Currently only periodic boundary conditions are supported.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>boxL</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>boxL</strong> – </td>
 </tr>
 </tbody>
 </table>
@@ -328,10 +331,10 @@ Currently only periodic boundary conditions are supported.</p>
 the base class <strong>BC</strong> , which are described in detail in the documentation of
 the abstract class <strong>BC</strong>.</p>
 <p>The SlabBC class is responsible for a cuboid boundary condition that is periodic
-in all but the &#8220;dir&#8221; dimension. Currently, dir is set arbirtrarily to &#8220;0&#8221; (the
+in all but the “dir” dimension. Currently, dir is set arbirtrarily to “0” (the
 x-direction).</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">boxsize</span> <span class="o">=</span> <span class="p">(</span><span class="n">Lx</span><span class="p">,</span> <span class="n">Ly</span><span class="p">,</span> <span class="n">Lz</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boxsize</span> <span class="o">=</span> <span class="p">(</span><span class="n">Lx</span><span class="p">,</span> <span class="n">Ly</span><span class="p">,</span> <span class="n">Lz</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">bc</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">SlabBC</span><span class="p">(</span><span class="n">rng</span><span class="p">,</span> <span class="n">boxsize</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -343,8 +346,8 @@ x-direction).</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>rng</strong> &#8211; </li>
-<li><strong>boxL</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
+<li><strong>rng</strong> – </li>
+<li><strong>boxL</strong> (<em>real</em>) – (default: 1.0)</li>
 </ul>
 </td>
 </tr>
@@ -359,7 +362,7 @@ x-direction).</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>boxL</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>boxL</strong> – </td>
 </tr>
 </tbody>
 </table>
@@ -416,13 +419,13 @@ x-direction).</p>
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

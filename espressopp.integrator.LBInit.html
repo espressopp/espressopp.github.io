@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="integrator" href="integrator.html"/>
         <link rel="next" title="espressopp.integrator.MDIntegrator" href="espressopp.integrator.MDIntegrator.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.integrator.LBInit.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.integrator.LBInit.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -215,8 +218,8 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>rho0</strong> (<em>real</em>) &#8211; density</li>
-<li><strong>u0</strong> (<a class="reference internal" href="espressopp.Real3D.html#module-espressopp.Real3D" title="espressopp.Real3D"><em>Real3D</em></a>) &#8211; velocity</li>
+<li><strong>rho0</strong> (<em>real</em>) – density</li>
+<li><strong>u0</strong> (<a class="reference internal" href="espressopp.Real3D.html#module-espressopp.Real3D" title="espressopp.Real3D"><em>Real3D</em></a>) – velocity</li>
 </ul>
 </td>
 </tr>
@@ -237,7 +240,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference internal" href="espressopp.Real3D.html#module-espressopp.Real3D" title="espressopp.Real3D"><em>Real3D</em></a>) &#8211; value of the force</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>value</strong> (<a class="reference internal" href="espressopp.Real3D.html#module-espressopp.Real3D" title="espressopp.Real3D"><em>Real3D</em></a>) – value of the force</td>
 </tr>
 </tbody>
 </table>
@@ -251,7 +254,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>force</strong> (<a class="reference internal" href="espressopp.Real3D.html#module-espressopp.Real3D" title="espressopp.Real3D"><em>Real3D</em></a>) &#8211; value of the force</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>force</strong> (<a class="reference internal" href="espressopp.Real3D.html#module-espressopp.Real3D" title="espressopp.Real3D"><em>Real3D</em></a>) – value of the force</td>
 </tr>
 </tbody>
 </table>
@@ -269,7 +272,7 @@
 <p>This class creates LB-fluid with uniform density <code class="docutils literal"><span class="pre">rho0</span></code> and velocity <code class="docutils literal"><span class="pre">u0</span></code> (<em>lattice
 units</em>).</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set initial density and velocity</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set initial density and velocity</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">initDen</span> <span class="o">=</span> <span class="mf">1.</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">initVel</span> <span class="o">=</span> <span class="n">Real3D</span><span class="p">(</span> <span class="mf">0.</span> <span class="p">)</span>
 <span class="go">&gt;&gt;&gt;</span>
@@ -291,7 +294,7 @@ where <span class="math">\(A\)</span> is the amplitude of the velocity wave,
 <p>This may be used to test the system: total moment is zero and the liquid tends to 
 equilibrium, i.e. relaxes to a uniform zero velocity.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set initial density</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set initial density</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">initDen</span> <span class="o">=</span> <span class="mf">1.</span>
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># set initial velocity</span>
@@ -311,13 +314,13 @@ equilibrium, i.e. relaxes to a uniform zero velocity.</p>
 (<em>lattice units</em>) to the LB-fluid. At first, one has to create a force object and then 
 set or add this force to the system.</p>
 <p>Example to set extenal force:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">extForceToSet</span> <span class="o">=</span> <span class="n">Real3D</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.0005</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">extForceToSet</span> <span class="o">=</span> <span class="n">Real3D</span><span class="p">(</span><span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.0005</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce</span><span class="o">.</span><span class="n">setForce</span><span class="p">(</span> <span class="n">extForceToSet</span> <span class="p">)</span>
 </pre></div>
 </div>
 <p>Example to add extenal force to the existing forces:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">extForceToAdd</span> <span class="o">=</span> <span class="n">Real3D</span><span class="p">(</span><span class="mf">0.0001</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">extForceToAdd</span> <span class="o">=</span> <span class="n">Real3D</span><span class="p">(</span><span class="mf">0.0001</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="mf">0.</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lbforce</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span> <span class="n">extForceToAdd</span> <span class="p">)</span>
 </pre></div>
@@ -336,7 +339,7 @@ sin-modulation. The <em>x</em>- and <em>y</em>-components of the specified force
 body forces in corresponding directions.</p>
 </div>
 <p>Example to set external sin-like force.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ampFz</span> <span class="o">=</span> <span class="mf">0.0001</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ampFz</span> <span class="o">=</span> <span class="mf">0.0001</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Fx</span> <span class="o">=</span> <span class="n">Fy</span> <span class="o">=</span> <span class="mf">0.</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">extForceToSet</span> <span class="o">=</span> <span class="n">Real3D</span><span class="p">(</span> <span class="n">Fx</span><span class="p">,</span> <span class="n">Fy</span><span class="p">,</span> <span class="n">ampFz</span> <span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lbforceSin</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
@@ -344,7 +347,7 @@ body forces in corresponding directions.</p>
 </pre></div>
 </div>
 <p>Example to add external sin-like force.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">ampFz</span> <span class="o">=</span> <span class="mf">0.0005</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ampFz</span> <span class="o">=</span> <span class="mf">0.0005</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Fx</span> <span class="o">=</span> <span class="n">Fy</span> <span class="o">=</span> <span class="mf">0.</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">extForceToAdd</span> <span class="o">=</span> <span class="n">Real3D</span><span class="p">(</span> <span class="n">Fx</span><span class="p">,</span> <span class="n">Fy</span><span class="p">,</span> <span class="n">ampFz</span> <span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lbforceSin</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LBInitConstForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">lb</span><span class="p">)</span>
@@ -402,13 +405,13 @@ body forces in corresponding directions.</p>
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

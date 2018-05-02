@@ -1,10 +1,10 @@
 <map id="/home/espressopp/espressopp/src/interaction/TabulatedAngular.hpp" name="/home/espressopp/espressopp/src/interaction/TabulatedAngular.hpp">
-<area shape="rect" id="node2" href="$AngularPotential_8hpp.html" title="AngularPotential.hpp" alt="" coords="311,95,454,121"/>
-<area shape="rect" id="node30" href="$Interpolation_8hpp.html" title="Interpolation.hpp" alt="" coords="1151,95,1270,121"/>
+<area shape="rect" id="node2" href="$AngularPotential_8hpp.html" title="AngularPotential.hpp" alt="" coords="341,95,483,121"/>
+<area shape="rect" id="node30" href="$Interpolation_8hpp.html" title="Interpolation.hpp" alt="" coords="1150,95,1269,121"/>
 <area shape="rect" id="node3" href="$types_8hpp.html" title="types.hpp" alt="" coords="645,408,723,435"/>
 <area shape="rect" id="node13" href="$Real3D_8hpp.html" title="Real3D.hpp" alt="" coords="303,333,393,360"/>
 <area shape="rect" id="node14" href="$Particle_8hpp.html" title="Particle.hpp" alt="" coords="641,169,732,196"/>
-<area shape="rect" id="node23" href="$logging_8hpp.html" title="logging.hpp" alt="" coords="1167,169,1255,196"/>
+<area shape="rect" id="node23" href="$logging_8hpp.html" title="logging.hpp" alt="" coords="1165,169,1253,196"/>
 <area shape="rect" id="node10" href="$esconfig_8hpp.html" title="esconfig.hpp" alt="" coords="387,490,483,517"/>
 <area shape="rect" id="node15" href="$Single_8hpp.html" title="Single.hpp" alt="" coords="721,333,804,360"/>
 <area shape="rect" id="node16" href="$Triple_8hpp.html" title="Triple.hpp" alt="" coords="829,333,907,360"/>

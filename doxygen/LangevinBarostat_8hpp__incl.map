@@ -1,7 +1,7 @@
 <map id="/home/espressopp/espressopp/src/integrator/LangevinBarostat.hpp" name="/home/espressopp/espressopp/src/integrator/LangevinBarostat.hpp">
 <area shape="rect" id="node2" href="$types_8hpp.html" title="types.hpp" alt="" coords="553,468,632,495"/>
 <area shape="rect" id="node12" href="$logging_8hpp.html" title="logging.hpp" alt="" coords="1155,468,1243,495"/>
-<area shape="rect" id="node19" href="$Extension_8hpp.html" title="Extension.hpp" alt="" coords="940,95,1045,121"/>
+<area shape="rect" id="node19" href="$Extension_8hpp.html" title="Extension.hpp" alt="" coords="952,95,1057,121"/>
 <area shape="rect" id="node33" href="$VelocityVerlet_8hpp.html" title="VelocityVerlet.hpp" alt="" coords="1086,95,1214,121"/>
 <area shape="rect" id="node9" href="$esconfig_8hpp.html" title="esconfig.hpp" alt="" coords="79,550,175,577"/>
 <area shape="rect" id="node14" href="$log4espp_8hpp.html" title="log4espp.hpp" alt="" coords="1109,550,1207,577"/>

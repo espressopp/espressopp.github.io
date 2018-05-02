@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="tools" href="tools.html"/>
         <link rel="next" title="prepareAdress - setup AdResS simulation" href="espressopp.tools.prepareAdress.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.tools.prepareComplexMolecules.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.tools.prepareComplexMolecules.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -190,11 +193,11 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>atomPids</strong> (<em>list of int</em>) &#8211; list of pids of atoms between which to search for bonds</li>
-<li><strong>bondtypes</strong> (<em>dict, key: (int,int), value: int</em>) &#8211; dictionary mapping from tuple of pids to bondtypeid, e.g. as returned by tools.gromacs.read()</li>
-<li><strong>bondtypeparams</strong> (<em>dict, key: int, value: espressopp bond type</em>) &#8211; dictionary mapping from bondtypeid to class storing parameters of that bond type, e.g. as returned by tools.gromacs.read()</li>
-<li><strong>masses</strong> (<em>list of float</em>) &#8211; list of masses, e.g. as returned by tools.gromacs.read()</li>
-<li><strong>massCutoff</strong> (<em>float</em>) &#8211; for identifying light atoms (hydrogens), default 1.1 mass units, can also be increased e.g. for use with deuterated systems</li>
+<li><strong>atomPids</strong> (<em>list of int</em>) – list of pids of atoms between which to search for bonds</li>
+<li><strong>bondtypes</strong> (<em>dict</em><em>, </em><em>key:</em><em> (</em><em>int</em><em>,</em><em>int</em><em>)</em><em>, </em><em>value: int</em>) – dictionary mapping from tuple of pids to bondtypeid, e.g. as returned by tools.gromacs.read()</li>
+<li><strong>bondtypeparams</strong> (<em>dict</em><em>, </em><em>key: int</em><em>, </em><em>value: espressopp bond type</em>) – dictionary mapping from bondtypeid to class storing parameters of that bond type, e.g. as returned by tools.gromacs.read()</li>
+<li><strong>masses</strong> (<em>list of float</em>) – list of masses, e.g. as returned by tools.gromacs.read()</li>
+<li><strong>massCutoff</strong> (<em>float</em>) – for identifying light atoms (hydrogens), default 1.1 mass units, can also be increased e.g. for use with deuterated systems</li>
 </ul>
 </td>
 </tr>
@@ -209,7 +212,7 @@
 </tbody>
 </table>
 <p>Can then be used with RATTLE, e.g.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">rattle</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">Rattle</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">maxit</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">tol</span> <span class="o">=</span> <span class="mf">1e-6</span><span class="p">,</span> <span class="n">rptol</span> <span class="o">=</span> <span class="mf">1e-6</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rattle</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">Rattle</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">maxit</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">tol</span> <span class="o">=</span> <span class="mf">1e-6</span><span class="p">,</span> <span class="n">rptol</span> <span class="o">=</span> <span class="mf">1e-6</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rattle</span><span class="o">.</span><span class="n">addConstrainedBonds</span><span class="p">(</span><span class="n">constrainedBondsList</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">rattle</span><span class="p">)</span>
 </pre></div>
@@ -225,8 +228,8 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>atExclusions</strong> (<em>list of 2-tuples of int</em>) &#8211; list of excluded pairs</li>
-<li><strong>pidlist</strong> (<em>list of int</em>) &#8211; list of pids among which to create pairs</li>
+<li><strong>atExclusions</strong> (<em>list of 2-tuples of int</em>) – list of excluded pairs</li>
+<li><strong>pidlist</strong> (<em>list of int</em>) – list of pids among which to create pairs</li>
 </ul>
 </td>
 </tr>
@@ -260,9 +263,9 @@ mass, charge, corresponding atomistic index, beadname, beadtype</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>filename</strong> (<em>string</em>) &#8211; name of file to open and read</li>
-<li><strong>nparticles</strong> (<em>int</em>) &#8211; number of particles in file</li>
-<li><strong>header</strong> (<em>int</em>) &#8211; number of lines to skip at start of file (default 0)</li>
+<li><strong>filename</strong> (<em>string</em>) – name of file to open and read</li>
+<li><strong>nparticles</strong> (<em>int</em>) – number of particles in file</li>
+<li><strong>header</strong> (<em>int</em>) – number of lines to skip at start of file (default 0)</li>
 </ul>
 </td>
 </tr>
@@ -282,17 +285,17 @@ The restraints (one bond, two angles and three dihedrals) are applied between th
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> (<em>System object</em>) &#8211; espressopp system</li>
-<li><strong>restraintAtoms</strong> (<em>python dictionary</em>) &#8211; dictionary identifying the six atoms involved in the restraints, key = atom label (one of &#8216;A&#8217;,&#8217;B&#8217;,&#8217;C&#8217;,&#8217;a&#8217;,&#8217;b&#8217;,&#8217;c&#8217;), value = atom index</li>
-<li><strong>restraintK</strong> (<em>python dictionary</em>) &#8211; dictionary of force constants, key = restraint label (&#8216;aA&#8217; for the bond, &#8216;baA&#8217; and &#8216;aAB&#8217; for the angles, &#8216;aABC&#8217;, &#8216;cbaA&#8217; and &#8216;baAB&#8217; for the dihedrals), value = force constant (units as for the simulation forcefield, angle and dihedral constants should be in rad^-2)</li>
-<li><strong>restraintR0</strong> (<em>python dictionary</em>) &#8211; dictionary of equilibrium values (distance or angle), key = restraint label, value = distance (in distance units) or angle (in degrees)</li>
+<li><strong>system</strong> (<em>System object</em>) – espressopp system</li>
+<li><strong>restraintAtoms</strong> (<em>python dictionary</em>) – dictionary identifying the six atoms involved in the restraints, key = atom label (one of ‘A’,’B’,’C’,’a’,’b’,’c’), value = atom index</li>
+<li><strong>restraintK</strong> (<em>python dictionary</em>) – dictionary of force constants, key = restraint label (‘aA’ for the bond, ‘baA’ and ‘aAB’ for the angles, ‘aABC’, ‘cbaA’ and ‘baAB’ for the dihedrals), value = force constant (units as for the simulation forcefield, angle and dihedral constants should be in rad^-2)</li>
+<li><strong>restraintR0</strong> (<em>python dictionary</em>) – dictionary of equilibrium values (distance or angle), key = restraint label, value = distance (in distance units) or angle (in degrees)</li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
 <p>Examples of the three dictionaries:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">restraintAtoms</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="mi">1981</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="mi">1966</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">:</span><span class="mi">1993</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1588</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">1581</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">1567</span><span class="p">}</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">restraintAtoms</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="mi">1981</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="mi">1966</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">:</span><span class="mi">1993</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1588</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">1581</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">1567</span><span class="p">}</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">restraintK</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;aA&#39;</span><span class="p">:</span><span class="mi">4184</span><span class="p">,</span><span class="s1">&#39;baA&#39;</span><span class="p">:</span><span class="mf">41.84</span><span class="p">,</span><span class="s1">&#39;aAB&#39;</span><span class="p">:</span><span class="mf">41.84</span><span class="p">,</span><span class="s1">&#39;aABC&#39;</span><span class="p">:</span><span class="mf">41.84</span><span class="p">,</span><span class="s1">&#39;cbaA&#39;</span><span class="p">:</span><span class="mf">41.84</span><span class="p">,</span><span class="s1">&#39;baAB&#39;</span><span class="p">:</span><span class="mf">41.84</span><span class="p">}</span> <span class="c1">#kJ mol-1 nm-2,kJ mol-1 rad-2, all 10 kcal as in JPCB 2003</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">restraintR0</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;aA&#39;</span><span class="p">:</span><span class="mf">0.31</span><span class="p">,</span><span class="s1">&#39;baA&#39;</span><span class="p">:</span><span class="mf">120.0</span><span class="p">,</span><span class="s1">&#39;aAB&#39;</span><span class="p">:</span><span class="mf">90.0</span><span class="p">,</span><span class="s1">&#39;aABC&#39;</span><span class="p">:</span><span class="mf">100.0</span><span class="p">,</span><span class="s1">&#39;cbaA&#39;</span><span class="p">:</span><span class="o">-</span><span class="mf">170.0</span><span class="p">,</span><span class="s1">&#39;baAB&#39;</span><span class="p">:</span><span class="o">-</span><span class="mf">105.0</span><span class="p">}</span> <span class="c1">#nm, degrees</span>
 </pre></div>
@@ -349,13 +352,13 @@ The restraints (one bond, two angles and three dihedrals) are applied between th
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="interaction" href="interaction.html"/>
         <link rel="next" title="espressopp.interaction.FENECapped" href="espressopp.interaction.FENECapped.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.interaction.FENE.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.interaction.FENE.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -191,11 +194,11 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>K</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
-<li><strong>r0</strong> (<em>real</em>) &#8211; (default: 0.0)</li>
-<li><strong>rMax</strong> (<em>real</em>) &#8211; (default: 1.0)</li>
-<li><strong>cutoff</strong> (<em>real</em>) &#8211; (default: infinity)</li>
-<li><strong>shift</strong> (<em>real</em>) &#8211; (default: 0.0)</li>
+<li><strong>K</strong> (<em>real</em>) – (default: 1.0)</li>
+<li><strong>r0</strong> (<em>real</em>) – (default: 0.0)</li>
+<li><strong>rMax</strong> (<em>real</em>) – (default: 1.0)</li>
+<li><strong>cutoff</strong> (<em>real</em>) – (default: infinity)</li>
+<li><strong>shift</strong> (<em>real</em>) – (default: 0.0)</li>
 </ul>
 </td>
 </tr>
@@ -211,9 +214,9 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> (<em>object</em>) &#8211; your system <a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><code class="xref py py-func docutils literal"><span class="pre">espressopp.System()</span></code></a></li>
-<li><strong>pair_list</strong> (<em>object</em>) &#8211; list of bonds  <a class="reference internal" href="espressopp.FixedPairList.html#module-espressopp.FixedPairList" title="espressopp.FixedPairList"><code class="xref py py-func docutils literal"><span class="pre">espressopp.FixedPairList()</span></code></a></li>
-<li><strong>potential</strong> (<em>object</em>) &#8211; <a class="reference internal" href="#module-espressopp.interaction.FENE" title="espressopp.interaction.FENE"><code class="xref py py-func docutils literal"><span class="pre">espressopp.interaction.FENE()</span></code></a></li>
+<li><strong>system</strong> (<em>object</em>) – your system <a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><code class="xref py py-func docutils literal"><span class="pre">espressopp.System()</span></code></a></li>
+<li><strong>pair_list</strong> (<em>object</em>) – list of bonds  <a class="reference internal" href="espressopp.FixedPairList.html#module-espressopp.FixedPairList" title="espressopp.FixedPairList"><code class="xref py py-func docutils literal"><span class="pre">espressopp.FixedPairList()</span></code></a></li>
+<li><strong>potential</strong> (<em>object</em>) – <a class="reference internal" href="#module-espressopp.interaction.FENE" title="espressopp.interaction.FENE"><code class="xref py py-func docutils literal"><span class="pre">espressopp.interaction.FENE()</span></code></a></li>
 </ul>
 </td>
 </tr>
@@ -254,7 +257,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pair_list</strong> (<em>fixedpairlist</em>) &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pair_list</strong> (<em>fixedpairlist</em>) – </td>
 </tr>
 </tbody>
 </table>
@@ -267,14 +270,14 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> – </td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
 <p><strong>Example of usage</strong></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># The following example shows how to bond particle 1 to particles 0 and 2 by a FENE potential.</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># The following example shows how to bond particle 1 to particles 0 and 2 by a FENE potential.</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># We assume the particles are already in the storage of the system</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># Initialize list of pairs that will be bonded by FENE</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pair_list</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedPairList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
@@ -338,13 +341,13 @@
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

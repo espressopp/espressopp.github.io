@@ -25,11 +25,11 @@
 <area shape="rect" id="node10" href="$DihedralRB_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralRB.cpp" alt="" coords="2181,310,2385,351"/>
 <area shape="rect" id="node11" href="$TabulatedDihedral_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/TabulatedDihedral.cpp" alt="" coords="1914,310,2157,351"/>
 <area shape="rect" id="node13" href="$AngularCosineSquared_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/AngularCosineSquared.hpp" alt="" coords="1032,310,1303,351"/>
-<area shape="rect" id="node14" href="$AngularCosineSquared_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/AngularCosineSquared.cpp" alt="" coords="1087,407,1357,448"/>
+<area shape="rect" id="node14" href="$AngularCosineSquared_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/AngularCosineSquared.cpp" alt="" coords="1057,407,1328,448"/>
 <area shape="rect" id="node15" href="$AngularHarmonic_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/AngularHarmonic.hpp" alt="" coords="1378,310,1615,351"/>
 <area shape="rect" id="node16" href="$AngularHarmonic_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/AngularHarmonic.cpp" alt="" coords="1455,407,1693,448"/>
 <area shape="rect" id="node17" href="$Cosine_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/Cosine.hpp" alt="" coords="757,310,957,351"/>
-<area shape="rect" id="node18" href="$Cosine_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/Cosine.cpp" alt="" coords="838,407,1038,448"/>
+<area shape="rect" id="node18" href="$Cosine_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/Cosine.cpp" alt="" coords="809,407,1009,448"/>
 <area shape="rect" id="node19" href="$OPLS_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/OPLS.cpp" alt="" coords="1690,310,1890,351"/>
 <area shape="rect" id="node21" href="$AngularUniqueCosineSquared_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/AngularUniqueCosine\lSquared.hpp" alt="" coords="2252,199,2491,255"/>
 <area shape="rect" id="node22" href="$AngularUniqueCosineSquared_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/AngularUniqueCosine\lSquared.cpp" alt="" coords="2409,303,2648,359"/>

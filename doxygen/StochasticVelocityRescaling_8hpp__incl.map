@@ -1,7 +1,7 @@
 <map id="/home/espressopp/espressopp/src/integrator/StochasticVelocityRescaling.hpp" name="/home/espressopp/espressopp/src/integrator/StochasticVelocityRescaling.hpp">
 <area shape="rect" id="node2" href="$types_8hpp.html" title="types.hpp" alt="" coords="553,483,632,509"/>
 <area shape="rect" id="node12" href="$logging_8hpp.html" title="logging.hpp" alt="" coords="1155,483,1243,509"/>
-<area shape="rect" id="node19" href="$Extension_8hpp.html" title="Extension.hpp" alt="" coords="940,109,1045,136"/>
+<area shape="rect" id="node19" href="$Extension_8hpp.html" title="Extension.hpp" alt="" coords="952,109,1057,136"/>
 <area shape="rect" id="node33" href="$VelocityVerlet_8hpp.html" title="VelocityVerlet.hpp" alt="" coords="1086,109,1214,136"/>
 <area shape="rect" id="node9" href="$esconfig_8hpp.html" title="esconfig.hpp" alt="" coords="79,565,175,591"/>
 <area shape="rect" id="node14" href="$log4espp_8hpp.html" title="log4espp.hpp" alt="" coords="1109,565,1207,591"/>

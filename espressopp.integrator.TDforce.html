@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="integrator" href="integrator.html"/>
         <link rel="next" title="espressopp.integrator.VelocityVerlet" href="espressopp.integrator.VelocityVerlet.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.integrator.TDforce.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.integrator.TDforce.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -182,14 +185,14 @@
 <h1>espressopp.integrator.TDforce<a class="headerlink" href="#espressopp-integrator-tdforce" title="Permalink to this headline">¶</a></h1>
 <p>Thermodynamic force.</p>
 <p>Example - how to turn on thermodynamic force (except for multiple moving spherical regions)</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">fthd</span><span class="o">=</span><span class="s2">&quot;tabletf.xvg&quot;</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fthd</span><span class="o">=</span><span class="s2">&quot;tabletf.xvg&quot;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">thdforce</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">TDforce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">verletlist</span><span class="p">)</span> <span class="c1">#info about centre and shape of adress region come from the verletlist, info about size of adress region not needed, tabulated file tabletf.xvg should be appropriate for the region size</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">thdforce</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">itype</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;tabletf.xvg&quot;</span><span class="p">,</span><span class="nb">type</span><span class="o">=</span><span class="n">typeCG</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">thdforce</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Example - how to turn on thermodynamic force for multiple moving spherical regions</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">fthd</span><span class="o">=</span><span class="s2">&quot;tabletf.xvg&quot;</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fthd</span><span class="o">=</span><span class="s2">&quot;tabletf.xvg&quot;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">thdforce</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">TDforce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">verletlist</span><span class="p">,</span> <span class="n">startdist</span> <span class="o">=</span> <span class="mf">0.9</span><span class="p">,</span> <span class="n">enddist</span> <span class="o">=</span> <span class="mf">2.1</span><span class="p">,</span> <span class="n">edgeweightmultiplier</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span> <span class="c1">#info about moving centres come from the verletlist. Info about size of adress region not needed, tabulated file tabletf.xvg should be appropriate for the region size (enddist - startdist)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">thdforce</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">itype</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;tabletf.xvg&quot;</span><span class="p">,</span><span class="nb">type</span><span class="o">=</span><span class="n">typeCG</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">thdforce</span><span class="p">)</span>
@@ -203,11 +206,11 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> (<em>shared_ptr&lt;System&gt;</em>) &#8211; system object</li>
-<li><strong>verletlist</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) &#8211; verletlist object</li>
-<li><strong>startdist</strong> (<em>real</em>) &#8211; (default: 0.0) starting distance from center at which the TD force is actually applied. Needs to be altered when using several moving spherical regions (not used for static or single moving region)</li>
-<li><strong>enddist</strong> (<em>real</em>) &#8211; (default: 0.0) end distance from center up to which the TD force is actually applied. Needs to be altered when using several moving spherical regions (not used for static or single moving region)</li>
-<li><strong>edgeweightmultiplier</strong> (<em>int</em>) &#8211; (default: 20) interpolation parameter for multiple overlapping spherical regions (see Kreis et al., JCTC doi: 10.1021/acs.jctc.6b00440), the default should be fine for most applications (not used for static or single moving region)</li>
+<li><strong>system</strong> (<em>shared_ptr&lt;System&gt;</em>) – system object</li>
+<li><strong>verletlist</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – verletlist object</li>
+<li><strong>startdist</strong> (<em>real</em>) – (default: 0.0) starting distance from center at which the TD force is actually applied. Needs to be altered when using several moving spherical regions (not used for static or single moving region)</li>
+<li><strong>enddist</strong> (<em>real</em>) – (default: 0.0) end distance from center up to which the TD force is actually applied. Needs to be altered when using several moving spherical regions (not used for static or single moving region)</li>
+<li><strong>edgeweightmultiplier</strong> (<em>int</em>) – (default: 20) interpolation parameter for multiple overlapping spherical regions (see Kreis et al., JCTC doi: 10.1021/acs.jctc.6b00440), the default should be fine for most applications (not used for static or single moving region)</li>
 </ul>
 </td>
 </tr>
@@ -223,9 +226,9 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>itype</strong> (<em>int</em>) &#8211; interpolation type 1: linear, 2: Akima, 3: Cubic</li>
-<li><strong>filename</strong> (<em>string</em>) &#8211; filename for TD force file</li>
-<li><strong>type</strong> (<em>int</em>) &#8211; particle type on which the TD force needs to be applied</li>
+<li><strong>itype</strong> (<em>int</em>) – interpolation type 1: linear, 2: Akima, 3: Cubic</li>
+<li><strong>filename</strong> (<em>string</em>) – filename for TD force file</li>
+<li><strong>type</strong> (<em>int</em>) – particle type on which the TD force needs to be applied</li>
 </ul>
 </td>
 </tr>
@@ -283,13 +286,13 @@
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

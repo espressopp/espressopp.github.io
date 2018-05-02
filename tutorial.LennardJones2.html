@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="Tutorial" href="tutorial.html"/>
         <link rel="next" title="Polymer Melt" href="tutorial.PolymerMelt.html"/>
@@ -94,7 +97,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="tutorial.html">Tutorial</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="tutorial.SystemSetup.html">Basic System Setup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial.LennardJones.html">Simple Lennard Jones System</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Advanced Lennard Jones System</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Advanced Lennard Jones System</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial.PolymerMelt.html">Polymer Melt</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial.AddNewPotential.html">AddNewPotential</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tutorial.AddNewPotential.html#appendices">Appendices</a></li>
@@ -158,7 +161,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/tutorial.LennardJones2.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/tutorial.LennardJones2.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -174,36 +177,36 @@
   <div class="section" id="advanced-lennard-jones-system">
 <h1>Advanced Lennard Jones System<a class="headerlink" href="#advanced-lennard-jones-system" title="Permalink to this headline">¶</a></h1>
 <p>This tutorial needs the matplotlib.pyplot and numpy libraries and also VMD to be installed.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">espressopp</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">espressopp</span>
 </pre></div>
 </div>
 <p>After importing espressopp we import several other Python packages that we want to
 use for graphical output of some system parameters (e.g. temperature and energy)</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">math</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">math</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">time</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">matplotlib</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;TkAgg&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">ion</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>We setup a standard Lennard-Jones system with 1000 particles and a density of 0.85
-in a cubic siomulation box. ESPResSo++ provides a &#8220;shortcut&#8221; to setup such a system:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">N</span>   <span class="o">=</span> <span class="mi">1000</span>
+in a cubic siomulation box. ESPResSo++ provides a “shortcut” to setup such a system:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">N</span>   <span class="o">=</span> <span class="mi">1000</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rho</span> <span class="o">=</span> <span class="mf">0.85</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">L</span>   <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="n">N</span><span class="o">/</span><span class="n">rho</span><span class="p">,</span> <span class="mf">1.0</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">standard_system</span><span class="o">.</span><span class="n">LennardJones</span><span class="p">(</span><span class="n">N</span><span class="p">,(</span><span class="n">L</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">L</span><span class="p">),</span> <span class="n">dt</span><span class="o">=</span><span class="mf">0.0001</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>We also add a Langevin thermostat:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span><span class="o">.</span><span class="n">gamma</span>       <span class="o">=</span> <span class="mf">1.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">langevin</span><span class="o">.</span><span class="n">temperature</span> <span class="o">=</span> <span class="mf">1.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">langevin</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>We do a very short warmup in the beginning to get rid of &#8220;extremely&#8221; high forces</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">force_capping</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">CapForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="mf">1000000.0</span><span class="p">)</span>
+<p>We do a very short warmup in the beginning to get rid of “extremely” high forces</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">force_capping</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">CapForce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="mf">1000000.0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">force_capping</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">analyse</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
@@ -211,19 +214,19 @@ in a cubic siomulation box. ESPResSo++ provides a &#8220;shortcut&#8221; to setu
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">analyse</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Now let&#8217;s initialize a graph. So that we can have a realtime-view on what is happening
+<p>Now let’s initialize a graph. So that we can have a realtime-view on what is happening
 in the simulation:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>We want to observe temperature and energy of the system:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">Temperature</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">E</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">EnergyPot</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">per_atom</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">T</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">Temperature</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">E</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">EnergyPot</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">per_atom</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>x will be the x-axixs of the graph containg the time. yT and yE will be temperature
 and energy as y-axes in 2 plots:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span>   <span class="o">=</span> <span class="p">[]</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span>   <span class="o">=</span> <span class="p">[]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">yT</span>  <span class="o">=</span> <span class="p">[]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">yE</span>  <span class="o">=</span> <span class="p">[]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">yTmin</span> <span class="o">=</span> <span class="mf">0.0</span>
@@ -235,8 +238,8 @@ and energy as y-axes in 2 plots:</p>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">yEmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">yE</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>Initialize the two graphs (&#8216;ro&#8217; means red circles, &#8216;go&#8217; means green cirlces, see also pyplot documentation)</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">211</span><span class="p">)</span>
+<p>Initialize the two graphs (‘ro’ means red circles, ‘go’ means green cirlces, see also pyplot documentation)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">211</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">gT</span><span class="p">,</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">yT</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">212</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">gE</span><span class="p">,</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">yE</span><span class="p">,</span> <span class="s1">&#39;go&#39;</span><span class="p">)</span>
@@ -244,14 +247,14 @@ and energy as y-axes in 2 plots:</p>
 </div>
 <p>We also want to observe the configuration with VMD. So we have to connect to vmd. This command
 will automatically start vmd (vmd has to be found in your PATH environment for this to work)</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">sock</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">vmd</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sock</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">vmd</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">200</span><span class="p">):</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">vmd</span><span class="o">.</span><span class="n">imd_positions</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">sock</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Update the x-, and y-axes:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span>  <span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">integrator</span><span class="o">.</span><span class="n">dt</span> <span class="o">*</span> <span class="n">integrator</span><span class="o">.</span><span class="n">step</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span>  <span class="n">x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">integrator</span><span class="o">.</span><span class="n">dt</span> <span class="o">*</span> <span class="n">integrator</span><span class="o">.</span><span class="n">step</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">yT</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">T</span><span class="o">.</span><span class="n">compute</span><span class="p">())</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">yE</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">E</span><span class="o">.</span><span class="n">compute</span><span class="p">())</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">yTmax</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">yT</span><span class="p">)</span>
@@ -259,7 +262,7 @@ will automatically start vmd (vmd has to be found in your PATH environment for t
 </pre></div>
 </div>
 <p>Plot the temperature graph</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span>  <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">211</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span>  <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">211</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">yTmin</span><span class="p">,</span> <span class="n">yTmax</span><span class="o">*</span><span class="mf">1.2</span> <span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">gT</span><span class="o">.</span><span class="n">set_ydata</span><span class="p">(</span><span class="n">yT</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">gT</span><span class="o">.</span><span class="n">set_xdata</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -267,7 +270,7 @@ will automatically start vmd (vmd has to be found in your PATH environment for t
 </pre></div>
 </div>
 <p>Plot the energy graph</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span>  <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">212</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span>  <span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">212</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">yEmin</span><span class="p">,</span> <span class="n">yEmax</span><span class="o">*</span><span class="mf">1.2</span> <span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">gE</span><span class="o">.</span><span class="n">set_ydata</span><span class="p">(</span><span class="n">yE</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">gE</span><span class="o">.</span><span class="n">set_xdata</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
@@ -275,7 +278,7 @@ will automatically start vmd (vmd has to be found in your PATH environment for t
 </pre></div>
 </div>
 <p>In the end save the equilibrated configurations as .eps and .pdf files</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;mypyplot.eps&#39;</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;mypyplot.eps&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;mypyplot.pdf&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -329,13 +332,13 @@ will automatically start vmd (vmd has to be found in your PATH environment for t
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

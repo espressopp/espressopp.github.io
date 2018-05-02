@@ -3,7 +3,7 @@
 <area shape="rect" id="node4" href="$PyLogger_8hpp.html" title="Python implementation for logging. " alt="" coords="143,95,343,136"/>
 <area shape="rect" id="node7" href="$log4espp_8hpp.html" title="/home/espressopp/espressopp\l/src/include/log4espp.hpp" alt="" coords="2681,95,2881,136"/>
 <area shape="rect" id="node3" href="$GenLogger_8cpp.html" title="Implementation of a genereric Logging facility. " alt="" coords="1245,288,1445,329"/>
-<area shape="rect" id="node5" href="$bindings_8cpp.html" title="/home/espressopp/espressopp\l/src/bindings.cpp" alt="" coords="1985,385,2185,426"/>
+<area shape="rect" id="node5" href="$bindings_8cpp.html" title="/home/espressopp/espressopp\l/src/bindings.cpp" alt="" coords="1987,385,2187,426"/>
 <area shape="rect" id="node6" href="$PyLogger_8cpp.html" title="Implementation of logging via Python. " alt="" coords="5,191,205,233"/>
 <area shape="rect" id="node8" href="$BC_8hpp.html" title="/home/espressopp/espressopp\l/src/bc/BC.hpp" alt="" coords="4395,288,4595,329"/>
 <area shape="rect" id="node22" href="$DomainDecomposition_8cpp.html" title="/home/espressopp/espressopp\l/src/storage/DomainDecomposition.cpp" alt="" coords="5874,385,6126,426"/>
@@ -25,7 +25,7 @@
 <area shape="rect" id="node38" href="$FixedTripleAngleList_8hpp.html" title="/home/espressopp/espressopp\l/src/FixedTripleAngleList.hpp" alt="" coords="1021,288,1221,329"/>
 <area shape="rect" id="node39" href="$FixedTripleList_8hpp.html" title="/home/espressopp/espressopp\l/src/FixedTripleList.hpp" alt="" coords="331,191,531,233"/>
 <area shape="rect" id="node40" href="$FixedTupleList_8hpp.html" title="/home/espressopp/espressopp\l/src/FixedTupleList.hpp" alt="" coords="1469,288,1669,329"/>
-<area shape="rect" id="node41" href="$logging_8hpp.html" title="/home/espressopp/espressopp\l/src/include/logging.hpp" alt="" coords="1427,191,1627,233"/>
+<area shape="rect" id="node41" href="$logging_8hpp.html" title="/home/espressopp/espressopp\l/src/include/logging.hpp" alt="" coords="1413,191,1613,233"/>
 <area shape="rect" id="node42" href="$Extension_8hpp.html" title="/home/espressopp/espressopp\l/src/integrator/Extension.hpp" alt="" coords="3267,191,3467,233"/>
 <area shape="rect" id="node43" href="$ParticleGroup_8hpp.html" title="/home/espressopp/espressopp\l/src/ParticleGroup.hpp" alt="" coords="1693,288,1893,329"/>
 <area shape="rect" id="node44" href="$CellListAllPairsIterator_8hpp.html" title="/home/espressopp/espressopp\l/src/iterator/CellListAllPairsIterator.hpp" alt="" coords="3917,191,4163,233"/>

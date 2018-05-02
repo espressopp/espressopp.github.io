@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="espressopp" href="espressopp.html"/>
         <link rel="next" title="espressopp.Real3D" href="espressopp.Real3D.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.Quaternion.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.Quaternion.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -186,73 +189,63 @@ and rotation of 3D vector objects in 3D euclidean space. A Quaternion as
 such has a real part and an imaginary part. For implementation purposes, 
 the representation through one real scalar and one real 3D vector is used 
 here. The vector part is defined using the Real3D class of espressopp.</p>
-<p>The format of a quaternion is &#8220;(real_part, unreal_part)&#8221; with the types
-&#8220;real&#8221; and &#8220;Real3D&#8221;, respectively.</p>
+<p>The format of a quaternion is “(real_part, unreal_part)” with the types
+“real” and “Real3D”, respectively.</p>
 <p>While there are other possible applications for quaternions (rotation) 
 in the simulation code, they will be used at the C++-level in order to per-
 form the integration of the Euler equations of motion regarding the partic-
 les angular motion, i.e. the rigid body dynamics.</p>
 <p><strong>Usage:</strong></p>
 <p>The following methods from C++-level are available at the python-level:</p>
-<ul>
+<ul class="simple">
 <li><dl class="first docutils">
 <dt>getReal()</dt>
-<dd><p class="first last">return the scalar part of the quaternion</p>
-</dd>
+<dd>return the scalar part of the quaternion</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>setReal(real)</dt>
-<dd><p class="first last">sets the scalar part of the quaternion</p>
-</dd>
+<dd>sets the scalar part of the quaternion</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>getImag()</dt>
-<dd><p class="first last">returns the vector part of the quaternion</p>
-</dd>
+<dd>returns the vector part of the quaternion</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>getImagItem(i)</dt>
-<dd><p class="first last">returns element i of vector part of the quaternion</p>
-</dd>
+<dd>returns element i of vector part of the quaternion</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>setImag(Real3D)</dt>
-<dd><p class="first last">sets the vector part of the quaternion</p>
-</dd>
+<dd>sets the vector part of the quaternion</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>setImagItem(i, real)</dt>
-<dd><p class="first last">sets element i of vector part of the quaternion</p>
-</dd>
+<dd>sets element i of vector part of the quaternion</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>sqr()</dt>
-<dd><p class="first last">the inner product of the quaternion</p>
-</dd>
+<dd>the inner product of the quaternion</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>abs()</dt>
-<dd><p class="first last">the absolute value of the quaternion</p>
-</dd>
+<dd>the absolute value of the quaternion</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>normalize()</dt>
-<dd><p class="first last">normalizes the quaternion to unit length</p>
-</dd>
+<dd>normalizes the quaternion to unit length</dd>
 </dl>
 </li>
 <li><dl class="first docutils">
 <dt>transpose()</dt>
-<dd><p class="first last">transposes the quaternion (changes sign of unreal_part)</p>
-</dd>
+<dd>transposes the quaternion (changes sign of unreal_part)</dd>
 </dl>
 </li>
 </ul>
@@ -261,25 +254,25 @@ multiplication, see examples below. Furthermore, it is possible to multi-
 ply a quaternion with a scalar, in order to rescale it.</p>
 <p><strong>Examples:</strong></p>
 <p><strong>Initialize:</strong></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">()</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">()</span>
 <span class="go">Quaternion(0.0, Real3D(0.0, 0.0, 0.0)) </span>
 </pre></div>
 </div>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
 <span class="go">Quaternion(1.0, Real3D(1.0, 2.0, 3.0)) </span>
 </pre></div>
 </div>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">vec</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vec</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">Quaternion</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span> 
 <span class="go">Quaternion(0.0, Real3D(1.0, 2.0, 3.0))</span>
 </pre></div>
 </div>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
 <span class="go">Quaternion(1.0, Real3D(0.0, 0.0, 0.0))</span>
 </pre></div>
 </div>
 <p><strong>Get:</strong></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">getReal</span><span class="p">()</span>
 <span class="go">0.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">getImag</span><span class="p">()</span>
@@ -289,7 +282,7 @@ ply a quaternion with a scalar, in order to rescale it.</p>
 </pre></div>
 </div>
 <p><strong>Set:</strong></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">setReal</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">vec</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">setImag</span><span class="p">(</span><span class="n">vec</span><span class="p">)</span>
@@ -300,7 +293,7 @@ ply a quaternion with a scalar, in order to rescale it.</p>
 </pre></div>
 </div>
 <p><strong>Transpose and normalize:</strong></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span> 
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span> 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
 <span class="go">Quaternion(0.0, Real3D(-1.0, -2.0, -3.0))</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span> 
@@ -309,7 +302,7 @@ ply a quaternion with a scalar, in order to rescale it.</p>
 </pre></div>
 </div>
 <p><strong>Inner product and absolute value:</strong></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span> 
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span> 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">sqr</span><span class="p">()</span>
 <span class="go">14.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">q</span><span class="o">.</span><span class="n">abs</span><span class="p">()</span>
@@ -317,7 +310,7 @@ ply a quaternion with a scalar, in order to rescale it.</p>
 </pre></div>
 </div>
 <p><strong>Quaternion multiplication (compare, e.g., wikipedia):</strong></p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">p</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Quaternion</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">2.0</span><span class="p">,</span> <span class="mf">3.0</span><span class="p">)</span>
 <span class="go">Quaternion(-14.0, Real3D(0.0, 0.0, 0.0))</span>
 </pre></div>
@@ -387,13 +380,13 @@ unreal_part[0], unreal_part[1] and unreal_part[2] are specified.</p>
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

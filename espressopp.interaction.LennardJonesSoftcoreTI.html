@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="interaction" href="interaction.html"/>
         <link rel="next" title="espressopp.interaction.LJcos" href="espressopp.interaction.LJcos.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.interaction.LennardJonesSoftcoreTI.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.interaction.LennardJonesSoftcoreTI.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -183,7 +186,7 @@
 <p>This module is for performing simulations (e.g. as part of Thermodynamic Integration) where some Lennard-Jones interactions are a function of a parameter <span class="math">\(\lambda\)</span>, used to construct a pathway between states A and B.</p>
 <p>For those interactions which are a function of <span class="math">\(\lambda\)</span>, the potential is softcore Lennard Jones with the following form:</p>
 <div class="math">
-\[U_S(r_{ij},\lambda) = (1-\lambda)U_H^A(r_A) + \lambda U_H^B(r_B)\]\[r_A=(\alpha\sigma^6_A\lambda^p+r_{ij}^6)^{1/6}\]\[r_B=(\alpha\sigma^6_B(1-\lambda)^p+r_{ij}^6)^{1/6}\]</div>
+\[ \begin{align}\begin{aligned}U_S(r_{ij},\lambda) = (1-\lambda)U_H^A(r_A) + \lambda U_H^B(r_B)\\r_A=(\alpha\sigma^6_A\lambda^p+r_{ij}^6)^{1/6}\\r_B=(\alpha\sigma^6_B(1-\lambda)^p+r_{ij}^6)^{1/6}\end{aligned}\end{align} \]</div>
 <p>where <span class="math">\(\epsilon_A\)</span>, <span class="math">\(\epsilon_B\)</span>, <span class="math">\(\sigma_A\)</span> and <span class="math">\(\sigma_B\)</span> are the parameters of states A and B, and <span class="math">\(\alpha\)</span> and <span class="math">\(p\)</span> are adjustable parameters of the softcore potential. The potentials <span class="math">\(U_H^A(r_A)\)</span> and <span class="math">\(U_H^B(r_B)\)</span> are the normal Lennard-Jones 12-6 hardcore potentials:</p>
 <div class="math">
 \[U_H^A(r_A) = 4.0\epsilon_A(\frac{\sigma_A}{r_A}^{12} - \frac{\sigma_A}{r_A}^6)\]</div>
@@ -209,7 +212,7 @@
 <p>The <span class="math">\(\lambda\)</span> (<code class="docutils literal"><span class="pre">lambdaTI</span></code>) parameter used here should not be confused with the <span class="math">\(\lambda\)</span> (<code class="docutils literal"><span class="pre">lambda_adr</span></code>) particle property used in AdResS simulations.</p>
 <p>See also the Thermodynamic Integration tutorial.</p>
 <p>Example python script:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1">#value of lambda</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1">#value of lambda</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lambdaTI</span> <span class="o">=</span> <span class="mf">0.3</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1">#softcore parameters</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">alphaSC</span> <span class="o">=</span> <span class="mf">0.5</span>
@@ -221,14 +224,14 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="c1">#loop over list of all types for particles interacting with this atomistic potential</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">types</span><span class="p">:</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">types</span><span class="p">:</span>
-<span class="gp">&gt;&gt;&gt; </span>    <span class="n">ljpot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">LennardJonesSoftcoreTI</span><span class="p">(</span><span class="n">epsilonA</span><span class="o">=</span><span class="n">epsA</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">sigmaA</span><span class="o">=</span><span class="n">sigA</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">epsilonB</span><span class="o">=</span><span class="n">epsB</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">sigmaB</span><span class="o">=</span><span class="n">sigB</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="n">alphaSC</span><span class="p">,</span> <span class="n">power</span><span class="o">=</span><span class="n">powerSC</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">cutoff</span><span class="p">,</span> <span class="n">lambdaTI</span><span class="o">=</span><span class="n">lambdaTI</span><span class="p">,</span> <span class="n">annihilate</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="n">ljpot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">LennardJonesSoftcoreTI</span><span class="p">(</span><span class="n">epsilonA</span><span class="o">=</span><span class="n">epsA</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">sigmaA</span><span class="o">=</span><span class="n">sigA</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">epsilonB</span><span class="o">=</span><span class="n">epsB</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">sigmaB</span><span class="o">=</span><span class="n">sigB</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="n">alphaSC</span><span class="p">,</span> <span class="n">power</span><span class="o">=</span><span class="n">powerSC</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">cutoff</span><span class="p">,</span> <span class="n">lambdaTI</span><span class="o">=</span><span class="n">lambdaTI</span><span class="p">,</span> <span class="n">annihilate</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">ljpot</span><span class="o">.</span><span class="n">addPids</span><span class="p">(</span><span class="n">pidlist</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">lj_adres_interaction</span><span class="o">.</span><span class="n">setPotentialAT</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="n">i</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">potential</span><span class="o">=</span><span class="n">ljpot</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">lj_adres_interaction</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>During the MD run, one can then calculate the derivative of the RF energy wrt lambda</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1">#calculate dU/dlambda</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1">#calculate dU/dlambda</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">dUdl</span> <span class="o">=</span> <span class="n">lj_adres_interaction</span><span class="o">.</span><span class="n">computeEnergyDeriv</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -240,15 +243,15 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>epsilonA</strong> (<em>real</em>) &#8211; (default: 1.0) LJ interaction parameter</li>
-<li><strong>sigmaA</strong> (<em>real</em>) &#8211; (default: 1.0) LJ interaction parameter</li>
-<li><strong>epsilonB</strong> (<em>real</em>) &#8211; (default: 0.0) LJ interaction parameter</li>
-<li><strong>sigmaB</strong> (<em>real</em>) &#8211; (default: 1.0) LJ interaction parameter</li>
-<li><strong>alpha</strong> (<em>real</em>) &#8211; (default: 1.0) softcore parameter</li>
-<li><strong>power</strong> (<em>real</em>) &#8211; (default: 1.0) softcore parameter</li>
-<li><strong>cutoff</strong> (<em>real</em>) &#8211; (default: infinity) interaction cutoff</li>
-<li><strong>lambdaTI</strong> (<em>real</em>) &#8211; (default: 0.0) TI lambda parameter</li>
-<li><strong>annihilate</strong> (<em>bool</em>) &#8211; (default: True) switch between annihilation and decoupling</li>
+<li><strong>epsilonA</strong> (<em>real</em>) – (default: 1.0) LJ interaction parameter</li>
+<li><strong>sigmaA</strong> (<em>real</em>) – (default: 1.0) LJ interaction parameter</li>
+<li><strong>epsilonB</strong> (<em>real</em>) – (default: 0.0) LJ interaction parameter</li>
+<li><strong>sigmaB</strong> (<em>real</em>) – (default: 1.0) LJ interaction parameter</li>
+<li><strong>alpha</strong> (<em>real</em>) – (default: 1.0) softcore parameter</li>
+<li><strong>power</strong> (<em>real</em>) – (default: 1.0) softcore parameter</li>
+<li><strong>cutoff</strong> (<em>real</em>) – (default: infinity) interaction cutoff</li>
+<li><strong>lambdaTI</strong> (<em>real</em>) – (default: 0.0) TI lambda parameter</li>
+<li><strong>annihilate</strong> (<em>bool</em>) – (default: True) switch between annihilation and decoupling</li>
 </ul>
 </td>
 </tr>
@@ -263,7 +266,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pidlist</strong> (<em>python list</em>) &#8211; list of particle ids of particles whose interaction parameters differ in state A and B</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>pidlist</strong> (<em>python list</em>) – list of particle ids of particles whose interaction parameters differ in state A and B</td>
 </tr>
 </tbody>
 </table>
@@ -277,8 +280,8 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>vl</strong> (<em>VerletListAdress object</em>) &#8211; Verlet list</li>
-<li><strong>fixedtupleList</strong> (<em>FixedTupleListAdress object</em>) &#8211; list of tuples describing mapping between CG and AT particles</li>
+<li><strong>vl</strong> (<em>VerletListAdress object</em>) – Verlet list</li>
+<li><strong>fixedtupleList</strong> (<em>FixedTupleListAdress object</em>) – list of tuples describing mapping between CG and AT particles</li>
 </ul>
 </td>
 </tr>
@@ -294,9 +297,9 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> (<em>int</em>) &#8211; atomtype</li>
-<li><strong>type2</strong> (<em>int</em>) &#8211; atomtype</li>
-<li><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>Potential</em></a>) &#8211; espressopppp potential</li>
+<li><strong>type1</strong> (<em>int</em>) – atomtype</li>
+<li><strong>type2</strong> (<em>int</em>) – atomtype</li>
+<li><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>Potential</em></a>) – espressopppp potential</li>
 </ul>
 </td>
 </tr>
@@ -312,9 +315,9 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> (<em>int</em>) &#8211; atomtype</li>
-<li><strong>type2</strong> (<em>int</em>) &#8211; atomtype</li>
-<li><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>Potential</em></a>) &#8211; espressopppp potential</li>
+<li><strong>type1</strong> (<em>int</em>) – atomtype</li>
+<li><strong>type2</strong> (<em>int</em>) – atomtype</li>
+<li><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>Potential</em></a>) – espressopppp potential</li>
 </ul>
 </td>
 </tr>
@@ -378,13 +381,13 @@
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

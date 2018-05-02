@@ -1,7 +1,7 @@
 <map id="/home/espressopp/espressopp/src/integrator/LangevinThermostatOnRadius.hpp" name="/home/espressopp/espressopp/src/integrator/LangevinThermostatOnRadius.hpp">
 <area shape="rect" id="node2" href="$types_8hpp.html" title="types.hpp" alt="" coords="747,497,826,524"/>
 <area shape="rect" id="node12" href="$logging_8hpp.html" title="logging.hpp" alt="" coords="1773,497,1861,524"/>
-<area shape="rect" id="node19" href="$Particle_8hpp.html" title="Particle.hpp" alt="" coords="519,259,609,285"/>
+<area shape="rect" id="node19" href="$Particle_8hpp.html" title="Particle.hpp" alt="" coords="520,259,611,285"/>
 <area shape="rect" id="node29" href="$SystemAccess_8hpp.html" title="SystemAccess.hpp" alt="" coords="824,259,960,285"/>
 <area shape="rect" id="node36" href="$Extension_8hpp.html" title="Extension.hpp" alt="" coords="1386,109,1491,136"/>
 <area shape="rect" id="node42" href="$VelocityVerlet_8hpp.html" title="VelocityVerlet.hpp" alt="" coords="1516,109,1644,136"/>

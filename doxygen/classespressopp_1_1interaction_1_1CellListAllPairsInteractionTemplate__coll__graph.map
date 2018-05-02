@@ -1,5 +1,5 @@
 <map id="espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;" name="espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class. " alt="" coords="503,5,660,47"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; Potential,\l esutil::enlarge \&gt;" alt="" coords="509,135,654,191"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class. " alt="" coords="515,5,672,47"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; Potential,\l esutil::enlarge \&gt;" alt="" coords="521,137,666,193"/>
 <area shape="rect" id="node7" href="$classespressopp_1_1esutil_1_1Array2D.html" title="A two&#45;dimensional array (i.e. " alt="" coords="179,190,321,246"/>
 </map>

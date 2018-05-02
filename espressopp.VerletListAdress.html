@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="espressopp" href="espressopp.html"/>
         <link rel="next" title="espressopp.VerletListTriple" href="espressopp.VerletListTriple.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.VerletListAdress.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.VerletListAdress.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -184,7 +187,7 @@
 simulations. When creating the VerletListAdress one has to provide the system
 and specify both cutoff for the CG interaction and adrcutoff for the atomistic
 interaction. Often, it is important to set the atomistic adrcutoff much bigger
-than the actual interaction&#8217;s cutoff would be, since also the atomistic part of
+than the actual interaction’s cutoff would be, since also the atomistic part of
 the VerletListAdress (adrPairs) is built based on the coarse-grained particle
 positions. For a much larger coarse-grained cutoff it is for example possible
 to also set the atomistic cutoff on the same value as the coarse-grained one.</p>
@@ -202,23 +205,23 @@ adrZone, i.e. in the atomistic or hybrid region</li>
 i.e. in the coarse-grained region</li>
 </ul>
 <p>Example - creating the VerletListAdress for a slab-type adress region fixed in space (only the x value of adrCenter is used):</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">adrCenter</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">adrCenter</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">adrCenter</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">adrCenter</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Example - creating the VerletListAdress for a spherical adress region centered on adrCenter and fixed in space:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">adrCenter</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">adrCenter</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Example - creating the VerletListAdress for a spherical adress region centered on one particle and moving with the particle</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">pids</span><span class="o">=</span><span class="p">[</span><span class="n">adrCenterPID</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">pids</span><span class="o">=</span><span class="p">[</span><span class="n">adrCenterPID</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Example - creating the VerletListAdress for a adress region based on the overlapping spherical regions by several particles</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">pids</span><span class="o">=</span><span class="p">[</span><span class="n">adrCenterPID1</span><span class="p">,</span><span class="n">adrCenterPID2</span><span class="p">,</span><span class="n">adrCenterPID3</span><span class="p">,</span> <span class="o">...</span> <span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">pids</span><span class="o">=</span><span class="p">[</span><span class="n">adrCenterPID1</span><span class="p">,</span><span class="n">adrCenterPID2</span><span class="p">,</span><span class="n">adrCenterPID3</span><span class="p">,</span> <span class="o">...</span> <span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <dl class="function">
@@ -229,15 +232,15 @@ i.e. in the coarse-grained region</li>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> &#8211; </li>
-<li><strong>cutoff</strong> &#8211; </li>
-<li><strong>adrcut</strong> &#8211; </li>
-<li><strong>dEx</strong> &#8211; </li>
-<li><strong>dHy</strong> &#8211; </li>
-<li><strong>adrCenter</strong> &#8211; (default: [])</li>
-<li><strong>pids</strong> &#8211; (default: [])</li>
-<li><strong>exclusionlist</strong> &#8211; (default: [])</li>
-<li><strong>sphereAdr</strong> &#8211; (default: False)</li>
+<li><strong>system</strong> – </li>
+<li><strong>cutoff</strong> – </li>
+<li><strong>adrcut</strong> – </li>
+<li><strong>dEx</strong> – </li>
+<li><strong>dHy</strong> – </li>
+<li><strong>adrCenter</strong> – (default: [])</li>
+<li><strong>pids</strong> – (default: [])</li>
+<li><strong>exclusionlist</strong> – (default: [])</li>
+<li><strong>sphereAdr</strong> – (default: False)</li>
 </ul>
 </td>
 </tr>
@@ -253,8 +256,8 @@ i.e. in the coarse-grained region</li>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>pids</strong> &#8211; </li>
-<li><strong>rebuild</strong> &#8211; (default: True)</li>
+<li><strong>pids</strong> – </li>
+<li><strong>rebuild</strong> – (default: True)</li>
 </ul>
 </td>
 </tr>
@@ -272,7 +275,7 @@ i.e. in the coarse-grained region</li>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>exclusionlist</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>exclusionlist</strong> – </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
 </tr>
@@ -356,13 +359,13 @@ i.e. in the coarse-grained region</li>
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

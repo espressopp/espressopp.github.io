@@ -1,5 +1,5 @@
 <map id="espressopp::integrator::BerendsenBarostat" name="espressopp::integrator::BerendsenBarostat">
-<area shape="rect" id="node2" href="$classespressopp_1_1integrator_1_1Extension.html" title="espressopp::integrator\l::Extension" alt="" coords="86,332,237,373"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1integrator_1_1Extension.html" title="espressopp::integrator\l::Extension" alt="" coords="126,332,277,373"/>
 <area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,235,192,262"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1Int3D.html" title="espressopp::Int3D" alt="" coords="261,339,390,366"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1Int3D.html" title="espressopp::Int3D" alt="" coords="301,339,430,366"/>
 </map>

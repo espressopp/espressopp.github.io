@@ -1,18 +1,18 @@
 <map id="/home/espressopp/espressopp/src/io/DumpXTC.cpp" name="/home/espressopp/espressopp/src/io/DumpXTC.cpp">
-<area shape="rect" id="node4" href="$DumpXTC_8hpp.html" title="DumpXTC.hpp" alt="" coords="1199,95,1309,121"/>
-<area shape="rect" id="node37" href="$Storage_8hpp.html" title="storage/Storage.hpp" alt="" coords="1662,266,1801,293"/>
+<area shape="rect" id="node4" href="$DumpXTC_8hpp.html" title="DumpXTC.hpp" alt="" coords="1201,95,1310,121"/>
+<area shape="rect" id="node37" href="$Storage_8hpp.html" title="storage/Storage.hpp" alt="" coords="1674,266,1813,293"/>
 <area shape="rect" id="node45" href="$BC_8hpp.html" title="bc/BC.hpp" alt="" coords="417,266,501,293"/>
 <area shape="rect" id="node47" href="$ConfigurationExt_8hpp.html" title="analysis/ConfigurationExt.hpp" alt="" coords="5,266,201,293"/>
-<area shape="rect" id="node50" href="$ConfigurationsExt_8hpp.html" title="analysis/ConfigurationsExt.hpp" alt="" coords="283,177,486,203"/>
+<area shape="rect" id="node50" href="$ConfigurationsExt_8hpp.html" title="analysis/ConfigurationsExt.hpp" alt="" coords="285,177,487,203"/>
 <area shape="rect" id="node5" href="$mpi_8hpp.html" title="mpi.hpp" alt="" coords="1407,497,1475,524"/>
-<area shape="rect" id="node9" href="$types_8hpp.html" title="types.hpp" alt="" coords="632,572,711,599"/>
+<area shape="rect" id="node9" href="$types_8hpp.html" title="types.hpp" alt="" coords="644,572,723,599"/>
 <area shape="rect" id="node16" href="$System_8hpp.html" title="System.hpp" alt="" coords="772,423,864,449"/>
 <area shape="rect" id="node23" href="$FileBackup_8hpp.html" title="io/FileBackup.hpp" alt="" coords="2279,177,2405,203"/>
 <area shape="rect" id="node29" href="$ParticleAccess_8hpp.html" title="ParticleAccess.hpp" alt="" coords="577,266,712,293"/>
-<area shape="rect" id="node31" href="$MDIntegrator_8hpp.html" title="integrator/MDIntegrator.hpp" alt="" coords="1099,177,1281,203"/>
-<area shape="rect" id="node34" href="$Error_8hpp.html" title="esutil/Error.hpp" alt="" coords="1263,266,1373,293"/>
-<area shape="rect" id="node43" href="$CellListIterator_8hpp.html" title="iterator/CellListIterator.hpp" alt="" coords="1467,177,1643,203"/>
-<area shape="rect" id="node15" href="$esconfig_8hpp.html" title="esconfig.hpp" alt="" coords="623,654,719,681"/>
+<area shape="rect" id="node31" href="$MDIntegrator_8hpp.html" title="integrator/MDIntegrator.hpp" alt="" coords="1101,177,1282,203"/>
+<area shape="rect" id="node34" href="$Error_8hpp.html" title="esutil/Error.hpp" alt="" coords="1264,266,1375,293"/>
+<area shape="rect" id="node43" href="$CellListIterator_8hpp.html" title="iterator/CellListIterator.hpp" alt="" coords="1479,177,1655,203"/>
+<area shape="rect" id="node15" href="$esconfig_8hpp.html" title="esconfig.hpp" alt="" coords="635,654,731,681"/>
 <area shape="rect" id="node17" href="$python_8hpp.html" title="python.hpp" alt="" coords="823,497,909,524"/>
 <area shape="rect" id="node19" href="$Interaction_8hpp.html" title="interaction/Interaction.hpp" alt="" coords="1087,497,1259,524"/>
 <area shape="rect" id="node20" href="$logging_8hpp.html" title="logging.hpp" alt="" coords="1175,572,1263,599"/>

@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="integrator" href="integrator.html"/>
         <link rel="next" title="espressopp.integrator.CapForce" href="espressopp.integrator.CapForce.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.integrator.BerendsenThermostat.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.integrator.BerendsenThermostat.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -189,7 +192,7 @@ the formula:</p>
 <p>where <span class="math">\(\Delta t\)</span> - integration timestep, <span class="math">\(\tau_{T}\)</span> - time parameter (coupling parameter),
 <span class="math">\(T_{0}\)</span> - external temperature and <span class="math">\(T\)</span> - instantaneous temperature.</p>
 <p>Example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenT</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenT</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenT</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">1.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenT</span><span class="o">.</span><span class="n">temperature</span> <span class="o">=</span> <span class="mf">1.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsenT</span><span class="p">)</span>
@@ -198,7 +201,7 @@ the formula:</p>
 <p>Definition:</p>
 <blockquote>
 <div><p>In order to define the Berendsen thermostat</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenT</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenT</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>one should have the <a class="reference external" href="espressopp.System.html">System</a> defined.</p>
@@ -206,21 +209,21 @@ the formula:</p>
 <p>Properties:</p>
 <ul>
 <li><p class="first"><em>berendsenT.tau</em></p>
-<p>The property &#8216;tau&#8217; defines the time parameter <span class="math">\(\tau_{T}\)</span>.</p>
+<p>The property ‘tau’ defines the time parameter <span class="math">\(\tau_{T}\)</span>.</p>
 </li>
 <li><p class="first"><em>berendsenT.temperature</em></p>
-<p>The property &#8216;temperature&#8217; defines the external temperature <span class="math">\(T_{0}\)</span>.</p>
+<p>The property ‘temperature’ defines the external temperature <span class="math">\(T_{0}\)</span>.</p>
 </li>
 </ul>
 <p>Setting the integration property:</p>
 <blockquote>
-<div><div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsenT</span><span class="p">)</span>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsenT</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>It will define Berendsen thermostat as a property of integrator.</p>
 </div></blockquote>
 <p>One more example:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_thermostat</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_thermostat</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_thermostat</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">0.1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_thermostat</span><span class="o">.</span><span class="n">temperature</span> <span class="o">=</span> <span class="mf">3.2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsen_thermostat</span><span class="p">)</span>
@@ -228,7 +231,7 @@ the formula:</p>
 </div>
 <p>Canceling the thermostat:</p>
 <blockquote>
-<div><div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># define thermostat with parameters</span>
+<div><div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># define thermostat with parameters</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">2.0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">temperature</span> <span class="o">=</span> <span class="mf">5.0</span>
@@ -241,7 +244,7 @@ the formula:</p>
 </pre></div>
 </div>
 <p>Connecting the thermostat back after the disconnection</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -252,7 +255,7 @@ the formula:</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>system</strong> &#8211; </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>system</strong> – </td>
 </tr>
 </tbody>
 </table>
@@ -308,13 +311,13 @@ the formula:</p>
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

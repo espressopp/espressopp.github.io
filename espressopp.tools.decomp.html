@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="tools" href="tools.html"/>
         <link rel="next" title="DumpConfigurations - read/write xyz files" href="espressopp.tools.DumpConfigurations.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.tools.decomp.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.tools.decomp.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -217,8 +220,8 @@ Link to the paper: <a class="reference external" href="https://doi.org/10.1103/P
 <div><p>To be used for heterogenous simulations where the spatial heterogeinity is known on an a-priori manner,
 where this function returns <cite>n</cite> as the total number of processes to be used for the best decomposition of the
 system as a function of a tolerance ratio which depending on the giving range [0, MnN*CpN] of processors availability
-different combinations of P_x,P_y and P_z can be found and hence several values of <cite>n</cite> this &#8216;n&#8217; can become an array.
-Most of the parameters have been described for nodeGrid(...), except:</p>
+different combinations of P_x,P_y and P_z can be found and hence several values of <cite>n</cite> this ‘n’ can become an array.
+Most of the parameters have been described for nodeGrid(…), except:</p>
 <p><cite>MnN</cite> - M number of Nodes to be available (e.g. 128 processes/cores, 16 cores per Node gives a total of 8 Nodes)
 <cite>CpN</cite> - C number of Cores available in each Node (e.g. 16 Cores per Node or 20 Cores per Node)
 <cite>percTol</cite> - Axis base tolerance percentage to the ideal distribution of P-processors per axes P_x,P_y,P_z</p>
@@ -317,13 +320,13 @@ the step skinStep</p>
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

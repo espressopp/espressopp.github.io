@@ -32,6 +32,9 @@
   
 
   
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="integrator" href="integrator.html"/>
         <link rel="next" title="espressopp.integrator.Extension" href="espressopp.integrator.Extension.html"/>
@@ -165,7 +168,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.integrator.ExtAnalyze.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.integrator.ExtAnalyze.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -184,15 +187,15 @@
 within the main integration loop which allows to automatically
 accumulate time averages (with standard deviation error bars).</p>
 <p>Example Usage:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">pt</span>           <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">PressureTensor</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pt</span>           <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">PressureTensor</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">extension_pt</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">pt</span> <span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">extension_pt</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pt_ave</span> <span class="o">=</span> <span class="n">pt</span><span class="o">.</span><span class="n">getAverageValue</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;average Pressure Tensor = &quot;</span><span class="p">,</span> <span class="n">pt_ave</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;          std deviation = &quot;</span><span class="p">,</span> <span class="n">pt_ave</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">print</span> <span class="s2">&quot;number of measurements  = &quot;</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">getNumberOfMeasurements</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;average Pressure Tensor = &quot;</span><span class="p">,</span> <span class="n">pt_ave</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;          std deviation = &quot;</span><span class="p">,</span> <span class="n">pt_ave</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;number of measurements  = &quot;</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">getNumberOfMeasurements</span><span class="p">()</span>
 </pre></div>
 </div>
 <dl class="function">
@@ -203,8 +206,8 @@ accumulate time averages (with standard deviation error bars).</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>action_obj</strong> &#8211; </li>
-<li><strong>interval</strong> (<em>int</em>) &#8211; (default: 1)</li>
+<li><strong>action_obj</strong> – </li>
+<li><strong>interval</strong> (<em>int</em>) – (default: 1)</li>
 </ul>
 </td>
 </tr>
@@ -262,13 +265,13 @@ accumulate time averages (with standard deviation error bars).</p>
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

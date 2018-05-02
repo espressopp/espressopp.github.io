@@ -14,7 +14,7 @@
 <area shape="rect" id="node13" href="$logging_8hpp.html" title="logging.hpp" alt="" coords="383,415,471,442"/>
 <area shape="rect" id="node20" href="$ESPPIterator_8hpp.html" title="esutil/ESPPIterator.hpp" alt="" coords="845,415,1004,442"/>
 <area shape="rect" id="node15" href="$log4espp_8hpp.html" title="log4espp.hpp" alt="" coords="159,497,258,524"/>
-<area shape="rect" id="node17" href="$Logger_8hpp.html" title="Class for logging. " alt="" coords="573,572,695,599"/>
+<area shape="rect" id="node17" href="$Logger_8hpp.html" title="Class for logging. " alt="" coords="739,572,860,599"/>
 <area shape="rect" id="node24" href="$Single_8hpp.html" title="Single.hpp" alt="" coords="1231,497,1314,524"/>
 <area shape="rect" id="node25" href="$Triple_8hpp.html" title="Triple.hpp" alt="" coords="1339,497,1417,524"/>
 <area shape="rect" id="node26" href="$Quadruple_8hpp.html" title="Quadruple.hpp" alt="" coords="1442,497,1549,524"/>
@@ -24,6 +24,6 @@
 <area shape="rect" id="node43" href="$System_8hpp.html" title="System.hpp" alt="" coords="431,259,523,285"/>
 <area shape="rect" id="node44" href="$mpi_8hpp.html" title="mpi.hpp" alt="" coords="2211,333,2279,360"/>
 <area shape="rect" id="node48" href="$Cell_8hpp.html" title="Cell.hpp" alt="" coords="1517,259,1588,285"/>
-<area shape="rect" id="node49" href="$Buffer_8hpp.html" title="Buffer.hpp" alt="" coords="2229,184,2311,211"/>
+<area shape="rect" id="node49" href="$Buffer_8hpp.html" title="Buffer.hpp" alt="" coords="2189,184,2271,211"/>
 <area shape="rect" id="node50" href="$BufferDynamic_8hpp.html" title="BufferDynamic.hpp" alt="" coords="2256,259,2391,285"/>
 </map>

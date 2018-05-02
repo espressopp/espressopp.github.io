@@ -1,5 +1,5 @@
 <map id="espressopp::ParticleQuadruple" name="espressopp::ParticleQuadruple">
-<area shape="rect" id="node2" href="$structespressopp_1_1Quadruple.html" title="espressopp::Quadruple\l\&lt; class Particle *, class\l Particle *, class Particle\l *, class Particle * \&gt;" alt="" coords="877,189,1044,259"/>
+<area shape="rect" id="node2" href="$structespressopp_1_1Quadruple.html" title="espressopp::Quadruple\l\&lt; class Particle *, class\l Particle *, class Particle\l *, class Particle * \&gt;" alt="" coords="877,206,1044,277"/>
 <area shape="rect" id="node3" href="$structespressopp_1_1Particle.html" title="espressopp::Particle" alt="" coords="515,133,657,160"/>
 <area shape="rect" id="node4" href="$structespressopp_1_1ParticleLocal.html" title="espressopp::ParticleLocal" alt="" coords="224,7,396,33"/>
 <area shape="rect" id="node5" href="$classespressopp_1_1Int3D.html" title="espressopp::Int3D" alt="" coords="11,7,141,33"/>
