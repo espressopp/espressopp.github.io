@@ -183,21 +183,149 @@
             
   <span class="target" id="module-espressopp.Particle"></span><div class="section" id="espressopp-particle">
 <h1>espressopp.Particle<a class="headerlink" href="#espressopp-particle" title="Permalink to this headline">¶</a></h1>
-<dl class="function">
+<p>The Particle class. Particles are used to model atoms, coarse-grained beads, etc. and are the central part of all simulations. They are stored in the storage and their time evolution can be modeled using an integrator. Importantly, particles have various properties which the user and other modules can make use of and which can be accessed. They are listed below.</p>
+<dl class="class">
 <dt id="espressopp.Particle.espressopp.Particle">
-<code class="descclassname">espressopp.</code><code class="descname">Particle</code><span class="sig-paren">(</span><em>pid</em>, <em>storage</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.Particle.espressopp.Particle" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<em class="property">class </em><code class="descclassname">espressopp.</code><code class="descname">Particle</code><span class="sig-paren">(</span><em>pid</em>, <em>storage</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.Particle.espressopp.Particle" title="Permalink to this definition">¶</a></dt>
+<dd><p>The particle class.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>pid</strong> – </li>
-<li><strong>storage</strong> – </li>
+<li><strong>pid</strong> (<em>int</em>) – the particle id</li>
+<li><strong>storage</strong> (<em>storage</em>) – the storage object</li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">Real3D espressopp.Particle.pos</code></dt>
+<dd><p>position</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">Real3D espressopp.Particle.v</code></dt>
+<dd><p>velocity</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">Real3D espressopp.Particle.f</code></dt>
+<dd><p>force</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">Real3D espressopp.Particle.modepos</code></dt>
+<dd><p>normal mode coordinate (position in normal mode space)</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">Real3D espressopp.Particle.modemom</code></dt>
+<dd><p>normal mode momentum (momentum in normal mode space)</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">Real3D espressopp.Particle.fm</code></dt>
+<dd><p>normal mode force (force in normal mode space)</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">int espressopp.Particle.type</code></dt>
+<dd><p>particle type</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">int espressopp.Particle.pib</code></dt>
+<dd><p>path integral bead number (Trotter number)</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">real espressopp.Particle.q</code></dt>
+<dd><p>charge</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">real espressopp.Particle.mass</code></dt>
+<dd><p>mass</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">real espressopp.Particle.varmass</code></dt>
+<dd><p>variable mass (for path integral-based adaptive resolution simulations)</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">real espressopp.Particle.radius</code></dt>
+<dd><p>particle radius</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">real espressopp.Particle.vradius</code></dt>
+<dd><p>radial velocity</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">real espressopp.Particle.fradius</code></dt>
+<dd><p>radial force</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">real espressopp.Particle.lambda_adr</code></dt>
+<dd><p>particle’s resolution parameter (used in adaptive resolution simulations)</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">real espressopp.Particle.lambda_adrd</code></dt>
+<dd><p>particle’s gradient of the resolution function in the direction of resolution change (used in adaptive resolution simulations)</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">bool espressopp.Particle.isGhost</code></dt>
+<dd><p>boolean flag to indicate whether particle is ghost particle or not</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">Int3D espressopp.Particle.imageBox</code></dt>
+<dd><p>particle’s image box</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">real espressopp.Particle.extVar</code></dt>
+<dd><p>auxiliary variable associated with the particle (used in generalized Langevin friction)</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">real espressopp.Particle.drift_f</code></dt>
+<dd><p>particle’s drift force in the direction of resolution change (used in adaptive resolution simulations)</p>
+</dd></dl>
+
+<dl class="data">
+<dt>
+<code class="descname">real espressopp.Particle.state</code></dt>
+<dd><p>particle state (used in AssociationReaction)</p>
 </dd></dl>
 
 <dl class="class">

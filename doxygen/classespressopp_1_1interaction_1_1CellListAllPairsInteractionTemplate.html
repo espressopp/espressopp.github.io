@@ -91,6 +91,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:acac0fb193a55fa105b58cb137b064a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae557d25b703f21b11f7d6ef404bf1aa1"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1CellListAllPairsInteractionTemplate.html#ae557d25b703f21b11f7d6ef404bf1aa1">computeEnergyCG</a> ()</td></tr>
 <tr class="separator:ae557d25b703f21b11f7d6ef404bf1aa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67646bca8b1fe3c02496f206791a216e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1CellListAllPairsInteractionTemplate.html#a67646bca8b1fe3c02496f206791a216e">computeEnergyAA</a> (int atomtype)</td></tr>
+<tr class="separator:a67646bca8b1fe3c02496f206791a216e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accf322163184cbb3ed1b8888e113b09a"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1CellListAllPairsInteractionTemplate.html#accf322163184cbb3ed1b8888e113b09a">computeEnergyCG</a> (int atomtype)</td></tr>
+<tr class="separator:accf322163184cbb3ed1b8888e113b09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae145f6b3f31aecc9c2fd2687664ab3a6"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1CellListAllPairsInteractionTemplate.html#ae145f6b3f31aecc9c2fd2687664ab3a6">computeVirialX</a> (std::vector&lt; <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> &gt; &amp;p_xx_total, int bins)</td></tr>
 <tr class="separator:ae145f6b3f31aecc9c2fd2687664ab3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c67d2ec12b8c367e4147b75e96855b3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1CellListAllPairsInteractionTemplate.html#a2c67d2ec12b8c367e4147b75e96855b3">computeVirial</a> ()</td></tr>
@@ -194,7 +198,7 @@ template&lt;typename _Potential &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00043">43</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00081">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::ntypes</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00082">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
+<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00083">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::ntypes</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
 
 </div>
 </div>
@@ -226,9 +230,9 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a39359076df76ed68e3ce502ef7209b9f">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00091">91</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00093">93</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00109">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="Particle_8hpp_source.html#l00255">espressopp::Particle::force()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="CellListAllPairsIterator_8hpp_source.html#l00142">espressopp::iterator::CellListAllPairsIterator::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00083">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::storage</a>, and <a class="el" href="Particle_8hpp_source.html#l00214">espressopp::Particle::type()</a>.</p>
+<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00111">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="Particle_8hpp_source.html#l00284">espressopp::Particle::force()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="CellListAllPairsIterator_8hpp_source.html#l00142">espressopp::iterator::CellListAllPairsIterator::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00085">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::storage</a>, and <a class="el" href="Particle_8hpp_source.html#l00231">espressopp::Particle::type()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
 
@@ -261,7 +265,7 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a4cab299fd0afc66264c5447360cb240a">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00078">78</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00080">80</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Interaction_8hpp_source.html#l00034">espressopp::interaction::Nonbonded</a>.</p>
 
@@ -294,16 +298,16 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a0147b5dc240a0493cc310500da0cef6e">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00109">109</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00111">111</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00128">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyDeriv()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="CellListAllPairsIterator_8hpp_source.html#l00142">espressopp::iterator::CellListAllPairsIterator::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00083">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::storage</a>, and <a class="el" href="Particle_8hpp_source.html#l00214">espressopp::Particle::type()</a>.</p>
+<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00130">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyDeriv()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="CellListAllPairsIterator_8hpp_source.html#l00142">espressopp::iterator::CellListAllPairsIterator::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00085">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::storage</a>, and <a class="el" href="Particle_8hpp_source.html#l00231">espressopp::Particle::type()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00091">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::addForces()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00093">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::addForces()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
 
 </div>
 </div>
 <a id="acac0fb193a55fa105b58cb137b064a1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acac0fb193a55fa105b58cb137b064a1f">&#9670;&nbsp;</a></span>computeEnergyAA()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acac0fb193a55fa105b58cb137b064a1f">&#9670;&nbsp;</a></span>computeEnergyAA() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -329,16 +333,48 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a0a985a00d1d8065cace4cf70a0d43749">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00135">135</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00137">137</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00142">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyCG()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00130">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyDeriv()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00128">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyDeriv()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
+</div>
+</div>
+<a id="a67646bca8b1fe3c02496f206791a216e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67646bca8b1fe3c02496f206791a216e">&#9670;&nbsp;</a></span>computeEnergyAA() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Potential &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> <a class="el" href="classespressopp_1_1interaction_1_1CellListAllPairsInteractionTemplate.html">espressopp::interaction::CellListAllPairsInteractionTemplate</a>&lt; _Potential &gt;::computeEnergyAA </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atomtype</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#ae0b3610f6ffa236e4524168ceedea664">espressopp::interaction::Interaction</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00144">144</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00151">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyCG()</a>.</p>
 
 </div>
 </div>
 <a id="ae557d25b703f21b11f7d6ef404bf1aa1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae557d25b703f21b11f7d6ef404bf1aa1">&#9670;&nbsp;</a></span>computeEnergyCG()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae557d25b703f21b11f7d6ef404bf1aa1">&#9670;&nbsp;</a></span>computeEnergyCG() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -364,11 +400,43 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#aac7f1433dd2ae9ffbe19f4186e00b187">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00142">142</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00151">151</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00150">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialX()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00144">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyAA()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00135">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyAA()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
+</div>
+</div>
+<a id="accf322163184cbb3ed1b8888e113b09a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accf322163184cbb3ed1b8888e113b09a">&#9670;&nbsp;</a></span>computeEnergyCG() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Potential &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> <a class="el" href="classespressopp_1_1interaction_1_1CellListAllPairsInteractionTemplate.html">espressopp::interaction::CellListAllPairsInteractionTemplate</a>&lt; _Potential &gt;::computeEnergyCG </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atomtype</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a8d579a3af35b57a796193fdc319a7bdf">espressopp::interaction::Interaction</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00158">158</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00166">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialX()</a>.</p>
 
 </div>
 </div>
@@ -399,11 +467,11 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a542093b4375a6d67adb8ec27b8593acd">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00128">128</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00130">130</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00135">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyAA()</a>.</p>
+<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00137">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyAA()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00109">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00111">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
 
 </div>
 </div>
@@ -434,11 +502,11 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a363be8e9c6d3f6b36fd5bbe0453ddaf3">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00156">156</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00172">172</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00183">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="CellListAllPairsIterator_8hpp_source.html#l00142">espressopp::iterator::CellListAllPairsIterator::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00243">espressopp::Particle::position()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00083">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::storage</a>, and <a class="el" href="Particle_8hpp_source.html#l00214">espressopp::Particle::type()</a>.</p>
+<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00199">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="CellListAllPairsIterator_8hpp_source.html#l00142">espressopp::iterator::CellListAllPairsIterator::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00266">espressopp::Particle::position()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00085">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::storage</a>, and <a class="el" href="Particle_8hpp_source.html#l00231">espressopp::Particle::type()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00150">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialX()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00166">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialX()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
 
 </div>
 </div>
@@ -470,11 +538,11 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#adeec12ec2da7f78c67191e6ad9609a48">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00183">183</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00199">199</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="CellListAllPairsIterator_8hpp_source.html#l00142">espressopp::iterator::CellListAllPairsIterator::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00243">espressopp::Particle::position()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00083">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::storage</a>, and <a class="el" href="Particle_8hpp_source.html#l00214">espressopp::Particle::type()</a>.</p>
+<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="CellListAllPairsIterator_8hpp_source.html#l00142">espressopp::iterator::CellListAllPairsIterator::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00266">espressopp::Particle::position()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00085">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::storage</a>, and <a class="el" href="Particle_8hpp_source.html#l00231">espressopp::Particle::type()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00156">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00208">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00172">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00224">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
 
 </div>
 </div>
@@ -516,9 +584,9 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#aa11b79bf3339fc6a82c1937c55fbffce">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00208">208</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00224">224</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00183">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="classespressopp_1_1bc_1_1BC.html#a0e862db5b5d24ea84efd55cf248b4680">espressopp::bc::BC::getMinimumImageVectorBox()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="CellListAllPairsIterator_8hpp_source.html#l00142">espressopp::iterator::CellListAllPairsIterator::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00243">espressopp::Particle::position()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00083">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::storage</a>, and <a class="el" href="Particle_8hpp_source.html#l00214">espressopp::Particle::type()</a>.</p>
+<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00199">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="classespressopp_1_1bc_1_1BC.html#a0e862db5b5d24ea84efd55cf248b4680">espressopp::bc::BC::getMinimumImageVectorBox()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="CellListAllPairsIterator_8hpp_source.html#l00142">espressopp::iterator::CellListAllPairsIterator::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00266">espressopp::Particle::position()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00085">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::storage</a>, and <a class="el" href="Particle_8hpp_source.html#l00231">espressopp::Particle::type()</a>.</p>
 
 </div>
 </div>
@@ -560,9 +628,9 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a26cfbd4d34b31f67259b064292c0e6aa">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00242">242</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00258">258</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="classespressopp_1_1bc_1_1BC.html#a6e42ad9d7f93276c42bf17d0231cf97c">espressopp::bc::BC::getBoxL()</a>, <a class="el" href="classespressopp_1_1bc_1_1BC.html#a0e862db5b5d24ea84efd55cf248b4680">espressopp::bc::BC::getMinimumImageVectorBox()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="CellListAllPairsIterator_8hpp_source.html#l00142">espressopp::iterator::CellListAllPairsIterator::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00243">espressopp::Particle::position()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00083">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::storage</a>, and <a class="el" href="Particle_8hpp_source.html#l00214">espressopp::Particle::type()</a>.</p>
+<p class="reference">References <a class="el" href="classespressopp_1_1bc_1_1BC.html#a6e42ad9d7f93276c42bf17d0231cf97c">espressopp::bc::BC::getBoxL()</a>, <a class="el" href="classespressopp_1_1bc_1_1BC.html#a0e862db5b5d24ea84efd55cf248b4680">espressopp::bc::BC::getMinimumImageVectorBox()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="CellListAllPairsIterator_8hpp_source.html#l00142">espressopp::iterator::CellListAllPairsIterator::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00266">espressopp::Particle::position()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00085">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::storage</a>, and <a class="el" href="Particle_8hpp_source.html#l00231">espressopp::Particle::type()</a>.</p>
 
 </div>
 </div>
@@ -604,11 +672,11 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a48b8954ca27e26df5d065ac801b436b5">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00150">150</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00166">166</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00156">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>.</p>
+<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00172">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00142">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyCG()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00158">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyCG()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
 
 </div>
 </div>
@@ -641,9 +709,9 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a62ef867c354ba1c382759b1358328407">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00293">293</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00309">309</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00081">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::ntypes</a>.</p>
+<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00083">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::ntypes</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>.</p>
 
@@ -687,9 +755,9 @@ template&lt;typename _Potential &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">63</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00091">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::addForces()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00109">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00135">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyAA()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00142">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyCG()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00128">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyDeriv()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00156">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00183">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00150">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialX()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00293">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00082">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
+<p class="reference">References <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00093">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::addForces()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00111">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00137">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyAA()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00151">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyCG()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00130">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergyDeriv()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00172">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00199">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00166">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialX()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00309">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00091">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::addForces()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00109">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00156">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00183">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00293">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00093">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::addForces()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00111">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00172">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00199">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00309">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>.</p>
 
 </div>
 </div>
@@ -798,7 +866,7 @@ template&lt;typename _Potential &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00050">50</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Array2D_8hpp_source.html#l00144">espressopp::esutil::Array2D&lt; T, outlier_mode &gt;::at()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00081">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::ntypes</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00082">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
+<p class="reference">References <a class="el" href="Array2D_8hpp_source.html#l00144">espressopp::esutil::Array2D&lt; T, outlier_mode &gt;::at()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00083">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::ntypes</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
 
 </div>
 </div>
@@ -825,9 +893,9 @@ template&lt;typename _Potential &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00081">81</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00083">83</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00043">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::CellListAllPairsInteractionTemplate()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00293">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00050">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::setPotential()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00043">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::CellListAllPairsInteractionTemplate()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00309">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00050">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::setPotential()</a>.</p>
 
 </div>
 </div>
@@ -853,7 +921,7 @@ template&lt;typename _Potential &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00082">82</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00084">84</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00043">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::CellListAllPairsInteractionTemplate()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00063">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00050">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::setPotential()</a>.</p>
 
@@ -881,9 +949,9 @@ template&lt;typename _Potential &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00083">83</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00085">85</a> of file <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html">CellListAllPairsInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00091">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::addForces()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00109">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00156">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00183">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00093">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::addForces()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00111">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00172">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, and <a class="el" href="CellListAllPairsInteractionTemplate_8hpp_source.html#l00199">espressopp::interaction::CellListAllPairsInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>.</p>
 
 </div>
 </div>

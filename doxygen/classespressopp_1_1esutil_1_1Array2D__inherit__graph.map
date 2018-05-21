@@ -1,8 +1,10 @@
 <map id="espressopp::esutil::Array2D&lt; T, outlier_mode &gt;" name="espressopp::esutil::Array2D&lt; T, outlier_mode &gt;">
 <area shape="rect" id="node3" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; shared_ptr\l\&lt; Potential \&gt;, esutil\l::enlarge \&gt;" alt="" coords="513,5,664,76"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialAT,\l esutil::enlarge \&gt;" alt="" coords="507,101,670,157"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; T, exception \&gt;" alt="" coords="501,181,676,223"/>
-<area shape="rect" id="node7" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; Potential,\l esutil::enlarge \&gt;" alt="" coords="516,247,661,303"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialCG,\l esutil::enlarge \&gt;" alt="" coords="506,327,671,383"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1Array2D_3_01T_00_01enlarge_01_4.html" title="espressopp::esutil\l::Array2D\&lt; T, enlarge \&gt;" alt="" coords="725,181,885,223"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialQM,\l esutil::enlarge \&gt;" alt="" coords="505,101,672,157"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialAT,\l esutil::enlarge \&gt;" alt="" coords="507,181,670,237"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; T, exception \&gt;" alt="" coords="501,261,676,303"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialCL,\l esutil::enlarge \&gt;" alt="" coords="507,327,670,383"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; Potential,\l esutil::enlarge \&gt;" alt="" coords="516,407,661,463"/>
+<area shape="rect" id="node10" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialCG,\l esutil::enlarge \&gt;" alt="" coords="506,487,671,543"/>
+<area shape="rect" id="node7" href="$classespressopp_1_1esutil_1_1Array2D_3_01T_00_01enlarge_01_4.html" title="espressopp::esutil\l::Array2D\&lt; T, enlarge \&gt;" alt="" coords="725,261,885,303"/>
 </map>

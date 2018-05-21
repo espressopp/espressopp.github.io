@@ -422,14 +422,14 @@
 
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListTypesTabulated">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedPairListTypesTabulated</code><span class="sig-paren">(</span><em>system</em>, <em>ftl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListTypesTabulated" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedPairListTypesTabulated</code><span class="sig-paren">(</span><em>system</em>, <em>fpl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListTypesTabulated" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) – The Espresso++ system object.</li>
-<li><strong>ftl</strong> (<a class="reference internal" href="espressopp.FixedPairList.html#module-espressopp.FixedPairList" title="espressopp.FixedPairList"><em>espressopp.FixedPairList</em></a>) – The FixedPair list.</li>
+<li><strong>fpl</strong> (<a class="reference internal" href="espressopp.FixedPairList.html#module-espressopp.FixedPairList" title="espressopp.FixedPairList"><em>espressopp.FixedPairList</em></a>) – The FixedPair list.</li>
 </ul>
 </td>
 </tr>
@@ -451,6 +451,667 @@
 <li><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) – The potential to set up.</li>
 </ul>
 </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedPairListPIadressTabulated</code><span class="sig-paren">(</span><em>system</em>, <em>fpl</em>, <em>fixedtupleList</em>, <em>potential</em>, <em>ntrotter</em>, <em>speedup</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines tabulated bonded pair potential for interactions based on the fixedtuplelist in the context of Path Integral AdResS. When the speedup flag is set,
+it will use only the centroids in the classical region, otherwise all Trotter beads. In the quantum region, always all Trotter beads are used.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) – The Espresso++ system object.</li>
+<li><strong>fpl</strong> (<a class="reference internal" href="espressopp.FixedPairList.html#module-espressopp.FixedPairList" title="espressopp.FixedPairList"><em>espressopp.FixedPairList</em></a>) – The FixedPairList.</li>
+<li><strong>fixedtupleList</strong> (<a class="reference internal" href="espressopp.FixedTupleListAdress.html#module-espressopp.FixedTupleListAdress" title="espressopp.FixedTupleListAdress"><em>espressopp.FixedTupleListAdress</em></a>) – The FixedTupleListAdress object.</li>
+<li><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) – The potential.</li>
+<li><strong>ntrotter</strong> (<em>int</em>) – The Trotter number.</li>
+<li><strong>speedup</strong> (<em>bool</em>) – Boolean flag to decide whether to use centroids in classical region or all Trotter beads</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.setPotential">
+<code class="descclassname">espressopp.interaction.FixedPairListPIadressTabulated.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) – The potential object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.getPotential">
+<code class="descclassname">espressopp.interaction.FixedPairListPIadressTabulated.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the potential</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr &lt; Potential &gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.setFixedPairList">
+<code class="descclassname">espressopp.interaction.FixedPairListPIadressTabulated.</code><code class="descname">setFixedPairList</code><span class="sig-paren">(</span><em>fpl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.setFixedPairList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the FixedPairList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fpl</strong> (<a class="reference internal" href="espressopp.FixedPairList.html#module-espressopp.FixedPairList" title="espressopp.FixedPairList"><em>espressopp.FixedPairList</em></a>) – The FixedPairList object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.getFixedPairList">
+<code class="descclassname">espressopp.interaction.FixedPairListPIadressTabulated.</code><code class="descname">getFixedPairList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.getFixedPairList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the FixedPairList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the FixedPairList</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr &lt; FixedPairList &gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.setFixedTupleList">
+<code class="descclassname">espressopp.interaction.FixedPairListPIadressTabulated.</code><code class="descname">setFixedTupleList</code><span class="sig-paren">(</span><em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.setFixedTupleList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the FixedTupleList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedtupleList</strong> (<a class="reference internal" href="espressopp.FixedTupleListAdress.html#module-espressopp.FixedTupleListAdress" title="espressopp.FixedTupleListAdress"><em>espressopp.FixedTupleListAdress</em></a>) – The FixedTupleListAdress object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.getFixedTupleList">
+<code class="descclassname">espressopp.interaction.FixedPairListPIadressTabulated.</code><code class="descname">getFixedTupleList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.getFixedTupleList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the FixedTupleList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the FixedTupleList</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr &lt; FixedTupleListAdress &gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.setNTrotter">
+<code class="descclassname">espressopp.interaction.FixedPairListPIadressTabulated.</code><code class="descname">setNTrotter</code><span class="sig-paren">(</span><em>ntrotter</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.setNTrotter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Trotter number NTrotter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ntrotter</strong> (<em>int</em>) – The Trotter number.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.getNTrotter">
+<code class="descclassname">espressopp.interaction.FixedPairListPIadressTabulated.</code><code class="descname">getNTrotter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.getNTrotter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the Trotter number NTrotter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ntrotter</strong> (<em>int</em>) – The Trotter number.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.setSpeedup">
+<code class="descclassname">espressopp.interaction.FixedPairListPIadressTabulated.</code><code class="descname">setSpeedup</code><span class="sig-paren">(</span><em>speedup</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.setSpeedup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the speedup flag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>speedup</strong> (<em>bool</em>) – The speedup flag.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.getSpeedup">
+<code class="descclassname">espressopp.interaction.FixedPairListPIadressTabulated.</code><code class="descname">getSpeedup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListPIadressTabulated.getSpeedup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the speedup flag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the speedup flag</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListPIadressTabulated</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em>, <em>ntrotter</em>, <em>speedup</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a non-bonded interaction using an adaptive resolution VerletList in the context of Path Integral AdResS. Two different tabulated potentials can be specified: one, which is used in the quantum region, the other one in the classical region. The interpolation proceeds according to the Path Integral AdResS scheme (see J. Chem. Phys 147, 244104 (2017)). When the speedup flag is set,it will use only the centroids in the classical region, otherwise all Trotter beads. In the quantum region, always all Trotter beads are used.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<a class="reference internal" href="espressopp.VerletListAdress.html#module-espressopp.VerletListAdress" title="espressopp.VerletListAdress"><em>espressopp.VerletListAdress</em></a>) – The AdResS VerletList.</li>
+<li><strong>fixedtupleList</strong> (<a class="reference internal" href="espressopp.FixedTupleListAdress.html#module-espressopp.FixedTupleListAdress" title="espressopp.FixedTupleListAdress"><em>espressopp.FixedTupleListAdress</em></a>) – The FixedTupleListAdress object.</li>
+<li><strong>ntrotter</strong> (<em>int</em>) – The Trotter number.</li>
+<li><strong>speedup</strong> (<em>bool</em>) – Boolean flag to decide whether to use centroids in classical region or all Trotter beads</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.setPotentialQM">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulated.</code><code class="descname">setPotentialQM</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.setPotentialQM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the potential for the quantum region (has to be a tabulated one).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) – The potential object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.setPotentialCL">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulated.</code><code class="descname">setPotentialCL</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.setPotentialCL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the potential for the classical region (has to be a tabulated one).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) – The potential object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.setVerletList">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulated.</code><code class="descname">setVerletList</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.setVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the VerletList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> (<a class="reference internal" href="espressopp.VerletListAdress.html#module-espressopp.VerletListAdress" title="espressopp.VerletListAdress"><em>espressopp.VerletListAdress</em></a>) – The VerletListAdress object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulated.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the VerletList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the Adress VerletList</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletListAdress&gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.setFixedTupleList">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulated.</code><code class="descname">setFixedTupleList</code><span class="sig-paren">(</span><em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.setFixedTupleList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the FixedTupleList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedtupleList</strong> (<a class="reference internal" href="espressopp.FixedTupleListAdress.html#module-espressopp.FixedTupleListAdress" title="espressopp.FixedTupleListAdress"><em>espressopp.FixedTupleListAdress</em></a>) – The FixedTupleListAdress object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.getFixedTupleList">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulated.</code><code class="descname">getFixedTupleList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.getFixedTupleList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the FixedTupleList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the FixedTupleList</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr &lt; FixedTupleListAdress &gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.setNTrotter">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulated.</code><code class="descname">setNTrotter</code><span class="sig-paren">(</span><em>ntrotter</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.setNTrotter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Trotter number NTrotter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ntrotter</strong> (<em>int</em>) – The Trotter number.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.getNTrotter">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulated.</code><code class="descname">getNTrotter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.getNTrotter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the Trotter number NTrotter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the Trotter number</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.setSpeedup">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulated.</code><code class="descname">setSpeedup</code><span class="sig-paren">(</span><em>speedup</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.setSpeedup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the speedup flag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>speedup</strong> (<em>bool</em>) – The speedup flag.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.getSpeedup">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulated.</code><code class="descname">getSpeedup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulated.getSpeedup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the speedup flag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the speedup flag</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListPIadressTabulatedLJ</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em>, <em>ntrotter</em>, <em>speedup</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a non-bonded interaction using an adaptive resolution VerletList in the context of Path Integral AdResS. Two different potentials can be specified: one, which is used in the quantum region (tabulated), the other one in the classical region (Lennard-Jones type). The interpolation proceeds according to the Path Integral AdResS scheme (see J. Chem. Phys 147, 244104 (2017)). When the speedup flag is set,it will use only the centroids in the classical region, otherwise all Trotter beads. In the quantum region, always all Trotter beads are used.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<a class="reference internal" href="espressopp.VerletListAdress.html#module-espressopp.VerletListAdress" title="espressopp.VerletListAdress"><em>espressopp.VerletListAdress</em></a>) – The AdResS VerletList.</li>
+<li><strong>fixedtupleList</strong> (<a class="reference internal" href="espressopp.FixedTupleListAdress.html#module-espressopp.FixedTupleListAdress" title="espressopp.FixedTupleListAdress"><em>espressopp.FixedTupleListAdress</em></a>) – The FixedTupleListAdress object.</li>
+<li><strong>ntrotter</strong> (<em>int</em>) – The Trotter number.</li>
+<li><strong>speedup</strong> (<em>bool</em>) – Boolean flag to decide whether to use centroids in classical region or all Trotter beads</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.setPotentialQM">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulatedLJ.</code><code class="descname">setPotentialQM</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.setPotentialQM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the potential for the quantum region (has to be a tabulated one).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) – The potential object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.setPotentialCL">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulatedLJ.</code><code class="descname">setPotentialCL</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.setPotentialCL" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the potential for the classical region (has to be a Lennard-Jones type one).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) – The potential object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.setVerletList">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulatedLJ.</code><code class="descname">setVerletList</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.setVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the VerletList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> (<a class="reference internal" href="espressopp.VerletListAdress.html#module-espressopp.VerletListAdress" title="espressopp.VerletListAdress"><em>espressopp.VerletListAdress</em></a>) – The VerletListAdress object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulatedLJ.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the VerletList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the Adress VerletList</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletListAdress&gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.setFixedTupleList">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulatedLJ.</code><code class="descname">setFixedTupleList</code><span class="sig-paren">(</span><em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.setFixedTupleList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the FixedTupleList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedtupleList</strong> (<a class="reference internal" href="espressopp.FixedTupleListAdress.html#module-espressopp.FixedTupleListAdress" title="espressopp.FixedTupleListAdress"><em>espressopp.FixedTupleListAdress</em></a>) – The FixedTupleListAdress object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.getFixedTupleList">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulatedLJ.</code><code class="descname">getFixedTupleList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.getFixedTupleList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the FixedTupleList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the FixedTupleList</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr &lt; FixedTupleListAdress &gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.setNTrotter">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulatedLJ.</code><code class="descname">setNTrotter</code><span class="sig-paren">(</span><em>ntrotter</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.setNTrotter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Trotter number NTrotter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ntrotter</strong> (<em>int</em>) – The Trotter number.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.getNTrotter">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulatedLJ.</code><code class="descname">getNTrotter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.getNTrotter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the Trotter number NTrotter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the Trotter number</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.setSpeedup">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulatedLJ.</code><code class="descname">setSpeedup</code><span class="sig-paren">(</span><em>speedup</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.setSpeedup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the speedup flag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>speedup</strong> (<em>bool</em>) – The speedup flag.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.getSpeedup">
+<code class="descclassname">espressopp.interaction.VerletListPIadressTabulatedLJ.</code><code class="descname">getSpeedup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressTabulatedLJ.getSpeedup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the speedup flag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the speedup flag</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListPIadressNoDriftTabulated</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em>, <em>ntrotter</em>, <em>speedup</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a non-bonded interaction using an adaptive resolution VerletList in the context of Path Integral AdResS. One tabulated potential can be specified, which is used thoughout the whole system. Hence, only the quantumness of the particles changes, but not the forcefield (see J. Chem. Phys 147, 244104 (2017)). When the speedup flag is set,it will use only the centroids in the classical region, otherwise all Trotter beads. In the quantum region, always all Trotter beads are used.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<a class="reference internal" href="espressopp.VerletListAdress.html#module-espressopp.VerletListAdress" title="espressopp.VerletListAdress"><em>espressopp.VerletListAdress</em></a>) – The AdResS VerletList.</li>
+<li><strong>fixedtupleList</strong> (<a class="reference internal" href="espressopp.FixedTupleListAdress.html#module-espressopp.FixedTupleListAdress" title="espressopp.FixedTupleListAdress"><em>espressopp.FixedTupleListAdress</em></a>) – The FixedTupleListAdress object.</li>
+<li><strong>ntrotter</strong> (<em>int</em>) – The Trotter number.</li>
+<li><strong>speedup</strong> (<em>bool</em>) – Boolean flag to decide whether to use centroids in classical region or all Trotter beads</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListPIadressNoDriftTabulated.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the potential which is used throughout the whole system (has to be a tabulated one).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) – The potential object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.setVerletList">
+<code class="descclassname">espressopp.interaction.VerletListPIadressNoDriftTabulated.</code><code class="descname">setVerletList</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.setVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the VerletList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> (<a class="reference internal" href="espressopp.VerletListAdress.html#module-espressopp.VerletListAdress" title="espressopp.VerletListAdress"><em>espressopp.VerletListAdress</em></a>) – The VerletListAdress object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListPIadressNoDriftTabulated.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the VerletList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the Adress VerletList</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletListAdress&gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.setFixedTupleList">
+<code class="descclassname">espressopp.interaction.VerletListPIadressNoDriftTabulated.</code><code class="descname">setFixedTupleList</code><span class="sig-paren">(</span><em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.setFixedTupleList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the FixedTupleList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedtupleList</strong> (<a class="reference internal" href="espressopp.FixedTupleListAdress.html#module-espressopp.FixedTupleListAdress" title="espressopp.FixedTupleListAdress"><em>espressopp.FixedTupleListAdress</em></a>) – The FixedTupleListAdress object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.getFixedTupleList">
+<code class="descclassname">espressopp.interaction.VerletListPIadressNoDriftTabulated.</code><code class="descname">getFixedTupleList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.getFixedTupleList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the FixedTupleList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the FixedTupleList</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr &lt; FixedTupleListAdress &gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.setNTrotter">
+<code class="descclassname">espressopp.interaction.VerletListPIadressNoDriftTabulated.</code><code class="descname">setNTrotter</code><span class="sig-paren">(</span><em>ntrotter</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.setNTrotter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Trotter number NTrotter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ntrotter</strong> (<em>int</em>) – The Trotter number.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.getNTrotter">
+<code class="descclassname">espressopp.interaction.VerletListPIadressNoDriftTabulated.</code><code class="descname">getNTrotter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.getNTrotter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the Trotter number NTrotter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the Trotter number</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.setSpeedup">
+<code class="descclassname">espressopp.interaction.VerletListPIadressNoDriftTabulated.</code><code class="descname">setSpeedup</code><span class="sig-paren">(</span><em>speedup</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.setSpeedup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the speedup flag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>speedup</strong> (<em>bool</em>) – The speedup flag.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.getSpeedup">
+<code class="descclassname">espressopp.interaction.VerletListPIadressNoDriftTabulated.</code><code class="descname">getSpeedup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListPIadressNoDriftTabulated.getSpeedup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the speedup flag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the speedup flag</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
 </tr>
 </tbody>
 </table>

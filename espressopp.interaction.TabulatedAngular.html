@@ -268,6 +268,185 @@
 </table>
 </dd></dl>
 
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedTripleListPIadressTabulatedAngular</code><span class="sig-paren">(</span><em>system</em>, <em>ftl</em>, <em>fixedtupleList</em>, <em>potential</em>, <em>ntrotter</em>, <em>speedup</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines tabulated angular potential for interactions based on the fixedtuplelist in the context of Path Integral AdResS. When the speedup flag is set,
+it will use only the centroids in the classical region, otherwise all Trotter beads. In the quantum region, always all Trotter beads are used.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) – The Espresso++ system object.</li>
+<li><strong>ftl</strong> (<a class="reference internal" href="espressopp.FixedTripleList.html#module-espressopp.FixedTripleList" title="espressopp.FixedTripleList"><em>espressopp.FixedTripleList</em></a>) – The FixedTripleList.</li>
+<li><strong>fixedtupleList</strong> (<a class="reference internal" href="espressopp.FixedTupleListAdress.html#module-espressopp.FixedTupleListAdress" title="espressopp.FixedTupleListAdress"><em>espressopp.FixedTupleListAdress</em></a>) – The FixedTupleListAdress object.</li>
+<li><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) – The potential.</li>
+<li><strong>ntrotter</strong> (<em>int</em>) – The Trotter number.</li>
+<li><strong>speedup</strong> (<em>bool</em>) – Boolean flag to decide whether to use centroids in classical region or all Trotter beads</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.setPotential">
+<code class="descclassname">espressopp.interaction.FixedTripleListPIadressTabulatedAngular.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> (<a class="reference internal" href="espressopp.interaction.Potential.html#module-espressopp.interaction.Potential" title="espressopp.interaction.Potential"><em>espressopp.interaction.Potential</em></a>) – The potential object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.getPotential">
+<code class="descclassname">espressopp.interaction.FixedTripleListPIadressTabulatedAngular.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the potential</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr &lt; Potential &gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.setFixedTripleList">
+<code class="descclassname">espressopp.interaction.FixedTripleListPIadressTabulatedAngular.</code><code class="descname">setFixedTripleList</code><span class="sig-paren">(</span><em>ftl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.setFixedTripleList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the FixedTripleList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ftl</strong> (<a class="reference internal" href="espressopp.FixedTripleList.html#module-espressopp.FixedTripleList" title="espressopp.FixedTripleList"><em>espressopp.FixedTripleList</em></a>) – The FixedTripleList object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.getFixedTripleList">
+<code class="descclassname">espressopp.interaction.FixedTripleListPIadressTabulatedAngular.</code><code class="descname">getFixedTripleList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.getFixedTripleList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the FixedTripleList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the FixedTripleList</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr &lt; FixedTripleList &gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.setFixedTupleList">
+<code class="descclassname">espressopp.interaction.FixedTripleListPIadressTabulatedAngular.</code><code class="descname">setFixedTupleList</code><span class="sig-paren">(</span><em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.setFixedTupleList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the FixedTupleList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedtupleList</strong> (<a class="reference internal" href="espressopp.FixedTupleListAdress.html#module-espressopp.FixedTupleListAdress" title="espressopp.FixedTupleListAdress"><em>espressopp.FixedTupleListAdress</em></a>) – The FixedTupleListAdress object.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.getFixedTupleList">
+<code class="descclassname">espressopp.interaction.FixedTripleListPIadressTabulatedAngular.</code><code class="descname">getFixedTupleList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.getFixedTupleList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the FixedTupleList.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the FixedTupleList</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr &lt; FixedTupleListAdress &gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.setNTrotter">
+<code class="descclassname">espressopp.interaction.FixedTripleListPIadressTabulatedAngular.</code><code class="descname">setNTrotter</code><span class="sig-paren">(</span><em>ntrotter</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.setNTrotter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Trotter number NTrotter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>ntrotter</strong> (<em>int</em>) – The Trotter number.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.getNTrotter">
+<code class="descclassname">espressopp.interaction.FixedTripleListPIadressTabulatedAngular.</code><code class="descname">getNTrotter</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.getNTrotter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the Trotter number NTrotter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the Trotter number</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">int</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.setSpeedup">
+<code class="descclassname">espressopp.interaction.FixedTripleListPIadressTabulatedAngular.</code><code class="descname">setSpeedup</code><span class="sig-paren">(</span><em>speedup</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.setSpeedup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the speedup flag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>speedup</strong> (<em>bool</em>) – The speedup flag.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.getSpeedup">
+<code class="descclassname">espressopp.interaction.FixedTripleListPIadressTabulatedAngular.</code><code class="descname">getSpeedup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.espressopp.interaction.FixedTripleListPIadressTabulatedAngular.getSpeedup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the speedup flag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">the speedup flag</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="class">
+<dt id="espressopp.interaction.TabulatedAngular.FixedTripleListPIadressTabulatedAngularLocal">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.TabulatedAngular.</code><code class="descname">FixedTripleListPIadressTabulatedAngularLocal</code><span class="sig-paren">(</span><em>system</em>, <em>ftl</em>, <em>fixedtupleList</em>, <em>potential</em>, <em>ntrotter</em>, <em>speedup</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.FixedTripleListPIadressTabulatedAngularLocal" title="Permalink to this definition">¶</a></dt>
+<dd><p>The (local) tanulated angular interaction using FixedTriple lists.</p>
+</dd></dl>
+
 <dl class="class">
 <dt id="espressopp.interaction.TabulatedAngular.TabulatedAngular">
 <em class="property">class </em><code class="descclassname">espressopp.interaction.TabulatedAngular.</code><code class="descname">TabulatedAngular</code><a class="headerlink" href="#espressopp.interaction.TabulatedAngular.TabulatedAngular" title="Permalink to this definition">¶</a></dt>

@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$structUniqueReduce.html" title="Reduction operator that evaluates to. " alt="" coords="164,5,272,32"/>
+<area shape="rect" id="node1" href="$classlog4espp_1_1Logger.html" title="Logger is a an abstract class for hierarchical organization of logging objects. " alt="" coords="5,31,127,57"/>
+<area shape="rect" id="node2" href="$classlog4espp_1_1GenLogger.html" title="GenLogger is a very generic C++ implementation of the abstract Logger class. " alt="" coords="175,5,320,32"/>
+<area shape="rect" id="node3" href="$classlog4espp_1_1PyLogger.html" title="PyLogger is an implementaton of the abstract class Logger that uses corresponding Python Logger objec..." alt="" coords="179,56,316,83"/>
 </map>

@@ -221,7 +221,8 @@
 <dl class="function">
 <dt id="espressopp.integrator.TDforce.espressopp.integrator.TDforce.addForce">
 <code class="descclassname">espressopp.integrator.TDforce.</code><code class="descname">addForce</code><span class="sig-paren">(</span><em>itype</em>, <em>filename</em>, <em>type</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.TDforce.espressopp.integrator.TDforce.addForce" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Adds a thermodynamic force acting on particles of type “type”.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
@@ -231,6 +232,20 @@
 <li><strong>type</strong> (<em>int</em>) – particle type on which the TD force needs to be applied</li>
 </ul>
 </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.integrator.TDforce.espressopp.integrator.TDforce.computeTDEnergy">
+<code class="descclassname">espressopp.integrator.TDforce.</code><code class="descname">computeTDEnergy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.TDforce.espressopp.integrator.TDforce.computeTDEnergy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the energy corresponding to the thermodynamics force (summing over all different particle types and thermodynamic forces on them).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">real</td>
 </tr>
 </tbody>
 </table>

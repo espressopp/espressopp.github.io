@@ -18,6 +18,7 @@
 <area shape="rect" id="node18" href="$LangevinThermostatOnRadius_8cpp.html" title="/home/espressopp/espressopp\l/src/integrator/LangevinThermostat\lOnRadius.cpp" alt="" coords="3876,95,4100,151"/>
 <area shape="rect" id="node19" href="$LatticeBoltzmann_8cpp.html" title="/home/espressopp/espressopp\l/src/integrator/LatticeBoltzmann.cpp" alt="" coords="4124,102,4356,143"/>
 <area shape="rect" id="node20" href="$LatticeSite_8cpp.html" title="/home/espressopp/espressopp\l/src/integrator/LatticeSite.cpp" alt="" coords="4380,102,4580,143"/>
-<area shape="rect" id="node21" href="$StochasticVelocityRescaling_8cpp.html" title="/home/espressopp/espressopp\l/src/integrator/StochasticVelocity\lRescaling.cpp" alt="" coords="4605,95,4819,151"/>
-<area shape="rect" id="node22" href="$System_8cpp.html" title="/home/espressopp/espressopp\l/src/System.cpp" alt="" coords="4844,102,5044,143"/>
+<area shape="rect" id="node21" href="$PIAdressIntegrator_8cpp.html" title="/home/espressopp/espressopp\l/src/integrator/PIAdressIntegrator.cpp" alt="" coords="4604,102,4844,143"/>
+<area shape="rect" id="node22" href="$StochasticVelocityRescaling_8cpp.html" title="/home/espressopp/espressopp\l/src/integrator/StochasticVelocity\lRescaling.cpp" alt="" coords="4869,95,5083,151"/>
+<area shape="rect" id="node23" href="$System_8cpp.html" title="/home/espressopp/espressopp\l/src/System.cpp" alt="" coords="5108,102,5308,143"/>
 </map>

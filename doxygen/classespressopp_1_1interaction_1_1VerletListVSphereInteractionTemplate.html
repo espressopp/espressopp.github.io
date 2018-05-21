@@ -100,6 +100,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7c26c8e1cf83c32d0ed20ad526bf8da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61d7a3fc986a942063e525028eac2f5b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1VerletListVSphereInteractionTemplate.html#a61d7a3fc986a942063e525028eac2f5b">computeEnergyCG</a> ()</td></tr>
 <tr class="separator:a61d7a3fc986a942063e525028eac2f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06eecd2abbddf2aed82446e38efe96bc"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1VerletListVSphereInteractionTemplate.html#a06eecd2abbddf2aed82446e38efe96bc">computeEnergyAA</a> (int atomtype)</td></tr>
+<tr class="separator:a06eecd2abbddf2aed82446e38efe96bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a693ac7f1f179cec66b1ab1ed932b940b"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1VerletListVSphereInteractionTemplate.html#a693ac7f1f179cec66b1ab1ed932b940b">computeEnergyCG</a> (int atomtype)</td></tr>
+<tr class="separator:a693ac7f1f179cec66b1ab1ed932b940b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf025e78b85b258dd17531223a5a5ff9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1VerletListVSphereInteractionTemplate.html#acf025e78b85b258dd17531223a5a5ff9">computeVirialX</a> (std::vector&lt; <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> &gt; &amp;p_xx_total, int bins)</td></tr>
 <tr class="separator:acf025e78b85b258dd17531223a5a5ff9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a108f5f2b0c719323f8dcc77f33d7260e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1VerletListVSphereInteractionTemplate.html#a108f5f2b0c719323f8dcc77f33d7260e">computeVirial</a> ()</td></tr>
@@ -205,7 +209,7 @@ template&lt;typename _Potential &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00051">51</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00103">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::ntypes</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00105">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
+<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00105">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::ntypes</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00107">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
 
 </div>
 </div>
@@ -266,9 +270,9 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a39359076df76ed68e3ce502ef7209b9f">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00114">114</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00116">116</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00139">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="Particle_8hpp_source.html#l00255">espressopp::Particle::force()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="Particle_8hpp_source.html#l00210">espressopp::Particle::id()</a>, <a class="el" href="ESPPIterator_8hpp_source.html#l00047">espressopp::esutil::ESPPIterator&lt; STLContainer &gt;::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="log4espp_8hpp_source.html#l00483">LOG4ESPP_TRACE</a>, <a class="el" href="Particle_8hpp_source.html#l00214">espressopp::Particle::type()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00104">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
+<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00141">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="Particle_8hpp_source.html#l00284">espressopp::Particle::force()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="Particle_8hpp_source.html#l00227">espressopp::Particle::id()</a>, <a class="el" href="ESPPIterator_8hpp_source.html#l00047">espressopp::esutil::ESPPIterator&lt; STLContainer &gt;::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="log4espp_8hpp_source.html#l00483">LOG4ESPP_TRACE</a>, <a class="el" href="Particle_8hpp_source.html#l00231">espressopp::Particle::type()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00106">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
 
@@ -301,7 +305,7 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a4cab299fd0afc66264c5447360cb240a">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00100">100</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00102">102</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="Interaction_8hpp_source.html#l00034">espressopp::interaction::Nonbonded</a>.</p>
 
@@ -334,16 +338,16 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a0147b5dc240a0493cc310500da0cef6e">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00139">139</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00141">141</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00165">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyDeriv()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00064">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getVerletList()</a>, <a class="el" href="Particle_8hpp_source.html#l00210">espressopp::Particle::id()</a>, <a class="el" href="ESPPIterator_8hpp_source.html#l00047">espressopp::esutil::ESPPIterator&lt; STLContainer &gt;::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="log4espp_8hpp_source.html#l00483">LOG4ESPP_TRACE</a>, <a class="el" href="Particle_8hpp_source.html#l00214">espressopp::Particle::type()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00104">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
+<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00167">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyDeriv()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00064">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getVerletList()</a>, <a class="el" href="Particle_8hpp_source.html#l00227">espressopp::Particle::id()</a>, <a class="el" href="ESPPIterator_8hpp_source.html#l00047">espressopp::esutil::ESPPIterator&lt; STLContainer &gt;::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="log4espp_8hpp_source.html#l00483">LOG4ESPP_TRACE</a>, <a class="el" href="Particle_8hpp_source.html#l00231">espressopp::Particle::type()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00106">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00114">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::addForces()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00116">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::addForces()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
 
 </div>
 </div>
 <a id="a7c26c8e1cf83c32d0ed20ad526bf8da5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7c26c8e1cf83c32d0ed20ad526bf8da5">&#9670;&nbsp;</a></span>computeEnergyAA()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c26c8e1cf83c32d0ed20ad526bf8da5">&#9670;&nbsp;</a></span>computeEnergyAA() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -369,16 +373,48 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a0a985a00d1d8065cace4cf70a0d43749">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00172">172</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00174">174</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00179">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyCG()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00167">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyDeriv()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00165">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyDeriv()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
+</div>
+</div>
+<a id="a06eecd2abbddf2aed82446e38efe96bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06eecd2abbddf2aed82446e38efe96bc">&#9670;&nbsp;</a></span>computeEnergyAA() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Potential &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> <a class="el" href="classespressopp_1_1interaction_1_1VerletListVSphereInteractionTemplate.html">espressopp::interaction::VerletListVSphereInteractionTemplate</a>&lt; _Potential &gt;::computeEnergyAA </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atomtype</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#ae0b3610f6ffa236e4524168ceedea664">espressopp::interaction::Interaction</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00181">181</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00188">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyCG()</a>.</p>
 
 </div>
 </div>
 <a id="a61d7a3fc986a942063e525028eac2f5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a61d7a3fc986a942063e525028eac2f5b">&#9670;&nbsp;</a></span>computeEnergyCG()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a61d7a3fc986a942063e525028eac2f5b">&#9670;&nbsp;</a></span>computeEnergyCG() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -404,11 +440,43 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#aac7f1433dd2ae9ffbe19f4186e00b187">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00179">179</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00188">188</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00187">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialX()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00181">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyAA()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00172">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyAA()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
+</div>
+</div>
+<a id="a693ac7f1f179cec66b1ab1ed932b940b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a693ac7f1f179cec66b1ab1ed932b940b">&#9670;&nbsp;</a></span>computeEnergyCG() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Potential &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> <a class="el" href="classespressopp_1_1interaction_1_1VerletListVSphereInteractionTemplate.html">espressopp::interaction::VerletListVSphereInteractionTemplate</a>&lt; _Potential &gt;::computeEnergyCG </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>atomtype</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a8d579a3af35b57a796193fdc319a7bdf">espressopp::interaction::Interaction</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00195">195</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+
+<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00203">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialX()</a>.</p>
 
 </div>
 </div>
@@ -439,11 +507,11 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a542093b4375a6d67adb8ec27b8593acd">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00165">165</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00167">167</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00172">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyAA()</a>.</p>
+<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00174">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyAA()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00139">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00141">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
 
 </div>
 </div>
@@ -474,11 +542,11 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a363be8e9c6d3f6b36fd5bbe0453ddaf3">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00193">193</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00209">209</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00224">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="ESPPIterator_8hpp_source.html#l00047">espressopp::esutil::ESPPIterator&lt; STLContainer &gt;::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00243">espressopp::Particle::position()</a>, <a class="el" href="Particle_8hpp_source.html#l00214">espressopp::Particle::type()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00104">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
+<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00240">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="ESPPIterator_8hpp_source.html#l00047">espressopp::esutil::ESPPIterator&lt; STLContainer &gt;::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00266">espressopp::Particle::position()</a>, <a class="el" href="Particle_8hpp_source.html#l00231">espressopp::Particle::type()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00106">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00187">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialX()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00203">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialX()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
 
 </div>
 </div>
@@ -510,11 +578,11 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#adeec12ec2da7f78c67191e6ad9609a48">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00224">224</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00240">240</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="ESPPIterator_8hpp_source.html#l00047">espressopp::esutil::ESPPIterator&lt; STLContainer &gt;::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00243">espressopp::Particle::position()</a>, <a class="el" href="Particle_8hpp_source.html#l00214">espressopp::Particle::type()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00104">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
+<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="ESPPIterator_8hpp_source.html#l00047">espressopp::esutil::ESPPIterator&lt; STLContainer &gt;::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00266">espressopp::Particle::position()</a>, <a class="el" href="Particle_8hpp_source.html#l00231">espressopp::Particle::type()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00106">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00193">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00256">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00209">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00272">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
 
 </div>
 </div>
@@ -556,9 +624,9 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#aa11b79bf3339fc6a82c1937c55fbffce">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00256">256</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00272">272</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="System_8hpp_source.html#l00052">espressopp::System::bc</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00224">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="ESPPIterator_8hpp_source.html#l00047">espressopp::esutil::ESPPIterator&lt; STLContainer &gt;::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00243">espressopp::Particle::position()</a>, <a class="el" href="Particle_8hpp_source.html#l00214">espressopp::Particle::type()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00104">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
+<p class="reference">References <a class="el" href="System_8hpp_source.html#l00052">espressopp::System::bc</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00240">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="ESPPIterator_8hpp_source.html#l00047">espressopp::esutil::ESPPIterator&lt; STLContainer &gt;::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00266">espressopp::Particle::position()</a>, <a class="el" href="Particle_8hpp_source.html#l00231">espressopp::Particle::type()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00106">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
 
 </div>
 </div>
@@ -600,9 +668,9 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a26cfbd4d34b31f67259b064292c0e6aa">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00315">315</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00331">331</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="System_8hpp_source.html#l00052">espressopp::System::bc</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00391">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="ESPPIterator_8hpp_source.html#l00047">espressopp::esutil::ESPPIterator&lt; STLContainer &gt;::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00243">espressopp::Particle::position()</a>, <a class="el" href="Particle_8hpp_source.html#l00214">espressopp::Particle::type()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00104">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
+<p class="reference">References <a class="el" href="System_8hpp_source.html#l00052">espressopp::System::bc</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00407">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="ESPPIterator_8hpp_source.html#l00047">espressopp::esutil::ESPPIterator&lt; STLContainer &gt;::isValid()</a>, <a class="el" href="log4espp_8hpp_source.html#l00502">LOG4ESPP_INFO</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, <a class="el" href="Particle_8hpp_source.html#l00266">espressopp::Particle::position()</a>, <a class="el" href="Particle_8hpp_source.html#l00231">espressopp::Particle::type()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00106">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
 
 </div>
 </div>
@@ -644,11 +712,11 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a48b8954ca27e26df5d065ac801b436b5">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00187">187</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00203">203</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00193">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>.</p>
+<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00209">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00179">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyCG()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00195">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyCG()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
 
 </div>
 </div>
@@ -681,11 +749,11 @@ template&lt;typename _Potential &gt; </div>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a62ef867c354ba1c382759b1358328407">espressopp::interaction::Interaction</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00391">391</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00407">407</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00103">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::ntypes</a>.</p>
+<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00105">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::ntypes</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00315">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00331">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>.</p>
 
 </div>
 </div>
@@ -727,9 +795,9 @@ template&lt;typename _Potential &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">79</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Array2D_8hpp_source.html#l00144">espressopp::esutil::Array2D&lt; T, outlier_mode &gt;::at()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00105">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
+<p class="reference">References <a class="el" href="Array2D_8hpp_source.html#l00144">espressopp::esutil::Array2D&lt; T, outlier_mode &gt;::at()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00107">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00114">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::addForces()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00139">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00193">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00224">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00391">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00116">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::addForces()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00141">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00209">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00240">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00407">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>.</p>
 
 </div>
 </div>
@@ -771,7 +839,7 @@ template&lt;typename _Potential &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">84</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00114">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::addForces()</a>, <a class="el" href="Array2D_8hpp_source.html#l00144">espressopp::esutil::Array2D&lt; T, outlier_mode &gt;::at()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00139">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00172">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyAA()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00179">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyCG()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00165">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyDeriv()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00193">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00224">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00187">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialX()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00391">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00105">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
+<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00116">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::addForces()</a>, <a class="el" href="Array2D_8hpp_source.html#l00144">espressopp::esutil::Array2D&lt; T, outlier_mode &gt;::at()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00141">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00174">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyAA()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00188">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyCG()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00167">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergyDeriv()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00209">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00240">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00203">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialX()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00407">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00107">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
 
 </div>
 </div>
@@ -802,9 +870,9 @@ template&lt;typename _Potential &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00064">64</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00104">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
+<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00106">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00139">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00141">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>.</p>
 
 </div>
 </div>
@@ -913,7 +981,7 @@ template&lt;typename _Potential &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00069">69</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Array2D_8hpp_source.html#l00144">espressopp::esutil::Array2D&lt; T, outlier_mode &gt;::at()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00103">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::ntypes</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00105">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
+<p class="reference">References <a class="el" href="Array2D_8hpp_source.html#l00144">espressopp::esutil::Array2D&lt; T, outlier_mode &gt;::at()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00105">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::ntypes</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00107">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::potentialArray</a>.</p>
 
 </div>
 </div>
@@ -945,7 +1013,7 @@ template&lt;typename _Potential &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00060">60</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00104">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
+<p class="reference">References <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00106">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::verletList</a>.</p>
 
 </div>
 </div>
@@ -972,9 +1040,9 @@ template&lt;typename _Potential &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00103">103</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00105">105</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00391">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00069">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::setPotential()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00051">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::VerletListVSphereInteractionTemplate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00407">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getMaxCutoff()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00069">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::setPotential()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00051">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::VerletListVSphereInteractionTemplate()</a>.</p>
 
 </div>
 </div>
@@ -1000,7 +1068,7 @@ template&lt;typename _Potential &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00105">105</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00107">107</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00079">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotential()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00084">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getPotentialPtr()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00069">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::setPotential()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00051">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::VerletListVSphereInteractionTemplate()</a>.</p>
 
@@ -1028,7 +1096,7 @@ template&lt;typename _Potential &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00106">106</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00108">108</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
 </div>
 </div>
@@ -1054,9 +1122,9 @@ template&lt;typename _Potential &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00104">104</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00106">106</a> of file <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html">VerletListVSphereInteractionTemplate.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00114">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::addForces()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00139">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00193">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00224">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00064">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getVerletList()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00060">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::setVerletList()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00116">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::addForces()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00141">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeEnergy()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00209">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirial()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00240">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::computeVirialTensor()</a>, <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00064">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::getVerletList()</a>, and <a class="el" href="VerletListVSphereInteractionTemplate_8hpp_source.html#l00060">espressopp::interaction::VerletListVSphereInteractionTemplate&lt; _Potential &gt;::setVerletList()</a>.</p>
 
 </div>
 </div>
