@@ -201,9 +201,10 @@ Adress::integrate1 and Adress::integrate2</li>
 </div>
 <p>If KTI is set to True, then the resolution parameters are not updated. This can be used for example for Kirkwood thermodynamic integration, during which one manually sets the whole system on different resolution parameters. KTI = True then prevents overwriting these manually set values.
 Furthermore, when having moving AdResS regions based on particles, regionupdates specifies the update frequency of the AdResS region in number of steps (or, to be more precise, calls of communicateAdrPositions()). Note that there is a tradeoff: The more frequently the AdResS region is updated, the more gradually and accurately the AdResS region changes and adapts it shape. This could allow for a smaller overall AdResS region and possibly a smoother simulation. However, when having many AdResS region defining particles, these frequent updates can become computationally significant and cost additional simulation time. The optimum is highly system and application dependent.</p>
+<p>Finally, when making use of a RESPA Velocity Verlet integrator, then the multistep parameter defines after how many steps of the inner integration loop the slow forces are updated. It should be set consistently with the same parameter in VelocityVerletRESPA.</p>
 <dl class="class">
 <dt id="espressopp.integrator.Adress.espressopp.integrator.Adress">
-<em class="property">class </em><code class="descclassname">espressopp.integrator.</code><code class="descname">Adress</code><span class="sig-paren">(</span><em>_system</em>, <em>_verletlist</em>, <em>_fixedtuplelist</em>, <em>KTI = False</em>, <em>regionupdates = 1</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.Adress.espressopp.integrator.Adress" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">espressopp.integrator.</code><code class="descname">Adress</code><span class="sig-paren">(</span><em>_system</em>, <em>_verletlist</em>, <em>_fixedtuplelist</em>, <em>KTI</em>, <em>regionupdates</em>, <em>multistep</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.Adress.espressopp.integrator.Adress" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -212,8 +213,9 @@ Furthermore, when having moving AdResS regions based on particles, regionupdates
 <li><strong>_system</strong> (<em>shared_ptr&lt;System&gt;</em>) – system object</li>
 <li><strong>_verletlist</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – verletlist object</li>
 <li><strong>_fixedtuplelist</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – fixedtuplelist object</li>
-<li><strong>KTI</strong> (<em>bool</em>) – update resolution parameter? (Yes: set False, No: set True)</li>
-<li><strong>regionupdates</strong> (<em>int</em>) – after how many steps does the AdResS region needs to be updated?</li>
+<li><strong>KTI</strong> (<em>bool</em>) – (default: False) update resolution parameter? (Yes: set False, No: set True)</li>
+<li><strong>regionupdates</strong> (<em>int</em>) – (default: 1) after how many steps does the AdResS region needs to be updated?</li>
+<li><strong>multistep</strong> (<em>int</em>) – (default: 1) when used with VelocityVerletRESPA (otherwise, ignored), after how many steps of the inner integration loop do we update the slow forces? This parameter should be set consistently with multistep in VelocityVerletRESPA.</li>
 </ul>
 </td>
 </tr>

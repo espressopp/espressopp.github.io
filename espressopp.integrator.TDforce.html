@@ -200,7 +200,7 @@
 </div>
 <dl class="function">
 <dt id="espressopp.integrator.TDforce.espressopp.integrator.TDforce">
-<code class="descclassname">espressopp.integrator.</code><code class="descname">TDforce</code><span class="sig-paren">(</span><em>system</em>, <em>verletlist</em>, <em>startdist</em>, <em>enddist</em>, <em>edgeweightmultiplier</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.TDforce.espressopp.integrator.TDforce" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.integrator.</code><code class="descname">TDforce</code><span class="sig-paren">(</span><em>system</em>, <em>verletlist</em>, <em>startdist</em>, <em>enddist</em>, <em>edgeweightmultiplier</em>, <em>slow</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.TDforce.espressopp.integrator.TDforce" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -211,6 +211,7 @@
 <li><strong>startdist</strong> (<em>real</em>) – (default: 0.0) starting distance from center at which the TD force is actually applied. Needs to be altered when using several moving spherical regions (not used for static or single moving region)</li>
 <li><strong>enddist</strong> (<em>real</em>) – (default: 0.0) end distance from center up to which the TD force is actually applied. Needs to be altered when using several moving spherical regions (not used for static or single moving region)</li>
 <li><strong>edgeweightmultiplier</strong> (<em>int</em>) – (default: 20) interpolation parameter for multiple overlapping spherical regions (see Kreis et al., JCTC doi: 10.1021/acs.jctc.6b00440), the default should be fine for most applications (not used for static or single moving region)</li>
+<li><strong>slow</strong> (<em>bool</em>) – (default: False) When used with RESPA Velocity Verlet, this flag decides whether the TD force is applied together with the slow, less frequently updated forces (slow=True) or with the fast, more frequently updated (slow=False) forces.</li>
 </ul>
 </td>
 </tr>

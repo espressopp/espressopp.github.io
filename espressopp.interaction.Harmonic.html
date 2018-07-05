@@ -188,14 +188,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.Harmonic.espressopp.interaction.Harmonic">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">Harmonic</code><span class="sig-paren">(</span><em>K</em>, <em>r0</em>, <em>cutoff</em>, <em>shift</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.Harmonic" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a Harmonic potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>K</strong> (<em>real</em>) – (default: 1.0)</li>
 <li><strong>r0</strong> (<em>real</em>) – (default: 0.0)</li>
-<li><strong>cutoff</strong> – (default: infinity)</li>
+<li><strong>cutoff</strong> (<em>real</em>) – (default: infinity)</li>
 <li><strong>shift</strong> (<em>real</em>) – (default: 0.0)</li>
 </ul>
 </td>
@@ -207,14 +208,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListHarmonic">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">FixedPairListHarmonic</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListHarmonic" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a FixedPairList-based interaction using a Harmonic potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> – </li>
-<li><strong>vl</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>system</strong> (<em>shared_ptr&lt;System&gt;</em>) – system object</li>
+<li><strong>vl</strong> (<em>shared_ptr&lt;FixedPairList&gt;</em>) – FixedPairList object</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Harmonic&gt;</em>) – Harmonic potential object</li>
 </ul>
 </td>
 </tr>
@@ -225,11 +227,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListHarmonic.getFixedPairList">
 <code class="descclassname">espressopp.interaction.FixedPairListHarmonic.</code><code class="descname">getFixedPairList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListHarmonic.getFixedPairList" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Gets the FixedPairList.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;FixedPairList&gt;</td>
 </tr>
 </tbody>
 </table>
@@ -238,11 +241,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListHarmonic.setFixedPairList">
 <code class="descclassname">espressopp.interaction.FixedPairListHarmonic.</code><code class="descname">setFixedPairList</code><span class="sig-paren">(</span><em>fixedpairlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListHarmonic.setFixedPairList" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the FixedPairList.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedpairlist</strong> – </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedpairlist</strong> (<em>shared_ptr&lt;FixedPairList&gt;</em>) – FixedPairList object</td>
 </tr>
 </tbody>
 </table>
@@ -251,11 +255,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListHarmonic.setPotential">
 <code class="descclassname">espressopp.interaction.FixedPairListHarmonic.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListHarmonic.setPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the Harmonic interaction potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> – </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> (<em>shared_ptr&lt;Harmonic&gt;</em>) – Harmonic potential object</td>
 </tr>
 </tbody>
 </table>
@@ -269,8 +274,8 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> – </li>
-<li><strong>vl</strong> – </li>
+<li><strong>system</strong> (<em>shared_ptr&lt;System&gt;</em>) – system object</li>
+<li><strong>vl</strong> (<em>shared_ptr&lt;FixedPairList&gt;</em>) – FixedPairList object</li>
 </ul>
 </td>
 </tr>
@@ -281,11 +286,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListTypesHarmonic.getFixedPairList">
 <code class="descclassname">espressopp.interaction.FixedPairListTypesHarmonic.</code><code class="descname">getFixedPairList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListTypesHarmonic.getFixedPairList" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Gets the FixedPairList.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;FixedPairList&gt;</td>
 </tr>
 </tbody>
 </table>
@@ -294,11 +300,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListTypesHarmonic.setFixedPairList">
 <code class="descclassname">espressopp.interaction.FixedPairListTypesHarmonic.</code><code class="descname">setFixedPairList</code><span class="sig-paren">(</span><em>fixedpairlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListTypesHarmonic.setFixedPairList" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the FixedPairList.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedpairlist</strong> – </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedpairlist</strong> (<em>shared_ptr&lt;FixedPairList&gt;</em>) – FixedPairList object</td>
 </tr>
 </tbody>
 </table>
@@ -307,14 +314,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListTypesHarmonic.setPotential">
 <code class="descclassname">espressopp.interaction.FixedPairListTypesHarmonic.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListTypesHarmonic.setPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the Harmonic interaction potential for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Harmonic&gt;</em>) – Harmonic potential object</li>
 </ul>
 </td>
 </tr>
@@ -325,18 +333,361 @@
 <dl class="function">
 <dt id="espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListTypesHarmonic.getPotential">
 <code class="descclassname">espressopp.interaction.FixedPairListTypesHarmonic.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.FixedPairListTypesHarmonic.getPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Gets the Harmonic interaction potential for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;Harmonic&gt;</p>
 </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListHarmonic">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHarmonic</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListHarmonic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a verletlist-based interaction using a Harmonic potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> (<em>shared_ptr&lt;VerletList&gt;</em>) – Verletlist object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListHarmonic.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListHarmonic.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListHarmonic.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the Harmonic interaction potential for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;Harmonic&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListHarmonic.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListHarmonic.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListHarmonic.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Harmonic interaction potential for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Harmonic&gt;</em>) – Harmonic potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressATHarmonic">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressATHarmonic</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressATHarmonic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the AT part of a verletlist-based AdResS interaction using a Harmonic potential for the AT interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressATHarmonic.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListAdressATHarmonic.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressATHarmonic.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the AT potential in VerletListAdressATHarmonic interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Harmonic&gt;</em>) – Harmonic potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressATHarmonic.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListAdressATHarmonic.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressATHarmonic.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the AT potential in VerletListAdressATHarmonic interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;Harmonic&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressATHarmonic.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListAdressATHarmonic.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressATHarmonic.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the verletlist used in VerletListAdressATHarmonic interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletListAdress&gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressCGHarmonic">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressCGHarmonic</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressCGHarmonic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the CG part of a verletlist-based AdResS interaction using a Harmonic potential for the AT interaction. It’s defined as a “NonbondedSlow” interaction (which multiple time stepping integrators can make use of).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressCGHarmonic.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListAdressCGHarmonic.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressCGHarmonic.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the CG potential in VerletListAdressCGHarmonic interaction for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Harmonic&gt;</em>) – Harmonic potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressCGHarmonic.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListAdressCGHarmonic.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressCGHarmonic.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the CG potential in VerletListAdressCGHarmonic interaction for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;Harmonic&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressCGHarmonic.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListAdressCGHarmonic.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListAdressCGHarmonic.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the verletlist used in VerletListAdressCGHarmonic interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletListAdress&gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressATHarmonic">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressATHarmonic</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressATHarmonic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the AT part of a verletlist-based H-AdResS interaction using a Harmonic potential for the AT interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressATHarmonic.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListHadressATHarmonic.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressATHarmonic.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the AT potential in VerletListHadressATHarmonic interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Harmonic&gt;</em>) – Harmonic potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressATHarmonic.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListHadressATHarmonic.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressATHarmonic.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the AT potential in VerletListHadressATHarmonic interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;Harmonic&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressATHarmonic.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListHadressATHarmonic.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressATHarmonic.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the verletlist used in VerletListHadressATHarmonic interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletListAdress&gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressCGHarmonic">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressCGHarmonic</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressCGHarmonic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the CG part of a verletlist-based H-AdResS interaction using a Harmonic potential for the AT interaction. It’s defined as a “NonbondedSlow” interaction (which multiple time stepping integrators can make use of).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressCGHarmonic.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListHadressCGHarmonic.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressCGHarmonic.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the CG potential in VerletListHadressCGHarmonic interaction for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Harmonic&gt;</em>) – Harmonic potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressCGHarmonic.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListHadressCGHarmonic.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressCGHarmonic.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the CG potential in VerletListHadressCGHarmonic interaction for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;Harmonic&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressCGHarmonic.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListHadressCGHarmonic.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Harmonic.espressopp.interaction.VerletListHadressCGHarmonic.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the verletlist used in VerletListHadressCGHarmonic interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletListAdress&gt;</td>
 </tr>
 </tbody>
 </table>

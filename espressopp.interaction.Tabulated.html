@@ -186,14 +186,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.Tabulated">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">Tabulated</code><span class="sig-paren">(</span><em>itype</em>, <em>filename</em>, <em>cutoff</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.Tabulated" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a tabulated potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>itype</strong> – </li>
-<li><strong>filename</strong> – </li>
-<li><strong>cutoff</strong> – (default: infinity)</li>
+<li><strong>itype</strong> (<em>int</em>) – interpolation type (1,2, or 3 for linear, Akima, or cubic splines)</li>
+<li><strong>filename</strong> (<em>string</em>) – table filename</li>
+<li><strong>cutoff</strong> (<em>real</em><em> or </em><em>&quot;infinity&quot;</em>) – (default: infinity) interaction cutoff</li>
 </ul>
 </td>
 </tr>
@@ -204,13 +205,14 @@
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressTabulated">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressTabulated</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressTabulated" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a verletlist-based AdResS interaction using tabulated potentials for both AT and CG interactions.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>vl</strong> – </li>
-<li><strong>fixedtupleList</strong> – </li>
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
 </ul>
 </td>
 </tr>
@@ -221,14 +223,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressTabulated.setPotentialAT">
 <code class="descclassname">espressopp.interaction.VerletListAdressTabulated.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressTabulated.setPotentialAT" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the AT potential in VerletListAdressTabulated interaction for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
 </ul>
 </td>
 </tr>
@@ -239,14 +242,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressTabulated.setPotentialCG">
 <code class="descclassname">espressopp.interaction.VerletListAdressTabulated.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressTabulated.setPotentialCG" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the CG potential in VerletListAdressTabulated interaction for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
 </ul>
 </td>
 </tr>
@@ -255,15 +259,88 @@
 </dd></dl>
 
 <dl class="function">
-<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressTabulated">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressTabulated</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressTabulated" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressCGTabulated">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressCGTabulated</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressCGTabulated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the CG part of a verletlist-based AdResS interaction using a tabulated potential for the CG interaction. It’s defined as a “NonbondedSlow” interaction (which multiple time stepping integrators can make use of).</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>vl</strong> – </li>
-<li><strong>fixedtupleList</strong> – </li>
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressCGTabulated.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListAdressCGTabulated.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressCGTabulated.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the CG potential in VerletListAdressCGTabulated interaction for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressCGTabulated.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListAdressCGTabulated.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressCGTabulated.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the CG potential in VerletListAdressCGTabulated interaction for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;Tabulated&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressCGTabulated.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListAdressCGTabulated.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListAdressCGTabulated.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the verletlist used in VerletListAdressCGTabulated interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletListAdress&gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressTabulated">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressTabulated</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressTabulated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a verletlist-based H-AdResS interaction using tabulated potentials for both AT and CG interactions.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
 </ul>
 </td>
 </tr>
@@ -274,14 +351,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressTabulated.setPotentialAT">
 <code class="descclassname">espressopp.interaction.VerletListHadressTabulated.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressTabulated.setPotentialAT" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the AT potential in VerletListHadressTabulated interaction for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
 </ul>
 </td>
 </tr>
@@ -292,16 +370,89 @@
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressTabulated.setPotentialCG">
 <code class="descclassname">espressopp.interaction.VerletListHadressTabulated.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressTabulated.setPotentialCG" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the CG potential in VerletListHadressTabulated interaction for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
 </ul>
 </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressCGTabulated">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressCGTabulated</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressCGTabulated" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the CG part of a verletlist-based H-AdResS interaction using a tabulated potential for the CG interaction. It’s defined as a “NonbondedSlow” interaction (which multiple time stepping integrators can make use of).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressCGTabulated.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListHadressCGTabulated.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressCGTabulated.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the CG potential in VerletListHadressCGTabulated interaction for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressCGTabulated.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListHadressCGTabulated.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressCGTabulated.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the CG potential in VerletListHadressCGTabulated interaction for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;Tabulated&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressCGTabulated.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListHadressCGTabulated.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListHadressCGTabulated.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the verletlist used in VerletListHadressCGTabulated interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletListAdress&gt;</td>
 </tr>
 </tbody>
 </table>
@@ -310,11 +461,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListTabulated">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListTabulated</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListTabulated" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a verletlist-based interaction using a tabulated potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> – </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> (<em>shared_ptr&lt;VerletList&gt;</em>) – Verletlist object</td>
 </tr>
 </tbody>
 </table>
@@ -323,17 +475,18 @@
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListTabulated.getPotential">
 <code class="descclassname">espressopp.interaction.VerletListTabulated.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListTabulated.getPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Gets the tabulated interaction potential in VerletListTabulated for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;Tabulated&gt;</p>
 </td>
 </tr>
 </tbody>
@@ -343,14 +496,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.VerletListTabulated.setPotential">
 <code class="descclassname">espressopp.interaction.VerletListTabulated.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.VerletListTabulated.setPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the tabulated interaction potential in VerletListTabulated for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
 </ul>
 </td>
 </tr>
@@ -361,11 +515,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.CellListTabulated">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">CellListTabulated</code><span class="sig-paren">(</span><em>stor</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.CellListTabulated" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a CellList-based interaction using a tabulated potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stor</strong> – </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stor</strong> (<em>shared_ptr &lt;storage::Storage&gt;</em>) – storage object</td>
 </tr>
 </tbody>
 </table>
@@ -374,14 +529,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.CellListTabulated.setPotential">
 <code class="descclassname">espressopp.interaction.CellListTabulated.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.CellListTabulated.setPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the tabulated interaction potential in CellListTabulated for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
 </ul>
 </td>
 </tr>
@@ -392,14 +548,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListTabulated">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">FixedPairListTabulated</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListTabulated" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a FixedPairList-based interaction using a tabulated potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> – </li>
-<li><strong>vl</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>system</strong> (<em>shared_ptr&lt;System&gt;</em>) – system object</li>
+<li><strong>vl</strong> (<em>shared_ptr&lt;FixedPairList&gt;</em>) – FixedPairList list object</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated potential object</li>
 </ul>
 </td>
 </tr>
@@ -410,11 +567,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListTabulated.setPotential">
 <code class="descclassname">espressopp.interaction.FixedPairListTabulated.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Tabulated.espressopp.interaction.FixedPairListTabulated.setPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the tabulated interaction potential in FixedPairListTabulated for interacting particles.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> – </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated potential object</td>
 </tr>
 </tbody>
 </table>
@@ -429,7 +587,7 @@
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) – The Espresso++ system object.</li>
-<li><strong>fpl</strong> (<a class="reference internal" href="espressopp.FixedPairList.html#module-espressopp.FixedPairList" title="espressopp.FixedPairList"><em>espressopp.FixedPairList</em></a>) – The FixedPair list.</li>
+<li><strong>fpl</strong> (<a class="reference internal" href="espressopp.FixedPairList.html#module-espressopp.FixedPairList" title="espressopp.FixedPairList"><em>espressopp.FixedPairList</em></a>) – The FixedPairList.</li>
 </ul>
 </td>
 </tr>

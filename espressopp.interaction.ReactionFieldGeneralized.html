@@ -187,7 +187,7 @@
 the generalized reaction field.</p>
 <div class="math">
 \[U = PQ\left(
-\frac{1}{d} 
+\frac{1}{d}
 - \frac{\left(1 + \frac{(\varepsilon_1 - 4 \varepsilon_2)(1 + \kappa r_c) - 2 \varepsilon_2  \kappa {r_c}^2}
 {(\varepsilon_1 + 2 \varepsilon_2)(1 + \kappa r_c) + \varepsilon_2  \kappa {r_c}^2}\right)}{r_c^3 2}
 \cdot d^2 -  \frac{3 \varepsilon_2}{r_c(2 \varepsilon_2 + 1)}\right)\]</div>
@@ -195,17 +195,18 @@ the generalized reaction field.</p>
 <dl class="function">
 <dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.ReactionFieldGeneralized">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">ReactionFieldGeneralized</code><span class="sig-paren">(</span><em>prefactor</em>, <em>kappa</em>, <em>epsilon1</em>, <em>epsilon2</em>, <em>cutoff</em>, <em>shift</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.ReactionFieldGeneralized" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a ReactionFieldGeneralized potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>prefactor</strong> (<em>real</em>) – (default: 1.0)</li>
-<li><strong>kappa</strong> (<em>real</em>) – (default: 0.0)</li>
-<li><strong>epsilon1</strong> (<em>real</em>) – (default: 1.0)</li>
-<li><strong>epsilon2</strong> (<em>real</em>) – (default: 80.0)</li>
-<li><strong>cutoff</strong> – (default: infinity)</li>
-<li><strong>shift</strong> – (default: “auto”)</li>
+<li><strong>prefactor</strong> (<em>real</em>) – (default: 1.0) prefactor</li>
+<li><strong>kappa</strong> (<em>real</em>) – (default: 0.0) kappa parameter</li>
+<li><strong>epsilon1</strong> (<em>real</em>) – (default: 1.0) epsilon1 parameter</li>
+<li><strong>epsilon2</strong> (<em>real</em>) – (default: 80.0) epsilon2 parameter</li>
+<li><strong>cutoff</strong> (<em>real</em><em> or </em><em>&quot;infinity&quot;</em>) – (default: infinity) cutoff</li>
+<li><strong>shift</strong> (<em>real</em><em> or </em><em>&quot;auto&quot;</em>) – (default: “auto”) shift</li>
 </ul>
 </td>
 </tr>
@@ -216,11 +217,12 @@ the generalized reaction field.</p>
 <dl class="function">
 <dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListReactionFieldGeneralized">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListReactionFieldGeneralized</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListReactionFieldGeneralized" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a verletlist-based interaction using a ReactionFieldGeneralized potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> – </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> (<em>shared_ptr&lt;VerletList&gt;</em>) – Verletlist object</td>
 </tr>
 </tbody>
 </table>
@@ -229,17 +231,18 @@ the generalized reaction field.</p>
 <dl class="function">
 <dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListReactionFieldGeneralized.getPotential">
 <code class="descclassname">espressopp.interaction.VerletListReactionFieldGeneralized.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListReactionFieldGeneralized.getPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Gets the ReactionFieldGeneralized interaction potential for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;ReactionFieldGeneralized&gt;</p>
 </td>
 </tr>
 </tbody>
@@ -249,14 +252,15 @@ the generalized reaction field.</p>
 <dl class="function">
 <dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListReactionFieldGeneralized.setPotential">
 <code class="descclassname">espressopp.interaction.VerletListReactionFieldGeneralized.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListReactionFieldGeneralized.setPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the ReactionFieldGeneralized interaction potential for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;ReactionFieldGeneralized&gt;</em>) – ReactionFieldGeneralized potential object</li>
 </ul>
 </td>
 </tr>
@@ -267,13 +271,14 @@ the generalized reaction field.</p>
 <dl class="function">
 <dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListAdressReactionFieldGeneralized">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressReactionFieldGeneralized</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListAdressReactionFieldGeneralized" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a verletlist-based AdResS interaction using a ReactionFieldGeneralized potential for the AT and a tabulated potential for the CG interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>vl</strong> – </li>
-<li><strong>fixedtupleList</strong> – </li>
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
 </ul>
 </td>
 </tr>
@@ -284,14 +289,15 @@ the generalized reaction field.</p>
 <dl class="function">
 <dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListAdressReactionFieldGeneralized.setPotentialAT">
 <code class="descclassname">espressopp.interaction.VerletListAdressReactionFieldGeneralized.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListAdressReactionFieldGeneralized.setPotentialAT" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the ReactionFieldGeneralized interaction potential for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;ReactionFieldGeneralized&gt;</em>) – ReactionFieldGeneralized potential object</li>
 </ul>
 </td>
 </tr>
@@ -302,15 +308,74 @@ the generalized reaction field.</p>
 <dl class="function">
 <dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListAdressReactionFieldGeneralized.setPotentialCG">
 <code class="descclassname">espressopp.interaction.VerletListAdressReactionFieldGeneralized.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListAdressReactionFieldGeneralized.setPotentialCG" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the Tabulated interaction potential for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
 </ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListAdressATReactionFieldGeneralized">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressATReactionFieldGeneralized</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListAdressATReactionFieldGeneralized" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the AT part of a verletlist-based AdResS interaction using a ReactionFieldGeneralized potential for the AT interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListAdressATReactionFieldGeneralized.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListAdressATReactionFieldGeneralized.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListAdressATReactionFieldGeneralized.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the AT potential in VerletListAdressATReactionFieldGeneralized interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;ReactionFieldGeneralized&gt;</em>) – ReactionFieldGeneralized potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListAdressATReactionFieldGeneralized.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListAdressATReactionFieldGeneralized.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListAdressATReactionFieldGeneralized.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the AT potential in VerletListAdressATReactionFieldGeneralized interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;ReactionFieldGeneralized&gt;</p>
 </td>
 </tr>
 </tbody>
@@ -320,13 +385,14 @@ the generalized reaction field.</p>
 <dl class="function">
 <dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListHadressReactionFieldGeneralized">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressReactionFieldGeneralized</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListHadressReactionFieldGeneralized" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a verletlist-based H-AdResS interaction using a ReactionFieldGeneralized potential for the AT and a tabulated potential for the CG interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>vl</strong> – </li>
-<li><strong>fixedtupleList</strong> – </li>
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
 </ul>
 </td>
 </tr>
@@ -337,14 +403,15 @@ the generalized reaction field.</p>
 <dl class="function">
 <dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListHadressReactionFieldGeneralized.setPotentialAT">
 <code class="descclassname">espressopp.interaction.VerletListHadressReactionFieldGeneralized.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListHadressReactionFieldGeneralized.setPotentialAT" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the ReactionFieldGeneralized interaction potential for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;ReactionFieldGeneralized&gt;</em>) – ReactionFieldGeneralized potential object</li>
 </ul>
 </td>
 </tr>
@@ -355,15 +422,74 @@ the generalized reaction field.</p>
 <dl class="function">
 <dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListHadressReactionFieldGeneralized.setPotentialCG">
 <code class="descclassname">espressopp.interaction.VerletListHadressReactionFieldGeneralized.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListHadressReactionFieldGeneralized.setPotentialCG" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the Tabulated interaction potential for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
 </ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListHadressATReactionFieldGeneralized">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressATReactionFieldGeneralized</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListHadressATReactionFieldGeneralized" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the AT part of a verletlist-based H-AdResS interaction using a ReactionFieldGeneralized potential for the AT interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListHadressATReactionFieldGeneralized.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListHadressATReactionFieldGeneralized.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListHadressATReactionFieldGeneralized.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the AT potential in VerletListHadressATReactionFieldGeneralized interaction for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;ReactionFieldGeneralized&gt;</em>) – ReactionFieldGeneralized potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListHadressATReactionFieldGeneralized.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListHadressATReactionFieldGeneralized.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.VerletListHadressATReactionFieldGeneralized.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the AT potential in VerletListHadressATReactionFieldGeneralized interaction for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;ReactionFieldGeneralized&gt;</p>
 </td>
 </tr>
 </tbody>
@@ -373,11 +499,12 @@ the generalized reaction field.</p>
 <dl class="function">
 <dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.CellListReactionFieldGeneralized">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">CellListReactionFieldGeneralized</code><span class="sig-paren">(</span><em>stor</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.CellListReactionFieldGeneralized" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a CellList-based interaction using a ReactionFieldGeneralized potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stor</strong> – </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stor</strong> (<em>shared_ptr &lt;storage::Storage&gt;</em>) – storage object</td>
 </tr>
 </tbody>
 </table>
@@ -386,14 +513,15 @@ the generalized reaction field.</p>
 <dl class="function">
 <dt id="espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.CellListReactionFieldGeneralized.setPotential">
 <code class="descclassname">espressopp.interaction.CellListReactionFieldGeneralized.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ReactionFieldGeneralized.espressopp.interaction.CellListReactionFieldGeneralized.setPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the ReactionFieldGeneralized interaction potential for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;ReactionFieldGeneralized&gt;</em>) – ReactionFieldGeneralized potential object</li>
 </ul>
 </td>
 </tr>

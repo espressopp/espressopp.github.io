@@ -196,8 +196,8 @@
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>epsilon</strong> (<em>real</em>) – (default: 1.0)</li>
 <li><strong>sigma</strong> (<em>real</em>) – (default: 1.0)</li>
-<li><strong>cutoff</strong> – (default: infinity)</li>
-<li><strong>shift</strong> – (default: “auto”)</li>
+<li><strong>cutoff</strong> (<em>real</em><em> or </em><em>&quot;infinity&quot;</em>) – (default: infinity)</li>
+<li><strong>shift</strong> (<em>real</em><em> or </em><em>&quot;auto&quot;</em>) – (default: “auto”)</li>
 </ul>
 </td>
 </tr>
@@ -208,11 +208,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListLennardJones">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListLennardJones</code><span class="sig-paren">(</span><em>vl</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListLennardJones" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a verletlist-based interaction using a Lennard-Jones potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> – </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> (<em>shared_ptr&lt;VerletList&gt;</em>) – Verletlist object</td>
 </tr>
 </tbody>
 </table>
@@ -221,17 +222,18 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListLennardJones.getPotential">
 <code class="descclassname">espressopp.interaction.VerletListLennardJones.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListLennardJones.getPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Gets the LennardJones interaction potential for interacting particles of type1 and type2..</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;LennardJones&gt;</p>
 </td>
 </tr>
 </tbody>
@@ -241,11 +243,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListLennardJones.getVerletList">
 <code class="descclassname">espressopp.interaction.VerletListLennardJones.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListLennardJones.getVerletList" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Gets the verletlist used in VerletListLennardJones interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletList&gt;</td>
 </tr>
 </tbody>
 </table>
@@ -254,14 +257,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListLennardJones.setPotential">
 <code class="descclassname">espressopp.interaction.VerletListLennardJones.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListLennardJones.setPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the LennardJones interaction potential for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
 </ul>
 </td>
 </tr>
@@ -272,13 +276,14 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJones">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressLennardJones</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJones" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a verletlist-based AdResS interaction using a LennardJones potential for the AT and a tabulated potential for the CG interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>vl</strong> – </li>
-<li><strong>fixedtupleList</strong> – </li>
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
 </ul>
 </td>
 </tr>
@@ -289,14 +294,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJones.setPotentialAT">
 <code class="descclassname">espressopp.interaction.VerletListAdressLennardJones.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJones.setPotentialAT" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the LennardJones interaction potential for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
 </ul>
 </td>
 </tr>
@@ -307,14 +313,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJones.setPotentialCG">
 <code class="descclassname">espressopp.interaction.VerletListAdressLennardJones.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJones.setPotentialCG" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the Tabulated interaction potential for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
 </ul>
 </td>
 </tr>
@@ -325,13 +332,14 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJones2">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressLennardJones2</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJones2" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a verletlist-based AdResS interaction using a LennardJones potential for both the AT and the CG interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>vl</strong> – </li>
-<li><strong>fixedtupleList</strong> – </li>
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
 </ul>
 </td>
 </tr>
@@ -342,14 +350,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJones2.setPotentialAT">
 <code class="descclassname">espressopp.interaction.VerletListAdressLennardJones2.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJones2.setPotentialAT" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the LennardJones interaction potential for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
 </ul>
 </td>
 </tr>
@@ -360,14 +369,71 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJones2.setPotentialCG">
 <code class="descclassname">espressopp.interaction.VerletListAdressLennardJones2.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJones2.setPotentialCG" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the LennardJones interaction potential for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJonesHarmonic">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressLennardJonesHarmonic</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJonesHarmonic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a verletlist-based AdResS interaction using a LennardJones potential for the AT and a Harmonic potential for the CG interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJonesHarmonic.setPotentialAT">
+<code class="descclassname">espressopp.interaction.VerletListAdressLennardJonesHarmonic.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJonesHarmonic.setPotentialAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the LennardJones interaction potential for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJonesHarmonic.setPotentialCG">
+<code class="descclassname">espressopp.interaction.VerletListAdressLennardJonesHarmonic.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressLennardJonesHarmonic.setPotentialCG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Harmonic interaction potential for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Harmonic&gt;</em>) – Harmonic potential object</li>
 </ul>
 </td>
 </tr>
@@ -378,13 +444,14 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJones">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressLennardJones</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJones" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a verletlist-based H-AdResS interaction using a LennardJones potential for the AT and a tabulated potential for the CG interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>vl</strong> – </li>
-<li><strong>fixedtupleList</strong> – </li>
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
 </ul>
 </td>
 </tr>
@@ -395,14 +462,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJones.setPotentialAT">
 <code class="descclassname">espressopp.interaction.VerletListHadressLennardJones.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJones.setPotentialAT" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the LennardJones interaction potential for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
 </ul>
 </td>
 </tr>
@@ -413,14 +481,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJones.setPotentialCG">
 <code class="descclassname">espressopp.interaction.VerletListHadressLennardJones.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJones.setPotentialCG" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the Tabulated interaction potential for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
 </ul>
 </td>
 </tr>
@@ -431,13 +500,14 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJones2">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressLennardJones2</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJones2" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a verletlist-based H-AdResS interaction using a LennardJones potential for both the AT and the CG interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>vl</strong> – </li>
-<li><strong>fixedtupleList</strong> – </li>
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
 </ul>
 </td>
 </tr>
@@ -448,14 +518,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJones2.setPotentialAT">
 <code class="descclassname">espressopp.interaction.VerletListHadressLennardJones2.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJones2.setPotentialAT" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the LennardJones interaction potential for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
 </ul>
 </td>
 </tr>
@@ -466,14 +537,71 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJones2.setPotentialCG">
 <code class="descclassname">espressopp.interaction.VerletListHadressLennardJones2.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJones2.setPotentialCG" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the LennardJones interaction potential for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJonesHarmonic">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressLennardJonesHarmonic</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJonesHarmonic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a verletlist-based H-AdResS interaction using a LennardJones potential for the AT and a Harmonic potential for the CG interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJonesHarmonic.setPotentialAT">
+<code class="descclassname">espressopp.interaction.VerletListHadressLennardJonesHarmonic.</code><code class="descname">setPotentialAT</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJonesHarmonic.setPotentialAT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the LennardJones interaction potential for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJonesHarmonic.setPotentialCG">
+<code class="descclassname">espressopp.interaction.VerletListHadressLennardJonesHarmonic.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressLennardJonesHarmonic.setPotentialCG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Harmonic interaction potential for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Harmonic&gt;</em>) – Harmonic potential object</li>
 </ul>
 </td>
 </tr>
@@ -484,11 +612,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.CellListLennardJones">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">CellListLennardJones</code><span class="sig-paren">(</span><em>stor</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.CellListLennardJones" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a CellList-based interaction using a LennardJones potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stor</strong> – </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>stor</strong> (<em>shared_ptr &lt;storage::Storage&gt;</em>) – storage object</td>
 </tr>
 </tbody>
 </table>
@@ -497,14 +626,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.CellListLennardJones.setPotential">
 <code class="descclassname">espressopp.interaction.CellListLennardJones.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.CellListLennardJones.setPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the LennardJones interaction potential for interacting particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
 </ul>
 </td>
 </tr>
@@ -515,14 +645,15 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.FixedPairListLennardJones">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">FixedPairListLennardJones</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.FixedPairListLennardJones" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Defines a FixedPairList-based interaction using a LennardJones potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> – </li>
-<li><strong>vl</strong> – </li>
-<li><strong>potential</strong> – </li>
+<li><strong>system</strong> (<em>shared_ptr&lt;System&gt;</em>) – system object</li>
+<li><strong>vl</strong> (<em>shared_ptr&lt;FixedPairList&gt;</em>) – FixedPairList object</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
 </ul>
 </td>
 </tr>
@@ -533,11 +664,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.FixedPairListLennardJones.getFixedPairList">
 <code class="descclassname">espressopp.interaction.FixedPairListLennardJones.</code><code class="descname">getFixedPairList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.FixedPairListLennardJones.getFixedPairList" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Gets the FixedPairList.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;FixedPairList&gt;</td>
 </tr>
 </tbody>
 </table>
@@ -546,11 +678,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.FixedPairListLennardJones.getPotential">
 <code class="descclassname">espressopp.interaction.FixedPairListLennardJones.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.FixedPairListLennardJones.getPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Gets the LennardJones interaction potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;LennardJones&gt;</td>
 </tr>
 </tbody>
 </table>
@@ -559,11 +692,12 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.FixedPairListLennardJones.setFixedPairList">
 <code class="descclassname">espressopp.interaction.FixedPairListLennardJones.</code><code class="descname">setFixedPairList</code><span class="sig-paren">(</span><em>fixedpairlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.FixedPairListLennardJones.setFixedPairList" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the FixedPairList.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedpairlist</strong> – </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedpairlist</strong> (<em>shared_ptr&lt;FixedPairList&gt;</em>) – FixedPairList object</td>
 </tr>
 </tbody>
 </table>
@@ -572,11 +706,712 @@
 <dl class="function">
 <dt id="espressopp.interaction.LennardJones.espressopp.interaction.FixedPairListLennardJones.setPotential">
 <code class="descclassname">espressopp.interaction.FixedPairListLennardJones.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.FixedPairListLennardJones.setPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Sets the LennardJones interaction potential.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> – </td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – tabulated potential object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLennardJones">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressATLennardJones</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLennardJones" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the AT part of a verletlist-based AdResS interaction using a LennardJones potential for the AT interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLennardJones.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListAdressATLennardJones.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLennardJones.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the AT potential in VerletListAdressATLennardJones interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLennardJones.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListAdressATLennardJones.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLennardJones.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the AT potential in VerletListAdressATLennardJones interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;LennardJones&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLennardJones.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListAdressATLennardJones.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLennardJones.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the verletlist used in VerletListAdressATLennardJones interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletListAdress&gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLennardJones">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressATLennardJones</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLennardJones" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the AT part of a verletlist-based H-AdResS interaction using a LennardJones potential for the AT interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLennardJones.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListHadressATLennardJones.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLennardJones.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the AT potential in VerletListHadressATLennardJones interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLennardJones.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListHadressATLennardJones.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLennardJones.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the AT potential in VerletListHadressATLennardJones interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;LennardJones&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLennardJones.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListHadressATLennardJones.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLennardJones.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the verletlist used in VerletListHadressATLennardJones interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletListAdress&gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressCGLennardJones">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressCGLennardJones</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressCGLennardJones" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the CG part of a verletlist-based AdResS interaction using a LennardJones potential for the CG interaction. It’s defined as a “NonbondedSlow” interaction (which multiple time stepping integrators can make use of).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressCGLennardJones.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListAdressCGLennardJones.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressCGLennardJones.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the CG potential in VerletListAdressCGLennardJones interaction for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressCGLennardJones.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListAdressCGLennardJones.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressCGLennardJones.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the CG potential in VerletListAdressCGLennardJones interaction for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;LennardJones&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressCGLennardJones.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListAdressCGLennardJones.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressCGLennardJones.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the verletlist used in VerletListAdressCGLennardJones interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletListAdress&gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressCGLennardJones">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressCGLennardJones</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressCGLennardJones" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the CG part of a verletlist-based H-AdResS interaction using a LennardJones potential for the CG interaction. It’s defined as a “NonbondedSlow” interaction (which multiple time stepping integrators can make use of).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressCGLennardJones.setPotential">
+<code class="descclassname">espressopp.interaction.VerletListHadressCGLennardJones.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressCGLennardJones.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the CG potential in VerletListHadressCGLennardJones interaction for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressCGLennardJones.getPotential">
+<code class="descclassname">espressopp.interaction.VerletListHadressCGLennardJones.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressCGLennardJones.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the CG potential in VerletListHadressCGLennardJones interaction for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">shared_ptr&lt;LennardJones&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressCGLennardJones.getVerletList">
+<code class="descclassname">espressopp.interaction.VerletListHadressCGLennardJones.</code><code class="descname">getVerletList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressCGLennardJones.getVerletList" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the verletlist used in VerletListHadressCGLennardJones interaction.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">shared_ptr&lt;VerletListAdress&gt;</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLenJonesReacFieldGen">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressATLenJonesReacFieldGen</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLenJonesReacFieldGen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the AT part of a verletlist-based AdResS interaction using both a LennardJones potential and a ReactionFieldGeneralized potential for the AT interaction (this is implemented with a separate template to avoid looping twice over the particle pairs when using both a Lennard Jones and an electrostatic interaction).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLenJonesReacFieldGen.setPotential1">
+<code class="descclassname">espressopp.interaction.VerletListAdressATLenJonesReacFieldGen.</code><code class="descname">setPotential1</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLenJonesReacFieldGen.setPotential1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the LennardJones AT potential in VerletListAdressATLenJonesReacFieldGen interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLenJonesReacFieldGen.setPotential2">
+<code class="descclassname">espressopp.interaction.VerletListAdressATLenJonesReacFieldGen.</code><code class="descname">setPotential2</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLenJonesReacFieldGen.setPotential2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the ReactionFieldGeneralized AT potential in VerletListAdressATLenJonesReacFieldGen interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;ReactionFieldGeneralized&gt;</em>) – ReactionFieldGeneralized potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLenJonesReacFieldGen">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressATLenJonesReacFieldGen</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLenJonesReacFieldGen" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines only the AT part of a verletlist-based H-AdResS interaction using both a LennardJones potential and a ReactionFieldGeneralized potential for the AT interaction (this is implemented with a separate template to avoid looping twice over the particle pairs when using both a Lennard Jones and an electrostatic interaction).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLenJonesReacFieldGen.setPotential1">
+<code class="descclassname">espressopp.interaction.VerletListHadressATLenJonesReacFieldGen.</code><code class="descname">setPotential1</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLenJonesReacFieldGen.setPotential1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the LennardJones AT potential in VerletListHadressATLenJonesReacFieldGen interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLenJonesReacFieldGen.setPotential2">
+<code class="descclassname">espressopp.interaction.VerletListHadressATLenJonesReacFieldGen.</code><code class="descname">setPotential2</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLenJonesReacFieldGen.setPotential2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the ReactionFieldGeneralized AT potential in VerletListHadressATLenJonesReacFieldGen interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;ReactionFieldGeneralized&gt;</em>) – ReactionFieldGeneralized potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenTab">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressATLJReacFieldGenTab</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenTab" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a verletlist-based AdResS interaction using both a LennardJones potential and a ReactionFieldGeneralized potential for the AT interaction and a Tabulated potential for the CG interaction (this is implemented with a separate template to avoid looping repeatedly over the particle pairs when using several interactions).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenTab.setPotentialAT1">
+<code class="descclassname">espressopp.interaction.VerletListAdressATLJReacFieldGenTab.</code><code class="descname">setPotentialAT1</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenTab.setPotentialAT1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the LennardJones AT potential in VerletListAdressATLJReacFieldGenTab interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenTab.setPotentialAT2">
+<code class="descclassname">espressopp.interaction.VerletListAdressATLJReacFieldGenTab.</code><code class="descname">setPotentialAT2</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenTab.setPotentialAT2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the ReactionFieldGeneralized AT potential in VerletListAdressATLJReacFieldGenTab interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;ReactionFieldGeneralized&gt;</em>) – ReactionFieldGeneralized potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenTab.setPotentialCG">
+<code class="descclassname">espressopp.interaction.VerletListAdressATLJReacFieldGenTab.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenTab.setPotentialCG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Tabulated CG potential in VerletListAdressATLJReacFieldGenTab interaction for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenTab">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressATLJReacFieldGenTab</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenTab" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a verletlist-based H-AdResS interaction using both a LennardJones potential and a ReactionFieldGeneralized potential for the AT interaction and a Tabulated potential for the CG interaction (this is implemented with a separate template to avoid looping repeatedly over the particle pairs when using several interactions).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenTab.setPotentialAT1">
+<code class="descclassname">espressopp.interaction.VerletListHadressATLJReacFieldGenTab.</code><code class="descname">setPotentialAT1</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenTab.setPotentialAT1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the LennardJones AT potential in VerletListHadressATLJReacFieldGenTab interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenTab.setPotentialAT2">
+<code class="descclassname">espressopp.interaction.VerletListHadressATLJReacFieldGenTab.</code><code class="descname">setPotentialAT2</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenTab.setPotentialAT2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the ReactionFieldGeneralized AT potential in VerletListHadressATLJReacFieldGenTab interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;ReactionFieldGeneralized&gt;</em>) – ReactionFieldGeneralized potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenTab.setPotentialCG">
+<code class="descclassname">espressopp.interaction.VerletListHadressATLJReacFieldGenTab.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenTab.setPotentialCG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Tabulated CG potential in VerletListHadressATLJReacFieldGenTab interaction for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Tabulated&gt;</em>) – tabulated interaction potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenHarmonic">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListAdressATLJReacFieldGenHarmonic</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenHarmonic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a verletlist-based AdResS interaction using both a LennardJones potential and a ReactionFieldGeneralized potential for the AT interaction and a Harmonic potential for the CG interaction (this is implemented with a separate template to avoid looping repeatedly over the particle pairs when using several interactions).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenHarmonic.setPotentialAT1">
+<code class="descclassname">espressopp.interaction.VerletListAdressATLJReacFieldGenHarmonic.</code><code class="descname">setPotentialAT1</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenHarmonic.setPotentialAT1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the LennardJones AT potential in VerletListAdressATLJReacFieldGenHarmonic interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenHarmonic.setPotentialAT2">
+<code class="descclassname">espressopp.interaction.VerletListAdressATLJReacFieldGenHarmonic.</code><code class="descname">setPotentialAT2</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenHarmonic.setPotentialAT2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the ReactionFieldGeneralized AT potential in VerletListAdressATLJReacFieldGenHarmonic interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;ReactionFieldGeneralized&gt;</em>) – ReactionFieldGeneralized potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenHarmonic.setPotentialCG">
+<code class="descclassname">espressopp.interaction.VerletListAdressATLJReacFieldGenHarmonic.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListAdressATLJReacFieldGenHarmonic.setPotentialCG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Harmonic CG potential in VerletListAdressATLJReacFieldGenHarmonic interaction for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Harmonic&gt;</em>) – Harmonic potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenHarmonic">
+<code class="descclassname">espressopp.interaction.</code><code class="descname">VerletListHadressATLJReacFieldGenHarmonic</code><span class="sig-paren">(</span><em>vl</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenHarmonic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines a verletlist-based H-AdResS interaction using both a LennardJones potential and a ReactionFieldGeneralized potential for the AT interaction and a Harmonic potential for the CG interaction (this is implemented with a separate template to avoid looping repeatedly over the particle pairs when using several interactions).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vl</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – Verletlist AdResS object</li>
+<li><strong>fixedtupleList</strong> (<em>shared_ptr&lt;FixedTupleListAdress&gt;</em>) – FixedTupleList object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenHarmonic.setPotentialAT1">
+<code class="descclassname">espressopp.interaction.VerletListHadressATLJReacFieldGenHarmonic.</code><code class="descname">setPotentialAT1</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenHarmonic.setPotentialAT1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the LennardJones AT potential in VerletListHadressATLJReacFieldGenHarmonic interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;LennardJones&gt;</em>) – LennardJones potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenHarmonic.setPotentialAT2">
+<code class="descclassname">espressopp.interaction.VerletListHadressATLJReacFieldGenHarmonic.</code><code class="descname">setPotentialAT2</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenHarmonic.setPotentialAT2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the ReactionFieldGeneralized AT potential in VerletListHadressATLJReacFieldGenHarmonic interaction for interacting AT particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;ReactionFieldGeneralized&gt;</em>) – ReactionFieldGeneralized potential object</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenHarmonic.setPotentialCG">
+<code class="descclassname">espressopp.interaction.VerletListHadressATLJReacFieldGenHarmonic.</code><code class="descname">setPotentialCG</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.LennardJones.espressopp.interaction.VerletListHadressATLJReacFieldGenHarmonic.setPotentialCG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the Harmonic CG potential in VerletListHadressATLJReacFieldGenHarmonic interaction for interacting CG particles of type1 and type2.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>type1</strong> (<em>int</em>) – particle type 1</li>
+<li><strong>type2</strong> (<em>int</em>) – particle type 2</li>
+<li><strong>potential</strong> (<em>shared_ptr&lt;Harmonic&gt;</em>) – Harmonic potential object</li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
