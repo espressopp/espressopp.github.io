@@ -1,0 +1,334 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>DumpH5MD - IO object &mdash; ESPResSo++ vlatest</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon_blue.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
+        <link rel="up" title="io" href="io.html"/>
+        <link rel="next" title="espressopp" href="espressopp.html"/>
+        <link rel="prev" title="espressopp.io.DumpXYZ" href="espressopp.io.DumpXYZ.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="http://www.espresso-pp.de/" class="icon icon-home"> ESPResSo++
+            <a href="http://www.mpip-mainz.mpg.de/polymer_theory" style="font-size:90%">MPIP Mainz
+          
+
+          
+            
+            <!--<a href="http://www.mpip-mainz.mpg.de/polymer_theory"><img src="_static/logo_theory_group.png" class="logo"/></a>-->
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ESPResSo++</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="classdescription.html">User Interface</a> &raquo;</li>
+        
+          <li><a href="io.html">io</a> &raquo;</li>
+        
+      <li><strong>DumpH5MD</strong> - IO object</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/espressopp.io.DumpH5MD.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span class="target" id="module-espressopp.io.DumpH5MD"></span><div class="section" id="dumph5md-io-object">
+<h1><strong>DumpH5MD</strong> - IO object<a class="headerlink" href="#dumph5md-io-object" title="Permalink to this headline">¶</a></h1>
+<p>This module provides a writer for <a class="reference external" href="http://nongnu.org/h5md/">H5MD</a> file format.</p>
+<dl class="function">
+<dt id="espressopp.io.DumpH5MD.espressopp.io.DumpH5MD">
+<code class="descclassname">espressopp.io.</code><code class="descname">DumpH5MD</code><span class="sig-paren">(</span><em>system</em>, <em>integrator</em>, <em>filename</em>, <em>group_name</em>, <em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.io.DumpH5MD.espressopp.io.DumpH5MD" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) – The system object.</li>
+<li><strong>integrator</strong> (<a class="reference internal" href="espressopp.integrator.MDIntegrator.html#module-espressopp.integrator.MDIntegrator" title="espressopp.integrator.MDIntegrator"><em>espressopp.integrator.MDIntegrator</em></a>) – System integrator.</li>
+<li><strong>filename</strong> (<em>str</em>) – The file name.</li>
+<li><strong>group_name</strong> (<em>str</em>) – The name of particle group.</li>
+<li><strong>is_adress</strong> (<em>bool</em>) – If positive then store position of AdResS particles</li>
+<li><strong>author</strong> (<em>str</em>) – The name of author of this file</li>
+<li><strong>email</strong> (<em>str</em>) – The e-mail address to the author.</li>
+<li><strong>chunk_size</strong> (<em>int</em>) – </li>
+<li><strong>static_box</strong> (<em>bool</em>) – box size written as time-independent variable</li>
+<li><strong>is_single_prec</strong> (<em>bool</em>) – Store float values with single precision (default: False)</li>
+<li><strong>store_position</strong> – Saves postions of particles</li>
+<li><strong>store_species</strong> – Saves types of particles.</li>
+<li><strong>store_state</strong> – Saves states of particles.</li>
+<li><strong>store_velocity</strong> – Saves velocities of particles.</li>
+<li><strong>store_force</strong> – Saves forces of particles</li>
+<li><strong>store_charge</strong> – Saves charges of particles</li>
+<li><strong>store_lambda</strong> – Saves lambdas (AdResS) of particles</li>
+<li><strong>store_res_id</strong> – Saves residues id of particles.</li>
+<li><strong>store_mass</strong> – Saves masses of particles</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">The DumpH5MD writer.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<div class="section" id="example">
+<h2>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">traj_file</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpH5MD</span><span class="p">(</span>
+<span class="go">        system, integrator, output_file,</span>
+<span class="go">        group_name=&#39;atoms&#39;,</span>
+<span class="go">        static_box=False,</span>
+<span class="go">        author=&#39;xxx&#39;,</span>
+<span class="go">        email=&#39;xxx@xxx&#39;,</span>
+<span class="go">        store_species=True,</span>
+<span class="go">        store_velocity=True,</span>
+<span class="go">        store_state=True,</span>
+<span class="go">        store_lambda=True)</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span><span class="p">):</span>
+<span class="go">        integrator.run(int_steps)</span>
+<span class="go">        traj_file.dump(s*int_steps, s*int_steps*integrator.dt)</span>
+</pre></div>
+</div>
+<p>Important note. Within the current approach, this extension is not compatible with ExtAnalyze module.
+Therefore, this code does not work:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ext_analyze</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">traj_file</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">ext_analyze</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sorting-file">
+<span id="sorting-file-label"></span><h2>Sorting file<a class="headerlink" href="#sorting-file" title="Permalink to this headline">¶</a></h2>
+<p>The content of the <cite>/particles/{}/</cite> is not sorted with respect to the
+particle id. This is because of the way how the data are stored
+by multiple cores simultaneously.</p>
+<p>If the flag <cite>do_sort</cite> is True then during the close method, the data
+will be sorted.</p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="espressopp.html" class="btn btn-neutral float-right" title="espressopp" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="espressopp.io.DumpXYZ.html" class="btn btn-neutral" title="espressopp.io.DumpXYZ" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013-2018, Max Planck Institute for Polymer Research.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

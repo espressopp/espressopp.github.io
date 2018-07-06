@@ -55,6 +55,11 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1io_1_1DumpGROAdress.html">DumpGROAdress</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1io_1_1DumpH5MD.html">DumpH5MD</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store particle data in Python buffers.  <a href="classespressopp_1_1io_1_1DumpH5MD.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1io_1_1DumpTopology.html">DumpTopology</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1io_1_1DumpXTC.html">DumpXTC</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1io_1_1DumpXTCAdress.html">DumpXTCAdress</a></td></tr>
@@ -66,8 +71,78 @@ Classes</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a8514137bbca55c1a51764fd75f0068ec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceespressopp_1_1io.html#a8514137bbca55c1a51764fd75f0068ec">registerPython</a> ()</td></tr>
 <tr class="separator:a8514137bbca55c1a51764fd75f0068ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79c4ef917273f657784a0c9aeb74626a"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a79c4ef917273f657784a0c9aeb74626a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceespressopp_1_1io.html#a79c4ef917273f657784a0c9aeb74626a">init_pb</a> (Py_buffer *pb, int ndim, int *shape)</td></tr>
+<tr class="memdesc:a79c4ef917273f657784a0c9aeb74626a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a Py_buffer object.  <a href="#a79c4ef917273f657784a0c9aeb74626a">More...</a><br /></td></tr>
+<tr class="separator:a79c4ef917273f657784a0c9aeb74626a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad64e37ce4185afa56580aeafc030fc3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceespressopp_1_1io.html#ad64e37ce4185afa56580aeafc030fc3a">free_pb</a> (Py_buffer *pb)</td></tr>
+<tr class="separator:ad64e37ce4185afa56580aeafc030fc3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ad64e37ce4185afa56580aeafc030fc3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad64e37ce4185afa56580aeafc030fc3a">&#9670;&nbsp;</a></span>free_pb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void espressopp::io::free_pb </td>
+          <td>(</td>
+          <td class="paramtype">Py_buffer *&#160;</td>
+          <td class="paramname"><em>pb</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DumpH5MD_8cpp_source.html#l00065">65</a> of file <a class="el" href="DumpH5MD_8cpp_source.html">DumpH5MD.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DumpH5MD_8cpp_source.html#l00100">espressopp::io::DumpH5MD::clear_buffers()</a>.</p>
+
+</div>
+</div>
+<a id="a79c4ef917273f657784a0c9aeb74626a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79c4ef917273f657784a0c9aeb74626a">&#9670;&nbsp;</a></span>init_pb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">void espressopp::io::init_pb </td>
+          <td>(</td>
+          <td class="paramtype">Py_buffer *&#160;</td>
+          <td class="paramname"><em>pb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ndim</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>shape</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialize a Py_buffer object. </p>
+
+<p class="definition">Definition at line <a class="el" href="DumpH5MD_8cpp_source.html#l00040">40</a> of file <a class="el" href="DumpH5MD_8cpp_source.html">DumpH5MD.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="DumpH5MD_8cpp_source.html#l00031">get_format()</a>.</p>
+
+</div>
+</div>
 <a id="a8514137bbca55c1a51764fd75f0068ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8514137bbca55c1a51764fd75f0068ec">&#9670;&nbsp;</a></span>registerPython()</h2>
 
@@ -83,9 +158,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="io_2bindings_8cpp_source.html#l00040">40</a> of file <a class="el" href="io_2bindings_8cpp_source.html">bindings.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="io_2bindings_8cpp_source.html#l00042">42</a> of file <a class="el" href="io_2bindings_8cpp_source.html">bindings.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="DumpXTCAdress_8cpp_source.html#l00103">espressopp::io::DumpXTCAdress::registerPython()</a>, <a class="el" href="DumpXTC_8cpp_source.html#l00118">espressopp::io::DumpXTC::registerPython()</a>, <a class="el" href="DumpGRO_8cpp_source.html#l00126">espressopp::io::DumpGRO::registerPython()</a>, <a class="el" href="DumpGROAdress_8cpp_source.html#l00137">espressopp::io::DumpGROAdress::registerPython()</a>, and <a class="el" href="DumpXYZ_8cpp_source.html#l00101">espressopp::io::DumpXYZ::registerPython()</a>.</p>
+<p class="reference">References <a class="el" href="DumpTopology_8cpp_source.html#l00105">espressopp::io::DumpTopology::registerPython()</a>, <a class="el" href="DumpH5MD_8cpp_source.html#l00305">espressopp::io::DumpH5MD::registerPython()</a>, <a class="el" href="DumpXTCAdress_8cpp_source.html#l00103">espressopp::io::DumpXTCAdress::registerPython()</a>, <a class="el" href="DumpXTC_8cpp_source.html#l00118">espressopp::io::DumpXTC::registerPython()</a>, <a class="el" href="DumpGRO_8cpp_source.html#l00126">espressopp::io::DumpGRO::registerPython()</a>, <a class="el" href="DumpGROAdress_8cpp_source.html#l00137">espressopp::io::DumpGROAdress::registerPython()</a>, and <a class="el" href="DumpXYZ_8cpp_source.html#l00101">espressopp::io::DumpXYZ::registerPython()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="bindings_8cpp_source.html#l00064">espressopp::registerPython()</a>.</p>
 
