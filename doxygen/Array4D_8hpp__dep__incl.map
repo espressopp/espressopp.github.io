@@ -1,7 +1,8 @@
 <map id="/home/espressopp/espressopp/src/esutil/Array4D.hpp" name="/home/espressopp/espressopp/src/esutil/Array4D.hpp">
-<area shape="rect" id="node2" href="$FixedQuadrupleListTypesInteractionTemplate_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/FixedQuadruple\lListTypesInteractionTemplate.hpp" alt="" coords="387,95,606,151"/>
+<area shape="rect" id="node2" href="$FixedQuadrupleListTypesInteractionTemplate_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/FixedQuadruple\lListTypesInteractionTemplate.hpp" alt="" coords="505,95,723,151"/>
 <area shape="rect" id="node3" href="$DihedralHarmonic_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic.cpp" alt="" coords="5,206,247,247"/>
 <area shape="rect" id="node4" href="$DihedralHarmonicNCos_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic\lNCos.cpp" alt="" coords="271,199,487,255"/>
 <area shape="rect" id="node5" href="$DihedralRB_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralRB.cpp" alt="" coords="512,206,716,247"/>
 <area shape="rect" id="node6" href="$TabulatedDihedral_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/TabulatedDihedral.cpp" alt="" coords="741,206,983,247"/>
+<area shape="rect" id="node7" href="$TabulatedSubEnsDihedral_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/TabulatedSubEns\lDihedral.cpp" alt="" coords="1008,199,1223,255"/>
 </map>

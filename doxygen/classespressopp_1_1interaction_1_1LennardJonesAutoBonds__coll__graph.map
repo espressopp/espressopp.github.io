@@ -1,5 +1,6 @@
 <map id="espressopp::interaction::LennardJonesAutoBonds" name="espressopp::interaction::LennardJonesAutoBonds">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Lennard\lJonesAutoBonds \&gt;" alt="" coords="644,19,837,75"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="5,5,163,47"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="212,35,416,76"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Lennard\lJonesAutoBonds \&gt;" alt="" coords="1052,108,1245,164"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="321,229,479,270"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="627,185,831,226"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1RealND.html" title="espressopp::RealND" alt="" coords="328,87,472,113"/>
 </map>

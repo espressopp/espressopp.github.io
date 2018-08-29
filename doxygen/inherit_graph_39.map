@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="5,1208,163,1249"/>
+<area shape="rect" id="node1" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="5,1248,163,1289"/>
 <area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="232,5,436,47"/>
 <area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; ConstrainCOM \&gt;" alt="" coords="211,71,457,112"/>
 <area shape="rect" id="node5" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; ConstrainRG \&gt;" alt="" coords="217,136,451,177"/>
@@ -30,9 +30,10 @@
 <area shape="rect" id="node55" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Stillinger\lWeberPairTerm \&gt;" alt="" coords="235,2026,433,2082"/>
 <area shape="rect" id="node57" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Stillinger\lWeberPairTermCapped \&gt;" alt="" coords="235,2106,433,2162"/>
 <area shape="rect" id="node59" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Tabulated \&gt;" alt="" coords="226,2187,442,2228"/>
-<area shape="rect" id="node61" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Tersoff\lPairTerm \&gt;" alt="" coords="240,2253,428,2309"/>
-<area shape="rect" id="node63" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; VSphere\lSelf \&gt;" alt="" coords="235,2333,433,2389"/>
-<area shape="rect" id="node65" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Zero \&gt;" alt="" coords="241,2413,427,2455"/>
+<area shape="rect" id="node61" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Tabulated\lSubEns \&gt;" alt="" coords="232,2253,436,2309"/>
+<area shape="rect" id="node63" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Tersoff\lPairTerm \&gt;" alt="" coords="240,2333,428,2389"/>
+<area shape="rect" id="node65" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; VSphere\lSelf \&gt;" alt="" coords="235,2413,433,2469"/>
+<area shape="rect" id="node67" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Zero \&gt;" alt="" coords="241,2493,427,2535"/>
 <area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1ConstrainCOM.html" title="This class provides methods to compute forces and energies of the ConstrainCOM part. " alt="" coords="538,71,695,112"/>
 <area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1ConstrainRG.html" title="This class provides methods to compute forces and energies of the ConstrainRG part. " alt="" coords="538,136,695,177"/>
 <area shape="rect" id="node8" href="$classespressopp_1_1interaction_1_1CoulombKSpaceEwald.html" title="This class provides methods to compute forces and energies of the CoulombKSpaceEwald part..." alt="" coords="535,209,699,251"/>
@@ -62,7 +63,8 @@
 <area shape="rect" id="node56" href="$classespressopp_1_1interaction_1_1StillingerWeberPairTerm.html" title="This class provides methods to compute forces and energies of 2 body term of Stillinger&#45;Weber potenti..." alt="" coords="531,2033,702,2075"/>
 <area shape="rect" id="node58" href="$classespressopp_1_1interaction_1_1StillingerWeberPairTermCapped.html" title="This class provides methods to compute forces and energies of 2 body term of Stillinger&#45;Weber potenti..." alt="" coords="509,2113,725,2155"/>
 <area shape="rect" id="node60" href="$classespressopp_1_1interaction_1_1Tabulated.html" title="This class provides methods to compute forces and energies of a tabulated potential. " alt="" coords="538,2187,695,2228"/>
-<area shape="rect" id="node62" href="$classespressopp_1_1interaction_1_1TersoffPairTerm.html" title="This class provides methods to compute forces and energies of 2 body term of Tersoff potential..." alt="" coords="538,2260,695,2301"/>
-<area shape="rect" id="node64" href="$classespressopp_1_1interaction_1_1VSphereSelf.html" title="This class provides methods to compute forces and energies of the VSphereSelf potential. " alt="" coords="538,2340,695,2381"/>
-<area shape="rect" id="node66" href="$classespressopp_1_1interaction_1_1Zero.html" title="This class provides methods for a zero potential no interactions between particles, mainly used for debugging and testing. " alt="" coords="538,2413,695,2455"/>
+<area shape="rect" id="node62" href="$classespressopp_1_1interaction_1_1TabulatedSubEns.html" title="This class provides methods to compute forces and energies of a tabulated potential. " alt="" coords="538,2260,695,2301"/>
+<area shape="rect" id="node64" href="$classespressopp_1_1interaction_1_1TersoffPairTerm.html" title="This class provides methods to compute forces and energies of 2 body term of Tersoff potential..." alt="" coords="538,2340,695,2381"/>
+<area shape="rect" id="node66" href="$classespressopp_1_1interaction_1_1VSphereSelf.html" title="This class provides methods to compute forces and energies of the VSphereSelf potential. " alt="" coords="538,2420,695,2461"/>
+<area shape="rect" id="node68" href="$classespressopp_1_1interaction_1_1Zero.html" title="This class provides methods for a zero potential no interactions between particles, mainly used for debugging and testing. " alt="" coords="538,2493,695,2535"/>
 </map>

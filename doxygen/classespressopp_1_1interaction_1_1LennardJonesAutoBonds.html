@@ -72,9 +72,10 @@ Collaboration diagram for espressopp::interaction::LennardJonesAutoBonds:</div>
 <div class="dyncontent">
 <div class="center"><img src="classespressopp_1_1interaction_1_1LennardJonesAutoBonds__coll__graph.png" border="0" usemap="#espressopp_1_1interaction_1_1LennardJonesAutoBonds_coll__map" alt="Collaboration graph"/></div>
 <map name="espressopp_1_1interaction_1_1LennardJonesAutoBonds_coll__map" id="espressopp_1_1interaction_1_1LennardJonesAutoBonds_coll__map">
-<area shape="rect" id="node2" href="classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Lennard\lJonesAutoBonds \&gt;" alt="" coords="644,19,837,75"/>
-<area shape="rect" id="node3" href="classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="5,5,163,47"/>
-<area shape="rect" id="node4" href="classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="212,35,416,76"/>
+<area shape="rect" id="node2" href="classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Lennard\lJonesAutoBonds \&gt;" alt="" coords="1052,108,1245,164"/>
+<area shape="rect" id="node3" href="classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="321,229,479,270"/>
+<area shape="rect" id="node9" href="classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="627,185,831,226"/>
+<area shape="rect" id="node6" href="classespressopp_1_1RealND.html" title="espressopp::RealND" alt="" coords="328,87,472,113"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -140,6 +141,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a863fb31b1748db3436b9c558fe924b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a527c04a183587b1472f77ad0a3ae08b3"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a527c04a183587b1472f77ad0a3ae08b3">getShift</a> () const</td></tr>
 <tr class="separator:a527c04a183587b1472f77ad0a3ae08b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09559110a24cf41abf79a3f496aee34b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a09559110a24cf41abf79a3f496aee34b">setColVarBondList</a> (const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt; &amp;fpl)</td></tr>
+<tr class="separator:a09559110a24cf41abf79a3f496aee34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af479ced48bb203aa348b7e96339b3df5"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#af479ced48bb203aa348b7e96339b3df5">getColVarBondList</a> () const</td></tr>
+<tr class="separator:af479ced48bb203aa348b7e96339b3df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39cf97d316df4b99391bccf33b087a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#ab39cf97d316df4b99391bccf33b087a5">setColVarAngleList</a> (const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt; &amp;fpl)</td></tr>
+<tr class="separator:ab39cf97d316df4b99391bccf33b087a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b96ca9d40965981c91e6b2c4ac7592d"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a0b96ca9d40965981c91e6b2c4ac7592d">getColVarAngleList</a> () const</td></tr>
+<tr class="separator:a0b96ca9d40965981c91e6b2c4ac7592d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97dca20ffba104d9a28b2199c949120e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a97dca20ffba104d9a28b2199c949120e">setColVarDihedList</a> (const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt; &amp;fpl)</td></tr>
+<tr class="separator:a97dca20ffba104d9a28b2199c949120e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a009bad0decd9ae91b60c8d3e8b5b2a66"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a009bad0decd9ae91b60c8d3e8b5b2a66">getColVarDihedList</a> () const</td></tr>
+<tr class="separator:a009bad0decd9ae91b60c8d3e8b5b2a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c6025811ea3e7a211aa1dbace15eac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#ad2c6025811ea3e7a211aa1dbace15eac">setColVar</a> (const <a class="el" href="classespressopp_1_1RealND.html">RealND</a> &amp;cv)</td></tr>
+<tr class="separator:ad2c6025811ea3e7a211aa1dbace15eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec76b7c8107fb15d3f589476d6ad0532"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#aec76b7c8107fb15d3f589476d6ad0532">setColVar</a> (const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist, const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;bc)</td></tr>
+<tr class="separator:aec76b7c8107fb15d3f589476d6ad0532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca0518ad41749b97eed6499e09485a4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classespressopp_1_1RealND.html">RealND</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#afca0518ad41749b97eed6499e09485a4">getColVar</a> () const</td></tr>
+<tr class="separator:afca0518ad41749b97eed6499e09485a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fb3f403bbb54a1041e38459b044209"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a47fb3f403bbb54a1041e38459b044209">computeColVarWeights</a> (const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist, const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;bc)</td></tr>
+<tr class="separator:a47fb3f403bbb54a1041e38459b044209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab93fccd83dd86a9c75414bdfa166362f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#ab93fccd83dd86a9c75414bdfa166362f">_computeEnergy</a> (const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p1, const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p2, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist) const</td></tr>
 <tr class="separator:ab93fccd83dd86a9c75414bdfa166362f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e03d64898973ab80a2aaf131d55d7ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a9e03d64898973ab80a2aaf131d55d7ee">_computeEnergyDeriv</a> (const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p1, const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p2) const</td></tr>
@@ -171,6 +192,14 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a79dddd3590a85ef7d538f57388f6f0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee759aaaedb7b63486b0fd7ce3794236"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#aee759aaaedb7b63486b0fd7ce3794236">autoShift</a></td></tr>
 <tr class="separator:aee759aaaedb7b63486b0fd7ce3794236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2709b9a8c257d852c495a53e6834f0e8"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a2709b9a8c257d852c495a53e6834f0e8">colVarBondList</a></td></tr>
+<tr class="separator:a2709b9a8c257d852c495a53e6834f0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b15bc6c67e3634dd0ad9fc6bd1400dc"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a5b15bc6c67e3634dd0ad9fc6bd1400dc">colVarAngleList</a></td></tr>
+<tr class="separator:a5b15bc6c67e3634dd0ad9fc6bd1400dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb76d87eacab8d5ec5ce912bcfb4fd0"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a0bb76d87eacab8d5ec5ce912bcfb4fd0">colVarDihedList</a></td></tr>
+<tr class="separator:a0bb76d87eacab8d5ec5ce912bcfb4fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a809b0b37a284f534a007066c2364a54d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1RealND.html">RealND</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a809b0b37a284f534a007066c2364a54d">colVar</a></td></tr>
+<tr class="separator:a809b0b37a284f534a007066c2364a54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -224,7 +253,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00053">53</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>, and <a class="el" href="Potential_8hpp_source.html#l00177">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::setShift()</a>.</p>
+<p class="reference">References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>, and <a class="el" href="Potential_8hpp_source.html#l00216">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::setShift()</a>.</p>
 
 </div>
 </div>
@@ -288,7 +317,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00060">60</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00077">preset()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>, and <a class="el" href="Potential_8hpp_source.html#l00177">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::setShift()</a>.</p>
+<p class="reference">References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00077">preset()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>, and <a class="el" href="Potential_8hpp_source.html#l00216">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::setShift()</a>.</p>
 
 </div>
 </div>
@@ -346,7 +375,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00068">68</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00121">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::autoShift</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00077">preset()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>.</p>
+<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00151">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::autoShift</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00077">preset()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>.</p>
 
 </div>
 </div>
@@ -391,7 +420,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00250">250</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00360">360</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -529,7 +558,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00285">285</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00395">395</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -559,7 +588,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00157">157</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00204">_computeEnergySqrRaw()</a>, <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Potential_8hpp_source.html#l00123">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::derived_this()</a>, <a class="el" href="log4espp_8hpp_source.html#l00483">LOG4ESPP_TRACE</a>, and <a class="el" href="Potential_8hpp_source.html#l00120">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::shift</a>.</p>
+<p class="reference">References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00204">_computeEnergySqrRaw()</a>, <a class="el" href="Potential_8hpp_source.html#l00149">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Potential_8hpp_source.html#l00161">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::derived_this()</a>, <a class="el" href="log4espp_8hpp_source.html#l00483">LOG4ESPP_TRACE</a>, and <a class="el" href="Potential_8hpp_source.html#l00150">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::shift</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00149">_computeEnergy()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00140">computeEnergySqr()</a>.</p>
 
@@ -641,7 +670,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00321">321</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00431">431</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -687,7 +716,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00179">179</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Particle_8hpp_source.html#l00332">espressopp::Particle::ghost()</a>, <a class="el" href="Particle_8hpp_source.html#l00232">espressopp::Particle::id()</a>, <a class="el" href="Particle_8hpp_source.html#l00271">espressopp::Particle::position()</a>, and <a class="el" href="Real3D_8hpp_source.html#l00214">espressopp::Real3D::sqr()</a>.</p>
+<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00149">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Particle_8hpp_source.html#l00332">espressopp::Particle::ghost()</a>, <a class="el" href="Particle_8hpp_source.html#l00232">espressopp::Particle::id()</a>, <a class="el" href="Particle_8hpp_source.html#l00271">espressopp::Particle::position()</a>, and <a class="el" href="Real3D_8hpp_source.html#l00214">espressopp::Real3D::sqr()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00172">computeForce()</a>.</p>
 
@@ -729,7 +758,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00195">195</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00211">_computeForceRaw()</a>, <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Potential_8hpp_source.html#l00123">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::derived_this()</a>, and <a class="el" href="Real3D_8hpp_source.html#l00214">espressopp::Real3D::sqr()</a>.</p>
+<p class="reference">References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00211">_computeForceRaw()</a>, <a class="el" href="Potential_8hpp_source.html#l00149">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Potential_8hpp_source.html#l00161">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::derived_this()</a>, and <a class="el" href="Real3D_8hpp_source.html#l00214">espressopp::Real3D::sqr()</a>.</p>
 
 </div>
 </div>
@@ -778,6 +807,46 @@ Private Attributes</h2></td></tr>
 <p class="reference">References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00045">ff2</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00195">_computeForce()</a>.</p>
+
+</div>
+</div>
+<a id="a47fb3f403bbb54a1041e38459b044209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47fb3f403bbb54a1041e38459b044209">&#9670;&nbsp;</a></span>computeColVarWeights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::computeColVarWeights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;&#160;</td>
+          <td class="paramname"><em>bc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a0c55273eb77265dafe8b117299342b05">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00315">315</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1018,7 +1087,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00123">123</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00161">161</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00157">_computeEnergySqr()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00195">_computeForce()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>.</p>
 
@@ -1047,7 +1116,123 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00127">127</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00165">165</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afca0518ad41749b97eed6499e09485a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca0518ad41749b97eed6499e09485a4">&#9670;&nbsp;</a></span>getColVar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1RealND.html">RealND</a> <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::getColVar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a7c7e80cb027017c1f91c951676891f8c">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00309">309</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0b96ca9d40965981c91e6b2c4ac7592d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b96ca9d40965981c91e6b2c4ac7592d">&#9670;&nbsp;</a></span>getColVarAngleList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt; <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::getColVarAngleList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a094374b70c678c9f2c32137d65aac511">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00273">273</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af479ced48bb203aa348b7e96339b3df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af479ced48bb203aa348b7e96339b3df5">&#9670;&nbsp;</a></span>getColVarBondList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt; <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::getColVarBondList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#ae38f3379c9b91e81e612d2c031f405fc">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00259">259</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a009bad0decd9ae91b60c8d3e8b5b2a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a009bad0decd9ae91b60c8d3e8b5b2a66">&#9670;&nbsp;</a></span>getColVarDihedList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt; <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::getColVarDihedList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a65c5f91afda8f74fa8eb15d9d816d248">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00287">287</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1076,7 +1261,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a6e779d88e333728c4c06f52fee9bedc1">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00171">171</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00210">210</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1167,7 +1352,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a2f3badda89b36567bba8068d1bfc4b39">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00186">186</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00225">225</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1226,7 +1411,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="Potential_8hpp_source.html#l00036">espressopp::interaction::Potential::~Potential()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Potential_8hpp_source.html#l00040">espressopp::interaction::Potential::~Potential()</a>.</p>
 
 </div>
 </div>
@@ -1288,7 +1473,7 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00093">getEpsilon()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00102">getMaxCrosslinks()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00100">getSigma()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00087">setEpsilon()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00104">setMaxCrosslinks()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00095">setSigma()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00091">espressopp::interaction::registerPython()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00094">espressopp::interaction::registerPython()</a>.</p>
 
 </div>
 </div>
@@ -1319,9 +1504,169 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">119</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00204">_computeEnergySqrRaw()</a>, <a class="el" href="Potential_8hpp_source.html#l00121">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::autoShift</a>, <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Potential_8hpp_source.html#l00123">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::derived_this()</a>, <a class="el" href="esconfig_8hpp_source.html#l00039">espressopp::infinity</a>, and <a class="el" href="Potential_8hpp_source.html#l00120">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::shift</a>.</p>
+<p class="reference">References <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00204">_computeEnergySqrRaw()</a>, <a class="el" href="Potential_8hpp_source.html#l00151">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::autoShift</a>, <a class="el" href="Potential_8hpp_source.html#l00149">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, <a class="el" href="Potential_8hpp_source.html#l00161">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::derived_this()</a>, <a class="el" href="esconfig_8hpp_source.html#l00039">espressopp::infinity</a>, and <a class="el" href="Potential_8hpp_source.html#l00150">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::shift</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00068">LennardJonesAutoBonds()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00128">updateAutoShift()</a>.</p>
+
+</div>
+</div>
+<a id="ad2c6025811ea3e7a211aa1dbace15eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c6025811ea3e7a211aa1dbace15eac">&#9670;&nbsp;</a></span>setColVar() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::setColVar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1RealND.html">RealND</a> &amp;&#160;</td>
+          <td class="paramname"><em>cv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#abd4f3702989ae9a6377a3a1cc0573204">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00294">294</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aec76b7c8107fb15d3f589476d6ad0532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec76b7c8107fb15d3f589476d6ad0532">&#9670;&nbsp;</a></span>setColVar() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::setColVar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;&#160;</td>
+          <td class="paramname"><em>bc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a9c0c1c3c2620d3ab66c2dbeaecc17d18">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00301">301</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab39cf97d316df4b99391bccf33b087a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab39cf97d316df4b99391bccf33b087a5">&#9670;&nbsp;</a></span>setColVarAngleList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::setColVarAngleList </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fpl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#aeb47bcd9c179ba7ddcea822ec52be9f8">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00266">266</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a09559110a24cf41abf79a3f496aee34b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09559110a24cf41abf79a3f496aee34b">&#9670;&nbsp;</a></span>setColVarBondList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::setColVarBondList </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fpl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a5f18920946b9ed6c7a5dcb88dfa03473">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00252">252</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a97dca20ffba104d9a28b2199c949120e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97dca20ffba104d9a28b2199c949120e">&#9670;&nbsp;</a></span>setColVarDihedList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::setColVarDihedList </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fpl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a58db072d506b1de5a2e255799b7fdfc7">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00280">280</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1353,7 +1698,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">113</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00118">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoff</a>, <a class="el" href="Potential_8hpp_source.html#l00119">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00128">updateAutoShift()</a>.</p>
+<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00148">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoff</a>, <a class="el" href="Potential_8hpp_source.html#l00149">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::cutoffSqr</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00128">updateAutoShift()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00053">LennardJonesAutoBonds()</a>.</p>
 
@@ -1447,7 +1792,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a911943a63896c0ee02ba0dee54a03b33">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00177">177</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00216">216</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00053">LennardJonesAutoBonds()</a>.</p>
 
@@ -1510,7 +1855,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00128">128</a> of file <a class="el" href="LennardJonesAutoBonds_8hpp_source.html">LennardJonesAutoBonds.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00121">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::autoShift</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>.</p>
+<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00151">espressopp::interaction::PotentialTemplate&lt; LennardJonesAutoBonds &gt;::autoShift</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00087">setEpsilon()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00095">setSigma()</a>.</p>
 
@@ -1537,7 +1882,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00121">121</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00151">151</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00068">LennardJonesAutoBonds()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00128">updateAutoShift()</a>.</p>
 
@@ -1567,6 +1912,102 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a809b0b37a284f534a007066c2364a54d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a809b0b37a284f534a007066c2364a54d">&#9670;&nbsp;</a></span>colVar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1RealND.html">RealND</a> <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::colVar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00159">159</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5b15bc6c67e3634dd0ad9fc6bd1400dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b15bc6c67e3634dd0ad9fc6bd1400dc">&#9670;&nbsp;</a></span>colVarAngleList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a>&gt; <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::colVarAngleList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00155">155</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2709b9a8c257d852c495a53e6834f0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2709b9a8c257d852c495a53e6834f0e8">&#9670;&nbsp;</a></span>colVarBondList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a>&gt; <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::colVarBondList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00153">153</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0bb76d87eacab8d5ec5ce912bcfb4fd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bb76d87eacab8d5ec5ce912bcfb4fd0">&#9670;&nbsp;</a></span>colVarDihedList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a>&gt; <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesAutoBonds.html">LennardJonesAutoBonds</a>  &gt;::colVarDihedList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00157">157</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a11a98dc50511c80918373212ab22e44a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11a98dc50511c80918373212ab22e44a">&#9670;&nbsp;</a></span>cutoff</h2>
 
@@ -1587,7 +2028,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00118">118</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00148">148</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>.</p>
 
@@ -1613,7 +2054,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00119">119</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00149">149</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00157">_computeEnergySqr()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00179">_computeForce()</a>, <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00113">setCutoff()</a>.</p>
 
@@ -1789,7 +2230,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00120">120</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00150">150</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00157">_computeEnergySqr()</a>, and <a class="el" href="LennardJonesAutoBonds_8hpp_source.html#l00119">setAutoShift()</a>.</p>
 

@@ -1,16 +1,20 @@
 <map id="/home/espressopp/espressopp/src/interaction/DihedralPotential.hpp" name="/home/espressopp/espressopp/src/interaction/DihedralPotential.hpp">
 <area shape="rect" id="node2" href="$interaction_2bindings_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/bindings.cpp" alt="" coords="736,206,936,247"/>
 <area shape="rect" id="node3" href="$TabulatedDihedral_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/TabulatedDihedral.hpp" alt="" coords="92,102,335,143"/>
-<area shape="rect" id="node5" href="$OPLS_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/OPLS.hpp" alt="" coords="359,102,559,143"/>
-<area shape="rect" id="node7" href="$DihedralHarmonicCos_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic\lCos.hpp" alt="" coords="583,95,799,151"/>
-<area shape="rect" id="node9" href="$DihedralHarmonicNCos_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic\lNCos.hpp" alt="" coords="873,95,1089,151"/>
-<area shape="rect" id="node11" href="$DihedralHarmonic_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic.hpp" alt="" coords="1114,102,1355,143"/>
-<area shape="rect" id="node13" href="$DihedralRB_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralRB.hpp" alt="" coords="1379,102,1583,143"/>
-<area shape="rect" id="node15" href="$DihedralPotential_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralPotential.cpp" alt="" coords="1607,102,1843,143"/>
+<area shape="rect" id="node5" href="$TabulatedSubEnsDihedral_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/TabulatedSubEns\lDihedral.hpp" alt="" coords="359,95,574,151"/>
+<area shape="rect" id="node7" href="$OPLS_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/OPLS.hpp" alt="" coords="599,102,799,143"/>
+<area shape="rect" id="node9" href="$DihedralHarmonicCos_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic\lCos.hpp" alt="" coords="873,95,1089,151"/>
+<area shape="rect" id="node11" href="$DihedralHarmonicNCos_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic\lNCos.hpp" alt="" coords="1113,95,1329,151"/>
+<area shape="rect" id="node13" href="$DihedralHarmonic_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic.hpp" alt="" coords="1354,102,1595,143"/>
+<area shape="rect" id="node15" href="$DihedralRB_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralRB.hpp" alt="" coords="1619,102,1823,143"/>
+<area shape="rect" id="node17" href="$DihedralPotential_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralPotential.cpp" alt="" coords="1847,102,2083,143"/>
+<area shape="rect" id="node18" href="$TabulatedSubEns_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/TabulatedSubEns.cpp" alt="" coords="2108,102,2348,143"/>
+<area shape="rect" id="node19" href="$TabulatedSubEnsAngular_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/TabulatedSubEns\lAngular.cpp" alt="" coords="2373,95,2587,151"/>
 <area shape="rect" id="node4" href="$TabulatedDihedral_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/TabulatedDihedral.cpp" alt="" coords="5,206,248,247"/>
-<area shape="rect" id="node6" href="$OPLS_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/OPLS.cpp" alt="" coords="272,206,472,247"/>
-<area shape="rect" id="node8" href="$DihedralHarmonicCos_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic\lCos.cpp" alt="" coords="496,199,712,255"/>
-<area shape="rect" id="node10" href="$DihedralHarmonicNCos_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic\lNCos.cpp" alt="" coords="960,199,1176,255"/>
-<area shape="rect" id="node12" href="$DihedralHarmonic_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic.cpp" alt="" coords="1201,206,1442,247"/>
-<area shape="rect" id="node14" href="$DihedralRB_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralRB.cpp" alt="" coords="1466,206,1670,247"/>
+<area shape="rect" id="node6" href="$TabulatedSubEnsDihedral_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/TabulatedSubEns\lDihedral.cpp" alt="" coords="273,199,487,255"/>
+<area shape="rect" id="node8" href="$OPLS_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/OPLS.cpp" alt="" coords="512,206,712,247"/>
+<area shape="rect" id="node10" href="$DihedralHarmonicCos_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic\lCos.cpp" alt="" coords="960,199,1176,255"/>
+<area shape="rect" id="node12" href="$DihedralHarmonicNCos_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic\lNCos.cpp" alt="" coords="1200,199,1416,255"/>
+<area shape="rect" id="node14" href="$DihedralHarmonic_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralHarmonic.cpp" alt="" coords="1441,206,1682,247"/>
+<area shape="rect" id="node16" href="$DihedralRB_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/DihedralRB.cpp" alt="" coords="1706,206,1910,247"/>
 </map>

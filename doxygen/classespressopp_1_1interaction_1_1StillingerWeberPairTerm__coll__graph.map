@@ -1,5 +1,6 @@
 <map id="espressopp::interaction::StillingerWeberPairTerm" name="espressopp::interaction::StillingerWeberPairTerm">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Stillinger\lWeberPairTerm \&gt;" alt="" coords="633,5,831,61"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="5,18,163,59"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="212,47,416,89"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Stillinger\lWeberPairTerm \&gt;" alt="" coords="1048,138,1245,194"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="321,71,479,112"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="627,111,831,152"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1RealND.html" title="espressopp::RealND" alt="" coords="328,311,472,338"/>
 </map>

@@ -15,7 +15,8 @@
 <area shape="rect" id="node19" href="$ReactionFieldGeneralized_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/ReactionFieldGeneralized.cpp" alt="" coords="3418,117,3705,158"/>
 <area shape="rect" id="node20" href="$SoftCosine_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/SoftCosine.cpp" alt="" coords="3729,117,3932,158"/>
 <area shape="rect" id="node21" href="$Tabulated_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/Tabulated.cpp" alt="" coords="3956,117,4156,158"/>
-<area shape="rect" id="node22" href="$Zero_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/Zero.cpp" alt="" coords="4180,117,4380,158"/>
+<area shape="rect" id="node22" href="$TabulatedSubEns_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/TabulatedSubEns.cpp" alt="" coords="4180,117,4420,158"/>
+<area shape="rect" id="node23" href="$Zero_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/Zero.cpp" alt="" coords="4444,117,4644,158"/>
 <area shape="rect" id="node3" href="$interaction_2bindings_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/bindings.cpp" alt="" coords="229,221,429,262"/>
 <area shape="rect" id="node4" href="$StillingerWeberPairTerm_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/StillingerWeber\lPairTerm.cpp" alt="" coords="709,213,909,269"/>
 <area shape="rect" id="node6" href="$StillingerWeberPairTermCapped_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/StillingerWeber\lPairTermCapped.cpp" alt="" coords="5,213,205,269"/>

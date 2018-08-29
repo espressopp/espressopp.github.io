@@ -72,9 +72,10 @@ Collaboration diagram for espressopp::interaction::DihedralHarmonic:</div>
 <div class="dyncontent">
 <div class="center"><img src="classespressopp_1_1interaction_1_1DihedralHarmonic__coll__graph.png" border="0" usemap="#espressopp_1_1interaction_1_1DihedralHarmonic_coll__map" alt="Collaboration graph"/></div>
 <map name="espressopp_1_1interaction_1_1DihedralHarmonic_coll__map" id="espressopp_1_1interaction_1_1DihedralHarmonic_coll__map">
-<area shape="rect" id="node2" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; DihedralHarmonic \&gt;" alt="" coords="576,5,759,61"/>
-<area shape="rect" id="node3" href="classespressopp_1_1interaction_1_1DihedralPotential.html" title="espressopp::interaction\l::DihedralPotential" alt="" coords="5,21,163,62"/>
-<area shape="rect" id="node4" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; Derived \&gt;" alt="" coords="212,45,395,101"/>
+<area shape="rect" id="node2" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; DihedralHarmonic \&gt;" alt="" coords="991,149,1173,205"/>
+<area shape="rect" id="node3" href="classespressopp_1_1interaction_1_1DihedralPotential.html" title="espressopp::interaction\l::DihedralPotential" alt="" coords="321,71,479,112"/>
+<area shape="rect" id="node9" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; Derived \&gt;" alt="" coords="627,110,809,166"/>
+<area shape="rect" id="node6" href="classespressopp_1_1RealND.html" title="espressopp::RealND" alt="" coords="328,311,472,338"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -117,6 +118,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a2c9ab549baf3162cbca906dc1e618570"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a378eea7bf2befe51695939671cb085e0"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a378eea7bf2befe51695939671cb085e0">getCutoff</a> () const</td></tr>
 <tr class="separator:a378eea7bf2befe51695939671cb085e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2567643262bf08b7b4a028f23c8be621"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a2567643262bf08b7b4a028f23c8be621">setColVarBondList</a> (const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt; &amp;fpl)</td></tr>
+<tr class="separator:a2567643262bf08b7b4a028f23c8be621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ed42683ede64ce9fe2fcf39cf002fee"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a2ed42683ede64ce9fe2fcf39cf002fee">getColVarBondList</a> () const</td></tr>
+<tr class="separator:a2ed42683ede64ce9fe2fcf39cf002fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b78586106f60e8b87cb90a63caeac76"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a8b78586106f60e8b87cb90a63caeac76">setColVarAngleList</a> (const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt; &amp;ftl)</td></tr>
+<tr class="separator:a8b78586106f60e8b87cb90a63caeac76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc1e54bcd20cecb9be4ff5508de09eb7"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#afc1e54bcd20cecb9be4ff5508de09eb7">getColVarAngleList</a> () const</td></tr>
+<tr class="separator:afc1e54bcd20cecb9be4ff5508de09eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a164003020072985267a80614e631c347"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a164003020072985267a80614e631c347">setColVarDihedList</a> (const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt; &amp;fql)</td></tr>
+<tr class="separator:a164003020072985267a80614e631c347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21087662dc2ccefb1496ff2696bf8a43"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a21087662dc2ccefb1496ff2696bf8a43">getColVarDihedList</a> () const</td></tr>
+<tr class="separator:a21087662dc2ccefb1496ff2696bf8a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a591622fb956040f60fe191c9a3fb1ebb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a591622fb956040f60fe191c9a3fb1ebb">setColVar</a> (const <a class="el" href="classespressopp_1_1RealND.html">RealND</a> &amp;cv)</td></tr>
+<tr class="separator:a591622fb956040f60fe191c9a3fb1ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01991003edf4aaee0493031d8c01bb4f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a01991003edf4aaee0493031d8c01bb4f">setColVar</a> (const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist21, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist32, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist43, const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;bc)</td></tr>
+<tr class="separator:a01991003edf4aaee0493031d8c01bb4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb50e76ecbe2fb87a043117ec3dac30"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classespressopp_1_1RealND.html">RealND</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#aadb50e76ecbe2fb87a043117ec3dac30">getColVar</a> () const</td></tr>
+<tr class="separator:aadb50e76ecbe2fb87a043117ec3dac30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a159b36b624bf2015539a82ffe81ba9dd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a159b36b624bf2015539a82ffe81ba9dd">computeColVarWeights</a> (const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist21, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist32, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist43, const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;bc)</td></tr>
+<tr class="separator:a159b36b624bf2015539a82ffe81ba9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e9cc0b1ad226b7d77a44019b5687035"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a9e9cc0b1ad226b7d77a44019b5687035">_computeEnergy</a> (const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist21, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist32, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist43) const</td></tr>
 <tr class="separator:a9e9cc0b1ad226b7d77a44019b5687035"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0486576fdbd1bb65d54206658f8e5868"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a0486576fdbd1bb65d54206658f8e5868">_computeEnergy</a> (<a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> phi) const</td></tr>
@@ -128,6 +149,8 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:aa3ea590655f59fbae4734f749f31070e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html#aa3ea590655f59fbae4734f749f31070e">registerPython</a> ()</td></tr>
 <tr class="separator:aa3ea590655f59fbae4734f749f31070e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d8b54bd86cfbe5be7f93163a0f498f7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#a7d8b54bd86cfbe5be7f93163a0f498f7">computePhi</a> (const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist21, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist32, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist43)</td></tr>
+<tr class="separator:a7d8b54bd86cfbe5be7f93163a0f498f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb7ca368a9991deaf816995248a25c4b"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#afb7ca368a9991deaf816995248a25c4b">LOG4ESPP_DECL_LOGGER</a> (theLogger)</td></tr>
 <tr class="separator:afb7ca368a9991deaf816995248a25c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -144,6 +167,14 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a54cbb91caacfe44e1e714c1e35f3c5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a414961ef3ff8fc5caf1d6113196adc95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a414961ef3ff8fc5caf1d6113196adc95">cutoffSqr</a></td></tr>
 <tr class="separator:a414961ef3ff8fc5caf1d6113196adc95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fb36c808e8a5abd03b7e9e1b50407ba"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a5fb36c808e8a5abd03b7e9e1b50407ba">colVarBondList</a></td></tr>
+<tr class="separator:a5fb36c808e8a5abd03b7e9e1b50407ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee638516a05d47ca58a46f571b6167a6"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#aee638516a05d47ca58a46f571b6167a6">colVarAngleList</a></td></tr>
+<tr class="separator:aee638516a05d47ca58a46f571b6167a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9503f9157f7f334ec7cacdf842619400"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a9503f9157f7f334ec7cacdf842619400">colVarDihedList</a></td></tr>
+<tr class="separator:a9503f9157f7f334ec7cacdf842619400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d6979a8b19531ec1d41528d15a4907"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1RealND.html">RealND</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html#a63d6979a8b19531ec1d41528d15a4907">colVar</a></td></tr>
+<tr class="separator:a63d6979a8b19531ec1d41528d15a4907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -266,7 +297,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00165">165</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00285">285</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -294,7 +325,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00258">258</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00295">295</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -401,7 +432,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00280">280</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00317">317</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -510,6 +541,58 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a159b36b624bf2015539a82ffe81ba9dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a159b36b624bf2015539a82ffe81ba9dd">&#9670;&nbsp;</a></span>computeColVarWeights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::computeColVarWeights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist21</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist32</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist43</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;&#160;</td>
+          <td class="paramname"><em>bc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#ae586f853e2e98b3f969c9ddccbc41103">espressopp::interaction::DihedralPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00256">256</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a908412df3f2f2e768f576346458b1521"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a908412df3f2f2e768f576346458b1521">&#9670;&nbsp;</a></span>computeEnergy() <span class="overload">[1/2]</span></h2>
 
@@ -552,7 +635,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#a5c266bb607e2f453e09df1a3fae8b445">espressopp::interaction::DihedralPotential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00145">145</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00265">265</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -582,7 +665,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#ad3d94da499dcbb0d6376101d3122b5a7">espressopp::interaction::DihedralPotential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00158">158</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00278">278</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -652,7 +735,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#a3d99a943d8a35284c42fe7056d528078">espressopp::interaction::DihedralPotential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00266">266</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00303">303</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -682,7 +765,55 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#a5aac197232fbc690cb9f52f4112f9e0f">espressopp::interaction::DihedralPotential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00294">294</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00331">331</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7d8b54bd86cfbe5be7f93163a0f498f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d8b54bd86cfbe5be7f93163a0f498f7">&#9670;&nbsp;</a></span>computePhi()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> espressopp::interaction::DihedralPotential::computePhi </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist21</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist32</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist43</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8cpp_source.html#l00031">31</a> of file <a class="el" href="DihedralPotential_8cpp_source.html">DihedralPotential.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="Real3D_8hpp_source.html#l00217">espressopp::Real3D::abs()</a>, <a class="el" href="Real3D_8hpp_source.html#l00208">espressopp::Real3D::cross()</a>, and <a class="el" href="namespaceespressopp_1_1interaction.html#ab33b1f70c09d4eceba1b68bad368efbb">espressopp::interaction::LOG4ESPP_LOGGER()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="DihedralPotential_8cpp_source.html#l00064">espressopp::interaction::DihedralPotential::registerPython()</a>, <a class="el" href="TabulatedSubEnsDihedral_8cpp_source.html#l00173">espressopp::interaction::TabulatedSubEnsDihedral::setColVar()</a>, <a class="el" href="TabulatedSubEnsAngular_8cpp_source.html#l00172">espressopp::interaction::TabulatedSubEnsAngular::setColVar()</a>, and <a class="el" href="TabulatedSubEns_8cpp_source.html#l00176">espressopp::interaction::TabulatedSubEns::setColVar()</a>.</p>
 
 </div>
 </div>
@@ -749,7 +880,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00107">107</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00154">154</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -776,7 +907,123 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00111">111</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00158">158</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aadb50e76ecbe2fb87a043117ec3dac30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadb50e76ecbe2fb87a043117ec3dac30">&#9670;&nbsp;</a></span>getColVar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1RealND.html">RealND</a> <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::getColVar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#a6844b364f924a0479a39f9d8427bb142">espressopp::interaction::DihedralPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00250">250</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="afc1e54bcd20cecb9be4ff5508de09eb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc1e54bcd20cecb9be4ff5508de09eb7">&#9670;&nbsp;</a></span>getColVarAngleList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::getColVarAngleList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#a5de5b8ed405fc5eeeaeb7aa130bdd492">espressopp::interaction::DihedralPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00213">213</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2ed42683ede64ce9fe2fcf39cf002fee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ed42683ede64ce9fe2fcf39cf002fee">&#9670;&nbsp;</a></span>getColVarBondList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::getColVarBondList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#a9ac6d27eea410ebcab244396a3d5d42b">espressopp::interaction::DihedralPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00199">199</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a21087662dc2ccefb1496ff2696bf8a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21087662dc2ccefb1496ff2696bf8a43">&#9670;&nbsp;</a></span>getColVarDihedList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::getColVarDihedList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#a5248f2e16c9a955e6d1b8b392a428517">espressopp::interaction::DihedralPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00227">227</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -805,7 +1052,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#ab5d03f4752dfce3ed5d95f7345420bde">espressopp::interaction::DihedralPotential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00138">138</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00185">185</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -968,7 +1215,179 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="DihedralHarmonic_8hpp_source.html#l00060">getK()</a>, <a class="el" href="DihedralHarmonic_8hpp_source.html#l00068">getPhi0()</a>, <a class="el" href="DihedralHarmonic_8hpp_source.html#l00059">setK()</a>, and <a class="el" href="DihedralHarmonic_8hpp_source.html#l00062">setPhi0()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00091">espressopp::interaction::registerPython()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00094">espressopp::interaction::registerPython()</a>.</p>
+
+</div>
+</div>
+<a id="a591622fb956040f60fe191c9a3fb1ebb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a591622fb956040f60fe191c9a3fb1ebb">&#9670;&nbsp;</a></span>setColVar() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::setColVar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1RealND.html">RealND</a> &amp;&#160;</td>
+          <td class="paramname"><em>cv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#aa8695807d7527a4bd7d42aa0ba1026b1">espressopp::interaction::DihedralPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00234">234</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a01991003edf4aaee0493031d8c01bb4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01991003edf4aaee0493031d8c01bb4f">&#9670;&nbsp;</a></span>setColVar() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::setColVar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist21</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist32</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist43</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;&#160;</td>
+          <td class="paramname"><em>bc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#ae73c661db818b80372b1a9157d000ecc">espressopp::interaction::DihedralPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00241">241</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8b78586106f60e8b87cb90a63caeac76"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b78586106f60e8b87cb90a63caeac76">&#9670;&nbsp;</a></span>setColVarAngleList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::setColVarAngleList </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ftl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#a56b20025401615e009ff29dfa5183902">espressopp::interaction::DihedralPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00206">206</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2567643262bf08b7b4a028f23c8be621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2567643262bf08b7b4a028f23c8be621">&#9670;&nbsp;</a></span>setColVarBondList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::setColVarBondList </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fpl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#a3ce5e2f112e5eb76eb2b87d4611b12cf">espressopp::interaction::DihedralPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00192">192</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a164003020072985267a80614e631c347"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a164003020072985267a80614e631c347">&#9670;&nbsp;</a></span>setColVarDihedList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::setColVarDihedList </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fql</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#a9182f019a3b004db94c42f5acbec12c2">espressopp::interaction::DihedralPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00220">220</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -998,7 +1417,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#a9fa44396c177df94fa0e53c0b984bb73">espressopp::interaction::DihedralPotential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00130">130</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00177">177</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1063,6 +1482,102 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a63d6979a8b19531ec1d41528d15a4907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63d6979a8b19531ec1d41528d15a4907">&#9670;&nbsp;</a></span>colVar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1RealND.html">RealND</a> <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::colVar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00152">152</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aee638516a05d47ca58a46f571b6167a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee638516a05d47ca58a46f571b6167a6">&#9670;&nbsp;</a></span>colVarAngleList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a>&gt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::colVarAngleList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00148">148</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5fb36c808e8a5abd03b7e9e1b50407ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5fb36c808e8a5abd03b7e9e1b50407ba">&#9670;&nbsp;</a></span>colVarBondList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a>&gt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::colVarBondList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00146">146</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a9503f9157f7f334ec7cacdf842619400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9503f9157f7f334ec7cacdf842619400">&#9670;&nbsp;</a></span>colVarDihedList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a>&gt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html">espressopp::interaction::DihedralPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html">DihedralHarmonic</a>  &gt;::colVarDihedList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00150">150</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a54cbb91caacfe44e1e714c1e35f3c5ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54cbb91caacfe44e1e714c1e35f3c5ba">&#9670;&nbsp;</a></span>cutoff</h2>
 
@@ -1083,7 +1598,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00104">104</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00143">143</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1107,7 +1622,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00105">105</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="DihedralPotential_8hpp_source.html#l00144">144</a> of file <a class="el" href="DihedralPotential_8hpp_source.html">DihedralPotential.hpp</a>.</p>
 
 </div>
 </div>

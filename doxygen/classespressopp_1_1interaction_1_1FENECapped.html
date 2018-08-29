@@ -72,9 +72,10 @@ Collaboration diagram for espressopp::interaction::FENECapped:</div>
 <div class="dyncontent">
 <div class="center"><img src="classespressopp_1_1interaction_1_1FENECapped__coll__graph.png" border="0" usemap="#espressopp_1_1interaction_1_1FENECapped_coll__map" alt="Collaboration graph"/></div>
 <map name="espressopp_1_1interaction_1_1FENECapped_coll__map" id="espressopp_1_1interaction_1_1FENECapped_coll__map">
-<area shape="rect" id="node2" href="classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; FENECapped \&gt;" alt="" coords="573,5,813,47"/>
-<area shape="rect" id="node3" href="classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="5,11,163,52"/>
-<area shape="rect" id="node4" href="classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="212,40,416,81"/>
+<area shape="rect" id="node2" href="classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; FENECapped \&gt;" alt="" coords="988,145,1228,187"/>
+<area shape="rect" id="node3" href="classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="321,71,479,112"/>
+<area shape="rect" id="node9" href="classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="627,111,831,152"/>
+<area shape="rect" id="node6" href="classespressopp_1_1RealND.html" title="espressopp::RealND" alt="" coords="328,311,472,338"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -130,6 +131,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abd6027dc5071e03c60df7955a38555cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af95a23db6d043d8636de987c53c8fddf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#af95a23db6d043d8636de987c53c8fddf">updateAutoShift</a> ()</td></tr>
 <tr class="separator:af95a23db6d043d8636de987c53c8fddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09559110a24cf41abf79a3f496aee34b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a09559110a24cf41abf79a3f496aee34b">setColVarBondList</a> (const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt; &amp;fpl)</td></tr>
+<tr class="separator:a09559110a24cf41abf79a3f496aee34b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af479ced48bb203aa348b7e96339b3df5"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#af479ced48bb203aa348b7e96339b3df5">getColVarBondList</a> () const</td></tr>
+<tr class="separator:af479ced48bb203aa348b7e96339b3df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab39cf97d316df4b99391bccf33b087a5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#ab39cf97d316df4b99391bccf33b087a5">setColVarAngleList</a> (const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt; &amp;fpl)</td></tr>
+<tr class="separator:ab39cf97d316df4b99391bccf33b087a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b96ca9d40965981c91e6b2c4ac7592d"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a0b96ca9d40965981c91e6b2c4ac7592d">getColVarAngleList</a> () const</td></tr>
+<tr class="separator:a0b96ca9d40965981c91e6b2c4ac7592d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97dca20ffba104d9a28b2199c949120e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a97dca20ffba104d9a28b2199c949120e">setColVarDihedList</a> (const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt; &amp;fpl)</td></tr>
+<tr class="separator:a97dca20ffba104d9a28b2199c949120e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a009bad0decd9ae91b60c8d3e8b5b2a66"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a009bad0decd9ae91b60c8d3e8b5b2a66">getColVarDihedList</a> () const</td></tr>
+<tr class="separator:a009bad0decd9ae91b60c8d3e8b5b2a66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c6025811ea3e7a211aa1dbace15eac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#ad2c6025811ea3e7a211aa1dbace15eac">setColVar</a> (const <a class="el" href="classespressopp_1_1RealND.html">RealND</a> &amp;cv)</td></tr>
+<tr class="separator:ad2c6025811ea3e7a211aa1dbace15eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec76b7c8107fb15d3f589476d6ad0532"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#aec76b7c8107fb15d3f589476d6ad0532">setColVar</a> (const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist, const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;bc)</td></tr>
+<tr class="separator:aec76b7c8107fb15d3f589476d6ad0532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca0518ad41749b97eed6499e09485a4"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classespressopp_1_1RealND.html">RealND</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#afca0518ad41749b97eed6499e09485a4">getColVar</a> () const</td></tr>
+<tr class="separator:afca0518ad41749b97eed6499e09485a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fb3f403bbb54a1041e38459b044209"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a47fb3f403bbb54a1041e38459b044209">computeColVarWeights</a> (const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist, const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;bc)</td></tr>
+<tr class="separator:a47fb3f403bbb54a1041e38459b044209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63bdf869a952e7a6378f4f9ca78fa7b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a63bdf869a952e7a6378f4f9ca78fa7b1">_computeEnergy</a> (const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p1, const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p2) const</td></tr>
 <tr class="separator:a63bdf869a952e7a6378f4f9ca78fa7b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26eb59576860c19f551d6e2f4af7a530"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a26eb59576860c19f551d6e2f4af7a530">_computeEnergy</a> (const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist) const</td></tr>
@@ -173,6 +194,14 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a79dddd3590a85ef7d538f57388f6f0d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee759aaaedb7b63486b0fd7ce3794236"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#aee759aaaedb7b63486b0fd7ce3794236">autoShift</a></td></tr>
 <tr class="separator:aee759aaaedb7b63486b0fd7ce3794236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2709b9a8c257d852c495a53e6834f0e8"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a2709b9a8c257d852c495a53e6834f0e8">colVarBondList</a></td></tr>
+<tr class="separator:a2709b9a8c257d852c495a53e6834f0e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b15bc6c67e3634dd0ad9fc6bd1400dc"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a5b15bc6c67e3634dd0ad9fc6bd1400dc">colVarAngleList</a></td></tr>
+<tr class="separator:a5b15bc6c67e3634dd0ad9fc6bd1400dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bb76d87eacab8d5ec5ce912bcfb4fd0"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a0bb76d87eacab8d5ec5ce912bcfb4fd0">colVarDihedList</a></td></tr>
+<tr class="separator:a0bb76d87eacab8d5ec5ce912bcfb4fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a809b0b37a284f534a007066c2364a54d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1RealND.html">RealND</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html#a809b0b37a284f534a007066c2364a54d">colVar</a></td></tr>
+<tr class="separator:a809b0b37a284f534a007066c2364a54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -218,7 +247,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="FENECapped_8hpp_source.html#l00050">50</a> of file <a class="el" href="FENECapped_8hpp_source.html">FENECapped.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="esconfig_8hpp_source.html#l00039">espressopp::infinity</a>, <a class="el" href="Potential_8hpp_source.html#l00162">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::setCutoff()</a>, and <a class="el" href="Potential_8hpp_source.html#l00177">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::setShift()</a>.</p>
+<p class="reference">References <a class="el" href="esconfig_8hpp_source.html#l00039">espressopp::infinity</a>, <a class="el" href="Potential_8hpp_source.html#l00201">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::setCutoff()</a>, and <a class="el" href="Potential_8hpp_source.html#l00216">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::setShift()</a>.</p>
 
 </div>
 </div>
@@ -282,7 +311,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="FENECapped_8hpp_source.html#l00056">56</a> of file <a class="el" href="FENECapped_8hpp_source.html">FENECapped.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00162">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::setCutoff()</a>, and <a class="el" href="Potential_8hpp_source.html#l00177">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::setShift()</a>.</p>
+<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00201">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::setCutoff()</a>, and <a class="el" href="Potential_8hpp_source.html#l00216">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::setShift()</a>.</p>
 
 </div>
 </div>
@@ -340,7 +369,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="FENECapped_8hpp_source.html#l00063">63</a> of file <a class="el" href="FENECapped_8hpp_source.html">FENECapped.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00121">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::autoShift</a>, <a class="el" href="Potential_8hpp_source.html#l00192">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::setAutoShift()</a>, and <a class="el" href="Potential_8hpp_source.html#l00162">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::setCutoff()</a>.</p>
+<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00151">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::autoShift</a>, <a class="el" href="Potential_8hpp_source.html#l00231">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::setAutoShift()</a>, and <a class="el" href="Potential_8hpp_source.html#l00201">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::setCutoff()</a>.</p>
 
 </div>
 </div>
@@ -379,7 +408,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00242">242</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00352">352</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -407,7 +436,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00257">257</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00367">367</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -435,7 +464,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00264">264</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00374">374</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -479,7 +508,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00250">250</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00360">360</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -517,7 +546,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00285">285</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00395">395</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -545,7 +574,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00271">271</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00381">381</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -619,7 +648,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00313">313</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00423">423</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -657,7 +686,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00328">328</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00438">438</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -707,7 +736,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00321">321</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00431">431</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -757,6 +786,46 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a47fb3f403bbb54a1041e38459b044209"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47fb3f403bbb54a1041e38459b044209">&#9670;&nbsp;</a></span>computeColVarWeights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::computeColVarWeights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;&#160;</td>
+          <td class="paramname"><em>bc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a0c55273eb77265dafe8b117299342b05">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00315">315</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a94ec8dc3c23afb38768c51cdf8f162c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a94ec8dc3c23afb38768c51cdf8f162c8">&#9670;&nbsp;</a></span>computeEnergy() <span class="overload">[1/3]</span></h2>
 
@@ -793,7 +862,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#ac2901f522536d9256ddd5a5a1c5f915d">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00213">213</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00323">323</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -823,7 +892,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a47d460611da25d9727fde2eb4be6d9de">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00221">221</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00331">331</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -853,7 +922,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a704e1f76e65eaa45ff334fea1214b8bf">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00228">228</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00338">338</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -883,7 +952,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a09900c8e58401fb84a3e4a8694cb5d48">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00235">235</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00345">345</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -923,7 +992,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a0b476bcd93a6061d32dae80a9c906535">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00295">295</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00405">405</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -953,7 +1022,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a7be36d11cc737b0010dcc99835cb9091">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00303">303</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00413">413</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -980,7 +1049,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00123">123</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00161">161</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +1076,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00127">127</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00165">165</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1042,6 +1111,122 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="afca0518ad41749b97eed6499e09485a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca0518ad41749b97eed6499e09485a4">&#9670;&nbsp;</a></span>getColVar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1RealND.html">RealND</a> <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::getColVar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a7c7e80cb027017c1f91c951676891f8c">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00309">309</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0b96ca9d40965981c91e6b2c4ac7592d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b96ca9d40965981c91e6b2c4ac7592d">&#9670;&nbsp;</a></span>getColVarAngleList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt; <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::getColVarAngleList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a094374b70c678c9f2c32137d65aac511">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00273">273</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="af479ced48bb203aa348b7e96339b3df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af479ced48bb203aa348b7e96339b3df5">&#9670;&nbsp;</a></span>getColVarBondList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt; <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::getColVarBondList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#ae38f3379c9b91e81e612d2c031f405fc">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00259">259</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a009bad0decd9ae91b60c8d3e8b5b2a66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a009bad0decd9ae91b60c8d3e8b5b2a66">&#9670;&nbsp;</a></span>getColVarDihedList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt; <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::getColVarDihedList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a65c5f91afda8f74fa8eb15d9d816d248">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00287">287</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a58bb184f332fe7abe616182f4684c5d7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a58bb184f332fe7abe616182f4684c5d7">&#9670;&nbsp;</a></span>getCutoff()</h2>
 
@@ -1067,7 +1252,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a6e779d88e333728c4c06f52fee9bedc1">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00171">171</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00210">210</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1189,7 +1374,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a2f3badda89b36567bba8068d1bfc4b39">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00186">186</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00225">225</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1217,7 +1402,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="Potential_8hpp_source.html#l00036">espressopp::interaction::Potential::~Potential()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Potential_8hpp_source.html#l00040">espressopp::interaction::Potential::~Potential()</a>.</p>
 
 </div>
 </div>
@@ -1248,7 +1433,7 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="FENECapped_8hpp_source.html#l00082">getcaprad()</a>, <a class="el" href="FENECapped_8hpp_source.html#l00076">getK()</a>, <a class="el" href="FENECapped_8hpp_source.html#l00088">getR0()</a>, <a class="el" href="FENECapped_8hpp_source.html#l00094">getRMax()</a>, <a class="el" href="FENECapped_8hpp_source.html#l00078">setcaprad()</a>, <a class="el" href="FENECapped_8hpp_source.html#l00072">setK()</a>, <a class="el" href="FENECapped_8hpp_source.html#l00084">setR0()</a>, and <a class="el" href="FENECapped_8hpp_source.html#l00090">setRMax()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00091">espressopp::interaction::registerPython()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00094">espressopp::interaction::registerPython()</a>.</p>
 
 </div>
 </div>
@@ -1277,7 +1462,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#ac9cfbeb28f1a5e6100fb6b58950cbf45">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00192">192</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00231">231</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FENECapped_8hpp_source.html#l00063">FENECapped()</a>.</p>
 
@@ -1309,9 +1494,169 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="FENECapped_8hpp_source.html#l00078">78</a> of file <a class="el" href="FENECapped_8hpp_source.html">FENECapped.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00205">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::updateAutoShift()</a>.</p>
+<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00244">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::updateAutoShift()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FENECapped_8cpp_source.html#l00036">registerPython()</a>.</p>
+
+</div>
+</div>
+<a id="ad2c6025811ea3e7a211aa1dbace15eac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2c6025811ea3e7a211aa1dbace15eac">&#9670;&nbsp;</a></span>setColVar() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::setColVar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1RealND.html">RealND</a> &amp;&#160;</td>
+          <td class="paramname"><em>cv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#abd4f3702989ae9a6377a3a1cc0573204">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00294">294</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aec76b7c8107fb15d3f589476d6ad0532"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec76b7c8107fb15d3f589476d6ad0532">&#9670;&nbsp;</a></span>setColVar() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::setColVar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;&#160;</td>
+          <td class="paramname"><em>bc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a9c0c1c3c2620d3ab66c2dbeaecc17d18">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00301">301</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ab39cf97d316df4b99391bccf33b087a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab39cf97d316df4b99391bccf33b087a5">&#9670;&nbsp;</a></span>setColVarAngleList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::setColVarAngleList </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fpl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#aeb47bcd9c179ba7ddcea822ec52be9f8">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00266">266</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a09559110a24cf41abf79a3f496aee34b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09559110a24cf41abf79a3f496aee34b">&#9670;&nbsp;</a></span>setColVarBondList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::setColVarBondList </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fpl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a5f18920946b9ed6c7a5dcb88dfa03473">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00252">252</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a97dca20ffba104d9a28b2199c949120e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97dca20ffba104d9a28b2199c949120e">&#9670;&nbsp;</a></span>setColVarDihedList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::setColVarDihedList </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fpl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a58db072d506b1de5a2e255799b7fdfc7">espressopp::interaction::Potential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00280">280</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1341,7 +1686,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#afeef99f0ae3e765ca9c050296b448d8f">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00162">162</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00201">201</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FENECapped_8hpp_source.html#l00050">FENECapped()</a>.</p>
 
@@ -1373,7 +1718,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="FENECapped_8hpp_source.html#l00072">72</a> of file <a class="el" href="FENECapped_8hpp_source.html">FENECapped.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00205">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::updateAutoShift()</a>.</p>
+<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00244">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::updateAutoShift()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FENECapped_8cpp_source.html#l00036">registerPython()</a>.</p>
 
@@ -1405,7 +1750,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="FENECapped_8hpp_source.html#l00084">84</a> of file <a class="el" href="FENECapped_8hpp_source.html">FENECapped.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00205">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::updateAutoShift()</a>.</p>
+<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00244">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::updateAutoShift()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FENECapped_8cpp_source.html#l00036">registerPython()</a>.</p>
 
@@ -1437,7 +1782,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="FENECapped_8hpp_source.html#l00090">90</a> of file <a class="el" href="FENECapped_8hpp_source.html">FENECapped.hpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00205">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::updateAutoShift()</a>.</p>
+<p class="reference">References <a class="el" href="Potential_8hpp_source.html#l00244">espressopp::interaction::PotentialTemplate&lt; FENECapped &gt;::updateAutoShift()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FENECapped_8cpp_source.html#l00036">registerPython()</a>.</p>
 
@@ -1469,7 +1814,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a911943a63896c0ee02ba0dee54a03b33">espressopp::interaction::Potential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00177">177</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00216">216</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FENECapped_8hpp_source.html#l00050">FENECapped()</a>.</p>
 
@@ -1498,7 +1843,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00205">205</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00244">244</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FENECapped_8hpp_source.html#l00078">setcaprad()</a>, <a class="el" href="FENECapped_8hpp_source.html#l00072">setK()</a>, <a class="el" href="FENECapped_8hpp_source.html#l00084">setR0()</a>, and <a class="el" href="FENECapped_8hpp_source.html#l00090">setRMax()</a>.</p>
 
@@ -1525,7 +1870,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00121">121</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00151">151</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="FENECapped_8hpp_source.html#l00063">FENECapped()</a>.</p>
 
@@ -1557,6 +1902,102 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a809b0b37a284f534a007066c2364a54d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a809b0b37a284f534a007066c2364a54d">&#9670;&nbsp;</a></span>colVar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1RealND.html">RealND</a> <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::colVar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00159">159</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a5b15bc6c67e3634dd0ad9fc6bd1400dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b15bc6c67e3634dd0ad9fc6bd1400dc">&#9670;&nbsp;</a></span>colVarAngleList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a>&gt; <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::colVarAngleList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00155">155</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a2709b9a8c257d852c495a53e6834f0e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2709b9a8c257d852c495a53e6834f0e8">&#9670;&nbsp;</a></span>colVarBondList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a>&gt; <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::colVarBondList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00153">153</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a0bb76d87eacab8d5ec5ce912bcfb4fd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bb76d87eacab8d5ec5ce912bcfb4fd0">&#9670;&nbsp;</a></span>colVarDihedList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a>&gt; <a class="el" href="classespressopp_1_1interaction_1_1PotentialTemplate.html">espressopp::interaction::PotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html">FENECapped</a>  &gt;::colVarDihedList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00157">157</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a11a98dc50511c80918373212ab22e44a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a11a98dc50511c80918373212ab22e44a">&#9670;&nbsp;</a></span>cutoff</h2>
 
@@ -1577,7 +2018,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00118">118</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00148">148</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1601,7 +2042,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00119">119</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00149">149</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1703,7 +2144,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00120">120</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Potential_8hpp_source.html#l00150">150</a> of file <a class="el" href="Potential_8hpp_source.html">Potential.hpp</a>.</p>
 
 </div>
 </div>

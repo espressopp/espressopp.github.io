@@ -1,5 +1,6 @@
 <map id="espressopp::interaction::TersoffTripleTerm" name="espressopp::interaction::TersoffTripleTerm">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="espressopp::interaction\l::AngularPotentialTemplate\l\&lt; TersoffTripleTerm \&gt;" alt="" coords="571,5,749,61"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1AngularPotential.html" title="espressopp::interaction\l::AngularPotential" alt="" coords="5,21,163,62"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="212,45,391,101"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="espressopp::interaction\l::AngularPotentialTemplate\l\&lt; TersoffTripleTerm \&gt;" alt="" coords="985,149,1164,205"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1AngularPotential.html" title="espressopp::interaction\l::AngularPotential" alt="" coords="321,71,479,112"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="627,110,805,166"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1RealND.html" title="espressopp::RealND" alt="" coords="328,311,472,338"/>
 </map>

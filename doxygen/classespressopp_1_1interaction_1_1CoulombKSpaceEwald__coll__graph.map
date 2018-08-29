@@ -1,6 +1,7 @@
 <map id="espressopp::interaction::CoulombKSpaceEwald" name="espressopp::interaction::CoulombKSpaceEwald">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Coulomb\lKSpaceEwald \&gt;" alt="" coords="627,5,825,61"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="5,19,163,61"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="212,49,416,90"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1Tensor.html" title="The class Tensor stands for a symmetric 3x3 matrix. " alt="" coords="657,85,795,112"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Coulomb\lKSpaceEwald \&gt;" alt="" coords="1107,185,1305,241"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="321,315,479,357"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="692,193,896,234"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1RealND.html" title="espressopp::RealND" alt="" coords="328,7,472,33"/>
+<area shape="rect" id="node10" href="$classespressopp_1_1Tensor.html" title="The class Tensor stands for a symmetric 3x3 matrix. " alt="" coords="1137,307,1275,333"/>
 </map>

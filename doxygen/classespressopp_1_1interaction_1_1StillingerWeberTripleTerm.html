@@ -69,9 +69,10 @@ Collaboration diagram for espressopp::interaction::StillingerWeberTripleTerm:</d
 <div class="dyncontent">
 <div class="center"><img src="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm__coll__graph.png" border="0" usemap="#espressopp_1_1interaction_1_1StillingerWeberTripleTerm_coll__map" alt="Collaboration graph"/></div>
 <map name="espressopp_1_1interaction_1_1StillingerWeberTripleTerm_coll__map" id="espressopp_1_1interaction_1_1StillingerWeberTripleTerm_coll__map">
-<area shape="rect" id="node2" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="espressopp::interaction\l::AngularPotentialTemplate\l\&lt; StillingerWeberTripleTerm \&gt;" alt="" coords="617,5,813,61"/>
-<area shape="rect" id="node3" href="classespressopp_1_1interaction_1_1AngularPotential.html" title="espressopp::interaction\l::AngularPotential" alt="" coords="5,21,163,62"/>
-<area shape="rect" id="node4" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="212,45,391,101"/>
+<area shape="rect" id="node2" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="espressopp::interaction\l::AngularPotentialTemplate\l\&lt; StillingerWeberTripleTerm \&gt;" alt="" coords="1032,149,1228,205"/>
+<area shape="rect" id="node3" href="classespressopp_1_1interaction_1_1AngularPotential.html" title="espressopp::interaction\l::AngularPotential" alt="" coords="321,71,479,112"/>
+<area shape="rect" id="node9" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="627,110,805,166"/>
+<area shape="rect" id="node6" href="classespressopp_1_1RealND.html" title="espressopp::RealND" alt="" coords="328,311,472,338"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -145,6 +146,26 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aee201eb24e06d9f6384cded72a07549c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cf81f630282d5b29edc36454af94d7a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#a5cf81f630282d5b29edc36454af94d7a">setCutoff</a> (<a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> _cutoff)</td></tr>
 <tr class="separator:a5cf81f630282d5b29edc36454af94d7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8f5e723b5740d48c08dc536bf91b107"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#ac8f5e723b5740d48c08dc536bf91b107">setColVarBondList</a> (const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt; &amp;fpl)</td></tr>
+<tr class="separator:ac8f5e723b5740d48c08dc536bf91b107"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da769b1bcf4446bffdaa387737c7425"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#a8da769b1bcf4446bffdaa387737c7425">getColVarBondList</a> () const</td></tr>
+<tr class="separator:a8da769b1bcf4446bffdaa387737c7425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f2df8e3529040c9dc7fb14bf252109"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#a28f2df8e3529040c9dc7fb14bf252109">setColVarAngleList</a> (const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt; &amp;fpl)</td></tr>
+<tr class="separator:a28f2df8e3529040c9dc7fb14bf252109"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62dfcd1acc6589e36fc5a3a5b0d6cb6"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#ad62dfcd1acc6589e36fc5a3a5b0d6cb6">getColVarAngleList</a> () const</td></tr>
+<tr class="separator:ad62dfcd1acc6589e36fc5a3a5b0d6cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cd72cc9c47b6835417d8c9f146cc42a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#a7cd72cc9c47b6835417d8c9f146cc42a">setColVarDihedList</a> (const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt; &amp;fpl)</td></tr>
+<tr class="separator:a7cd72cc9c47b6835417d8c9f146cc42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4ea3d31b16c399b28c4ceabd375c5fd"><td class="memItemLeft" align="right" valign="top">virtual shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#ad4ea3d31b16c399b28c4ceabd375c5fd">getColVarDihedList</a> () const</td></tr>
+<tr class="separator:ad4ea3d31b16c399b28c4ceabd375c5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac649c82c5e6bae20d8c6d8660c13c664"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#ac649c82c5e6bae20d8c6d8660c13c664">setColVar</a> (const <a class="el" href="classespressopp_1_1RealND.html">RealND</a> &amp;cv)</td></tr>
+<tr class="separator:ac649c82c5e6bae20d8c6d8660c13c664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa787352a8f6108a6e8e9afa8e6059cdb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#aa787352a8f6108a6e8e9afa8e6059cdb">setColVar</a> (const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist12, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist32, const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;bc)</td></tr>
+<tr class="separator:aa787352a8f6108a6e8e9afa8e6059cdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a63abaab5bedad6a603b8817053a6e2"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classespressopp_1_1RealND.html">RealND</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#a3a63abaab5bedad6a603b8817053a6e2">getColVar</a> () const</td></tr>
+<tr class="separator:a3a63abaab5bedad6a603b8817053a6e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a084ec08a4e341ecb9db1aae3719b9c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#a7a084ec08a4e341ecb9db1aae3719b9c">computeColVarWeights</a> (const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist12, const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;dist32, const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;bc)</td></tr>
+<tr class="separator:a7a084ec08a4e341ecb9db1aae3719b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf9897790864d4dd56b8df290a6199b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#abf9897790864d4dd56b8df290a6199b7">_computeEnergy</a> (const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p1, const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p2, const <a class="el" href="structespressopp_1_1Particle.html">Particle</a> &amp;p3) const</td></tr>
 <tr class="separator:abf9897790864d4dd56b8df290a6199b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad772fa3e0554564f7e6df742c368035"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#aad772fa3e0554564f7e6df742c368035">_computeEnergy</a> (<a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> theta) const</td></tr>
@@ -174,6 +195,14 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a329453e72457a4e3d1df5e95d5b22206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad57da16c0394575a7b2ffb6e7b812fc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#ad57da16c0394575a7b2ffb6e7b812fc3">cutoffSqr</a></td></tr>
 <tr class="separator:ad57da16c0394575a7b2ffb6e7b812fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74522846c169e4b0dd1019962e97a469"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#a74522846c169e4b0dd1019962e97a469">colVarBondList</a></td></tr>
+<tr class="separator:a74522846c169e4b0dd1019962e97a469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74a7a20923dd71df6e9342d55a0a5018"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#a74a7a20923dd71df6e9342d55a0a5018">colVarAngleList</a></td></tr>
+<tr class="separator:a74a7a20923dd71df6e9342d55a0a5018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f3a3afab121e8f756c398a221f06ca0"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#a6f3a3afab121e8f756c398a221f06ca0">colVarDihedList</a></td></tr>
+<tr class="separator:a6f3a3afab121e8f756c398a221f06ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da1ee3d2cda7e1ec206bef810be486b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classespressopp_1_1RealND.html">RealND</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html#a9da1ee3d2cda7e1ec206bef810be486b">colVar</a></td></tr>
+<tr class="separator:a9da1ee3d2cda7e1ec206bef810be486b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -391,7 +420,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00175">175</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00290">290</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -419,7 +448,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00199">199</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00314">314</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -543,7 +572,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00228">228</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00343">343</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -593,7 +622,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00239">239</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00354">354</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -677,6 +706,52 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
+<a id="a7a084ec08a4e341ecb9db1aae3719b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a084ec08a4e341ecb9db1aae3719b9c">&#9670;&nbsp;</a></span>computeColVarWeights()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::computeColVarWeights </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist12</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist32</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;&#160;</td>
+          <td class="paramname"><em>bc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#addfb957784bd81e2c14dc1b9c85521d2">espressopp::interaction::AngularPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00255">255</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+
+</div>
+</div>
 <a id="aa7d4f829ee7ee1d77e1849360875bd5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa7d4f829ee7ee1d77e1849360875bd5b">&#9670;&nbsp;</a></span>computeEnergy() <span class="overload">[1/3]</span></h2>
 
@@ -719,7 +794,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#a91d7b7d6dc413e44267c0812021957ed">espressopp::interaction::AngularPotential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00149">149</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00264">264</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -759,7 +834,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#a3317a109a6b2425e00e53879c2ced065">espressopp::interaction::AngularPotential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00158">158</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00273">273</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -789,7 +864,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#a4946e458989ee105d232773ac6c11d93">espressopp::interaction::AngularPotential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00168">168</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00283">283</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -847,7 +922,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#aeebcb6429c896c007e0a04e820586899">espressopp::interaction::AngularPotential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00207">207</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00322">322</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -899,7 +974,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#ac3304a1fbef6c288e6d186770684d493">espressopp::interaction::AngularPotential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00218">218</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00333">333</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -929,7 +1004,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#aef4a21aaac52e41dcbcdae235dfc6789">espressopp::interaction::AngularPotential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00251">251</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00366">366</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -956,7 +1031,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00111">111</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00154">154</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -983,7 +1058,123 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00115">115</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00158">158</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a3a63abaab5bedad6a603b8817053a6e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a63abaab5bedad6a603b8817053a6e2">&#9670;&nbsp;</a></span>getColVar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1RealND.html">RealND</a> <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::getColVar </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#a5b88f5155952922f048937a210311a72">espressopp::interaction::AngularPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00249">249</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad62dfcd1acc6589e36fc5a3a5b0d6cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad62dfcd1acc6589e36fc5a3a5b0d6cb6">&#9670;&nbsp;</a></span>getColVarAngleList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt; <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::getColVarAngleList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#ad6266643058c300ca18e7abb79607a46">espressopp::interaction::AngularPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00212">212</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8da769b1bcf4446bffdaa387737c7425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da769b1bcf4446bffdaa387737c7425">&#9670;&nbsp;</a></span>getColVarBondList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt; <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::getColVarBondList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#acc65f2e017bc115fdfb26886ed2fa9ce">espressopp::interaction::AngularPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00198">198</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ad4ea3d31b16c399b28c4ceabd375c5fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4ea3d31b16c399b28c4ceabd375c5fd">&#9670;&nbsp;</a></span>getColVarDihedList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt; <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::getColVarDihedList </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#a3646cc74b5ce5e56840c29ba1ca71f9d">espressopp::interaction::AngularPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00226">226</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1379,7 +1570,173 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00119">getCutoff1()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00126">getCutoff2()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00099">getEpsilon()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00076">getGamma1()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00081">getGamma2()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00093">getLambda()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00105">getSigma1()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00110">getSigma2()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00087">getTheta0()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00115">setCutoff1()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00122">setCutoff2()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00095">setEpsilon()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00072">setGamma1()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00077">setGamma2()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00089">setLambda()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00101">setSigma1()</a>, <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00106">setSigma2()</a>, and <a class="el" href="StillingerWeberTripleTerm_8hpp_source.html#l00083">setTheta0()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00091">espressopp::interaction::registerPython()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="interaction_2bindings_8cpp_source.html#l00094">espressopp::interaction::registerPython()</a>.</p>
+
+</div>
+</div>
+<a id="ac649c82c5e6bae20d8c6d8660c13c664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac649c82c5e6bae20d8c6d8660c13c664">&#9670;&nbsp;</a></span>setColVar() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::setColVar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1RealND.html">RealND</a> &amp;&#160;</td>
+          <td class="paramname"><em>cv</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#a4f1fcbb1789cb7d9260a86a7d410b035">espressopp::interaction::AngularPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00233">233</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="aa787352a8f6108a6e8e9afa8e6059cdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa787352a8f6108a6e8e9afa8e6059cdb">&#9670;&nbsp;</a></span>setColVar() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::setColVar </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist12</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1Real3D.html">Real3D</a> &amp;&#160;</td>
+          <td class="paramname"><em>dist32</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classespressopp_1_1bc_1_1BC.html">bc::BC</a> &amp;&#160;</td>
+          <td class="paramname"><em>bc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#a79e45193d36b525899f833e80937f88e">espressopp::interaction::AngularPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00240">240</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a28f2df8e3529040c9dc7fb14bf252109"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f2df8e3529040c9dc7fb14bf252109">&#9670;&nbsp;</a></span>setColVarAngleList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::setColVarAngleList </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fpl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#a1e371ece17e529ccc8e074e4c693e12e">espressopp::interaction::AngularPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00205">205</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="ac8f5e723b5740d48c08dc536bf91b107"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8f5e723b5740d48c08dc536bf91b107">&#9670;&nbsp;</a></span>setColVarBondList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::setColVarBondList </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fpl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#a03b3ff6b8b2e8781777a86914095c251">espressopp::interaction::AngularPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00191">191</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a7cd72cc9c47b6835417d8c9f146cc42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cd72cc9c47b6835417d8c9f146cc42a">&#9670;&nbsp;</a></span>setColVarDihedList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::setColVarDihedList </td>
+          <td>(</td>
+          <td class="paramtype">const shared_ptr&lt; <a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>fpl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#aea6b7516b2027b7202f4d9d01c2f0efe">espressopp::interaction::AngularPotential</a>.</p>
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00219">219</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1409,7 +1766,7 @@ Private Attributes</h2></td></tr>
 
 <p>Implements <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#a95cba5a39db955f4292d7f3e6ae193ba">espressopp::interaction::AngularPotential</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00134">134</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00176">176</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1702,6 +2059,102 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a9da1ee3d2cda7e1ec206bef810be486b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9da1ee3d2cda7e1ec206bef810be486b">&#9670;&nbsp;</a></span>colVar</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classespressopp_1_1RealND.html">RealND</a> <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::colVar</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00152">152</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a74a7a20923dd71df6e9342d55a0a5018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74a7a20923dd71df6e9342d55a0a5018">&#9670;&nbsp;</a></span>colVarAngleList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classespressopp_1_1FixedTripleList.html">FixedTripleList</a>&gt; <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::colVarAngleList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00148">148</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a74522846c169e4b0dd1019962e97a469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74522846c169e4b0dd1019962e97a469">&#9670;&nbsp;</a></span>colVarBondList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classespressopp_1_1FixedPairList.html">FixedPairList</a>&gt; <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::colVarBondList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00146">146</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a6f3a3afab121e8f756c398a221f06ca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f3a3afab121e8f756c398a221f06ca0">&#9670;&nbsp;</a></span>colVarDihedList</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">shared_ptr&lt;<a class="el" href="classespressopp_1_1FixedQuadrupleList.html">FixedQuadrupleList</a>&gt; <a class="el" href="classespressopp_1_1interaction_1_1AngularPotentialTemplate.html">espressopp::interaction::AngularPotentialTemplate</a>&lt; <a class="el" href="classespressopp_1_1interaction_1_1StillingerWeberTripleTerm.html">StillingerWeberTripleTerm</a>  &gt;::colVarDihedList</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00150">150</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+
+</div>
+</div>
 <a id="a6103382dfadc86db9e905335a3fdf978"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6103382dfadc86db9e905335a3fdf978">&#9670;&nbsp;</a></span>cosTeta0</h2>
 
@@ -1748,7 +2201,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00108">108</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00143">143</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
@@ -1772,7 +2225,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00109">109</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="AngularPotential_8hpp_source.html#l00144">144</a> of file <a class="el" href="AngularPotential_8hpp_source.html">AngularPotential.hpp</a>.</p>
 
 </div>
 </div>
