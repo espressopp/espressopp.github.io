@@ -162,7 +162,7 @@
         
           <li><a href="interaction.html">interaction</a> &raquo;</li>
         
-      <li><strong>espressopp.interaction.ConstrainRG</strong></li>
+      <li>espressopp.interaction.ConstrainRG</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -182,18 +182,17 @@
            <div itemprop="articleBody">
             
   <span class="target" id="module-espressopp.interaction.ConstrainRG"></span><div class="section" id="espressopp-interaction-constrainrg">
-<h1><strong>espressopp.interaction.ConstrainRG</strong><a class="headerlink" href="#espressopp-interaction-constrainrg" title="Permalink to this headline">¶</a></h1>
-<p>This class is for calculating forces of constraining radii of gyration of subchains.
-Subchains are defined as a tuple list.</p>
+<h1>espressopp.interaction.ConstrainRG<a class="headerlink" href="#espressopp-interaction-constrainrg" title="Permalink to this headline">¶</a></h1>
+<p>This class calculates forces acting on constrained radii of gyration of subchains <a class="reference internal" href="espressopp.interaction.ConstrainCOM.html#zhang-2014" id="id1">[Zhang_2014]</a>.</p>
+<p>Subchains are defined as a tuple list.</p>
 <div class="math">
 \[U = k_{rg} \left(R_{g}^2 - {R_{g}^{ideal}}^2\right)^2\]</div>
 <p>where <span class="math">\(R_{g}^{ideal}\)</span> stands for the desired radius of gyration of subchain.</p>
 <p>This class set 2 conditions on a tuple list. defining subchains.</p>
 <ol class="arabic simple">
-<li>The length of all tuple must be same.</li>
+<li>The length of all tuples must be the same.</li>
 <li>int(key particle id / The length of a tuple) must not be redundantly, where key particle id is the smallest particle id in a tuple.</li>
 </ol>
-<p>Reference: Equilibration of high molecular weight polymer melts: A hierarchical strategy, Macro Lett., 2014, 3, 198</p>
 <dl class="function">
 <dt id="espressopp.interaction.ConstrainRG.espressopp.interaction.ConstrainRG">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">ConstrainRG</code><span class="sig-paren">(</span><em>k_rg</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ConstrainRG.espressopp.interaction.ConstrainRG" title="Permalink to this definition">¶</a></dt>

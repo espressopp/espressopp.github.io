@@ -63,6 +63,9 @@ $(function() {
 <li>r1sq
 : <a class="el" href="classespressopp_1_1interaction_1_1LennardJonesGromacs.html#aeb8b7ed149fec00b3f18fdbc897343f8">espressopp::interaction::LennardJonesGromacs</a>
 </li>
+<li>r_cap
+: <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html#aefff2ae9b2d172fe181d6ff75342856f">espressopp::interaction::FENECapped</a>
+</li>
 <li>r_min
 : <a class="el" href="classespressopp_1_1interaction_1_1LJcos.html#a1c6386aee8066e1172ae61613e27c289">espressopp::interaction::LJcos</a>
 </li>
@@ -151,7 +154,7 @@ $(function() {
 : <a class="el" href="classespressopp_1_1integrator_1_1AssociationReaction.html#ae21b273cf2aca2831da36e1524892121">espressopp::integrator::AssociationReaction</a>
 </li>
 <li>read()
-: <a class="el" href="classespressopp_1_1InBuffer.html#a554f59827672c6b4ce4a24f6c8c66e45">espressopp::InBuffer</a>
+: <a class="el" href="classespressopp_1_1InBuffer.html#af5f5d772fd1c055437b3f9b0f2bda4e2">espressopp::InBuffer</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1Interpolation.html#ab61ffa0eef3a40e997ad8aa4fe3565d7">espressopp::interaction::Interpolation</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1InterpolationTable.html#ab423815ad3110dfe1fe0214dc478798b">espressopp::interaction::InterpolationTable</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1InterpolationTemplate.html#ae588631219481d44350fb75f0fee7d14">espressopp::interaction::InterpolationTemplate&lt; Derived &gt;</a>
@@ -341,9 +344,6 @@ $(function() {
 , <a class="el" href="classespressopp_1_1interaction_1_1AngularCosineSquared.html#a2814a7f1b9ed6d8c2b1a99cfcef17a95">espressopp::interaction::AngularCosineSquared</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1AngularHarmonic.html#aab54b84e4fd5a399f4f315585bf4a452">espressopp::interaction::AngularHarmonic</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1AngularPotential.html#a61ccc43a6b47e06ec50def4b611c7a8e">espressopp::interaction::AngularPotential</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1AngularUniqueCosineSquared.html#a29545c95c1179ed3b5e76c8fb8b0a349">espressopp::interaction::AngularUniqueCosineSquared</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1AngularUniqueHarmonic.html#afee94b176d2260024666195fbd5809dd">espressopp::interaction::AngularUniqueHarmonic</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1AngularUniquePotential.html#aaeee7f8c867ad88d15bffeaaa9286433">espressopp::interaction::AngularUniquePotential</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1ConstrainCOM.html#a244f7dd790799ba800301e315ba3b48b">espressopp::interaction::ConstrainCOM</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1ConstrainRG.html#a4f1d0146c8884d1965429c2186a44ea6">espressopp::interaction::ConstrainRG</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1Cosine.html#af75b53a51967bc90540cf4b439e3b63c">espressopp::interaction::Cosine</a>
@@ -355,16 +355,13 @@ $(function() {
 , <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonic.html#aa3ea590655f59fbae4734f749f31070e">espressopp::interaction::DihedralHarmonic</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonicCos.html#ac3c5d0c9a1c2bd82c6bb995905ff32e4">espressopp::interaction::DihedralHarmonicCos</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonicNCos.html#a94fe2a4bc4edce527ed976da8be44801">espressopp::interaction::DihedralHarmonicNCos</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1DihedralHarmonicUniqueCos.html#a3009c008c57e9462c43bb78b935e79a2">espressopp::interaction::DihedralHarmonicUniqueCos</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1DihedralPotential.html#a79aa5e0431774d7030eb90b85aa61fed">espressopp::interaction::DihedralPotential</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1DihedralRB.html#a272149b0d25d29b474fb167f6ad74d6b">espressopp::interaction::DihedralRB</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1DihedralUniquePotential.html#a923a918319bb7ad35bfcfdb483e7ab83">espressopp::interaction::DihedralUniquePotential</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1FENE.html#ae0247724789099d0424a5a1012af19f4">espressopp::interaction::FENE</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1FENECapped.html#a9fab6cb374d93027e8116e6395b57c82">espressopp::interaction::FENECapped</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1GravityTruncated.html#a7e5f08832845a313ad1bc3e0770aa1fd">espressopp::interaction::GravityTruncated</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1Harmonic.html#a26b3cf8123cfbe114e10fb4121d196a9">espressopp::interaction::Harmonic</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1HarmonicTrap.html#ac7df4287b51758826fc2c73a1c2bdfd0">espressopp::interaction::HarmonicTrap</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1HarmonicUnique.html#aa7a88e1078e3832cea2b5a828138e715">espressopp::interaction::HarmonicUnique</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1Interaction.html#a1c6aa7cf8502396a6774ecd579c3203b">espressopp::interaction::Interaction</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1LennardJones93Wall.html#aac27156659fc2fb9b0682f1f1c53db9b">espressopp::interaction::LennardJones93Wall</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1LennardJones.html#a8839a0453ab934198d2638902a95630f">espressopp::interaction::LennardJones</a>
@@ -380,7 +377,6 @@ $(function() {
 , <a class="el" href="classespressopp_1_1interaction_1_1Morse.html#a1c9ab63f321fde8cfe0038b33a11f0a1">espressopp::interaction::Morse</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1OPLS.html#a51af0b28b7d41ad283820c27918516ff">espressopp::interaction::OPLS</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1Potential.html#a590ee21fc942adf99952002e14edad98">espressopp::interaction::Potential</a>
-, <a class="el" href="classespressopp_1_1interaction_1_1PotentialUniqueDist.html#a58e33fe7f3e7fc79e1cf0602cd5ad864">espressopp::interaction::PotentialUniqueDist</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1PotentialVSpherePair.html#ab268542459cace667e57312b7173fa2e">espressopp::interaction::PotentialVSpherePair</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1Quartic.html#a8a28550f7bf683b0e10cec88e38d3735">espressopp::interaction::Quartic</a>
 , <a class="el" href="classespressopp_1_1interaction_1_1ReactionFieldGeneralized.html#a921d3255b5369e3d01792cf8d5e81ad1">espressopp::interaction::ReactionFieldGeneralized</a>

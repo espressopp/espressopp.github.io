@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$classespressopp_1_1System.html" title="espressopp::System" alt="" coords="220,5,363,32"/>
+<area shape="rect" id="node1" href="$structespressopp_1_1Triple.html" title="espressopp::Triple\l\&lt; class Particle *,\l class Particle *, class\l Particle * \&gt;" alt="" coords="5,5,159,76"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1ParticleTriple.html" title="espressopp::ParticleTriple" alt="" coords="207,27,380,54"/>
 </map>

@@ -37,7 +37,7 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="interaction" href="interaction.html"/>
-        <link rel="next" title="espressopp.interaction.GravityTruncated" href="espressopp.interaction.GravityTruncated.html"/>
+        <link rel="next" title="espressopp.interaction.Harmonic" href="espressopp.interaction.Harmonic.html"/>
         <link rel="prev" title="espressopp.interaction.FENE" href="espressopp.interaction.FENE.html"/> 
 
   
@@ -183,109 +183,114 @@
             
   <span class="target" id="module-espressopp.interaction.FENECapped"></span><div class="section" id="espressopp-interaction-fenecapped">
 <h1>espressopp.interaction.FENECapped<a class="headerlink" href="#espressopp-interaction-fenecapped" title="Permalink to this headline">¶</a></h1>
+<p>A capped FENE potential avoiding calculation of unreasonably large bonded forces. It is usually applied at the
+equilibration stage of a simulation and helps a polymer system to relax. After the system has reached
+its equilibrium the capped potential should be substituted by a regular FENE, <a class="reference internal" href="espressopp.interaction.FENE.html#module-espressopp.interaction.FENE" title="espressopp.interaction.FENE"><code class="xref py py-class docutils literal"><span class="pre">espressopp.interaction.FENE</span></code></a>.</p>
+<p>The capped FENE potential is employed as:</p>
 <div class="math">
 \[U = -\frac{1}{2}r_{max}^2  K \cdot
-                         log\left(1 - \frac{D - r_{0}}{r_{max}}^2\right)\]</div>
-<p>where <span class="math">\(D = dist\)</span> if</p>
-<p><span class="math">\({cap_{rad}}^2&gt;dist\)</span></p>
-<p>and <span class="math">\(D = cap_{rad}\)</span> else.</p>
-<dl class="function">
-<dt id="espressopp.interaction.FENECapped.espressopp.interaction.FENECapped">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">FENECapped</code><span class="sig-paren">(</span><em>K</em>, <em>r0</em>, <em>rMax</em>, <em>cutoff</em>, <em>caprad</em>, <em>shift</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.FENECapped.espressopp.interaction.FENECapped" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>K</strong> (<em>real</em>) – (default: 1.0)</li>
-<li><strong>r0</strong> (<em>real</em>) – (default: 0.0)</li>
-<li><strong>rMax</strong> (<em>real</em>) – (default: 1.0)</li>
-<li><strong>cutoff</strong> – (default: infinity)</li>
-<li><strong>caprad</strong> (<em>real</em>) – (default: 1.0)</li>
-<li><strong>shift</strong> (<em>real</em>) – (default: 0.0)</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedPairListFENECapped</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> – </li>
-<li><strong>vl</strong> – </li>
-<li><strong>potential</strong> – </li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.getFixedPairList">
-<code class="descclassname">espressopp.interaction.FixedPairListFENECapped.</code><code class="descname">getFixedPairList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.getFixedPairList" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.getPotential">
-<code class="descclassname">espressopp.interaction.FixedPairListFENECapped.</code><code class="descname">getPotential</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.getPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.setFixedPairList">
-<code class="descclassname">espressopp.interaction.FixedPairListFENECapped.</code><code class="descname">setFixedPairList</code><span class="sig-paren">(</span><em>fixedpairlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.setFixedPairList" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>fixedpairlist</strong> – </td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.setPotential">
-<code class="descclassname">espressopp.interaction.FixedPairListFENECapped.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.setPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> – </td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
+         log \left[1 - \left(\frac{D - r_0}{r_{max}}\right)^2\right],\]</div>
+<p>where</p>
+<div class="math">
+\[D = min \left(r, r_{\it{cap}}\right).\]</div>
 <dl class="class">
-<dt id="espressopp.interaction.FENECapped.FENECapped">
-<em class="property">class </em><code class="descclassname">espressopp.interaction.FENECapped.</code><code class="descname">FENECapped</code><a class="headerlink" href="#espressopp.interaction.FENECapped.FENECapped" title="Permalink to this definition">¶</a></dt>
-<dd><p>The FENECapped potential.</p>
+<dt id="espressopp.interaction.FENECapped.espressopp.interaction.FENECapped">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.</code><code class="descname">FENECapped</code><span class="sig-paren">(</span><em>K = 30.0</em>, <em>r0 = 0.0</em>, <em>rMax = 1.5</em>, <em>cutoff = inf</em>, <em>r_cap = 1.0</em>, <em>shift = 0.0</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.FENECapped.espressopp.interaction.FENECapped" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>K</strong> (<em>real</em>) – attractive force strength (in <span class="math">\(\epsilon / \sigma^2\)</span> units)</li>
+<li><strong>r0</strong> (<em>real</em>) – displacement parameter (in <span class="math">\(sigma\)</span> units)</li>
+<li><strong>rMax</strong> (<em>real</em>) – size parameter (in <span class="math">\(sigma\)</span> units)</li>
+<li><strong>cutoff</strong> (<em>real</em>) – cutoff radius</li>
+<li><strong>r_cap</strong> (<em>real</em>) – radius of capping (in <span class="math">\(sigma\)</span> units)</li>
+<li><strong>shift</strong> (<em>real</em>) – shift of the potential</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
 </dd></dl>
 
+<p>After setting up the potential you have to apply it to the particles in the pair list (bondlist):</p>
+<dl class="class">
+<dt id="espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped">
+<em class="property">class </em><code class="descclassname">espressopp.interaction.</code><code class="descname">FixedPairListFENECapped</code><span class="sig-paren">(</span><em>system</em>, <em>bondlist</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> (<em>object</em>) – system object <a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><code class="xref py py-func docutils literal"><span class="pre">espressopp.System()</span></code></a></li>
+<li><strong>bondlist</strong> (<em>list</em>) – list of bonds <a class="reference internal" href="espressopp.FixedPairList.html#module-espressopp.FixedPairList" title="espressopp.FixedPairList"><code class="xref py py-func docutils literal"><span class="pre">espressopp.FixedPairList()</span></code></a></li>
+<li><strong>potential</strong> (<em>object</em>) – bonded potential, in this case <a class="reference internal" href="#module-espressopp.interaction.FENECapped" title="espressopp.interaction.FENECapped"><code class="xref py py-func docutils literal"><span class="pre">espressopp.interaction.FENECapped()</span></code></a></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Methods</strong></p>
+<dl class="method">
+<dt id="espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.getFixedPairList">
+<code class="descname">getFixedPairList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.getFixedPairList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of pairs (the bondlist)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.getPotential">
+<code class="descname">getPotential</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.getPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">potential object</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.setFixedPairList">
+<code class="descname">setFixedPairList</code><span class="sig-paren">(</span><em>bondlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.setFixedPairList" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bondlist</strong> (<em>list</em>) – fixed-pair list (bondlist)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.setPotential">
+<code class="descname">setPotential</code><span class="sig-paren">(</span><em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.FENECapped.espressopp.interaction.FixedPairListFENECapped.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>potential</strong> (<em>object</em>) – a potential applied to all pairs in the bondlist</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<p><strong>Example of usage</strong></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Please</span><span class="p">,</span> <span class="n">refer</span> <span class="n">to</span> <span class="n">the</span> <span class="n">example</span> <span class="n">of</span> <span class="n">FENE</span> <span class="n">potential</span>
+</pre></div>
+</div>
+<p>Go to FENE-example <a class="reference internal" href="espressopp.interaction.FENE.html#module-espressopp.interaction.FENE" title="espressopp.interaction.FENE"><code class="xref py py-class docutils literal"><span class="pre">espressopp.interaction.FENE</span></code></a></p>
 </div>
 
 
@@ -298,7 +303,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.interaction.GravityTruncated.html" class="btn btn-neutral float-right" title="espressopp.interaction.GravityTruncated" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.interaction.Harmonic.html" class="btn btn-neutral float-right" title="espressopp.interaction.Harmonic" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="espressopp.interaction.FENE.html" class="btn btn-neutral" title="espressopp.interaction.FENE" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>

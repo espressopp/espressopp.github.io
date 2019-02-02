@@ -162,7 +162,7 @@
         
           <li><a href="interaction.html">interaction</a> &raquo;</li>
         
-      <li><strong>espressopp.interaction.ConstrainCOM</strong></li>
+      <li>espressopp.interaction.ConstrainCOM</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -182,18 +182,26 @@
            <div itemprop="articleBody">
             
   <span class="target" id="module-espressopp.interaction.ConstrainCOM"></span><div class="section" id="espressopp-interaction-constraincom">
-<h1><strong>espressopp.interaction.ConstrainCOM</strong><a class="headerlink" href="#espressopp-interaction-constraincom" title="Permalink to this headline">¶</a></h1>
-<p>This class is for calculating forces of constraining center of mass of subchains.
-Subchains are defined as a tuple list.</p>
+<h1>espressopp.interaction.ConstrainCOM<a class="headerlink" href="#espressopp-interaction-constraincom" title="Permalink to this headline">¶</a></h1>
+<p>This class is for calculating forces acting on constrained center of mass of subchains <a class="reference internal" href="#zhang-2014" id="id1">[Zhang_2014]</a>.</p>
+<p>Subchains are defined as a tuple list.</p>
 <div class="math">
-\[U = k_{com} \left(\vec{r}_{com} - \vec{R}_{com}\right)^2,\]</div>
-<p>where <span class="math">\(\vec{r}_{com}\)</span> stands for the center of mass of subchain and <span class="math">\(\vec{R}_{com}\)</span> stands for the desired center of mass of subchain.</p>
-<p>This class set 2 conditions on a tuple list defining subchains.</p>
+\[U = k_{com} \left(\vec{r_{com}} - \vec{R_{com}}\right)^2,\]</div>
+<p>where <span class="math">\(\vec{r_{com}}\)</span> stands for the center of mass of subchain and <span class="math">\(\vec{R_{com}}\)</span>
+stands for the desired center of mass of subchain.</p>
+<p>This class implies 2 conditions on a tuple list defining subchains:</p>
 <ol class="arabic simple">
-<li>The length of all tuple must be same.</li>
-<li>int(key particle id / The length of a tuple) must not be redundantly, where key particle id is the smallest particle id in a tuple.</li>
+<li>The length of all tuples must be the same.</li>
+<li>int(key particle id / The length of a tuple) must not be redundantly, where key particle id
+is the smallest particle id in a tuple.</li>
 </ol>
-<p>Reference: Equilibration of high molecular weight polymer melts: A hierarchical strategy, Macro Lett., 2014, 3, 198</p>
+<table class="docutils citation" frame="void" id="zhang-2014" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[Zhang_2014]</a></td><td>G. Zhang, L. A. Moreira, T. Stuehn, K. Ch. Daoulas, and K. Kremer,
+Equilibration of high molecular weight polymer melts: A hierarchical strategy, Macro Lett., 2014, 3, 198</td></tr>
+</tbody>
+</table>
 <dl class="function">
 <dt id="espressopp.interaction.ConstrainCOM.espressopp.interaction.ConstrainCOM">
 <code class="descclassname">espressopp.interaction.</code><code class="descname">ConstrainCOM</code><span class="sig-paren">(</span><em>k_com</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.ConstrainCOM.espressopp.interaction.ConstrainCOM" title="Permalink to this definition">¶</a></dt>

@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structespressopp_1_1Single.html" title="espressopp::Single\l\&lt; T1 \&gt;" alt="" coords="5,5,139,47"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1storage_1_1NodeGridIllegal.html" title="espressopp::storage\l::NodeGridIllegal" alt="" coords="178,5,318,47"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1storage_1_1NodeGridMismatch.html" title="espressopp::storage\l::NodeGridMismatch" alt="" coords="177,71,319,112"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1storage_1_1NodeGridMismatch2.html" title="espressopp::storage\l::NodeGridMismatch2" alt="" coords="173,136,323,177"/>
 </map>

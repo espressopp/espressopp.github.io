@@ -1,6 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classespressopp_1_1interaction_1_1PotentialVSpherePair.html" title="espressopp::interaction\l::PotentialVSpherePair" alt="" coords="5,53,163,94"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialVSpherePairTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="211,5,419,61"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1PotentialVSpherePairTemplate.html" title="espressopp::interaction\l::PotentialVSpherePairTemplate\l\&lt; VSpherePair \&gt;" alt="" coords="211,85,419,141"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1VSpherePair.html" title="This class provides methods to compute forces and energies of the VSpherePair potential. " alt="" coords="467,93,624,134"/>
+<area shape="rect" id="node1" href="$classespressopp_1_1iterator_1_1CellListAllTriplesIterator.html" title="espressopp::iterator\l::CellListAllTriplesIterator" alt="" coords="5,5,175,47"/>
 </map>
