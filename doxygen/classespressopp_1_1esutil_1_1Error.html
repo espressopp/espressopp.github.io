@@ -60,9 +60,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac68debb8bb421981ae76654ce93a4ef0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1esutil_1_1Error.html#ac68debb8bb421981ae76654ce93a4ef0">Error</a> (boost::shared_ptr&lt; boost::mpi::communicator &gt; <a class="el" href="classespressopp_1_1esutil_1_1Error.html#a7c80a7e7d450b9c8a7919928726453ff">comm</a>)</td></tr>
 <tr class="memdesc:ac68debb8bb421981ae76654ce93a4ef0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of the error handler object.  <a href="#ac68debb8bb421981ae76654ce93a4ef0">More...</a><br /></td></tr>
 <tr class="separator:ac68debb8bb421981ae76654ce93a4ef0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc84e29760105545e607720d7bde5e74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1esutil_1_1Error.html#adc84e29760105545e607720d7bde5e74">~Error</a> ()</td></tr>
-<tr class="memdesc:adc84e29760105545e607720d7bde5e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor; will also test for pending exceptions.  <a href="#adc84e29760105545e607720d7bde5e74">More...</a><br /></td></tr>
-<tr class="separator:adc84e29760105545e607720d7bde5e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5802f8c8fe96e5060c5985e76eb63df6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1esutil_1_1Error.html#a5802f8c8fe96e5060c5985e76eb63df6">~Error</a> () noexcept(false)</td></tr>
+<tr class="memdesc:a5802f8c8fe96e5060c5985e76eb63df6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor; will also test for pending exceptions.  <a href="#a5802f8c8fe96e5060c5985e76eb63df6">More...</a><br /></td></tr>
+<tr class="separator:a5802f8c8fe96e5060c5985e76eb63df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb2908cd7fdcdadf468caa1fe50c8a16"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:adb2908cd7fdcdadf468caa1fe50c8a16"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classespressopp_1_1esutil_1_1Error.html#adb2908cd7fdcdadf468caa1fe50c8a16">setException</a> (const T msg, bool add=true)</td></tr>
 <tr class="memdesc:adb2908cd7fdcdadf468caa1fe50c8a16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an exception.  <a href="#adb2908cd7fdcdadf468caa1fe50c8a16">More...</a><br /></td></tr>
@@ -123,11 +123,14 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="adc84e29760105545e607720d7bde5e74"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adc84e29760105545e607720d7bde5e74">&#9670;&nbsp;</a></span>~Error()</h2>
+<a id="a5802f8c8fe96e5060c5985e76eb63df6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5802f8c8fe96e5060c5985e76eb63df6">&#9670;&nbsp;</a></span>~Error()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">espressopp::esutil::Error::~Error </td>
@@ -136,6 +139,11 @@ Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Destructor; will also test for pending exceptions. </p>
