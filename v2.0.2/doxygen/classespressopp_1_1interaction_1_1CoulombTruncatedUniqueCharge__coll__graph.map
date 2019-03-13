@@ -1,0 +1,6 @@
+<map id="espressopp::interaction::CoulombTruncatedUniqueCharge" name="espressopp::interaction::CoulombTruncatedUniqueCharge">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Coulomb\lTruncatedUniqueCharge \&gt;" alt="" coords="1047,143,1245,199"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="321,75,479,117"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="627,115,831,157"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1RealND.html" title="espressopp::RealND" alt="" coords="328,316,472,343"/>
+</map>

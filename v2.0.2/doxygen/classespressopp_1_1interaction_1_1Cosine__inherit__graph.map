@@ -1,0 +1,5 @@
+<map id="espressopp::interaction::Cosine" name="espressopp::interaction::Cosine">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="espressopp::interaction\l::AngularPotentialTemplate\l\&lt; Cosine \&gt;" alt="" coords="508,5,687,61"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1AngularPotential.html" title="espressopp::interaction\l::AngularPotential" alt="" coords="5,21,163,62"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="212,45,391,101"/>
+</map>

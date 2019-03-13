@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>espressopp.io.DumpXYZ &mdash; ESPResSo++ vlatest</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/favicon_blue.ico"/>
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
+        <link rel="up" title="io" href="io.html"/>
+        <link rel="next" title="DumpH5MD - IO object" href="espressopp.io.DumpH5MD.html"/>
+        <link rel="prev" title="espressopp.io.DumpGROAdress" href="espressopp.io.DumpGROAdress.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="http://www.espresso-pp.de/" class="icon icon-home"> ESPResSo++
+            <a href="http://www.mpip-mainz.mpg.de/polymer_theory" style="font-size:90%">MPIP Mainz
+          
+
+          
+            
+            <!--<a href="http://www.mpip-mainz.mpg.de/polymer_theory"><img src="_static/logo_theory_group.png" class="logo"/></a>-->
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ESPResSo++</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="classdescription.html">User Interface</a> &raquo;</li>
+        
+          <li><a href="io.html">io</a> &raquo;</li>
+        
+      <li>espressopp.io.DumpXYZ</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/espressopp.io.DumpXYZ.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <span class="target" id="module-espressopp.io.DumpXYZ"></span><div class="section" id="espressopp-io-dumpxyz">
+<h1>espressopp.io.DumpXYZ<a class="headerlink" href="#espressopp-io-dumpxyz" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li><p class="first"><cite>dump()</cite></p>
+<p>write configuration to trajectory XYZ file. By default filename is <code class="docutils literal"><span class="pre">out.xyz</span></code>,
+coordinates are folded. DumpXYZ works also for Multiple communicators.</p>
+<p><strong>Properties</strong></p>
+</li>
+<li><p class="first"><cite>filename</cite>
+Name of trajectory file. By default trajectory file name is <code class="docutils literal"><span class="pre">out.xyz</span></code></p>
+</li>
+<li><p class="first"><cite>unfolded</cite>
+False if coordinates are folded, True if unfolded. By default - False</p>
+</li>
+<li><p class="first"><cite>append</cite>
+True if new trajectory data is appended to existing trajectory file. By default - True</p>
+</li>
+<li><p class="first"><cite>length_factor</cite>
+If length dimension in current system is nm, and unit is 0.23 nm, for example, then
+<code class="docutils literal"><span class="pre">length_factor</span></code> should be 0.23
+Default: 1.0</p>
+</li>
+<li><p class="first"><cite>length_unit</cite>
+It is length unit. Can be <code class="docutils literal"><span class="pre">LJ</span></code>, <code class="docutils literal"><span class="pre">nm</span></code> or <code class="docutils literal"><span class="pre">A</span></code>. By default - <code class="docutils literal"><span class="pre">LJ</span></code></p>
+</li>
+<li><dl class="first docutils">
+<dt><cite>store_pids</cite></dt>
+<dd><p class="first last">True if you want to store pids as fastwritexyz does. False otherwise (standard XYZ)
+Default: False</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><cite>store_velocities</cite></dt>
+<dd><p class="first last">True if you want to store velocities. False otherwise (XYZ doesn’t require it)
+Default: False</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>usage:</p>
+<p>writing down trajectory</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_xyz</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpXYZ</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trajectory.xyz&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">200</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span>  <span class="n">dump_conf_xyz</span><span class="o">.</span><span class="n">dump</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>writing down trajectory using ExtAnalyze extension</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_xyz</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpXYZ</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trajectory.xyz&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ext_analyze</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">dump_conf_xyz</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">ext_analyze</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Both examples will give the same result: 200 configurations in trajectory .xyz file.</p>
+<p>setting up length scale</p>
+<p>For example, the Lennard-Jones model for liquid argon with <span class="math">\(\sigma=0.34 [nm]\)</span></p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_xyz</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpXYZ</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trj.xyz&#39;</span><span class="p">,</span> \
+<span class="gp">&gt;&gt;&gt; </span>                                      <span class="n">unfolded</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">length_factor</span><span class="o">=</span><span class="mf">0.34</span><span class="p">,</span> \
+<span class="gp">&gt;&gt;&gt; </span>                                      <span class="n">length_unit</span><span class="o">=</span><span class="s1">&#39;nm&#39;</span><span class="p">,</span> <span class="n">store_pids</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> \
+<span class="gp">&gt;&gt;&gt; </span>                                      <span class="n">store_velocities</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>will produce trj.xyz with in nanometers</p>
+<dl class="function">
+<dt id="espressopp.io.DumpXYZ.espressopp.io.DumpXYZ">
+<code class="descclassname">espressopp.io.</code><code class="descname">DumpXYZ</code><span class="sig-paren">(</span><em>system</em>, <em>integrator</em>, <em>filename=out.xyz</em>, <em>unfolded=False</em>, <em>length_factor=1.0</em>, <em>length_unit='LJ'</em>, <em>store_pids=False</em>, <em>store_velocities=False</em>, <em>append=True</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.io.DumpXYZ.espressopp.io.DumpXYZ" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>system</strong> – </li>
+<li><strong>integrator</strong> – </li>
+<li><strong>filename</strong> – </li>
+<li><strong>unfolded</strong> (<em>bool</em>) – </li>
+<li><strong>length_factor</strong> (<em>real</em>) – </li>
+<li><strong>length_unit</strong> – </li>
+<li><strong>store_pids</strong> (<em>bool</em>) – </li>
+<li><strong>store_velocities</strong> (<em>bool</em>) – </li>
+<li><strong>append</strong> (<em>bool</em>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="espressopp.io.DumpXYZ.espressopp.io.DumpXYZ.dump">
+<code class="descclassname">espressopp.io.DumpXYZ.</code><code class="descname">dump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.io.DumpXYZ.espressopp.io.DumpXYZ.dump" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="espressopp.io.DumpH5MD.html" class="btn btn-neutral float-right" title="DumpH5MD - IO object" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="espressopp.io.DumpGROAdress.html" class="btn btn-neutral" title="espressopp.io.DumpGROAdress" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013-2019, Max Planck Institute for Polymer Research.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'latest',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

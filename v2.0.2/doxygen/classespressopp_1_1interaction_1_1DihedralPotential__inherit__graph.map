@@ -1,0 +1,17 @@
+<map id="espressopp::interaction::DihedralPotential" name="espressopp::interaction::DihedralPotential">
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; DihedralHarmonic \&gt;" alt="" coords="630,189,813,245"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; DihedralHarmonicCos \&gt;" alt="" coords="630,93,813,149"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; DihedralHarmonicNCos \&gt;" alt="" coords="629,5,813,61"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; DihedralRB \&gt;" alt="" coords="630,529,813,585"/>
+<area shape="rect" id="node10" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; OPLS \&gt;" alt="" coords="630,271,813,327"/>
+<area shape="rect" id="node12" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; TabulatedDihedral \&gt;" alt="" coords="630,439,813,495"/>
+<area shape="rect" id="node14" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; TabulatedSubEnsDihedral \&gt;" alt="" coords="623,353,820,409"/>
+<area shape="rect" id="node16" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; Derived \&gt;" alt="" coords="212,264,395,320"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1DihedralHarmonic.html" title="This class provides methods to compute forces and energies of the DihedralHarmonic dihedral potential..." alt="" coords="881,197,1039,238"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1interaction_1_1DihedralHarmonicCos.html" title="This class provides methods to compute forces and energies of the DihedralHarmonicCos dihedral potent..." alt="" coords="881,101,1039,142"/>
+<area shape="rect" id="node7" href="$classespressopp_1_1interaction_1_1DihedralHarmonicNCos.html" title="This class provides methods to compute forces and energies of the DihedralHarmonicNCos dihedral poten..." alt="" coords="876,13,1044,54"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1DihedralRB.html" title="This class provides methods to compute forces and energies of the Ryckaert&#45;Bellemans dihedral potenti..." alt="" coords="881,537,1039,578"/>
+<area shape="rect" id="node11" href="$classespressopp_1_1interaction_1_1OPLS.html" title="This class provides methods to compute forces and energies of the OPLS dihedral potential. " alt="" coords="881,278,1039,319"/>
+<area shape="rect" id="node13" href="$classespressopp_1_1interaction_1_1TabulatedDihedral.html" title="espressopp::interaction\l::TabulatedDihedral" alt="" coords="881,446,1039,487"/>
+<area shape="rect" id="node15" href="$classespressopp_1_1interaction_1_1TabulatedSubEnsDihedral.html" title="espressopp::interaction\l::TabulatedSubEnsDihedral" alt="" coords="869,361,1051,402"/>
+</map>
