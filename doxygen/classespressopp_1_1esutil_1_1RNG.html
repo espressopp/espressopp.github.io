@@ -91,6 +91,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae19bd3d2f3f34f5103983eaf68d9890d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c05762c25c836e143918c7448ab61c3"><td class="memItemLeft" align="right" valign="top">shared_ptr&lt; <a class="el" href="namespaceespressopp.html#a9216d45a3b1d9335af79badb89cd7c56">RNGType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1esutil_1_1RNG.html#a3c05762c25c836e143918c7448ab61c3">getBoostRNG</a> ()</td></tr>
 <tr class="separator:a3c05762c25c836e143918c7448ab61c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a3d174a476c5a73e53ee5a31b37710"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1esutil_1_1RNG.html#ac6a3d174a476c5a73e53ee5a31b37710">saveState</a> (int)</td></tr>
+<tr class="separator:ac6a3d174a476c5a73e53ee5a31b37710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3083bb8868a69e18efc7e5dbd42f9ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1esutil_1_1RNG.html#af3083bb8868a69e18efc7e5dbd42f9ab">loadState</a> (const char *)</td></tr>
+<tr class="separator:af3083bb8868a69e18efc7e5dbd42f9ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -139,7 +143,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RNG_8hpp_source.html#l00083">83</a> of file <a class="el" href="RNG_8hpp_source.html">RNG.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8hpp_source.html#l00087">87</a> of file <a class="el" href="RNG_8hpp_source.html">RNG.hpp</a>.</p>
 
 </div>
 </div>
@@ -163,7 +167,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RNG_8hpp_source.html#l00091">91</a> of file <a class="el" href="RNG_8hpp_source.html">RNG.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8hpp_source.html#l00095">95</a> of file <a class="el" href="RNG_8hpp_source.html">RNG.hpp</a>.</p>
 
 </div>
 </div>
@@ -186,7 +190,7 @@ Private Attributes</h2></td></tr>
 
 <p>Init the <a class="el" href="classespressopp_1_1esutil_1_1RNG.html">RNG</a>, use the given seed. </p>
 
-<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00033">33</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00038">38</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
 
 </div>
 </div>
@@ -209,11 +213,11 @@ Private Attributes</h2></td></tr>
 
 <p>returns a gamma distributed random number with shape parameter  and scale parameter 1. </p>
 
-<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00065">65</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00070">70</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00093">boostRNG</a>.</p>
+<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00097">boostRNG</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00084">registerPython()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00127">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -244,7 +248,7 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="esutil_2bindings_8cpp_source.html#l00034">espressopp::esutil::registerPython()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00084">registerPython()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00127">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -265,11 +269,11 @@ Private Attributes</h2></td></tr>
 
 <p>Gets <a class="el" href="classespressopp_1_1esutil_1_1RNG.html">RNG</a> seed. </p>
 
-<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00046">46</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00051">51</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00079">seed_</a>.</p>
+<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00083">seed_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00084">registerPython()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00127">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -288,9 +292,33 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00076">76</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00081">81</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00093">boostRNG</a>.</p>
+<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00097">boostRNG</a>.</p>
+
+</div>
+</div>
+<a id="af3083bb8868a69e18efc7e5dbd42f9ab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af3083bb8868a69e18efc7e5dbd42f9ab">&#9670;&nbsp;</a></span>loadState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void espressopp::esutil::RNG::loadState </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>fname</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00104">104</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00097">boostRNG</a>, and <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00127">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -312,11 +340,11 @@ Private Attributes</h2></td></tr>
 <p>returns a normal distributed random number, with mean of 0.0 and sigma of 1.0. </p>
 <p>If you need to generate many normal idstributed random numbers with different mean or sigma, use createNormalVariate() to create a variate generator object. </p>
 
-<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00061">61</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00066">66</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00095">normalVariate</a>.</p>
+<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00099">normalVariate</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00084">registerPython()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00127">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -340,9 +368,9 @@ Private Attributes</h2></td></tr>
 <li></li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00050">50</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00055">55</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00093">boostRNG</a>.</p>
+<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00097">boostRNG</a>.</p>
 
 </div>
 </div>
@@ -364,9 +392,9 @@ Private Attributes</h2></td></tr>
 
 <p>returns a uniformly distributed integer random number in the interval [0, N-1]. </p>
 
-<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00055">55</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00060">60</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00093">boostRNG</a>.</p>
+<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00097">boostRNG</a>.</p>
 
 </div>
 </div>
@@ -393,11 +421,35 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00084">84</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00127">127</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="RNG_8cpp_source.html#l00065">gamma()</a>, <a class="el" href="RNG_8hpp_source.html#l00069">gammaOf1()</a>, <a class="el" href="RNG_8cpp_source.html#l00046">get_seed()</a>, <a class="el" href="RNG_8cpp_source.html#l00061">normal()</a>, <a class="el" href="RNG_8cpp_source.html#l00040">seed()</a>, and <a class="el" href="RNG_8cpp_source.html#l00072">uniformOnSphere()</a>.</p>
+<p class="reference">References <a class="el" href="RNG_8cpp_source.html#l00070">gamma()</a>, <a class="el" href="RNG_8hpp_source.html#l00069">gammaOf1()</a>, <a class="el" href="RNG_8cpp_source.html#l00051">get_seed()</a>, <a class="el" href="RNG_8cpp_source.html#l00104">loadState()</a>, <a class="el" href="RNG_8cpp_source.html#l00066">normal()</a>, <a class="el" href="RNG_8cpp_source.html#l00085">saveState()</a>, <a class="el" href="RNG_8cpp_source.html#l00045">seed()</a>, and <a class="el" href="RNG_8cpp_source.html#l00077">uniformOnSphere()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="esutil_2bindings_8cpp_source.html#l00034">espressopp::esutil::registerPython()</a>.</p>
+
+</div>
+</div>
+<a id="ac6a3d174a476c5a73e53ee5a31b37710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6a3d174a476c5a73e53ee5a31b37710">&#9670;&nbsp;</a></span>saveState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void espressopp::esutil::RNG::saveState </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>step</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00085">85</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00097">boostRNG</a>, and <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00127">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -419,11 +471,11 @@ Private Attributes</h2></td></tr>
 
 <p>Seed the <a class="el" href="classespressopp_1_1esutil_1_1RNG.html">RNG</a>. </p>
 
-<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00040">40</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00045">45</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00093">boostRNG</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, and <a class="el" href="RNG_8hpp_source.html#l00079">seed_</a>.</p>
+<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00097">boostRNG</a>, <a class="el" href="espressopp__common_8cpp_source.html#l00032">mpiWorld</a>, and <a class="el" href="RNG_8hpp_source.html#l00083">seed_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00084">registerPython()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00127">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -444,11 +496,11 @@ Private Attributes</h2></td></tr>
 
 <p>returns a random 3D vector that is uniformly distributed on a sphere. </p>
 
-<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00072">72</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8cpp_source.html#l00077">77</a> of file <a class="el" href="RNG_8cpp_source.html">RNG.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00099">uniformOnSphereVariate</a>.</p>
+<p class="reference">References <a class="el" href="RNG_8hpp_source.html#l00103">uniformOnSphereVariate</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00084">registerPython()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00127">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -473,9 +525,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RNG_8hpp_source.html#l00093">93</a> of file <a class="el" href="RNG_8hpp_source.html">RNG.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8hpp_source.html#l00097">97</a> of file <a class="el" href="RNG_8hpp_source.html">RNG.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00065">gamma()</a>, <a class="el" href="RNG_8cpp_source.html#l00076">getBoostRNG()</a>, <a class="el" href="RNG_8cpp_source.html#l00050">operator()()</a>, and <a class="el" href="RNG_8cpp_source.html#l00040">seed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00070">gamma()</a>, <a class="el" href="RNG_8cpp_source.html#l00081">getBoostRNG()</a>, <a class="el" href="RNG_8cpp_source.html#l00104">loadState()</a>, <a class="el" href="RNG_8cpp_source.html#l00055">operator()()</a>, <a class="el" href="RNG_8cpp_source.html#l00085">saveState()</a>, and <a class="el" href="RNG_8cpp_source.html#l00045">seed()</a>.</p>
 
 </div>
 </div>
@@ -499,9 +551,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RNG_8hpp_source.html#l00095">95</a> of file <a class="el" href="RNG_8hpp_source.html">RNG.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8hpp_source.html#l00099">99</a> of file <a class="el" href="RNG_8hpp_source.html">RNG.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00061">normal()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00066">normal()</a>.</p>
 
 </div>
 </div>
@@ -525,9 +577,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RNG_8hpp_source.html#l00079">79</a> of file <a class="el" href="RNG_8hpp_source.html">RNG.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8hpp_source.html#l00083">83</a> of file <a class="el" href="RNG_8hpp_source.html">RNG.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00046">get_seed()</a>, and <a class="el" href="RNG_8cpp_source.html#l00040">seed()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00051">get_seed()</a>, and <a class="el" href="RNG_8cpp_source.html#l00045">seed()</a>.</p>
 
 </div>
 </div>
@@ -551,9 +603,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RNG_8hpp_source.html#l00099">99</a> of file <a class="el" href="RNG_8hpp_source.html">RNG.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RNG_8hpp_source.html#l00103">103</a> of file <a class="el" href="RNG_8hpp_source.html">RNG.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00072">uniformOnSphere()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="RNG_8cpp_source.html#l00077">uniformOnSphere()</a>.</p>
 
 </div>
 </div>
