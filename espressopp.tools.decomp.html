@@ -253,9 +253,10 @@ above, except:</p>
 <p><cite>sphereAdr</cite> - Geometry of the high-resolution region, if TRUE spherical, otherwise Slab-like</p>
 </div></blockquote>
 </li>
-<li><p class="first"><cite>cellGrid(box_size, node_grid, rc, skin)</cite>:</p>
+<li><p class="first"><cite>cellGrid(box_size, node_grid, rc, skin, halfCellInt)</cite>:</p>
 <blockquote>
-<div><p>It returns an appropriate grid of cells.</p>
+<div><p>It returns an appropriate grid of cells.
+<cite>halfCellInt</cite> -  controls the use of half-cells (value 2), third-cells (value 3) or higher. Implicit value 1 for full cells (normal functionality).</p>
 </div></blockquote>
 </li>
 <li><p class="first"><cite>tuneSkin(system, integrator, minSkin=0.01, maxSkin=1.2, precision=0.001)</cite>:</p>
