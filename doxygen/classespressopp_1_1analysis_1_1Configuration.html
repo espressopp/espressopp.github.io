@@ -72,6 +72,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4a34df9a7c687e6a7c6266a2f586c9bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8eb0d54addedbca9846e805d3dc9fc1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1Configuration.html#ab8eb0d54addedbca9846e805d3dc9fc1">getRadius</a> (size_t id)</td></tr>
 <tr class="separator:ab8eb0d54addedbca9846e805d3dc9fc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3215679b678a8772393a04fd43e9ee36"><td class="memItemLeft" align="right" valign="top">boost::python::list&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1Configuration.html#a3215679b678a8772393a04fd43e9ee36">getIds</a> ()</td></tr>
+<tr class="separator:a3215679b678a8772393a04fd43e9ee36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef40532a3f5d9268395bede79069594a"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1Configuration.html#aef40532a3f5d9268395bede79069594a">getSize</a> ()</td></tr>
 <tr class="separator:aef40532a3f5d9268395bede79069594a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c8eaa577c2b1d7efd584193783a6162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1Configuration.html#a5c8eaa577c2b1d7efd584193783a6162">set</a> (size_t id, <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> x, <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> y, <a class="el" href="namespaceespressopp.html#a02c52392218b6989cf946062db1cd110">real</a> z)</td></tr>
@@ -132,7 +134,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00042">42</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00071">gatherForce</a>, <a class="el" href="Configuration_8hpp_source.html#l00071">gatherPos</a>, <a class="el" href="Configuration_8hpp_source.html#l00071">gatherRadius</a>, and <a class="el" href="Configuration_8hpp_source.html#l00071">gatherVel</a>.</p>
+<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00072">gatherForce</a>, <a class="el" href="Configuration_8hpp_source.html#l00072">gatherPos</a>, <a class="el" href="Configuration_8hpp_source.html#l00072">gatherRadius</a>, and <a class="el" href="Configuration_8hpp_source.html#l00072">gatherVel</a>.</p>
 
 </div>
 </div>
@@ -216,9 +218,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00093">93</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00072">coordinates</a>, and <a class="el" href="Configuration_8hpp_source.html#l00071">gatherPos</a>.</p>
+<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00073">coordinates</a>, and <a class="el" href="Configuration_8hpp_source.html#l00072">gatherPos</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00182">registerPython()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00199">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -240,7 +242,32 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00111">111</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00074">forces</a>, and <a class="el" href="Configuration_8hpp_source.html#l00071">gatherForce</a>.</p>
+<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00075">forces</a>, and <a class="el" href="Configuration_8hpp_source.html#l00072">gatherForce</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00199">registerPython()</a>.</p>
+
+</div>
+</div>
+<a id="a3215679b678a8772393a04fd43e9ee36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3215679b678a8772393a04fd43e9ee36">&#9670;&nbsp;</a></span>getIds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boost::python::list espressopp::analysis::Configuration::getIds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00143">143</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00073">coordinates</a>, <a class="el" href="Configuration_8hpp_source.html#l00075">forces</a>, <a class="el" href="Configuration_8hpp_source.html#l00076">radii</a>, and <a class="el" href="Configuration_8hpp_source.html#l00074">velocities</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00199">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -262,7 +289,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00120">120</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00071">gatherRadius</a>, and <a class="el" href="Configuration_8hpp_source.html#l00075">radii</a>.</p>
+<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00072">gatherRadius</a>, and <a class="el" href="Configuration_8hpp_source.html#l00076">radii</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00199">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -283,9 +312,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00129">129</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00072">coordinates</a>, <a class="el" href="Configuration_8hpp_source.html#l00074">forces</a>, <a class="el" href="Configuration_8hpp_source.html#l00075">radii</a>, and <a class="el" href="Configuration_8hpp_source.html#l00073">velocities</a>.</p>
+<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00073">coordinates</a>, <a class="el" href="Configuration_8hpp_source.html#l00075">forces</a>, <a class="el" href="Configuration_8hpp_source.html#l00076">radii</a>, and <a class="el" href="Configuration_8hpp_source.html#l00074">velocities</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00182">registerPython()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00199">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -307,7 +336,9 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00102">102</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00071">gatherVel</a>, and <a class="el" href="Configuration_8hpp_source.html#l00073">velocities</a>.</p>
+<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00072">gatherVel</a>, and <a class="el" href="Configuration_8hpp_source.html#l00074">velocities</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00199">registerPython()</a>.</p>
 
 </div>
 </div>
@@ -334,9 +365,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00182">182</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00199">199</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Configuration_8cpp_source.html#l00093">getCoordinates()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00129">getSize()</a>.</p>
+<p class="reference">References <a class="el" href="Configuration_8cpp_source.html#l00093">getCoordinates()</a>, <a class="el" href="Configuration_8cpp_source.html#l00111">getForces()</a>, <a class="el" href="Configuration_8cpp_source.html#l00143">getIds()</a>, <a class="el" href="Configuration_8cpp_source.html#l00120">getRadius()</a>, <a class="el" href="Configuration_8cpp_source.html#l00129">getSize()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00102">getVelocities()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="analysis_2bindings_8cpp_source.html#l00078">espressopp::analysis::registerPython()</a>.</p>
 
@@ -382,7 +413,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00053">53</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00072">coordinates</a>, and <a class="el" href="Configuration_8hpp_source.html#l00071">gatherPos</a>.</p>
+<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00073">coordinates</a>, and <a class="el" href="Configuration_8hpp_source.html#l00072">gatherPos</a>.</p>
 
 </div>
 </div>
@@ -414,7 +445,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00061">61</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00072">coordinates</a>, and <a class="el" href="Configuration_8hpp_source.html#l00071">gatherPos</a>.</p>
+<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00073">coordinates</a>, and <a class="el" href="Configuration_8hpp_source.html#l00072">gatherPos</a>.</p>
 
 </div>
 </div>
@@ -446,7 +477,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00077">77</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00074">forces</a>, and <a class="el" href="Configuration_8hpp_source.html#l00071">gatherForce</a>.</p>
+<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00075">forces</a>, and <a class="el" href="Configuration_8hpp_source.html#l00072">gatherForce</a>.</p>
 
 </div>
 </div>
@@ -478,7 +509,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00085">85</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00071">gatherRadius</a>, and <a class="el" href="Configuration_8hpp_source.html#l00075">radii</a>.</p>
+<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00072">gatherRadius</a>, and <a class="el" href="Configuration_8hpp_source.html#l00076">radii</a>.</p>
 
 </div>
 </div>
@@ -510,7 +541,7 @@ Private Attributes</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="Configuration_8cpp_source.html#l00069">69</a> of file <a class="el" href="Configuration_8cpp_source.html">Configuration.cpp</a>.</p>
 
-<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00071">gatherVel</a>, and <a class="el" href="Configuration_8hpp_source.html#l00073">velocities</a>.</p>
+<p class="reference">References <a class="el" href="Configuration_8hpp_source.html#l00072">gatherVel</a>, and <a class="el" href="Configuration_8hpp_source.html#l00074">velocities</a>.</p>
 
 </div>
 </div>
@@ -535,9 +566,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00072">72</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00073">73</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00093">getCoordinates()</a>, <a class="el" href="Configuration_8cpp_source.html#l00129">getSize()</a>, <a class="el" href="Configuration_8cpp_source.html#l00053">set()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00061">setCoordinates()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00093">getCoordinates()</a>, <a class="el" href="Configuration_8cpp_source.html#l00143">getIds()</a>, <a class="el" href="Configuration_8cpp_source.html#l00129">getSize()</a>, <a class="el" href="Configuration_8cpp_source.html#l00053">set()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00061">setCoordinates()</a>.</p>
 
 </div>
 </div>
@@ -561,9 +592,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00074">74</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00075">75</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00111">getForces()</a>, <a class="el" href="Configuration_8cpp_source.html#l00129">getSize()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00077">setForces()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00111">getForces()</a>, <a class="el" href="Configuration_8cpp_source.html#l00143">getIds()</a>, <a class="el" href="Configuration_8cpp_source.html#l00129">getSize()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00077">setForces()</a>.</p>
 
 </div>
 </div>
@@ -587,7 +618,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00071">71</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00072">72</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00042">Configuration()</a>, <a class="el" href="Configuration_8cpp_source.html#l00111">getForces()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00077">setForces()</a>.</p>
 
@@ -613,7 +644,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00071">71</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00072">72</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00042">Configuration()</a>, <a class="el" href="Configuration_8cpp_source.html#l00093">getCoordinates()</a>, <a class="el" href="Configuration_8cpp_source.html#l00053">set()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00061">setCoordinates()</a>.</p>
 
@@ -639,7 +670,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00071">71</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00072">72</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00042">Configuration()</a>, <a class="el" href="Configuration_8cpp_source.html#l00120">getRadius()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00085">setRadius()</a>.</p>
 
@@ -665,7 +696,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00071">71</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00072">72</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00042">Configuration()</a>, <a class="el" href="Configuration_8cpp_source.html#l00102">getVelocities()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00069">setVelocities()</a>.</p>
 
@@ -691,9 +722,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00075">75</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00076">76</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00120">getRadius()</a>, <a class="el" href="Configuration_8cpp_source.html#l00129">getSize()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00085">setRadius()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00143">getIds()</a>, <a class="el" href="Configuration_8cpp_source.html#l00120">getRadius()</a>, <a class="el" href="Configuration_8cpp_source.html#l00129">getSize()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00085">setRadius()</a>.</p>
 
 </div>
 </div>
@@ -717,9 +748,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00073">73</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="Configuration_8hpp_source.html#l00074">74</a> of file <a class="el" href="Configuration_8hpp_source.html">Configuration.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00129">getSize()</a>, <a class="el" href="Configuration_8cpp_source.html#l00102">getVelocities()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00069">setVelocities()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Configuration_8cpp_source.html#l00143">getIds()</a>, <a class="el" href="Configuration_8cpp_source.html#l00129">getSize()</a>, <a class="el" href="Configuration_8cpp_source.html#l00102">getVelocities()</a>, and <a class="el" href="Configuration_8cpp_source.html#l00069">setVelocities()</a>.</p>
 
 </div>
 </div>
