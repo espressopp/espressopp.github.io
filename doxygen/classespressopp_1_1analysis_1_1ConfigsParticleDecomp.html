@@ -79,8 +79,8 @@ Collaboration diagram for espressopp::analysis::ConfigsParticleDecomp:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac23bedfc04af37b6a557158321656e23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigsParticleDecomp.html#ac23bedfc04af37b6a557158321656e23">ConfigsParticleDecomp</a> (shared_ptr&lt; <a class="el" href="classespressopp_1_1System.html">System</a> &gt; system)</td></tr>
 <tr class="separator:ac23bedfc04af37b6a557158321656e23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af902c103d582348b490973c908381a60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigsParticleDecomp.html#af902c103d582348b490973c908381a60">ConfigsParticleDecomp</a> (shared_ptr&lt; <a class="el" href="classespressopp_1_1System.html">System</a> &gt; system, int _chainlength)</td></tr>
-<tr class="separator:af902c103d582348b490973c908381a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc4e7c11fdc39194f77a8914f34ba06f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigsParticleDecomp.html#acc4e7c11fdc39194f77a8914f34ba06f">ConfigsParticleDecomp</a> (shared_ptr&lt; <a class="el" href="classespressopp_1_1System.html">System</a> &gt; system, int _chainlength, int _start_pid)</td></tr>
+<tr class="separator:acc4e7c11fdc39194f77a8914f34ba06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a299ed2585c7caff219e34c5118089099"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigsParticleDecomp.html#a299ed2585c7caff219e34c5118089099">~ConfigsParticleDecomp</a> ()</td></tr>
 <tr class="separator:a299ed2585c7caff219e34c5118089099"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7dee207e07801a4bd88a6d36575c86b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigsParticleDecomp.html#ab7dee207e07801a4bd88a6d36575c86b">getListSize</a> () const</td></tr>
@@ -128,6 +128,8 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a808435209f7c378fbe258dae42dfc9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85cb9beab26d6a42ce0748a05363e0ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigsParticleDecomp.html#a85cb9beab26d6a42ce0748a05363e0ca">chainlength</a></td></tr>
 <tr class="separator:a85cb9beab26d6a42ce0748a05363e0ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d2ebdcf4ea432089dbdd8cd97a54efb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigsParticleDecomp.html#a2d2ebdcf4ea432089dbdd8cd97a54efb">start_pid</a></td></tr>
+<tr class="separator:a2d2ebdcf4ea432089dbdd8cd97a54efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6226856a60d1ea624bfd271fadadbcc4"><td class="memItemLeft" align="right" valign="top">map&lt; size_t, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigsParticleDecomp.html#a6226856a60d1ea624bfd271fadadbcc4">idToCpu</a></td></tr>
 <tr class="separator:a6226856a60d1ea624bfd271fadadbcc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a59e404946009b009c5b3a7b5ccc9e87d"><td class="memItemLeft" align="right" valign="top">map&lt; size_t, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classespressopp_1_1analysis_1_1ConfigsParticleDecomp.html#a59e404946009b009c5b3a7b5ccc9e87d">cidToCpu</a></td></tr>
@@ -181,8 +183,8 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="af902c103d582348b490973c908381a60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af902c103d582348b490973c908381a60">&#9670;&nbsp;</a></span>ConfigsParticleDecomp() <span class="overload">[2/2]</span></h2>
+<a id="acc4e7c11fdc39194f77a8914f34ba06f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc4e7c11fdc39194f77a8914f34ba06f">&#9670;&nbsp;</a></span>ConfigsParticleDecomp() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -200,7 +202,13 @@ Private Attributes</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_chainlength</em>&#160;</td>
+          <td class="paramname"><em>_chainlength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_start_pid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -244,7 +252,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00252">252</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00253">253</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
 
 </div>
 </div>
@@ -291,7 +299,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00271">271</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00272">272</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
 
 <p class="reference">References <a class="el" href="log4espp_8hpp_source.html#l00461">LOG4ESPP_DECL_LOGGER</a>, and <a class="el" href="analysis_2bindings_8cpp_source.html#l00078">espressopp::analysis::registerPython()</a>.</p>
 
@@ -320,7 +328,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classespressopp_1_1analysis_1_1MeanSquareInternalDist.html#aeef57302c861e68306ba936280364489">espressopp::analysis::MeanSquareInternalDist</a>, <a class="el" href="classespressopp_1_1analysis_1_1MeanSquareDispl.html#a60b600d3efc261dbf18a214e1b0775bc">espressopp::analysis::MeanSquareDispl</a>, and <a class="el" href="classespressopp_1_1analysis_1_1VelocityAutocorrelation.html#af82979dd665c51b4a1711d07bbf49104">espressopp::analysis::VelocityAutocorrelation</a>.</p>
+<p>Implemented in <a class="el" href="classespressopp_1_1analysis_1_1MeanSquareDispl.html#a60b600d3efc261dbf18a214e1b0775bc">espressopp::analysis::MeanSquareDispl</a>, <a class="el" href="classespressopp_1_1analysis_1_1MeanSquareInternalDist.html#aeef57302c861e68306ba936280364489">espressopp::analysis::MeanSquareInternalDist</a>, and <a class="el" href="classespressopp_1_1analysis_1_1VelocityAutocorrelation.html#af82979dd665c51b4a1711d07bbf49104">espressopp::analysis::VelocityAutocorrelation</a>.</p>
 
 </div>
 </div>
@@ -698,9 +706,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00285">285</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="MeanSquareInternalDist_8hpp_source.html#l00043">espressopp::analysis::MeanSquareInternalDist::MeanSquareInternalDist()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00286">286</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
 
 </div>
 </div>
@@ -724,7 +730,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00287">287</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00289">289</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
 
 </div>
 </div>
@@ -748,7 +754,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00297">297</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00299">299</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
 
 </div>
 </div>
@@ -772,7 +778,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00288">288</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00290">290</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
 
 </div>
 </div>
@@ -796,9 +802,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00286">286</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="MeanSquareInternalDist_8hpp_source.html#l00043">espressopp::analysis::MeanSquareInternalDist::MeanSquareInternalDist()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00288">288</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
 
 </div>
 </div>
@@ -822,7 +826,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00290">290</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00292">292</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="MeanSquareDispl_8hpp_source.html#l00043">espressopp::analysis::MeanSquareDispl::MeanSquareDispl()</a>, <a class="el" href="MeanSquareInternalDist_8hpp_source.html#l00043">espressopp::analysis::MeanSquareInternalDist::MeanSquareInternalDist()</a>, and <a class="el" href="VelocityAutocorrelation_8hpp_source.html#l00039">espressopp::analysis::VelocityAutocorrelation::VelocityAutocorrelation()</a>.</p>
 
@@ -848,9 +852,31 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00284">284</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00285">285</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="MeanSquareInternalDist_8hpp_source.html#l00043">espressopp::analysis::MeanSquareInternalDist::MeanSquareInternalDist()</a>.</p>
+</div>
+</div>
+<a id="a2d2ebdcf4ea432089dbdd8cd97a54efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d2ebdcf4ea432089dbdd8cd97a54efb">&#9670;&nbsp;</a></span>start_pid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int espressopp::analysis::ConfigsParticleDecomp::start_pid</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ConfigsParticleDecomp_8hpp_source.html#l00287">287</a> of file <a class="el" href="ConfigsParticleDecomp_8hpp_source.html">ConfigsParticleDecomp.hpp</a>.</p>
 
 </div>
 </div>
