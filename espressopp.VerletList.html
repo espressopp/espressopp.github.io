@@ -185,7 +185,7 @@
 <h1>espressopp.VerletList<a class="headerlink" href="#espressopp-verletlist" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="espressopp.VerletList.espressopp.VerletList">
-<code class="descclassname">espressopp.</code><code class="descname">VerletList</code><span class="sig-paren">(</span><em>system</em>, <em>cutoff</em>, <em>exclusionlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.VerletList.espressopp.VerletList" title="Permalink to this definition">¶</a></dt>
+<code class="descclassname">espressopp.</code><code class="descname">VerletList</code><span class="sig-paren">(</span><em>system</em>, <em>cutoff</em>, <em>exclusionlist</em>, <em>useBuffers</em>, <em>useSOA</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.VerletList.espressopp.VerletList" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -194,6 +194,8 @@
 <li><strong>system</strong> – </li>
 <li><strong>cutoff</strong> – </li>
 <li><strong>exclusionlist</strong> – (default: [])</li>
+<li><strong>useBuffers</strong> – Whether particle neighbors are buffered to improve rebuild times. (default: True)</li>
+<li><strong>useSOA</strong> – Whether the alternative structure of arrays form is used for buffers. (default: False)</li>
 </ul>
 </td>
 </tr>
@@ -279,7 +281,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2019, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
 
     </p>
   </div>
