@@ -39,7 +39,7 @@
 <area shape="rect" id="node36" href="$VelocityVerletOnGroup_8cpp.html" title="/home/espressopp/espressopp\l/src/integrator/VelocityVerletOn\lGroup.cpp" alt="" coords="6437,288,6641,344"/>
 <area shape="rect" id="node37" href="$VelocityVerletRESPA_8cpp.html" title="/home/espressopp/espressopp\l/src/integrator/VelocityVerletRESPA.cpp" alt="" coords="6909,295,7167,337"/>
 <area shape="rect" id="node38" href="$Zero_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/Zero.hpp" alt="" coords="5713,295,5913,337"/>
-<area shape="rect" id="node39" href="$LennardJones_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJones.hpp" alt="" coords="6666,295,6885,337"/>
+<area shape="rect" id="node39" href="$interaction_2LennardJones_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJones.hpp" alt="" coords="6666,295,6885,337"/>
 <area shape="rect" id="node40" href="$LennardJonesAutoBonds_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesAuto\lBonds.hpp" alt="" coords="7192,288,7412,344"/>
 <area shape="rect" id="node41" href="$LennardJonesCapped_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesCapped.hpp" alt="" coords="7436,295,7699,337"/>
 <area shape="rect" id="node42" href="$LennardJonesEnergyCapped_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesEnergy\lCapped.hpp" alt="" coords="7723,288,7958,344"/>

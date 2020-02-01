@@ -31,4 +31,5 @@
 <area shape="rect" id="node31" href="$classespressopp_1_1interaction_1_1VerletListTripleInteractionTemplate.html" title="espressopp::interaction\l::VerletListTripleInteraction\lTemplate\&lt; _ThreeBodyPotential \&gt;" alt="" coords="232,2357,453,2413"/>
 <area shape="rect" id="node32" href="$classespressopp_1_1interaction_1_1VerletListVSphereInteractionTemplate.html" title="espressopp::interaction\l::VerletListVSphereInteraction\lTemplate\&lt; _Potential \&gt;" alt="" coords="245,2437,441,2493"/>
 <area shape="rect" id="node33" href="$classespressopp_1_1interaction_1_1VSphereSelfInteractionTemplate.html" title="espressopp::interaction\l::VSphereSelfInteractionTemplate\l\&lt; _Potential \&gt;" alt="" coords="233,2517,452,2573"/>
+<area shape="rect" id="node34" href="$classespressopp_1_1vectorization_1_1interaction_1_1VerletListLennardJones.html" title="espressopp::vectorization\l::interaction::VerletListLennardJones" alt="" coords="225,2598,460,2639"/>
 </map>

@@ -20,7 +20,7 @@
 <area shape="rect" id="node22" href="$CoulombTruncatedUniqueCharge_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/CoulombTruncated\lUniqueCharge.cpp" alt="" coords="1758,199,1981,255"/>
 <area shape="rect" id="node23" href="$GravityTruncated_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/GravityTruncated.cpp" alt="" coords="2004,206,2241,247"/>
 <area shape="rect" id="node24" href="$Harmonic_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/Harmonic.cpp" alt="" coords="2265,206,2465,247"/>
-<area shape="rect" id="node25" href="$LennardJones_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJones.cpp" alt="" coords="2489,206,2708,247"/>
+<area shape="rect" id="node25" href="$interaction_2LennardJones_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJones.cpp" alt="" coords="2489,206,2708,247"/>
 <area shape="rect" id="node26" href="$LennardJonesAutoBonds_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesAuto\lBonds.cpp" alt="" coords="2733,199,2953,255"/>
 <area shape="rect" id="node27" href="$LennardJonesCapped_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesCapped.cpp" alt="" coords="2977,206,3239,247"/>
 <area shape="rect" id="node28" href="$LennardJonesEnergyCapped_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesEnergy\lCapped.cpp" alt="" coords="3264,199,3499,255"/>

@@ -1,7 +1,7 @@
 <map id="/home/espressopp/espressopp/src/interaction/VerletListHadressInteractionTemplate.hpp" name="/home/espressopp/espressopp/src/interaction/VerletListHadressInteractionTemplate.hpp">
 <area shape="rect" id="node2" href="$StillingerWeberPairTerm_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/StillingerWeber\lPairTerm.hpp" alt="" coords="117,109,317,165"/>
 <area shape="rect" id="node5" href="$StillingerWeberPairTermCapped_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/StillingerWeber\lPairTermCapped.hpp" alt="" coords="341,109,541,165"/>
-<area shape="rect" id="node7" href="$LennardJones_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJones.cpp" alt="" coords="565,117,784,158"/>
+<area shape="rect" id="node7" href="$interaction_2LennardJones_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJones.cpp" alt="" coords="565,117,784,158"/>
 <area shape="rect" id="node8" href="$LennardJonesAutoBonds_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesAuto\lBonds.cpp" alt="" coords="809,109,1029,165"/>
 <area shape="rect" id="node9" href="$LennardJonesCapped_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesCapped.cpp" alt="" coords="1053,117,1315,158"/>
 <area shape="rect" id="node10" href="$LennardJonesEnergyCapped_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesEnergy\lCapped.cpp" alt="" coords="1340,109,1575,165"/>

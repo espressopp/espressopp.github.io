@@ -16,7 +16,7 @@
 <area shape="rect" id="node3" href="$analysis_2bindings_8cpp.html" title="/home/espressopp/espressopp\l/src/analysis/bindings.cpp" alt="" coords="738,191,938,233"/>
 <area shape="rect" id="node8" href="$FixedPairListAdress_8cpp.html" title="/home/espressopp/espressopp\l/src/FixedPairListAdress.cpp" alt="" coords="2063,191,2263,233"/>
 <area shape="rect" id="node23" href="$FixedPairDistListInteractionTemplate_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/FixedPairDistList\lInteractionTemplate.hpp" alt="" coords="1828,184,2040,240"/>
-<area shape="rect" id="node10" href="$LennardJones_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJones.hpp" alt="" coords="2915,295,3134,337"/>
+<area shape="rect" id="node10" href="$interaction_2LennardJones_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJones.hpp" alt="" coords="2915,295,3134,337"/>
 <area shape="rect" id="node13" href="$LennardJonesCapped_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesCapped.hpp" alt="" coords="4211,295,4473,337"/>
 <area shape="rect" id="node14" href="$LennardJonesEnergyCapped_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesEnergy\lCapped.hpp" alt="" coords="4498,288,4733,344"/>
 <area shape="rect" id="node15" href="$LennardJonesExpand_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesExpand.hpp" alt="" coords="4757,295,5020,337"/>

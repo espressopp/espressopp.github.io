@@ -5,8 +5,8 @@
 <area shape="rect" id="node47" href="$FixedPairListTypesInteractionTemplate_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/FixedPairListTypes\lInteractionTemplate.hpp" alt="" coords="755,95,979,151"/>
 <area shape="rect" id="node49" href="$FixedPairDistListInteractionTemplate_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/FixedPairDistList\lInteractionTemplate.hpp" alt="" coords="3839,95,4051,151"/>
 <area shape="rect" id="node50" href="$FixedPairListPIadressInteractionTemplate_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/FixedPairListPIadress\lInteractionTemplate.hpp" alt="" coords="491,95,731,151"/>
-<area shape="rect" id="node5" href="$LennardJones_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJones.hpp" alt="" coords="355,206,574,247"/>
-<area shape="rect" id="node6" href="$LennardJones_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJones.cpp" alt="" coords="502,310,721,351"/>
+<area shape="rect" id="node5" href="$interaction_2LennardJones_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJones.hpp" alt="" coords="355,206,574,247"/>
+<area shape="rect" id="node6" href="$interaction_2LennardJones_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJones.cpp" alt="" coords="502,310,721,351"/>
 <area shape="rect" id="node7" href="$Tabulated_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/Tabulated.cpp" alt="" coords="249,310,449,351"/>
 <area shape="rect" id="node8" href="$LennardJonesAutoBonds_8hpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesAuto\lBonds.hpp" alt="" coords="4109,199,4329,255"/>
 <area shape="rect" id="node9" href="$LennardJonesAutoBonds_8cpp.html" title="/home/espressopp/espressopp\l/src/interaction/LennardJonesAuto\lBonds.cpp" alt="" coords="4135,303,4355,359"/>
