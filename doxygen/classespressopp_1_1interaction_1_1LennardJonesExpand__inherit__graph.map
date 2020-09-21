@@ -1,5 +1,6 @@
 <map id="espressopp::interaction::LennardJonesExpand" name="espressopp::interaction::LennardJonesExpand">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Lennard\lJonesExpand \&gt;" alt="" coords="617,5,811,61"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="5,18,163,59"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="212,47,416,89"/>
+<area shape="rect" id="node1" title=" " alt="" coords="940,13,1115,54"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title=" " alt="" coords="676,5,891,61"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title=" " alt="" coords="5,18,180,59"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="229,47,459,89"/>
 </map>

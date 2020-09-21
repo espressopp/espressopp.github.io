@@ -1,21 +1,22 @@
 <map id="espressopp::analysis::Observable" name="espressopp::analysis::Observable">
-<area shape="rect" id="node3" href="$classespressopp_1_1analysis_1_1AdressDensity.html" title="espressopp::analysis\l::AdressDensity" alt="" coords="434,5,579,47"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1analysis_1_1CenterOfMass.html" title="Class to compute the center&#45;of&#45;mass of the system. " alt="" coords="434,71,579,112"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1analysis_1_1KineticEnergy.html" title="espressopp::analysis\l::KineticEnergy" alt="" coords="434,136,579,177"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1analysis_1_1MaxPID.html" title="Class to get the number of particles in the system. " alt="" coords="434,201,579,243"/>
-<area shape="rect" id="node7" href="$classespressopp_1_1analysis_1_1NeighborFluctuation.html" title="Class to get the number of particles in the system. " alt="" coords="433,267,580,308"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1analysis_1_1NPart.html" title="Class to get the number of particles in the system. " alt="" coords="434,332,579,373"/>
-<area shape="rect" id="node9" href="$classespressopp_1_1analysis_1_1NPartSubregion.html" title="Class to get the number of particles in the system. " alt="" coords="434,397,579,439"/>
-<area shape="rect" id="node10" href="$classespressopp_1_1analysis_1_1PotentialEnergy.html" title="espressopp::analysis\l::PotentialEnergy" alt="" coords="434,463,579,504"/>
-<area shape="rect" id="node11" href="$classespressopp_1_1analysis_1_1Pressure.html" title="Class to compute the pressure. " alt="" coords="434,528,579,569"/>
-<area shape="rect" id="node12" href="$classespressopp_1_1analysis_1_1RadGyrXProfilePI.html" title="espressopp::analysis\l::RadGyrXProfilePI" alt="" coords="434,593,579,635"/>
-<area shape="rect" id="node13" href="$classespressopp_1_1analysis_1_1RadialDistrF.html" title="Class to compute the radial distribution function of the system. " alt="" coords="434,659,579,700"/>
-<area shape="rect" id="node14" href="$classespressopp_1_1analysis_1_1RDFatomistic.html" title="Class to compute the radial distribution function of the system. " alt="" coords="434,724,579,765"/>
-<area shape="rect" id="node15" href="$classespressopp_1_1analysis_1_1StaticStructF.html" title="Class to compute the static structure function of the system. " alt="" coords="434,789,579,831"/>
-<area shape="rect" id="node16" href="$classespressopp_1_1analysis_1_1SubregionTracking.html" title="espressopp::analysis\l::SubregionTracking" alt="" coords="434,855,579,896"/>
-<area shape="rect" id="node17" href="$classespressopp_1_1analysis_1_1Temperature.html" title="Class to compute the temperature. " alt="" coords="434,920,579,961"/>
-<area shape="rect" id="node18" href="$classespressopp_1_1analysis_1_1XDensity.html" title="espressopp::analysis\l::XDensity" alt="" coords="434,985,579,1027"/>
-<area shape="rect" id="node19" href="$classespressopp_1_1analysis_1_1XPressure.html" title="espressopp::analysis\l::XPressure" alt="" coords="434,1051,579,1092"/>
-<area shape="rect" id="node20" href="$classespressopp_1_1analysis_1_1XTemperature.html" title="espressopp::analysis\l::XTemperature" alt="" coords="434,1116,579,1157"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,569,192,595"/>
+<area shape="rect" id="node1" title="All quantities to be measured derive from this abstract base class." alt="" coords="252,561,411,603"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1analysis_1_1AdressDensity.html" title=" " alt="" coords="461,5,619,47"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1analysis_1_1CenterOfMass.html" title="Class to compute the center&#45;of&#45;mass of the system." alt="" coords="461,71,619,112"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1analysis_1_1KineticEnergy.html" title=" " alt="" coords="461,136,619,177"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1analysis_1_1MaxPID.html" title="Class to get the number of particles in the system." alt="" coords="461,201,619,243"/>
+<area shape="rect" id="node7" href="$classespressopp_1_1analysis_1_1NeighborFluctuation.html" title="Class to get the number of particles in the system." alt="" coords="459,267,621,308"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1analysis_1_1NPart.html" title="Class to get the number of particles in the system." alt="" coords="461,332,619,373"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1analysis_1_1NPartSubregion.html" title="Class to get the number of particles in the system." alt="" coords="461,397,619,439"/>
+<area shape="rect" id="node10" href="$classespressopp_1_1analysis_1_1PotentialEnergy.html" title=" " alt="" coords="461,463,619,504"/>
+<area shape="rect" id="node11" href="$classespressopp_1_1analysis_1_1Pressure.html" title="Class to compute the pressure." alt="" coords="461,528,619,569"/>
+<area shape="rect" id="node12" href="$classespressopp_1_1analysis_1_1RadGyrXProfilePI.html" title=" " alt="" coords="461,593,619,635"/>
+<area shape="rect" id="node13" href="$classespressopp_1_1analysis_1_1RadialDistrF.html" title="Class to compute the radial distribution function of the system." alt="" coords="461,659,619,700"/>
+<area shape="rect" id="node14" href="$classespressopp_1_1analysis_1_1RDFatomistic.html" title="Class to compute the radial distribution function of the system." alt="" coords="461,724,619,765"/>
+<area shape="rect" id="node15" href="$classespressopp_1_1analysis_1_1StaticStructF.html" title="Class to compute the static structure function of the system." alt="" coords="461,789,619,831"/>
+<area shape="rect" id="node16" href="$classespressopp_1_1analysis_1_1SubregionTracking.html" title=" " alt="" coords="461,855,619,896"/>
+<area shape="rect" id="node17" href="$classespressopp_1_1analysis_1_1Temperature.html" title="Class to compute the temperature." alt="" coords="461,920,619,961"/>
+<area shape="rect" id="node18" href="$classespressopp_1_1analysis_1_1XDensity.html" title=" " alt="" coords="461,985,619,1027"/>
+<area shape="rect" id="node19" href="$classespressopp_1_1analysis_1_1XPressure.html" title=" " alt="" coords="461,1051,619,1092"/>
+<area shape="rect" id="node20" href="$classespressopp_1_1analysis_1_1XTemperature.html" title=" " alt="" coords="461,1116,619,1157"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,569,204,595"/>
 </map>

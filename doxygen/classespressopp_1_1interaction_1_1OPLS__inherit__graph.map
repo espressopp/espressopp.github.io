@@ -1,5 +1,6 @@
 <map id="espressopp::interaction::OPLS" name="espressopp::interaction::OPLS">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; OPLS \&gt;" alt="" coords="507,5,689,61"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1DihedralPotential.html" title="espressopp::interaction\l::DihedralPotential" alt="" coords="5,21,163,62"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; Derived \&gt;" alt="" coords="212,45,395,101"/>
+<area shape="rect" id="node1" title="This class provides methods to compute forces and energies of the OPLS dihedral potential." alt="" coords="800,13,975,54"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title=" " alt="" coords="548,5,751,61"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1DihedralPotential.html" title=" " alt="" coords="5,21,180,62"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title=" " alt="" coords="229,45,432,101"/>
 </map>

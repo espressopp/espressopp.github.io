@@ -179,29 +179,29 @@ cd espressopp-latest
 <p>Create the Makefiles using the cmake command. If you don’t have it yet, you have to
 install it first. It is available for all major Linux distributions and also for Mac OS X.
 (ubuntu,debian: “apt-get install cmake” or get it from <a class="reference external" href="http://www.cmake.org">http://www.cmake.org</a> )</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>cmake .
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake .
 </pre></div>
 </div>
 <p>(the space and dot after <em>cmake</em> are necessary)</p>
 <p>If cmake doesn’t finish successfully (e.g. it didn’t find all the libraries) you can
 tell cmake manually, where to find them by typing:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>ccmake .
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ccmake .
 </pre></div>
 </div>
 <p>This will open an interactive page where all configuration information can be specified.
 Alternatively, if cmake . complains on missing BOOST or MPI4PY libraries and you had not
 installed them, you can try</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>cmake . -DEXTERNAL_BOOST<span class="o">=</span>OFF -DEXTERNAL_MPI4PY<span class="o">=</span>OFF
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake . -DEXTERNAL_BOOST<span class="o">=</span>OFF -DEXTERNAL_MPI4PY<span class="o">=</span>OFF
 </pre></div>
 </div>
 <p>In this case, ESPResSo++ will try to use internal Boost and mpi4py libraries.</p>
 <p>After successfully building all the Makefiles you should build ESPResSo++ with:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>make
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make
 </pre></div>
 </div>
 <p>(This will take several minutes)</p>
 <p>Before beeing able to use the espressopp  module in Python you need to source the ESPRC file:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span><span class="nb">source</span> ESPRC
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> ESPRC
 </pre></div>
 </div>
 <p>(This sets all corresponding environment variables to point to the module, e.g. PYTHONPATH)
@@ -267,7 +267,8 @@ e.g. source the file in your .bashrc file ( “source &lt;path_to_espressopp&gt;
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

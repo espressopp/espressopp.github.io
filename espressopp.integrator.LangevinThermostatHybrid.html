@@ -183,8 +183,8 @@
             
   <span class="target" id="module-espressopp.integrator.LangevinThermostatHybrid"></span><div class="section" id="espressopp-integrator-langevinthermostathybrid">
 <h1>espressopp.integrator.LangevinThermostatHybrid<a class="headerlink" href="#espressopp-integrator-langevinthermostathybrid" title="Permalink to this headline">¶</a></h1>
-<p>As LangevinThermostat, but for use in AdResS systems, to allow the application of different thermostat friction constants (<span class="math">\(\gamma\)</span>) to different AdResS regions. Uses three values of <span class="math">\(\gamma\)</span>, one for the atomistic region, one for the hybrid region, and one for the coarse-grained region.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># create FixedTupleList object</span>
+<p>As LangevinThermostat, but for use in AdResS systems, to allow the application of different thermostat friction constants (<span class="math notranslate nohighlight">\(\gamma\)</span>) to different AdResS regions. Uses three values of <span class="math notranslate nohighlight">\(\gamma\)</span>, one for the atomistic region, one for the hybrid region, and one for the coarse-grained region.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># create FixedTupleList object</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ftpl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedTupleListAdress</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ftpl</span><span class="o">.</span><span class="n">addTuples</span><span class="p">(</span><span class="n">tuples</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">setFixedTuplesAdress</span><span class="p">(</span><span class="n">ftpl</span><span class="p">)</span>
@@ -208,7 +208,7 @@
 </pre></div>
 </div>
 <p>No need to include the line</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span><span class="o">.</span><span class="n">adress</span> <span class="o">=</span> <span class="kc">True</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span><span class="o">.</span><span class="n">adress</span> <span class="o">=</span> <span class="kc">True</span>
 </pre></div>
 </div>
 <p>as is necessary in the case of the basic LangevinThermostat, because LangevinThermostatHybrid is always only used in AdResS systems</p>
@@ -268,7 +268,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

@@ -1,5 +1,6 @@
 <map id="espressopp::interaction::DihedralHarmonicNCos" name="espressopp::interaction::DihedralHarmonicNCos">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; DihedralHarmonicNCos \&gt;" alt="" coords="609,5,793,61"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1DihedralPotential.html" title="espressopp::interaction\l::DihedralPotential" alt="" coords="5,21,163,62"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title="espressopp::interaction\l::DihedralPotentialTemplate\l\&lt; Derived \&gt;" alt="" coords="212,45,395,101"/>
+<area shape="rect" id="node1" title="This class provides methods to compute forces and energies of the DihedralHarmonicNCos dihedral poten..." alt="" coords="920,13,1103,54"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title=" " alt="" coords="667,5,871,61"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1DihedralPotential.html" title=" " alt="" coords="5,21,180,62"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title=" " alt="" coords="229,45,432,101"/>
 </map>

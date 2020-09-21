@@ -183,10 +183,10 @@
             
   <span class="target" id="module-espressopp.interaction.CoulombTruncated"></span><div class="section" id="espressopp-interaction-coulombtruncated">
 <h1>espressopp.interaction.CoulombTruncated<a class="headerlink" href="#espressopp-interaction-coulombtruncated" title="Permalink to this headline">¶</a></h1>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[U = k\frac{q_iq_j}{d_{ij}}\]</div>
-<p>where <span class="math">\(k\)</span> is the user-supplied prefactor, <span class="math">\(q_i\)</span> is the charge of particle <cite>i</cite>, and <span class="math">\(d_{ij}\)</span> is interparticle distance</p>
-<p>In this interaction potential, a different charge can be associated with each particle. For a truncated Coulomb interaction potential where only one <span class="math">\(q_iq_j\)</span> value is specified for all interactions, see CoulombTruncatedUniqueCharge.</p>
+<p>where <span class="math notranslate nohighlight">\(k\)</span> is the user-supplied prefactor, <span class="math notranslate nohighlight">\(q_i\)</span> is the charge of particle <cite>i</cite>, and <span class="math notranslate nohighlight">\(d_{ij}\)</span> is interparticle distance</p>
+<p>In this interaction potential, a different charge can be associated with each particle. For a truncated Coulomb interaction potential where only one <span class="math notranslate nohighlight">\(q_iq_j\)</span> value is specified for all interactions, see CoulombTruncatedUniqueCharge.</p>
 <dl class="function">
 <dt id="espressopp.interaction.CoulombTruncated.espressopppp.interaction.CoulombTruncated">
 <code class="descclassname">espressopppp.interaction.</code><code class="descname">CoulombTruncated</code><span class="sig-paren">(</span><em>prefactor</em>, <em>cutoff</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.espressopppp.interaction.CoulombTruncated" title="Permalink to this definition">¶</a></dt>
@@ -211,7 +211,7 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> (<a class="reference internal" href="espressopp.VerletList.html#module-espressopp.VerletList" title="espressopp.VerletList"><em>espressopp.VerletList</em></a>) – verlet list object defined earlier in python script</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>vl</strong> (<em>espressopp.VerletList</em>) – verlet list object defined earlier in python script</td>
 </tr>
 </tbody>
 </table>
@@ -260,8 +260,8 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> (<a class="reference internal" href="espressopp.System.html#module-espressopp.System" title="espressopp.System"><em>espressopp.System</em></a>) – system object defined earlier in the python script</li>
-<li><strong>vl</strong> (<a class="reference internal" href="espressopp.FixedPairList.html#module-espressopp.FixedPairList" title="espressopp.FixedPairList"><em>espressopp.FixedPairList</em></a>) – fixedpairlist object defined earlier in the python script</li>
+<li><strong>system</strong> (<em>espressopp.System</em>) – system object defined earlier in the python script</li>
+<li><strong>vl</strong> (<em>espressopp.FixedPairList</em>) – fixedpairlist object defined earlier in the python script</li>
 </ul>
 </td>
 </tr>
@@ -288,7 +288,7 @@
 </dd></dl>
 
 <p>#Example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pref</span> <span class="o">=</span> <span class="mf">138.935485</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pref</span> <span class="o">=</span> <span class="mf">138.935485</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rc</span> <span class="o">=</span> <span class="mf">1.2</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fixedpairlist</span> <span class="o">=</span> <span class="n">espresso</span><span class="o">.</span><span class="n">FixedPairList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fixedpairlist</span><span class="o">.</span><span class="n">addBonds</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)])</span>
@@ -300,7 +300,7 @@
 </div>
 <dl class="class">
 <dt id="espressopp.interaction.CoulombTruncated.CoulombTruncated">
-<em class="property">class </em><code class="descclassname">espressopp.interaction.CoulombTruncated.</code><code class="descname">CoulombTruncated</code><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.CoulombTruncated" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">espressopp.interaction.CoulombTruncated.</code><code class="descname">CoulombTruncated</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.CoulombTruncated.CoulombTruncated" title="Permalink to this definition">¶</a></dt>
 <dd><p>The CoulombTruncated potential.</p>
 </dd></dl>
 
@@ -360,7 +360,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

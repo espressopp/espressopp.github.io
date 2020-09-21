@@ -1,3 +1,4 @@
 <map id="espressopp::vectorization::VerletList" name="espressopp::vectorization::VerletList">
-<area shape="rect" id="node2" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,5,192,32"/>
+<area shape="rect" id="node1" title="Class that builds and stores verlet lists." alt="" coords="10,80,199,121"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,5,204,32"/>
 </map>

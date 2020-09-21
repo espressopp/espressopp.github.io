@@ -183,7 +183,7 @@
             
   <span class="target" id="module-espressopp.pmi"></span><div class="section" id="espressopp-pmi">
 <h1>espressopp.pmi<a class="headerlink" href="#espressopp-pmi" title="Permalink to this headline">¶</a></h1>
-<p>Parallel Method Invocation (PMI) allows users to write serial Python scripts 
+<p>Parallel Method Invocation (PMI) allows users to write serial Python scripts
 that use functions and classes that are executed in parallel.</p>
 <p>PMI is intended to be used in data-parallel environments, where
 several threads run in parallel and can communicate via MPI.</p>
@@ -208,7 +208,7 @@ next PMI call, while it will immediately return on the controller. On
 the workers, the loop ends only, when one of the commands
 <cite>finalizeWorkers()</cite> or <cite>stopWorkerLoop()</cite> is issued on the
 controller. A typical PMI main program looks like this:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># compute 2*factorial(42) in parallel</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># compute 2*factorial(42) in parallel</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pmi</span>
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># start the worker loop</span>
@@ -233,7 +233,7 @@ call to <cite>receive()</cite> that accepts any PMI command, or a call to the
 identical PMI command. In that case, the arguments of the call to the
 PMI command on the workers are ignored. In this way, it is possible to
 write SPMD scripts that profit from the PMI communication patterns.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># compute 2*factorial(42) in parallel</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># compute 2*factorial(42) in parallel</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pmi</span>
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import math&#39;</span><span class="p">)</span>
@@ -290,7 +290,7 @@ the workers.</li>
 <dl class="function">
 <dt id="espressopp.pmi.exec_">
 <code class="descclassname">espressopp.pmi.</code><code class="descname">exec_</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.exec_" title="Permalink to this definition">¶</a></dt>
-<dd><p>Controller command that executes arbitrary python code on all (active) workers.</p>
+<dd><p>Controller command that executes arbitrary python code on all workers.</p>
 <p>exec_() allows to execute arbitrary Python code on all workers.
 It can be used to define classes and functions on all workers.
 Modules should not be imported via exec_(), instead import_()
@@ -298,7 +298,7 @@ should be used.</p>
 <p>Each element of args should be string that is executed on all
 workers.</p>
 <p>Example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;hello.HelloWorld&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -307,11 +307,11 @@ workers.</p>
 <dl class="function">
 <dt id="espressopp.pmi.import_">
 <code class="descclassname">espressopp.pmi.</code><code class="descname">import_</code><span class="sig-paren">(</span><em>*args</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.import_" title="Permalink to this definition">¶</a></dt>
-<dd><p>Controller command that imports python modules on all (active) workers.</p>
+<dd><p>Controller command that imports python modules on all workers.</p>
 <p>Each element of args should be a module name that is imported to
 all workers.</p>
 <p>Example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">import_</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">import_</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;hello.HelloWorld&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -326,7 +326,7 @@ args are the arguments to the constructor of the class.  Only
 classes that are known to PMI can be used, that is, classes that
 have been imported to pmi via <cite>exec_()</cite> or <cite>import_()</cite>.</p>
 <p>Example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;hello.HelloWorld&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">hw</span><span class="p">)</span>
 <span class="go">MPI process #0: Hello World!</span>
@@ -337,7 +337,7 @@ have been imported to pmi via <cite>exec_()</cite> or <cite>import_()</cite>.</p
 <p>Alternative:
 Note that in this case the class has to be imported to the
 calling module <em>and</em> via PMI.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hello</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">hello</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">hello</span><span class="o">.</span><span class="n">HelloWorld</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">hw</span><span class="p">)</span>
@@ -361,7 +361,7 @@ returned.
 Only functions that are known to PMI can be used, that is functions
 that have been imported to pmi via <cite>exec_()</cite> or <cite>import_()</cite>.</p>
 <p>Example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;hello.HelloWorld&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">hw</span><span class="o">.</span><span class="n">hello</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># equivalent:</span>
@@ -369,7 +369,7 @@ that have been imported to pmi via <cite>exec_()</cite> or <cite>import_()</cite
 </pre></div>
 </div>
 <p>Note, that you can use only functions that are know to PMI when
-<cite>call()</cite> is called, i.e. functions in modules that have 
+<cite>call()</cite> is called, i.e. functions in modules that have
 been imported via <cite>exec_()</cite>.</p>
 </dd></dl>
 
@@ -386,7 +386,7 @@ workers as a list. On the workers, invoke returns None.
 Only functions that are known to PMI can be used, that is functions
 that have been imported to pmi via <cite>exec_()</cite> or <cite>import_()</cite>.</p>
 <p>Example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;hello.HelloWorld&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">messages</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">invoke</span><span class="p">(</span><span class="n">hw</span><span class="o">.</span><span class="n">hello</span><span class="p">())</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># alternative:</span>
@@ -411,7 +411,7 @@ associative.
 Both reduceOp and function have to be known to PMI, that is they
 must have been imported to pmi via <cite>exec_()</cite> or <cite>import_()</cite>.</p>
 <p>Example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;import hello&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pmi</span><span class="o">.</span><span class="n">exec_</span><span class="p">(</span><span class="s1">&#39;joinstr=lambda a,b: &quot;</span><span class="se">\n</span><span class="s1">&quot;.join(a,b)&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hw</span> <span class="o">=</span> <span class="n">pmi</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s1">&#39;hello.HelloWorld&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">pmi</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="s1">&#39;joinstr&#39;</span><span class="p">,</span> <span class="n">hw</span><span class="o">.</span><span class="n">hello</span><span class="p">()))</span>
@@ -471,7 +471,7 @@ controller.</p>
 
 <dl class="class">
 <dt id="espressopp.pmi.Proxy">
-<em class="property">class </em><code class="descclassname">espressopp.pmi.</code><code class="descname">Proxy</code><span class="sig-paren">(</span><em>name</em>, <em>bases</em>, <em>dict</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.Proxy" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">espressopp.pmi.</code><code class="descname">Proxy</code><span class="sig-paren">(</span><em>name</em>, <em>bases</em>, <em>ns</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.pmi.Proxy" title="Permalink to this definition">¶</a></dt>
 <dd><p>A metaclass to be used to create frontend serial objects.</p>
 </dd></dl>
 
@@ -537,7 +537,8 @@ controller.</p>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

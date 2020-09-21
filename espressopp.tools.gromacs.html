@@ -194,12 +194,12 @@ It containts functions: read(), setInteractions(), convertTable()</p>
 <p>If the included .itp file ONLY contains the solvent molecule you’re using (e.g. spc/e water using spce.itp) then this is okay.</p>
 <p>But if the .itp file contains info about many molecules (e.g. you want to use one ion from ions.itp), then gromacs.py will just take the first one listed. You must edit your topol.top file to explicitly include the solvent molecule you’re using.</p>
 <p>e.g. replace:</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>; Include topology for ions
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>; Include topology for ions
 #include &quot;amber03.ff/ions.itp&quot;
 </pre></div>
 </div>
 <p>by:</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>; Include topology for ions
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>; Include topology for ions
 [ moleculetype ]
 ; molname       nrexcl
 CL              1
@@ -214,7 +214,7 @@ CL              1
 <p>Also, the dihedrals should be listed before the impropers (this is usuall the case by default in gromacs-format files).</p>
 <p><strong>Tip 3.</strong></p>
 <p>For rigid SPC/E water using Settle, spce.itp file should look like this:</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>[ moleculetype ]
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[ moleculetype ]
 ; molname       nrexcl
 SOL             2
 
@@ -249,13 +249,13 @@ SOL             2
 <p><strong>Tip 5.</strong></p>
 <p>The parser won’t work if the particles ids in the include files conflict with the particle ids in the topol.top file itself, and the bonded interaction parameters in the itp file need to be looked up via particle type in the standard gromacs topology directory ($GMXLIB)</p>
 <p>i.e. Okay for an itp file like spce.itp above, where the bonds and angles parameters are given in the itp file, as in:</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>[ bonds ]
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[ bonds ]
 ; i     j       funct   length  force.c.
 1       2       1       0.1     345000  0.1     345000
 </pre></div>
 </div>
 <p>Not okay for an itp file containing lines like:</p>
-<div class="highlight-none"><div class="highlight"><pre><span></span>[ bonds ]
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[ bonds ]
 ; i     j       funct   length  force.c.
 1       2       1
 </pre></div>
@@ -380,7 +380,8 @@ interaction – is the interaction to which to add the potentials</p>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

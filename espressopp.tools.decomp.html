@@ -186,8 +186,8 @@
 <ul>
 <li><p class="first"><cite>nodeGrid(n,box_size,rc,skin,eh_size=0,ratioMS=0,idealGas=0,slabMSDims=[0,0,0])</cite>:</p>
 <blockquote>
-<div><p>It determines how the processors are distributed and how the cells are arranged. 
-The algorithm is dimensional sensitive for both homogeneous and inhomogeneous setups. 
+<div><p>It determines how the processors are distributed and how the cells are arranged.
+The algorithm is dimensional sensitive for both homogeneous and inhomogeneous setups.
 On top of such functionality it presents specific features for region divided heterogenous
 setups (e.g. for AdResS) [see H.V. Guzman et. al, Phys. Rev. E, 96, 053311 (2017)]
 Link to the paper: <a class="reference external" href="https://doi.org/10.1103/PhysRevE.96.053311">https://doi.org/10.1103/PhysRevE.96.053311</a></p>
@@ -230,7 +230,7 @@ Most of the parameters have been described for nodeGrid(…), except:</p>
 <li><p class="first"><cite>neiListHom(node_grid,box,rc,skin)</cite>:</p>
 <blockquote>
 <div><p>The new domain decomposition divides the subdomains in a neighborlist of corse in a grid of 3 arrays [N_x,N_y,N_z]. In
-this case, the neighbor list is homogeneous (non a-priori load imbalance). Most of the parameters have been described 
+this case, the neighbor list is homogeneous (non a-priori load imbalance). Most of the parameters have been described
 above, except:</p>
 <p><cite>node_grid</cite> - M number of Nodes to be available (e.g. 128 processes/cores, 16 cores per Node gives a total of 8 Nodes)</p>
 </div></blockquote>
@@ -238,7 +238,7 @@ above, except:</p>
 <li><p class="first"><cite>neiListAdress(node_grid, cell_grid,rc,skin,eh_size,adrCenter,ratioMS,idealGasFlag=True,sphereAdr=False,slabMSDims=[1,0,0])</cite>:</p>
 <blockquote>
 <div><p>The new domain decomposition divides the subdomains in a neighborlist of corse in a grid of 3 arrays [N_x,N_y,N_z]. In
-this case, the neighbor list is homogeneous (non a-priori load imbalance). Most of the parameters have been described 
+this case, the neighbor list is homogeneous (non a-priori load imbalance). Most of the parameters have been described
 above, except:</p>
 <p><cite>cell_grid</cite> - Based on the homogenous allocation of cells per subdomain, a referential value
 <cite>adrCenter</cite> - Box center of the heterogeneous simulation box [adrCenter_x,adrCenter_y,adrCenter_z], commonly the middle of</p>
@@ -327,7 +327,8 @@ the step skinStep</p>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

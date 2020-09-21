@@ -1,4 +1,11 @@
 <map id="espressopp::integrator::DPDThermostat" name="espressopp::integrator::DPDThermostat">
-<area shape="rect" id="node2" href="$classespressopp_1_1integrator_1_1Extension.html" title="espressopp::integrator\l::Extension" alt="" coords="1036,85,1187,126"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="639,36,825,63"/>
+<area shape="rect" id="node1" title="DPD thermostat." alt="" coords="1347,145,1515,186"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1integrator_1_1Extension.html" title=" " alt="" coords="1129,85,1297,126"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="701,36,899,63"/>
+<area shape="rect" id="node4" title=" " alt="" coords="301,29,472,70"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,36,88,63"/>
+<area shape="rect" id="node6" title=" " alt="" coords="699,87,901,129"/>
+<area shape="rect" id="node7" title=" " alt="" coords="341,153,432,180"/>
+<area shape="rect" id="node8" title=" " alt="" coords="925,146,1105,187"/>
+<area shape="rect" id="node9" title=" " alt="" coords="925,206,1105,247"/>
 </map>

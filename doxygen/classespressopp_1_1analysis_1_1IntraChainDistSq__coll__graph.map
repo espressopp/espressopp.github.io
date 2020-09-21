@@ -1,4 +1,9 @@
 <map id="espressopp::analysis::IntraChainDistSq" name="espressopp::analysis::IntraChainDistSq">
-<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1AllParticlePos.html" title="espressopp::analysis\l::AllParticlePos" alt="" coords="26,317,171,359"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,228,192,255"/>
+<area shape="rect" id="node1" title="calculate mean squared intra&#45;chain&#45;distances" alt="" coords="121,421,280,463"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1AllParticlePos.html" title=" " alt="" coords="25,317,184,359"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,228,204,255"/>
+<area shape="rect" id="node4" title=" " alt="" coords="19,95,190,136"/>
+<area shape="rect" id="node5" title=" " alt="" coords="63,5,146,32"/>
+<area shape="rect" id="node6" title=" " alt="" coords="208,317,388,359"/>
+<area shape="rect" id="node7" title=" " alt="" coords="253,228,343,255"/>
 </map>

@@ -184,7 +184,7 @@
   <span class="target" id="module-espressopp.interaction.DihedralHarmonic"></span><div class="section" id="espressopp-interaction-dihedralharmonic">
 <h1>espressopp.interaction.DihedralHarmonic<a class="headerlink" href="#espressopp-interaction-dihedralharmonic" title="Permalink to this headline">¶</a></h1>
 <p>The dihedral harmonic potential</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[U(\phi_{ijkl}) = 0.5K[\phi_{ijkl} - \phi_0)]^2\]</div>
 <p>where the <cite>K</cite> is a constant, the angles should be provided in radians.</p>
 <p>Reference: Gromacs Manual 4.6.1, section 4.2.11 (page 79-80), equation 4.60</p>
@@ -250,7 +250,7 @@
 </dd></dl>
 
 <p><strong>Example of usage</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># The following example shows how to add a torsional potential to particles 1,2,3,4</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># The following example shows how to add a torsional potential to particles 1,2,3,4</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fql</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedQuadrupleList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">fql</span><span class="o">.</span><span class="n">addQuadruples</span><span class="p">([(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1">#phi0 is in radians, IUPAC convention definition</span>
@@ -260,7 +260,7 @@
 </div>
 <dl class="class">
 <dt id="espressopp.interaction.DihedralHarmonic.DihedralHarmonic">
-<em class="property">class </em><code class="descclassname">espressopp.interaction.DihedralHarmonic.</code><code class="descname">DihedralHarmonic</code><a class="headerlink" href="#espressopp.interaction.DihedralHarmonic.DihedralHarmonic" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">espressopp.interaction.DihedralHarmonic.</code><code class="descname">DihedralHarmonic</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralHarmonic.DihedralHarmonic" title="Permalink to this definition">¶</a></dt>
 <dd><p>The DihedralHarmonic potential.</p>
 </dd></dl>
 
@@ -268,6 +268,24 @@
 <dt id="espressopp.interaction.DihedralHarmonic.FixedQuadrupleListDihedralHarmonicLocal">
 <em class="property">class </em><code class="descclassname">espressopp.interaction.DihedralHarmonic.</code><code class="descname">FixedQuadrupleListDihedralHarmonicLocal</code><span class="sig-paren">(</span><em>system</em>, <em>fql</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralHarmonic.FixedQuadrupleListDihedralHarmonicLocal" title="Permalink to this definition">¶</a></dt>
 <dd><p>The (local) DihedralHarmonic interaction using FixedQuadruple lists.</p>
+<dl class="method">
+<dt id="espressopp.interaction.DihedralHarmonic.FixedQuadrupleListDihedralHarmonicLocal.getFixedQuadrupleList">
+<code class="descname">getFixedQuadrupleList</code><span class="sig-paren">(</span><em>(interaction_FixedQuadrupleListDihedralHarmonic)arg1</em><span class="sig-paren">)</span> &#x2192; FixedQuadrupleList :<a class="headerlink" href="#espressopp.interaction.DihedralHarmonic.FixedQuadrupleListDihedralHarmonicLocal.getFixedQuadrupleList" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>C++ signature :</dt>
+<dd>boost::shared_ptr&lt;espressopp::FixedQuadrupleList&gt; getFixedQuadrupleList(espressopp::interaction::FixedQuadrupleListInteractionTemplate&lt;espressopp::interaction::DihedralHarmonic&gt; {lvalue})</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="espressopp.interaction.DihedralHarmonic.FixedQuadrupleListDihedralHarmonicLocal.setPotential">
+<code class="descname">setPotential</code><span class="sig-paren">(</span><em>(interaction_FixedQuadrupleListDihedralHarmonic)arg1</em>, <em>(interaction_DihedralHarmonic)arg2</em><span class="sig-paren">)</span> &#x2192; None :<a class="headerlink" href="#espressopp.interaction.DihedralHarmonic.FixedQuadrupleListDihedralHarmonicLocal.setPotential" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="docutils">
+<dt>C++ signature :</dt>
+<dd>void setPotential(espressopp::interaction::FixedQuadrupleListInteractionTemplate&lt;espressopp::interaction::DihedralHarmonic&gt; {lvalue},boost::shared_ptr&lt;espressopp::interaction::DihedralHarmonic&gt;)</dd>
+</dl>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -326,7 +344,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

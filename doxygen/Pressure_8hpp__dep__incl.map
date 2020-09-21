@@ -1,7 +1,8 @@
 <map id="/home/espressopp/espressopp/src/analysis/Pressure.hpp" name="/home/espressopp/espressopp/src/analysis/Pressure.hpp">
-<area shape="rect" id="node2" href="$analysis_2bindings_8cpp.html" title="/home/espressopp/espressopp\l/src/analysis/bindings.cpp" alt="" coords="5,95,205,136"/>
-<area shape="rect" id="node3" href="$Pressure_8cpp.html" title="/home/espressopp/espressopp\l/src/analysis/Pressure.cpp" alt="" coords="229,95,429,136"/>
-<area shape="rect" id="node4" href="$BerendsenBarostat_8hpp.html" title="/home/espressopp/espressopp\l/src/integrator/BerendsenBarostat.hpp" alt="" coords="453,95,696,136"/>
-<area shape="rect" id="node5" href="$BerendsenBarostat_8cpp.html" title="/home/espressopp/espressopp\l/src/integrator/BerendsenBarostat.cpp" alt="" coords="331,184,573,225"/>
-<area shape="rect" id="node6" href="$integrator_2bindings_8cpp.html" title="/home/espressopp/espressopp\l/src/integrator/bindings.cpp" alt="" coords="597,184,797,225"/>
+<area shape="rect" id="node1" title=" " alt="" coords="248,5,467,47"/>
+<area shape="rect" id="node2" href="$analysis_2bindings_8cpp.html" title=" " alt="" coords="5,95,224,136"/>
+<area shape="rect" id="node3" href="$Pressure_8cpp.html" title=" " alt="" coords="248,95,467,136"/>
+<area shape="rect" id="node4" href="$BerendsenBarostat_8hpp.html" title=" " alt="" coords="491,95,760,136"/>
+<area shape="rect" id="node5" href="$BerendsenBarostat_8cpp.html" title=" " alt="" coords="357,184,625,225"/>
+<area shape="rect" id="node6" href="$integrator_2bindings_8cpp.html" title=" " alt="" coords="649,184,868,225"/>
 </map>

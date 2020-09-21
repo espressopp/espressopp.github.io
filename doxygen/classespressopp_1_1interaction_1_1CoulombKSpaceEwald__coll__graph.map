@@ -1,7 +1,13 @@
 <map id="espressopp::interaction::CoulombKSpaceEwald" name="espressopp::interaction::CoulombKSpaceEwald">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Coulomb\lKSpaceEwald \&gt;" alt="" coords="1107,185,1305,241"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="321,315,479,357"/>
-<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="692,193,896,234"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1RealND.html" title="espressopp::RealND" alt="" coords="328,7,472,33"/>
-<area shape="rect" id="node10" href="$classespressopp_1_1Tensor.html" title="The class Tensor stands for a symmetric 3x3 matrix. " alt="" coords="1137,307,1275,333"/>
+<area shape="rect" id="node1" title="This class provides methods to compute forces and energies of the CoulombKSpaceEwald part." alt="" coords="1491,298,1665,339"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title=" " alt="" coords="1212,184,1433,240"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title=" " alt="" coords="349,314,524,355"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="755,191,984,233"/>
+<area shape="rect" id="node4" title=" " alt="" coords="347,117,527,158"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,224,96,251"/>
+<area shape="rect" id="node7" title=" " alt="" coords="347,182,527,223"/>
+<area shape="rect" id="node8" title=" " alt="" coords="347,247,527,289"/>
+<area shape="rect" id="node11" title=" " alt="" coords="551,383,731,425"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1RealND.html" title=" " alt="" coords="360,5,513,32"/>
+<area shape="rect" id="node10" href="$classespressopp_1_1Tensor.html" title="The class Tensor stands for a symmetric 3x3 matrix." alt="" coords="1249,305,1396,332"/>
 </map>

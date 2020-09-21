@@ -186,7 +186,7 @@
 <p>dumps coordinates of atomistic particles instead of coarse-grained particles in Adress simulation</p>
 <ul>
 <li><p class="first"><cite>dump()</cite>
-write configuration to trajectory GRO file. By default filename is “out.gro”, 
+write configuration to trajectory GRO file. By default filename is “out.gro”,
 coordinates are folded.</p>
 <p>Properties</p>
 </li>
@@ -206,26 +206,26 @@ length_factor should be 0.23</p>
 <li><p class="first"><cite>length_unit</cite>
 It is length unit. Can be LJ, nm or A. By default - LJ</p>
 </li>
-<li><p class="first">ftpl 
+<li><p class="first">ftpl
 fixedtuplelist for the adres system</p>
 </li>
 </ul>
 <p>usage:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ftpl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedTupleListAdress</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ftpl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedTupleListAdress</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ftpl</span><span class="o">.</span><span class="n">addTuples</span><span class="p">(</span><span class="n">tuples</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">setFixedTuplesAdress</span><span class="p">(</span><span class="n">ftpl</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">decompose</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>writing down trajectory</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_gro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpGROAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trajectory.gro&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_gro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpGROAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trajectory.gro&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">200</span><span class="p">):</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">dump_conf_gro</span><span class="o">.</span><span class="n">dump</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>writing down trajectory using ExtAnalyze extension</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_gro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpGROAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trajectory.gro&#39;</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_gro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpGROAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trajectory.gro&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ext_analyze</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">dump_conf_gro</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">ext_analyze</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
@@ -233,8 +233,8 @@ fixedtuplelist for the adres system</p>
 </div>
 <p>Both exapmles will give the same result: 200 configurations in trajectory .gro file.</p>
 <p>setting up length scale</p>
-<p>For example, the Lennard-Jones model for liquid argon with <span class="math">\(\sigma=0.34 [nm]\)</span></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_gro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpGROAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trj.gro&#39;</span><span class="p">,</span> <span class="n">unfolded</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">length_factor</span><span class="o">=</span><span class="mf">0.34</span><span class="p">,</span> <span class="n">length_unit</span><span class="o">=</span><span class="s1">&#39;nm&#39;</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<p>For example, the Lennard-Jones model for liquid argon with <span class="math notranslate nohighlight">\(\sigma=0.34 [nm]\)</span></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dump_conf_gro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpGROAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">,</span> <span class="n">integrator</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s1">&#39;trj.gro&#39;</span><span class="p">,</span> <span class="n">unfolded</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">length_factor</span><span class="o">=</span><span class="mf">0.34</span><span class="p">,</span> <span class="n">length_unit</span><span class="o">=</span><span class="s1">&#39;nm&#39;</span><span class="p">,</span> <span class="n">append</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>will produce trj.gro with in nanometers</p>
@@ -330,7 +330,8 @@ fixedtuplelist for the adres system</p>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

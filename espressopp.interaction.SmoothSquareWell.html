@@ -184,11 +184,11 @@
   <span class="target" id="module-espressopp.interaction.SmoothSquareWell"></span><div class="section" id="espressopp-interaction-smoothsquarewell">
 <h1>espressopp.interaction.SmoothSquareWell<a class="headerlink" href="#espressopp-interaction-smoothsquarewell" title="Permalink to this headline">¶</a></h1>
 <p>This is an implementation of the smoothed square-well potential from <a class="reference external" href="https://doi.org/10.1063/1.4896560">Leitold and Dellago JCP 141, 134901 (2014)</a> :</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[V(r) = \frac{\varepsilon}{2} \left\{ \exp\left[\frac{-(r-\sigma)}{a}\right] + \tanh\left[\frac{r-\lambda\sigma}{a}\right] - 1 \right\},\]</div>
-<p>of which <span class="math">\(a\)</span> dictates the steepness of the slope of the square well, and <span class="math">\({\lambda\sigma}\)</span> determines the width of the step, and <span class="math">\({\sigma}\)</span> is the bond length of the polymer.</p>
+<p>of which <span class="math notranslate nohighlight">\(a\)</span> dictates the steepness of the slope of the square well, and <span class="math notranslate nohighlight">\({\lambda\sigma}\)</span> determines the width of the step, and <span class="math notranslate nohighlight">\({\sigma}\)</span> is the bond length of the polymer.</p>
 <p>To reproduce the potential in the prior reference, use the code below.</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">pot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">SmoothSquareWell</span><span class="p">(</span><span class="n">epsilon</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">sigma</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">cutoff</span><span class="o">=</span><span class="mf">2.5</span><span class="p">)</span>
+<div class="code python highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pot</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">SmoothSquareWell</span><span class="p">(</span><span class="n">epsilon</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">sigma</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span><span class="n">cutoff</span><span class="o">=</span><span class="mf">2.5</span><span class="p">)</span>
 <span class="n">pot</span><span class="o">.</span><span class="n">a</span> <span class="o">=</span> <span class="mf">0.002</span>
 <span class="n">pot</span><span class="o">.</span><span class="n">Lambda</span> <span class="o">=</span> <span class="mf">1.05</span>
 </pre></div>
@@ -196,7 +196,7 @@
 <p>The SmoothSquareWell potential supports VerletListInteraction, FixedPairListInteraction and FixedPairListTypesInteraction.</p>
 <dl class="class">
 <dt id="espressopp.interaction.SmoothSquareWell.SmoothSquareWell">
-<em class="property">class </em><code class="descclassname">espressopp.interaction.SmoothSquareWell.</code><code class="descname">SmoothSquareWell</code><a class="headerlink" href="#espressopp.interaction.SmoothSquareWell.SmoothSquareWell" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">espressopp.interaction.SmoothSquareWell.</code><code class="descname">SmoothSquareWell</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.SmoothSquareWell.SmoothSquareWell" title="Permalink to this definition">¶</a></dt>
 <dd><p>The SmoothSquareWell potential.</p>
 </dd></dl>
 
@@ -256,7 +256,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

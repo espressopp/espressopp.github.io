@@ -177,7 +177,7 @@
   <div class="section" id="polymer-melt">
 <h1>Polymer Melt<a class="headerlink" href="#polymer-melt" title="Permalink to this headline">¶</a></h1>
 <p>We first import espressopp and then define all the parameters of the simulation:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">espressopp</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">espressopp</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">num_chains</span>          <span class="o">=</span> <span class="mi">10</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">monomers_per_chain</span>  <span class="o">=</span> <span class="mi">10</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">L</span>                   <span class="o">=</span> <span class="mi">10</span>
@@ -192,7 +192,7 @@
 </div>
 <p>Like in the simple Lennard Jones tutorial we setup the system and the integrator.
 First the system with the excluded volume interaction (WCA, Lennard Jones type)</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span>         <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">System</span><span class="p">()</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span>         <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">System</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">rng</span>     <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">bc</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">OrthorhombicBC</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">rng</span><span class="p">,</span> <span class="n">box</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">skin</span>    <span class="o">=</span> <span class="n">skin</span>
@@ -206,7 +206,7 @@ First the system with the excluded volume interaction (WCA, Lennard Jones type)<
 </pre></div>
 </div>
 <p>Then the integrator with the Langevin extension</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span>     <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">VelocityVerlet</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span>     <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">VelocityVerlet</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">dt</span>  <span class="o">=</span> <span class="n">dt</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span>     <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">thermostat</span><span class="o">.</span><span class="n">gamma</span>  <span class="o">=</span> <span class="mf">1.0</span>
@@ -216,14 +216,14 @@ First the system with the excluded volume interaction (WCA, Lennard Jones type)<
 </div>
 <p>Know we add the particles. Keep in mind that we want to create a polymer melt. This means
 that particles are “bonded” in chains. We setup each polymer chain as a random walk.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">props</span>    <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;mass&#39;</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">]</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">props</span>    <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;mass&#39;</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">]</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">vel_zero</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">,</span> <span class="mf">0.0</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>In providing bonding information for the particles we “setup” the bonded chains.
 For this we use the FixedPairList object that needs to know where and in which storage
 the particles can be found:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">bondlist</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedPairList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">bondlist</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedPairList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">pid</span>      <span class="o">=</span> <span class="mi">1</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span>     <span class="o">=</span> <span class="mi">0</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">mass</span>     <span class="o">=</span> <span class="mf">1.0</span>
@@ -233,7 +233,7 @@ the particles can be found:</p>
 <p>ESPResSo++ provides a function that will return position and bond information of a random walk.
 You have to provide a start ID (particle id) and a starting position which we will get from the
 random position generator of the boundary condition object:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_chains</span><span class="p">):</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num_chains</span><span class="p">):</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">startpos</span> <span class="o">=</span> <span class="n">system</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">getRandomPos</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">positions</span><span class="p">,</span> <span class="n">bonds</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">polymerRW</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="n">startpos</span><span class="p">,</span> <span class="n">monomers_per_chain</span><span class="p">,</span> <span class="n">bondlen</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">monomers_per_chain</span><span class="p">):</span>
@@ -250,18 +250,18 @@ random position generator of the boundary condition object:</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p>try out the command</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">polymerRW</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="n">startpos</span><span class="p">,</span> <span class="n">monomers_per_chain</span><span class="p">,</span> <span class="n">bondlen</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">topology</span><span class="o">.</span><span class="n">polymerRW</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="n">startpos</span><span class="p">,</span> <span class="n">monomers_per_chain</span><span class="p">,</span> <span class="n">bondlen</span><span class="p">)</span>
 </pre></div>
 </div>
 <p class="last">to see what it returns</p>
 </div>
 <p>Don’t forget to distribute the particles and the bondlist to the CPUs in the end:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">decompose</span><span class="p">()</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">decompose</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>Finally add the information about the bonding potential. In this example we are using
 a FENE-potential between the bonded particles.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">potFENE</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">FENE</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="mf">30.0</span><span class="p">,</span> <span class="n">r0</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">rMax</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">potFENE</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">FENE</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="mf">30.0</span><span class="p">,</span> <span class="n">r0</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">rMax</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">interFENE</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">FixedPairListFENE</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">bondlist</span><span class="p">,</span> <span class="n">potFENE</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">interFENE</span><span class="p">)</span>
 </pre></div>
@@ -269,7 +269,7 @@ a FENE-potential between the bonded particles.</p>
 <p>Start the integrator and observe how the system explodes. Like in the random Lennard Jones
 system, we have the same problem here: particles can strongly overlap and thus will
 get very high forces accelerating them to infinite (for the computer) speed.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">analyse</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">analyse</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nsteps</span><span class="p">):</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">isteps</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">analyse</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">)</span>
@@ -286,7 +286,7 @@ that you have learned in the Lennard Jones tutorial.</p>
 <p>During warmup you can slowly switch on the excluded volume interaction by starting with a small
 epsilon and increasing it during integration:
 You can do this by continuously overwriting the interaction potential after some time interval.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">potLJ</span>          <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">LennardJones</span><span class="p">(</span><span class="n">new_epsilon</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">rc</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">potLJ</span>          <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">LennardJones</span><span class="p">(</span><span class="n">new_epsilon</span><span class="p">,</span> <span class="n">sigma</span><span class="p">,</span> <span class="n">rc</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">interaction</span><span class="o">.</span><span class="n">setPotential</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">potential</span><span class="o">=</span><span class="n">potLJ</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -347,7 +347,8 @@ You can do this by continuously overwriting the interaction potential after some
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

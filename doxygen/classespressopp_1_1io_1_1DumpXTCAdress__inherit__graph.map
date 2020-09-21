@@ -1,4 +1,5 @@
 <map id="espressopp::io::DumpXTCAdress" name="espressopp::io::DumpXTCAdress">
-<area shape="rect" id="node2" href="$classespressopp_1_1ParticleAccess.html" title="espressopp::ParticleAccess" alt="" coords="22,80,207,107"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="21,5,208,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,239,181"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1ParticleAccess.html" title=" " alt="" coords="23,80,221,107"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="23,5,221,32"/>
 </map>

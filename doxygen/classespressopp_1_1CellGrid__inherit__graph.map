@@ -1,3 +1,4 @@
 <map id="espressopp::CellGrid" name="espressopp::CellGrid">
-<area shape="rect" id="node2" href="$classespressopp_1_1esutil_1_1Grid.html" title="regular grid decomposition of a box, outside view. " alt="" coords="13,5,141,47"/>
+<area shape="rect" id="node1" title="Grid with a ghost frame." alt="" coords="5,95,161,121"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1esutil_1_1Grid.html" title="regular grid decomposition of a box, outside view." alt="" coords="13,5,153,47"/>
 </map>

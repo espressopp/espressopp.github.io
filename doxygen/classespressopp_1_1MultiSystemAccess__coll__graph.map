@@ -1,2 +1,5 @@
 <map id="espressopp::MultiSystemAccess" name="espressopp::MultiSystemAccess">
+<area shape="rect" id="node1" title="Common base class for all classes that need access to multiple systems." alt="" coords="5,213,236,240"/>
+<area shape="rect" id="node2" title=" " alt="" coords="35,95,206,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="79,5,162,32"/>
 </map>

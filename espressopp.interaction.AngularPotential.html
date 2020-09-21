@@ -190,13 +190,13 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.interaction.AngularCosineSquared" title="espressopp.interaction.AngularCosineSquared"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.interaction.AngularCosineSquared</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.interaction.AngularCosineSquared" title="espressopp.interaction.AngularCosineSquared"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.interaction.AngularCosineSquared</span></code></a>(…)</td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#module-espressopp.interaction.AngularHarmonic" title="espressopp.interaction.AngularHarmonic"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.interaction.AngularHarmonic</span></code></a></td>
+<tr class="row-even"><td><a class="reference internal" href="#module-espressopp.interaction.AngularHarmonic" title="espressopp.interaction.AngularHarmonic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.interaction.AngularHarmonic</span></code></a>(…)</td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.interaction.Cosine" title="espressopp.interaction.Cosine"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.interaction.Cosine</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.interaction.Cosine" title="espressopp.interaction.Cosine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.interaction.Cosine</span></code></a>(*args,&nbsp;**kwds)</td>
 <td></td>
 </tr>
 </tbody>
@@ -241,9 +241,9 @@
 <div class="section" id="module-espressopp.interaction.AngularCosineSquared">
 <span id="espressopp-interaction-angularcosinesquared"></span><h2>espressopp.interaction.AngularCosineSquared<a class="headerlink" href="#module-espressopp.interaction.AngularCosineSquared" title="Permalink to this headline">¶</a></h2>
 <p>Calculates the Angular Cosine Squared potential as:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[U =  K [cos(\theta) - cos(\theta_{0})]^2,\]</div>
-<p>where angle <span class="math">\(\theta\)</span> is the planar angle formed by three binded particles
+<p>where angle <span class="math notranslate nohighlight">\(\theta\)</span> is the planar angle formed by three binded particles
 (triplet or triple).</p>
 <p>This potential is employed by:</p>
 <dl class="class">
@@ -278,7 +278,7 @@ This is done via:</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>system</strong> (<em>shared_ptr</em>) – system object</li>
 <li><strong>fixed_triple_list</strong> (<em>list</em>) – a fixed list of all triples in the system</li>
-<li><strong>potential</strong> – triple potential (in this case, <a class="reference internal" href="#module-espressopp.interaction.AngularCosineSquared" title="espressopp.interaction.AngularCosineSquared"><code class="xref py py-class docutils literal"><span class="pre">espressopp.interaction.AngularCosineSquared</span></code></a>).</li>
+<li><strong>potential</strong> – triple potential (in this case, <a class="reference internal" href="#module-espressopp.interaction.AngularCosineSquared" title="espressopp.interaction.AngularCosineSquared"><code class="xref py py-class docutils literal notranslate"><span class="pre">espressopp.interaction.AngularCosineSquared</span></code></a>).</li>
 </ul>
 </td>
 </tr>
@@ -321,8 +321,8 @@ This is done via:</p>
 
 </dd></dl>
 
-<p><strong>Example 1.</strong> Creating a fixed triple list by <a class="reference internal" href="espressopp.FixedTripleList.html#module-espressopp.FixedTripleList" title="espressopp.FixedTripleList"><code class="xref py py-class docutils literal"><span class="pre">espressopp.FixedTripleList</span></code></a>.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># we assume a polymer solution of n_chains of the length chain_len each.</span>
+<p><strong>Example 1.</strong> Creating a fixed triple list by <a class="reference internal" href="espressopp.FixedTripleList.html#module-espressopp.FixedTripleList" title="espressopp.FixedTripleList"><code class="xref py py-class docutils literal notranslate"><span class="pre">espressopp.FixedTripleList</span></code></a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># we assume a polymer solution of n_chains of the length chain_len each.</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># At first, create a list_of_triples for the system:</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">N</span> <span class="o">=</span> <span class="n">n_chains</span> <span class="o">*</span> <span class="n">chain_len</span>            <span class="c1"># number of particles in the system</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">list_of_tripples</span> <span class="o">=</span> <span class="p">[]</span>               <span class="c1"># empty list of triples</span>
@@ -338,7 +338,7 @@ This is done via:</p>
 </pre></div>
 </div>
 <p><strong>Example 2.</strong> Employing an Angular Cosine Squared potential.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Note, the fixed_triple_list has to be generated in advance! (see Example 1)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Note, the fixed_triple_list has to be generated in advance! (see Example 1)</span>
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># set up the potential</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">potAngCosSq</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">AngularCosineSquared</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">theta0</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
@@ -354,10 +354,10 @@ This is done via:</p>
 <div class="section" id="module-espressopp.interaction.AngularHarmonic">
 <span id="espressopp-interaction-angularharmonic"></span><h2>espressopp.interaction.AngularHarmonic<a class="headerlink" href="#module-espressopp.interaction.AngularHarmonic" title="Permalink to this headline">¶</a></h2>
 <p>Calculates the Angular Harmonic potential as:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[U = K (\theta - \theta_0)^2,\]</div>
-<p>where angle <span class="math">\(\theta\)</span> is the planar angle formed by three binded particles
-(triplet or triple). The usual coefficient of <span class="math">\(1/2\)</span> is included in <span class="math">\(K\)</span>.</p>
+<p>where angle <span class="math notranslate nohighlight">\(\theta\)</span> is the planar angle formed by three binded particles
+(triplet or triple). The usual coefficient of <span class="math notranslate nohighlight">\(1/2\)</span> is included in <span class="math notranslate nohighlight">\(K\)</span>.</p>
 <p>This potential is employed by:</p>
 <dl class="class">
 <dt id="espressopp.interaction.AngularHarmonic.espressopp.interaction.AngularHarmonic">
@@ -391,7 +391,7 @@ This is done via:</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>system</strong> (<em>shared_ptr</em>) – system object</li>
 <li><strong>fixed_triple_list</strong> (<em>list</em>) – a fixed list of all triples in the system</li>
-<li><strong>potential</strong> – triple potential (in this case, <a class="reference internal" href="#module-espressopp.interaction.AngularHarmonic" title="espressopp.interaction.AngularHarmonic"><code class="xref py py-class docutils literal"><span class="pre">espressopp.interaction.AngularHarmonic</span></code></a>).</li>
+<li><strong>potential</strong> – triple potential (in this case, <a class="reference internal" href="#module-espressopp.interaction.AngularHarmonic" title="espressopp.interaction.AngularHarmonic"><code class="xref py py-class docutils literal notranslate"><span class="pre">espressopp.interaction.AngularHarmonic</span></code></a>).</li>
 </ul>
 </td>
 </tr>
@@ -434,8 +434,8 @@ This is done via:</p>
 
 </dd></dl>
 
-<p><strong>Example 1.</strong> Creating a fixed triple list by <a class="reference internal" href="espressopp.FixedTripleList.html#module-espressopp.FixedTripleList" title="espressopp.FixedTripleList"><code class="xref py py-class docutils literal"><span class="pre">espressopp.FixedTripleList</span></code></a>.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># we assume a polymer solution of n_chains of the length chain_len each.</span>
+<p><strong>Example 1.</strong> Creating a fixed triple list by <a class="reference internal" href="espressopp.FixedTripleList.html#module-espressopp.FixedTripleList" title="espressopp.FixedTripleList"><code class="xref py py-class docutils literal notranslate"><span class="pre">espressopp.FixedTripleList</span></code></a>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># we assume a polymer solution of n_chains of the length chain_len each.</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># At first, create a list_of_triples for the system:</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">N</span> <span class="o">=</span> <span class="n">n_chains</span> <span class="o">*</span> <span class="n">chain_len</span>            <span class="c1"># number of particles in the system</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">list_of_tripples</span> <span class="o">=</span> <span class="p">[]</span>               <span class="c1"># empty list of triples</span>
@@ -451,7 +451,7 @@ This is done via:</p>
 </pre></div>
 </div>
 <p><strong>Example 2.</strong> Employing an Angular Harmonic potential.</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Note, the fixed_triple_list has to be generated in advance! (see Example 1)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Note, the fixed_triple_list has to be generated in advance! (see Example 1)</span>
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># set up the potential</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">potAngHarm</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">AngularHarmonic</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">theta0</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
@@ -467,7 +467,7 @@ This is done via:</p>
 <div class="section" id="module-espressopp.interaction.Cosine">
 <span id="espressopp-interaction-cosine"></span><h2>espressopp.interaction.Cosine<a class="headerlink" href="#module-espressopp.interaction.Cosine" title="Permalink to this headline">¶</a></h2>
 <p>Calculates the Cosine potential as:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[U = K  (1 + cos(\theta - \theta_0))\]</div>
 <dl class="function">
 <dt id="espressopp.interaction.Cosine.espressopp.interaction.Cosine">
@@ -587,7 +587,8 @@ This is done via:</p>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

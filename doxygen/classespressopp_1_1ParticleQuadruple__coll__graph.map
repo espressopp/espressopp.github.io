@@ -1,12 +1,13 @@
 <map id="espressopp::ParticleQuadruple" name="espressopp::ParticleQuadruple">
-<area shape="rect" id="node2" href="$structespressopp_1_1Quadruple.html" title="espressopp::Quadruple\l\&lt; class Particle *, class\l Particle *, class Particle\l *, class Particle * \&gt;" alt="" coords="931,213,1097,283"/>
-<area shape="rect" id="node3" href="$structespressopp_1_1Particle.html" title="espressopp::Particle" alt="" coords="569,140,710,167"/>
-<area shape="rect" id="node4" href="$structespressopp_1_1ParticleLocal.html" title="espressopp::ParticleLocal" alt="" coords="277,9,449,36"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1Int3D.html" title="espressopp::Int3D" alt="" coords="11,5,141,32"/>
-<area shape="rect" id="node6" href="$structespressopp_1_1ParticleMomentum.html" title="momentum&#45;like properties " alt="" coords="260,64,467,91"/>
-<area shape="rect" id="node7" href="$classespressopp_1_1Real3D.html" title="espressopp::Real3D" alt="" coords="5,140,147,167"/>
-<area shape="rect" id="node8" href="$structespressopp_1_1ParticleProperties.html" title="espressopp::ParticleProperties" alt="" coords="263,115,463,141"/>
-<area shape="rect" id="node9" href="$structespressopp_1_1ParticlePosition.html" title="position&#45;like properties " alt="" coords="269,165,457,192"/>
-<area shape="rect" id="node10" href="$structespressopp_1_1ParticleForce.html" title="force&#45;like properties " alt="" coords="276,216,451,243"/>
-<area shape="rect" id="node11" href="$structespressopp_1_1Quadruple.html" title="espressopp::Quadruple\l\&lt; T1, T2, T3, T4 \&gt;" alt="" coords="561,310,717,351"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1207,152,1427,179"/>
+<area shape="rect" id="node2" href="$structespressopp_1_1Quadruple.html" title=" " alt="" coords="977,130,1157,201"/>
+<area shape="rect" id="node3" href="$structespressopp_1_1Particle.html" title=" " alt="" coords="582,115,735,141"/>
+<area shape="rect" id="node4" href="$structespressopp_1_1ParticleLocal.html" title=" " alt="" coords="301,9,487,36"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1Int3D.html" title=" " alt="" coords="11,5,150,32"/>
+<area shape="rect" id="node6" href="$structespressopp_1_1ParticleMomentum.html" title="momentum&#45;like properties" alt="" coords="280,64,508,91"/>
+<area shape="rect" id="node7" href="$classespressopp_1_1Real3D.html" title=" " alt="" coords="5,140,156,167"/>
+<area shape="rect" id="node8" href="$structespressopp_1_1ParticleProperties.html" title=" " alt="" coords="285,115,503,141"/>
+<area shape="rect" id="node9" href="$structespressopp_1_1ParticlePosition.html" title="position&#45;like properties" alt="" coords="291,165,497,192"/>
+<area shape="rect" id="node10" href="$structespressopp_1_1ParticleForce.html" title="force&#45;like properties" alt="" coords="300,216,488,243"/>
+<area shape="rect" id="node11" href="$structespressopp_1_1Quadruple.html" title=" " alt="" coords="573,182,744,223"/>
 </map>

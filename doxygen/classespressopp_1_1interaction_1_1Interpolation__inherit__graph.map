@@ -1,9 +1,10 @@
 <map id="espressopp::interaction::Interpolation" name="espressopp::interaction::Interpolation">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title="espressopp::interaction\l::InterpolationTemplate\l\&lt; Derived \&gt;" alt="" coords="212,79,369,135"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title="espressopp::interaction\l::InterpolationTemplate\l\&lt; InterpolationAkima \&gt;" alt="" coords="555,5,712,61"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title="espressopp::interaction\l::InterpolationTemplate\l\&lt; InterpolationCubic \&gt;" alt="" coords="555,92,712,148"/>
-<area shape="rect" id="node7" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title="espressopp::interaction\l::InterpolationTemplate\l\&lt; InterpolationLinear \&gt;" alt="" coords="555,184,712,240"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1InterpolationAkima.html" title="espressopp::interaction\l::InterpolationAkima" alt="" coords="761,13,919,54"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1InterpolationCubic.html" title="espressopp::interaction\l::InterpolationCubic" alt="" coords="761,99,919,141"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1interaction_1_1InterpolationLinear.html" title="espressopp::interaction\l::InterpolationLinear" alt="" coords="761,191,919,233"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,121,180,162"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title=" " alt="" coords="229,79,404,135"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title=" " alt="" coords="612,5,789,61"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title=" " alt="" coords="613,92,788,148"/>
+<area shape="rect" id="node7" href="$classespressopp_1_1interaction_1_1InterpolationTemplate.html" title=" " alt="" coords="613,184,788,240"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1InterpolationAkima.html" title=" " alt="" coords="839,13,1013,54"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1interaction_1_1InterpolationCubic.html" title=" " alt="" coords="839,99,1013,141"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1interaction_1_1InterpolationLinear.html" title=" " alt="" coords="839,191,1013,233"/>
 </map>

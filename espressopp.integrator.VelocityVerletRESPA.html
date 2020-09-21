@@ -185,7 +185,7 @@
 <h1>espressopp.integrator.VelocityVerletRESPA<a class="headerlink" href="#espressopp-integrator-velocityverletrespa" title="Permalink to this headline">¶</a></h1>
 <p>This is a multiple time stepping integrator according to the RESPA scheme (J. Chem. Phys. 97, 1990 (1992)). It has two layers: All forces of type “NonbondedSlow” are updated with a frequency given by the long time step, while all other forces are calculated according to the short time step. The short time step can be defined and set as a property of the integrator object, while the long time step is given by the product of the short time step with an integer “multistep”, which can also be set.</p>
 <p>Example:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">VelocityVerletRESPA</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">VelocityVerletRESPA</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">dt</span> <span class="o">=</span> <span class="n">timestep</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">multistep</span> <span class="o">=</span> <span class="n">multistep</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="o">...</span>
@@ -304,7 +304,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

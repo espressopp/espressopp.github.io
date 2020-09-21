@@ -1,6 +1,11 @@
 <map id="espressopp::interaction::Cosine" name="espressopp::interaction::Cosine">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="espressopp::interaction\l::AngularPotentialTemplate\l\&lt; Cosine \&gt;" alt="" coords="923,149,1101,205"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1AngularPotential.html" title="espressopp::interaction\l::AngularPotential" alt="" coords="321,71,479,112"/>
-<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="627,110,805,166"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1RealND.html" title="espressopp::RealND" alt="" coords="328,311,472,338"/>
+<area shape="rect" id="node1" title="This class provides methods to compute forces and energies of the Cosine angular potential." alt="" coords="1255,156,1429,197"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title=" " alt="" coords="1007,149,1205,205"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1AngularPotential.html" title=" " alt="" coords="349,71,524,112"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1AngularPotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="681,110,880,166"/>
+<area shape="rect" id="node4" title=" " alt="" coords="347,5,527,47"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,143,96,170"/>
+<area shape="rect" id="node7" title=" " alt="" coords="347,201,527,243"/>
+<area shape="rect" id="node8" title=" " alt="" coords="347,136,527,177"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1RealND.html" title=" " alt="" coords="360,311,513,338"/>
 </map>

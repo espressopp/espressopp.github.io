@@ -1,5 +1,10 @@
 <map id="espressopp::vectorization::interaction::LennardJones" name="espressopp::vectorization::interaction::LennardJones">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="627,129,820,185"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="321,5,479,47"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1RealND.html" title="espressopp::RealND" alt="" coords="328,267,472,294"/>
+<area shape="rect" id="node1" title="This class provides methods to compute forces and energies of the Lennard Jones potential." alt="" coords="945,136,1140,177"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="681,129,896,185"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title=" " alt="" coords="349,5,524,47"/>
+<area shape="rect" id="node4" title=" " alt="" coords="347,71,527,112"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,143,96,170"/>
+<area shape="rect" id="node7" title=" " alt="" coords="347,136,527,177"/>
+<area shape="rect" id="node8" title=" " alt="" coords="347,201,527,243"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1RealND.html" title=" " alt="" coords="360,267,513,294"/>
 </map>

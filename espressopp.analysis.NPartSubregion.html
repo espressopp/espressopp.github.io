@@ -185,11 +185,11 @@
 <h1>espressopp.analysis.NPartSubregion<a class="headerlink" href="#espressopp-analysis-npartsubregion" title="Permalink to this headline">¶</a></h1>
 <p>Class to compute the number of (coarse-grained) particles in a subregion of the simulation box.</p>
 <p>Examples:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">subregionparticles_instance</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">NPartSubregion</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">parttype</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">span</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">subregionparticles_instance</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">NPartSubregion</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">parttype</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">span</span><span class="o">=</span><span class="mf">0.75</span><span class="p">,</span> <span class="n">geometry</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># creates instance of the class for calculating number of particles of type 1 in a subregion centered in the simulation box and bounded within +-0.75 in x-direction from the center</span>
 </pre></div>
 </div>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">number_of_particles</span> <span class="o">=</span> <span class="n">subregionparticles_instance</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">number_of_particles</span> <span class="o">=</span> <span class="n">subregionparticles_instance</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># computes the number of particles in subregion of the simulation box</span>
 </pre></div>
 </div>
@@ -206,7 +206,7 @@
 <li><strong>parttype</strong> (<em>int</em>) – particle type to be considered for particle number calculation</li>
 <li><strong>span</strong> (<em>real</em>) – radius of the subregion to be considered</li>
 <li><strong>geometry</strong> (<em>str in</em><em> [</em><em>'spherical'</em><em>, </em><em>'bounded-x'</em><em>, </em><em>'bounded-y'</em><em>, </em><em>'bounded-z'</em><em>]</em>) – geometry of the subregion. Can only be in [‘spherical’, ‘bounded-x’, ‘bounded-y’, ‘bounded-z’]</li>
-<li><strong>center</strong> (<em>list of 3 reals</em><em> (</em><a class="reference internal" href="espressopp.Int3D.html#espressopp.Int3D.espressopp.__Int3D.x" title="espressopp.Int3D.espressopp.__Int3D.x"><em>x</em></a><em>,</em><a class="reference internal" href="espressopp.Int3D.html#espressopp.Int3D.espressopp.__Int3D.y" title="espressopp.Int3D.espressopp.__Int3D.y"><em>y</em></a><em>,</em><em>z coordinates of center</em><em>)</em>) – center of the subregion</li>
+<li><strong>center</strong> (<em>list of 3 reals</em><em> (</em><em>x</em><em>,</em><em>y</em><em>,</em><em>z coordinates of center</em><em>)</em>) – center of the subregion</li>
 </ul>
 </td>
 </tr>
@@ -290,7 +290,8 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

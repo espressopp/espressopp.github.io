@@ -1,7 +1,8 @@
 <map id="espressopp::analysis::PressureTensor" name="espressopp::analysis::PressureTensor">
-<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; Tensor \&gt;" alt="" coords="952,5,1116,61"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1analysis_1_1AnalysisBase.html" title="All quantities to be measured derive from this abstract base class and the corresponding template..." alt="" coords="476,14,621,55"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title="espressopp::analysis\l::AnalysisBaseTemplate\l\&lt; ResultType \&gt;" alt="" coords="671,39,835,95"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1ParticleAccess.html" title="espressopp::ParticleAccess" alt="" coords="241,21,427,48"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,21,192,48"/>
+<area shape="rect" id="node1" title="Class to compute the pressure tensor." alt="" coords="1239,13,1397,54"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title=" " alt="" coords="1012,5,1189,61"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1analysis_1_1AnalysisBase.html" title="All quantities to be measured derive from this abstract base class and the corresponding template." alt="" coords="501,14,660,55"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title=" " alt="" coords="709,39,887,95"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1ParticleAccess.html" title=" " alt="" coords="253,21,452,48"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,21,204,48"/>
 </map>

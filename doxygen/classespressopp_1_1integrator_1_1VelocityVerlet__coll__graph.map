@@ -1,7 +1,11 @@
 <map id="espressopp::integrator::VelocityVerlet" name="espressopp::integrator::VelocityVerlet">
-<area shape="rect" id="node2" href="$classespressopp_1_1integrator_1_1MDIntegrator.html" title="espressopp::integrator\l::MDIntegrator" alt="" coords="825,91,976,133"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="551,37,737,64"/>
-<area shape="rect" id="node6" href="$structespressopp_1_1integrator_1_1ExtensionList.html" title="espressopp::integrator\l::ExtensionList" alt="" coords="569,91,719,133"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1WallTimer.html" title="timer measuring the wall time. " alt="" coords="837,157,965,198"/>
-<area shape="rect" id="node9" href="$classespressopp_1_1esutil_1_1Timer.html" title="simple timer for obtaining typically microsecond precision timings. " alt="" coords="580,157,708,198"/>
+<area shape="rect" id="node1" title="Velocity Verlet Integrator." alt="" coords="1199,125,1367,166"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1integrator_1_1MDIntegrator.html" title=" " alt="" coords="889,91,1057,133"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="599,37,797,64"/>
+<area shape="rect" id="node4" title=" " alt="" coords="301,27,472,69"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,35,88,61"/>
+<area shape="rect" id="node6" href="$structespressopp_1_1integrator_1_1ExtensionList.html" title=" " alt="" coords="614,91,782,133"/>
+<area shape="rect" id="node7" title=" " alt="" coords="309,93,465,134"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1WallTimer.html" title="timer measuring the wall time." alt="" coords="903,157,1043,198"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1esutil_1_1Timer.html" title="simple timer for obtaining typically microsecond precision timings." alt="" coords="628,157,768,198"/>
 </map>

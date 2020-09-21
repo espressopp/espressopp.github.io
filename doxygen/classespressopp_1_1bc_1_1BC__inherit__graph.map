@@ -1,4 +1,5 @@
 <map id="espressopp::bc::BC" name="espressopp::bc::BC">
-<area shape="rect" id="node2" href="$classespressopp_1_1bc_1_1OrthorhombicBC.html" title="espressopp::bc::OrthorhombicBC" alt="" coords="5,80,221,107"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1bc_1_1SlabBC.html" title="espressopp::bc::SlabBC" alt="" coords="246,80,410,107"/>
+<area shape="rect" id="node1" title="Abstract base class for boundary conditions." alt="" coords="163,5,309,32"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1bc_1_1OrthorhombicBC.html" title=" " alt="" coords="5,80,240,107"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1bc_1_1SlabBC.html" title=" " alt="" coords="264,80,437,107"/>
 </map>

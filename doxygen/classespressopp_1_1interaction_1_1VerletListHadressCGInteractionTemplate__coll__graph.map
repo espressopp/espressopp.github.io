@@ -1,5 +1,12 @@
 <map id="espressopp::interaction::VerletListHadressCGInteractionTemplate&lt; _Potential &gt;" name="espressopp::interaction::VerletListHadressCGInteractionTemplate&lt; _Potential &gt;">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class. " alt="" coords="539,5,696,47"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; Potential,\l esutil::enlarge \&gt;" alt="" coords="545,202,690,258"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1Array2D.html" title="A two&#45;dimensional array (i.e. " alt="" coords="179,239,321,295"/>
+<area shape="rect" id="node1" title=" " alt="" coords="905,91,1140,147"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class." alt="" coords="583,5,757,47"/>
+<area shape="rect" id="node3" title=" " alt="" coords="580,71,760,112"/>
+<area shape="rect" id="node4" title=" " alt="" coords="228,102,319,129"/>
+<area shape="rect" id="node5" title=" " alt="" coords="580,136,760,177"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="590,207,750,263"/>
+<area shape="rect" id="node7" title=" " alt="" coords="184,175,363,202"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1interaction_1_1Potential.html" title=" " alt="" coords="186,227,361,268"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1esutil_1_1Array2D.html" title="A two&#45;dimensional array (i.e." alt="" coords="195,293,351,349"/>
+<area shape="rect" id="node10" title=" " alt="" coords="5,307,135,334"/>
 </map>

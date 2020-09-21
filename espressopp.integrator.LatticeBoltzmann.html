@@ -190,14 +190,14 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.integrator.LatticeBoltzmann" title="espressopp.integrator.LatticeBoltzmann"><code class="xref py py-obj docutils literal"><span class="pre">espressopp.integrator.LatticeBoltzmann</span></code></a></td>
+<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.integrator.LatticeBoltzmann" title="espressopp.integrator.LatticeBoltzmann"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.integrator.LatticeBoltzmann</span></code></a>(…)</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Details</p>
 <span class="target" id="module-espressopp.integrator.LatticeBoltzmann"></span><p>The LatticeBoltzmann (LB) class controls fluid hydrodynamics and allows for hybrid
-LB/MD simulations. It is implemented as <a class="reference internal" href="espressopp.integrator.Extension.html#module-espressopp.integrator.Extension" title="espressopp.integrator.Extension"><code class="xref py py-class docutils literal"><span class="pre">espressopp.integrator.Extension</span></code></a> in ESPResSo++.</p>
+LB/MD simulations. It is implemented as <a class="reference internal" href="espressopp.integrator.Extension.html#module-espressopp.integrator.Extension" title="espressopp.integrator.Extension"><code class="xref py py-class docutils literal notranslate"><span class="pre">espressopp.integrator.Extension</span></code></a> in ESPResSo++.</p>
 <dl class="class">
 <dt id="espressopp.integrator.LatticeBoltzmann.espressopp.integrator.LatticeBoltzmann">
 <em class="property">class </em><code class="descclassname">espressopp.integrator.</code><code class="descname">LatticeBoltzmann</code><span class="sig-paren">(</span><em>system</em>, <em>nodeGrid</em>, <em>a = 1.</em>, <em>tau = 1.</em>, <em>numDims = 3</em>, <em>numVels = 19</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LatticeBoltzmann.espressopp.integrator.LatticeBoltzmann" title="Permalink to this definition">¶</a></dt>
@@ -207,7 +207,7 @@ LB/MD simulations. It is implemented as <a class="reference internal" href="espr
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>system</strong> (<em>shared_ptr</em>) – system object</li>
-<li><strong>nodeGrid</strong> (<a class="reference internal" href="espressopp.Int3D.html#module-espressopp.Int3D" title="espressopp.Int3D"><em>Int3D</em></a>) – arrangement of CPUs in space</li>
+<li><strong>nodeGrid</strong> (<em>Int3D</em>) – arrangement of CPUs in space</li>
 <li><strong>a</strong> (<em>real</em>) – lattice spacing (in lattice units).</li>
 <li><strong>tau</strong> (<em>real</em>) – time discretization (in lattice units)</li>
 <li><strong>numDims</strong> (<em>int</em>) – dimensionality of the LB model</li>
@@ -220,32 +220,32 @@ LB/MD simulations. It is implemented as <a class="reference internal" href="espr
 </tr>
 </tbody>
 </table>
-<p>The LB-fluid in ESPResSo++ is aiming at simulations of complex soft matter systems. 
-They consist of MD particles (colloids, composite nanoparticles or polymer chains) 
+<p>The LB-fluid in ESPResSo++ is aiming at simulations of complex soft matter systems.
+They consist of MD particles (colloids, composite nanoparticles or polymer chains)
 that are solved in the LB-fluid preserving hydrodynamic interactions.</p>
-<p>The default lattice model is D3Q19 (<code class="docutils literal"><span class="pre">numDims</span> <span class="pre">=</span> <span class="pre">3</span></code>, <code class="docutils literal"><span class="pre">numVels</span> <span class="pre">=</span> <span class="pre">19</span></code>) and both lattice
-spacing <code class="docutils literal"><span class="pre">a</span></code> and timestep <code class="docutils literal"><span class="pre">tau</span></code> are set to 1. If some other lattice model is needed
-feel free to modify the code: adding 3D ones is straightforward, 
+<p>The default lattice model is D3Q19 (<code class="docutils literal notranslate"><span class="pre">numDims</span> <span class="pre">=</span> <span class="pre">3</span></code>, <code class="docutils literal notranslate"><span class="pre">numVels</span> <span class="pre">=</span> <span class="pre">19</span></code>) and both lattice
+spacing <code class="docutils literal notranslate"><span class="pre">a</span></code> and timestep <code class="docutils literal notranslate"><span class="pre">tau</span></code> are set to 1. If some other lattice model is needed
+feel free to modify the code: adding 3D ones is straightforward,
 for 2D cases one has to make more thouroughs changes.</p>
-<p>The parameters of the LB-fluid are expected in Lennard-Jones (LJ) units. This 
+<p>The parameters of the LB-fluid are expected in Lennard-Jones (LJ) units. This
 strategy helps users with MD-background think of LB-fluid in term of LJ liquid. One
 only has to specify its properties such as liquid density,
-<span class="math">\(\rho\)</span>, temperature, <span class="math">\(T\)</span>, and viscosity, <span class="math">\(\eta\)</span>.</p>
+<span class="math notranslate nohighlight">\(\rho\)</span>, temperature, <span class="math notranslate nohighlight">\(T\)</span>, and viscosity, <span class="math notranslate nohighlight">\(\eta\)</span>.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
 <p class="last">Standard LJ fluid can be characterized by
-<span class="math">\(\rho \sim 1 [\sigma^{-3}]\)</span>,
-<span class="math">\(T \sim 1 [\epsilon]\)</span>, and 
-<span class="math">\(\eta \sim 5 [\epsilon \tau / \sigma^3]\)</span></p>
+<span class="math notranslate nohighlight">\(\rho \sim 1 [\sigma^{-3}]\)</span>,
+<span class="math notranslate nohighlight">\(T \sim 1 [\epsilon]\)</span>, and
+<span class="math notranslate nohighlight">\(\eta \sim 5 [\epsilon \tau / \sigma^3]\)</span></p>
 </div>
 <p>Example</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">L</span> <span class="o">=</span> <span class="mi">20</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">L</span> <span class="o">=</span> <span class="mi">20</span>
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># create cubic box</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">box</span> <span class="o">=</span> <span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">L</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># The rc+skin= lattice_size</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rc</span> <span class="o">=</span> <span class="mf">0.9</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">skin</span><span class="o">=</span> <span class="mf">0.1</span> 
+<span class="gp">&gt;&gt;&gt; </span><span class="n">skin</span><span class="o">=</span> <span class="mf">0.1</span>
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># initialize empty default system with the created cubic box.</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">standard_system</span><span class="o">.</span><span class="n">Default</span><span class="p">(</span><span class="n">box</span><span class="p">)</span>
@@ -268,14 +268,14 @@ only has to specify its properties such as liquid density,
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>node</strong> (<a class="reference internal" href="espressopp.Int3D.html#module-espressopp.Int3D" title="espressopp.Int3D"><em>Int3D</em></a>) – node index</li>
+<li><strong>node</strong> (<em>Int3D</em>) – node index</li>
 <li><strong>moment</strong> (<em>int</em>) – hydrodynamic moment to get</li>
 </ul>
 </td>
 </tr>
 </tbody>
 </table>
-<p>Use 0 to get density <span class="math">\(\rho\)</span> and 1-3 for         mass flux components <span class="math">\(j_x\)</span>, <span class="math">\(j_y\)</span> and <span class="math">\(j_z\)</span>, correspondingly.</p>
+<p>Use 0 to get density <span class="math notranslate nohighlight">\(\rho\)</span> and 1-3 for         mass flux components <span class="math notranslate nohighlight">\(j_x\)</span>, <span class="math notranslate nohighlight">\(j_y\)</span> and <span class="math notranslate nohighlight">\(j_z\)</span>, correspondingly.</p>
 </dd></dl>
 
 <dl class="method">
@@ -287,7 +287,7 @@ only has to specify its properties such as liquid density,
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>node</strong> (<a class="reference internal" href="espressopp.Int3D.html#module-espressopp.Int3D" title="espressopp.Int3D"><em>Int3D</em></a>) – node index</li>
+<li><strong>node</strong> (<em>Int3D</em>) – node index</li>
 <li><strong>moment</strong> (<em>int</em>) – hydrodynamic moment to set</li>
 <li><strong>value</strong> (<em>real</em>) – value to set</li>
 </ul>
@@ -308,7 +308,7 @@ only has to specify its properties such as liquid density,
 <code class="descname">keepLBDump</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LatticeBoltzmann.espressopp.integrator.LatticeBoltzmann.keepLBDump" title="Permalink to this definition">¶</a></dt>
 <dd><p>Sets a flag to keep previously dumped LB configuration.         Normally the previous dump is deleted after a new one is made.</p>
 <p>Example</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set bulk viscosity</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set bulk viscosity</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">10</span><span class="p">):</span>
 <span class="gp">&gt;&gt;&gt; </span>    <span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">50000</span><span class="p">)</span>
 <span class="go">&gt;&gt;&gt;</span>
@@ -325,7 +325,7 @@ only has to specify its properties such as liquid density,
 <code class="descname">Int3D nodeGrid</code></dt>
 <dd><p>Array of CPUs in space</p>
 <p>Example</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># it is advised to set nodeGrid by internal ESPResSo++ function</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># it is advised to set nodeGrid by internal ESPResSo++ function</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># based on the number of CPUs</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">nodeGrid</span><span class="o">=</span><span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">decomp</span><span class="o">.</span><span class="n">nodeGrid</span><span class="p">(</span><span class="n">espressopp</span><span class="o">.</span><span class="n">MPI</span><span class="o">.</span><span class="n">COMM_WORLD</span><span class="o">.</span><span class="n">size</span><span class="p">,</span><span class="n">box</span><span class="p">,</span><span class="n">rc</span><span class="p">,</span><span class="n">skin</span><span class="p">)</span>
 </pre></div>
@@ -359,9 +359,9 @@ only has to specify its properties such as liquid density,
 <dl class="data">
 <dt>
 <code class="descname">real visc_b</code></dt>
-<dd><p>Bulk viscosity (<em>LJ units</em>), affects <code class="xref py py-data docutils literal"><span class="pre">gamma_b</span></code>.</p>
+<dd><p>Bulk viscosity (<em>LJ units</em>), affects <code class="xref py py-data docutils literal notranslate"><span class="pre">gamma_b</span></code>.</p>
 <p>Example</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set bulk viscosity</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set bulk viscosity</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lb</span><span class="o">.</span><span class="n">visc_b</span> <span class="o">=</span> <span class="mf">5.</span>
 </pre></div>
 </div>
@@ -370,9 +370,9 @@ only has to specify its properties such as liquid density,
 <dl class="data">
 <dt>
 <code class="descname">real visc_s</code></dt>
-<dd><p>Shear viscosity (<em>LJ units</em>), affects <code class="xref py py-data docutils literal"><span class="pre">gamma_s</span></code>.</p>
+<dd><p>Shear viscosity (<em>LJ units</em>), affects <code class="xref py py-data docutils literal notranslate"><span class="pre">gamma_s</span></code>.</p>
 <p>Example</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set shear viscosity</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set shear viscosity</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lb</span><span class="o">.</span><span class="n">visc_s</span> <span class="o">=</span> <span class="mf">5.</span>
 </pre></div>
 </div>
@@ -407,7 +407,7 @@ only has to specify its properties such as liquid density,
 <code class="descname">real lbTemp = 0.</code></dt>
 <dd><p>Temperature of the LB fluid (<em>LJ units</em>)</p>
 <p>Example</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">L</span> <span class="o">=</span> <span class="mi">20</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">L</span> <span class="o">=</span> <span class="mi">20</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span> <span class="o">=</span> <span class="mf">1.</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">N</span> <span class="o">=</span> <span class="mi">200</span>
 <span class="go">&gt;&gt;&gt;</span>
@@ -415,7 +415,7 @@ only has to specify its properties such as liquid density,
 <span class="gp">&gt;&gt;&gt; </span><span class="n">box</span> <span class="o">=</span> <span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">L</span><span class="p">,</span> <span class="n">L</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">rc</span><span class="o">=</span><span class="mf">0.9</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">skin</span><span class="o">=</span><span class="mf">0.1</span>
-<span class="gp">&gt;&gt;&gt; </span>
+<span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># initialize Lennard Jones system with the created cubic box and given temperature.</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">standard_system</span><span class="o">.</span><span class="n">LennardJones</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">box</span><span class="p">,</span> <span class="n">temperature</span><span class="o">=</span><span class="n">T</span><span class="p">)</span>
 <span class="go">&gt;&gt;&gt;</span>
@@ -437,7 +437,7 @@ only has to specify its properties such as liquid density,
 <code class="descname">real fricCoeff=5.</code></dt>
 <dd><p>Friction coefficient of the coupling (<em>LJ units</em>)</p>
 <p>Example</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set friction coefficient of the coupling</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set friction coefficient of the coupling</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lb</span><span class="o">.</span><span class="n">fricCoeff</span> <span class="o">=</span> <span class="mf">20.</span>
 </pre></div>
 </div>
@@ -448,7 +448,7 @@ only has to specify its properties such as liquid density,
 <code class="descname">int nSteps = 1</code></dt>
 <dd><p>Timescale contrast (ratio) between LB and MD</p>
 <p>Example</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set time step contrast between LB and MD</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set time step contrast between LB and MD</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lb</span><span class="o">.</span><span class="n">nSteps</span> <span class="o">=</span> <span class="mi">10</span>
 </pre></div>
 </div>
@@ -459,7 +459,7 @@ only has to specify its properties such as liquid density,
 <code class="descname">int profStep = 10000</code></dt>
 <dd><p>Frequency of time profiling</p>
 <p>Example</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set profiling frequency</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># set profiling frequency</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">lb</span><span class="o">.</span><span class="n">profStep</span> <span class="o">=</span> <span class="mi">5000</span>
 </pre></div>
 </div>
@@ -529,7 +529,8 @@ only has to specify its properties such as liquid density,
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

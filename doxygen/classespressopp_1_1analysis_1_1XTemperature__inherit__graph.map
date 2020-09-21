@@ -1,4 +1,5 @@
 <map id="espressopp::analysis::XTemperature" name="espressopp::analysis::XTemperature">
-<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1Observable.html" title="All quantities to be measured derive from this abstract base class. " alt="" coords="26,80,171,121"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,5,192,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="25,169,184,211"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1Observable.html" title="All quantities to be measured derive from this abstract base class." alt="" coords="25,80,184,121"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,5,204,32"/>
 </map>

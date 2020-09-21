@@ -1,5 +1,6 @@
 <map id="espressopp::storage::NodeGrid" name="espressopp::storage::NodeGrid">
-<area shape="rect" id="node2" href="$classespressopp_1_1esutil_1_1Grid.html" title="regular grid decomposition of a box, outside view. " alt="" coords="129,95,257,136"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1Int3D.html" title="espressopp::Int3D" alt="" coords="5,5,135,32"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1Real3D.html" title="espressopp::Real3D" alt="" coords="281,102,422,129"/>
+<area shape="rect" id="node1" title="Node grid point." alt="" coords="131,213,285,255"/>
+<area shape="rect" id="node2" href="$classespressopp_1_1esutil_1_1Grid.html" title="regular grid decomposition of a box, outside view." alt="" coords="138,95,278,136"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1Int3D.html" title=" " alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1Real3D.html" title=" " alt="" coords="302,102,453,129"/>
 </map>

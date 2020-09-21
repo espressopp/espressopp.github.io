@@ -185,7 +185,7 @@
             
   <span class="target" id="module-espressopp.analysis.Temperature"></span><div class="section" id="espressopp-analysis-temperature">
 <h1>espressopp.analysis.Temperature<a class="headerlink" href="#espressopp-analysis-temperature" title="Permalink to this headline">¶</a></h1>
-<p>Calculate the temperature of the system (in <span class="math">\(k_B T\)</span> units).</p>
+<p>Calculate the temperature of the system (in <span class="math notranslate nohighlight">\(k_B T\)</span> units).</p>
 <dl class="function">
 <dt id="espressopp.analysis.Temperature.espressopp.analysis.Temperature">
 <code class="descclassname">espressopp.analysis.</code><code class="descname">Temperature</code><span class="sig-paren">(</span><em>system</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.Temperature.espressopp.analysis.Temperature" title="Permalink to this definition">¶</a></dt>
@@ -201,14 +201,14 @@
 </tr>
 </tbody>
 </table>
-<p>Temperature of the system of <span class="math">\(N\)</span> particles is calculated as:</p>
-<div class="math">
+<p>Temperature of the system of <span class="math notranslate nohighlight">\(N\)</span> particles is calculated as:</p>
+<div class="math notranslate nohighlight">
 \[T = \frac{1}{N_f} \sum^N_{i=1} m_i v_i^2,\]</div>
-<p>where <span class="math">\(m_i\)</span> and <span class="math">\(v_i\)</span> are the mass and velocity of a
-particle <span class="math">\(i\)</span>.</p>
-<p><span class="math">\(N_f = 3N\)</span> is the number of the system’s degrees of freedom.</p>
+<p>where <span class="math notranslate nohighlight">\(m_i\)</span> and <span class="math notranslate nohighlight">\(v_i\)</span> are the mass and velocity of a
+particle <span class="math notranslate nohighlight">\(i\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(N_f = 3N\)</span> is the number of the system’s degrees of freedom.</p>
 <p><strong>Example:</strong></p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># declare an object, e.g., T:</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># declare an object, e.g., T:</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">T</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">Temperature</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
 <span class="go">&gt;&gt;&gt;</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># later in your script compute temperature and print it:</span>
@@ -273,7 +273,8 @@ particle <span class="math">\(i\)</span>.</p>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

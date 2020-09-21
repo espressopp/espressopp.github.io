@@ -1,17 +1,19 @@
 <map id="espressopp::esutil::Array2D&lt; T, outlier_mode &gt;" name="espressopp::esutil::Array2D&lt; T, outlier_mode &gt;">
-<area shape="rect" id="node3" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; shared_ptr\l\&lt; Potential \&gt;, esutil\l::enlarge \&gt;" alt="" coords="556,11,707,82"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; Potential2,\l esutil::enlarge \&gt;" alt="" coords="555,107,707,163"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; Potential1,\l esutil::enlarge \&gt;" alt="" coords="555,187,707,243"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialQM,\l esutil::enlarge \&gt;" alt="" coords="548,267,715,323"/>
-<area shape="rect" id="node7" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialAT,\l esutil::enlarge \&gt;" alt="" coords="550,347,713,403"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialAT2,\l esutil::enlarge \&gt;" alt="" coords="547,427,716,483"/>
-<area shape="rect" id="node9" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; size_t, esutil\l::enlarge \&gt;" alt="" coords="549,507,713,563"/>
-<area shape="rect" id="node11" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; T, exception \&gt;" alt="" coords="544,587,719,629"/>
-<area shape="rect" id="node13" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; espressopp\l::vectorization::interaction\l::LennardJones, esutil::enlarge \&gt;" alt="" coords="525,653,737,723"/>
-<area shape="rect" id="node14" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialAT1,\l esutil::enlarge \&gt;" alt="" coords="547,748,716,804"/>
-<area shape="rect" id="node15" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialCL,\l esutil::enlarge \&gt;" alt="" coords="550,828,713,884"/>
-<area shape="rect" id="node16" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; Potential,\l esutil::enlarge \&gt;" alt="" coords="559,908,704,964"/>
-<area shape="rect" id="node17" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialCG,\l esutil::enlarge \&gt;" alt="" coords="549,988,714,1044"/>
-<area shape="rect" id="node10" href="$classespressopp_1_1vectorization_1_1CellNeighborList.html" title="stores neighbor cells used for all&#45;pair loops (following Newton&#39;s 3rd law) as 2d array second index c..." alt="" coords="787,514,957,555"/>
-<area shape="rect" id="node12" href="$classespressopp_1_1esutil_1_1Array2D_3_01T_00_01enlarge_01_4.html" title="espressopp::esutil\l::Array2D\&lt; T, enlarge \&gt;" alt="" coords="792,587,952,629"/>
+<area shape="rect" id="node1" title="A two&#45;dimensional array (i.e." alt="" coords="184,513,340,569"/>
+<area shape="rect" id="node3" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="608,18,775,89"/>
+<area shape="rect" id="node4" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="607,113,775,169"/>
+<area shape="rect" id="node5" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="607,193,775,249"/>
+<area shape="rect" id="node6" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="600,273,783,329"/>
+<area shape="rect" id="node7" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="603,353,780,409"/>
+<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="599,433,784,489"/>
+<area shape="rect" id="node9" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="601,513,781,569"/>
+<area shape="rect" id="node11" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="595,594,788,635"/>
+<area shape="rect" id="node13" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="599,660,784,716"/>
+<area shape="rect" id="node14" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="575,741,808,811"/>
+<area shape="rect" id="node15" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="603,836,779,892"/>
+<area shape="rect" id="node16" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="602,916,781,972"/>
+<area shape="rect" id="node17" href="$classespressopp_1_1esutil_1_1Array2D.html" title=" " alt="" coords="611,996,771,1052"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,528,135,555"/>
+<area shape="rect" id="node10" href="$classespressopp_1_1vectorization_1_1CellNeighborList.html" title="stores neighbor cells used for all&#45;pair loops (following Newton&#39;s 3rd law) as 2d array second index c..." alt="" coords="857,521,1047,562"/>
+<area shape="rect" id="node12" href="$classespressopp_1_1esutil_1_1Array2D_3_01T_00_01enlarge_01_4.html" title=" " alt="" coords="863,594,1041,635"/>
 </map>
