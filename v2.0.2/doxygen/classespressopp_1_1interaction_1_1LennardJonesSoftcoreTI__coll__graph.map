@@ -1,6 +1,0 @@
-<map id="espressopp::interaction::LennardJonesSoftcoreTI" name="espressopp::interaction::LennardJonesSoftcoreTI">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="espressopp::interaction\l::PotentialTemplate\&lt; Lennard\lJonesSoftcoreTI \&gt;" alt="" coords="1049,138,1243,194"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title="espressopp::interaction\l::Potential" alt="" coords="321,71,479,112"/>
-<area shape="rect" id="node9" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="627,111,831,152"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1RealND.html" title="espressopp::RealND" alt="" coords="328,311,472,338"/>
-</map>

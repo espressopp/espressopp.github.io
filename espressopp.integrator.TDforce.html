@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>espressopp.integrator.TDforce &mdash; ESPResSo++ vlatest</title>
+  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="integrator" href="integrator.html"/>
-        <link rel="next" title="espressopp.integrator.VelocityVerlet" href="espressopp.integrator.VelocityVerlet.html"/>
-        <link rel="prev" title="espressopp.integrator.StochasticVelocityRescaling" href="espressopp.integrator.StochasticVelocityRescaling.html"/> 
+        <link rel="next" title="&lt;no title&gt;" href="espressopp.integrator.VelocityVerlet.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="espressopp.integrator.StochasticVelocityRescaling.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -92,26 +92,10 @@
           
             
             
-                <ul class="current">
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="integrator.html">integrator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -162,7 +146,7 @@
         
           <li><a href="integrator.html">integrator</a> &raquo;</li>
         
-      <li>espressopp.integrator.TDforce</li>
+      <li>&lt;no title&gt;</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -181,79 +165,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="module-espressopp.integrator.TDforce"></span><div class="section" id="espressopp-integrator-tdforce">
-<h1>espressopp.integrator.TDforce<a class="headerlink" href="#espressopp-integrator-tdforce" title="Permalink to this headline">¶</a></h1>
-<p>Thermodynamic force.</p>
-<p>Example - how to turn on thermodynamic force (except for multiple moving spherical regions)</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fthd</span><span class="o">=</span><span class="s2">&quot;tabletf.xvg&quot;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">thdforce</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">TDforce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span><span class="n">verletlist</span><span class="p">)</span> <span class="c1">#info about centre and shape of adress region come from the verletlist, info about size of adress region not needed, tabulated file tabletf.xvg should be appropriate for the region size</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">thdforce</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">itype</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;tabletf.xvg&quot;</span><span class="p">,</span><span class="nb">type</span><span class="o">=</span><span class="n">typeCG</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">thdforce</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Example - how to turn on thermodynamic force for multiple moving spherical regions</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fthd</span><span class="o">=</span><span class="s2">&quot;tabletf.xvg&quot;</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">thdforce</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">TDforce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">verletlist</span><span class="p">,</span> <span class="n">startdist</span> <span class="o">=</span> <span class="mf">0.9</span><span class="p">,</span> <span class="n">enddist</span> <span class="o">=</span> <span class="mf">2.1</span><span class="p">,</span> <span class="n">edgeweightmultiplier</span> <span class="o">=</span> <span class="mi">20</span><span class="p">)</span> <span class="c1">#info about moving centres come from the verletlist. Info about size of adress region not needed, tabulated file tabletf.xvg should be appropriate for the region size (enddist - startdist)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">thdforce</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">itype</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;tabletf.xvg&quot;</span><span class="p">,</span><span class="nb">type</span><span class="o">=</span><span class="n">typeCG</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">thdforce</span><span class="p">)</span>
-</pre></div>
-</div>
-<dl class="function">
-<dt id="espressopp.integrator.TDforce.espressopp.integrator.TDforce">
-<code class="descclassname">espressopp.integrator.</code><code class="descname">TDforce</code><span class="sig-paren">(</span><em>system</em>, <em>verletlist</em>, <em>startdist</em>, <em>enddist</em>, <em>edgeweightmultiplier</em>, <em>slow</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.TDforce.espressopp.integrator.TDforce" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> (<em>shared_ptr&lt;System&gt;</em>) – system object</li>
-<li><strong>verletlist</strong> (<em>shared_ptr&lt;VerletListAdress&gt;</em>) – verletlist object</li>
-<li><strong>startdist</strong> (<em>real</em>) – (default: 0.0) starting distance from center at which the TD force is actually applied. Needs to be altered when using several moving spherical regions (not used for static or single moving region)</li>
-<li><strong>enddist</strong> (<em>real</em>) – (default: 0.0) end distance from center up to which the TD force is actually applied. Needs to be altered when using several moving spherical regions (not used for static or single moving region)</li>
-<li><strong>edgeweightmultiplier</strong> (<em>int</em>) – (default: 20) interpolation parameter for multiple overlapping spherical regions (see Kreis et al., JCTC doi: 10.1021/acs.jctc.6b00440), the default should be fine for most applications (not used for static or single moving region)</li>
-<li><strong>slow</strong> (<em>bool</em>) – (default: False) When used with RESPA Velocity Verlet, this flag decides whether the TD force is applied together with the slow, less frequently updated forces (slow=True) or with the fast, more frequently updated (slow=False) forces.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.integrator.TDforce.espressopp.integrator.TDforce.addForce">
-<code class="descclassname">espressopp.integrator.TDforce.</code><code class="descname">addForce</code><span class="sig-paren">(</span><em>itype</em>, <em>filename</em>, <em>type</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.TDforce.espressopp.integrator.TDforce.addForce" title="Permalink to this definition">¶</a></dt>
-<dd><p>Adds a thermodynamic force acting on particles of type “type”.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>itype</strong> (<em>int</em>) – interpolation type 1: linear, 2: Akima, 3: Cubic</li>
-<li><strong>filename</strong> (<em>string</em>) – filename for TD force file</li>
-<li><strong>type</strong> (<em>int</em>) – particle type on which the TD force needs to be applied</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.integrator.TDforce.espressopp.integrator.TDforce.computeTDEnergy">
-<code class="descclassname">espressopp.integrator.TDforce.</code><code class="descname">computeTDEnergy</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.TDforce.espressopp.integrator.TDforce.computeTDEnergy" title="Permalink to this definition">¶</a></dt>
-<dd><p>Computes the energy corresponding to the thermodynamics force (summing over all different particle types and thermodynamic forces on them).</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">real</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-</div>
-
+  
 
            </div>
            <div class="articleComments">
@@ -264,10 +176,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.integrator.VelocityVerlet.html" class="btn btn-neutral float-right" title="espressopp.integrator.VelocityVerlet" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.integrator.VelocityVerlet.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.integrator.StochasticVelocityRescaling.html" class="btn btn-neutral" title="espressopp.integrator.StochasticVelocityRescaling" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.integrator.StochasticVelocityRescaling.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -276,7 +188,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2021, Max Planck Institute for Polymer Research.
 
     </p>
   </div>

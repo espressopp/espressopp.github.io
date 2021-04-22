@@ -1,6 +1,0 @@
-<map id="espressopp::interaction::StillingerWeberPairTermCapped" name="espressopp::interaction::StillingerWeberPairTermCapped">
-<area shape="rect" id="node1" title="This class provides methods to compute forces and energies of 2 body term of Stillinger&#45;Weber potenti..." alt="" coords="955,13,1191,54"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title=" " alt="" coords="684,5,905,61"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title=" " alt="" coords="5,15,180,57"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="229,45,459,86"/>
-</map>

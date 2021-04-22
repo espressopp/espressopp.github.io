@@ -111,7 +111,6 @@
 <li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -190,184 +189,20 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.bc.OrthorhombicBC" title="espressopp.bc.OrthorhombicBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.bc.OrthorhombicBC</span></code></a>(*args,&nbsp;**kwds)</td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.bc.OrthorhombicBC</span></code></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#module-espressopp.bc.SlabBC" title="espressopp.bc.SlabBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.bc.SlabBC</span></code></a>(*args,&nbsp;**kwds)</td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.bc.SlabBC</span></code></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Details</p>
-<span class="target" id="module-espressopp.bc.BC"></span><p>This is the abstract base class for all boundary condition objects.
-It cannot be used directly. All derived classes implement at least
-the following methods:</p>
-<dl class="class">
-<dt id="espressopp.bc.BC.espressopp.bc.BC">
-<em class="property">class </em><code class="descclassname">espressopp.bc.</code><code class="descname">BC</code><a class="headerlink" href="#espressopp.bc.BC.espressopp.bc.BC" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
-<dt id="espressopp.bc.BC.espressopp.bc.BC.getFoldedPosition">
-<code class="descname">getFoldedPosition</code><span class="sig-paren">(</span><em>pos</em>, <em>imageBox</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.BC.espressopp.bc.BC.getFoldedPosition" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>pos</strong> – </li>
-<li><strong>imageBox</strong> – (default: None)</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="espressopp.bc.BC.espressopp.bc.BC.getMinimumImageVector">
-<code class="descname">getMinimumImageVector</code><span class="sig-paren">(</span><em>pos1</em>, <em>pos2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.BC.espressopp.bc.BC.getMinimumImageVector" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>pos1</strong> – </li>
-<li><strong>pos2</strong> – </li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="espressopp.bc.BC.espressopp.bc.BC.getRandomPos">
-<code class="descname">getRandomPos</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.BC.espressopp.bc.BC.getRandomPos" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="espressopp.bc.BC.espressopp.bc.BC.getUnfoldedPosition">
-<code class="descname">getUnfoldedPosition</code><span class="sig-paren">(</span><em>pos</em>, <em>imageBox</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.BC.espressopp.bc.BC.getUnfoldedPosition" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>pos</strong> – </li>
-<li><strong>imageBox</strong> – </li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<p><cite>pos</cite>, <cite>pos1</cite> and <cite>pos2</cite> are particle coordinates ( type: (<cite>float</cite>, <cite>float</cite>, <cite>float</cite>) ).
-<cite>imageBox</cite> ( type: (<cite>int</cite>, <cite>int</cite>, <cite>int</cite>) ) specifies the</p>
-</dd></dl>
-
-<div class="section" id="module-espressopp.bc.OrthorhombicBC">
-<span id="espressopp-bc-orthorombicbc"></span><h2>espressopp.bc.OrthorombicBC<a class="headerlink" href="#module-espressopp.bc.OrthorhombicBC" title="Permalink to this headline">¶</a></h2>
-<p>Like all boundary condition objects, this class implements
-all the methods of the base class <strong>BC</strong> , which are described in detail
-in the documentation of the abstract class <strong>BC</strong>.</p>
-<p>The OrthorhombicBC class is responsible for the orthorhombic boundary condition.
-Currently only periodic boundary conditions are supported.</p>
-<p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boxsize</span> <span class="o">=</span> <span class="p">(</span><span class="n">Lx</span><span class="p">,</span> <span class="n">Ly</span><span class="p">,</span> <span class="n">Lz</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">bc</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">OrthorhombicBC</span><span class="p">(</span><span class="n">rng</span><span class="p">,</span> <span class="n">boxsize</span><span class="p">)</span>
-</pre></div>
+<div class="section" id="espressopp-bc-orthorombicbc">
+<h2>espressopp.bc.OrthorombicBC<a class="headerlink" href="#espressopp-bc-orthorombicbc" title="Permalink to this headline">¶</a></h2>
 </div>
-<dl class="method">
-<dt id="espressopp.bc.OrthorhombicBC.espressopp.bc.OrthorhombicBC">
-<code class="descclassname">espressopp.bc.</code><code class="descname">OrthorhombicBC</code><span class="sig-paren">(</span><em>rng</em>, <em>boxL</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.OrthorhombicBC.espressopp.bc.OrthorhombicBC" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>rng</strong> – </li>
-<li><strong>boxL</strong> (<em>real</em>) – (default: 1.0)</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="espressopp.bc.OrthorhombicBC.espressopp.bc.OrthorhombicBC.setBoxL">
-<code class="descclassname">espressopp.bc.OrthorhombicBC.</code><code class="descname">setBoxL</code><span class="sig-paren">(</span><em>boxL</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.OrthorhombicBC.espressopp.bc.OrthorhombicBC.setBoxL" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>boxL</strong> – </td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-</div>
-<div class="section" id="module-espressopp.bc.SlabBC">
-<span id="espressopp-bc-slabbc"></span><h2>espressopp.bc.SlabBC<a class="headerlink" href="#module-espressopp.bc.SlabBC" title="Permalink to this headline">¶</a></h2>
-<p>Like all boundary condition objects, this class implements all the methods of
-the base class <strong>BC</strong> , which are described in detail in the documentation of
-the abstract class <strong>BC</strong>.</p>
-<p>The SlabBC class is responsible for a cuboid boundary condition that is periodic
-in all but the “dir” dimension. Currently, dir is set arbirtrarily to “0” (the
-x-direction).</p>
-<p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boxsize</span> <span class="o">=</span> <span class="p">(</span><span class="n">Lx</span><span class="p">,</span> <span class="n">Ly</span><span class="p">,</span> <span class="n">Lz</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">bc</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">SlabBC</span><span class="p">(</span><span class="n">rng</span><span class="p">,</span> <span class="n">boxsize</span><span class="p">)</span>
-</pre></div>
-</div>
-<dl class="method">
-<dt id="espressopp.bc.SlabBC.espressopp.bc.SlabBC">
-<code class="descclassname">espressopp.bc.</code><code class="descname">SlabBC</code><span class="sig-paren">(</span><em>rng</em>, <em>boxL</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.SlabBC.espressopp.bc.SlabBC" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>rng</strong> – </li>
-<li><strong>boxL</strong> (<em>real</em>) – (default: 1.0)</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="espressopp.bc.SlabBC.espressopp.bc.SlabBC.setBoxL">
-<code class="descclassname">espressopp.bc.SlabBC.</code><code class="descname">setBoxL</code><span class="sig-paren">(</span><em>boxL</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.SlabBC.espressopp.bc.SlabBC.setBoxL" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>boxL</strong> – </td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
+<div class="section" id="espressopp-bc-slabbc">
+<h2>espressopp.bc.SlabBC<a class="headerlink" href="#espressopp-bc-slabbc" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -393,7 +228,7 @@ x-direction).</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2021, Max Planck Institute for Polymer Research.
 
     </p>
   </div>

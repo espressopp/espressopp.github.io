@@ -1,8 +1,0 @@
-<map id="espressopp::integrator::LatticeBoltzmann" name="espressopp::integrator::LatticeBoltzmann">
-<area shape="rect" id="node2" href="$classespressopp_1_1integrator_1_1Extension.html" title="espressopp::integrator\l::Extension" alt="" coords="1023,89,1173,130"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="625,36,812,63"/>
-<area shape="rect" id="node8" href="$classespressopp_1_1esutil_1_1WallTimer.html" title="timer measuring the wall time. " alt="" coords="1034,229,1162,270"/>
-<area shape="rect" id="node9" href="$classespressopp_1_1esutil_1_1Timer.html" title="simple timer for obtaining typically microsecond precision timings. " alt="" coords="655,229,783,270"/>
-<area shape="rect" id="node10" href="$classespressopp_1_1Real3D.html" title="espressopp::Real3D" alt="" coords="1027,295,1169,321"/>
-<area shape="rect" id="node12" href="$classespressopp_1_1Int3D.html" title="espressopp::Int3D" alt="" coords="1033,384,1163,411"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="espressopp::interaction::VerletListAdressATATCGInteractionTemplate&lt; _PotentialAT1, _PotentialAT2, _PotentialCG &gt;" name="espressopp::interaction::VerletListAdressATATCGInteractionTemplate&lt; _PotentialAT1, _PotentialAT2, _PotentialCG &gt;">
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class. " alt="" coords="563,5,721,47"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialCG,\l esutil::enlarge \&gt;" alt="" coords="559,202,725,258"/>
-<area shape="rect" id="node7" href="$classespressopp_1_1esutil_1_1Array2D.html" title="A two&#45;dimensional array (i.e. " alt="" coords="191,281,333,337"/>
-<area shape="rect" id="node10" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialAT2,\l esutil::enlarge \&gt;" alt="" coords="557,282,727,338"/>
-<area shape="rect" id="node12" href="$classespressopp_1_1esutil_1_1Array2D.html" title="espressopp::esutil\l::Array2D\&lt; PotentialAT1,\l esutil::enlarge \&gt;" alt="" coords="557,362,727,418"/>
-</map>

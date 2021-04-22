@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>espressopp.interaction.DihedralRB &mdash; ESPResSo++ vlatest</title>
+  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="interaction" href="interaction.html"/>
-        <link rel="next" title="espressopp.interaction.OPLS" href="espressopp.interaction.OPLS.html"/>
-        <link rel="prev" title="espressopp.interaction.DihedralPotential" href="espressopp.interaction.DihedralPotential.html"/> 
+        <link rel="next" title="&lt;no title&gt;" href="espressopp.interaction.OPLS.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="espressopp.interaction.DihedralPotential.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -92,26 +92,10 @@
           
             
             
-                <ul class="current">
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -162,7 +146,7 @@
         
           <li><a href="interaction.html">interaction</a> &raquo;</li>
         
-      <li>espressopp.interaction.DihedralRB</li>
+      <li>&lt;no title&gt;</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -181,88 +165,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="module-espressopp.interaction.DihedralRB"></span><div class="section" id="espressopp-interaction-dihedralrb">
-<h1>espressopp.interaction.DihedralRB<a class="headerlink" href="#espressopp-interaction-dihedralrb" title="Permalink to this headline">¶</a></h1>
-<p>The proper dihedral with Ryckaert-Bellemans form.</p>
-<div class="math notranslate nohighlight">
-\[U_{rb}(\phi_{ijkl}) = \sum_{n=0}^{5} K_n (cos(\theta))^n\]</div>
-<p>where the <span class="math notranslate nohighlight">\(\theta = \phi - 180^\circ\)</span> and <span class="math notranslate nohighlight">\(K_{0\dotso5}\)</span> are the coefficients.</p>
-<p>By default the IUPAC convention is used, where <span class="math notranslate nohighlight">\(\phi\)</span> is the angle between planes
-<span class="math notranslate nohighlight">\(ijk\)</span> and <span class="math notranslate nohighlight">\(jkl\)</span>. The <span class="math notranslate nohighlight">\(0^\circ\)</span> corresponds to the <em>cis</em> configuration.</p>
-<p>Reference: <a class="reference external" href="http://www.gromacs.org/Documentation/Manual">http://www.gromacs.org/Documentation/Manual</a></p>
-<dl class="function">
-<dt id="espressopp.interaction.DihedralRB.espressopp.interaction.DihedralRB">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">DihedralRB</code><span class="sig-paren">(</span><em>K0</em>, <em>K1</em>, <em>K2</em>, <em>K3</em>, <em>K4</em>, <em>K5</em>, <em>iupac</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralRB.espressopp.interaction.DihedralRB" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>K0</strong> (<em>real</em>) – (default: 0.0)</li>
-<li><strong>K1</strong> (<em>real</em>) – (default: 0.0)</li>
-<li><strong>K2</strong> (<em>real</em>) – (default: 0.0)</li>
-<li><strong>K3</strong> (<em>real</em>) – (default: 0.0)</li>
-<li><strong>K4</strong> (<em>real</em>) – (default: 0.0)</li>
-<li><strong>K5</strong> (<em>real</em>) – (default: 0.0)</li>
-<li><strong>iupac</strong> – (default: True)</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.interaction.DihedralRB.espressopp.interaction.FixedQuadrupleListDihedralRB">
-<code class="descclassname">espressopp.interaction.</code><code class="descname">FixedQuadrupleListDihedralRB</code><span class="sig-paren">(</span><em>system</em>, <em>vl</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralRB.espressopp.interaction.FixedQuadrupleListDihedralRB" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> – </li>
-<li><strong>vl</strong> – </li>
-<li><strong>potential</strong> – </li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.interaction.DihedralRB.espressopp.interaction.FixedQuadrupleListDihedralRB.getFixedQuadrupleList">
-<code class="descclassname">espressopp.interaction.FixedQuadrupleListDihedralRB.</code><code class="descname">getFixedQuadrupleList</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralRB.espressopp.interaction.FixedQuadrupleListDihedralRB.getFixedQuadrupleList" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">A Python list of lists.</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.interaction.DihedralRB.espressopp.interaction.FixedQuadrupleListDihedralRB.setPotential">
-<code class="descclassname">espressopp.interaction.FixedQuadrupleListDihedralRB.</code><code class="descname">setPotential</code><span class="sig-paren">(</span><em>type1</em>, <em>type2</em>, <em>potential</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.DihedralRB.espressopp.interaction.FixedQuadrupleListDihedralRB.setPotential" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>type1</strong> – </li>
-<li><strong>type2</strong> – </li>
-<li><strong>potential</strong> – </li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-</div>
-
+  
 
            </div>
            <div class="articleComments">
@@ -273,10 +176,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.interaction.OPLS.html" class="btn btn-neutral float-right" title="espressopp.interaction.OPLS" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.interaction.OPLS.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.interaction.DihedralPotential.html" class="btn btn-neutral" title="espressopp.interaction.DihedralPotential" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.interaction.DihedralPotential.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -285,7 +188,7 @@
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2021, Max Planck Institute for Polymer Research.
 
     </p>
   </div>

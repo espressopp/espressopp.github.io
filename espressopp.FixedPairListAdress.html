@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>espressopp.FixedPairListAdress &mdash; ESPResSo++ vlatest</title>
+  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="espressopp" href="espressopp.html"/>
-        <link rel="next" title="espressopp.FixedQuadrupleAngleList" href="espressopp.FixedQuadrupleAngleList.html"/>
-        <link rel="prev" title="espressopp.FixedPairList" href="espressopp.FixedPairList.html"/> 
+        <link rel="next" title="&lt;no title&gt;" href="espressopp.FixedQuadrupleAngleList.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="espressopp.FixedPairList.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -92,26 +92,10 @@
           
             
             
-                <ul class="current">
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -162,7 +146,7 @@
         
           <li><a href="espressopp.html">espressopp</a> &raquo;</li>
         
-      <li>espressopp.FixedPairListAdress</li>
+      <li>&lt;no title&gt;</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -181,93 +165,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="module-espressopp.FixedPairListAdress"></span><div class="section" id="espressopp-fixedpairlistadress">
-<h1>espressopp.FixedPairListAdress<a class="headerlink" href="#espressopp-fixedpairlistadress" title="Permalink to this headline">¶</a></h1>
-<p>The FixedPairListAdress is the Fixed Pair List to be used for AdResS or H-AdResS
-simulations. When creating the FixedPairListAdress one has to provide the storage
-and the tuples. Afterwards the bonds can be added. In the example “bonds” is a
-python list of the form ( (pid1, pid2), (pid3, pid4), …) where each inner pair
-defines a bond between the particles with the given particle ids.</p>
-<p>Example - creating the FixedPairListAdress and adding bonds:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ftpl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedTupleList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">fpl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedPairListAdress</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">,</span> <span class="n">ftpl</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">fpl</span><span class="o">.</span><span class="n">addBonds</span><span class="p">(</span><span class="n">bonds</span><span class="p">)</span>
-</pre></div>
-</div>
-<dl class="function">
-<dt id="espressopp.FixedPairListAdress.espressopp.FixedPairListAdress">
-<code class="descclassname">espressopp.</code><code class="descname">FixedPairListAdress</code><span class="sig-paren">(</span><em>storage</em>, <em>fixedtupleList</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.FixedPairListAdress.espressopp.FixedPairListAdress" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>storage</strong> – </li>
-<li><strong>fixedtupleList</strong> – </li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.add">
-<code class="descclassname">espressopp.FixedPairListAdress.</code><code class="descname">add</code><span class="sig-paren">(</span><em>pid1</em>, <em>pid2</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.add" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>pid1</strong> – </li>
-<li><strong>pid2</strong> – </li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.addBonds">
-<code class="descclassname">espressopp.FixedPairListAdress.</code><code class="descname">addBonds</code><span class="sig-paren">(</span><em>bondlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.addBonds" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>bondlist</strong> – </td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.remove">
-<code class="descclassname">espressopp.FixedPairListAdress.</code><code class="descname">remove</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.remove" title="Permalink to this definition">¶</a></dt>
-<dt>
-<code class="descname">remove the FixedPairListAdress and disconnect</code></dt>
-<dd></dd></dl>
-
-<dl class="function">
-<dt id="espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.getBonds">
-<code class="descclassname">espressopp.FixedPairListAdress.</code><code class="descname">getBonds</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.FixedPairListAdress.espressopp.FixedPairListAdress.getBonds" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-</div>
-
+  
 
            </div>
            <div class="articleComments">
@@ -278,10 +176,10 @@ defines a bond between the particles with the given particle ids.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.FixedQuadrupleAngleList.html" class="btn btn-neutral float-right" title="espressopp.FixedQuadrupleAngleList" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.FixedQuadrupleAngleList.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.FixedPairList.html" class="btn btn-neutral" title="espressopp.FixedPairList" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.FixedPairList.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -290,7 +188,7 @@ defines a bond between the particles with the given particle ids.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2021, Max Planck Institute for Polymer Research.
 
     </p>
   </div>

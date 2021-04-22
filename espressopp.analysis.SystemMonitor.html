@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>espressopp.analysis.SystemMonitor &mdash; ESPResSo++ vlatest</title>
+  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="analysis" href="analysis.html"/>
-        <link rel="next" title="espressopp.analysis.Velocities" href="espressopp.analysis.Velocities.html"/>
-        <link rel="prev" title="espressopp.analysis.SubregionTracking" href="espressopp.analysis.SubregionTracking.html"/> 
+        <link rel="next" title="&lt;no title&gt;" href="espressopp.analysis.Velocities.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="espressopp.analysis.SubregionTracking.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -92,26 +92,10 @@
           
             
             
-                <ul class="current">
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="analysis.html">analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -162,7 +146,7 @@
         
           <li><a href="analysis.html">analysis</a> &raquo;</li>
         
-      <li>espressopp.analysis.SystemMonitor</li>
+      <li>&lt;no title&gt;</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -181,87 +165,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="module-espressopp.analysis.SystemMonitor"></span><div class="section" id="espressopp-analysis-systemmonitor">
-<h1>espressopp.analysis.SystemMonitor<a class="headerlink" href="#espressopp-analysis-systemmonitor" title="Permalink to this headline">¶</a></h1>
-<p>SystemMonitor prints and logs to file values obtained from Observables like
-temperature, pressure or potential energy.</p>
-<dl class="function">
-<dt id="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor">
-<code class="descclassname">espressopp.analysis.</code><code class="descname">SystemMonitor</code><span class="sig-paren">(</span><em>system</em>, <em>integrator</em>, <em>output</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> (<em>espressopp.System</em>) – The system object.</li>
-<li><strong>integrator</strong> (<em>espressopp.integrator.MDIntegrator</em>) – The MD integrator.</li>
-<li><strong>output</strong> (<em>espressopp.analysis.SystemMonitorOutputCSV</em>) – The output object.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.add_observable">
-<code class="descclassname">espressopp.analysis.SystemMonitor.</code><code class="descname">add_observable</code><span class="sig-paren">(</span><em>name</em>, <em>observable</em>, <em>is_visible</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.add_observable" title="Permalink to this definition">¶</a></dt>
-<dd><p>The function adds new observable to SystemMonitor.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>name</strong> (<em>str</em>) – The name of observable</li>
-<li><strong>observable</strong> – The observable, eg. espressopp.analysis.PotentialEnergy</li>
-<li><strong>is_visible</strong> (<em>bool</em>) – If set to True then values will be print on console.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.info">
-<code class="descclassname">espressopp.analysis.SystemMonitor.</code><code class="descname">info</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitor.info" title="Permalink to this definition">¶</a></dt>
-<dd><p>The method print out on console the values of observables.</p>
-</dd></dl>
-
-<p><strong>CSV Output</strong></p>
-<p>The output of SystemMonitor to CSV files.</p>
-<dl class="function">
-<dt id="espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitorOutputCSV">
-<code class="descclassname">espressopp.analysis.</code><code class="descname">SystemMonitorOutputCSV</code><span class="sig-paren">(</span><em>file_name</em>, <em>delimiter</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.SystemMonitor.espressopp.analysis.SystemMonitorOutputCSV" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>file_name</strong> (<em>str</em>) – The name of CSV file.</li>
-<li><strong>delimiter</strong> (<em>str</em>) – The field delimiter, by default it is tabulator.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<p>Example</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">interaction</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">VerletListLennardJones</span><span class="p">(</span><span class="n">verletlist</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">interaction</span><span class="o">.</span><span class="n">setPotential</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
-<span class="go">                             potential=espressopp.interaction.LennardJones(epsilon=1.0, sigma=1.0,</span>
-<span class="go">                                                                           cutoff=2.0))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">system_monitor_csv</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">SystemMonitorOutputCSV</span><span class="p">(</span><span class="s1">&#39;out.csv&#39;</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">system_monitor</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">SystemMonitor</span><span class="p">(</span>
-<span class="go">        system, integrator, espressopp.analysis.SystemMonitorOutputCSV(&#39;out.csv&#39;))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">system_monitor</span><span class="o">.</span><span class="n">add_observable</span><span class="p">(</span><span class="s1">&#39;pot&#39;</span><span class="p">,</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">PotentialEnergy</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">interaction</span><span class="p">))</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ext_analysis</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">system_monitor</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">ext_analysis</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-
+  
 
            </div>
            <div class="articleComments">
@@ -272,10 +176,10 @@ temperature, pressure or potential energy.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.analysis.Velocities.html" class="btn btn-neutral float-right" title="espressopp.analysis.Velocities" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.analysis.Velocities.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.analysis.SubregionTracking.html" class="btn btn-neutral" title="espressopp.analysis.SubregionTracking" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.analysis.SubregionTracking.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -284,7 +188,7 @@ temperature, pressure or potential energy.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2021, Max Planck Institute for Polymer Research.
 
     </p>
   </div>

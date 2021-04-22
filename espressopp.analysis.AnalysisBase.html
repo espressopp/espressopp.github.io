@@ -38,7 +38,7 @@
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="analysis" href="analysis.html"/>
         <link rel="next" title="espressopp.analysis.LBOutput" href="espressopp.analysis.LBOutput.html"/>
-        <link rel="prev" title="espressopp.analysis.AllParticlePos" href="espressopp.analysis.AllParticlePos.html"/> 
+        <link rel="prev" title="&lt;no title&gt;" href="espressopp.analysis.AllParticlePos.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -111,7 +111,6 @@
 <li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -188,95 +187,14 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="espressopp.analysis.LBOutput.html">espressopp.analysis.LBOutput</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.analysis.LBOutput.html#module-espressopp.analysis.LBOutputScreen">espressopp.analysis.LBOutputScreen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.analysis.LBOutput.html#module-espressopp.analysis.LBOutputVzInTime">espressopp.analysis.LBOutputVzInTime</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.analysis.LBOutput.html#module-espressopp.analysis.LBOutputVzOfX">espressopp.analysis.LBOutputVzOfX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.analysis.LBOutput.html#espressopp-analysis-lboutputscreen">espressopp.analysis.LBOutputScreen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.analysis.LBOutput.html#espressopp-analysis-lboutputvzintime">espressopp.analysis.LBOutputVzInTime</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.analysis.LBOutput.html#espressopp-analysis-lboutputvzofx">espressopp.analysis.LBOutputVzOfX</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="espressopp.analysis.OrderParameter.html">espressopp.analysis.OrderParameter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="espressopp.analysis.ParticleRadiusDistribution.html">espressopp.analysis.ParticleRadiusDistribution</a></li>
-<li class="toctree-l1"><a class="reference internal" href="espressopp.analysis.PressureTensor.html">espressopp.analysis.PressureTensor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="espressopp.analysis.PressureTensorLayer.html">espressopp.analysis.PressureTensorLayer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="espressopp.analysis.PressureTensorMultiLayer.html">espressopp.analysis.PressureTensorMultiLayer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="espressopp.analysis.Temperature.html">espressopp.analysis.Temperature</a></li>
-<li class="toctree-l1"><a class="reference internal" href="espressopp.analysis.Test.html">espressopp.analysis.Test</a></li>
 </ul>
 </div>
 <p class="rubric">Details</p>
-<span class="target" id="module-espressopp.analysis.AnalysisBase"></span><p>This abstract base class provides the interface and some basic
-functionality for classes that do analysis or observable measurements</p>
-<p>It provides the following methods:</p>
-<dl class="function">
-<dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.compute">
-<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">compute</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.compute" title="Permalink to this definition">¶</a></dt>
-<dd><p>Computes the instant value of the observable.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">a python list or a scalar</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getAverageValue">
-<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">getAverageValue</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getAverageValue" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns the average value for the observable and the standard deviation.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">a python list</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getNumberOfMeasurements">
-<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">getNumberOfMeasurements</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.getNumberOfMeasurements" title="Permalink to this definition">¶</a></dt>
-<dd><p>counts the number of measurements that have been performed (standalone or in integrator)
-does _not_ include measurements that have been done using “compute()”</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.performMeasurement">
-<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">performMeasurement</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.performMeasurement" title="Permalink to this definition">¶</a></dt>
-<dd><p>Computes the observable and updates average and standard deviation</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.reset">
-<code class="descclassname">espressopp.analysis.AnalysisBase.</code><code class="descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.AnalysisBase.espressopp.analysis.AnalysisBase.reset" title="Permalink to this definition">¶</a></dt>
-<dd><p>Resets average and standard deviation</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
 </div>
 
 
@@ -292,7 +210,7 @@ does _not_ include measurements that have been done using “compute()”</p>
         <a href="espressopp.analysis.LBOutput.html" class="btn btn-neutral float-right" title="espressopp.analysis.LBOutput" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.analysis.AllParticlePos.html" class="btn btn-neutral" title="espressopp.analysis.AllParticlePos" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.analysis.AllParticlePos.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -301,7 +219,7 @@ does _not_ include measurements that have been done using “compute()”</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2021, Max Planck Institute for Polymer Research.
 
     </p>
   </div>

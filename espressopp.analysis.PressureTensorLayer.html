@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>espressopp.analysis.PressureTensorLayer &mdash; ESPResSo++ vlatest</title>
+  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="espressopp.analysis.AnalysisBase" href="espressopp.analysis.AnalysisBase.html"/>
-        <link rel="next" title="espressopp.analysis.PressureTensorMultiLayer" href="espressopp.analysis.PressureTensorMultiLayer.html"/>
-        <link rel="prev" title="espressopp.analysis.PressureTensor" href="espressopp.analysis.PressureTensor.html"/> 
+        <link rel="next" title="&lt;no title&gt;" href="espressopp.analysis.PressureTensorMultiLayer.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="espressopp.analysis.PressureTensor.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -92,26 +92,10 @@
           
             
             
-                <ul class="current">
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
-<li class="toctree-l2 current"><a class="reference internal" href="analysis.html">analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -164,7 +148,7 @@
         
           <li><a href="espressopp.analysis.AnalysisBase.html">espressopp.analysis.AnalysisBase</a> &raquo;</li>
         
-      <li>espressopp.analysis.PressureTensorLayer</li>
+      <li>&lt;no title&gt;</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -183,85 +167,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="module-espressopp.analysis.PressureTensorLayer"></span><div class="section" id="espressopp-analysis-pressuretensorlayer">
-<h1>espressopp.analysis.PressureTensorLayer<a class="headerlink" href="#espressopp-analysis-pressuretensorlayer" title="Permalink to this headline">¶</a></h1>
-<p>This class computes the pressure tensor of the system in layer h0.
-It can be used as standalone class in python as well as
-in combination with the integrator extension ExtAnalyze.</p>
-<p>Example of standalone Usage:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pt</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">PressureTensorLayer</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">h0</span><span class="p">,</span> <span class="n">dh</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;pressure tensor of current configuration = &quot;</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">compute</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>or</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pt</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">PressureTensorLayer</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">xrange</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
-<span class="gp">&gt;&gt;&gt; </span>    <span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span>    <span class="n">pt</span><span class="o">.</span><span class="n">performMeasurement</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;average pressure tensor = &quot;</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">getAverageValue</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>Example of usage in integrator with ExtAnalyze:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">pt</span>           <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">analysis</span><span class="o">.</span><span class="n">PressureTensorLayer</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">extension_pt</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">pt</span> <span class="p">,</span> <span class="n">interval</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">extension_pt</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">10000</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">pt_ave</span> <span class="o">=</span> <span class="n">pt</span><span class="o">.</span><span class="n">getAverageValue</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;average Pressure Tensor = &quot;</span><span class="p">,</span> <span class="n">pt_ave</span><span class="p">[:</span><span class="mi">6</span><span class="p">]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;          std deviation = &quot;</span><span class="p">,</span> <span class="n">pt_ave</span><span class="p">[</span><span class="mi">6</span><span class="p">:]</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;number of measurements  = &quot;</span><span class="p">,</span> <span class="n">pt</span><span class="o">.</span><span class="n">getNumberOfMeasurements</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>The following methods are supported:</p>
-<ul class="simple">
-<li><dl class="first docutils">
-<dt>performMeasurement()</dt>
-<dd>computes the pressure tensor and updates average and standard deviation</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>reset()</dt>
-<dd>resets average and standard deviation to 0</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>compute()</dt>
-<dd>computes the instant pressure tensor in layer h0, return value: [xx, yy, zz, xy, xz, yz]</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>getAverageValue()</dt>
-<dd>returns the average pressure tensor and the standard deviation,
-return value: [xx, yy, zz, xy, xz, yz, +-xx, +-yy, +-zz, +-xy, +-xz, +-yz]</dd>
-</dl>
-</li>
-<li><dl class="first docutils">
-<dt>getNumberOfMeasurements()</dt>
-<dd>counts the number of measurements that have been computed (standalone or in integrator)
-does _not_ include measurements that have been done using “compute()”</dd>
-</dl>
-</li>
-</ul>
-<dl class="function">
-<dt id="espressopp.analysis.PressureTensorLayer.espressopp.analysis.PressureTensorLayer">
-<code class="descclassname">espressopp.analysis.</code><code class="descname">PressureTensorLayer</code><span class="sig-paren">(</span><em>system</em>, <em>h0</em>, <em>dh</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.analysis.PressureTensorLayer.espressopp.analysis.PressureTensorLayer" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> – </li>
-<li><strong>h0</strong> – </li>
-<li><strong>dh</strong> – </li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-</div>
-
+  
 
            </div>
            <div class="articleComments">
@@ -272,10 +178,10 @@ does _not_ include measurements that have been done using “compute()”</dd>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.analysis.PressureTensorMultiLayer.html" class="btn btn-neutral float-right" title="espressopp.analysis.PressureTensorMultiLayer" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.analysis.PressureTensorMultiLayer.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.analysis.PressureTensor.html" class="btn btn-neutral" title="espressopp.analysis.PressureTensor" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.analysis.PressureTensor.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -284,7 +190,7 @@ does _not_ include measurements that have been done using “compute()”</dd>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2021, Max Planck Institute for Polymer Research.
 
     </p>
   </div>

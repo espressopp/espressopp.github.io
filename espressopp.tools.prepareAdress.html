@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>prepareAdress - setup AdResS simulation &mdash; ESPResSo++ vlatest</title>
+  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="tools" href="tools.html"/>
-        <link rel="next" title="PSF - read and write psf format" href="espressopp.tools.psf.html"/>
-        <link rel="prev" title="prepareComplexMolecules - set up proteins" href="espressopp.tools.prepareComplexMolecules.html"/> 
+        <link rel="next" title="&lt;no title&gt;" href="espressopp.tools.psf.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="espressopp.tools.prepareComplexMolecules.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -92,26 +92,10 @@
           
             
             
-                <ul class="current">
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="tools.html">tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -162,7 +146,7 @@
         
           <li><a href="tools.html">tools</a> &raquo;</li>
         
-      <li>prepareAdress - setup AdResS simulation</li>
+      <li>&lt;no title&gt;</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -181,18 +165,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="module-espressopp.tools.prepareAdress"></span><div class="section" id="prepareadress-setup-adress-simulation">
-<h1>prepareAdress - setup AdResS simulation<a class="headerlink" href="#prepareadress-setup-adress-simulation" title="Permalink to this headline">¶</a></h1>
-<p>Auxiliary python functions for preparation of an Adress Simulation based on a configuration from an all-atomistic simulation.</p>
-<p>If one uses a configuration file from an all-atomistic simulation as start configuration for an AdResS simulation,
-the particles are probably all located inside the simulation box. However, in AdResS only the coarse-grained center-of-mass
-particles have to be in the box, the atomistic particles of the coarse grained might be outside around their CoM CG particle. When in the start configuration
-atomistic particles belonging to a molecule are folded such that some of the atoms are on the one side of the box while the others are folded
-to the other side the calculation of the center of mass goes wrong and the simulation will be incorrect. This script ensures a proper
-center of mass calculation and a proper folding and configuration for the AdResS simulation by simply putting the CG particle in one of the atoms (AdressSetCG) first.
-Then the molecules will be put together properly afterwards when calling AdressDecomp.</p>
-</div>
-
+  
 
            </div>
            <div class="articleComments">
@@ -203,10 +176,10 @@ Then the molecules will be put together properly afterwards when calling AdressD
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.tools.psf.html" class="btn btn-neutral float-right" title="PSF - read and write psf format" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.tools.psf.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.tools.prepareComplexMolecules.html" class="btn btn-neutral" title="prepareComplexMolecules - set up proteins" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.tools.prepareComplexMolecules.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -215,7 +188,7 @@ Then the molecules will be put together properly afterwards when calling AdressD
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2021, Max Planck Institute for Polymer Research.
 
     </p>
   </div>

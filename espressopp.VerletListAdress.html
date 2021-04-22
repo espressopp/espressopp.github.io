@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>espressopp.VerletListAdress &mdash; ESPResSo++ vlatest</title>
+  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="espressopp" href="espressopp.html"/>
-        <link rel="next" title="espressopp.VerletListTriple" href="espressopp.VerletListTriple.html"/>
-        <link rel="prev" title="espressopp.VerletList" href="espressopp.VerletList.html"/> 
+        <link rel="next" title="&lt;no title&gt;" href="espressopp.VerletListTriple.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="espressopp.VerletList.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -92,26 +92,10 @@
           
             
             
-                <ul class="current">
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -162,7 +146,7 @@
         
           <li><a href="espressopp.html">espressopp</a> &raquo;</li>
         
-      <li>espressopp.VerletListAdress</li>
+      <li>&lt;no title&gt;</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -181,136 +165,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="module-espressopp.VerletListAdress"></span><div class="section" id="espressopp-verletlistadress">
-<h1>espressopp.VerletListAdress<a class="headerlink" href="#espressopp-verletlistadress" title="Permalink to this headline">¶</a></h1>
-<p>The VerletListAdress is the Verlet List to be used for AdResS or H-AdResS
-simulations. When creating the VerletListAdress one has to provide the system
-and specify both cutoff for the CG interaction and adrcutoff for the atomistic
-interaction. Often, it is important to set the atomistic adrcutoff much bigger
-than the actual interaction’s cutoff would be, since also the atomistic part of
-the VerletListAdress (adrPairs) is built based on the coarse-grained particle
-positions. For a much larger coarse-grained cutoff it is for example possible
-to also set the atomistic cutoff on the same value as the coarse-grained one.</p>
-<p>Furthermore, the sizes of the explicit and hybrid region have to be
-provided (dEx and dHy in the example below) and the center of the atomistic
-region has to be set (adrCenter). Additionally, it can be chosen between a spherical and a slab-like geometry (sphereAdr).</p>
-<p>The AdResS region can also be defined based on one or more particles. For a single particle, in this case a spherical region moves along with the particle. For many such region defining particles, the high-resolution/hybrid region corresponds to the overlap of the different spherical regions based on the individual particles (for details see Kreis et al., JCTC doi: 10.1021/acs.jctc.6b00440). Note that more region defining particles mean a higher computational overhead as these particles need to be communicated among all processors (also see explanations in AdResS.py). Also note that region defining particles should be normal/CG particles, not atomistic/AdResS ones.</p>
-<p><strong>Bascially the VerListAdress provides 4 lists:</strong></p>
-<ul class="simple">
-<li>adrZone: A list which holds all particles in the atomistic and hybrid region</li>
-<li>cgZone: A list which holds all particles in the coarse-grained region</li>
-<li>adrPairs: A list which holds all pairs which have at least one particle in the
-adrZone, i.e. in the atomistic or hybrid region</li>
-<li>vlPairs: A list which holds all pairs which have both particles in the cgZone,
-i.e. in the coarse-grained region</li>
-</ul>
-<p>Example - creating the VerletListAdress for a slab-type adress region fixed in space (only the x value of adrCenter is used):</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">adrCenter</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
-</pre></div>
-</div>
-<p>or</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">adrCenter</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Example - creating the VerletListAdress for a spherical adress region centered on adrCenter and fixed in space:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">adrCenter</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Example - creating the VerletListAdress for a spherical adress region centered on one particle and moving with the particle</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">pids</span><span class="o">=</span><span class="p">[</span><span class="n">adrCenterPID</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Example - creating the VerletListAdress for a adress region based on the overlapping spherical regions by several particles</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">vl</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="n">rc</span><span class="p">,</span> <span class="n">dEx</span><span class="o">=</span><span class="n">ex_size</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="n">hy_size</span><span class="p">,</span> <span class="n">pids</span><span class="o">=</span><span class="p">[</span><span class="n">adrCenterPID1</span><span class="p">,</span><span class="n">adrCenterPID2</span><span class="p">,</span><span class="n">adrCenterPID3</span><span class="p">,</span> <span class="o">...</span> <span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</pre></div>
-</div>
-<dl class="function">
-<dt id="espressopp.VerletListAdress.espressopp.VerletListAdress">
-<code class="descclassname">espressopp.</code><code class="descname">VerletListAdress</code><span class="sig-paren">(</span><em>system</em>, <em>cutoff</em>, <em>adrcut</em>, <em>dEx</em>, <em>dHy</em>, <em>adrCenter</em>, <em>pids</em>, <em>exclusionlist</em>, <em>sphereAdr</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.VerletListAdress.espressopp.VerletListAdress" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> – </li>
-<li><strong>cutoff</strong> – </li>
-<li><strong>adrcut</strong> – </li>
-<li><strong>dEx</strong> – </li>
-<li><strong>dHy</strong> – </li>
-<li><strong>adrCenter</strong> – (default: [])</li>
-<li><strong>pids</strong> – (default: [])</li>
-<li><strong>exclusionlist</strong> – (default: [])</li>
-<li><strong>sphereAdr</strong> – (default: False)</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.VerletListAdress.espressopp.VerletListAdress.addAdrParticles">
-<code class="descclassname">espressopp.VerletListAdress.</code><code class="descname">addAdrParticles</code><span class="sig-paren">(</span><em>pids</em>, <em>rebuild</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.VerletListAdress.espressopp.VerletListAdress.addAdrParticles" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>pids</strong> – </li>
-<li><strong>rebuild</strong> – (default: True)</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"></p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.VerletListAdress.espressopp.VerletListAdress.exclude">
-<code class="descclassname">espressopp.VerletListAdress.</code><code class="descname">exclude</code><span class="sig-paren">(</span><em>exclusionlist</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.VerletListAdress.espressopp.VerletListAdress.exclude" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>exclusionlist</strong> – </td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.VerletListAdress.espressopp.VerletListAdress.rebuild">
-<code class="descclassname">espressopp.VerletListAdress.</code><code class="descname">rebuild</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.VerletListAdress.espressopp.VerletListAdress.rebuild" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.VerletListAdress.espressopp.VerletListAdress.totalSize">
-<code class="descclassname">espressopp.VerletListAdress.</code><code class="descname">totalSize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.VerletListAdress.espressopp.VerletListAdress.totalSize" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"></td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-</div>
-
+  
 
            </div>
            <div class="articleComments">
@@ -321,10 +176,10 @@ i.e. in the coarse-grained region</li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.VerletListTriple.html" class="btn btn-neutral float-right" title="espressopp.VerletListTriple" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.VerletListTriple.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.VerletList.html" class="btn btn-neutral" title="espressopp.VerletList" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.VerletList.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -333,7 +188,7 @@ i.e. in the coarse-grained region</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2021, Max Planck Institute for Polymer Research.
 
     </p>
   </div>

@@ -1,6 +1,0 @@
-<map id="espressopp::interaction::HarmonicTrap" name="espressopp::interaction::HarmonicTrap">
-<area shape="rect" id="node1" title="This class provides methods to compute forces and energies for an harmonic well potential." alt="" coords="929,13,1104,54"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1SingleParticlePotentialTemplate.html" title=" " alt="" coords="643,5,880,61"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1SingleParticlePotential.html" title="This class is used to define single&#45;particle interactions, typically used for external forces on the ..." alt="" coords="5,21,183,62"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1SingleParticlePotentialTemplate.html" title="Provides a template for the simple implementation of a position&#45;dependent potential." alt="" coords="232,45,469,101"/>
-</map>

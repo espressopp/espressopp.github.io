@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>espressopp.integrator.LangevinBarostat &mdash; ESPResSo++ vlatest</title>
+  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="integrator" href="integrator.html"/>
-        <link rel="next" title="espressopp.integrator.LangevinThermostat" href="espressopp.integrator.LangevinThermostat.html"/>
-        <link rel="prev" title="espressopp.integrator.Isokinetic" href="espressopp.integrator.Isokinetic.html"/> 
+        <link rel="next" title="&lt;no title&gt;" href="espressopp.integrator.LangevinThermostat.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="espressopp.integrator.Isokinetic.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -92,26 +92,10 @@
           
             
             
-                <ul class="current">
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="integrator.html">integrator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -162,7 +146,7 @@
         
           <li><a href="integrator.html">integrator</a> &raquo;</li>
         
-      <li>espressopp.integrator.LangevinBarostat</li>
+      <li>&lt;no title&gt;</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -181,164 +165,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="module-espressopp.integrator.LangevinBarostat"></span><div class="section" id="espressopp-integrator-langevinbarostat">
-<h1>espressopp.integrator.LangevinBarostat<a class="headerlink" href="#espressopp-integrator-langevinbarostat" title="Permalink to this headline">¶</a></h1>
-<p>This is the barostat implementation to perform Langevin dynamics in a Hoover style extended system
-according to the paper <a class="reference internal" href="#quigley04" id="id1">[Quigley04]</a>. It includes corrections of Hoover approach which were introduced
-by Martyna et al <a class="reference internal" href="#martyna94" id="id2">[Martyna94]</a>.
-If LangevinBarostat is defined (as a property of integrator) the integration equations will be
-modified. The volume of system <span class="math notranslate nohighlight">\(V\)</span> is introduced as a dynamical variable:</p>
-<div class="math notranslate nohighlight">
-\[\boldsymbol{\dot{r}}_{i} = \frac{\boldsymbol{p}_{i}}{m_{i}} +
-\frac{p_{\epsilon}}{W}\boldsymbol{r}_{i}\]</div>
-<div class="math notranslate nohighlight">
-\[\boldsymbol{\dot{p}}_{i} = -\bigtriangledown_{\boldsymbol{r}_{i}}\Phi -
-(1+\frac{n}{N_{f}})\frac{p_{\epsilon}}{W}\boldsymbol{p}_{i} -
-\gamma\boldsymbol{p}_{i} + \boldsymbol{R}_{i}\]</div>
-<div class="math notranslate nohighlight">
-\[\dot{V} = dVp_{\epsilon}/W\]</div>
-<div class="math notranslate nohighlight">
-\[\dot{p}_{\epsilon} = nV(X-P_{ext})+
-\frac{n}{N_{f}}\sum^{N}_{i=1}\frac{\boldsymbol{p}_{i}^{2}}{m_{i}} -
-\gamma_{p}p_{\epsilon} + R_{p}\]</div>
-<p>where volume has a fictitious mass <span class="math notranslate nohighlight">\(W\)</span> and associated momentum <span class="math notranslate nohighlight">\(p_{\epsilon}\)</span>,
-<span class="math notranslate nohighlight">\(\gamma_{p}\)</span> - friction coefficient,
-<span class="math notranslate nohighlight">\(P_{ext}\)</span> - external pressure and <span class="math notranslate nohighlight">\(X\)</span> - instantaneous pressure without white noise
-contribution from thermostat, <span class="math notranslate nohighlight">\(n\)</span> - dimension, <span class="math notranslate nohighlight">\(N_{f}\)</span> - degrees of freedom (if there
-are no constrains and <span class="math notranslate nohighlight">\(N\)</span> is the number of particles in system <span class="math notranslate nohighlight">\(N_{f}=nN\)</span>).
-<span class="math notranslate nohighlight">\(R_{p}\)</span> - values which are drawn from Gaussian distribution of zero mean and unit variance
-scaled by</p>
-<div class="math notranslate nohighlight">
-\[\sqrt{\frac{2k_{B}TW\gamma_{p}}{\Delta t}}\]</div>
-<p><strong>!IMPORTANT</strong> Terms <span class="math notranslate nohighlight">\(- \gamma\boldsymbol{p}_{i} + \boldsymbol{R}_{i}\)</span> correspond to the
-termostat. They are not included here and will not be calculated if the Langevin Thermostat is not
-defined.</p>
-<p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rng</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rng</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span><span class="o">.</span><span class="n">gammaP</span> <span class="o">=</span> <span class="mf">0.05</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="mf">1.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span><span class="o">.</span><span class="n">mass</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="mf">10.0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">langevinP</span><span class="p">)</span>
-</pre></div>
-</div>
-<p><strong>!IMPORTANT</strong>  This barostat is supposed to be run in a couple with thermostat in order
-to simulate the <em>npt</em> ensamble, because the term <span class="math notranslate nohighlight">\(R_{p}\)</span> needs the temperature as a
-parameter.</p>
-<p>Definition:</p>
-<blockquote>
-<div><p>In order to define the Langevin-Hoover barostat</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">langevinP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rng</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>one should have the <a class="reference external" href="espressopp.System.html">System</a> and <a class="reference internal" href="#rng">RNG</a> defined and know the desired temperature.</p>
-</div></blockquote>
-<p id="rng">Properties:</p>
-<ul>
-<li><p class="first"><em>langevinP.gammaP</em></p>
-<p>The property ‘gammaP’ defines the friction coefficient <span class="math notranslate nohighlight">\(\gamma_{p}\)</span>.</p>
-</li>
-<li><p class="first"><em>langevinP.pressure</em></p>
-<p>The property ‘pressure’ defines the external pressure <span class="math notranslate nohighlight">\(P_{ext}\)</span>.</p>
-</li>
-<li><p class="first"><em>langevinP.mass</em></p>
-<p>The property ‘mass’ defines the fictitious mass <span class="math notranslate nohighlight">\(W\)</span>.</p>
-</li>
-</ul>
-<p>Methods:</p>
-<ul>
-<li><p class="first"><em>setMassByFrequency( frequency )</em></p>
-<p>Set the proper <em>langevinP.mass</em> using expression <span class="math notranslate nohighlight">\(W=dNk_{b}T/\omega_{b}^{2}\)</span>, where
-frequency, <span class="math notranslate nohighlight">\(\omega_{b}\)</span>, is the frequency of required volume fluctuations. The value of
-<span class="math notranslate nohighlight">\(\omega_{b}\)</span> should be less then the lowest frequency which appears in the NVT temperature
-spectrum <a class="reference internal" href="#quigley04" id="id3">[Quigley04]</a> in order to match the canonical distribution. <span class="math notranslate nohighlight">\(d\)</span> - dimensions,
-<span class="math notranslate nohighlight">\(N\)</span> - number of particles, <span class="math notranslate nohighlight">\(k_{b}\)</span> - Boltzmann constant, <span class="math notranslate nohighlight">\(T\)</span> - desired
-temperature.</p>
-</li>
-</ul>
-<p><strong>NOTE</strong> The <em>langevinP.mass</em> can be set both directly and using the
-(<em>setMassByFrequency( frequency )</em>)</p>
-<p>Adding to the integration:</p>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">langevinP</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>It will define Langevin-Hoover barostat as a property of integrator.</p>
-</div></blockquote>
-<p>One more example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rngBaro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rngBaro</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">gammaP</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="mf">1.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">mass</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="mf">10.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">lP</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Canceling the barostat:</p>
-<blockquote>
-<div><blockquote>
-<div><p>If one do not need the pressure regulation in system anymore or need to switch
-the ensamble or whatever :)</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># define barostat with parameters</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">rngBaro</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">esutil</span><span class="o">.</span><span class="n">RNG</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">LangevinBarostat</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">rngBaro</span><span class="p">,</span> <span class="n">desiredTemperature</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">gammaP</span> <span class="o">=</span> <span class="o">.</span><span class="mi">5</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">pressure</span> <span class="o">=</span> <span class="mf">1.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">lP</span><span class="o">.</span><span class="n">mass</span> <span class="o">=</span> <span class="nb">pow</span><span class="p">(</span><span class="mf">10.0</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">langevinBarostat</span> <span class="o">=</span> <span class="n">lP</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="o">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c1"># some runs</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="o">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c1"># disconnect barostat</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">langevinBarostat</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c1"># the next runs will not include the modification of integration equations</span>
-</pre></div>
-</div>
-</div></blockquote>
-<p>Connecting the barostat back after the disconnection</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">langevinBarostat</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
-</pre></div>
-</div>
-</div></blockquote>
-<p>References:</p>
-<table class="docutils citation" frame="void" id="quigley04" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label">[Quigley04]</td><td><em>(<a class="fn-backref" href="#id1">1</a>, <a class="fn-backref" href="#id3">2</a>)</em> <ol class="last upperalpha simple" start="4">
-<li>Quigley, M.I.J. Probert, <em>J. Chem. Phys.</em>, 120, <strong>2004</strong>, p. 11432</li>
-</ol>
-</td></tr>
-</tbody>
-</table>
-<table class="docutils citation" frame="void" id="martyna94" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[Martyna94]</a></td><td><ol class="first last upperalpha simple" start="7">
-<li>Martyna, D. Tobias, M. Klein, <em>J. Chem. Phys.</em>, 101, <strong>1994</strong>, p. 4177</li>
-</ol>
-</td></tr>
-</tbody>
-</table>
-<dl class="function">
-<dt id="espressopp.integrator.LangevinBarostat.espressopp.integrator.LangevinBarostat">
-<code class="descclassname">espressopp.integrator.</code><code class="descname">LangevinBarostat</code><span class="sig-paren">(</span><em>system</em>, <em>rng</em>, <em>temperature</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.LangevinBarostat.espressopp.integrator.LangevinBarostat" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>system</strong> – </li>
-<li><strong>rng</strong> – </li>
-<li><strong>temperature</strong> – </li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-</div>
-
+  
 
            </div>
            <div class="articleComments">
@@ -349,10 +176,10 @@ the ensamble or whatever :)</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.integrator.LangevinThermostat.html" class="btn btn-neutral float-right" title="espressopp.integrator.LangevinThermostat" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.integrator.LangevinThermostat.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.integrator.Isokinetic.html" class="btn btn-neutral" title="espressopp.integrator.Isokinetic" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.integrator.Isokinetic.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -361,7 +188,7 @@ the ensamble or whatever :)</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2021, Max Planck Institute for Polymer Research.
 
     </p>
   </div>

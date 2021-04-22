@@ -1,9 +1,0 @@
-<map id="espressopp::analysis::LBOutputVzOfX" name="espressopp::analysis::LBOutputVzOfX">
-<area shape="rect" id="node1" title=" " alt="" coords="1429,13,1588,54"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1LBOutput.html" title="Abstract base class for arbitrary output from LB simulations." alt="" coords="1221,13,1380,54"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title=" " alt="" coords="995,5,1172,61"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1analysis_1_1AnalysisBase.html" title="All quantities to be measured derive from this abstract base class and the corresponding template." alt="" coords="501,14,660,55"/>
-<area shape="rect" id="node7" href="$classespressopp_1_1analysis_1_1AnalysisBaseTemplate.html" title=" " alt="" coords="709,39,887,95"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1ParticleAccess.html" title=" " alt="" coords="253,21,452,48"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,21,204,48"/>
-</map>

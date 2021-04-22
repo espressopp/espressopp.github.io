@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>espressopp.integrator.BerendsenThermostat &mdash; ESPResSo++ vlatest</title>
+  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="integrator" href="integrator.html"/>
-        <link rel="next" title="espressopp.integrator.CapForce" href="espressopp.integrator.CapForce.html"/>
-        <link rel="prev" title="espressopp.integrator.BerendsenBarostatAnisotropic" href="espressopp.integrator.BerendsenBarostatAnisotropic.html"/> 
+        <link rel="next" title="&lt;no title&gt;" href="espressopp.integrator.CapForce.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="espressopp.integrator.BerendsenBarostatAnisotropic.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -92,26 +92,10 @@
           
             
             
-                <ul class="current">
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="integrator.html">integrator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -162,7 +146,7 @@
         
           <li><a href="integrator.html">integrator</a> &raquo;</li>
         
-      <li>espressopp.integrator.BerendsenThermostat</li>
+      <li>&lt;no title&gt;</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -181,88 +165,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="module-espressopp.integrator.BerendsenThermostat"></span><div class="section" id="espressopp-integrator-berendsenthermostat">
-<h1>espressopp.integrator.BerendsenThermostat<a class="headerlink" href="#espressopp-integrator-berendsenthermostat" title="Permalink to this headline">¶</a></h1>
-<p>This is the Berendsen thermostat implementation according to the original paper <a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html#berendsen84" id="id1">[Berendsen84]</a>.
-If Berendsen thermostat is defined (as a property of integrator) then at the each run the system size
-and the particle coordinates will be scaled by scaling parameter <span class="math notranslate nohighlight">\(\lambda\)</span> according to
-the formula:</p>
-<div class="math notranslate nohighlight">
-\[\lambda = [1 + \Delta t/\tau_{T} (T_{0}/T - 1)]^{1/2}\]</div>
-<p>where <span class="math notranslate nohighlight">\(\Delta t\)</span> - integration timestep, <span class="math notranslate nohighlight">\(\tau_{T}\)</span> - time parameter (coupling parameter),
-<span class="math notranslate nohighlight">\(T_{0}\)</span> - external temperature and <span class="math notranslate nohighlight">\(T\)</span> - instantaneous temperature.</p>
-<p>Example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenT</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenT</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">1.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenT</span><span class="o">.</span><span class="n">temperature</span> <span class="o">=</span> <span class="mf">1.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsenT</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Definition:</p>
-<blockquote>
-<div><p>In order to define the Berendsen thermostat</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsenT</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>one should have the <a class="reference external" href="espressopp.System.html">System</a> defined.</p>
-</div></blockquote>
-<p>Properties:</p>
-<ul>
-<li><p class="first"><em>berendsenT.tau</em></p>
-<p>The property ‘tau’ defines the time parameter <span class="math notranslate nohighlight">\(\tau_{T}\)</span>.</p>
-</li>
-<li><p class="first"><em>berendsenT.temperature</em></p>
-<p>The property ‘temperature’ defines the external temperature <span class="math notranslate nohighlight">\(T_{0}\)</span>.</p>
-</li>
-</ul>
-<p>Setting the integration property:</p>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsenT</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>It will define Berendsen thermostat as a property of integrator.</p>
-</div></blockquote>
-<p>One more example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_thermostat</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_thermostat</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">0.1</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen_thermostat</span><span class="o">.</span><span class="n">temperature</span> <span class="o">=</span> <span class="mf">3.2</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsen_thermostat</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Canceling the thermostat:</p>
-<blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># define thermostat with parameters</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">BerendsenThermostat</span><span class="p">(</span><span class="n">system</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">tau</span> <span class="o">=</span> <span class="mf">2.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">temperature</span> <span class="o">=</span> <span class="mf">5.0</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">berendsen</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="o">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c1"># some runs</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="o">...</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c1"># disconnect Berendsen thermostat</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">disconnect</span><span class="p">()</span>
-</pre></div>
-</div>
-<p>Connecting the thermostat back after the disconnection</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">berendsen</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
-</pre></div>
-</div>
-</div></blockquote>
-<dl class="function">
-<dt id="espressopp.integrator.BerendsenThermostat.espressopp.integrator.BerendsenThermostat">
-<code class="descclassname">espressopp.integrator.</code><code class="descname">BerendsenThermostat</code><span class="sig-paren">(</span><em>system</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.BerendsenThermostat.espressopp.integrator.BerendsenThermostat" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>system</strong> – </td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-</div>
-
+  
 
            </div>
            <div class="articleComments">
@@ -273,10 +176,10 @@ the formula:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.integrator.CapForce.html" class="btn btn-neutral float-right" title="espressopp.integrator.CapForce" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.integrator.CapForce.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.integrator.BerendsenBarostatAnisotropic.html" class="btn btn-neutral" title="espressopp.integrator.BerendsenBarostatAnisotropic" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.integrator.BerendsenBarostatAnisotropic.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -285,7 +188,7 @@ the formula:</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2021, Max Planck Institute for Polymer Research.
 
     </p>
   </div>

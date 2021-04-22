@@ -1,6 +1,0 @@
-<map id="espressopp::integrator::LBInit" name="espressopp::integrator::LBInit">
-<area shape="rect" id="node2" href="$classespressopp_1_1integrator_1_1LBInitConstForce.html" title="espressopp::integrator\l::LBInitConstForce" alt="" coords="204,5,355,47"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1integrator_1_1LBInitPeriodicForce.html" title="espressopp::integrator\l::LBInitPeriodicForce" alt="" coords="204,71,355,112"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1integrator_1_1LBInitPopUniform.html" title="espressopp::integrator\l::LBInitPopUniform" alt="" coords="204,136,355,177"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1integrator_1_1LBInitPopWave.html" title="espressopp::integrator\l::LBInitPopWave" alt="" coords="204,201,355,243"/>
-</map>

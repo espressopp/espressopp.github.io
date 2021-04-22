@@ -1,6 +1,0 @@
-<map id="espressopp::interaction::DihedralHarmonic" name="espressopp::interaction::DihedralHarmonic">
-<area shape="rect" id="node1" title="This class provides methods to compute forces and energies of the DihedralHarmonic dihedral potential..." alt="" coords="885,13,1060,54"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title=" " alt="" coords="633,5,836,61"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1DihedralPotential.html" title=" " alt="" coords="5,21,180,62"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1DihedralPotentialTemplate.html" title=" " alt="" coords="229,45,432,101"/>
-</map>

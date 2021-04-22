@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>io_extended - read/write configurational files &mdash; ESPResSo++ vlatest</title>
+  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
   
 
   
@@ -37,8 +37,8 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
         <link rel="up" title="tools" href="tools.html"/>
-        <link rel="next" title="lammps - read lammps files" href="espressopp.tools.lammps.html"/>
-        <link rel="prev" title="gromacs - parser for Gromacs files" href="espressopp.tools.gromacs.html"/> 
+        <link rel="next" title="&lt;no title&gt;" href="espressopp.tools.lammps.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="espressopp.tools.gromacs.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -92,26 +92,10 @@
           
             
             
-                <ul class="current">
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="instalation.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
-<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
-<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
-<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
-<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
-<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
-<li class="toctree-l2 current"><a class="reference internal" href="tools.html">tools</a></li>
-<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -162,7 +146,7 @@
         
           <li><a href="tools.html">tools</a> &raquo;</li>
         
-      <li>io_extended - read/write configurational files</li>
+      <li>&lt;no title&gt;</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -181,31 +165,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <span class="target" id="module-espressopp.tools.io_extended"></span><div class="section" id="io-extended-read-write-configurational-files">
-<h1>io_extended - read/write configurational files<a class="headerlink" href="#io-extended-read-write-configurational-files" title="Permalink to this headline">¶</a></h1>
-<p>This Python module allows one to read and write configurational files.
-One can choose folded or unfolded coordinates and write down velocities or not.
-It is similar to lammps read and write, but it writes down only:
-1) number of particles + types
-2) number of bonds (number of pairs) + types
-3) number of angles (number of triples) + types
-4) number of dihedrals (number of quadruples) + types
-5) system size (Lx,Ly,Lz)
-6) p_id, p_type, p_positions
-7) velocities (if true)
-8) bonds (if exist)
-9) angles (if exist)
-10)dihedrals (if exist)</p>
-<p>read returns:
-Lx, Ly, Lz, p_ids, p_types, poss, vels, bonds, angles, dihedrals
-if something does not exist then it will return the empty list
-bonds, angles, dihedrals - will return list [type, (x,x,x,x)],
-where type is the type of bond, angle or dihedral
-(x,x,x,x) is (pid1,pid2) for bonds,</p>
-<p>(pid1,pid2,pid3) for angles</p>
-<p>(pid1,pid2,pid3,pid4) for dihedrals</p>
-</div>
-
+  
 
            </div>
            <div class="articleComments">
@@ -216,10 +176,10 @@ where type is the type of bond, angle or dihedral
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.tools.lammps.html" class="btn btn-neutral float-right" title="lammps - read lammps files" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.tools.lammps.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.tools.gromacs.html" class="btn btn-neutral" title="gromacs - parser for Gromacs files" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.tools.gromacs.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -228,7 +188,7 @@ where type is the type of bond, angle or dihedral
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2021, Max Planck Institute for Polymer Research.
 
     </p>
   </div>

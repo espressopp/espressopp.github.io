@@ -1,6 +1,0 @@
-<map id="espressopp::storage::PyDomainDecompositionAdress" name="espressopp::storage::PyDomainDecompositionAdress">
-<area shape="rect" id="node1" title=" " alt="" coords="5,259,244,300"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1storage_1_1DomainDecompositionAdress.html" title=" " alt="" coords="13,169,236,211"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1storage_1_1Storage.html" title="represents the particle storage of one system." alt="" coords="48,80,201,121"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="25,5,224,32"/>
-</map>

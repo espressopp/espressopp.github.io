@@ -1,5 +1,0 @@
-<map id="espressopp::integrator::GammaDistribution" name="espressopp::integrator::GammaDistribution">
-<area shape="rect" id="node2" href="$classespressopp_1_1integrator_1_1GammaDistributionBoost.html" title="Gamma distribution, from Boost. " alt="" coords="207,5,383,47"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1integrator_1_1GammaDistributionNR2nd.html" title="Gamma distribution, from Numerical Recipes, 2nd edition, pages 292 &amp; 293. " alt="" coords="204,71,387,112"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1integrator_1_1GammaDistributionNR3rd.html" title="Gamma distribution, from Numerical Recipes, 3rd edition, pages 370 &amp; 371. " alt="" coords="205,136,385,177"/>
-</map>

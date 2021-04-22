@@ -1,7 +1,0 @@
-<map id="espressopp::storage::Storage" name="espressopp::storage::Storage">
-<area shape="rect" id="node3" href="$classespressopp_1_1storage_1_1DomainDecomposition.html" title="espressopp::storage\l::DomainDecomposition" alt="" coords="448,5,611,47"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1storage_1_1DomainDecompositionAdress.html" title="espressopp::storage\l::DomainDecompositionAdress" alt="" coords="428,71,631,112"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system. " alt="" coords="5,46,192,73"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1storage_1_1DomainDecompositionNonBlocking.html" title="espressopp::storage\l::DomainDecompositionNonBlocking" alt="" coords="679,5,915,47"/>
-<area shape="rect" id="node6" href="$classespressopp_1_1storage_1_1PyDomainDecompositionAdress.html" title="espressopp::storage\l::PyDomainDecompositionAdress" alt="" coords="687,71,906,112"/>
-</map>

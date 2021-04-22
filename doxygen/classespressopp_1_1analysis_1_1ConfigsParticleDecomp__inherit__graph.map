@@ -1,7 +1,0 @@
-<map id="espressopp::analysis::ConfigsParticleDecomp" name="espressopp::analysis::ConfigsParticleDecomp">
-<area shape="rect" id="node1" title=" " alt="" coords="252,71,435,112"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1analysis_1_1MeanSquareDispl.html" title=" " alt="" coords="497,5,655,47"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1analysis_1_1MeanSquareInternalDist.html" title=" " alt="" coords="483,71,669,112"/>
-<area shape="rect" id="node5" href="$classespressopp_1_1analysis_1_1VelocityAutocorrelation.html" title=" " alt="" coords="485,136,667,177"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="5,78,204,105"/>
-</map>

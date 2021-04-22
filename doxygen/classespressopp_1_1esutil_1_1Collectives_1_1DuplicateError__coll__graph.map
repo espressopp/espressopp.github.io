@@ -1,4 +1,0 @@
-<map id="espressopp::esutil::Collectives::DuplicateError" name="espressopp::esutil::Collectives::DuplicateError">
-<area shape="rect" id="node1" title="Error thrown by locateItem if an item in a distributed storage was found on more than one node." alt="" coords="5,80,208,121"/>
-<area shape="rect" id="node2" title=" " alt="" coords="51,5,162,32"/>
-</map>

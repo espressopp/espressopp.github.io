@@ -1,9 +1,0 @@
-<map id="espressopp::interaction::SingleParticleInteractionTemplate&lt; _Potential &gt;" name="espressopp::interaction::SingleParticleInteractionTemplate&lt; _Potential &gt;">
-<area shape="rect" id="node1" title="This class provides a template for a single&#45;particle interaction, typically used for external forces ..." alt="" coords="923,57,1172,113"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1Interaction.html" title="Interaction base class." alt="" coords="625,5,800,47"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="613,71,812,98"/>
-<area shape="rect" id="node4" title=" " alt="" coords="301,61,472,103"/>
-<area shape="rect" id="node5" title=" " alt="" coords="5,69,88,95"/>
-<area shape="rect" id="node6" title=" " alt="" coords="623,123,802,150"/>
-<area shape="rect" id="node7" title=" " alt="" coords="341,127,432,154"/>
-</map>

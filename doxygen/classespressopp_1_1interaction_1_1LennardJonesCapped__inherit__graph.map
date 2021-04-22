@@ -1,6 +1,0 @@
-<map id="espressopp::interaction::LennardJonesCapped" name="espressopp::interaction::LennardJonesCapped">
-<area shape="rect" id="node1" title="This class provides methods to compute forces and energies of the Lennard Jones potential with capped..." alt="" coords="941,13,1116,54"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title=" " alt="" coords="677,5,892,61"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title=" " alt="" coords="5,18,180,59"/>
-<area shape="rect" id="node4" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="229,47,459,89"/>
-</map>

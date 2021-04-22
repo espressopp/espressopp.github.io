@@ -1,5 +1,0 @@
-<map id="espressopp::vectorization::interaction::LennardJones" name="espressopp::vectorization::interaction::LennardJones">
-<area shape="rect" id="node1" title="This class provides methods to compute forces and energies of the Lennard Jones potential." alt="" coords="15,199,210,240"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1interaction_1_1PotentialTemplate.html" title="Provides a template for the simple implementation of a shifted, absolute distance dependent potential..." alt="" coords="5,95,220,151"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1interaction_1_1Potential.html" title=" " alt="" coords="25,5,200,47"/>
-</map>

@@ -111,7 +111,6 @@
 <li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="doxygen.html">Doxygen</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -190,86 +189,32 @@
 <col width="90%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.tools.analyse" title="espressopp.tools.analyse"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.tools.analyse</span></code></a></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.tools.analyse</span></code></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#module-espressopp.tools.info" title="espressopp.tools.info"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.tools.info</span></code></a></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.tools.info</span></code></td>
 <td></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#module-espressopp.tools.timers" title="espressopp.tools.timers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.tools.timers</span></code></a></td>
+<tr class="row-odd"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.tools.timers</span></code></td>
 <td></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#module-espressopp.tools.vmd" title="espressopp.tools.vmd"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.tools.vmd</span></code></a></td>
+<tr class="row-even"><td><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.tools.vmd</span></code></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Details</p>
-<div class="section" id="module-espressopp.tools.analyse">
-<span id="espressopp-tools-analyse"></span><h2>espressopp.tools.analyse<a class="headerlink" href="#module-espressopp.tools.analyse" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="espressopp.tools.analyse.final_info">
-<code class="descclassname">espressopp.tools.analyse.</code><code class="descname">final_info</code><span class="sig-paren">(</span><em>system</em>, <em>integrator</em>, <em>vl</em>, <em>start_time</em>, <em>end_time</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.analyse.final_info" title="Permalink to this definition">¶</a></dt>
-<dd><p>final report on the simulation statistics</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.tools.analyse.info">
-<code class="descclassname">espressopp.tools.analyse.</code><code class="descname">info</code><span class="sig-paren">(</span><em>system</em>, <em>integrator</em>, <em>per_atom=False</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.analyse.info" title="Permalink to this definition">¶</a></dt>
-<dd><p>reports on the simulation progress</p>
-</dd></dl>
-
+<div class="section" id="espressopp-tools-analyse">
+<h2>espressopp.tools.analyse<a class="headerlink" href="#espressopp-tools-analyse" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-espressopp.tools.info">
-<span id="espressopp-tools-info"></span><h2>espressopp.tools.info<a class="headerlink" href="#module-espressopp.tools.info" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="espressopp.tools.info.getAllBonds">
-<code class="descclassname">espressopp.tools.info.</code><code class="descname">getAllBonds</code><span class="sig-paren">(</span><em>system</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.info.getAllBonds" title="Permalink to this definition">¶</a></dt>
-<dd><p>return all bonds of the system (currently only FixedPairLists are supported)</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="espressopp.tools.info.getAllParticles">
-<code class="descclassname">espressopp.tools.info.</code><code class="descname">getAllParticles</code><span class="sig-paren">(</span><em>system</em>, <em>*properties</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.info.getAllParticles" title="Permalink to this definition">¶</a></dt>
-<dd><p>returns a list of all particle properties of all particles of the system (currently no atomistic AdResS particles are included)</p>
-</dd></dl>
-
+<div class="section" id="espressopp-tools-info">
+<h2>espressopp.tools.info<a class="headerlink" href="#espressopp-tools-info" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-espressopp.tools.timers">
-<span id="espressopp-tools-timers"></span><h2>espressopp.tools.timers<a class="headerlink" href="#module-espressopp.tools.timers" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="espressopp.tools.timers.show">
-<code class="descclassname">espressopp.tools.timers.</code><code class="descname">show</code><span class="sig-paren">(</span><em>alltimers</em>, <em>precision=1</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.timers.show" title="Permalink to this definition">¶</a></dt>
-<dd><p>Python functions to print timings from C++.</p>
-</dd></dl>
-
+<div class="section" id="espressopp-tools-timers">
+<h2>espressopp.tools.timers<a class="headerlink" href="#espressopp-tools-timers" title="Permalink to this headline">¶</a></h2>
 </div>
-<div class="section" id="module-espressopp.tools.vmd">
-<span id="espressopp-tools-vmd"></span><h2>espressopp.tools.vmd<a class="headerlink" href="#module-espressopp.tools.vmd" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
-<dt id="espressopp.tools.vmd.connect">
-<code class="descclassname">espressopp.tools.vmd.</code><code class="descname">connect</code><span class="sig-paren">(</span><em>system</em>, <em>molsize=10</em>, <em>pqrfile=False</em>, <em>vmd_path='vmd'</em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.vmd.connect" title="Permalink to this definition">¶</a></dt>
-<dd><p>Connects to the VMD.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>system</strong> (<em>espressopp.system</em>) – The system object.</li>
-<li><strong>molsize</strong> (<em>int</em>) – The optional size of the molecule.</li>
-<li><strong>pqrfile</strong> (<em>bool</em>) – If set to True then the pqr vmd.pqr file will be used otherwise (default)
-the vmd.pdb file will be used.</li>
-<li><strong>vmd_path</strong> (<em>str</em>) – The path to the executable of vmd, by default it is set to ‘vmd’.</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Socket to the VMD.</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
+<div class="section" id="espressopp-tools-vmd">
+<h2>espressopp.tools.vmd<a class="headerlink" href="#espressopp-tools-vmd" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -295,7 +240,7 @@ the vmd.pdb file will be used.</li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2013-2020, Max Planck Institute for Polymer Research.
+        &copy; Copyright 2013-2021, Max Planck Institute for Polymer Research.
 
     </p>
   </div>

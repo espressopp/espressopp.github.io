@@ -1,9 +1,0 @@
-<map id="espressopp::analysis::PotentialEnergy" name="espressopp::analysis::PotentialEnergy">
-<area shape="rect" id="node1" title=" " alt="" coords="1340,62,1499,103"/>
-<area shape="rect" id="node2" href="$classespressopp_1_1analysis_1_1Observable.html" title="All quantities to be measured derive from this abstract base class." alt="" coords="1035,29,1193,70"/>
-<area shape="rect" id="node3" href="$classespressopp_1_1SystemAccess.html" title="Common base class for all classes that need access to the system." alt="" coords="599,36,797,63"/>
-<area shape="rect" id="node4" title=" " alt="" coords="301,29,472,70"/>
-<area shape="rect" id="node5" title=" " alt="" coords="5,36,88,63"/>
-<area shape="rect" id="node6" title=" " alt="" coords="1017,94,1211,135"/>
-<area shape="rect" id="node7" title=" " alt="" coords="653,101,743,128"/>
-</map>
