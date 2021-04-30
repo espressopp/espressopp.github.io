@@ -181,10 +181,10 @@
 <div class="section" id="steps-for-adding-a-new-interaction-potential">
 <h2>Steps for adding a new interaction potential<a class="headerlink" href="#steps-for-adding-a-new-interaction-potential" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>Choose the potential and derive the force.</li>
-<li>Choose the appropriate interaction template from those in <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/interaction</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">VerletListInteractionTemplate.hpp</span></code>, <code class="docutils literal notranslate"><span class="pre">FixedTripleListInteractionTemplate.hpp</span></code></li>
-<li>Create the .cpp, .hpp and .py files for your potential, place them in <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/interaction</span></code> and modify <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/interaction/bindings.cpp</span></code> and <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/interaction/__init__.py</span></code></li>
-<li>Compile.</li>
+<li><p>Choose the potential and derive the force.</p></li>
+<li><p>Choose the appropriate interaction template from those in <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/interaction</span></code>, e.g. <code class="docutils literal notranslate"><span class="pre">VerletListInteractionTemplate.hpp</span></code>, <code class="docutils literal notranslate"><span class="pre">FixedTripleListInteractionTemplate.hpp</span></code></p></li>
+<li><p>Create the .cpp, .hpp and .py files for your potential, place them in <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/interaction</span></code> and modify <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/interaction/bindings.cpp</span></code> and <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/interaction/__init__.py</span></code></p></li>
+<li><p>Compile.</p></li>
 </ol>
 <p>These steps are described in more detail below for our tutorial example potential.</p>
 </div>
@@ -274,7 +274,7 @@ where <span class="math notranslate nohighlight">\(r_{ij}\)</span> is the distan
 <h2>Exposing a C++ class or struct to python using boost<a class="headerlink" href="#exposing-a-c-class-or-struct-to-python-using-boost" title="Permalink to this headline">¶</a></h2>
 <p>(See <a class="reference external" href="http://www.boost.org/doc/libs/1_56_0/libs/python/doc/tutorial/doc/html/python/exposing.html">http://www.boost.org/doc/libs/1_56_0/libs/python/doc/tutorial/doc/html/python/exposing.html</a>)</p>
 <p>Say we have a C++ struct called World:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">World</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="nc">World</span>
 <span class="p">{</span>
     <span class="n">World</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span><span class="o">:</span> <span class="n">msg</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="p">{}</span>              <span class="c1">// constructor</span>
     <span class="kt">void</span> <span class="n">set</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span> <span class="n">this</span><span class="o">-&gt;</span><span class="n">msg</span> <span class="o">=</span> <span class="n">msg</span><span class="p">;</span> <span class="p">}</span>   <span class="c1">// function set</span>
@@ -305,8 +305,8 @@ where <span class="math notranslate nohighlight">\(r_{ij}\)</span> is the distan
 </pre></div>
 </div>
 <p>C++ classes and structs may be derived from other classes. Say we have the C++ struct myDerivedStruct which is derived from the struct myBaseStruct:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="n">myBaseStruct</span> <span class="p">{</span> <span class="n">virtual</span> <span class="o">~</span><span class="n">myBaseStruct</span><span class="p">();</span> <span class="p">};</span>
-<span class="k">struct</span> <span class="nl">myDerivedStruct</span> <span class="p">:</span> <span class="n">myBaseStruct</span> <span class="p">{};</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="nc">myBaseStruct</span> <span class="p">{</span> <span class="n">virtual</span> <span class="o">~</span><span class="n">myBaseStruct</span><span class="p">();</span> <span class="p">};</span>
+<span class="k">struct</span> <span class="nc">myDerivedStruct</span> <span class="o">:</span> <span class="n">myBaseStruct</span> <span class="p">{};</span>
 </pre></div>
 </div>
 <p>We can wrap the base class myBaseStruct as explained above:</p>
@@ -410,8 +410,7 @@ where <span class="math notranslate nohighlight">\(r_{ij}\)</span> is the distan
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/language_data.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

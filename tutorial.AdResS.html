@@ -234,7 +234,7 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># AdResS Verlet list</span>
 <span class="n">vl</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">VerletListAdress</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">cutoff</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">adrcut</span><span class="o">=</span><span class="mf">1.4</span><span class="p">,</span>
                                 <span class="n">dEx</span><span class="o">=</span><span class="mf">1.5</span><span class="p">,</span> <span class="n">dHy</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span>
-                                <span class="n">adrCenter</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+                                <span class="n">adrCenter</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">],</span> <span class="n">sphereAdr</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>We have to provide the cutoffs of the list as well as the sizes of the atomistic and hybrid regions. The parameter <code class="docutils literal notranslate"><span class="pre">cutoff</span></code> corresponds to the cutoff used for CG particle pairs with both particles being in the CG region, while <code class="docutils literal notranslate"><span class="pre">adrcut</span></code> is the cutoff for all other particle pairs (at least one particle of the pair is in the AT or hybrid region). We want to stress that this  pair list is build based on the CG particles’ positions. Hence, for the AT and hybrid region one needs in some situations to provide a Verlet list cutoff (adrcut) slightly larger than the actual maximum interaction range of the potential, in order to not lose interactions between some atom pairs. Let us clarify this with an example: Thinking of a pair of water molecules, both coarse-grained into single beads, these CG beads could be farther apart than the interaction cutoff. Two hydrogen atoms pointing towards each other, however, could in fact still be in interaction range. Therefore, an appropriate buffer needs to be provided.</p>
@@ -380,7 +380,7 @@
 </div>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># add Thermodynamic Force and specify whether the force is applied</span>
 <span class="c1"># together with the slow (slow=True) or fast (slow=False) forces</span>
-<span class="n">thdforce</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">TDforce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">verletlist</span><span class="p">,</span> <span class="n">slow</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">thdforce</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">TDforce</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">verletlist</span><span class="p">,</span> <span class="n">slow</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">thdforce</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">itype</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">filename</span><span class="o">=</span><span class="s2">&quot;table_tf.xvg&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">typeCG</span><span class="p">)</span>
 <span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">thdforce</span><span class="p">)</span>
 </pre></div>
@@ -473,8 +473,7 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/language_data.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

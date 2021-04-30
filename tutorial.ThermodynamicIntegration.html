@@ -240,7 +240,7 @@
                                                 <span class="n">atTypes</span><span class="p">,</span> <span class="n">epsilon1</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">epsilon2</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span>
                                                 <span class="n">kappa</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">lambdaTI</span><span class="o">=</span><span class="n">lambdaTICoul</span><span class="p">,</span>
                                                 <span class="n">pidlist</span><span class="o">=</span><span class="n">stateBIndices</span><span class="p">,</span>
-                                                <span class="n">annihilate</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">adress</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">ftpl</span><span class="o">=</span><span class="n">ftpl</span><span class="p">)</span>
+                                                <span class="n">annihilate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">adress</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ftpl</span><span class="o">=</span><span class="n">ftpl</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Now we set up the softcore Lennard Jones interaction.</p>
@@ -258,8 +258,8 @@
                                        <span class="n">atomtypeparameters</span><span class="p">,</span> <span class="n">verletlist</span><span class="p">,</span> <span class="n">nbCutoff</span><span class="p">,</span>
                                        <span class="n">epsilonB</span><span class="o">=</span><span class="n">epsilonB</span><span class="p">,</span> <span class="n">sigmaSC</span><span class="o">=</span><span class="n">sigmaSC</span><span class="p">,</span> <span class="n">alphaSC</span><span class="o">=</span><span class="n">alphaSC</span><span class="p">,</span>
                                        <span class="n">powerSC</span><span class="o">=</span><span class="n">powerSC</span><span class="p">,</span> <span class="n">lambdaTI</span><span class="o">=</span><span class="n">lambdaTIVdwl</span><span class="p">,</span>
-                                       <span class="n">pidlist</span><span class="o">=</span><span class="n">stateBIndices</span><span class="p">,</span> <span class="n">annihilate</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span>
-                                       <span class="n">adress</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">ftpl</span><span class="o">=</span><span class="n">ftpl</span><span class="p">)</span>
+                                       <span class="n">pidlist</span><span class="o">=</span><span class="n">stateBIndices</span><span class="p">,</span> <span class="n">annihilate</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                                       <span class="n">adress</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">ftpl</span><span class="o">=</span><span class="n">ftpl</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>We open an output file. In the first line we write the values of <span class="math notranslate nohighlight">\(\lambda_C\)</span> and <span class="math notranslate nohighlight">\(\lambda_L\)</span> for this simulation.</p>
@@ -278,9 +278,9 @@
 <div class="section" id="some-notes">
 <h2>Some notes<a class="headerlink" href="#some-notes" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
-<li>This example given here uses decoupling (solute-solvent interactions are a function of <span class="math notranslate nohighlight">\(\lambda\)</span>, solute-solute interactions are not affected by changes in <span class="math notranslate nohighlight">\(\lambda\)</span>). In ESPResSo++ it is also possible to do annihilation, where both solute-solvent and solute-solute interactions are a function of <span class="math notranslate nohighlight">\(\lambda\)</span>, by setting <code class="docutils literal notranslate"><span class="pre">annihilate=True</span></code> when creating the non-bonded interactions.</li>
-<li>The procedure described here is desolvation. To get the free energy of solvation, we take the negative of the value obtained after integration.</li>
-<li>The example Python code snippets here use the helper functions <code class="docutils literal notranslate"><span class="pre">gromacs.setLennardJonesInteractionsTI</span></code> and <code class="docutils literal notranslate"><span class="pre">gromacs.setCoulombInteractionsTI</span></code> contained in <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/tools/convert/gromacs.py</span></code>, but this is not necessary. You can do TI with ESPResSo++ without the Gromacs parser by directly calling <code class="docutils literal notranslate"><span class="pre">espresso.interaction.LennardJonesSoftcoreTI</span></code> and <code class="docutils literal notranslate"><span class="pre">espresso.interaction.ReactionFieldGeneralizedTI</span></code>. See the documentation of these two classes.</li>
+<li><p>This example given here uses decoupling (solute-solvent interactions are a function of <span class="math notranslate nohighlight">\(\lambda\)</span>, solute-solute interactions are not affected by changes in <span class="math notranslate nohighlight">\(\lambda\)</span>). In ESPResSo++ it is also possible to do annihilation, where both solute-solvent and solute-solute interactions are a function of <span class="math notranslate nohighlight">\(\lambda\)</span>, by setting <code class="docutils literal notranslate"><span class="pre">annihilate=True</span></code> when creating the non-bonded interactions.</p></li>
+<li><p>The procedure described here is desolvation. To get the free energy of solvation, we take the negative of the value obtained after integration.</p></li>
+<li><p>The example Python code snippets here use the helper functions <code class="docutils literal notranslate"><span class="pre">gromacs.setLennardJonesInteractionsTI</span></code> and <code class="docutils literal notranslate"><span class="pre">gromacs.setCoulombInteractionsTI</span></code> contained in <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/tools/convert/gromacs.py</span></code>, but this is not necessary. You can do TI with ESPResSo++ without the Gromacs parser by directly calling <code class="docutils literal notranslate"><span class="pre">espresso.interaction.LennardJonesSoftcoreTI</span></code> and <code class="docutils literal notranslate"><span class="pre">espresso.interaction.ReactionFieldGeneralizedTI</span></code>. See the documentation of these two classes.</p></li>
 </ol>
 </div>
 </div>
@@ -339,8 +339,7 @@
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="_static/language_data.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
