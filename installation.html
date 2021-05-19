@@ -35,9 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
-        <link rel="next" title="Tutorial" href="tutorial.html"/>
-        <link rel="prev" title="ESPResSo++" href="index.html"/> 
+    <link rel="top" title="ESPResSo++ vlatest" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -91,8 +89,7 @@
           
             
             
-                <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation</a></li>
+                <ul>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
@@ -147,7 +144,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/instalation.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/installation.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -196,13 +193,10 @@ installed them, you can try</p>
 </pre></div>
 </div>
 <p>(This will take several minutes)</p>
-<p>Before beeing able to use the espressopp  module in Python you need to source the ESPRC file:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> ESPRC
+<p>After successfully building ESPResSo++ add the src directory to your PYTHONPATH:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span><span class="nv">$PWD</span>/src:<span class="si">${</span><span class="nv">PYTHONPATH</span><span class="si">}</span>
 </pre></div>
 </div>
-<p>(This sets all corresponding environment variables to point to the module, e.g. PYTHONPATH)
-You have to source this file every time you want to work with espressopp. It would advisable to
-e.g. source the file in your .bashrc file ( “source &lt;path_to_espressopp&gt;/ESPRC” )</p>
 <p>In order to use matplotlib.pyplot for graphical output get the open source code from:</p>
 <blockquote>
 <div><p><a class="reference external" href="http://sourceforge.net/projects/matplotlib">http://sourceforge.net/projects/matplotlib</a></p>
@@ -217,15 +211,6 @@ e.g. source the file in your .bashrc file ( “source &lt;path_to_espressopp&gt;
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="tutorial.html" class="btn btn-neutral float-right" title="Tutorial" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="index.html" class="btn btn-neutral" title="ESPResSo++" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
