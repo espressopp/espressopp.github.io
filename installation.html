@@ -181,13 +181,7 @@ tell cmake manually, where to find them by typing:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ccmake .
 </pre></div>
 </div>
-<p>This will open an interactive page where all configuration information can be specified.
-Alternatively, if cmake . complains on missing BOOST or MPI4PY libraries and you had not
-installed them, you can try</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake . -DEXTERNAL_BOOST<span class="o">=</span>OFF -DEXTERNAL_MPI4PY<span class="o">=</span>OFF
-</pre></div>
-</div>
-<p>In this case, ESPResSo++ will try to use internal Boost and mpi4py libraries.</p>
+<p>This will open an interactive page where all configuration information can be specified.</p>
 <p>After successfully building all the Makefiles you should build ESPResSo++ with:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make
 </pre></div>
