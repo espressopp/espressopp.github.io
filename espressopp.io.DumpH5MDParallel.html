@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>espressopp &mdash; ESPResSo++ vlatest</title>
+  <title>Parallel H5MD Output &mdash; ESPResSo++ vlatest</title>
   
 
   
@@ -36,9 +36,9 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ESPResSo++ vlatest" href="index.html"/>
-        <link rel="up" title="User Interface" href="classdescription.html"/>
-        <link rel="next" title="&lt;no title&gt;" href="espressopp.Exceptions.html"/>
-        <link rel="prev" title="Parallel H5MD Output" href="espressopp.io.DumpH5MDParallel.html"/> 
+        <link rel="up" title="io" href="io.html"/>
+        <link rel="next" title="espressopp" href="espressopp.html"/>
+        <link rel="prev" title="&lt;no title&gt;" href="espressopp.io.DumpH5MD.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -102,8 +102,8 @@
 <li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
 <li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">espressopp</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
 <li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
 <li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
 <li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
@@ -158,13 +158,15 @@
         
           <li><a href="classdescription.html">User Interface</a> &raquo;</li>
         
-      <li>espressopp</li>
+          <li><a href="io.html">io</a> &raquo;</li>
+        
+      <li>Parallel H5MD Output</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/espressopp.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/espressopp.io.DumpH5MDParallel.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -177,9 +179,58 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="espressopp">
-<h1>espressopp<a class="headerlink" href="#espressopp" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
+  <div class="section" id="parallel-h5md-output">
+<h1>Parallel H5MD Output<a class="headerlink" href="#parallel-h5md-output" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference external" href="https://nongnu.org/h5md/">H5MD</a> is a format specification on top of the <a class="reference external" href="https://www.hdfgroup.org/solutions/hdf5/">HDF5</a> file format.</p>
+<div class="section" id="dump-simulation">
+<h2>Dump Simulation<a class="headerlink" href="#dump-simulation" title="Permalink to this headline">¶</a></h2>
+<p>Dumping a simulation with <code class="docutils literal notranslate"><span class="pre">espressopp.io.DumpH5MDParallel</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dump_h5md_parallel</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpH5MDParallel</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="s1">&#39;dump.h5&#39;</span><span class="p">)</span>
+<span class="n">dump_h5md_parallel</span><span class="o">.</span><span class="n">dump</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>ATTENTION</strong></p>
+<p>Only V=const (NVT, NVE) simulation are dumped correctly since we do not save box
+dimensions at every simulation step.</p>
+<div class="section" id="configuration">
+<h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">dump*</span></code> controls which properties are saved to file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*Dataset</span></code> controls the dataset name within the file of the corresponding property.</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="restore-simulation">
+<h2>Restore Simulation<a class="headerlink" href="#restore-simulation" title="Permalink to this headline">¶</a></h2>
+<p>Restoring a simulation with <code class="docutils literal notranslate"><span class="pre">espressopp.io.RestoreH5MDParallel</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">removeAllParticles</span><span class="p">()</span>
+<span class="n">restore_h5md_parallel</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">RestoreH5MDParallel</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="s1">&#39;dump.h5&#39;</span><span class="p">)</span>
+<span class="n">restore_h5md_parallel</span><span class="o">.</span><span class="n">restore</span><span class="p">()</span>
+<span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">decompose</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="simple">
+<dt><strong>ATTENTION</strong></dt><dd><ul class="simple">
+<li><p>No checks for duplicates are performed nor is the particle storage cleared
+before inserting new particles. You might want to remove all particles from
+the simulation before calling <code class="docutils literal notranslate"><span class="pre">restore</span></code>.</p></li>
+<li><p>Particles are inserted equally among the processes without obeying subdomains.
+You have to call <code class="docutils literal notranslate"><span class="pre">decompose</span></code> to ensure particles are located on the correct
+process after restoration.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="section" id="id1">
+<h3>Configuration<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">restore*</span></code> controls which properties are loaded from file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*Dataset</span></code> controls the dataset name within the file of the corresponding property.</p></li>
+</ul>
+</div></blockquote>
+</div>
 </div>
 </div>
 
@@ -193,10 +244,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="espressopp.Exceptions.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="espressopp.html" class="btn btn-neutral float-right" title="espressopp" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="espressopp.io.DumpH5MDParallel.html" class="btn btn-neutral" title="Parallel H5MD Output" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="espressopp.io.DumpH5MD.html" class="btn btn-neutral" title="&lt;no title&gt;" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
