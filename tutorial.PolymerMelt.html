@@ -5,7 +5,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Polymer Melt &mdash; ESPResSo++ vlatest</title>
@@ -29,6 +30,10 @@
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   
 
+  
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   
 
   
@@ -172,7 +177,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="polymer-melt">
+  <section id="polymer-melt">
 <h1>Polymer Melt<a class="headerlink" href="#polymer-melt" title="Permalink to this headline">¶</a></h1>
 <p>We first import espressopp and then define all the parameters of the simulation:</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">espressopp</span>
@@ -274,12 +279,12 @@ get very high forces accelerating them to infinite (for the computer) speed.</p>
 <span class="gp">&gt;&gt;&gt; </span>  <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">analyse</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">integrator</span><span class="p">)</span>
 </pre></div>
 </div>
-<div class="section" id="task-2">
+<section id="task-2">
 <h2>Task 2:<a class="headerlink" href="#task-2" title="Permalink to this headline">¶</a></h2>
 <p>Try to warmup and equilibrate a dense polymer melt (density=0.85) by using the warmup methods
 that you have learned in the Lennard Jones tutorial.</p>
-</div>
-<div class="section" id="hint">
+</section>
+<section id="hint">
 <h2>Hint:<a class="headerlink" href="#hint" title="Permalink to this headline">¶</a></h2>
 <p>During warmup you can slowly switch on the excluded volume interaction by starting with a small
 epsilon and increasing it during integration:
@@ -288,8 +293,8 @@ You can do this by continuously overwriting the interaction potential after some
 <span class="gp">&gt;&gt;&gt; </span><span class="n">interaction</span><span class="o">.</span><span class="n">setPotential</span><span class="p">(</span><span class="n">type1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">type2</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">potential</span><span class="o">=</span><span class="n">potLJ</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
+</section>
+</section>
 
 
            </div>
@@ -342,10 +347,10 @@ You can do this by continuously overwriting the interaction potential after some
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+      <script type="text/javascript" src="_static/documentation_options.js"></script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

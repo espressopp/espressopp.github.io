@@ -5,7 +5,8 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>AddNewPotential &mdash; ESPResSo++ vlatest</title>
@@ -29,6 +30,10 @@
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   
 
+  
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   
 
   
@@ -172,12 +177,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="addnewpotential">
+  <section id="addnewpotential">
 <h1>AddNewPotential<a class="headerlink" href="#addnewpotential" title="Permalink to this headline">¶</a></h1>
 <p>The aim of the tutorial is to implement a new interaction potential in ESPResSo++. We start with the Gromos fourth-power bond-stretching potential, because its functional form is simple and its implementation is somewhat similar to other potentials already implemented in ESPResSo++. Everything you learn in this tutorial will then be relevent for implementing any other more complicated potential.</p>
 <p>Make sure you have a working, compiled version of ESPResSo++ before starting the tutorial.</p>
 <p>For those who are not so familiar with C++ or interfacing python and C++, you will find some helpful notes in the appendix.</p>
-<div class="section" id="steps-for-adding-a-new-interaction-potential">
+<section id="steps-for-adding-a-new-interaction-potential">
 <h2>Steps for adding a new interaction potential<a class="headerlink" href="#steps-for-adding-a-new-interaction-potential" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Choose the potential and derive the force.</p></li>
@@ -186,10 +191,10 @@
 <li><p>Compile.</p></li>
 </ol>
 <p>These steps are described in more detail below for our tutorial example potential.</p>
-</div>
-<div class="section" id="today-s-tutorial-exercise">
+</section>
+<section id="today-s-tutorial-exercise">
 <h2>Today’s tutorial exercise<a class="headerlink" href="#today-s-tutorial-exercise" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="step-1">
+<section id="step-1">
 <h3>Step 1<a class="headerlink" href="#step-1" title="Permalink to this headline">¶</a></h3>
 <p>The potential we are implementing today is a two-body bonded potential with the form</p>
 <div class="math notranslate nohighlight">
@@ -197,35 +202,35 @@
 <p>noindent
 where <span class="math notranslate nohighlight">\(r_{ij}\)</span> is the distance between particles <em>i</em> and <em>j</em>. The potential has two input parameters <span class="math notranslate nohighlight">\(r_{0}\)</span> and <span class="math notranslate nohighlight">\(k\)</span>.</p>
 <p>Derive the force.</p>
-</div>
-<div class="section" id="step-2">
+</section>
+<section id="step-2">
 <h3>Step 2<a class="headerlink" href="#step-2" title="Permalink to this headline">¶</a></h3>
 <p>This is a 2-body interaction between a predefined (fixed) list of atom pairs. What is the appropriate interaction template to use? Choose one in <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/interaction</span></code></p>
 <p>Open the interaction template file. (When you close the file later, close it without saving, or else later on your compile time will be very long, because of the number of dependencies on the interaction template!) Identify the functions <code class="docutils literal notranslate"><span class="pre">addForces()</span></code> and <code class="docutils literal notranslate"><span class="pre">computeEnergy()</span></code>. Many interaction templates also contain functions such as <code class="docutils literal notranslate"><span class="pre">computeVirial()</span></code>, <code class="docutils literal notranslate"><span class="pre">computeVirialX()</span></code> (for calculating the virial in slabs along the x-direction) etc.</p>
 <p>Find the function calls:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">potential</span><span class="o">-&gt;</span><span class="n">_computeForce</span><span class="p">(</span><span class="n">force</span><span class="p">,</span> <span class="n">dist</span><span class="p">)</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">potential</span><span class="o">-&gt;</span><span class="n">_computeForce</span><span class="p">(</span><span class="n">force</span><span class="p">,</span><span class="w"> </span><span class="n">dist</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 <p>in <code class="docutils literal notranslate"><span class="pre">addForces()</span></code> and</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">potential</span><span class="o">-&gt;</span><span class="n">_computeEnergy</span><span class="p">(</span><span class="n">r21</span><span class="p">)</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">potential</span><span class="o">-&gt;</span><span class="n">_computeEnergy</span><span class="p">(</span><span class="n">r21</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 <p>in <code class="docutils literal notranslate"><span class="pre">computeEnergy()</span></code>.</p>
 <p>An interaction template can be combined with many different potentials (e.g. harmonic potential, Lennard Jones potential, etc.) Each potential will have its own C++ class containing functions to compute the energy and forces for that particular potential (see e.g. Harmonic.cpp/hpp, LennardJones.cpp/hpp) In turn, each potential can be combined with many different interaction templates.</p>
 <p>You don’t need to modify the interaction template file today. (Close it without saving!)</p>
-</div>
-<div class="section" id="step-3">
+</section>
+<section id="step-3">
 <h3>Step 3<a class="headerlink" href="#step-3" title="Permalink to this headline">¶</a></h3>
 <p>In this step we create the .cpp, .hpp and .py files for our potential. Let’s call the potential FourthPower. The FourthPower.py file will contain the end-user python interface, and in the FourthPower.cpp and FourthPower.hpp files we will create a C++ class for our potential. We will also write a wrapper which will allow the user to call the C++ code from the python interface.</p>
-<div class="section" id="a-interfacing-potential-class-and-interaction-template">
+<section id="a-interfacing-potential-class-and-interaction-template">
 <h4>3(a) Interfacing potential class and interaction template<a class="headerlink" href="#a-interfacing-potential-class-and-interaction-template" title="Permalink to this headline">¶</a></h4>
 <p>In many cases, it’s not necessary to understand the contents of this section in order to implement a new potential. If you like, you can skip directly to Section <a class="reference internal" href="#b-creating-the-new-potential-class">3(b) Creating the new potential class</a>.</p>
 <p>Now we need to understand how the interaction template will interface with our new class. This is done via a class template, e.g. in <code class="docutils literal notranslate"><span class="pre">Potential.hpp</span></code>, <code class="docutils literal notranslate"><span class="pre">AnglePotential.hpp</span></code>, <code class="docutils literal notranslate"><span class="pre">DihedralPotential.hpp</span></code> etc.</p>
 <p>Still in <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/interaction</span></code>, open the file <code class="docutils literal notranslate"><span class="pre">Potential.hpp</span></code>. (When you close the file later, close it without saving, or else later on your compile time will be very long, because of the number of dependencies on the file!)</p>
 <p>Find the functions <code class="docutils literal notranslate"><span class="pre">_computeForce(Real3D&amp;</span> <span class="pre">force,</span> <span class="pre">const</span> <span class="pre">Real3D&amp;</span> <span class="pre">dist)</span></code> and <code class="docutils literal notranslate"><span class="pre">_computeEnergy(real</span> <span class="pre">dist)</span></code> which you identified in the interaction template. Note that <code class="docutils literal notranslate"><span class="pre">_computeForce(Real3D&amp;</span> <span class="pre">force,</span> <span class="pre">const</span> <span class="pre">Real3D&amp;</span> <span class="pre">dist)</span></code> calls the function <code class="docutils literal notranslate"><span class="pre">_computeForceRaw(force,</span> <span class="pre">dist,</span> <span class="pre">distSqr)</span></code> and <code class="docutils literal notranslate"><span class="pre">_computeEnergy(real</span> <span class="pre">dist)</span></code> calls <code class="docutils literal notranslate"><span class="pre">_computeEnergySqr(dist*dist)</span></code> which calls <code class="docutils literal notranslate"><span class="pre">_computeEnergySqrRaw(distSqr)</span></code>. The functions <code class="docutils literal notranslate"><span class="pre">_computeForceRaw()</span></code> and <code class="docutils literal notranslate"><span class="pre">_computeEnergySqrRaw()</span></code> are the new functions we need to write for our new potential. They will be member methods of our new C++ class FourthPower.</p>
 <p>You don’t need to modify anything in <code class="docutils literal notranslate"><span class="pre">Potential.hpp</span></code> today. (Close it without saving!)</p>
-</div>
-<div class="section" id="b-creating-the-new-potential-class">
+</section>
+<section id="b-creating-the-new-potential-class">
 <h4>3(b) Creating the new potential class<a class="headerlink" href="#b-creating-the-new-potential-class" title="Permalink to this headline">¶</a></h4>
 <p>An easy way to implement the new C++ class is to identify a previously implemented potential which somewhat resembles your new potential, e.g. here we could take the Harmonic potential, which is also a 2-body potential, and which has also been interfaced with the FixedPairListInteractionTemplate.</p>
 <p>Still in <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/interaction</span></code>, copy the files <code class="docutils literal notranslate"><span class="pre">Harmonic.py</span></code>, <code class="docutils literal notranslate"><span class="pre">Harmonic.cpp</span></code> and <code class="docutils literal notranslate"><span class="pre">Harmonic.hpp</span></code> to new files <code class="docutils literal notranslate"><span class="pre">FourthPower.py</span></code>, <code class="docutils literal notranslate"><span class="pre">FourthPower.cpp</span></code> and <code class="docutils literal notranslate"><span class="pre">FourthPower.hpp</span></code>. In the new files, find and replace all occurences of ‘Harmonic’ with ‘FourthPower’, and ‘HARMONIC’ with ‘FOURTHPOWER’.</p>
@@ -246,95 +251,95 @@ where <span class="math notranslate nohighlight">\(r_{ij}\)</span> is the distan
 <p>Our new potential FourthPower can be called by the end-user in a similar way. Since the Harmonic and FourthPower potentials have similar input parameters (<code class="docutils literal notranslate"><span class="pre">K</span></code>, <code class="docutils literal notranslate"><span class="pre">r0</span></code>) and both use the FixedPairListInteractionTemplate, you don’t need to make any further modifications to the file <code class="docutils literal notranslate"><span class="pre">FourthPower.py</span></code>, besides replacing ‘Harmonic’ with ‘FourthPower’.</p>
 <p>Next open <code class="docutils literal notranslate"><span class="pre">FourthPower.cpp</span></code>.</p>
 <p>Here you will find the C++/python interface, in the function <code class="docutils literal notranslate"><span class="pre">registerPython()</span></code>. If you want to understand this function, you will find details in <a class="reference internal" href="#exposing-a-c-class-or-struct-to-python-using-boost">Exposing a C++ class or struct to python using boost</a>. You don’t need to make any further modifications to this file, besides replacing ‘Harmonic’ with ‘FourthPower’.</p>
-</div>
-<div class="section" id="c-including-the-new-class-in-espressopp">
+</section>
+<section id="c-including-the-new-class-in-espressopp">
 <h4>3(c) Including the new class in espressopp<a class="headerlink" href="#c-including-the-new-class-in-espressopp" title="Permalink to this headline">¶</a></h4>
 <p>Finally, update the files <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/interaction/bindings.cpp</span></code> and <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/interaction/__init__.py</span></code> (for example by copying and modifying all the lines referring to the Harmonic potential so that they now refer to the FourthPower potential). You need to make three modifications: to include the new .hpp file, to call the new registerPython() wrapper, and to import everything in the new python module.</p>
-</div>
-</div>
-<div class="section" id="step-4">
+</section>
+</section>
+<section id="step-4">
 <h3>Step 4<a class="headerlink" href="#step-4" title="Permalink to this headline">¶</a></h3>
 <p>Move to the directory <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME</span></code>. Update the makefiles and compile using the commands:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="p">.</span>
-<span class="n">make</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="n">make</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="advanced-exercise">
+</section>
+</section>
+<section id="advanced-exercise">
 <h2>Advanced exercise<a class="headerlink" href="#advanced-exercise" title="Permalink to this headline">¶</a></h2>
 <p>For an interaction potential of your choosing, follow the steps above to implement it, e.g. a non-bonded two-body interaction, probably using <code class="docutils literal notranslate"><span class="pre">VerletListInteractionTemplate</span></code> and based on the <code class="docutils literal notranslate"><span class="pre">LennardJones</span></code> potential, or a bonded three-body interaction, probably using <code class="docutils literal notranslate"><span class="pre">FixedTripleListInteractionTemplate.hpp</span></code> and based on the <code class="docutils literal notranslate"><span class="pre">AngularHarmonic</span></code> potential.</p>
 <p>You will probably have to write setters and getters for the parameters in your potential in your .hpp file, and make the corresponding modifications to the function <code class="docutils literal notranslate"><span class="pre">registerPython()</span></code> in the .cpp file and the python user interface in the .py file.</p>
-</div>
-</div>
-<div class="section" id="appendices">
+</section>
+</section>
+<section id="appendices">
 <h1>Appendices<a class="headerlink" href="#appendices" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="exposing-a-c-class-or-struct-to-python-using-boost">
+<section id="exposing-a-c-class-or-struct-to-python-using-boost">
 <h2>Exposing a C++ class or struct to python using boost<a class="headerlink" href="#exposing-a-c-class-or-struct-to-python-using-boost" title="Permalink to this headline">¶</a></h2>
 <p>(See <a class="reference external" href="http://www.boost.org/doc/libs/1_56_0/libs/python/doc/tutorial/doc/html/python/exposing.html">http://www.boost.org/doc/libs/1_56_0/libs/python/doc/tutorial/doc/html/python/exposing.html</a>)</p>
 <p>Say we have a C++ struct called World:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="nc">World</span>
-<span class="p">{</span>
-    <span class="n">World</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span><span class="o">:</span> <span class="n">msg</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="p">{}</span>              <span class="c1">// constructor</span>
-    <span class="kt">void</span> <span class="n">set</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">msg</span><span class="p">)</span> <span class="p">{</span> <span class="n">this</span><span class="o">-&gt;</span><span class="n">msg</span> <span class="o">=</span> <span class="n">msg</span><span class="p">;</span> <span class="p">}</span>   <span class="c1">// function set</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">greet</span><span class="p">()</span> <span class="p">{</span> <span class="k">return</span> <span class="n">msg</span><span class="p">;</span> <span class="p">}</span>              <span class="c1">// function greet</span>
-    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">msg</span><span class="p">;</span>                                 <span class="c1">// member variable</span>
-<span class="p">};</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span><span class="w"> </span><span class="nc">World</span><span class="w"></span>
+<span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">World</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">msg</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">msg</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span><span class="w"> </span><span class="p">{}</span><span class="w">              </span><span class="c1">// constructor</span>
+<span class="w">    </span><span class="kt">void</span><span class="w"> </span><span class="n">set</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">msg</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">this</span><span class="o">-&gt;</span><span class="n">msg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">msg</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w">   </span><span class="c1">// function set</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">greet</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="n">msg</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w">              </span><span class="c1">// function greet</span>
+<span class="w">    </span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="w"> </span><span class="n">msg</span><span class="p">;</span><span class="w">                                 </span><span class="c1">// member variable</span>
+<span class="p">};</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Now we write the C++ class wrapper for struct World to expose the constructor and the functions greet and set to python:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="n">class_</span><span class="o">&lt;</span><span class="n">World</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">,</span> <span class="n">init</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">())</span>
-        <span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;greet&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">greet</span><span class="p">)</span>
-        <span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;set&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">set</span><span class="p">)</span>
-    <span class="p">;</span>
-<span class="p">}</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">class_</span><span class="o">&lt;</span><span class="n">World</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">init</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">())</span><span class="w"></span>
+<span class="w">        </span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;greet&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">greet</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;set&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">set</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 <p>If there are additional constructors we can also expose them using <code class="docutils literal notranslate"><span class="pre">def()</span></code>, e.g. for an additional constructor which takes two doubles:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">class_</span><span class="o">&lt;</span><span class="n">World</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">,</span> <span class="n">init</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">())</span>
-    <span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="n">init</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span> <span class="kt">double</span><span class="o">&gt;</span><span class="p">())</span>
-    <span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;greet&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">greet</span><span class="p">)</span>
-    <span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;set&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">set</span><span class="p">)</span>
-<span class="p">;</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">class_</span><span class="o">&lt;</span><span class="n">World</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;World&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">init</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="n">init</span><span class="o">&lt;</span><span class="kt">double</span><span class="p">,</span><span class="w"> </span><span class="kt">double</span><span class="o">&gt;</span><span class="p">())</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;greet&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">greet</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="p">.</span><span class="n">def</span><span class="p">(</span><span class="s">&quot;set&quot;</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">set</span><span class="p">)</span><span class="w"></span>
+<span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
 <p>We can also expose the data members of the C++ class or struct and the associated access (getter and setter) functions using <code class="docutils literal notranslate"><span class="pre">add_property()</span></code>, e.g. for the variable myValue with access functions <code class="docutils literal notranslate"><span class="pre">getMyValue</span></code> and <code class="docutils literal notranslate"><span class="pre">setMyValue</span></code>:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="n">add_property</span><span class="p">(</span><span class="s">&quot;myValue&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">getMyValue</span><span class="p">,</span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">setMyValue</span><span class="p">)</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="n">add_property</span><span class="p">(</span><span class="s">&quot;myValue&quot;</span><span class="p">,</span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">getMyValue</span><span class="p">,</span><span class="o">&amp;</span><span class="n">World</span><span class="o">::</span><span class="n">setMyValue</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 </div>
 <p>C++ classes and structs may be derived from other classes. Say we have the C++ struct myDerivedStruct which is derived from the struct myBaseStruct:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span> <span class="nc">myBaseStruct</span> <span class="p">{</span> <span class="n">virtual</span> <span class="o">~</span><span class="n">myBaseStruct</span><span class="p">();</span> <span class="p">};</span>
-<span class="k">struct</span> <span class="nc">myDerivedStruct</span> <span class="o">:</span> <span class="n">myBaseStruct</span> <span class="p">{};</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">struct</span><span class="w"> </span><span class="nc">myBaseStruct</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">virtual</span><span class="w"> </span><span class="o">~</span><span class="n">myBaseStruct</span><span class="p">();</span><span class="w"> </span><span class="p">};</span><span class="w"></span>
+<span class="k">struct</span><span class="w"> </span><span class="nc">myDerivedStruct</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">myBaseStruct</span><span class="w"> </span><span class="p">{};</span><span class="w"></span>
 </pre></div>
 </div>
 <p>We can wrap the base class myBaseStruct as explained above:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Base</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;Base&quot;</span><span class="p">)</span>
-   <span class="cm">/*...*/</span>
-   <span class="p">;</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">Base</span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;Base&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">   </span><span class="cm">/*...*/</span><span class="w"></span>
+<span class="w">   </span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
 <p>Now when we want to wrap the class myDerivedStruct, we tell boost that it is derived from the base class myBaseStruct:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">class_</span><span class="o">&lt;</span><span class="n">myDerivedStruct</span><span class="p">,</span> <span class="n">bases</span><span class="o">&lt;</span><span class="n">myBaseStruct</span><span class="o">&gt;</span> <span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;myDerivedStruct&quot;</span><span class="p">)</span>
-    <span class="cm">/*...*/</span>
-    <span class="p">;</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">class_</span><span class="o">&lt;</span><span class="n">myDerivedStruct</span><span class="p">,</span><span class="w"> </span><span class="n">bases</span><span class="o">&lt;</span><span class="n">myBaseStruct</span><span class="o">&gt;</span><span class="w"> </span><span class="o">&gt;</span><span class="p">(</span><span class="s">&quot;myDerivedStruct&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="cm">/*...*/</span><span class="w"></span>
+<span class="w">    </span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="c-templates">
+</section>
+<section id="c-templates">
 <h2>C++ templates<a class="headerlink" href="#c-templates" title="Permalink to this headline">¶</a></h2>
 <p>See <a class="reference external" href="http://www.cplusplus.com/doc/oldtutorial/templates/">http://www.cplusplus.com/doc/oldtutorial/templates/</a></p>
-</div>
-<div class="section" id="typedef">
+</section>
+<section id="typedef">
 <h2>typedef<a class="headerlink" href="#typedef" title="Permalink to this headline">¶</a></h2>
 <p>typedef declaration allows you to create an alias that can be used anywhere in place of a (possibly complex) type name</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">typedef</span> <span class="n">DataType</span> <span class="n">AliasName</span><span class="p">;</span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">typedef</span><span class="w"> </span><span class="n">DataType</span><span class="w"> </span><span class="n">AliasName</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="python-notes">
+</section>
+<section id="python-notes">
 <h2>Python notes<a class="headerlink" href="#python-notes" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="syntax-for-classes-in-python">
+<section id="syntax-for-classes-in-python">
 <h3>Syntax for classes in python<a class="headerlink" href="#syntax-for-classes-in-python" title="Permalink to this headline">¶</a></h3>
 <p>(See also <a class="reference external" href="https://docs.python.org/2/tutorial/classes.html">https://docs.python.org/2/tutorial/classes.html</a>)</p>
 <p>Here is a python class called DerivedClassName which is derived from two other base classes (BaseClassName1 and BaseClassName1), is initialised with two variables x and y which have default values 1 and 2, and contains a function myFunction.</p>
@@ -347,13 +352,13 @@ where <span class="math notranslate nohighlight">\(r_{ij}\)</span> is the distan
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="pmi">
+</section>
+<section id="pmi">
 <h3>PMI<a class="headerlink" href="#pmi" title="Permalink to this headline">¶</a></h3>
 <p>PMI = parallel method invocation. For more details see the file <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME/src/pmi.py</span></code></p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
@@ -406,10 +411,11 @@ where <span class="math notranslate nohighlight">\(r_{ij}\)</span> is the distan
             SOURCELINK_SUFFIX: '.txt'
         };
     </script>
+      <script type="text/javascript" src="_static/documentation_options.js"></script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
   
 
