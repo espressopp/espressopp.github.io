@@ -177,18 +177,18 @@ following location:</p>
 <p>Create the Makefiles using the cmake command. If you don’t have it yet, you have to
 install it first. It is available for all major Linux distributions and also for Mac OS X.
 (ubuntu,debian: “apt-get install cmake” or get it from <a class="reference external" href="http://www.cmake.org">http://www.cmake.org</a> )</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake .
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake -B builddir .
 </pre></div>
 </div>
 <p>(the space and dot after <em>cmake</em> are necessary)</p>
 <p>If cmake doesn’t finish successfully (e.g. it didn’t find all the libraries) you can
 tell cmake manually, where to find them by typing:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ccmake .
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ccmake -B builddir .
 </pre></div>
 </div>
 <p>This will open an interactive page where all configuration information can be specified.</p>
 <p>After successfully building all the Makefiles you should build ESPResSo++ with:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake --build builddir
 </pre></div>
 </div>
 <p>(This will take several minutes)</p>

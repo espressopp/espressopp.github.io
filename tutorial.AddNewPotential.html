@@ -260,8 +260,8 @@ where <span class="math notranslate nohighlight">\(r_{ij}\)</span> is the distan
 <section id="step-4">
 <h3>Step 4<a class="headerlink" href="#step-4" title="Permalink to this heading">¶</a></h3>
 <p>Move to the directory <code class="docutils literal notranslate"><span class="pre">$ESPRESSOHOME</span></code>. Update the makefiles and compile using the commands:</p>
-<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
-<span class="n">make</span><span class="w"></span>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span><span class="w"> </span><span class="o">-</span><span class="n">B</span><span class="w"> </span><span class="n">builddir</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="n">cmake</span><span class="w"> </span><span class="o">--</span><span class="n">build</span><span class="w"> </span><span class="n">builddir</span><span class="w"></span>
 </pre></div>
 </div>
 </section>
