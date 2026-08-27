@@ -107,8 +107,8 @@ tell cmake manually, where to find them by typing:</p>
 </pre></div>
 </div>
 <p>(This will take several minutes)</p>
-<p>After successfully building ESPResSo++ add the src directory to your PYTHONPATH:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">PYTHONPATH</span><span class="o">=</span><span class="nv">$PWD</span>/src<span class="si">${</span><span class="nv">PYTHONPATH</span><span class="p">:+:</span><span class="nv">$PYTHONPATH</span><span class="si">}</span>
+<p>After successfully building ESPResSo++ add the build directory to your PYTHONPATH:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">PYTHONPATH</span><span class="o">=</span><span class="nv">$PWD</span>/builddir<span class="si">${</span><span class="nv">PYTHONPATH</span><span class="p">:+:</span><span class="nv">$PYTHONPATH</span><span class="si">}</span>
 </pre></div>
 </div>
 <p>In order to use matplotlib.pyplot for graphical output get the open source code from:</p>
