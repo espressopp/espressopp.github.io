@@ -148,13 +148,13 @@
 <span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">rattle</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>This list of lists of constrained bonds can be conveniently built using the espressopppp tool <cite>findConstrainedBonds</cite>.</p>
+<p>This list of lists of constrained bonds can be conveniently built using the espressopp tool <cite>findConstrainedBonds</cite>.</p>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Automatically identify hydrogen-containing bonds among the particles whose indices are in the list pidlist</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># pidlist - list of indices of particles in which to search for hydrogens (list of int)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># masses - list of masses of all particles (list of real)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># massCutoff - atoms with mass &lt; massCutoff are identified as hydrogens (real)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c1"># bondtypes - dictionary (e.g. obtained using espressopppp.gromacs.read()), key: bondtype (int), value: list of tuples of the indices of the two particles in each bond of that bondtype (list of 2-tuples of integers)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="c1"># bondtypeparams - dictionary (e.g. obtained using espressopppp.gromacs.read()), key: bondtype (int), value: espressopppp interaction potential instance</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># bondtypes - dictionary (e.g. obtained using espressopp.gromacs.read()), key: bondtype (int), value: list of tuples of the indices of the two particles in each bond of that bondtype (list of 2-tuples of integers)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># bondtypeparams - dictionary (e.g. obtained using espressopp.gromacs.read()), key: bondtype (int), value: espressopp interaction potential instance</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">hydrogenIDs</span><span class="p">,</span> <span class="n">constrainedBondsDict</span><span class="p">,</span> <span class="n">constrainedBondsList</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">tools</span><span class="o">.</span><span class="n">findConstrainedBonds</span><span class="p">(</span><span class="n">pidlist</span><span class="p">,</span> <span class="n">bondtypes</span><span class="p">,</span> <span class="n">bondtypeparams</span><span class="p">,</span> <span class="n">masses</span><span class="p">,</span> <span class="n">massCutoff</span> <span class="o">=</span> <span class="mf">1.1</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># hydrogenIDs - list of indices of hydrogen atoms</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="c1"># constrainedBondsDict - dictionary mapping from a heavy atom to all the light atoms it is bonded to, key: heavy atom index (int), value: list of light atom indices (list of int)</span>
@@ -165,8 +165,8 @@
 </pre></div>
 </div>
 <dl class="py function">
-<dt class="sig sig-object py" id="espressopp.integrator.Rattle.espressopppp.integrator.Rattle">
-<span class="sig-prename descclassname"><span class="pre">espressopppp.integrator.</span></span><span class="sig-name descname"><span class="pre">Rattle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rptol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-6</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.Rattle.espressopppp.integrator.Rattle" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="espressopp.integrator.Rattle.espressopp.integrator.Rattle">
+<span class="sig-prename descclassname"><span class="pre">espressopp.integrator.</span></span><span class="sig-name descname"><span class="pre">Rattle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rptol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-6</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.Rattle.espressopp.integrator.Rattle" title="Link to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -180,8 +180,8 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="espressopp.integrator.Rattle.espressopppp.integrator.Rattle.addConstrainedBonds">
-<span class="sig-prename descclassname"><span class="pre">espressopppp.integrator.Rattle.</span></span><span class="sig-name descname"><span class="pre">addConstrainedBonds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bondDetailsLists</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.Rattle.espressopppp.integrator.Rattle.addConstrainedBonds" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="espressopp.integrator.Rattle.espressopp.integrator.Rattle.addConstrainedBonds">
+<span class="sig-prename descclassname"><span class="pre">espressopp.integrator.Rattle.</span></span><span class="sig-name descname"><span class="pre">addConstrainedBonds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bondDetailsLists</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.Rattle.espressopp.integrator.Rattle.addConstrainedBonds" title="Link to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>bondDetailsLists</strong> (<em>list</em><em> of </em><em>[</em><em>int</em><em>, </em><em>int</em><em>, </em><em>real</em><em>, </em><em>real</em><em>, </em><em>real</em><em>]</em>) – list of lists, each list contains pid of heavy atom, pid of light atom, constraint distance, mass of heavy atom, mass of light atom</p>
