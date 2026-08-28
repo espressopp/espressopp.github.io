@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
+  <title>prepareComplexMolecules - set up proteins &mdash; ESPResSo++ vlatest</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
@@ -20,8 +20,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.tools.prepareAdress.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.tools.povwrite.html" /> 
+    <link rel="next" title="prepareAdress - setup AdResS simulation" href="espressopp.tools.prepareAdress.html" />
+    <link rel="prev" title="povwrite - write povray files" href="espressopp.tools.povwrite.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,9 +44,58 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="tools.html">tools</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.analyse.html">information and analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.initcfg.html">initializing particles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.decomp.html">decomp - Domain Decomposition python functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html">DumpConfigurations - read/write xyz files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.fastreadxyz"><code class="docutils literal notranslate"><span class="pre">fastreadxyz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.fastwritexyz"><code class="docutils literal notranslate"><span class="pre">fastwritexyz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.fastwritexyz_standard"><code class="docutils literal notranslate"><span class="pre">fastwritexyz_standard()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.readxyz"><code class="docutils literal notranslate"><span class="pre">readxyz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.readxyzr"><code class="docutils literal notranslate"><span class="pre">readxyzr()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.writexyz"><code class="docutils literal notranslate"><span class="pre">writexyz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.xyzfilewrite"><code class="docutils literal notranslate"><span class="pre">xyzfilewrite()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.espresso_old.html">espresso_old - read espressomd files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.espresso_old.html#espressopp.tools.espresso_old.read"><code class="docutils literal notranslate"><span class="pre">read()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html">gromacs - parser for Gromacs files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html#espressopp.tools.gromacs.convertTable"><code class="docutils literal notranslate"><span class="pre">convertTable()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html#espressopp.tools.gromacs.read"><code class="docutils literal notranslate"><span class="pre">read()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html#espressopp.tools.gromacs.setLennardJones14Interactions"><code class="docutils literal notranslate"><span class="pre">setLennardJones14Interactions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html#espressopp.tools.gromacs.setLennardJonesInteractions"><code class="docutils literal notranslate"><span class="pre">setLennardJonesInteractions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html#espressopp.tools.gromacs.setLennardJonesInteractionsTI"><code class="docutils literal notranslate"><span class="pre">setLennardJonesInteractionsTI()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html#espressopp.tools.gromacs.setTabulatedInteractions"><code class="docutils literal notranslate"><span class="pre">setTabulatedInteractions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.io_extended.html">io_extended - read/write configurational files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.lammps.html">lammps - read lammps files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.pathintegral.html">pathintegral - nuclear quantum effects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.pdb.html">PDB - read and write pdb format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.povwrite.html">povwrite - write povray files</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">prepareComplexMolecules - set up proteins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.prepareAdress.html">prepareAdress - setup AdResS simulation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.psf.html">PSF - read and write psf format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.tabulated.html">tabulated - write tabulated file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.tabulated.html#espressopp.tools.tabulated.writeTabFile"><code class="docutils literal notranslate"><span class="pre">writeTabFile()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.topology_helper.html">topology_helper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.units.html">units - convert to real units</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -67,7 +116,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="classdescription.html">User Interface</a></li>
           <li class="breadcrumb-item"><a href="tools.html">tools</a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="breadcrumb-item active">prepareComplexMolecules - set up proteins</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/espressopp.tools.prepareComplexMolecules.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -77,13 +126,119 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
+  <section id="preparecomplexmolecules-set-up-proteins">
+<span id="module-espressopp.tools.prepareComplexMolecules"></span><h1>prepareComplexMolecules - set up proteins<a class="headerlink" href="#preparecomplexmolecules-set-up-proteins" title="Link to this heading"></a></h1>
+<p>various helper functions for setting up systems containing complex molecules such as proteins</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.tools.prepareComplexMolecules.espressopp.tools.findConstrainedBonds">
+<span class="sig-prename descclassname"><span class="pre">espressopp.tools.</span></span><span class="sig-name descname"><span class="pre">findConstrainedBonds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atomPids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bondtypes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bondtypeparams</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">masses</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">massCutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.prepareComplexMolecules.espressopp.tools.findConstrainedBonds" title="Link to this definition"></a></dt>
+<dd><p>Finds all heavyatom-hydrogen bonds in a given list of particle IDs, and outputs a list describing the bonds, in a format suitable for use with the RATTLE algorithm for constrained bonds</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>atomPids</strong> (<em>list</em><em> of </em><em>int</em>) – list of pids of atoms between which to search for bonds</p></li>
+<li><p><strong>bondtypes</strong> (<em>dict</em><em>, </em><em>key:</em><em> (</em><em>int</em><em>,</em><em>int</em><em>)</em><em>, </em><em>value: int</em>) – dictionary mapping from tuple of pids to bondtypeid, e.g. as returned by tools.gromacs.read()</p></li>
+<li><p><strong>bondtypeparams</strong> (<em>dict</em><em>, </em><em>key: int</em><em>, </em><em>value: espressopp bond type</em>) – dictionary mapping from bondtypeid to class storing parameters of that bond type, e.g. as returned by tools.gromacs.read()</p></li>
+<li><p><strong>masses</strong> (<em>list</em><em> of </em><em>float</em>) – list of masses, e.g. as returned by tools.gromacs.read()</p></li>
+<li><p><strong>massCutoff</strong> (<em>float</em>) – for identifying light atoms (hydrogens), default 1.1 mass units, can also be increased e.g. for use with deuterated systems</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><div class="line-block">
+<div class="line">hydrogenIDs - list of pids (integer) of light atoms (hydrogens)</div>
+<div class="line">constrainedBondsDict - dict, keys: pid (integer) of heavy atom, values: list of pids of light atoms that are bonded to it</div>
+<div class="line">constrainedBondsList - list of lists, one entry for each constrained bond with format: [pid of heavy atom, pid of light atom, bond distance, mass of heavy atom ,mass of light atom]</div>
+</div>
+</p>
+</dd>
+</dl>
+<p>Can then be used with RATTLE, e.g.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">rattle</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">Rattle</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">maxit</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">tol</span> <span class="o">=</span> <span class="mf">1e-6</span><span class="p">,</span> <span class="n">rptol</span> <span class="o">=</span> <span class="mf">1e-6</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">rattle</span><span class="o">.</span><span class="n">addConstrainedBonds</span><span class="p">(</span><span class="n">constrainedBondsList</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">rattle</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.tools.prepareComplexMolecules.espressopp.tools.getInternalNonbondedInteractions">
+<span class="sig-prename descclassname"><span class="pre">espressopp.tools.</span></span><span class="sig-name descname"><span class="pre">getInternalNonbondedInteractions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">atExclusions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pidlist</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.prepareComplexMolecules.espressopp.tools.getInternalNonbondedInteractions" title="Link to this definition"></a></dt>
+<dd><p>Gets the non-bonded pairs within a list of particle indices, excluding those which are in a supplied list of exclusions. Useful for example for getting the internal atomistic non-bonded interactions in a coarse-grained particle and adding them as a fixedpairlist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>atExclusions</strong> (<em>list</em><em> of </em><em>2-tuples</em><em> of </em><em>int</em>) – list of excluded pairs</p></li>
+<li><p><strong>pidlist</strong> (<em>list</em><em> of </em><em>int</em>) – list of pids among which to create pairs</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>list of pairs which are not in atExclusions</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of 2-tuples of int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.tools.prepareComplexMolecules.espressopp.tools.readSimpleSystem">
+<span class="sig-prename descclassname"><span class="pre">espressopp.tools.</span></span><span class="sig-name descname"><span class="pre">readSimpleSystem</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nparticles</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.prepareComplexMolecules.espressopp.tools.readSimpleSystem" title="Link to this definition"></a></dt>
+<dd><p>Read in a column-formatted file containing information about the
+particles in a simple system, for example a coarsegrained protein.</p>
+<p>This function expects the input file to have between 2 and 5 columns.
+The number of columns in the file is automatically detected.
+The function reads each column into a list and returns the lists.
+Column types are interpreted as follows:
+2 columns: float, float
+3 columns: float, float, int
+4 columns: float, float, int, str
+5 columns: float, float, int, str, str</p>
+<p>For example in the case of a coarsegrained protein model, these could be:
+mass, charge, corresponding atomistic index, beadname, beadtype</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>string</em>) – name of file to open and read</p></li>
+<li><p><strong>nparticles</strong> (<em>int</em>) – number of particles in file</p></li>
+<li><p><strong>header</strong> (<em>int</em>) – number of lines to skip at start of file (default 0)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Returns: between 2 and 5 lists</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.tools.prepareComplexMolecules.espressopp.tools.applyBoreschRestraints">
+<span class="sig-prename descclassname"><span class="pre">espressopp.tools.</span></span><span class="sig-name descname"><span class="pre">applyBoreschRestraints</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">restraintAtoms</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">restraintK</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">restraintR0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.prepareComplexMolecules.espressopp.tools.applyBoreschRestraints" title="Link to this definition"></a></dt>
+<dd><p>Applies restraints between ligand and protein as defined in Boresch et al, JPCB 2003, 107, 9535-9551
+The restraints (one bond, two angles and three dihedrals) are applied between three ligand atoms A,B,C and three protein atoms a,b,c.</p>
+<p>In espressopp, the potential for harmonic bond and angles is k(x-x0)^2, but the harmonic dihedral potential is 0.5*k(x-x0)^2. This is taken care of in this function, i.e. the user should supply the force constants exactly as given in Boresch et al.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>system</strong> (<em>System object</em>) – espressopp system</p></li>
+<li><p><strong>restraintAtoms</strong> (<em>python dictionary</em>) – dictionary identifying the six atoms involved in the restraints, key = atom label (one of ‘A’,’B’,’C’,’a’,’b’,’c’), value = atom index</p></li>
+<li><p><strong>restraintK</strong> (<em>python dictionary</em>) – dictionary of force constants, key = restraint label (‘aA’ for the bond, ‘baA’ and ‘aAB’ for the angles, ‘aABC’, ‘cbaA’ and ‘baAB’ for the dihedrals), value = force constant (units as for the simulation forcefield, angle and dihedral constants should be in rad^-2)</p></li>
+<li><p><strong>restraintR0</strong> (<em>python dictionary</em>) – dictionary of equilibrium values (distance or angle), key = restraint label, value = distance (in distance units) or angle (in degrees)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Examples of the three dictionaries:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">restraintAtoms</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="mi">1981</span><span class="p">,</span><span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="mi">1966</span><span class="p">,</span><span class="s1">&#39;C&#39;</span><span class="p">:</span><span class="mi">1993</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1588</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">1581</span><span class="p">,</span><span class="s1">&#39;c&#39;</span><span class="p">:</span><span class="mi">1567</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">restraintK</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;aA&#39;</span><span class="p">:</span><span class="mi">4184</span><span class="p">,</span><span class="s1">&#39;baA&#39;</span><span class="p">:</span><span class="mf">41.84</span><span class="p">,</span><span class="s1">&#39;aAB&#39;</span><span class="p">:</span><span class="mf">41.84</span><span class="p">,</span><span class="s1">&#39;aABC&#39;</span><span class="p">:</span><span class="mf">41.84</span><span class="p">,</span><span class="s1">&#39;cbaA&#39;</span><span class="p">:</span><span class="mf">41.84</span><span class="p">,</span><span class="s1">&#39;baAB&#39;</span><span class="p">:</span><span class="mf">41.84</span><span class="p">}</span> <span class="c1">#kJ mol-1 nm-2,kJ mol-1 rad-2, all 10 kcal as in JPCB 2003</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">restraintR0</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;aA&#39;</span><span class="p">:</span><span class="mf">0.31</span><span class="p">,</span><span class="s1">&#39;baA&#39;</span><span class="p">:</span><span class="mf">120.0</span><span class="p">,</span><span class="s1">&#39;aAB&#39;</span><span class="p">:</span><span class="mf">90.0</span><span class="p">,</span><span class="s1">&#39;aABC&#39;</span><span class="p">:</span><span class="mf">100.0</span><span class="p">,</span><span class="s1">&#39;cbaA&#39;</span><span class="p">:</span><span class="o">-</span><span class="mf">170.0</span><span class="p">,</span><span class="s1">&#39;baAB&#39;</span><span class="p">:</span><span class="o">-</span><span class="mf">105.0</span><span class="p">}</span> <span class="c1">#nm, degrees</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="espressopp.tools.povwrite.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="espressopp.tools.prepareAdress.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="espressopp.tools.povwrite.html" class="btn btn-neutral float-left" title="povwrite - write povray files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="espressopp.tools.prepareAdress.html" class="btn btn-neutral float-right" title="prepareAdress - setup AdResS simulation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -100,14 +100,155 @@
 <p class="rubric">Overview</p>
 <table class="autosummary longtable docutils align-default">
 <tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#module-espressopp.bc.OrthorhombicBC" title="espressopp.bc.OrthorhombicBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.bc.OrthorhombicBC</span></code></a>(*args, **kwds)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#module-espressopp.bc.SlabBC" title="espressopp.bc.SlabBC"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.bc.SlabBC</span></code></a>(*args, **kwds)</p></td>
+<td><p></p></td>
+</tr>
 </tbody>
 </table>
 <p class="rubric">Details</p>
-<section id="espressopp-bc-orthorombicbc">
-<h2>espressopp.bc.OrthorombicBC<a class="headerlink" href="#espressopp-bc-orthorombicbc" title="Link to this heading"></a></h2>
+<p id="module-espressopp.bc.BC">This is the abstract base class for all boundary condition objects.
+It cannot be used directly. All derived classes implement at least
+the following methods:</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="espressopp.bc.BC.espressopp.bc.BC">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">espressopp.bc.</span></span><span class="sig-name descname"><span class="pre">BC</span></span><a class="headerlink" href="#espressopp.bc.BC.espressopp.bc.BC" title="Link to this definition"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="espressopp.bc.BC.espressopp.bc.BC.getFoldedPosition">
+<span class="sig-name descname"><span class="pre">getFoldedPosition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageBox</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.BC.espressopp.bc.BC.getFoldedPosition" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pos</strong></p></li>
+<li><p><strong>imageBox</strong> – (default: None)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="espressopp.bc.BC.espressopp.bc.BC.getMinimumImageVector">
+<span class="sig-name descname"><span class="pre">getMinimumImageVector</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.BC.espressopp.bc.BC.getMinimumImageVector" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pos1</strong></p></li>
+<li><p><strong>pos2</strong></p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="espressopp.bc.BC.espressopp.bc.BC.getRandomPos">
+<span class="sig-name descname"><span class="pre">getRandomPos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.BC.espressopp.bc.BC.getRandomPos" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="espressopp.bc.BC.espressopp.bc.BC.getUnfoldedPosition">
+<span class="sig-name descname"><span class="pre">getUnfoldedPosition</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">imageBox</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.BC.espressopp.bc.BC.getUnfoldedPosition" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pos</strong></p></li>
+<li><p><strong>imageBox</strong></p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<p><cite>pos</cite>, <cite>pos1</cite> and <cite>pos2</cite> are particle coordinates ( type: (<cite>float</cite>, <cite>float</cite>, <cite>float</cite>) ).
+<cite>imageBox</cite> ( type: (<cite>int</cite>, <cite>int</cite>, <cite>int</cite>) ) specifies the</p>
+</dd></dl>
+
+<section id="module-espressopp.bc.OrthorhombicBC">
+<span id="espressopp-bc-orthorombicbc"></span><h2>espressopp.bc.OrthorombicBC<a class="headerlink" href="#module-espressopp.bc.OrthorhombicBC" title="Link to this heading"></a></h2>
+<p>Like all boundary condition objects, this class implements
+all the methods of the base class <strong>BC</strong> , which are described in detail
+in the documentation of the abstract class <strong>BC</strong>.</p>
+<p>The OrthorhombicBC class is responsible for the orthorhombic boundary condition.
+Currently only periodic boundary conditions are supported.</p>
+<p>Example:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boxsize</span> <span class="o">=</span> <span class="p">(</span><span class="n">Lx</span><span class="p">,</span> <span class="n">Ly</span><span class="p">,</span> <span class="n">Lz</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">bc</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">OrthorhombicBC</span><span class="p">(</span><span class="n">rng</span><span class="p">,</span> <span class="n">boxsize</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="espressopp.bc.OrthorhombicBC.espressopp.bc.OrthorhombicBC">
+<span class="sig-prename descclassname"><span class="pre">espressopp.bc.</span></span><span class="sig-name descname"><span class="pre">OrthorhombicBC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rng</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boxL</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.OrthorhombicBC.espressopp.bc.OrthorhombicBC" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rng</strong></p></li>
+<li><p><strong>boxL</strong> (<em>real</em>) – (default: 1.0)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="espressopp.bc.OrthorhombicBC.espressopp.bc.OrthorhombicBC.setBoxL">
+<span class="sig-prename descclassname"><span class="pre">espressopp.bc.OrthorhombicBC.</span></span><span class="sig-name descname"><span class="pre">setBoxL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boxL</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.OrthorhombicBC.espressopp.bc.OrthorhombicBC.setBoxL" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>boxL</strong></p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
-<section id="espressopp-bc-slabbc">
-<h2>espressopp.bc.SlabBC<a class="headerlink" href="#espressopp-bc-slabbc" title="Link to this heading"></a></h2>
+<section id="module-espressopp.bc.SlabBC">
+<span id="espressopp-bc-slabbc"></span><h2>espressopp.bc.SlabBC<a class="headerlink" href="#module-espressopp.bc.SlabBC" title="Link to this heading"></a></h2>
+<p>Like all boundary condition objects, this class implements all the methods of
+the base class <strong>BC</strong> , which are described in detail in the documentation of
+the abstract class <strong>BC</strong>.</p>
+<p>The SlabBC class is responsible for a cuboid boundary condition that is periodic
+in all but the “dir” dimension. Currently, dir is set arbirtrarily to “0” (the
+x-direction).</p>
+<p>Example:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">boxsize</span> <span class="o">=</span> <span class="p">(</span><span class="n">Lx</span><span class="p">,</span> <span class="n">Ly</span><span class="p">,</span> <span class="n">Lz</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">bc</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">SlabBC</span><span class="p">(</span><span class="n">rng</span><span class="p">,</span> <span class="n">boxsize</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py method">
+<dt class="sig sig-object py" id="espressopp.bc.SlabBC.espressopp.bc.SlabBC">
+<span class="sig-prename descclassname"><span class="pre">espressopp.bc.</span></span><span class="sig-name descname"><span class="pre">SlabBC</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rng</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boxL</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.SlabBC.espressopp.bc.SlabBC" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rng</strong></p></li>
+<li><p><strong>boxL</strong> (<em>real</em>) – (default: 1.0)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="espressopp.bc.SlabBC.espressopp.bc.SlabBC.setBoxL">
+<span class="sig-prename descclassname"><span class="pre">espressopp.bc.SlabBC.</span></span><span class="sig-name descname"><span class="pre">setBoxL</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boxL</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.bc.SlabBC.espressopp.bc.SlabBC.setBoxL" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>boxL</strong></p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 </section>
 

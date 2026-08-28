@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
+  <title>PSF - read and write psf format &mdash; ESPResSo++ vlatest</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
@@ -20,8 +20,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.tools.tabulated.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.tools.prepareAdress.html" /> 
+    <link rel="next" title="tabulated - write tabulated file" href="espressopp.tools.tabulated.html" />
+    <link rel="prev" title="prepareAdress - setup AdResS simulation" href="espressopp.tools.prepareAdress.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,9 +44,58 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="tools.html">tools</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.analyse.html">information and analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.initcfg.html">initializing particles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.decomp.html">decomp - Domain Decomposition python functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html">DumpConfigurations - read/write xyz files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.fastreadxyz"><code class="docutils literal notranslate"><span class="pre">fastreadxyz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.fastwritexyz"><code class="docutils literal notranslate"><span class="pre">fastwritexyz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.fastwritexyz_standard"><code class="docutils literal notranslate"><span class="pre">fastwritexyz_standard()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.readxyz"><code class="docutils literal notranslate"><span class="pre">readxyz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.readxyzr"><code class="docutils literal notranslate"><span class="pre">readxyzr()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.writexyz"><code class="docutils literal notranslate"><span class="pre">writexyz()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.DumpConfigurations.html#espressopp.tools.DumpConfigurations.xyzfilewrite"><code class="docutils literal notranslate"><span class="pre">xyzfilewrite()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.espresso_old.html">espresso_old - read espressomd files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.espresso_old.html#espressopp.tools.espresso_old.read"><code class="docutils literal notranslate"><span class="pre">read()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html">gromacs - parser for Gromacs files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html#espressopp.tools.gromacs.convertTable"><code class="docutils literal notranslate"><span class="pre">convertTable()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html#espressopp.tools.gromacs.read"><code class="docutils literal notranslate"><span class="pre">read()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html#espressopp.tools.gromacs.setLennardJones14Interactions"><code class="docutils literal notranslate"><span class="pre">setLennardJones14Interactions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html#espressopp.tools.gromacs.setLennardJonesInteractions"><code class="docutils literal notranslate"><span class="pre">setLennardJonesInteractions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html#espressopp.tools.gromacs.setLennardJonesInteractionsTI"><code class="docutils literal notranslate"><span class="pre">setLennardJonesInteractionsTI()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.gromacs.html#espressopp.tools.gromacs.setTabulatedInteractions"><code class="docutils literal notranslate"><span class="pre">setTabulatedInteractions()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.io_extended.html">io_extended - read/write configurational files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.lammps.html">lammps - read lammps files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.pathintegral.html">pathintegral - nuclear quantum effects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.pdb.html">PDB - read and write pdb format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.povwrite.html">povwrite - write povray files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.prepareComplexMolecules.html">prepareComplexMolecules - set up proteins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.prepareAdress.html">prepareAdress - setup AdResS simulation</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">PSF - read and write psf format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.tabulated.html">tabulated - write tabulated file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.tabulated.html#espressopp.tools.tabulated.writeTabFile"><code class="docutils literal notranslate"><span class="pre">writeTabFile()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.topology_helper.html">topology_helper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.tools.units.html">units - convert to real units</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -67,7 +116,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="classdescription.html">User Interface</a></li>
           <li class="breadcrumb-item"><a href="tools.html">tools</a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="breadcrumb-item active">PSF - read and write psf format</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/espressopp.tools.psf.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -77,13 +126,48 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
+  <section id="psf-read-and-write-psf-format">
+<span id="module-espressopp.tools.psf"></span><h1>PSF - read and write psf format<a class="headerlink" href="#psf-read-and-write-psf-format" title="Link to this heading"></a></h1>
+<p>PSF file format given at <a class="reference external" href="http://www.ks.uiuc.edu/Training/Tutorials/namd/namd-tutorial-win-html/node24.html">http://www.ks.uiuc.edu/Training/Tutorials/namd/namd-tutorial-win-html/node24.html</a></p>
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.tools.psf.espressopp.tools.psfwrite">
+<span class="sig-prename descclassname"><span class="pre">espressopp.tools.</span></span><span class="sig-name descname"><span class="pre">psfwrite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maxdist</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">molsize</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">typenames</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.psf.espressopp.tools.psfwrite" title="Link to this definition"></a></dt>
+<dd><p>Writes !NATOM and !NBOND sections of a psf format file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>string</em>) – output file name</p></li>
+<li><p><strong>system</strong> (<em>espressopp System object</em>) – espressopp system</p></li>
+<li><p><strong>maxdist</strong> (<em>float</em>) – if this is specified, only bonds in which the pair of particles are separated by a distance &lt; maxdist are written to the !NBOND section</p></li>
+<li><p><strong>molsize</strong> (<em>int</em>) – if molsize&gt;0, the molecule count is increased every molsize particles</p></li>
+<li><p><strong>typenames</strong> (<em>dict</em><em>, </em><em>key=int</em><em>, </em><em>value=string</em>) – dictionary used for mapping from espressopp’s integer particle types to the particle type strings written in a psf file</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.tools.psf.espressopp.tools.psfread">
+<span class="sig-prename descclassname"><span class="pre">espressopp.tools.</span></span><span class="sig-name descname"><span class="pre">psfread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.tools.psf.espressopp.tools.psfread" title="Link to this definition"></a></dt>
+<dd><p>Reads !NATOM section of a psf format file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> (<em>string</em>) – input file name</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>pid,segname,resindex,resname,atomname,atomtype,mass,charge (lists of type int,str,int,str,str,str,float,float)</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="espressopp.tools.prepareAdress.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="espressopp.tools.tabulated.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="espressopp.tools.prepareAdress.html" class="btn btn-neutral float-left" title="prepareAdress - setup AdResS simulation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="espressopp.tools.tabulated.html" class="btn btn-neutral float-right" title="tabulated - write tabulated file" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

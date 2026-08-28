@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
+  <title>espressopp.storage.Storage &mdash; ESPResSo++ vlatest</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
@@ -21,7 +21,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="tools" href="tools.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.storage.DomainDecompositionNonBlocking.html" /> 
+    <link rel="prev" title="espressopp.storage.DomainDecompositionNonBlocking" href="espressopp.storage.DomainDecompositionNonBlocking.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,9 +44,30 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="storage.html">storage</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="espressopp.storage.DomainDecomposition.html">espressopp.storage.DomainDecomposition</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.storage.DomainDecompositionAdress.html">espressopp.storage.DomainDecompositionAdress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.storage.DomainDecompositionNonBlocking.html">espressopp.storage.DomainDecompositionNonBlocking</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">espressopp.storage.Storage</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -67,7 +88,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="classdescription.html">User Interface</a></li>
           <li class="breadcrumb-item"><a href="storage.html">storage</a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="breadcrumb-item active">espressopp.storage.Storage</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/espressopp.storage.Storage.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -77,12 +98,276 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
+  <section id="espressopp-storage-storage">
+<span id="module-espressopp.storage.Storage"></span><h1>espressopp.storage.Storage<a class="headerlink" href="#espressopp-storage-storage" title="Link to this heading"></a></h1>
+<p>This is the base class for all storage objects.
+All derived classes implement at least the following methods:</p>
+<ul>
+<li><p><cite>decompose()</cite></p>
+<blockquote>
+<div><p>Send all particles to their corresponding cell/cpu</p>
+</div></blockquote>
+</li>
+<li><p><cite>addParticle(pid, pos)</cite>:</p>
+<blockquote>
+<div><p>Add a particle to the storage</p>
+</div></blockquote>
+</li>
+<li><p><cite>removeParticle(pid)</cite>:</p>
+<blockquote>
+<div><p>Remove a particle with id number <em>pid</em> from the storage.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">removeParticle</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>There is an example in <em>examples</em> folder</p>
+</div></blockquote>
+</li>
+<li><p><cite>getParticle(pid)</cite>:</p>
+<blockquote>
+<div><p>Get a particle object.
+This can be used to get specific particle information:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">particle</span> <span class="o">=</span> <span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">getParticle</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;Particle ID is       : &quot;</span><span class="p">,</span> <span class="n">particle</span><span class="o">.</span><span class="n">id</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s2">&quot;Particle position is : &quot;</span><span class="p">,</span> <span class="n">particle</span><span class="o">.</span><span class="n">pos</span>
+</pre></div>
+</div>
+<p>you cannot use this particle object to modify particle data.
+You have to use the modifyParticle command for that (see below).</p>
+</div></blockquote>
+</li>
+<li><p><cite>addAdrParticle(pid, pos, last_pos)</cite>:</p>
+<blockquote>
+<div><p>Add an AdResS Particle to the storage</p>
+</div></blockquote>
+</li>
+<li><p><cite>setFixedTuplesAdress(fixed_tuple_list)</cite>:</p></li>
+<li><p><cite>addParticles(particle_list, *properties)</cite>:</p>
+<blockquote>
+<div><p>This routine adds particles with certain properties to the storage.</p>
+<dl class="field-list simple">
+<dt class="field-odd">param particleList<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of particles (and properties) to be added</p>
+</dd>
+<dt class="field-even">param properties<span class="colon">:</span></dt>
+<dd class="field-even"><p>property strings</p>
+</dd>
+</dl>
+<p>Each particle in the list must be itself a list where each entry corresponds
+to the property specified in properties.</p>
+<p>Example:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">addParticles</span><span class="p">([[</span><span class="nb">id</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="o">...</span> <span class="p">],</span> <span class="o">...</span><span class="p">],</span> <span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><cite>modifyParticle(pid, property, value, decompose=’yes’)</cite></p>
+<blockquote>
+<div><p>This routine allows to modify any properties of an already existing particle.</p>
+<p>Example:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">modifyParticle</span><span class="p">(</span><span class="n">pid</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="n">Real3D</span><span class="p">(</span><span class="n">new_x</span><span class="p">,</span> <span class="n">new_y</span><span class="p">,</span> <span class="n">new_z</span><span class="p">))</span>
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p><cite>removeAllParticles()</cite>:</p>
+<blockquote>
+<div><p>This routine removes all particles from the storage.</p>
+</div></blockquote>
+</li>
+<li><p>‘system’:</p>
+<p>The property ‘system’ returns the System object of the storage.</p>
+</li>
+</ul>
+<p>Examples:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">addParticles</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">Real3D</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)]],</span><span class="s1">&#39;id&#39;</span><span class="p">,</span><span class="s1">&#39;pos&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">decompose</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">s</span><span class="o">.</span><span class="n">storage</span><span class="o">.</span><span class="n">modifyParticle</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="s1">&#39;pos&#39;</span><span class="p">,</span> <span class="n">Real3D</span><span class="p">(</span><span class="n">new_x</span><span class="p">,</span> <span class="n">new_y</span><span class="p">,</span> <span class="n">new_z</span><span class="p">))</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.addAdrATParticle">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">addAdrATParticle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">\*args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.addAdrATParticle" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pid</strong></p></li>
+<li><p><strong>*args</strong></p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.addParticle">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">addParticle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.addParticle" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pid</strong></p></li>
+<li><p><strong>pos</strong></p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.addParticles">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">addParticles</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">particleList</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">\*properties</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.addParticles" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>particleList</strong></p></li>
+<li><p><strong>*properties</strong></p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.clearSavedPositions">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">clearSavedPositions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.clearSavedPositions" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.getParticle">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">getParticle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pid</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.getParticle" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pid</strong></p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.getRealParticleIDs">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">getRealParticleIDs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.getRealParticleIDs" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.modifyParticle">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">modifyParticle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pid</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">property</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.modifyParticle" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pid</strong></p></li>
+<li><p><strong>property</strong></p></li>
+<li><p><strong>value</strong></p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.particleExists">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">particleExists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pid</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.particleExists" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pid</strong></p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.printRealParticles">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">printRealParticles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.printRealParticles" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.removeAllParticles">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">removeAllParticles</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.removeAllParticles" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.removeParticle">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">removeParticle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pid</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.removeParticle" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pid</strong></p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.restorePositions">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">restorePositions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.restorePositions" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.savePositions">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">savePositions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">idList</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.savePositions" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>idList</strong></p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.storage.Storage.espressopp.storage.Storage.setFixedTuplesAdress">
+<span class="sig-prename descclassname"><span class="pre">espressopp.storage.Storage.</span></span><span class="sig-name descname"><span class="pre">setFixedTuplesAdress</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fixedtuples</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.storage.Storage.espressopp.storage.Storage.setFixedTuplesAdress" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>fixedtuples</strong></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="espressopp.storage.DomainDecompositionNonBlocking.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="espressopp.storage.DomainDecompositionNonBlocking.html" class="btn btn-neutral float-left" title="espressopp.storage.DomainDecompositionNonBlocking" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="tools.html" class="btn btn-neutral float-right" title="tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

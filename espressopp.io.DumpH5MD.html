@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
+  <title>DumpH5MD - IO object &mdash; ESPResSo++ vlatest</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
@@ -21,7 +21,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Parallel H5MD Output" href="espressopp.io.DumpH5MDParallel.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.io.DumpXYZ.html" /> 
+    <link rel="prev" title="espressopp.io.DumpXYZ" href="espressopp.io.DumpXYZ.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,9 +44,31 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="io.html">io</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="espressopp.io.DumpGRO.html">espressopp.io.DumpGRO</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.io.DumpGROAdress.html">espressopp.io.DumpGROAdress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.io.DumpXYZ.html">espressopp.io.DumpXYZ</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#"><strong>DumpH5MD</strong> - IO object</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.io.DumpH5MDParallel.html">Parallel H5MD Output</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -67,7 +89,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="classdescription.html">User Interface</a></li>
           <li class="breadcrumb-item"><a href="io.html">io</a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="breadcrumb-item active"><strong>DumpH5MD</strong> - IO object</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/espressopp.io.DumpH5MD.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -77,12 +99,84 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
+  <section id="dumph5md-io-object">
+<span id="module-espressopp.io.DumpH5MD"></span><h1><strong>DumpH5MD</strong> - IO object<a class="headerlink" href="#dumph5md-io-object" title="Link to this heading"></a></h1>
+<p>This module provides a writer for <a class="reference external" href="http://nongnu.org/h5md/">H5MD</a> file format.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.io.DumpH5MD.espressopp.io.DumpH5MD">
+<span class="sig-prename descclassname"><span class="pre">espressopp.io.</span></span><span class="sig-name descname"><span class="pre">DumpH5MD</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">integrator</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_name</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.io.DumpH5MD.espressopp.io.DumpH5MD" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>system</strong> (<em>espressopp.System</em>) – The system object.</p></li>
+<li><p><strong>integrator</strong> (<em>espressopp.integrator.MDIntegrator</em>) – System integrator.</p></li>
+<li><p><strong>filename</strong> (<em>str</em>) – The file name.</p></li>
+<li><p><strong>group_name</strong> (<em>str</em>) – The name of particle group.</p></li>
+<li><p><strong>is_adress</strong> (<em>bool</em>) – If positive then store position of AdResS particles</p></li>
+<li><p><strong>author</strong> (<em>str</em>) – The name of author of this file</p></li>
+<li><p><strong>email</strong> (<em>str</em>) – The e-mail address to the author.</p></li>
+<li><p><strong>chunk_size</strong> (<em>int</em>)</p></li>
+<li><p><strong>static_box</strong> (<em>bool</em>) – box size written as time-independent variable</p></li>
+<li><p><strong>is_single_prec</strong> (<em>bool</em>) – Store float values with single precision (default: False)</p></li>
+<li><p><strong>store_position</strong> – Saves postions of particles</p></li>
+<li><p><strong>store_species</strong> – Saves types of particles.</p></li>
+<li><p><strong>store_state</strong> – Saves states of particles.</p></li>
+<li><p><strong>store_velocity</strong> – Saves velocities of particles.</p></li>
+<li><p><strong>store_force</strong> – Saves forces of particles</p></li>
+<li><p><strong>store_charge</strong> – Saves charges of particles</p></li>
+<li><p><strong>store_lambda</strong> – Saves lambdas (AdResS) of particles</p></li>
+<li><p><strong>store_res_id</strong> – Saves residues id of particles.</p></li>
+<li><p><strong>store_mass</strong> – Saves masses of particles</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>The DumpH5MD writer.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<section id="example">
+<h2>Example<a class="headerlink" href="#example" title="Link to this heading"></a></h2>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">traj_file</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">DumpH5MD</span><span class="p">(</span>
+<span class="go">        system, integrator, output_file,</span>
+<span class="go">        group_name=&#39;atoms&#39;,</span>
+<span class="go">        static_box=False,</span>
+<span class="go">        author=&#39;xxx&#39;,</span>
+<span class="go">        email=&#39;xxx@xxx&#39;,</span>
+<span class="go">        store_species=True,</span>
+<span class="go">        store_velocity=True,</span>
+<span class="go">        store_state=True,</span>
+<span class="go">        store_lambda=True)</span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">steps</span><span class="p">):</span>
+<span class="go">        integrator.run(int_steps)</span>
+<span class="go">        traj_file.dump(s*int_steps, s*int_steps*integrator.dt)</span>
+</pre></div>
+</div>
+<p>Important note. Within the current approach, this extension is not compatible with ExtAnalyze module.
+Therefore, this code does not work:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ext_analyze</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">ExtAnalyze</span><span class="p">(</span><span class="n">traj_file</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">ext_analyze</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="sorting-file">
+<span id="sorting-file-label"></span><h2>Sorting file<a class="headerlink" href="#sorting-file" title="Link to this heading"></a></h2>
+<p>The content of the <cite>/particles/{}/</cite> is not sorted with respect to the
+particle id. This is because of the way how the data are stored
+by multiple cores simultaneously.</p>
+<p>If the flag <cite>do_sort</cite> is True then during the close method, the data
+will be sorted.</p>
+</section>
+</section>
+
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="espressopp.io.DumpXYZ.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="espressopp.io.DumpXYZ.html" class="btn btn-neutral float-left" title="espressopp.io.DumpXYZ" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="espressopp.io.DumpH5MDParallel.html" class="btn btn-neutral float-right" title="Parallel H5MD Output" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

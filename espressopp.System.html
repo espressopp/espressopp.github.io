@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
+  <title>espressopp.System &mdash; ESPResSo++ vlatest</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
@@ -20,8 +20,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.Tensor.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.RealND.html" /> 
+    <link rel="next" title="espressopp.Tensor" href="espressopp.Tensor.html" />
+    <link rel="prev" title="espressopp.RealND" href="espressopp.RealND.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,9 +44,87 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="espressopp.html">espressopp</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Exceptions.html">espressopp.Exceptions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Exceptions.html#espressopp.Exceptions.Error"><code class="docutils literal notranslate"><span class="pre">Error</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Exceptions.html#espressopp.Exceptions.MissingFixedPairList"><code class="docutils literal notranslate"><span class="pre">MissingFixedPairList</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Exceptions.html#espressopp.Exceptions.ParticleDoesNotExistHere"><code class="docutils literal notranslate"><span class="pre">ParticleDoesNotExistHere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Exceptions.html#espressopp.Exceptions.UnknownParticleProperty"><code class="docutils literal notranslate"><span class="pre">UnknownParticleProperty</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.FixedLocalTupleList.html"><strong>espressopp.FixedLocalTupleList</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.FixedPairDistList.html">espressopp.FixedPairDistList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.FixedPairList.html">espressopp.FixedPairList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.FixedPairListAdress.html">espressopp.FixedPairListAdress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.FixedQuadrupleAngleList.html">espressopp.FixedQuadrupleAngleList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.FixedQuadrupleList.html">espressopp.FixedQuadrupleList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.FixedQuadrupleListAdress.html">espressopp.FixedQuadrupleListAdress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.FixedSingleList.html">espressopp.FixedSingleList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.FixedTripleAngleList.html">espressopp.FixedTripleAngleList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.FixedTripleList.html">espressopp.FixedTripleList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.FixedTripleListAdress.html">espressopp.FixedTripleListAdress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.FixedTupleList.html">espressopp.FixedTupleList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.FixedTupleListAdress.html">espressopp.FixedTupleListAdress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Int3D.html">espressopp.Int3D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Int3D.html#espressopp.Int3D.toInt3D"><code class="docutils literal notranslate"><span class="pre">toInt3D()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Int3D.html#espressopp.Int3D.toInt3DFromVector"><code class="docutils literal notranslate"><span class="pre">toInt3DFromVector()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.MultiSystem.html">espressopp.MultiSystem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.MultiSystem.html#espressopp.MultiSystem.MultiSystem"><code class="docutils literal notranslate"><span class="pre">MultiSystem</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.MultiSystem.html#espressopp.MultiSystem.MultiSystemLocal"><code class="docutils literal notranslate"><span class="pre">MultiSystemLocal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.ParallelTempering.html">espressopp.ParallelTempering</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Particle.html">espressopp.Particle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Particle.html#espressopp.Particle.ParticleLocal"><code class="docutils literal notranslate"><span class="pre">ParticleLocal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.ParticleAccess.html">espressopp.ParticleAccess</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.ParticleGroup.html">espressopp.ParticleGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html">espressopp.pmi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.Proxy"><code class="docutils literal notranslate"><span class="pre">Proxy</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.UserError"><code class="docutils literal notranslate"><span class="pre">UserError</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.call"><code class="docutils literal notranslate"><span class="pre">call()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.create"><code class="docutils literal notranslate"><span class="pre">create()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.exec_"><code class="docutils literal notranslate"><span class="pre">exec_()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.finalizeWorkers"><code class="docutils literal notranslate"><span class="pre">finalizeWorkers()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.import_"><code class="docutils literal notranslate"><span class="pre">import_()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.invoke"><code class="docutils literal notranslate"><span class="pre">invoke()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.receive"><code class="docutils literal notranslate"><span class="pre">receive()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.reduce"><code class="docutils literal notranslate"><span class="pre">reduce()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.registerAtExit"><code class="docutils literal notranslate"><span class="pre">registerAtExit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.startWorkerLoop"><code class="docutils literal notranslate"><span class="pre">startWorkerLoop()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.stopWorkerLoop"><code class="docutils literal notranslate"><span class="pre">stopWorkerLoop()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.pmi.html#espressopp.pmi.sync"><code class="docutils literal notranslate"><span class="pre">sync()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Quaternion.html">espressopp.Quaternion</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Quaternion.html#espressopp.Quaternion.toQuaternion"><code class="docutils literal notranslate"><span class="pre">toQuaternion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Quaternion.html#espressopp.Quaternion.toQuaternionFromVector"><code class="docutils literal notranslate"><span class="pre">toQuaternionFromVector()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Real3D.html">espressopp.Real3D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Real3D.html#espressopp.Real3D.toReal3D"><code class="docutils literal notranslate"><span class="pre">toReal3D()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Real3D.html#espressopp.Real3D.toReal3DFromVector"><code class="docutils literal notranslate"><span class="pre">toReal3DFromVector()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.RealND.html">espressopp.RealND</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.RealND.html#espressopp.RealND.toRealND"><code class="docutils literal notranslate"><span class="pre">toRealND()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.RealND.html#espressopp.RealND.toRealNDFromVector"><code class="docutils literal notranslate"><span class="pre">toRealNDFromVector()</span></code></a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">espressopp.System</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Tensor.html">espressopp.Tensor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Tensor.html#espressopp.Tensor.toTensor"><code class="docutils literal notranslate"><span class="pre">toTensor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Tensor.html#espressopp.Tensor.toTensorFromVector"><code class="docutils literal notranslate"><span class="pre">toTensorFromVector()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.VerletList.html">espressopp.VerletList</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.VerletListAdress.html">espressopp.VerletListAdress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.VerletListTriple.html">espressopp.VerletListTriple</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.Version.html">espressopp.Version</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -67,7 +145,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="classdescription.html">User Interface</a></li>
           <li class="breadcrumb-item"><a href="espressopp.html">espressopp</a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="breadcrumb-item active">espressopp.System</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/espressopp.System.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -77,13 +155,140 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
+  <section id="espressopp-system">
+<span id="module-espressopp.System"></span><h1>espressopp.System<a class="headerlink" href="#espressopp-system" title="Link to this heading"></a></h1>
+<p>The main purpose of this class is to store pointers to some
+important other classes and thus make them available to C++.
+In a way the System class can be viewed as a container for
+system wide global variables.
+If you need to run more than one system at the same time you
+can combine several systems with the help of the Multisystem
+class.</p>
+<p><strong>In detail the System class holds pointers to:</strong></p>
+<ul class="simple">
+<li><p>the <cite>storage</cite> (e.g. DomainDecomposition)</p></li>
+<li><p>the boundary conditions <cite>bc</cite> for the system (e.g. OrthorhombicBC)</p></li>
+<li><p>a random number generator <cite>rng</cite> which is for example used by a thermostat</p></li>
+<li><p>the <cite>skin</cite> which is needed for the Verlet lists and the cell grid</p></li>
+<li><p>a list of short range interactions that apply to the system these
+interactions are added with the <cite>addInteraction()</cite> method of the System</p></li>
+</ul>
+<p>Example (not complete):</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span>      <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">System</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span><span class="o">.</span><span class="n">bc</span>   <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">bc</span><span class="o">.</span><span class="n">OrthorhombicBC</span><span class="p">(</span><span class="n">rng</span><span class="p">,</span> <span class="n">boxsize</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span><span class="o">.</span><span class="n">rng</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span><span class="o">.</span><span class="n">skin</span> <span class="o">=</span> <span class="mf">0.4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">LJSystem</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">interLJ</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.System.espressopp.System">
+<span class="sig-prename descclassname"><span class="pre">espressopp.</span></span><span class="sig-name descname"><span class="pre">System</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.System.espressopp.System.addInteraction">
+<span class="sig-prename descclassname"><span class="pre">espressopp.System.</span></span><span class="sig-name descname"><span class="pre">addInteraction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interaction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.addInteraction" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>interaction</strong></p></li>
+<li><p><strong>name</strong> (<em>string</em>) – The optional name of the interaction.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.System.espressopp.System.getInteraction">
+<span class="sig-prename descclassname"><span class="pre">espressopp.System.</span></span><span class="sig-name descname"><span class="pre">getInteraction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.getInteraction" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>number</strong></p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.System.espressopp.System.getNumberOfInteractions">
+<span class="sig-prename descclassname"><span class="pre">espressopp.System.</span></span><span class="sig-name descname"><span class="pre">getNumberOfInteractions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.getNumberOfInteractions" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.System.espressopp.System.removeInteraction">
+<span class="sig-prename descclassname"><span class="pre">espressopp.System.</span></span><span class="sig-name descname"><span class="pre">removeInteraction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.removeInteraction" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>number</strong></p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.System.espressopp.System.removeInteractionByName">
+<span class="sig-prename descclassname"><span class="pre">espressopp.System.</span></span><span class="sig-name descname"><span class="pre">removeInteractionByName</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.removeInteractionByName" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – The name of the interaction to remove.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.System.espressopp.System.getAllInteractions">
+<span class="sig-prename descclassname"><span class="pre">espressopp.System.</span></span><span class="sig-name descname"><span class="pre">getAllInteractions</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.getAllInteractions" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The dictionary with name as a key and Interaction object.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.System.espressopp.System.scaleVolume">
+<span class="sig-prename descclassname"><span class="pre">espressopp.System.</span></span><span class="sig-name descname"><span class="pre">scaleVolume</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">\*args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.scaleVolume" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>*args</strong></p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.System.espressopp.System.setTrace">
+<span class="sig-prename descclassname"><span class="pre">espressopp.System.</span></span><span class="sig-name descname"><span class="pre">setTrace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">switch</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.System.espressopp.System.setTrace" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>switch</strong></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="espressopp.RealND.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="espressopp.Tensor.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="espressopp.RealND.html" class="btn btn-neutral float-left" title="espressopp.RealND" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="espressopp.Tensor.html" class="btn btn-neutral float-right" title="espressopp.Tensor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

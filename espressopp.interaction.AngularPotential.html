@@ -17,10 +17,11 @@
       <script src="_static/documentation_options.js?v=c6e86fd7"></script>
       <script src="_static/doctools.js?v=9bcbadda"></script>
       <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.interaction.FENE.html" />
+    <link rel="next" title="espressopp.interaction.FENE" href="espressopp.interaction.FENE.html" />
     <link rel="prev" title="interaction" href="interaction.html" /> 
 </head>
 
@@ -55,6 +56,94 @@
 <li class="toctree-l2"><a class="reference internal" href="integrator.html">integrator</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="interaction.html">interaction</a><ul class="current">
 <li class="toctree-l3 current"><a class="current reference internal" href="#">espressopp.interaction.AngularPotential</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.FENE.html">espressopp.interaction.FENE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.FENECapped.html">espressopp.interaction.FENECapped</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.Harmonic.html">espressopp.interaction.Harmonic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.Harmonic.html#espressopp.interaction.Harmonic.Harmonic"><code class="docutils literal notranslate"><span class="pre">Harmonic</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.HarmonicTrap.html">espressopp.interaction.HarmonicTrap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.HarmonicTrap.html#espressopp.interaction.HarmonicTrap.HarmonicTrap"><code class="docutils literal notranslate"><span class="pre">HarmonicTrap</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.Morse.html">espressopp.interaction.Morse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.Morse.html#espressopp.interaction.Morse.Morse"><code class="docutils literal notranslate"><span class="pre">Morse</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.SoftCosine.html">espressopp.interaction.SoftCosine</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.SoftCosine.html#espressopp.interaction.SoftCosine.SoftCosine"><code class="docutils literal notranslate"><span class="pre">SoftCosine</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceEwald.html">espressopp.interaction.CoulombKSpaceEwald</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.CoulombKSpaceP3M.html">espressopp.interaction.CoulombKSpaceP3M</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.CoulombRSpace.html">espressopp.interaction.CoulombRSpace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.CoulombTruncated.html">espressopp.interaction.CoulombTruncated</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.CoulombTruncated.html#espressopp.interaction.CoulombTruncated.CoulombTruncated"><code class="docutils literal notranslate"><span class="pre">CoulombTruncated</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.CoulombTruncatedUniqueCharge.html">espressopp.interaction.CoulombTruncatedUniqueCharge</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.CoulombTruncatedUniqueCharge.html#espressopp.interaction.CoulombTruncatedUniqueCharge.CoulombTruncatedUniqueCharge"><code class="docutils literal notranslate"><span class="pre">CoulombTruncatedUniqueCharge</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.ConstrainCOM.html">espressopp.interaction.ConstrainCOM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.ConstrainRG.html">espressopp.interaction.ConstrainRG</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.DihedralHarmonic.html">espressopp.interaction.DihedralHarmonic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.DihedralHarmonic.html#espressopp.interaction.DihedralHarmonic.DihedralHarmonic"><code class="docutils literal notranslate"><span class="pre">DihedralHarmonic</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.DihedralHarmonic.html#espressopp.interaction.DihedralHarmonic.FixedQuadrupleListDihedralHarmonicLocal"><code class="docutils literal notranslate"><span class="pre">FixedQuadrupleListDihedralHarmonicLocal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.DihedralHarmonicCos.html">espressopp.interaction.DihedralHarmonicCos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.DihedralHarmonicCos.html#espressopp.interaction.DihedralHarmonicCos.DihedralHarmonicCos"><code class="docutils literal notranslate"><span class="pre">DihedralHarmonicCos</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.DihedralHarmonicNCos.html">espressopp.interaction.DihedralHarmonicNCos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.DihedralHarmonicNCos.html#espressopp.interaction.DihedralHarmonicNCos.DihedralHarmonicNCos"><code class="docutils literal notranslate"><span class="pre">DihedralHarmonicNCos</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.DihedralHarmonicNCos.html#espressopp.interaction.DihedralHarmonicNCos.FixedQuadrupleListDihedralHarmonicNCosLocal"><code class="docutils literal notranslate"><span class="pre">FixedQuadrupleListDihedralHarmonicNCosLocal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.DihedralPotential.html">espressopp.interaction.DihedralPotential</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.DihedralRB.html">espressopp.interaction.DihedralRB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.OPLS.html">espressopp.interaction.OPLS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.OPLS.html#espressopp.interaction.OPLS.OPLS"><code class="docutils literal notranslate"><span class="pre">OPLS</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.StillingerWeberPairTerm.html">espressopp.interaction.StillingerWeberPairTerm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.StillingerWeberPairTerm.html#espressopp.interaction.StillingerWeberPairTerm.StillingerWeberPairTerm"><code class="docutils literal notranslate"><span class="pre">StillingerWeberPairTerm</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.StillingerWeberPairTermCapped.html">espressopp.interaction.StillingerWeberPairTermCapped</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.StillingerWeberPairTermCapped.html#espressopp.interaction.StillingerWeberPairTermCapped.StillingerWeberPairTermCapped"><code class="docutils literal notranslate"><span class="pre">StillingerWeberPairTermCapped</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.StillingerWeberTripleTerm.html">espressopp.interaction.StillingerWeberTripleTerm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.StillingerWeberTripleTerm.html#espressopp.interaction.StillingerWeberTripleTerm.StillingerWeberTripleTerm"><code class="docutils literal notranslate"><span class="pre">StillingerWeberTripleTerm</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.TersoffPairTerm.html">espressopp.interaction.TersoffPairTerm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.TersoffPairTerm.html#espressopp.interaction.TersoffPairTerm.TersoffPairTerm"><code class="docutils literal notranslate"><span class="pre">TersoffPairTerm</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.TersoffTripleTerm.html">espressopp.interaction.TersoffTripleTerm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.GravityTruncated.html">espressopp.interaction.GravityTruncated</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJones.html">espressopp.interaction.LennardJones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJones.html#espressopp.interaction.LennardJones.LennardJones"><code class="docutils literal notranslate"><span class="pre">LennardJones</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesAutoBonds.html">espressopp.interaction.LennardJonesAutoBonds</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesAutoBonds.html#espressopp.interaction.LennardJonesAutoBonds.LennardJonesAutoBonds"><code class="docutils literal notranslate"><span class="pre">LennardJonesAutoBonds</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesCapped.html">espressopp.interaction.LennardJonesCapped</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesCapped.html#espressopp.interaction.LennardJonesCapped.LennardJonesCapped"><code class="docutils literal notranslate"><span class="pre">LennardJonesCapped</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesEnergyCapped.html">espressopp.interaction.LennardJonesEnergyCapped</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesEnergyCapped.html#espressopp.interaction.LennardJonesEnergyCapped.LennardJonesEnergyCapped"><code class="docutils literal notranslate"><span class="pre">LennardJonesEnergyCapped</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesExpand.html">espressopp.interaction.LennardJonesExpand</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesExpand.html#espressopp.interaction.LennardJonesExpand.LennardJonesExpand"><code class="docutils literal notranslate"><span class="pre">LennardJonesExpand</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesGeneric.html">espressopp.interaction.LennardJonesGeneric</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesGeneric.html#espressopp.interaction.LennardJonesGeneric.LennardJonesGeneric"><code class="docutils literal notranslate"><span class="pre">LennardJonesGeneric</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesGromacs.html">espressopp.interaction.LennardJonesGromacs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesGromacs.html#espressopp.interaction.LennardJonesGromacs.LennardJonesGromacs"><code class="docutils literal notranslate"><span class="pre">LennardJonesGromacs</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesSoftcoreTI.html">espressopp.interaction.LennardJonesSoftcoreTI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJonesSoftcoreTI.html#espressopp.interaction.LennardJonesSoftcoreTI.LennardJonesSoftcoreTI"><code class="docutils literal notranslate"><span class="pre">LennardJonesSoftcoreTI</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LJcos.html">espressopp.interaction.LJcos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LJcos.html#espressopp.interaction.LJcos.LJcos"><code class="docutils literal notranslate"><span class="pre">LJcos</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.MirrorLennardJones.html">espressopp.interaction.MirrorLennardJones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.MirrorLennardJones.html#espressopp.interaction.MirrorLennardJones.MirrorLennardJones"><code class="docutils literal notranslate"><span class="pre">MirrorLennardJones</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.Tabulated.html">espressopp.interaction.Tabulated</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.Tabulated.html#espressopp.interaction.Tabulated.Tabulated"><code class="docutils literal notranslate"><span class="pre">Tabulated</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.TabulatedAngular.html">espressopp.interaction.TabulatedAngular</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.TabulatedAngular.html#espressopp.interaction.TabulatedAngular.FixedTripleListPIadressTabulatedAngularLocal"><code class="docutils literal notranslate"><span class="pre">FixedTripleListPIadressTabulatedAngularLocal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.TabulatedAngular.html#espressopp.interaction.TabulatedAngular.TabulatedAngular"><code class="docutils literal notranslate"><span class="pre">TabulatedAngular</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.TabulatedDihedral.html">espressopp.interaction.TabulatedDihedral</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.TabulatedDihedral.html#espressopp.interaction.TabulatedDihedral.TabulatedDihedral"><code class="docutils literal notranslate"><span class="pre">TabulatedDihedral</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJones93.html">espressopp.interaction.LennardJones93Wall</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.LennardJones93.html#espressopp.interaction.LennardJones93Wall.LennardJones93Wall"><code class="docutils literal notranslate"><span class="pre">LennardJones93Wall</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.Interaction.html">espressopp.interaction.Interaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.Potential.html">espressopp.interaction.Potential</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.PotentialVSpherePair.html">espressopp.interaction.PotentialVSpherePair</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.Quartic.html">espressopp.interaction.Quartic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.Quartic.html#espressopp.interaction.Quartic.Quartic"><code class="docutils literal notranslate"><span class="pre">Quartic</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.ReactionFieldGeneralized.html">espressopp.interaction.ReactionFieldGeneralized</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.ReactionFieldGeneralized.html#espressopp.interaction.ReactionFieldGeneralized.ReactionFieldGeneralized"><code class="docutils literal notranslate"><span class="pre">ReactionFieldGeneralized</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.ReactionFieldGeneralizedTI.html">espressopp.interaction.ReactionFieldGeneralizedTI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.ReactionFieldGeneralizedTI.html#espressopp.interaction.ReactionFieldGeneralizedTI.ReactionFieldGeneralizedTI"><code class="docutils literal notranslate"><span class="pre">ReactionFieldGeneralizedTI</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.SingleParticlePotential.html">espressopp.interaction.SingleParticlePotential</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.VSpherePair.html">espressopp.interaction.VSpherePair</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.VSpherePair.html#espressopp.interaction.VSpherePair.VSpherePair"><code class="docutils literal notranslate"><span class="pre">VSpherePair</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.VSphereSelf.html">espressopp.interaction.VSphereSelf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.VSphereSelf.html#espressopp.interaction.VSphereSelf.VSphereSelf"><code class="docutils literal notranslate"><span class="pre">VSphereSelf</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.Zero.html">espressopp.interaction.Zero</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.Zero.html#espressopp.interaction.Zero.Zero"><code class="docutils literal notranslate"><span class="pre">Zero</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.SmoothSquareWell.html">espressopp.interaction.SmoothSquareWell</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.interaction.SmoothSquareWell.html#espressopp.interaction.SmoothSquareWell.SmoothSquareWell"><code class="docutils literal notranslate"><span class="pre">SmoothSquareWell</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
@@ -100,17 +189,298 @@
 <p class="rubric">Overview</p>
 <table class="autosummary longtable docutils align-default">
 <tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#module-espressopp.interaction.AngularCosineSquared" title="espressopp.interaction.AngularCosineSquared"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.interaction.AngularCosineSquared</span></code></a>(...)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#module-espressopp.interaction.AngularHarmonic" title="espressopp.interaction.AngularHarmonic"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.interaction.AngularHarmonic</span></code></a>(...)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#module-espressopp.interaction.Cosine" title="espressopp.interaction.Cosine"><code class="xref py py-obj docutils literal notranslate"><span class="pre">espressopp.interaction.Cosine</span></code></a>(*args, **kwds)</p></td>
+<td><p></p></td>
+</tr>
 </tbody>
 </table>
 <p class="rubric">Details</p>
-<section id="espressopp-interaction-angularcosinesquared">
-<h2>espressopp.interaction.AngularCosineSquared<a class="headerlink" href="#espressopp-interaction-angularcosinesquared" title="Link to this heading"></a></h2>
+<p id="module-espressopp.interaction.AngularPotential">Abstract class for angular potentials that only needed to be inherited from.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="espressopp.interaction.AngularPotential.espressopp.interaction.AngularPotential">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">espressopp.interaction.</span></span><span class="sig-name descname"><span class="pre">AngularPotential</span></span><a class="headerlink" href="#espressopp.interaction.AngularPotential.espressopp.interaction.AngularPotential" title="Link to this definition"></a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="espressopp.interaction.AngularPotential.espressopp.interaction.AngularPotential.computeEnergy">
+<span class="sig-name descname"><span class="pre">computeEnergy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">\*args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularPotential.espressopp.interaction.AngularPotential.computeEnergy" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>*args</strong></p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="espressopp.interaction.AngularPotential.espressopp.interaction.AngularPotential.computeForce">
+<span class="sig-name descname"><span class="pre">computeForce</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">\*args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularPotential.espressopp.interaction.AngularPotential.computeForce" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>*args</strong></p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<section id="module-espressopp.interaction.AngularCosineSquared">
+<span id="espressopp-interaction-angularcosinesquared"></span><h2>espressopp.interaction.AngularCosineSquared<a class="headerlink" href="#module-espressopp.interaction.AngularCosineSquared" title="Link to this heading"></a></h2>
+<p>Calculates the Angular Cosine Squared potential as:</p>
+<div class="math notranslate nohighlight">
+\[U =  K [cos(\theta) - cos(\theta_{0})]^2,\]</div>
+<p>where angle <span class="math notranslate nohighlight">\(\theta\)</span> is the planar angle formed by three binded particles
+(triplet or triple).</p>
+<p>This potential is employed by:</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="espressopp.interaction.AngularCosineSquared.espressopp.interaction.AngularCosineSquared">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">espressopp.interaction.</span></span><span class="sig-name descname"><span class="pre">AngularCosineSquared</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">K</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theta0</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularCosineSquared.espressopp.interaction.AngularCosineSquared" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>K</strong> (<em>real</em>) – energy amplitude</p></li>
+<li><p><strong>theta0</strong> (<em>real</em>) – angle in radians</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>triple potential</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>A triple potential applied to every triple in the system creates an <em>interaction</em>.
+This is done via:</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="espressopp.interaction.AngularCosineSquared.espressopp.interaction.FixedTripleListAngularCosineSquared">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">espressopp.interaction.</span></span><span class="sig-name descname"><span class="pre">FixedTripleListAngularCosineSquared</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixed_triple_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">potential</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularCosineSquared.espressopp.interaction.FixedTripleListAngularCosineSquared" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>system</strong> (<em>std::shared_ptr</em>) – system object</p></li>
+<li><p><strong>fixed_triple_list</strong> (<em>list</em>) – a fixed list of all triples in the system</p></li>
+<li><p><strong>potential</strong> – triple potential (in this case, <a class="reference internal" href="#module-espressopp.interaction.AngularCosineSquared" title="espressopp.interaction.AngularCosineSquared"><code class="xref py py-class docutils literal notranslate"><span class="pre">espressopp.interaction.AngularCosineSquared</span></code></a>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>interaction</p>
+</dd>
+</dl>
+<p><strong>Methods</strong></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="espressopp.interaction.AngularCosineSquared.espressopp.interaction.FixedTripleListAngularCosineSquared.getFixedTripleList">
+<span class="sig-name descname"><span class="pre">getFixedTripleList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularCosineSquared.espressopp.interaction.FixedTripleListAngularCosineSquared.getFixedTripleList" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A Python list of fixed triples (e.g., in the chains).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="espressopp.interaction.AngularCosineSquared.espressopp.interaction.FixedTripleListAngularCosineSquared.setPotential">
+<span class="sig-name descname"><span class="pre">setPotential</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">potential</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularCosineSquared.espressopp.interaction.FixedTripleListAngularCosineSquared.setPotential" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type1</strong></p></li>
+<li><p><strong>type2</strong></p></li>
+<li><p><strong>potential</strong></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p><strong>Example 1.</strong> Creating a fixed triple list by <a class="reference internal" href="espressopp.FixedTripleList.html#module-espressopp.FixedTripleList" title="espressopp.FixedTripleList"><code class="xref py py-class docutils literal notranslate"><span class="pre">espressopp.FixedTripleList</span></code></a>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># we assume a polymer solution of n_chains of the length chain_len each.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># At first, create a list_of_triples for the system:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">N</span> <span class="o">=</span> <span class="n">n_chains</span> <span class="o">*</span> <span class="n">chain_len</span>            <span class="c1"># number of particles in the system</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">list_of_tripples</span> <span class="o">=</span> <span class="p">[]</span>               <span class="c1"># empty list of triples</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">n_chains</span><span class="p">):</span>          <span class="c1"># loop over chains</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">chain_len</span><span class="p">):</span>     <span class="c1"># loop over chain beads</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">pid</span> <span class="o">=</span> <span class="n">n</span> <span class="o">*</span> <span class="n">chain_len</span> <span class="o">+</span> <span class="n">m</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="k">if</span> <span class="p">(</span><span class="n">pid</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">pid</span> <span class="o">&lt;</span> <span class="n">N</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="n">list_of_tripples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span><span class="n">pid</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">pid</span><span class="p">,</span> <span class="n">pid</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># create fixed triple list</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fixed_triple_list</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedTripleList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fixed_triple_list</span><span class="o">.</span><span class="n">addTriples</span><span class="p">(</span><span class="n">list_of_triples</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Example 2.</strong> Employing an Angular Cosine Squared potential.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Note, the fixed_triple_list has to be generated in advance! (see Example 1)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># set up the potential</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">potAngCosSq</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">AngularCosineSquared</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">theta0</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># set up the interaction</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">interAngCosSq</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">FixedTripleListAngularCosineSquared</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">fixed_triple_list</span><span class="p">,</span> <span class="n">potAngCosSq</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># finally, add the interaction to the system</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">interAngCosSq</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
-<section id="espressopp-interaction-angularharmonic">
-<h2>espressopp.interaction.AngularHarmonic<a class="headerlink" href="#espressopp-interaction-angularharmonic" title="Link to this heading"></a></h2>
+<section id="module-espressopp.interaction.AngularHarmonic">
+<span id="espressopp-interaction-angularharmonic"></span><h2>espressopp.interaction.AngularHarmonic<a class="headerlink" href="#module-espressopp.interaction.AngularHarmonic" title="Link to this heading"></a></h2>
+<p>Calculates the Angular Harmonic potential as:</p>
+<div class="math notranslate nohighlight">
+\[U = K (\theta - \theta_0)^2,\]</div>
+<p>where angle <span class="math notranslate nohighlight">\(\theta\)</span> is the planar angle formed by three binded particles
+(triplet or triple). The usual coefficient of <span class="math notranslate nohighlight">\(1/2\)</span> is included in <span class="math notranslate nohighlight">\(K\)</span>.</p>
+<p>This potential is employed by:</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="espressopp.interaction.AngularHarmonic.espressopp.interaction.AngularHarmonic">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">espressopp.interaction.</span></span><span class="sig-name descname"><span class="pre">AngularHarmonic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">K</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theta0</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularHarmonic.espressopp.interaction.AngularHarmonic" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>K</strong> (<em>real</em>) – energy amplitude</p></li>
+<li><p><strong>theta0</strong> (<em>real</em>) – angle in radians</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>triple potential</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>A triple potential applied to every triple in the system creates an <em>interaction</em>.
+This is done via:</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="espressopp.interaction.AngularHarmonic.espressopp.interaction.FixedTripleListAngularHarmonic">
+<em class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">espressopp.interaction.</span></span><span class="sig-name descname"><span class="pre">FixedTripleListAngularHarmonic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fixed_triple_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">potential</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularHarmonic.espressopp.interaction.FixedTripleListAngularHarmonic" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>system</strong> (<em>std::shared_ptr</em>) – system object</p></li>
+<li><p><strong>fixed_triple_list</strong> (<em>list</em>) – a fixed list of all triples in the system</p></li>
+<li><p><strong>potential</strong> – triple potential (in this case, <a class="reference internal" href="#module-espressopp.interaction.AngularHarmonic" title="espressopp.interaction.AngularHarmonic"><code class="xref py py-class docutils literal notranslate"><span class="pre">espressopp.interaction.AngularHarmonic</span></code></a>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>interaction</p>
+</dd>
+</dl>
+<p><strong>Methods</strong></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="espressopp.interaction.AngularHarmonic.espressopp.interaction.FixedTripleListAngularHarmonic.getFixedTripleList">
+<span class="sig-name descname"><span class="pre">getFixedTripleList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularHarmonic.espressopp.interaction.FixedTripleListAngularHarmonic.getFixedTripleList" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A Python list of fixed triples (e.g., in the chains).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="espressopp.interaction.AngularHarmonic.espressopp.interaction.FixedTripleListAngularHarmonic.setPotential">
+<span class="sig-name descname"><span class="pre">setPotential</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">type1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">potential</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.AngularHarmonic.espressopp.interaction.FixedTripleListAngularHarmonic.setPotential" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>type1</strong></p></li>
+<li><p><strong>type2</strong></p></li>
+<li><p><strong>potential</strong></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<p><strong>Example 1.</strong> Creating a fixed triple list by <a class="reference internal" href="espressopp.FixedTripleList.html#module-espressopp.FixedTripleList" title="espressopp.FixedTripleList"><code class="xref py py-class docutils literal notranslate"><span class="pre">espressopp.FixedTripleList</span></code></a>.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># we assume a polymer solution of n_chains of the length chain_len each.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># At first, create a list_of_triples for the system:</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">N</span> <span class="o">=</span> <span class="n">n_chains</span> <span class="o">*</span> <span class="n">chain_len</span>            <span class="c1"># number of particles in the system</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">list_of_tripples</span> <span class="o">=</span> <span class="p">[]</span>               <span class="c1"># empty list of triples</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">n_chains</span><span class="p">):</span>          <span class="c1"># loop over chains</span>
+<span class="gp">&gt;&gt;&gt; </span>    <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="n">chain_len</span><span class="p">):</span>     <span class="c1"># loop over chain beads</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="n">pid</span> <span class="o">=</span> <span class="n">n</span> <span class="o">*</span> <span class="n">chain_len</span> <span class="o">+</span> <span class="n">m</span>
+<span class="gp">&gt;&gt;&gt; </span>        <span class="k">if</span> <span class="p">(</span><span class="n">pid</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">pid</span> <span class="o">&lt;</span> <span class="n">N</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+<span class="gp">&gt;&gt;&gt; </span>            <span class="n">list_of_tripples</span><span class="o">.</span><span class="n">append</span><span class="p">(</span> <span class="p">(</span><span class="n">pid</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">pid</span><span class="p">,</span> <span class="n">pid</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># create fixed triple list</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fixed_triple_list</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">FixedTripleList</span><span class="p">(</span><span class="n">system</span><span class="o">.</span><span class="n">storage</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fixed_triple_list</span><span class="o">.</span><span class="n">addTriples</span><span class="p">(</span><span class="n">list_of_triples</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>Example 2.</strong> Employing an Angular Harmonic potential.</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Note, the fixed_triple_list has to be generated in advance! (see Example 1)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># set up the potential</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">potAngHarm</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">AngularHarmonic</span><span class="p">(</span><span class="n">K</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">theta0</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># set up the interaction</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">interAngHarm</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">interaction</span><span class="o">.</span><span class="n">FixedTripleListAngularHarmonic</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">fixed_triple_list</span><span class="p">,</span> <span class="n">potAngHarm</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># finally, add the interaction to the system</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">system</span><span class="o">.</span><span class="n">addInteraction</span><span class="p">(</span><span class="n">interAngHarm</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
-<section id="espressopp-interaction-cosine">
-<h2>espressopp.interaction.Cosine<a class="headerlink" href="#espressopp-interaction-cosine" title="Link to this heading"></a></h2>
+<section id="module-espressopp.interaction.Cosine">
+<span id="espressopp-interaction-cosine"></span><h2>espressopp.interaction.Cosine<a class="headerlink" href="#module-espressopp.interaction.Cosine" title="Link to this heading"></a></h2>
+<p>Calculates the Cosine potential as:</p>
+<div class="math notranslate nohighlight">
+\[U = K  (1 + cos(\theta - \theta_0))\]</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.interaction.Cosine.espressopp.interaction.Cosine">
+<span class="sig-prename descclassname"><span class="pre">espressopp.interaction.</span></span><span class="sig-name descname"><span class="pre">Cosine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">K</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">theta0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Cosine.espressopp.interaction.Cosine" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>K</strong> (<em>real</em>) – (default: 1.0)</p></li>
+<li><p><strong>theta0</strong> (<em>real</em>) – (default: 0.0)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.interaction.Cosine.espressopp.interaction.FixedTripleListCosine">
+<span class="sig-prename descclassname"><span class="pre">espressopp.interaction.</span></span><span class="sig-name descname"><span class="pre">FixedTripleListCosine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">potential</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Cosine.espressopp.interaction.FixedTripleListCosine" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>system</strong></p></li>
+<li><p><strong>vl</strong></p></li>
+<li><p><strong>potential</strong></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.interaction.Cosine.espressopp.interaction.FixedTripleListCosine.getFixedTripleList">
+<span class="sig-prename descclassname"><span class="pre">espressopp.interaction.FixedTripleListCosine.</span></span><span class="sig-name descname"><span class="pre">getFixedTripleList</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Cosine.espressopp.interaction.FixedTripleListCosine.getFixedTripleList" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>A Python list of lists.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.interaction.Cosine.espressopp.interaction.FixedTripleListCosine.setPotential">
+<span class="sig-prename descclassname"><span class="pre">espressopp.interaction.FixedTripleListCosine.</span></span><span class="sig-name descname"><span class="pre">setPotential</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">potential</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.interaction.Cosine.espressopp.interaction.FixedTripleListCosine.setPotential" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>potential</strong></p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 </section>
 
@@ -119,7 +489,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="interaction.html" class="btn btn-neutral float-left" title="interaction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="espressopp.interaction.FENE.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="espressopp.interaction.FENE.html" class="btn btn-neutral float-right" title="espressopp.interaction.FENE" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

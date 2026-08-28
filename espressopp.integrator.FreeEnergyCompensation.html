@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; ESPResSo++ vlatest</title>
+  <title>espressopp.integrator.FreeEnergyCompensation &mdash; ESPResSo++ vlatest</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
@@ -20,8 +20,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="espressopp.integrator.GeneralizedLangevinThermostat.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="espressopp.integrator.FixPositions.html" /> 
+    <link rel="next" title="espressopp.integrator.GeneralizedLangevinThermostat" href="espressopp.integrator.GeneralizedLangevinThermostat.html" />
+    <link rel="prev" title="espressopp.integrator.FixPositions" href="espressopp.integrator.FixPositions.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -44,9 +44,62 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="classdescription.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="classdescription.html">User Interface</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="analysis.html">analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bc.html">bc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check.html">check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="esutil.html">esutil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external.html">external</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="integrator.html">integrator</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.Adress.html">espressopp.integrator.Adress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.AssociationReaction.html">espressopp.integrator.AssociationReaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.BerendsenBarostat.html">espressopp.integrator.BerendsenBarostat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.BerendsenBarostatAnisotropic.html">espressopp.integrator.BerendsenBarostatAnisotropic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.BerendsenThermostat.html">espressopp.integrator.BerendsenThermostat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.CapForce.html">espressopp.integrator.CapForce</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.DPDThermostat.html">espressopp.integrator.DPDThermostat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.EmptyExtension.html">espressopp.integrator.EmptyExtension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.ExtAnalyze.html">espressopp.integrator.ExtAnalyze</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.Extension.html">espressopp.integrator.Extension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.ExtForce.html">espressopp.integrator.ExtForce</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.FixPositions.html">espressopp.integrator.FixPositions</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">espressopp.integrator.FreeEnergyCompensation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.GeneralizedLangevinThermostat.html">espressopp.integrator.GeneralizedLangevinThermostat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.Isokinetic.html">espressopp.integrator.Isokinetic</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.LangevinBarostat.html">espressopp.integrator.LangevinBarostat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.LangevinThermostat.html">espressopp.integrator.LangevinThermostat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.LangevinThermostat1D.html">espressopp.integrator.LangevinThermostat1D</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.LangevinThermostatHybrid.html">espressopp.integrator.LangevinThermostatHybrid</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.LangevinThermostatOnGroup.html">espressopp.integrator.LangevinThermostatOnGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.LangevinThermostatOnRadius.html"><strong>espressopp.integrator.LangevinThermostatOnRadius</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.LatticeBoltzmann.html">espressopp.integrator.LatticeBoltzmann</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.LBInit.html">espressopp.integrator.LBInit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.MDIntegrator.html">espressopp.integrator.MDIntegrator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.MinimizeEnergy.html">espressopp.integrator.MinimizeEnergy</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.OnTheFlyFEC.html">espressopp.integrator.OnTheFlyFEC</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.PIAdressIntegrator.html">espressopp.integrator.PIAdressIntegrator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.PIAdressIntegrator.html#espressopp.integrator.PIAdressIntegrator.PIAdressIntegratorLocal"><code class="docutils literal notranslate"><span class="pre">PIAdressIntegratorLocal</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.Rattle.html">espressopp.integrator.Rattle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.Settle.html">espressopp.integrator.Settle</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.StochasticVelocityRescaling.html">espressopp.integrator.StochasticVelocityRescaling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.TDforce.html">espressopp.integrator.TDforce</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.VelocityVerlet.html">espressopp.integrator.VelocityVerlet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.VelocityVerletRESPA.html">espressopp.integrator.VelocityVerletRESPA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.VelocityVerletOnGroup.html">espressopp.integrator.VelocityVerletOnGroup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="espressopp.integrator.VelocityVerletOnRadius.html">espressopp.integrator.VelocityVerletOnRadius</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="interaction.html">interaction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">io</a></li>
+<li class="toctree-l2"><a class="reference internal" href="espressopp.html">espressopp</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standard_system.html">standard_system</a></li>
+<li class="toctree-l2"><a class="reference internal" href="storage.html">storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tools.html">tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logging.html">Logging mechanism</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="pdf.html">PDF Manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="credits.html">Credits</a></li>
 </ul>
@@ -67,7 +120,7 @@
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="classdescription.html">User Interface</a></li>
           <li class="breadcrumb-item"><a href="integrator.html">integrator</a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="breadcrumb-item active">espressopp.integrator.FreeEnergyCompensation</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/espressopp.integrator.FreeEnergyCompensation.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -77,13 +130,66 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
+  <section id="espressopp-integrator-freeenergycompensation">
+<span id="module-espressopp.integrator.FreeEnergyCompensation"></span><h1>espressopp.integrator.FreeEnergyCompensation<a class="headerlink" href="#espressopp-integrator-freeenergycompensation" title="Link to this heading"></a></h1>
+<p>Free Energy Compensation used in Hamiltonian Adaptive Resolution Simulations (H-AdResS) or Path Integral Adaptive Resolution Simulations (PI-AdResS). This works for spherical or slab adaptive resolution geometries. However, it only works for fixed, non-moving atomistic region (otherwise, H-AdResS is not properly defined).</p>
+<p>Example:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fec</span> <span class="o">=</span> <span class="n">espressopp</span><span class="o">.</span><span class="n">integrator</span><span class="o">.</span><span class="n">FreeEnergyCompensation</span><span class="p">(</span><span class="n">system</span><span class="p">,</span> <span class="n">center</span><span class="o">=</span><span class="p">[</span><span class="n">Lx</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Ly</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="n">Lz</span><span class="o">/</span><span class="mi">2</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># set up the fec module with the center in the center of the box</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fec</span><span class="o">.</span><span class="n">addForce</span><span class="p">(</span><span class="n">itype</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span><span class="n">filename</span><span class="o">=</span><span class="s2">&quot;tablefec.xvg&quot;</span><span class="p">,</span><span class="nb">type</span><span class="o">=</span><span class="n">typeCG</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># set up the actual force</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">integrator</span><span class="o">.</span><span class="n">addExtension</span><span class="p">(</span><span class="n">fec</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># add to previously defined integrator</span>
+</pre></div>
+</div>
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.integrator.FreeEnergyCompensation.espressopp.integrator.FreeEnergyCompensation">
+<span class="sig-prename descclassname"><span class="pre">espressopp.integrator.</span></span><span class="sig-name descname"><span class="pre">FreeEnergyCompensation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">center</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sphereAdr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ntrotter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">slow</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.FreeEnergyCompensation.espressopp.integrator.FreeEnergyCompensation" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>system</strong> (<em>std::shared_ptr&lt;System&gt;</em>) – system object</p></li>
+<li><p><strong>center</strong> (<em>list</em><em> of </em><em>reals</em>) – (default: [], corresponds to (0.0, 0.0, 0.0) position) center of high resolution region</p></li>
+<li><p><strong>sphereAdr</strong> (<em>bool</em>) – (default: False) Spherical AdResS region (True) vs. slab geometry with resolution change in x-direction (False)</p></li>
+<li><p><strong>ntrotter</strong> (<em>int</em>) – (default: 1) Trotter number when used in Path Integral AdResS. Default leads to normal non-PI-AdResS behaviour.</p></li>
+<li><p><strong>slow</strong> (<em>bool</em>) – (default: False) When used with RESPA Velocity Verlet, this flag decides whether the Free Energy Compensation is applied together with the slow, less frequently updated forces (slow=True) or with the fast, more frequently updated (slow=False) forces.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.integrator.FreeEnergyCompensation.espressopp.integrator.FreeEnergyCompensation.addForce">
+<span class="sig-prename descclassname"><span class="pre">espressopp.integrator.FreeEnergyCompensation.</span></span><span class="sig-name descname"><span class="pre">addForce</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">itype</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.FreeEnergyCompensation.espressopp.integrator.FreeEnergyCompensation.addForce" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>itype</strong> (<em>int</em>) – interpolation type 1: linear, 2: Akima, 3: Cubic</p></li>
+<li><p><strong>filename</strong> (<em>string</em>) – filename for TD force file</p></li>
+<li><p><strong>type</strong> (<em>int</em>) – particle type on which the TD force needs to be applied</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="espressopp.integrator.FreeEnergyCompensation.espressopp.integrator.FreeEnergyCompensation.computeCompEnergy">
+<span class="sig-prename descclassname"><span class="pre">espressopp.integrator.FreeEnergyCompensation.</span></span><span class="sig-name descname"><span class="pre">computeCompEnergy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#espressopp.integrator.FreeEnergyCompensation.espressopp.integrator.FreeEnergyCompensation.computeCompEnergy" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>real</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="espressopp.integrator.FixPositions.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="espressopp.integrator.GeneralizedLangevinThermostat.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="espressopp.integrator.FixPositions.html" class="btn btn-neutral float-left" title="espressopp.integrator.FixPositions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="espressopp.integrator.GeneralizedLangevinThermostat.html" class="btn btn-neutral float-right" title="espressopp.integrator.GeneralizedLangevinThermostat" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
